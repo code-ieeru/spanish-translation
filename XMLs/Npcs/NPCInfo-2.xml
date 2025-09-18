@@ -1,0 +1,3 @@
+<npcs>
+	<npc id="10001" model="8" interactable="1" name="TestNpc"></npc>
+</npcs>

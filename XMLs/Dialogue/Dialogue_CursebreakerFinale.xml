@@ -1,0 +1,421 @@
+<dialogue>
+	<node id="1" npcName="Eloria Mirvren" anim="1" text="There you are! Been waiting here awhile. This place is giving me the creeps, it's too... quiet. Did Gaberion tell you anything about this cave, what to expect once we enter?" posx="90" posy="33">
+		<option optionid="1" optiontext="I believe he spoke something about a sacred place for the ancient druids." next="2"></option>
+	</node>
+	<node id="2" npcName="Eloria Mirvren" anim="1" text="The druids, what could he possibly plan to do with their magic...? I don't like this... I can't picture it, so it's only making me more anxious." posx="563" posy="32">
+		<option optionid="1" optiontext="Do you think he's expecting us?" next="3"></option>
+		<option optionid="2" optiontext="Druidic magic often revolves around healing, does it not?" next="4"></option>
+		<option optionid="3" optiontext="No point standing and debating here, let's go." next="5" icon="Quest"></option>
+	</node>
+	<node id="3" npcName="Eloria Mirvren" anim="1" text="Oh he's certainly expecting us. You were to bring me here, after all, were you not? But whether he knows we're working together, I couldn't say. I think it's safe to assume the worst though." posx="1010" posy="31">
+		<option optionid="1" optiontext="Druidic magic often revolves around healing, does it not?" next="4"></option>
+		<option optionid="2" optiontext="No point standing and debating here, let's go." next="5" icon="Quest"></option>
+	</node>
+	<node id="4" npcName="Eloria Mirvren" anim="1" text="It does - rejuvenation, restoration, preservation... These aren't things Gaberion would normally concern himself with. Considering the kind of man he's become, I can only assume he means to distort that power in some nefarious way." posx="1469" posy="42">
+		<option optionid="1" optiontext="Do you think he's expecting us?" next="3"></option>
+		<option optionid="2" optiontext="No point standing and debating here, let's go." next="5" icon="Quest"></option>
+	</node>
+	<node id="5" npcName="Eloria Mirvren" anim="1" itemIcon="866" text="Yes, let's. But first, I think you should take the dagger. I'm just thinking, well... if he's expecting trouble, he may be more likely to expect it from me. " posx="1142" posy="515">
+		<option optionid="1" optiontext="" next="6"></option>
+	</node>
+	<node id="6" npcName="Eloria Mirvren" anim="1" text="Just make sure, when the opportunity presents itself, you plant that blade as deep into him as it possibly goes." posx="1594" posy="515">
+		<option optionid="1" optiontext="Alright, noted." actions="Cinematic=134" icon="Quest" next="0"></option>
+	</node>
+
+	<node id="15" npcName="cinematic" anim="1" text="gabrius: You're here, what a wonderful surprise!" posx="22" posy="21">
+		<option optionid="1" optiontext="" next="16"></option>
+	</node>
+	<node id="16" npcName="cinematic" anim="1" text="gabrius: Eloria, my darling, how long has it been? Truly, I feel terrible about the way we left things between us." posx="457" posy="20">
+		<option optionid="1" optiontext="" next="17"></option>
+	</node>
+	<node id="17" npcName="cinematic" anim="1" text="eloria: Yeah, I do too, actually. If I could go back, I'd incinerate your body, leave nothing behind." posx="893" posy="20">
+		<option optionid="1" optiontext="" next="18"></option>
+	</node>
+	<node id="18" npcName="cinematic" anim="1" text="gabrius: Hahahaha!" posx="1332" posy="18">
+		<option optionid="1" optiontext="" next="19"></option>
+	</node>
+	<node id="19" npcName="cinematic" anim="1" text="gabrius: Such venom! Why, I feel almost hurt." posx="1773" posy="21">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+
+	<node id="20" npcName="Gabrius" anim="1" text="The thing is, Eloria, I wanted you here because I'm actually quite upset with you. After all we had been through together, I don't know... I was expecting something better than a dagger in my chest." posx="46" posy="26">
+		<option optionid="1" optiontext="" next="21"></option>
+	</node>
+	<node id="21" npcName="Eloria Mirvren" switchtalker="856" lookAtNpc="854" anim="1" text="You were talking about creating a Grimoire to control life and death itself! Did I not plead with you to abandon the idea? To stick with what we set out to do in the first place - to create new life!" posx="489" posy="29">
+		<option optionid="1" optiontext="" next="22"></option>
+	</node>
+	<node id="22" npcName="Eloria Mirvren" switchtalker="856" lookAtNpc="854" anim="1" text="But no, you wouldn't listen to reason, you...! You had become a madman! You had to be stopped, Gaberion!" posx="925" posy="27">
+		<option optionid="1" optiontext="A Grimoire to control death - is that how I'm here?" next="23"></option>
+		<option optionid="2" optiontext="Why is he so obsessed with death?" next="30"></option>
+		<option optionid="3" optiontext="What happened between you two exactly?" next="35"></option>
+		<option optionid="4" optiontext="What's with the name, is it Gaberion or Gabrius?" next="28"></option>
+		<option optionid="5" optiontext="Why don't you tell us why we're here, Gabrius - what is this place?" icon="Quest" next="38"></option>
+	</node>
+	<node id="23" npcName="Eloria Mirvren" switchtalker="856" lookAtNpc="854" anim="1" text="He was never meant to finish that Grimoire, I thought I made sure of that. But now we're here and we have a true undead among us. What did you do, Gaberion?" posx="1367" posy="28">
+		<option optionid="1" optiontext="" next="24"></option>
+	</node>
+	<node id="24" npcName="Gabrius" switchtalker="854" lookAtNpc="856" anim="1" text="I suppose in a way I should be thanking you, Eloria. You were the one who really completed it, the Black Grimoire." posx="1806" posy="22">
+		<option optionid="1" optiontext="" next="25"></option>
+	</node>
+	<node id="25" npcName="Eloria Mirvren" switchtalker="856" lookAtNpc="854" anim="1" text="What the hell are you talking about?" posx="2236" posy="24">
+		<option optionid="1" optiontext="" next="26"></option>
+	</node>
+	<node id="26" npcName="Gabrius" switchtalker="854" lookAtNpc="856" anim="1" text="It was always missing a final, elusive component. It was hungering for an event... a statement, of sorts... a death... my death, which you kindly provided." posx="2679" posy="20">
+		<option optionid="1" optiontext="" next="27"></option>
+	</node>
+	<node id="27" npcName="Gabrius" switchtalker="854" lookAtNpc="856" anim="1" text="When my blood soaked the pages of the Grimoire, it drank my life away... Only then could it finally be complete! So you see, Eloria, you did kill me that day. And now, I own death itself." posx="3123" posy="15">
+		<option optionid="1" optiontext="Why are you so obsessed with death?" next="30"></option>
+		<option optionid="2" optiontext="What's with the name, is it Gaberion or Gabrius?" next="28"></option>
+		<option optionid="3" optiontext="What happened between you two exactly?" next="35"></option>
+		<option optionid="4" optiontext="Why don't you tell us why we're here, Gabrius - what is this place?" icon="Quest" next="38"></option>
+	</node>
+	<node id="28" npcName="Gabrius" switchtalker="854" lookAtNpc="856" anim="1" text="Gaberion Theraliss reminds me of a sad, poor idealist who lost everything, who was eventually betrayed and murdered by those closest to him. A dead man best left forgotten." posx="1381" posy="323">
+		<option optionid="1" optiontext="" next="29"></option>
+	</node>
+	<node id="29" npcName="Eloria Mirvren" switchtalker="856" lookAtNpc="854" anim="1" text="That's funny, because I'm reminded of a once gracious and noble hero, whom a naive young woman would look up to and adore. But yes, I fear that man is indeed long dead." posx="1832" posy="325">
+		<option optionid="1" optiontext="So wait, a Grimoire to control death - is that how I'm here?" next="23"></option>
+		<option optionid="2" optiontext="Why is this man so obsessed with death?" next="30"></option>
+		<option optionid="3" optiontext="What happened between you two exactly?" next="35"></option>
+		<option optionid="4" optiontext="Why don't you tell us why we're here, Gabrius - what is this place?" icon="Quest" next="38"></option>
+	</node>
+	<node id="30" npcName="Eloria Mirvren" switchtalker="856" lookAtNpc="854" anim="1" text="Why indeed, Gaberion? To defile the dead, end the peace they have in the Dream, to destroy your own humanity? Did you really believe this misery would bring back Raelin...?" posx="1357" posy="623">
+		<option optionid="1" optiontext="" next="31"></option>
+	</node>
+	<node id="31" npcName="Gabrius" switchtalker="854" lookAtNpc="856" anim="1" text="Don't speak her name to me! And do you really claim to care about the sanctity of the dead so much, Eloria? Or had it perhaps dawned on you that I never saw in you half the woman Raelin was. Perhaps that is why you found it so easy to turn on me, hm?" posx="1831" posy="803">
+		<option optionid="1" optiontext="" next="32"></option>
+	</node>
+	<node id="32" npcName="Eloria Mirvren" switchtalker="856" lookAtNpc="854" anim="1" text="You think it was easy?! I loved you, you know, I always loved you...! But you never cared. And Raelin...? She's lucky to be dead, so she's spared the shame she'd feel if she had to see you today." posx="2271" posy="808">
+		<option optionid="1" optiontext="So... Am I to understand this is happening, because he's sad about losing his woman?" next="33"></option>
+		<option optionid="2" optiontext="So wait, a Grimoire to control death - is that how I'm here?" next="23"></option>
+		<option optionid="3" optiontext="What happened between you two exactly?" next="35"></option>
+		<option optionid="4" optiontext="What's with the name, is it Gaberion or Gabrius?" next="28"></option>
+		<option optionid="5" optiontext="Why don't you tell us why we're here, Gabrius - what is this place?" icon="Quest" next="38"></option>
+	</node>
+	<node id="33" npcName="Eloria Mirvren" switchtalker="856" lookAtNpc="854" anim="1" text="I assume that's a lot of it, isn't it Gaberion? Except I don't see her here - only the dead lord - so what happened? Did you actually try to bring her back? Maybe she spat in your face." posx="2725" posy="816">
+		<option optionid="1" optiontext="" next="34"></option>
+	</node>
+	<node id="34" npcName="Gabrius" switchtalker="854" lookAtNpc="856" anim="1" text="I'll only say that words flow too easily from your mouth, woman. I will change that soon, and I'll take great pleasure in it." posx="3189" posy="815">
+		<option optionid="1" optiontext="So wait, a Grimoire to control death - is that how I'm here?" next="23"></option>
+		<option optionid="2" optiontext="What happened between you two exactly?" next="35"></option>
+		<option optionid="3" optiontext="What's with the name, is it Gaberion or Gabrius?" next="28"></option>
+		<option optionid="4" optiontext="Why don't you tell us why we're here, Gabrius - what is this place?" icon="Quest" next="38"></option>
+	</node>
+	<node id="35" npcName="Gabrius" switchtalker="854" lookAtNpc="856" anim="1" text="We are the only two who remain out of the once legendary magi of the Vhosphoran Circle of Nine. Towards the end, Eloria convinced the others to hold me at bay while she sank her dagger into me. " posx="2451" posy="415">
+		<option optionid="1" optiontext="" next="36"></option>
+	</node>
+	<node id="36" npcName="Gabrius" switchtalker="854" lookAtNpc="856" anim="1" text="I gave them quite the surprise once I returned - hunted them down one by one. I suppose Eloria realized what was happening and thought she'd find a way to evade my wrath. But now we are here, and my vengeance may be complete." posx="2972" posy="492">
+		<option optionid="1" optiontext="" next="37"></option>
+	</node>
+	<node id="37" npcName="Eloria Mirvren" switchtalker="856" lookAtNpc="854" anim="1" text="You speak as though we betrayed you?! You were the one who betrayed us! You were the one who led us to study Qaeshtari relics in the first place, under false pretenses! We were like family to you, and you used us!" posx="3539" posy="321">
+		<option optionid="1" optiontext="So wait, a Grimoire to control death - is that how I'm here?" next="23"></option>
+		<option optionid="2" optiontext="Why is he so obsessed with death?" next="30"></option>
+		<option optionid="3" optiontext="So what's with the name, is it Gaberion or Gabrius?" next="28"></option>
+		<option optionid="4" optiontext="Why don't you tell us why we're here, Gabrius - what is this place?" icon="Quest" next="38"></option>
+	</node>
+	<node id="38" npcName="Gabrius" switchtalker="854" lookAtNpc="856" anim="1" text="I thought you'd never ask! I couldn't help but feel that death would be an inadequate punishment for you Eloria. You see, death is actually a relief, but the worst part is the moment of dying. I wished to capture that moment for you, Eloria." posx="4110" posy="30">
+		<option optionid="1" optiontext="" actions="Cinematic=131" icon="Quest" next="0"></option>
+	</node>
+
+	<node id="39" npcName="cutscene-> Gabrius" anim="1" text="The ancient druids of Imberthale could use the power of this stone circle to heal nearly any ailment imaginable." posx="4596" posy="57">
+		<option optionid="1" optiontext="" next="40"></option>
+	</node>
+	<node id="40" npcName="Gabrius" anim="1" text="Indeed, I believe this stone circle could maintain your life indefinitely, Eloria! " posx="5019" posy="56">
+		<option optionid="1" optiontext="" next="41"></option>
+	</node>
+	<node id="41" npcName="rothery" anim="1" text="So you're planning to torture her for an eternity..." posx="5446" posy="60">
+		<option optionid="1" optiontext="" next="42"></option>
+	</node>
+	<node id="42" npcName="rothery" anim="1" text="And what about me, were you ever actually going to let me go?" posx="5887" posy="62">
+		<option optionid="1" optiontext="" next="43"></option>
+	</node>
+	<node id="43" npcName="gabrius" anim="1" text="Let you go? Oh yes, certainly, though I never actually promised I'd return you to death Lord Aercrest." posx="6318" posy="68">
+		<option optionid="1" optiontext="" next="44"></option>
+	</node>
+	<node id="44" npcName="gabrius" anim="1" text="I wanted you to remain here with Eloria, squeezing her neck to the point of death, locked here till the end of time." posx="6767" posy="71">
+		<option optionid="1" optiontext="" next="45"></option>
+	</node>
+	<node id="45" npcName="gabrius" anim="1" text="But you have different ideas in mind, don't you Lord Aercrest?" posx="5511" posy="640">
+		<option optionid="1" optiontext="" next="46"></option>
+	</node>
+	<node id="46" npcName="gabrius" anim="1" text="Oh yes, I had noticed you'd become somewhat deaf to my voice... but no matter." posx="5933" posy="642">
+		<option optionid="1" optiontext="" next="47"></option>
+	</node>
+	<node id="47" npcName="gabrius" anim="1" text="There are always other ways to bend people to your will! *menacing animation?*" posx="6369" posy="642">
+		<option optionid="1" optiontext="" next="48"></option>
+	</node>
+	<node id="48" npcName="elory" anim="1" text="Don't forget the dagger, Lord Aercrest!" posx="6827" posy="647">
+		<option optionid="1" optiontext="" next="49"></option>
+	</node>
+	<node id="49" npcName="elory" anim="1" text="There may be no other way to defeat him now!" posx="7268" posy="645">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+
+	
+	
+	<node id="400" npcName="cinematic script" anim="1" text="*rother stabs gabro with special knife from behind, gabro falls on knees*" posx="77" posy="43">
+		<option optionid="1" optiontext="" next="401"></option>
+	</node>
+	<node id="401" npcName="cinematic script" anim="1" text="gabro: Argh...!" posx="524" posy="46">
+		<option optionid="1" optiontext="" next="402"></option>
+	</node>
+	<node id="402" npcName="cinematic script" anim="1" text="gabro: *sputter* *spits blood animation?*" posx="967" posy="48">
+		<option optionid="1" optiontext="" next="403"></option>
+	</node>
+	<node id="403" npcName="cinematic script" anim="1" text="gabro: Hah... a dagger, again...?" posx="1421" posy="54">
+		<option optionid="1" optiontext="" next="404"></option>
+	</node>
+	<node id="404" npcName="cinematic script" anim="1" text="gabro: ...the irony isn't lost on me, Eloria... but... *cough*..." posx="1887" posy="52">
+		<option optionid="1" optiontext="" next="405"></option>
+	</node>
+	<node id="405" npcName="cinematic script" anim="1" text="gabro: ...did you honestly think that you could... that... you... wait..." posx="2381" posy="43">
+		<option optionid="1" optiontext="" next="406"></option>
+	</node>
+	<node id="406" npcName="cinematic script" anim="1" text="gabro: ...what... what have you done...?" posx="2381" posy="43">
+		<option optionid="1" optiontext="" next="407"></option>
+	</node>
+	<node id="407" npcName="cinematic script" anim="1" text="gabro: ...uuuuughhh... *gabro falls ''dead''*" posx="1086" posy="526">
+		<option optionid="1" optiontext="" next="408"></option>
+	</node>
+	<node id="408" npcName="cinematic script" anim="1" text="*elory walks up to his body, rothery moves a bit away, then elory blasts corpse with fire*" posx="1537" posy="531">
+		<option optionid="1" optiontext="" next="409"></option>
+	</node>
+	<node id="409" npcName="cinematic script" anim="1" text="elory: Burn, you bastard..." posx="1998" posy="531">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+
+
+	
+	<node id="55" npcName="Eloria Mirvren" anim="913" text="&lt;color=#9C8C77&gt; *Panting heavily, Eloria collapses on her knees.* &lt;/color&gt;" posx="54" posy="38">
+		<option optionid="1" optiontext="Are you alright?" next="56"></option>
+		<option optionid="2" optiontext="Is it over...?" next="60"></option>
+	</node>
+	<node id="56" npcName="Eloria Mirvren" anim="913" text="I'll be fine. Thank you, Lord Aercrest. Would you check his remains, whatever's left of him, see if you can find... I don't know... anything noteworthy?" posx="525" posy="44">
+		<option optionid="1" optiontext="What are you thinking?" next="57"></option>
+		<option optionid="2" optiontext="Think we actually killed him?" next="59"></option>
+		<option optionid="3" optiontext="I'll take a look." icon="Quest" next="61"></option>
+	</node>
+	<node id="57" npcName="Eloria Mirvren" anim="913" text="I'm thinking he made a Grimoire to control the dead. I'd like to see it... see if it's really true." posx="972" posy="45">
+		<option optionid="1" optiontext="Sure you didn't just destroy it?" next="58"></option>
+		<option optionid="2" optiontext="Think we actually killed him?" next="59"></option>
+		<option optionid="3" optiontext="I'll take a look." icon="Quest" next="61"></option>
+	</node>
+	<node id="58" npcName="Eloria Mirvren" anim="913" text="Qaeshtari Grimoires can't be destroyed by conventional means either, so... I'm asking you to take a look." posx="1423" posy="48">
+		<option optionid="1" optiontext="Think we actually killed him?" next="59"></option>
+		<option optionid="2" optiontext="Alright, I will." icon="Quest" next="61"></option>
+	</node>
+	<node id="59" npcName="Eloria Mirvren" anim="913" text="Think we actually didn't? I don't know, Lord Aercrest... I think he can't easily revive himself if his body is ash. But you should take a look anyway." posx="1865" posy="447">
+		<option optionid="1" optiontext="What are you thinking I might find?" next="57"></option>
+		<option optionid="2" optiontext="Alright, I will." icon="Quest" next="61"></option>
+	</node>
+	<node id="60" npcName="Eloria Mirvren" anim="913" text="I think so, I pray it is, but... we should make sure. Would you check his remains, whatever's left of him, see if you can find... I don't know... anything noteworthy?" posx="518" posy="542">
+		<option optionid="1" optiontext="What are you thinking?" next="57"></option>
+		<option optionid="2" optiontext="Think we actually killed him?" next="59"></option>
+		<option optionid="3" optiontext="I'll take a look." icon="Quest" next="61"></option>
+	</node>
+
+	<node id="61" npcName="Eloria Mirvren" anim="913" actions="UpdateQuest=72-5" text="Thank you..." posx="1865" posy="447">
+		<option optionid="1" optiontext="" actions="UpdateQuest=72-5" next="0"></option>
+	</node>
+
+
+	<node id="70" npcName="Gabrius' Remains" anim="1" text="&lt;color=#9C8C77&gt; *Magical flames have reduced your former dark master into an unrecognizable heap. The surrounding cave has fallen silent.* &lt;/color&gt;" posx="44" posy="27">
+		<option optionid="1" optiontext="Doesn't look like he's recovering from this." next="73"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Inspect Gabrius' staff.*&lt;/color&gt;" next="71"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Search his remains.*&lt;/color&gt;" next="74"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="71" npcName="Gabrius' Remains" anim="1" switchtalker="857" text="&lt;color=#9C8C77&gt;*It lies on the ground nearby, seemingly spared from Eloria's fires.*&lt;/color&gt;" posx="493" posy="29">
+		<option optionid="1" optiontext="Staff seems intact." next="72"></option>
+	</node>
+	<node id="72" npcName="Eloria Mirvren" anim="1" switchtalker="858" text="He always kept that thing close... created it long before I ever knew him... Later down the line he took to calling it his 'old friend'. Could swear I caught him talking to it sometimes, gave me the chills..." posx="932" posy="28">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Search his remains.*&lt;/color&gt;" next="74"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="73" npcName="Eloria Mirvren" anim="1" switchtalker="858" text="That was the idea... what else can you see?" posx="551" posy="367">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Inspect Gabrius' staff.*&lt;/color&gt;" next="71"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Search his remains.*&lt;/color&gt;" next="74"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="74" npcName="Gabrius' Remains" anim="1" switchtalker="857" text="&lt;color=#9C8C77&gt;*You uncover a book encased in plain black leather covers. After dusting it off, it appears to be in pristine condition, as if fire never touched it, though you know that can't be true.*&lt;/color&gt;" posx="1203" posy="487">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Open the book.*&lt;/color&gt;" next="75"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Search the remains further.*&lt;/color&gt;" next="78"></option>
+		<option optionid="3" optiontext="There's this book..." next="79"></option>
+	</node>
+	<node id="75" npcName="Gabrius' Remains" anim="1" icon="TBG" text="&lt;color=#9C8C77&gt;*Black ink swirls across the pages, dancing and forming shapes that almost seem to resemble writing, before quickly dissolving back into something unintelligible.*&lt;/color&gt;" posx="1688" posy="166">
+		<option optionid="1" optiontext="" next="76"></option>
+	</node>
+	<node id="76" npcName="Eloria Mirvren" switchtalker="858" anim="1" text="What is it?" posx="2110" posy="167">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Peer into the pages more closely.*&lt;/color&gt;" next="77"></option>
+		<option optionid="2" optiontext="There's this book..." next="79"></option>
+	</node>
+	<node id="77" npcName="Gabrius' Remains" anim="1" icon="TBG" switchtalker="857" text="&lt;color=#9C8C77&gt;*It's almost like the ink has a very dark red hue to it. Is that ink at all? Is it... blood?*&lt;/color&gt;" posx="2546" posy="163">
+		<option optionid="1" optiontext="" next="80"></option>
+	</node>
+	<node id="78" npcName="Gabrius' Remains" anim="1" switchtalker="857" text="&lt;color=#9C8C77&gt;*Whatever else Gabrius may have been carrying, it's all thoroughly destroyed. The staff and the book are all that remains.*&lt;/color&gt;" posx="1774" posy="540">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Look inside the book.*&lt;/color&gt;" next="75"></option>
+	</node>
+	<node id="79" npcName="Eloria Mirvren" anim="1" text="Thought as much, curses! Curse you Gaberion...! I'll need to see it, quickly..." posx="2324" posy="626">
+		<option optionid="1" optiontext="" next="80"></option>
+	</node>	
+	<node id="80" npcName="Gabrius' Remains" anim="1" icon="TBG" switchtalker="857" actions="Cinematic=128" text="&lt;color=#9C8C77&gt;*Suddenly the book begins to tremble in you hands. Shadows begin to ebb and flow around it.*&lt;/color&gt;" posx="1864" posy="1146">
+		<option optionid="1" optiontext="" icon="Quest" next="0"></option>
+	</node>	
+
+	
+
+	<node id="420" npcName="cinematic script" anim="1" text="rother: Something's happening..." posx="69" posy="40">
+		<option optionid="1" optiontext="" next="421"></option>
+	</node>
+	<node id="421" npcName="cinematic script" anim="1" text="*buk flies up into the air for a moment, maybe pulsing with some smol shadow effect*" posx="496" posy="43">
+		<option optionid="1" optiontext="" next="422"></option>
+	</node>
+	<node id="422" npcName="cinematic script" anim="1" text="elory: Whatever this is, it can't be good..." posx="925" posy="37">
+		<option optionid="1" optiontext="" next="423"></option>
+	</node>
+	<node id="423" npcName="cinematic script" anim="1" text="*shadow explosion, a wild gabro ghost appears*" posx="1355" posy="41">
+		<option optionid="1" optiontext="" next="424"></option>
+	</node>
+	<node id="424" npcName="cinematic script" anim="1" text="shade of gabro: Hahahahahaha!" posx="854" posy="494">
+		<option optionid="1" optiontext="" next="425"></option>
+	</node>
+	<node id="425" npcName="cinematic script" anim="1" text="elory: No...!" posx="1279" posy="494">
+		<option optionid="1" optiontext="" next="426"></option>
+	</node>
+	<node id="426" npcName="cinematic script" anim="1" text="shade of gabro: I must admit, the two of you surprise me!" posx="1695" posy="495">
+		<option optionid="1" optiontext="" next="427"></option>
+	</node>
+	<node id="427" npcName="cinematic script" anim="1" text="shade of gabro: You didn't honestly believe you could kill me, the master of the Black Grimoire?" posx="2118" posy="495">
+		<option optionid="1" optiontext="" next="428"></option>
+	</node>
+	<node id="428" npcName="cinematic script" anim="1" text="" posx="2544" posy="496">
+		<option optionid="1" optiontext="" next="429"></option>
+	</node>
+	<node id="429" npcName="cinematic script" anim="1" text="reother: Well to be fair, you're not looking too alive either..." posx="1260" posy="865">
+		<option optionid="1" optiontext="" next="430"></option>
+	</node>
+	<node id="430" npcName="cinematic script" anim="1" text="shade of gabro: The destruction you've inflicted upon my body is a mere inconvenience." posx="1719" posy="865">
+		<option optionid="1" optiontext="" next="431"></option>
+	</node>
+	<node id="431" npcName="cinematic script" anim="1" text="shade of gabro: Besides, never underestimate the strength of a Shade, Lord Aercrest. In any case..." posx="2158" posy="865">
+		<option optionid="1" optiontext="" next="432"></option>
+	</node>
+	<node id="432" npcName="cinematic script" anim="1" text="shade of gabro: While this has been fun, I do need to get going. But let's do this again!" posx="2603" posy="863">
+		<option optionid="1" optiontext="" next="433"></option>
+	</node>
+	<node id="433" npcName="cinematic script" anim="1" text="shade of gabro: I'll be seeing the both of you, soon..." posx="3050" posy="859">
+		<option optionid="1" optiontext="" next="434"></option>
+	</node>
+	<node id="434" npcName="cinematic script" anim="1" text="*gabro ghost takes off, fade to black, transition to final dialogue with elory*" posx="3496" posy="857">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>	
+
+	
+	
+	<node id="90" npcName="Eloria Mirvren" anim="912" text="The master of the Black Grimoire...? He's done it, replicated the power of the ancient Grimoires, for the first time in what must be over a thousand years. Oh Lord Rothar, I don't know if he can be killed..." posx="64" posy="31">
+		<option optionid="1" optiontext="He has to be, he'll never stop coming for us unless we do." next="91"></option>
+	</node>
+	<node id="91" npcName="Eloria Mirvren" anim="1" text="I know that. Somehow we'll have to find a way. But first, I need to say something, though it's hard... You killed Arren and I feel I should hate you for it." posx="509" posy="33">
+		<option optionid="1" optiontext="" next="92"></option>
+	</node>
+	<node id="92" npcName="Eloria Mirvren" anim="1" text="But I also owe you my thanks. If not for you, I would never have made it this far. So thank you, Lord Aercrest. You've shown yourself to be a good ally, and someone I can truly rely on." posx="941" posy="36">
+		<option optionid="1" optiontext="sorry bout arren okey" checks="Var=immaDev-1-1" next="0"></option>
+		<option optionid="2" optiontext="What can you tell me about Grimoires?" checks="Var=immaDev-1-1" next="0"></option>
+		<option optionid="3" optiontext="wot u tink gabro has become?" checks="Var=immaDev-1-1" next="0"></option>
+		<option optionid="4" optiontext="We're in the same boat as I see it, so what now?" next="93"></option>
+	</node>
+	<node id="93" npcName="Eloria Mirvren" anim="1" itemIcon="894" text="I truly wish I knew... But look - he's left behind his staff. Perhaps you'll be able to make some use of it." posx="1522" posy="801">
+		<option optionid="1" optiontext="You're the mage here, don't you want it?" next="94"></option>
+		<option optionid="2" optiontext="I've handled that staff before, it obeys none but Gabrius." next="95" icon="Quest"></option>
+	</node>
+	<node id="94" npcName="Eloria Mirvren" anim="1" itemIcon="894" text="Honestly, I detest the thing. I sense there's a mind of a person trapped within that orb, powering it. Gaberion's 'old friend', I suspect...\n\n&lt;color=#9C8C77&gt;*Eloria shivers.*&lt;/color&gt;" posx="1966" posy="802">
+		<option optionid="1" optiontext="I've handled that staff before, it obeys none but Gabrius." next="95"></option>
+	</node>
+	<node id="95" npcName="Eloria Mirvren" anim="1" itemIcon="894" text="I sense that, but the magic is nothing a former Mage of the Nine couldn't change for you.\n\n&lt;color=#9C8C77&gt;*Eloria gently runs her hand along the staff, magic emanating from her fingers.*&lt;/color&gt;" posx="2056" posy="1123">
+		<option optionid="1" optiontext="" next="96"></option>
+	</node>
+	<node id="96" npcName="Eloria Mirvren" anim="1" text="It's yours now, Lord Aercrest. I shall remain here for the time being, should you need anything." posx="2508" posy="1124">
+		<option optionid="1" optiontext="" actions="UpdateQuest=72-999" next="0"></option>
+	</node>
+
+	
+	
+	<node id="110" npcName="Eloria Mirvren" anim="1" text="What is it, Lord Aercrest?" posx="44" posy="1012">
+		<option optionid="1" optiontext="You don't really need to call me that, I'm not lord of anything these days." next="0"></option>
+		<option optionid="2" optiontext="What can you tell me about Grimoires?" next="0"></option>
+		<option optionid="3" optiontext="wot u tink gabro has become?" next="0"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+
+
+
+	<node id="340" npcName="Eloria Mirvren" anim="912" text="The master of the Black Grimoire...? He's done it, replicated the power of the ancient Grimoires, for the first time in what must be over a thousand years. Oh, Lord Aercrest, I don't know if he can be killed anymore..." posx="64" posy="31">
+		<option optionid="1" optiontext="He has to be, he'll never stop coming for us unless we do." next="341" icon="Quest"></option>
+		<option optionid="2" optiontext="You know I'm not the lord to much of anything these days, you don't really need to keep calling me that." next="347"></option>
+	</node>
+	<node id="341" npcName="Eloria Mirvren" anim="912" text="I know that, somehow we'll have to find a way. But first, I need to say something, though it's hard... You killed Arren, and I feel I should hate you for it, but..." posx="509" posy="33">
+		<option optionid="1" optiontext="" next="342"></option>
+	</node>
+	<node id="342" npcName="Eloria Mirvren" anim="912" text="I also owe you my thanks. If not for you, I would never have made it this far. So thank you, Lord Aercrest. You've shown yourself to be a good ally, and someone I can truly rely on." posx="941" posy="36">
+		<option optionid="1" optiontext="sorry bout arren okey" next="0" checks="Var=immaDev-1-1"></option>
+		<option optionid="2" optiontext="Help me understand this Grimoire - what makes it so powerful?" next="348"></option>
+		<option optionid="3" optiontext="Any idea what Gabrius has turned into?" next="0"></option>
+		<option optionid="4" optiontext="We're in the same boat as I see it, so what now?" next="343" icon="Quest"></option>
+	</node>
+	<node id="343" npcName="Eloria Mirvren" anim="912" text="I truly wish I knew... But look - he's left behind his staff. Perhaps you'll be able to make some use of it." icon="894" posx="1522" posy="801">
+		<option optionid="1" optiontext="You're the mage here, don't you want it?" next="344"></option>
+		<option optionid="2" optiontext="I've handled that staff before, it obeys none but Gabrius." next="345" icon="Quest"></option>
+	</node>
+	<node id="344" npcName="Eloria Mirvren" anim="912" text="Honestly, I detest the thing. I sense there's a mind of a person trapped within that orb, powering it. Gaberion's 'old friend', I suspect...\n\n&lt;color=#9C8C77&gt;*Eloria shivers.*&lt;/color&gt;" icon="894" posx="1966" posy="802">
+		<option optionid="1" optiontext="I've handled that staff before, it obeys none but Gabrius." next="345"></option>
+	</node>
+	<node id="345" npcName="Eloria Mirvren" anim="912" text="I sense that, but the magic is nothing a former Mage of the Nine couldn't change for you.\n\n&lt;color=#9C8C77&gt;*Eloria gently runs her hand along the staff, magic emanating from her fingers.*&lt;/color&gt;" icon="894" posx="2056" posy="1123">
+		<option optionid="1" optiontext="" next="346"></option>
+	</node>
+	<node id="346" npcName="Eloria Mirvren" anim="912" text="It's yours now, Lord Aercrest. I shall remain here for the time being, should you need anything." icon="894" posx="2508" posy="1124">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=72-999"></option>
+	</node>
+	<node id="347" npcName="Eloria Mirvren" anim="912" text="&lt;color=#9C8C77&gt;*Eloria chuckles, tiredly.*&lt;/color&gt;\n\nMaybe so, Lord Aercrest... maybe so..." posx="249" posy="433">
+		<option optionid="1" optiontext="Gabrius will never stop coming for us unless we find a way to deal with him." next="341"></option>
+	</node>
+	<node id="348" npcName="Eloria Mirvren" anim="912" text="Grimoires are no ordinary relics. I wonder, what do you know of the Ancient Civilization, the Qaesthari?" posx="1481" posy="-20">
+		<option optionid="1" optiontext="Gabrius spoke of them some; a society of powerful magic wielders?" next="349"></option>
+		<option optionid="2" optiontext="" next="0"></option>
+	</node>
+	<node id="349" npcName="Eloria Mirvren" anim="912" text="Indeed, the Qaeshtari quite literally lived and breathed magic. They practiced a ritual that would transform their very bodies, to become ''ascended'' - they became closesly linked with magic, body and soul." posx="1920" posy="-18">
+		<option optionid="1" optiontext="" next="350"></option>
+	</node>
+	<node id="350" npcName="Eloria Mirvren" anim="912" text="Thus to become a fully fledged member of the Qaeshtari society, one would have had to endure this transformation. The non-ascended became a lower caste. And for all ascended, it became an important tradition to craft their personal 'Grimoire'." posx="2358" posy="-14">
+		<option optionid="1" optiontext="But what was the Grimoire?" next="351"></option>
+		<option optionid="2" optiontext="What of this Black Grimoire, how could Gabrius create such a thing?" next="354"></option>
+	</node>
+	<node id="351" npcName="Eloria Mirvren" anim="912" text="It was no mere spellbook, though it may have once started out as such. But it came to be an embodiment of magic. It was a personal statement of its creator, capable of altering the world in fundamental ways." posx="2801" posy="-14">
+		<option optionid="1" optiontext="" next="352"></option>
+	</node>
+	<node id="352" npcName="Eloria Mirvren" anim="912" text="For instance, a Grimoire I uncovered was capable of perfectly concealing its owner from those they did not wish to be found by. I can only imagine who its writer must have been, someone who valued their privacy a great deal. And it offered me sanctuary, once I became hunted by Gaberion." posx="3234" posy="-10">
+		<option optionid="1" optiontext="But its power was broken by another Grimoire - the one I acquired, of Truesight." next="353"></option>
+		<option optionid="2" optiontext="What of this Black Grimoire, how could Gabrius create such a thing?" next="354"></option>
+	</node>
+	<node id="353" npcName="Eloria Mirvren" anim="912" text="Indeed... some Grimoires always were inherently more powerful than others. Some were considered highly dangerous and were prohibited." posx="3702" posy="-9">
+		<option optionid="1" optiontext="What of this Black Grimoire, how could Gabrius create such a thing?" next="354"></option>
+	</node>
+	<node id="354" npcName="Eloria Mirvren" anim="912" text="We were younger then, talented and ambitious... scarred, also, by the Sorcerer's Uprising we'd experienced back in Vhosphoran Kingdom. We hungered to replace the losses of the war with wonders of magic." posx="3095" posy="642">
+		<option optionid="1" optiontext="" next="355"></option>
+	</node>
+	<node id="355" npcName="Eloria Mirvren" anim="1" text="And what better way to do so than to grasp for powers only the Ancient Qaeshtari ever wielded? Could you imagine, a Grimoire that could birth life, create lush paradise where before there was nothing but desert? Ah, it was naive of course." posx="3531" posy="639">
+		<option optionid="1" optiontext="" next="356"></option>
+	</node>
+	<node id="356" npcName="Eloria Mirvren" anim="1" text="But we were driven, and we scoured through numerous ruins in search of their secrets. In the end we learned so much, came so close, so many times... Only to discover that the man we considered our leader had warped our life's work to his own twisted purposes all along." posx="3965" posy="641">
+		<option optionid="1" optiontext="Which is when you killed him?" next="357"></option>
+		<option optionid="2" optiontext="So the Black Grimoire does what... prevents him from dying?" next="0"></option>
+	</node>
+	<node id="357" npcName="Eloria Mirvren" anim="1" text="Ironically, it seems that his death then was what ultimately completed his Black Grimoire." posx="4403" posy="644">
+		<option optionid="1" optiontext="So the Black Grimoire does what... prevents him from dying?" next="0"></option>
+	</node>
+
+
+
+</dialogue>
+
+
+
+

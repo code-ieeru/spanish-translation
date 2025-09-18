@@ -1,0 +1,266 @@
+<dialogue>
+	<node id="1" npcName="Banker Thurlow" anim="1" text="Welcome to Prosperwind Bank, traveler! The clerks will assist you with mundane deposits, but I regret to inform you that we're currently not in the business of lending out any gold." posx="48" posy="27">
+		<option optionid="1" optiontext="A bank that won't loan? Why is that?" icon="Quest" next="2"></option>
+		<option optionid="2" optiontext="That's fine, I'm not looking for a loan." next="0"></option>
+	</node>
+	<node id="2" npcName="Banker Thurlow" anim="1" text="As it happens, I've already loaned out considerable sums of gold to the locals, much of which has contributed to the development of this fair city. But when it comes to repayments, these peasants prefer to adhere to their own schedules instead of what was agreed - I'm stretched to the limit." posx="483" posy="28">
+		<option optionid="1" optiontext="So why not hire a debt collector?" icon="Quest" actions="Cinematic=106" next="0"></option>
+		<option optionid="2" optiontext="Sounds tough, good luck though." next="0"></option>
+	</node>
+	<node id="3" npcName="Banker Thurlow" anim="1" text="You see, I've loaned out considerable sums of gold to the locals, but when it comes to repayments, these peasants prefer to adhere to their own schedules instead of what was agreed." posx="50" posy="22">
+		<option optionid="1" optiontext="" next="4"></option>
+	</node>
+	<node id="4" npcName="Banker Thurlow" anim="1" text="I need a debt collector and you look like a suitably rough type. What do you say?" posx="482" posy="20">
+		<option optionid="1" optiontext="Fine, could use the coins - I'll do it." icon="Quest" next="10"></option>
+		<option optionid="2" optiontext="No thanks, I wouldn't feel comfortable doing your dirty work." next="0"></option>
+	</node>
+	<node id="5" npcName="Banker Thurlow" anim="1" text="" switchtalker="263" contextBefore="" contextAfter="" posx="1650" posy="335">
+		<option optionid="1" optiontext="" next="6"></option>
+	</node>
+	<node id="6" npcName="Banker Thurlow" anim="1" text="Greetings, traveler! What a pleasant surprise to see you again. Tell me, have you reconsidered my offer?" contextBefore="" contextAfter="" posx="1874" posy="41">
+		<option optionid="1" optiontext="Fine, could use the coins - I'll do it." icon="Quest" next="10"></option>
+		<option optionid="2" optiontext="What exactly was the offer, again?" next="3"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="7" npcName="Banker Thurlow" anim="1" text="That means he inherently lacks the necessary, um... let's call it an inhibited sense of empathy toward these people, which is sorely needed in this line of work." contextBefore="" contextAfter="" posx="2090" posy="348">
+		<option optionid="1" optiontext="" next="9"></option>
+	</node>
+	<node id="8" npcName="Banker Thurlow" anim="1" text="You see, I'm sure young Burt is a fantastic lad. But alas, he is one of Haywind's own boys; grew up around here, you know?" contextBefore="return to dialogue" posx="957" posy="362">
+		<option optionid="1" optiontext="" next="7"></option>
+	</node>
+	<node id="9" npcName="Banker Thurlow" anim="1" text="But you have the look of a traveler about you and I'm glad to inform you that a new position has just opened up here at our prestigious Prosperwind Bank. What do you say - up for collecting a few debts?" posx="1405" posy="364">
+		<option optionid="1" optiontext="I could use the coins, I'll do it." icon="Quest" next="10"></option>
+		<option optionid="2" optiontext="I wouldn't feel comfortable doing your dirty work." actions="SetNpcVar=Q65OfferRejected-1" next="12"></option>
+	</node>
+	<node id="10" npcName="Banker Thurlow" anim="1" text="Splendid! The first debtor on my list is Matilda Cornish - a simple country woman turned city dweller. She has a decent repute, but for some odd reason she turned indignant when I sent Burt to collect payment. See if you'll have better luck?" posx="1876" posy="363">
+		<option optionid="1" optiontext="Where do I find her?" next="11"></option>
+		<option optionid="2" optiontext="Alright, then." actions="UpdateQuest=65-1" next="0"></option>
+	</node>
+	<node id="11" npcName="Banker Thurlow" anim="1" text="She lives in her cute, pink little house, westside of the market square, right by the lion statue. Now, I believe there's no reason to get rough with this one, just try to reason with her." posx="2324" posy="362">
+		<option optionid="1" optiontext="Alright, then." actions="UpdateQuest=65-1" next="0"></option>
+	</node>
+	<node id="12" npcName="Banker Thurlow" anim="1" text="Oh come now, I'd offer you a fair cut! Please reconsider, you'll know where to find me when you do." posx="1405" posy="364">
+		<option optionid="1" optiontext="Leave." next="0"></option>
+	</node>
+
+	<node id="15" npcName="Banker Thurlow" anim="1" text="A pleasure to see you again, my friend! Any luck collecting the debt from Matilda?" posx="40" posy="25">
+		<option optionid="1" optiontext="I have it." checks="Quest=65-2-2,HasItem=463-1" icon="Quest" next="17"></option>
+		<option optionid="2" optiontext="Where would I find her, again?" next="16"></option>
+		<option optionid="3" optiontext="Not yet." next="0"></option>
+	</node>
+	<node id="16" npcName="Banker Thurlow" anim="1" text="She lives in her cute, pink little house, westside of the market square, right by the lion statue. Now, I believe there's no reason to get rough with this one, just try to reason with her." posx="501" posy="234">
+		<option optionid="1" optiontext="Alright." next="0"></option>
+	</node>
+	<node id="17" npcName="Banker Thurlow" anim="1" text="A name crossed off my list, then? Most excellent! That'd be the first in some time. This means we can move onto more reluctant customers." posx="936" posy="19">
+		<option optionid="1" optiontext="" next="18"></option>
+	</node>
+	<node id="18" npcName="Banker Thurlow" anim="1" text="Hmm, let's see here... yes, Beatrice Brier... The young girl acted so grateful when I lent her a sum to spend on a fancy dress. Now that it's time to pay back, she thinks she's treated unfairly. Teach the young brat a lesson in economics, would you?" posx="1379" posy="22">
+		<option optionid="1" optiontext="Where does she live?" next="19"></option>
+		<option optionid="2" optiontext="Alright then." icon="Quest" next="23"></option>
+	</node>
+	<node id="19" npcName="Banker Thurlow" anim="1" text="The Brier family home is located on the SOMEWHERE???" posx="1833" posy="21">
+		<option optionid="1" optiontext="Alright then." icon="Quest" next="23"></option>
+	</node>
+
+	<node id="20" npcName="Banker Thurlow" anim="1" text="A pleasure to see you again, my friend! Any luck collecting the debt from poor little Beatrice?" posx="443" posy="617">
+		<option optionid="1" optiontext="I have it." next="0"></option>
+		<option optionid="2" optiontext="Where would I find her, again?" next="22"></option>
+		<option optionid="3" optiontext="What was your issue with her anyway?" next="21"></option>
+		<option optionid="4" optiontext="Not yet." next="0"></option>
+	</node>
+	<node id="21" npcName="Banker Thurlow" anim="1" text="The young girl acted so grateful when I lent her a sum to spend on a fancy dress. Now that it's time to pay back, she thinks she's treated unfairly. Teach the young brat a lesson in economics, would you?" posx="928" posy="621">
+		<option optionid="1" optiontext="Where would I find her, again?" next="22"></option>
+		<option optionid="2" optiontext="Alright then." next="0"></option>
+	</node>
+	<node id="22" npcName="Banker Thurlow" anim="1" text="The Brier family home is located on the SOMEWHERE???" posx="1381" posy="620">
+		<option optionid="1" optiontext="What was your issue with her anyway?" next="21"></option>
+		<option optionid="2" optiontext="Alright then." next="0"></option>
+	</node>
+
+	<node id="23" npcName="Banker Thurlow" anim="1" text="Before you go, I have your cut for a job well done. Continue to work for me and you'll see yourself increasingly well compensated." posx="22" posy="18">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=65-999|67-1,RemoveItems=463-1"></option>
+	</node>
+
+	<node id="1500" npcName="Banker Thurlow" anim="1" text="Greetings again, traveler! I must say, I'm surprised to see you again. Does this mean you reconsidered my offer?" posx="2380" posy="808">
+		<option optionid="1" optiontext="Fine, I'll do it." actions="UpdateQuest=66-1" next="22"></option>
+		<option optionid="2" optiontext="Remind me, where was Roberts home again" next="22"></option>
+		<option optionid="3" optiontext="Never Again!" actions="" next="0"></option>
+		<option optionid="4" optiontext="Reset." checks="NpcVar=Q66Robert-1-1" actions="SetNpcVar=Q66Robert-0" next="0"></option>
+	</node>
+	<node id="1600" npcName="Banker Thurlow" anim="1" text="A few of these peasants are lacking behind on their loan payments and I need a realiable debt collector. An outsider like you is the perfect hire, so what do you say? I'll give you a fair cut." posx="2868" posy="905">
+		<option optionid="1" optiontext="Fine, I'll do it." next="10"></option>
+		<option optionid="2" optiontext="Find someone else." next="0"></option>
+	</node>
+	<node id="2000" npcName="Banker Thurlow" anim="1" text="How goes your debt collection? Have you talked to Matilda?" posx="28" posy="24">
+		<option optionid="1" optiontext="I have her debt." checks="HasItem=463-1,Quest=65-2-2" actions="UpdateQuest=65-999,RemoveItems=463-1" next="21"></option>
+		<option optionid="2" optiontext="Where do I find her again?" next="11"></option>
+		<option optionid="3" optiontext="Not yet." next="0"></option>
+	</node>
+	<node id="2100" npcName="Banker Thurlow" anim="1" text="That is most excellent news, and I have your cut as promised. Next is Robert Riley, you up for it?" posx="489" posy="23">
+		<option optionid="1" optiontext="Yes" next="22"></option>
+		<option optionid="2" optiontext="Where is he?" next="22"></option>
+		<option optionid="3" optiontext="I won't do it again it is far too tedious" actions="SetNpcVar=Q66Robert-1" next="0"></option>
+	</node>
+	<node id="2200" npcName="Banker Thurlow" anim="1" text="Robert lives in a house in the south of Haywind it has a large apple tree in the garden hes often out there." posx="943" posy="27">
+		<option optionid="1" optiontext="Okay I'll do it." checks="Quest=66-0-0" icon="Quest" actions="UpdateQuest=66-1" next="0"></option>
+		<option optionid="2" optiontext="On My Way." checks="Quest=66-1-1" actions="" next="0"></option>
+		<option optionid="2" optiontext="On My Way." checks="Quest=66-2-2" actions="" next="0"></option>
+		<option optionid="2" optiontext="On My Way." checks="Quest=66-3-3" actions="" next="0"></option>
+		<option optionid="3" optiontext="No, I won't be a part of this anymore." checks="Quest=66-0-0" actions="SetNpcVar=Q66Robert-1" next="0"></option>
+	</node>
+	<node id="2300" npcName="Banker Thurlow" anim="1" text="Up for Robert's debt?" posx="48" posy="475">
+		<option optionid="1" optiontext="Yes" icon="Quest" actions="UpdateQuest=66-1" next="22"></option>
+		<option optionid="2" optiontext="Where is he?" next="22"></option>
+		<option optionid="3" optiontext="No this work feels wrong." actions="SetNpcVar=Q66Robert-1" next="0"></option>
+	</node>
+
+	<node id="2500" npcName="Banker Thurlow" anim="1" text="How goes your debt collection? Have you talked to Robert?" posx="778" posy="578">
+		<option optionid="1" optiontext="I have his debt." checks="HasItem=464-1,Quest=66-3-3" actions="UpdateQuest=66-999,RemoveItems=464-1" next="26"></option>
+		<option optionid="2" optiontext="Where do I find him again?" next="22"></option>
+		<option optionid="3" optiontext="Not yet." next="0"></option>
+	</node>
+	<node id="2600" npcName="Banker Thurlow" anim="1" text="That is most excellent news, and I have your cut as promised. Next is Beatrice Brier, you up for it?" posx="1266" posy="584">
+		<option optionid="1" optiontext="Yes" next="0"></option>
+		<option optionid="2" optiontext="Where is she?" next="27"></option>
+		<option optionid="4" optiontext="Maby later" next="0"></option>
+	</node>
+	<node id="2700" npcName="Banker Thurlow" anim="1" text="dunno" posx="1736" posy="582">
+		<option optionid="1" optiontext="Okey" next="0"></option>
+		<option optionid="2" optiontext="Maby later" next="0"></option>
+		<option optionid="3" optiontext="Maby later" next="0"></option>
+	</node>
+	<node id="2800" npcName="Banker Thurlow" anim="1" text="Up for Beatrice debppt?" posx="2183" posy="589">
+		<option optionid="1" optiontext="Yes" next="0"></option>
+		<option optionid="2" optiontext="Where is she?" next="27"></option>
+		<option optionid="3" optiontext="Maby later" next="0"></option>
+	</node>
+
+	<node id="144" npcName="Matilda Cornish" anim="1" text="Yes, hello dear?" posx="54" posy="41">
+		<option optionid="1" optiontext="Looking for Matilda Cornish." icon="Quest" next="145"></option>
+		<option optionid="2" optiontext="Hello, goodbye." next="0"></option>
+	</node>
+	<node id="145" npcName="Matilda Cornish" anim="1" text="Yes, dear? What is it?" posx="508" posy="49">
+		<option optionid="1" optiontext="I'm here to collect the debt you owe to the banker." next="146"></option>
+	</node>
+	<node id="146" npcName="Matilda Cornish" anim="1" text="I'm a respectable citizen! All I did was forget to pay, that's all! And now I'm being harassed! I'm not a criminal!" posx="629" posy="359">
+		<option optionid="1" optiontext="Didn't say you were, ma'am. " next="147"></option>
+		<option optionid="2" optiontext="I really don't care, I'm just here to collect the money and be on my way." next="150"></option>
+	</node>
+	<node id="147" npcName="Matilda Cornish" anim="1" text="But you thought it, didn't you?! Didn't you?!?!" posx="983" posy="51">
+		<option optionid="1" optiontext="Ma'am, please calm down. " next="148"></option>
+		<option optionid="2" optiontext="If I could just have the payment and be on my way..." next="155"></option>
+	</node>
+	<node id="148" npcName="Matilda Cornish" anim="1" text="Don't tell me what to do! I'll pay my debt, but first you have to apologize." posx="1457" posy="40">
+		<option optionid="1" optiontext="I apologize." next="149"></option>
+		<option optionid="2" optiontext="That's ridiculous, just pay up." actions="SetNpcVar=Q65Argue-1" next="151"></option>
+	</node>
+	<node id="149" npcName="Matilda Cornish" anim="1" text="That wasn't so hard now was it, dear? Here's the gold you wanted, and please do give the banker my kind regards." posx="1926" posy="44">
+		<option optionid="1" optiontext="Leave." actions="AddItems=463-1,UpdateQuest=65-2" next="0"></option>
+	</node>
+	<node id="150" npcName="Matilda Cornish" anim="1" text="*Gasp*! That is so rude! You must apologize to me immediately!" posx="1092" posy="668">
+		<option optionid="1" optiontext="Fine, I apologize." next="149"></option>
+		<option optionid="2" optiontext="That's ridiculous, just pay up." actions="SetNpcVar=Q65Argue-1" next="151"></option>
+	</node>
+	<node id="151" npcName="Matilda Cornish" anim="1" text="How dare you call me ridiculous?! You are a very insulting man, do you know that? I don't feel like paying until I hear a proper apology from you and that's that." posx="1686" posy="616">
+		<option optionid="1" optiontext="Fine, I apologize." next="149"></option>
+		<option optionid="2" optiontext="Ma'am, if you do not pay, I will be forced to hurt you. You don't want that to happen, do you?" actions="SetNpcVar=Q65Argue-1" next="152"></option>
+	</node>
+	<node id="152" npcName="Matilda Cornish" anim="1" text="Then I will scream and the guards will come to my rescue and I'll tell them you were trying to rape me. I've dealt with ruffians like you before so don't try to bully me." posx="2167" posy="615">
+		<option optionid="1" optiontext="Okay, whatever, I'm sorry." next="153"></option>
+		<option optionid="2" optiontext="I... will not... apologize." actions="SetNpcVar=Q65Argue-1" next="154"></option>
+	</node>
+	<node id="153" npcName="Matilda Cornish" anim="1" text="No, you have to say it like you mean it." posx="2615" posy="525">
+		<option optionid="1" optiontext="I apologize for being so rude, ma'am Cornish." next="149"></option>
+		<option optionid="2" optiontext="No." actions="SetNpcVar=Q65Argue-1" next="154"></option>
+		<option optionid="3" optiontext="Reset" checks="" actions="SetNpcVar=Q65Argue-0" next="0"></option>
+	</node>
+	<node id="154" npcName="Matilda Cornish" anim="1" text="Then I don't think we have anything more to discuss." posx="2681" posy="877">
+		<option optionid="1" optiontext="Leave." actions="SetNpcVar=Q65Argue-1" next="0"></option>
+	</node>
+	<node id="155" npcName="Matilda Cornish" anim="1" text="No, your behavior has caused me terrible upset, that won't do at all! I will agree to pay, but first you must apologize." posx="1209" posy="364">
+		<option optionid="1" optiontext="Okay, I apologize." next="149"></option>
+		<option optionid="2" optiontext="Don't be ridiculous, just pay up." actions="SetNpcVar=Q65Argue-1" next="151"></option>
+	</node>
+	<node id="156" npcName="Matilda Cornish" anim="1" text="So, dear. Are you ready to apologize?" posx="2616" posy="113">
+		<option optionid="1" optiontext="Okay, whatever, I'm sorry." next="153"></option>
+		<option optionid="2" optiontext="I will not apologize, you need to pay the debt you owe." actions="" next="157"></option>
+	</node>
+	<node id="157" npcName="Matilda Cornish" anim="1" text="No, I do not think I will. Not until you apologize to me for all your rude behavior." posx="3185" posy="242">
+		<option optionid="1" optiontext="Okay, whatever, I'm sorry." next="153"></option>
+		<option optionid="2" optiontext="No." actions="SetNpcVar=Q65Argue-1" next="0"></option>
+	</node>
+
+	<node id="170" npcName="Robert Riley" anim="1" text="Yes, what? What do you want?" contextBefore="" contextAfter="" posx="27" posy="17">
+		<option optionid="1" optiontext="M'ster Robert Riley?" icon="" next="171"></option>
+		<option optionid="2" optiontext="Nothing." next="0"></option>
+	</node>
+	<node id="171" npcName="Robert Riley" anim="1" text="Yes I am, so what?" contextBefore="" contextAfter="" posx="523" posy="15">
+		<option optionid="1" optiontext="You owe the banker a debt - I'm here to collect." next="172"></option>
+	</node>
+	<node id="172" npcName="Robert Riley" anim="1" text="Hah! That dumb boy Burt was here earlier and I can tell you he left empty handed, so good luck with that! " contextBefore="" contextAfter="" posx="744" posy="272">
+		<option optionid="1" optiontext="How about I start by asking nicely? Please, pay up." next="173"></option>
+		<option optionid="2" optiontext="Do you think my luck might be helped by threatening to break your legs?" next="175"></option>
+	</node>
+	<node id="173" npcName="Robert Riley" anim="1" text="Hah! Nice try! Tell you what, I have all my gold hidden away in case of bandits like you. So sure you can collect, but you need to find the gold first. Hah! Haha!" contextBefore="" contextAfter="" posx="1215" posy="18">
+		<option optionid="1" optiontext="Let's cut the games to where you tell me where to find it." next="174"></option>
+		<option optionid="2" optiontext="Okay, that will probably be quicker than trying to talk to you anyway." icon="Quest" actions="SetNpcVar=Q66FindIt-1,UpdateQuest=66-2" next="0"></option>
+	</node>
+	<node id="174" npcName="Robert Riley" anim="1" text="I'm not telling you anything! And you can't make me!" contextBefore="" contextAfter="" posx="1716" posy="76">
+		<option optionid="1" optiontext="*Sigh*, whatever." icon="Quest" actions="UpdateQuest=66-2,SetNpcVar=Q66FindIt-1" next="0"></option>
+		<option optionid="2" optiontext="*Reset." actions="SetNpcVar=Q66FindIt-0" next="0"></option>
+	</node>
+	<node id="175" npcName="Robert Riley" anim="1" text="Hah! Nice try! See, I've hidden away all my gold and I'd rather die than tell you where to find it!" contextBefore="" contextAfter="" posx="1277" posy="352">
+		<option optionid="1" optiontext="You'd rather die than pay the banker his due? Are you serious?" next="176"></option>
+		<option optionid="2" optiontext="We'll see about that." icon="Quest" actions="SetNpcVar=Q66FindIt-1,UpdateQuest=66-2" next="0"></option>
+	</node>
+	<node id="176" npcName="Robert Riley" anim="1" text="It's a matter of principles! It's about standing up to my rights! I won't be pushed around! Yeah, that's right!" contextBefore="" contextAfter="" posx="1753" posy="372">
+		<option optionid="1" optiontext="Oh well, I doubt your stash will be hard to find." actions="SetVar=Q66FindIt-1,UpdateQuest=66-2" icon="Quest" next="0"></option>
+	</node>
+	<node id="177" npcName="Robert Riley" icon="Coins" anim="1" text=" &lt;color=orange&gt; *You find a large coin stash* &lt;/color&gt;\nHey! You weren't supposed to find that! You can't do this!" contextBefore="" contextAfter="" posx="313" posy="635">
+		<option optionid="1" optiontext="Watch me." next="179"></option>
+	</node>
+	<node id="178" npcName="Robert Riley"  anim="1" text="Bah! This is a legal robbery! You're a thief, you know that?!" contextBefore="" contextAfter="" posx="769" posy="642">
+		<option optionid="1" optiontext="Get out of my way." actions="" next="180"></option>
+	</node>
+	<node id="179" npcName="Robert Riley" anim="1" text="Hey! You weren't supposed to find that! What are you doing?! You can't take all of it, I don't even owe the banker anywhere near that much!!" contextBefore="" contextAfter="" posx="312" posy="930">
+		<option optionid="1" optiontext="It's for the inconvenience you've caused me." next="178"></option>
+	</node>
+	<node id="180" npcName="Robert Riley" anim="1" text="I can't let you take that! You'll ruin me!!" contextBefore="" contextAfter="Robert gets hostile" posx="749" posy="942">
+		<option optionid="1" optiontext="What are you going to do about it?" actions="" next="0"></option>
+	</node>
+
+	<node id="201" npcName="Beatrice Brier" anim="1" text="This dress makes me look so pretty! Don't I look so pretty?" posx="36" posy="21">
+		<option optionid="1" optiontext="Beatrice Brier?" icon="Quest" next="202"></option>
+		<option optionid="2" optiontext="Yes, yes..." next="0"></option>
+	</node>
+	<node id="202" npcName="Beatrice Brier" anim="1" text="Ugh, that tone never means anything good. What do you want?" posx="466" posy="31">
+		<option optionid="1" optiontext="You owe the banker a debt - I'm here to collect." next="203"></option>
+	</node>
+	<node id="203" npcName="Beatrice Brier" anim="1" text="Well, I think that's like your opinion. In my opinion I shouldn't have to pay." posx="907" posy="29">
+		<option optionid="1" optiontext="And whatever makes you think that?" next="204"></option>
+		<option optionid="2" optiontext="Oh really? Unfortunately my opinion's the only one that matters - pay up!" next="208"></option>
+	</node>
+	<node id="204" npcName="Beatrice Brier" anim="1" text="It's like... so... well, why should some sweaty old banker get to have more gold? Doesn't he like have enough already?" posx="1360" posy="28">
+		<option optionid="1" optiontext="Because you borrowed it off of him and it's his gold?" next="205"></option>
+		<option optionid="2" optiontext="I don't have the patience to argue with a spoilt brat - pay up!" next="208"></option>
+	</node>
+	<node id="205" npcName="Beatrice Brier" anim="1" text="Yeah, but I spent his gold on this dress, which I totally deserve by the way! But the gold I have now, I earned it myself, so it's my gold." posx="1797" posy="32">
+		<option optionid="1" optiontext="Lady, this is getting ridiculous! Pay up before I lose my temper." next="208"></option>
+		<option optionid="2" optiontext="That's not how loans work, just pay me and I'll be out of your hair." next="206"></option>
+	</node>
+	<node id="206" npcName="Beatrice Brier" anim="1" text="Umm... no." posx="2264" posy="35">
+		<option optionid="1" optiontext="Lady... it's the right thing to do and you know it!" next="207"></option>
+		<option optionid="2" optiontext="Then I'll have to force you to pay." next="208"></option>
+	</node>
+	<node id="207" npcName="Beatrice Brier" anim="1" text="Ugh, this is so unfair! Loans are like really stupid! Fine, have your stupid gold and get out! " posx="2711" posy="33">
+		<option optionid="1" optiontext="That's all I asked." actions="AddItems=465-1,UpdateQuest=67-3" next="0"></option>
+	</node>
+	<node id="208" npcName="Beatrice Brier" anim="1" text="Don't talk to me like that! You're being mean and I don't have to listen to you!" posx="1152" posy="458">
+		<option optionid="1" optiontext="" actions="SetVar=Q67BernieAggro-1,Cinematic=108" icon="Quest" next="0"></option>
+	</node>
+
+</dialogue>
+
+
+
+

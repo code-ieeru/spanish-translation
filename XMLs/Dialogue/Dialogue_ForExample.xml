@@ -1,0 +1,50 @@
+<dialogue>
+	<node id="1" npcName="the wall of text guy" anim="1" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." posx="53" posy="24">
+		<option optionid="1" optiontext="???" next="2"></option>
+		<option optionid="2" optiontext="Nope, not dealing with this." next="0"></option>
+	</node>
+	<node id="2" npcName="the wall of text guy" anim="1" text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt." posx="484" posy="24">
+		<option optionid="1" optiontext="" next="3"></option>
+	</node>
+	<node id="3" npcName="the wall of text guy" anim="1" text="Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" posx="917" posy="26">
+		<option optionid="1" optiontext="Jesus christ dude." next="0"></option>
+	</node>
+
+
+	<node id="2435" npcName="Example Guy" anim="1" text="Oh hello there, I'm an example guy and I have a quest for you!" contextBefore="first reply option should be marked with quest icon here" contextAfter="" posx="41" posy="35">
+		<option optionid="1" optiontext="Oh really? What kind of a quest?" icon="Quest" next="2436"></option>
+		<option optionid="2" optiontext="Who are you?" next="2439"></option>
+		<option optionid="3" optiontext="What is this place?" next="2440"></option>
+		<option optionid="4" optiontext="I'm not interested." next="0"></option>
+	</node>
+	<node id="2436" npcName="Example Guy" anim="1" text="A very important quest! You see, once upon a time this place contained a thingy and I've come here to find the thingy." contextBefore="" contextAfter="" posx="738" posy="13">
+		<option optionid="1" optiontext="" next="2437"></option>
+	</node>
+	<node id="2437" npcName="Example Guy" anim="1" text="Once I got here, I found this door. I've found no way to get the door open. Perhaps you can get the door open?" contextBefore="1st reply option would need a tag to update the quest" contextAfter="" posx="1243" posy="35">
+		<option optionid="1" optiontext="I'll see what I can do." icon="Quest" next="0"></option>
+		<option optionid="2" optiontext="Have you tried opening the door?" next="2438"></option>
+		<option optionid="3" optiontext="I can't help you, sorry." next="0"></option>
+	</node>
+	<node id="2438" npcName="Example Guy" anim="1" text="I did, but it wouldn't open!" contextBefore="1st reply option would need a tag to update the quest" contextAfter="" posx="1829" posy="56">
+		<option optionid="1" optiontext="I'll see what I can do." icon="Quest" next="0"></option>
+		<option optionid="2" optiontext="I can't help you, sorry." next="0"></option>
+	</node>
+	<node id="2439" npcName="Example Guy" anim="1" text="I'm an example guy and I'm here as an example." contextBefore="first reply option should be marked with quest icon here" contextAfter="" posx="729" posy="394">
+		<option optionid="1" optiontext="So what's this quest you mentioned?" icon="Quest" next="2436"></option>
+		<option optionid="2" optiontext="And what is this place again?" next="2440"></option>
+		<option optionid="3" optiontext="Okey, well I have to go." next="0"></option>
+	</node>
+	<node id="2440" npcName="Example Guy" anim="1" text="This is a place, for example." contextBefore="first reply option should be marked with quest icon here" contextAfter="" posx="194" posy="580">
+		<option optionid="1" optiontext="So what's this quest you mentioned?" icon="Quest" next="2436"></option>
+		<option optionid="2" optiontext="And who are you again?" next="2439"></option>
+		<option optionid="3" optiontext="Okey, well I have to go." next="0"></option>
+	</node>	
+	
+	
+	
+	
+</dialogue>
+
+
+
+

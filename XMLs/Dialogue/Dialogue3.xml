@@ -1,0 +1,9 @@
+<dialogue>
+	<node id="20001" text="dialogue3test">
+		<option optionid="1" next="0" optiontext="bye"></option>
+	</node>
+</dialogue>
+
+
+
+

@@ -1,0 +1,19 @@
+<locations>
+	<location id="1" name="Timberwell Village" unlocked="1"		connections="2,4,6"			pos="898.212,30.53281,439.0646" ></location>
+	<location id="2" name="Grainwater Village" unlocked="1"		connections="1,4"			pos="768.59,29.17048,366.51" ></location>
+	<location id="3" name="Ratcliffe Village" unlocked="1"		connections="4"				pos="774.8776,29.37524,182.3391" ></location>
+	<location id="4" name="North Haywind Stables" unlocked="1"			connections="5,2,1,3,6,7"	pos="504.4125,28.06873,546.5004" ></location>
+	<location id="5" name="West Haywind Militia Camp" unlocked="1"		connections="4,7"			pos="410.48,30.19,383.14" ></location>
+	<location id="6" name="Fog's Dwindling, Mistywood"					connections="4,1"			pos="993.9,40.39677,663.47" ></location>
+	<location id="7" name="Thornhill Gates South"						connections="4,8"				pos="382.53,38.05087,916.33" ></location>
+	<location id="8" name="Thornhill Gates East"						connections="7,13"				pos="580.9576,38.32101,1021.002" ></location>
+
+	<location id="9" name="Bulwark Cliff Town"		unlocked="1"			connections="10,11,12"				pos="2322.84,56.1028,791.66" ></location>
+	<location id="10" name="Bulwark Cliff Farms"		unlocked="1"		connections="9"				pos="2394.98,47.39911,813.74" ></location>
+	<location id="11" name="Ironsilt Fishing Hut"		unlocked="1"		connections="9"				pos="2499.8,31.01173,732.6" ></location>
+	<location id="12" name="River Valley"		unlocked="1"		connections="9"				pos="2201.18,33.81605,766.07" ></location>
+
+	<location id="13" name="Thornhill Trade Station"						connections="8"				pos="709.85,30.92757,1074.85" ></location>
+	
+
+</locations>

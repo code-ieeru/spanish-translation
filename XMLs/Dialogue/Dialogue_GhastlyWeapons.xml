@@ -1,0 +1,633 @@
+<dialogue>
+	<node id="1" npcName="Ser Ames Verrington" anim="1" text="Welcome to the Regal Society for the Preservation of Imberthale's History and Relics, often simply called the Preservation Society. I am Ser Ames Verrington, the Curator in this house." posx="25" posy="20">
+		<option optionid="1" optiontext="I'm here to discuss a matter relating to the Dungeons of Greywall." next="9" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="2" optiontext="And what is it you do exactly?" next="2" icon="Quest" checks="!Quest=54-2-2" />
+		<option optionid="3" optiontext="It's been a pleasure." next="0" />
+	</node>
+	<node id="2" npcName="Ser Ames Verrington" anim="1" text="Imberthale is often considered a rough, remote, perhaps even a backwater land. But there is much history buried here, many secrets, and a lot of them quite valuable indeed." posx="468" posy="21">
+		<option optionid="1" optiontext="" next="3" />
+	</node>
+	<node id="3" npcName="Ser Ames Verrington" anim="1" text="Alas, there are always looters about. Those who would plunder invaluable historical relics for their own personal gain; simply to sell them off to blackmarket buyers, sometimes making them lost forever!" posx="892" posy="21">
+		<option optionid="1" optiontext="" next="4" />
+	</node>
+	<node id="4" npcName="Ser Ames Verrington" anim="1" text="Thus, here at the Preservation Society we aim to acquire relics of great importance and value, to preserve and protect them of course. There is always more work to be done in this field. I wonder, could you be persuaded to take on such tasks?" posx="1313" posy="22">
+		<option optionid="1" optiontext="I help you and you'll lend me aid with Greywall's gatekey?" next="11" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="2" optiontext="Sure, if there's gold in it." next="5" icon="Quest" checks="!Quest=54-2-2" />
+		<option optionid="3" optiontext="Perhaps another time." next="0" />
+	</node>
+	<node id="5" npcName="Ser Ames Verrington" anim="1" text="Indeed, we are perfectly willing to make adequate compensations to our effective contractors. However, before we discuss the finer details of this work, I must ask that you sign our contract at the desk. Talk to me again once you have the signed papers." posx="1742" posy="25">
+		<option optionid="1" optiontext="A contract - what's that needed for?" next="6" />
+		<option optionid="2" optiontext="Sure!" next="8" icon="Quest" />
+	</node>
+	<node id="6" npcName="Ser Ames Verrington" anim="1" text="Oh you know, it's all quite boring and bureaucratic. A simple paper needed to ensure that all parties are in agreement, and that everything is done perfectly legally." posx="2163" posy="21">
+		<option optionid="1" optiontext="But you haven't told me what I'm agreeing to...?" next="7" />
+		<option optionid="2" optiontext="Ah, okay then." next="8" icon="Quest" />
+	</node>
+	<node id="7" npcName="Ser Ames Verrington" anim="1" text="Ah yes, well the nature of our tasks requires the utmost sensitivity and discretion. We can only really discuss it once we have your signature. But I assure you, this is all perfectly legal and you have nothing to worry about! Remember, the pay is good." posx="2605" posy="31">
+		<option optionid="1" optiontext="Umm... okay..." next="8" icon="Quest" />
+		<option optionid="2" optiontext="On another thought, I think I'll pass." next="0" />
+	</node>
+	<node id="8" npcName="Ser Ames Verrington" anim="1" text="Most excellent! I'll eagerly await your signature." posx="2543" posy="422">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=88-1,AddItems=944-1" />
+	</node>
+	<node id="9" npcName="Ser Ames Verrington" anim="1" text="&lt;color=#9C8C77&gt;*You explain to the Curator how you're on a mission to dispel the curse that haunts the Dungeongs of Greywall, that you are in need of the key to its gates and you're aware the Preservation Society was previously tasked with recovering such a key.*&lt;/color&gt;" posx="21" posy="18">
+		<option optionid="1" optiontext="" next="10" />
+	</node>
+	<node id="10" npcName="Ser Ames Verrington" anim="1" actions="SetVar=Q54PSocietyTaskReq-1" text="Is that so...? Hmm, yes... It is true our expertise was hired in an effort to retrieve this key you mention. But you must understand, these are confidential matters we cannot discuss with just anyone. Perhaps if you were to formally bond with our organization, perform a contract for us...?" posx="434" posy="18">
+		<option optionid="1" optiontext="Right... and what is it your organization does exactly?" next="2" icon="Quest" />
+		<option optionid="2" optiontext="I'll have to consider it..." next="0" />
+	</node>
+	<node id="11" npcName="Ser Ames Verrington" anim="1" text="Indeed, I'd be much more willing disclose internal dealings with our effective contractors. However, before we discuss the finer details of this work, I must ask that you sign our contract at the desk. Talk to me again once you have the signed papers." posx="626" posy="612">
+		<option optionid="1" optiontext="A contract - what's that needed for?" next="6" />
+		<option optionid="2" optiontext="Sure!" next="8" icon="Quest" />
+	</node>
+	<node id="15" npcName="Ser Ames Verrington" anim="1" text="Here at the Preservation Society we aim to acquire relics of great importance and value, to preserve and protect them of course. We'd be happy to employ you in this mission, once we have your signature on our contract." posx="44" posy="32">
+		<option optionid="1" optiontext="I have the signed papers here." next="20" checks="HasItem=945-1" icon="Quest" />
+		<option optionid="2" optiontext="What's a contract really needed for?" next="16" />
+		<option optionid="3" optiontext="What is it you do here exactly?" next="17" />
+		<option optionid="4" optiontext="I wish to discuss a matter relating to the Dungeons of Greywall." next="28" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="5" optiontext="I seem to have lost the contract you gave me..." checks="Quest=88-1-1,!ItemExistsGlobal=944|945" icon="Loot" next="27" />
+		<option optionid="6" optiontext="Leave." next="0" />
+	</node>
+	<node id="16" npcName="Ser Ames Verrington" anim="1" text="Oh you know, it's all quite boring and bureaucratic, nothing for you to worry about. A simple paper needed to ensure that all parties are in agreement, and that everything is done perfectly legally. Just in case any questions arise about the work we do here." posx="620" posy="313">
+		<option optionid="1" optiontext="What is it you do here exactly?" next="17" />
+		<option optionid="2" optiontext="I have the signed papers here." next="20" checks="HasItem=945-1" icon="Quest" />
+		<option optionid="3" optiontext="I wish to discuss a matter relating to the Dungeons of Greywall." next="28" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="4" optiontext="I seem to have lost the contract you gave me..." checks="Quest=88-1-1,!ItemExistsGlobal=944|945" icon="Loot" next="27" />
+		<option optionid="5" optiontext="Um, okay." next="0" />
+	</node>
+	<node id="17" npcName="Ser Ames Verrington" anim="1" text="Ah, you see Imberthale is often considered a rough, remote, perhaps even a backwater land. But there is much history buried here, many secrets, and a lot of them quite valuable indeed." posx="180" posy="727">
+		<option optionid="1" optiontext="" next="18" />
+	</node>
+	<node id="18" npcName="Ser Ames Verrington" anim="1" text="Alas, there are always looters about. Those who would plunder invaluable historical relics for their own personal gain; simply to sell them off to blackmarket buyers, sometimes making them lost forever!" posx="606" posy="724">
+		<option optionid="1" optiontext="" next="19" />
+	</node>
+	<node id="19" npcName="Ser Ames Verrington" anim="1" text="Thus, here at the Preservation Society we aim to acquire relics of great importance and value, to preserve and protect them of course. We'd be happy to employ you in this mission, once we have your signature on our contract." posx="1035" posy="726">
+		<option optionid="1" optiontext="What's a contract really needed for?" next="16" />
+		<option optionid="2" optiontext="I have the signed papers here." next="20" checks="HasItem=945-1" icon="Quest" />
+		<option optionid="3" optiontext="I wish to discuss a matter relating to the Dungeons of Greywall." next="28" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="4" optiontext="I seem to have lost the contract you gave me..." checks="Quest=88-1-1,!ItemExistsGlobal=944|945" icon="Loot" next="27" />
+		<option optionid="5" optiontext="I see." next="0" />
+	</node>
+	<node id="20" npcName="Ser Ames Verrington" anim="1" text="Ah, excellent... excellent... Well then, that means you're ready to take on our challenges. Now, locating historical relics isn't so much the problem for us. In fact, Thornhill is stocked full of them, all stored within the catacombs that run beneath the city, yes?" posx="1130" posy="22">
+		<option optionid="1" optiontext="" next="21" />
+	</node>
+	<node id="21" npcName="Ser Ames Verrington" anim="1" text="But we are having some trouble with the Caretaker Eahldahn. He doesn't want us plund... er... protecting the relics within the tombs, saying they're best left lying where they are. Well, we disagree on that." posx="1568" posy="24">
+		<option optionid="1" optiontext="So what do you need from me?" next="23" icon="Quest" />
+		<option optionid="2" optiontext="Hold on, this sounds an awful lot like grave robbing to me." next="22" />
+		<option optionid="3" optiontext="The Caretaker opposes you?" next="24" />
+	</node>
+	<node id="22" npcName="Ser Ames Verrington" anim="1" text="No, no, no! Not at all, I assure you, this is perfectly legal. See, right now all those relics are in fact in danger of being stolen! We want to prevent that, by retrieving them first. We act with the Lord Mayor's blessing, I assure you." posx="2061" posy="343">
+		<option optionid="1" optiontext="The Caretaker opposes you?" next="24" />
+		<option optionid="2" optiontext="So what do you need from me?" next="23" icon="Quest" />
+	</node>
+	<node id="23" npcName="Ser Ames Verrington" anim="1" text="Well, the artifact we'd like you to retrieve for us is none other than the legendary cape of our city's very founder, Samuel Thorne. Not many today remember him, his tomb is one of the oldest within the catacombs." posx="2125" posy="20">
+		<option optionid="1" optiontext="" next="25" />
+	</node>
+	<node id="24" npcName="Ser Ames Verrington" anim="1" text="Indeed, ultimately he holds all the keys to the various crypts and he refuses to lend them to us. It's quite difficult to get behind all those locked doors without the keys, you know." posx="1559" posy="493">
+		<option optionid="1" optiontext="Hold on, this sounds an awful lot like grave robbing to me." next="22" />
+		<option optionid="2" optiontext="So what do you need from me?" next="23" icon="Quest" />
+	</node>
+	<node id="25" npcName="Ser Ames Verrington" anim="1" text="With that said, since the Caretaker refuses to hand over keys, you'll have to find an alternative way. Might I suggest turning to the locksmith of our city, he ought to hold spare copies of all the keys. Perhaps you'll find him more amicable than the caretaker." posx="2552" posy="21">
+		<option optionid="1" optiontext="Where does the locksmith reside?" next="26" />
+		<option optionid="2" optiontext="I'll see what I can do." next="0" actions="UpdateQuest=88-3,RemoveItems=945-1" />
+	</node>
+	<node id="26" npcName="Ser Ames Verrington" anim="1" text="He has a small workshop within the so called Broken Cliff, just north of the marketplace." posx="2987" posy="24">
+		<option optionid="1" optiontext="I'll see what I can do." next="0" actions="UpdateQuest=88-3,RemoveItems=945-1" />
+	</node>
+	<node id="27" npcName="Ser Ames Verrington" anim="1" text="Not to worry, I have a fresh set of papers for you right here." posx="2987" posy="24">
+		<option optionid="1" optiontext="Alright, thanks..." next="0" icon="Loot" actions="AddItems=944-1" />
+	</node>
+	<node id="28" npcName="Ser Ames Verrington" anim="1" text="&lt;color=#9C8C77&gt;*You explain to the Curator how you're on a mission to dispel the curse that haunts the Dungeongs of Greywall, that you are in need of the key to its gates and you're aware the Preservation Society was previously tasked with recovering such a key.*&lt;/color&gt;" posx="15" posy="915">
+		<option optionid="1" optiontext="" actions="SetVar=Q54PSocietyTaskReq-1" next="29" />
+	</node>
+	<node id="29" npcName="Ser Ames Verrington" anim="1" text="Is that so...? Hmm, yes... It is true our expertise was hired in an effort to retrieve this key you mention. But you must understand, these are confidential matters we cannot discuss with just anyone. Perhaps if you were to sign our contract, complete an assignment for us...?" posx="430" posy="917">
+		<option optionid="1" optiontext="I have the signed papers here." next="20" checks="HasItem=945-1" icon="Quest" />
+		<option optionid="2" optiontext="What's a contract really needed for?" next="16" />
+		<option optionid="3" optiontext="What is it you do here exactly?" next="17" />
+		<option optionid="4" optiontext="I seem to have lost the contract you gave me..." checks="Quest=88-1-1,!ItemExistsGlobal=944|945" icon="Loot" next="27" />
+		<option optionid="6" optiontext="I'll have to consider it..." next="0" />
+	</node>
+	<node id="30" npcName="Ser Ames Verrington" anim="1" text="Greetings again, what a pleasure it is to see you. May I inquire, how goes your reclamation effort for the legendary Thorne's Cape?" posx="40" posy="25">
+		<option optionid="1" optiontext="I wish to discuss a matter relating to the Dungeons of Greywall." next="46" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="2" optiontext="It's done, I have acquired it." next="44" checks="Checks=88-7-7,HasItem=946-1" icon="Quest" />
+		<option optionid="3" optiontext="Let's go over the plan one more time." next="38" checks="!Quest=88-7-7" />
+		<option optionid="4" optiontext="Tell me more about Thorne's Cape." next="35" />
+		<option optionid="5" optiontext="What is it you do here exactly?" next="31" />
+		<option optionid="6" optiontext="Leave." next="0" />
+	</node>
+	<node id="31" npcName="Ser Ames Verrington" anim="1" text="Well, we are the Regal Society for the Preservation of Imberthale's History and Relics, often simply called the Preservation Society. I am Ser Ames Verrington, of course, the Curator in this house." posx="71" posy="632">
+		<option optionid="1" optiontext="" next="32" />
+	</node>
+	<node id="32" npcName="Ser Ames Verrington" anim="1" text="Imberthale is often considered a rough, remote, perhaps even a backwater land. But there is much history buried here, many secrets, and a lot of them quite valuable indeed." posx="512" posy="630">
+		<option optionid="1" optiontext="" next="33" />
+	</node>
+	<node id="33" npcName="Ser Ames Verrington" anim="1" text="Alas, there are always looters about. Those who would plunder invaluable historical relics for their own personal gain; simply to sell them off to blackmarket buyers, sometimes making them lost forever!" posx="76" posy="876">
+		<option optionid="1" optiontext="" next="34" />
+	</node>
+	<node id="34" npcName="Ser Ames Verrington" anim="1" text="Thus, here at the Preservation Society we aim to acquire relics of great importance and value, to preserve and protect them of course. To that end we are often happy to employ services of mercenaries such as yourself." posx="512" posy="882">
+		<option optionid="1" optiontext="I wish to discuss a matter relating to the Dungeons of Greywall." next="46" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="2" optiontext="Tell me more about Thorne's Cape." next="35" />
+		<option optionid="3" optiontext="Let's go over the plan one more time." next="38" />
+		<option optionid="4" optiontext="I have acquired Thorne's Cape." next="44" checks="Checks=88-7-7,HasItem=946-1" icon="Quest" />
+		<option optionid="5" optiontext="How very interesting." next="0" />
+	</node>
+	<node id="35" npcName="Ser Ames Verrington" anim="1" text="Ah yes, Samuel Thorne was a famed explorer and the original settler who founded this very city. Tales tell of the cape he wore to ward against the cold winds, as he ventured up the coastline of Calder's Sea, eventually settling on a protected hill here." posx="553" posy="315">
+		<option optionid="1" optiontext="" next="36" />
+	</node>
+	<node id="36" npcName="Ser Ames Verrington" anim="1" text="Such was the origin of Thorne's Hill, which over time morphed into Thornhill. Not many today remember him, but he is buried within the catacombs I expect alongside with his cape. It must be one of the oldest tombs in the city." posx="997" posy="318">
+		<option optionid="1" optiontext="I wish to discuss a matter relating to the Dungeons of Greywall." next="46" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="2" optiontext="How do you know all this ancient history?" next="37" />
+		<option optionid="3" optiontext="What is it you do here exactly?" next="31" />
+		<option optionid="4" optiontext="Let's go over the plan one more time." next="38" />
+		<option optionid="5" optiontext="And now I've acquired his cape." next="44" checks="Checks=88-7-7,HasItem=946-1" icon="Quest" />
+		<option optionid="6" optiontext="How very interesting." next="0" />
+	</node>
+	<node id="37" npcName="Ser Ames Verrington" anim="1" text="Ah, haha! What can I say? I am simply a very learned man who's read a great many books. That's all there is to it." posx="1435" posy="317">
+		<option optionid="1" optiontext="I wish to discuss a matter relating to the Dungeons of Greywall." next="46" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="2" optiontext="What is it you do here exactly?" next="31" />
+		<option optionid="3" optiontext="Let's go over the plan one more time." next="38" />
+		<option optionid="4" optiontext="In any case, I have acquired Thorne's Cape." next="44" checks="Checks=88-7-7,HasItem=946-1" icon="Quest" />
+		<option optionid="5" optiontext="How very interesting." next="0" />
+	</node>
+	<node id="38" npcName="Ser Ames Verrington" anim="1" text="The artifact we'd like you to retrieve for us is none other than the legendary cape of our city's very founder, Samuel Thorne. It must remain where he was buried, in his tomb within the city's catacombs." posx="1515" posy="10">
+		<option optionid="1" optiontext="" next="39" />
+	</node>
+	<node id="39" npcName="Ser Ames Verrington" anim="1" text="But we are having some trouble with the Caretaker Eahldahn. He doesn't want us plund... er... protecting the relics within the tombs, saying they're best left lying where they are." posx="1945" posy="10">
+		<option optionid="1" optiontext="" next="40" />
+	</node>
+	<node id="40" npcName="Ser Ames Verrington" anim="1" text="Since the Caretaker refuses to hand over keys, you'll have to find an alternative way. Might I suggest turning to the locksmith of our city, he ought to hold spare copies of all the keys. Perhaps you'll find him more amicable than the caretaker." posx="2377" posy="12">
+		<option optionid="1" optiontext="Where does the locksmith reside?" next="41" />
+		<option optionid="2" optiontext="This sounds an awful lot like grave robbing to me..." next="42" />
+		<option optionid="3" optiontext="I wanted to ask about something else." next="43" />
+		<option optionid="4" optiontext="I see." next="0" />
+	</node>
+	<node id="41" npcName="Ser Ames Verrington" anim="1" text="You'll find the man in a small workshop of his, located within the so called Broken Cliff, just north of the marketplace." posx="2874" posy="13">
+		<option optionid="1" optiontext="This sounds an awful lot like grave robbing to me..." next="42" />
+		<option optionid="2" optiontext="I wanted to ask about something else." next="43" />
+		<option optionid="3" optiontext="I see." next="0" />
+	</node>
+	<node id="42" npcName="Ser Ames Verrington" anim="1" text="No, no, no! Not at all, I assure you, this is perfectly legal. See, right now all those relics are in fact in danger of being stolen! We want to prevent that, by retrieving them first. We act with the Lord Mayor's blessing, I assure you." posx="2818" posy="394">
+		<option optionid="1" optiontext="Where does the locksmith reside?" next="41" />
+		<option optionid="2" optiontext="I wanted to ask about something else." next="43" />
+		<option optionid="3" optiontext="If you say so." next="0" />
+	</node>
+	<node id="43" npcName="Ser Ames Verrington" anim="1" text="Yes?" posx="3446" posy="22">
+		<option optionid="1" optiontext="I wish to discuss a matter relating to the Dungeons of Greywall." next="46" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="2" optiontext="I have acquired Thorne's Cape." next="44" checks="Checks=88-7-7,HasItem=946-1" icon="Quest" />
+		<option optionid="3" optiontext="Let's go over the plan one more time." next="38" checks="!Quest=88-7-7" />
+		<option optionid="4" optiontext="Tell me more about Thorne's Cape." next="35" />
+		<option optionid="5" optiontext="What is it you do here exactly?" next="31" />
+		<option optionid="6" optiontext="Nevermind." next="0" />
+	</node>
+	<node id="44" npcName="Ser Ames Verrington" anim="1" text="Ah, hahaha! Most excellent! Truth be told, I wasn't quite expecting you to succeed. All previous contractors we'd hired thus far had turned out rather ineffective." posx="1523" posy="912">
+		<option optionid="1" optiontext="" next="45" />
+	</node>
+	<node id="45" npcName="Ser Ames Verrington" anim="1" text="Though we're taking the relic off your hands, not to worry! We have plenty of other treasures to compensate you with. I'm looking forward to working with you again, Master Aercrest, once we've confirmed the location of our next artifact." posx="1954" posy="915">
+		<option optionid="1" optiontext="Hold on, now'd be the time address my concerns about Greywall's gatekey." next="Dialogue_GreywallDungeon-850" checks="Quest=54-2-2" />
+		<option optionid="2" optiontext="Until then, I suppose." next="0" actions="RemoveItems=946-1,UpdateQuest=88-999" />
+	</node>
+	<node id="46" npcName="Ser Ames Verrington" anim="1" text="&lt;color=#9C8C77&gt;*You explain to the Curator how you're on a mission to dispel the curse that haunts the Dungeongs of Greywall, that you are in need of the key to its gates and you're aware the Preservation Society was previously tasked with recovering such a key.*&lt;/color&gt;" posx="15" posy="915">
+		<option optionid="1" optiontext="" actions="SetVar=Q54PSocietyTaskReq-1" next="47" />
+	</node>
+	<node id="47" npcName="Ser Ames Verrington" anim="1" text="Is that so...? Hmm, yes... It is true our expertise was hired in an effort to retrieve this key you mention. But you must understand, these are confidential matters we cannot discuss with just anyone. But perhaps if you were to complete your assignment in recovering Thorne's Cape for us, you might find me more accommodating to your request, hm?" posx="430" posy="917">
+		<option optionid="1" optiontext="Speaking of which, I happen to have it right here..." next="44" checks="Checks=88-7-7,HasItem=946-1" icon="Quest" />
+		<option optionid="2" optiontext="Let's go over the plan one more time." next="38" checks="!Quest=88-7-7" />
+		<option optionid="3" optiontext="Tell me more about Thorne's Cape." next="35" />
+		<option optionid="4" optiontext="What is it you do here exactly?" next="31" />
+		<option optionid="5" optiontext="Right..." next="0" />
+	</node>
+	<node id="50" npcName="Locksmith Adams" anim="1" actions="SetVar=Q88InsufferableBrats-1" text="Been making locks for better part of three decades. It's hard work that I take very seriously, and it requires perfect concentration! Sometimes those neighbors' brats outside disturb it and it's insufferable!" posx="30" posy="19">
+		<option optionid="1" optiontext="I need a key to access a tomb in the catacombs." next="51" />
+		<option optionid="2" optiontext="Those kids outside cause you trouble?" next="52" />
+		<option optionid="3" optiontext="Is that so..." next="0" />
+	</node>
+	<node id="51" npcName="Locksmith Adams" anim="1" text="What?! I can't just hand other people's keys over to anyone who asks! What even makes you think I have a copy of all the keys in my key drawer here?! Preposterous, I'll have you know I take my work very seriously!" posx="479" posy="22">
+		<option optionid="1" optiontext="There's nothing I can offer to change your mind?" next="54" />
+		<option optionid="2" optiontext="Those kids outside cause you trouble?" next="52" />
+		<option optionid="3" optiontext="Okay, sorry!" next="0" />
+	</node>
+	<node id="52" npcName="Locksmith Adams" anim="1" text="Yes, I said that didn't I? They are insufferable with their screeching! And why should I have to move my workshop?! It's been here long before those little brats! Next time they disturb me, I'll... I'll... well I'll throw a fit, that's what I'll do!" posx="426" posy="417">
+		<option optionid="1" optiontext="Have you tried being a little less uptight?" next="53" />
+		<option optionid="2" optiontext="Listen, I need a key to access a tomb in the catacombs." next="51" />
+		<option optionid="3" optiontext="Okay then." next="0" />
+	</node>
+	<node id="53" npcName="Locksmith Adams" anim="1" text="Uptight?! What are you even saying, man?! I take my work very seriously!" posx="983" posy="307">
+		<option optionid="1" optiontext="Okay but listen, I need a key to access a tomb in the catacombs." next="51" />
+		<option optionid="2" optiontext="Forget I said anything." next="0" />
+	</node>
+	<node id="54" npcName="Locksmith Adams" anim="1" text="Offer?! Are you trying to bribe me, I'll have you know I take my work very - VERY - seriously! Only Caretaker Eahldahn grants the right for anyone to enter the crypts, but I'm guessing you wouldn't be asking me unless he's forbidden it! Don't take me for a fool!" posx="1458" posy="20">
+		<option optionid="1" optiontext="But you do have a key?" next="55" />
+		<option optionid="2" optiontext="Those kids outside cause you trouble?" next="52" />
+		<option optionid="3" optiontext="Fine, forget I asked." next="0" />
+	</node>
+	<node id="55" npcName="Locksmith Adams" anim="1" text="Hah, you'll get nothing out of me! I definitely will not admit to having copies of all the keys in my key drawer right here!" posx="1897" posy="22">
+		<option optionid="1" optiontext="Those kids outside cause you trouble?" next="52" />
+		<option optionid="2" optiontext="Fine, forget I asked." next="0" />
+	</node>
+	<node id="60" npcName="Bored Child" anim="1" switchtalker="896" text="Adults are boring... whaddya want with us?" posx="24" posy="21">
+		<option optionid="1" optiontext="You kids have a habit of upsetting the locksmith?" next="61" checks="Var=Q88InsufferableBrats-1-1" icon="Quest" />
+		<option optionid="2" optiontext="Nothing, nevermind." next="0" />
+	</node>
+	<node id="61" npcName="Bored Child" anim="89" switchtalker="895" text="Cranky Adams you mean? Oh yeah, he's so easy, hahaha! Gets all mad and red in the face every time." posx="479" posy="23">
+		<option optionid="1" optiontext="" next="62" />
+	</node>
+	<node id="62" npcName="Bored Child" anim="1" switchtalker="894" text="But our parents told us not to bother him no more, said they um... forbeddied us?" posx="909" posy="23">
+		<option optionid="1" optiontext="How about you cause a scene for him, one last time?" next="63" icon="Quest" />
+	</node>
+	<node id="63" npcName="Bored Child" anim="1" switchtalker="894" text="Ummmm... I dunnooo... we'll get in trouble with our parents..." posx="1347" posy="23">
+		<option optionid="1" optiontext="" next="64" />
+	</node>
+	<node id="64" npcName="Bored Child" anim="1" switchtalker="896" text="Yeah, like... what's in it for us?" posx="1783" posy="25">
+		<option optionid="1" optiontext="" next="65" />
+	</node>
+	<node id="65" npcName="Bored Child" anim="1" switchtalker="895" text="Been craving for pie all day, oh sweet berry pie...! You gotta bring us pie." posx="2218" posy="23">
+		<option optionid="1" optiontext="" next="66" />
+	</node>
+	<node id="66" npcName="Bored Child" anim="1" switchtalker="896" text="Yeah, we want pie! You get us a whole berry pie and we'll pull one on Cranky Adams - deal?" posx="2658" posy="19">
+		<option optionid="1" optiontext="Funny you should say that, I happen to be carrying a pie with me..." next="67" showGreyedOutOption="1" checks="HasItem=950-1" icon="Quest" />
+		<option optionid="2" optiontext="I'll see what I can do." next="68" icon="LeadingExit" actions="SetVar=Q88InsufferableBrats-2" />
+	</node>
+	<node id="67" npcName="Bored Child" anim="1" switchtalker="894" text="Oh, YAY!! SWEET!!" posx="3316" posy="12">
+		<option optionid="1" optiontext="" next="0" actions="RemoveItems=950-1,Cinematic=137" icon="Quest" />
+	</node>
+	<node id="68" npcName="Bored Child" text="&lt;color=#9C8C77&gt; *It should be possible possible to bake the berry pie the children are requesting, though it may take some skill not to make a mess of it.* &lt;/color&gt;" posx="2417" posy="613">
+		<option optionid="1" optiontext="Leave." next="0" />
+	</node>
+	<node id="70" npcName="Bored Child" anim="1" switchtalker="896" text="Oh look, it's that adult again. Did you bring us pie? No pie, no getting us pull a prank on Cranky Adams." posx="613" posy="609">
+		<option optionid="1" optiontext="Oh yes, I happen to be carrying a pie." next="67" showGreyedOutOption="1" checks="HasItem=950-1" icon="Quest" />
+		<option optionid="2" optiontext="There really isn't anything else I could offer you?" next="71" />
+		<option optionid="3" optiontext="Don't have one right now..." next="0" />
+	</node>
+	<node id="71" npcName="Bored Child" anim="1" switchtalker="894" text="We want PIE!!" posx="336" posy="320">
+		<option optionid="1" optiontext="" next="72" />
+	</node>
+	<node id="72" npcName="Bored Child" anim="1" switchtalker="895" text="Yeah, berry pie! Don't want nothing else!" posx="768" posy="321">
+		<option optionid="1" optiontext="" next="73" />
+	</node>
+	<node id="73" npcName="Bored Child" anim="1" switchtalker="896" text="No pie, no prank on Adams. Don't wanna get in trouble with our parents for nothin'." posx="1198" posy="321">
+		<option optionid="1" optiontext="" next="74" />
+	</node>
+	<node id="74" npcName="Bored Child" text="&lt;color=#9C8C77&gt; *It should be possible possible to bake the berry pie the children are requesting, though it may take some skill not to make a mess of it.* &lt;/color&gt;" posx="1633" posy="320">
+		<option optionid="1" optiontext="Leave." next="0" />
+	</node>
+	<node id="80" npcName="Ser Ames Verrington" anim="1" text="What a pleasure it is to meet you again, Master Aercrest. There are many more relics still that are in need of our protection. I'm certain we can come to an agreement about contracting your services again, should the moment arise." posx="40" posy="19">
+		<option optionid="1" optiontext="I'm here to discuss a matter relating to the Dungeons of Greywall." next="Dialogue_GreywallDungeon-850" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="2" optiontext="Could use some more work to be honest..." next="100" icon="Quest" checks="Quest=88-999-999|95-0-0" />
+		<option optionid="3" optiontext="I was wondering if you have any dusty old treasures to sell." next="0" actions="OpenShop=77" />
+		<option optionid="4" optiontext="About the artifacts that interest you..." next="85" />
+		<option optionid="5" optiontext="Remind me, what is it you do here exactly?" next="81" />
+		<option optionid="6" optiontext="Leave." next="0" />
+	</node>
+	<node id="81" npcName="Ser Ames Verrington" anim="1" text="Well, we are the Regal Society for the Preservation of Imberthale's History and Relics, often simply called the Preservation Society. I am Ser Ames Verrington, of course, the Curator in this house." posx="71" posy="632">
+		<option optionid="1" optiontext="" next="82" />
+	</node>
+	<node id="82" npcName="Ser Ames Verrington" anim="1" text="Imberthale is often considered a rough, remote, perhaps even a backwater land. But there is much history buried here, many secrets, and a lot of them quite valuable indeed." posx="512" posy="630">
+		<option optionid="1" optiontext="" next="83" />
+	</node>
+	<node id="83" npcName="Ser Ames Verrington" anim="1" text="Alas, there are always looters about. Those who would plunder invaluable historical relics for their own personal gain; simply to sell them off to blackmarket buyers, sometimes making them lost forever!" posx="76" posy="876">
+		<option optionid="1" optiontext="" next="84" />
+	</node>
+	<node id="84" npcName="Ser Ames Verrington" anim="1" text="Thus, here at the Preservation Society we aim to acquire relics of great importance and value, to preserve and protect them of course. To that end we are often happy to employ services of mercenaries such as yourself." posx="512" posy="882">
+		<option optionid="1" optiontext="I'm here to discuss a matter relating to the Dungeons of Greywall." next="Dialogue_GreywallDungeon-850" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="2" optiontext="Could use some more work to be honest..." next="100" icon="Quest" checks="Quest=88-999-999|95-0-0" />
+		<option optionid="3" optiontext="About the artifacts that interest you..." next="85" />
+		<option optionid="4" optiontext="I was wondering if you have any dusty old treasures to sell." next="0" actions="OpenShop=77" />
+		<option optionid="5" optiontext="How very interesting." next="0" />
+	</node>
+	<node id="85" npcName="Ser Ames Verrington" anim="1" text="Indeed...?" posx="916" posy="17">
+		<option optionid="1" optiontext="Wanted to hear more about the Scepter of Destiny." next="90" checks="Quest=95-999-999" />
+		<option optionid="2" optiontext="Wanted to hear more about Thorne's Cape." next="87" />
+		<option optionid="3" optiontext="Nevermind." next="86" icon="LeadingExit" />
+	</node>
+	<node id="86" npcName="Ser Ames Verrington" anim="1" text="Well then...?" posx="1059" posy="628">
+		<option optionid="1" optiontext="I'm here to discuss a matter relating to the Dungeons of Greywall." next="Dialogue_GreywallDungeon-850" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="2" optiontext="Could use some more work to be honest..." next="100" icon="Quest" checks="Quest=88-999-999|95-0-0" />
+		<option optionid="3" optiontext="I was wondering if you have any dusty old treasures to sell." next="0" actions="OpenShop=77" />
+		<option optionid="4" optiontext="About the artifacts that interest you..." next="85" />
+		<option optionid="5" optiontext="Remind me, what is it you do here exactly?" next="81" />
+		<option optionid="6" optiontext="I'll leave you to it." next="0" />
+	</node>
+	<node id="87" npcName="Ser Ames Verrington" anim="1" text="Ah yes, Samuel Thorne was a famed explorer and the original settler who founded this very city. Tales tell of the cape he wore to ward against the cold winds, as he ventured up the coastline of Calder's Sea, eventually settling on a protected hill here." posx="1363" posy="17">
+		<option optionid="1" optiontext="" next="88" />
+	</node>
+	<node id="88" npcName="Ser Ames Verrington" anim="1" text="Such was the origin of Thorne's Hill, which over time morphed into Thornhill. Not many today remember him, but he is buried within the catacombs, where you also found his legendary cape. It must be one of the oldest tombs in the city, I believe." posx="1814" posy="18">
+		<option optionid="1" optiontext="Wanted to hear more about the Scepter of Destiny." next="90" checks="Quest=95-999-999" />
+		<option optionid="2" optiontext="How do you know all this ancient history anyway?" next="89" />
+		<option optionid="3" optiontext="Suppose I've heard enough." next="86" icon="LeadingExit" />
+	</node>
+	<node id="89" npcName="Ser Ames Verrington" anim="1" text="Ah, haha! What can I say? I am simply a very learned man who's read a great many books. That's all there is to it." posx="2263" posy="17">
+		<option optionid="1" optiontext="Wanted to hear more about the Scepter of Destiny." next="90" checks="Quest=95-999-999" />
+		<option optionid="2" optiontext="Wanted to hear more about Thorne's Cape." next="87" />
+		<option optionid="3" optiontext="Suppose I've heard enough." next="86" icon="LeadingExit" />
+	</node>
+	<node id="90" npcName="Ser Ames Verrington" anim="1" text="Ah yes, a tale tragically comic that. Once upon a time in Thornhill's history a great soothsayer bestowed a prophesy upon a child named George that he was a great child of destiny, promised to perform great feats and to forge an empire in the northlands!" posx="7" posy="8">
+		<option optionid="1" optiontext="" next="91"></option>
+	</node>
+	<node id="91" npcName="Ser Ames Verrington" anim="1" text="Thus the greatest artisans in the city at the time came together to create an astonishing scepter to symbolize his majesty. However, George the Child didn't really manage to do anything out of the ordinary with the short time he had left, as only a few years later a terrible fever took him away." posx="417" posy="9">
+		<option optionid="1" optiontext="" next="92"></option>
+	</node>
+	<node id="92" npcName="Ser Ames Verrington" anim="1" text="He was buried within the catacombs alongside the great scepter, while the soothsayer was thrown off a cliff and his practice became banned in the city. To this day, in fact, prophesizing about the future within these city walls will land you in trouble." posx="823" posy="8">
+		<option optionid="1" optiontext="Wanted to hear more about Thorne's Cape." next="87" />
+		<option optionid="2" optiontext="How do you know all this ancient history anyway?" next="89" />
+		<option optionid="3" optiontext="Suppose I've heard enough." next="86" icon="LeadingExit" />
+	</node>
+
+	<node id="100" npcName="Ser Ames Verrington" anim="1" text="Yes, yes, excellent! You truly are becoming my favorite little mercenary! Ahem, just one little thing before we get started - a tiny little contract to be signed. Let's get the formalities out of the way, shall we?" posx="8" posy="6">
+		<option optionid="1" optiontext="Fine, give me the parchment..." next="101" icon="Quest">
+		</option>
+		<option optionid="2" optiontext="Wait, didn't I already sign a contract before?" next="102">
+		</option>
+		<option optionid="3" optiontext="Seem to have lost my interest." next="0">
+		</option>
+	</node>
+	<node id="101" npcName="Ser Ames Verrington" anim="1" text="Perfection! Here's the contract, and if you'd just sign it by our table over there, it will take but a short moment...\n\n&lt;color=#9C8C77&gt;*Right-click and use the contract on the interactable table to sign it...*&lt;/color&gt;" posx="420" posy="7">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=95-1,AddItems=1803-1-true">
+		</option>
+	</node>
+	<node id="102" npcName="Ser Ames Verrington" anim="1" text="Ahm yes, of course, but that was then and this is now. I don't know what to tell you; we deal with very important matters here, therefore we must have comprehensive documentation regarding all matters, especially those erm... pertaining to employment..." posx="420" posy="247">
+		<option optionid="1" optiontext="Fine, give me the parchment." next="101" icon="Quest">
+		</option>
+		<option optionid="2" optiontext="Well, I seem to have lost my interest." next="0">
+		</option>
+	</node>
+	<node id="115" npcName="Ser Ames Verrington" anim="1" text="Once you've signed those papers, Master Aercrest, we'll be ready to get on with the real business at hand." posx="7" posy="6">
+		<option optionid="1" optiontext="Actually, I'm here to discuss a matter relating to the Dungeons of Greywall." next="Dialogue_GreywallDungeon-850" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="2" optiontext="I've signed the contract..." next="116" checks="HasItem=1804-1,Var=Q95HasReadContract-0-0" icon="Quest">
+		</option>
+		<option optionid="3" optiontext="Your contract... wasn't it the exact same one you had me sign previously?!" next="123" checks="HasItem=1804-1,Var=Q95HasReadContract-1-1" icon="Quest">
+		</option>
+		<option optionid="4" optiontext="I seem to have lost the contract you gave me..." next="124" checks="Quest=95-1-1,!ItemExistsGlobal=1803|1804" icon="Loot">
+		</option>
+		<option optionid="5" optiontext="I was wondering if you have any dusty old treasures to sell." next="0" actions="OpenShop=77" />
+		<option optionid="6" optiontext="Hold on..." next="0" icon="">
+		</option>
+	</node>
+	<node id="116" npcName="Ser Ames Verrington" anim="1" text="Perfect, I'll just file that somewhere in our unending pile of contracts... and we can get right back to what we do best here, which is protecting relics. Previously we had you remove the Cape of Samuel Thorne from Thornhill Catacombs. But it's by far not the only artifact stored within those halls that's in dire need of our protection." posx="413" posy="5">
+		<option optionid="1" optiontext="" next="117">
+		</option>
+	</node>
+	<node id="117" npcName="Ser Ames Verrington" anim="1" text="Indeed, this time the task that befalls on you is to retrieve the Scepter of Destiny. Once upon a time in Thornhill's history a great soothsayer bestowed a prophesy upon a child named George that he was a great child of destiny, promised to perform great feats and to forge an empire in the northlands!" posx="820" posy="4">
+		<option optionid="1" optiontext="" next="118">
+		</option>
+	</node>
+	<node id="118" npcName="Ser Ames Verrington" anim="1" text="Thus the greatest artisans in the city at the time came together to create an astonishing scepter to symbolize his majesty. However, George the Child didn't really manage to do anything out of the ordinary with the short time he had left, as only a few years later a terrible fever took him away. He was buried within the catacombs alongside the great scepter, while the soothsayer was thrown off a cliff and his practice became banned in the city." posx="1228" posy="6">
+		<option optionid="1" optiontext="So you want me to venture into the catacombs again, this time in search of the scepter?" next="119" icon="Quest">
+		</option>
+	</node>
+	<node id="119" npcName="Ser Ames Verrington" anim="1" text="Yes, you're catching on quick. Just one hurdle in the way, there are many locked gates within the catacombs and another key will be required to open the way. A key most certainly held by... ahem... Locksmith Adams, I believe you know him from before." posx="1638" posy="6">
+		<option optionid="1" optiontext="Hold on... why's this starting to sound a little too familiar?" next="120">
+		</option>
+		<option optionid="2" optiontext="And how do you suggest I get his keys?" next="121">
+		</option>
+		<option optionid="3" optiontext="Sounds like I've heard enough." next="122" icon="Quest">
+		</option>
+	</node>
+	<node id="120" npcName="Ser Ames Verrington" anim="1" text="Ahem, yes... in short we're asking you to retrieve an artifact from the same crypt as before, which you will need to enter using a key acquired from the same person as before..." posx="2048" posy="5">
+		<option optionid="1" optiontext="And how do you suggest I get his keys?" next="121">
+		</option>
+		<option optionid="2" optiontext="Sounds like I've heard enough." next="122" icon="Quest">
+		</option>
+	</node>
+	<node id="121" npcName="Ser Ames Verrington" anim="1" text="Ah yes, I suppose the locksmith wasn't most forthcoming last time either? I'm sure you'll think of something, perhaps the same way you got his keys last time...?" posx="2046" posy="307">
+		<option optionid="1" optiontext="Is it just me, or why does this sound all too familiar?" next="120">
+		</option>
+		<option optionid="2" optiontext="This is getting out of hand." next="122" icon="Quest">
+		</option>
+	</node>
+	<node id="122" npcName="Ser Ames Verrington" anim="1" text="To remind you, the locksmith lives just north of here near the cemetery in a district of the city now known as Broken Cliff. Good luck!" posx="1578" posy="417">
+		<option optionid="1" optiontext="Yes, okay." next="0" actions="UpdateQuest=95-3,RemoveItems=1804-1">
+		</option>
+	</node>
+	<node id="123" npcName="Ser Ames Verrington" anim="1" text="No, no, I'm certain it was different. It's just bureaucracy you know, documents mandated by law or something. I'm afraid I have no influence over it! But with that out of the way, we can get right back to what we do best here, which is protecting relics. Previously we had you remove the Cape of Samuel Thorne from Thornhill Catacombs. But it's by far not the only artifact stored within those halls that's in dire need of our protection." posx="414" posy="223">
+		<option optionid="1" optiontext="" next="117">
+		</option>
+	</node>
+	<node id="124" npcName="Ser Ames Verrington" anim="1" text="Luckily then, I have an endless supply of contracts. Really, sometimes I myself am not quite sure where they all come from..." posx="611" posy="610">
+		<option optionid="1" optiontext="Right, thanks..." next="0" actions="AddItems=1803-1-true" icon="Loot">
+		</option>
+	</node>
+	<node id="130" npcName="Ser Ames Verrington" anim="1" text="You did a good job handing us the Cape of Thorne, I'm sure this task will also prove to be no trouble. I have great faith in you." posx="0" posy="6">
+		<option optionid="1" optiontext="Actually, I'm here to discuss a matter relating to the Dungeons of Greywall." next="Dialogue_GreywallDungeon-850" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="2" optiontext="Behold, the Scepter of Destiny!" next="150" checks="Quest=95-12-12,HasItem=987-1" icon="Quest">
+		</option>
+		<option optionid="3" optiontext="Remind me, I'm looking for some kind of a scepter?" next="131">
+		</option>
+		<option optionid="4" optiontext="I was wondering if you have any dusty old treasures to sell." next="0" actions="OpenShop=77" />
+		<option optionid="5" optiontext="How nice." next="0" icon="">
+		</option>
+	</node>
+	<node id="131" npcName="Ser Ames Verrington" anim="1" text="Exactly, the Scepter of Destiny. It lies somewhere deeper within Thornhill Catacombs, I'm certain of it. But in order to access it, you will need another key from our friend Locksmith Adams first. His home is in a district called the Broken Cliff, if you recall." posx="413" posy="7">
+		<option optionid="1" optiontext="What's the Scepter of Destiny?" next="132">
+		</option>
+		<option optionid="2" optiontext="Is it just me, or does this task sound a little too familiar?" next="134">
+		</option>
+		<option optionid="3" optiontext="Any suggestions on how to get him to give me another set of crypt keys?" next="135">
+		</option>
+		<option optionid="4" optiontext="Actually, I'm here to discuss a matter relating to the Dungeons of Greywall." next="Dialogue_GreywallDungeon-850" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="5" optiontext="Nevermind." next="0">
+		</option>
+	</node>
+	<node id="132" npcName="Ser Ames Verrington" anim="1" text="Ah yes, funny story behind that one actually. Once upon a time in Thornhill's history, a great soothsayer bestowed a prophesy upon a child named George that he was a great child of destiny, destined to perform great things and to forge an empire in the northlands!" posx="828" posy="6">
+		<option optionid="1" optiontext="" next="133">
+		</option>
+	</node>
+	<node id="133" npcName="Ser Ames Verrington" anim="1" text="Thus the greatest artisans in the city at the time came together to create an astonishing scepter to symbolize his majesty. However, George the child didn't really manage to do anything out of the ordinary, and only a few years later a terrible fever took him away. He was buried within the catacombs alongside the great scepter, while the soothsayer was thrown off a cliff and his practice became banned in the city." posx="1238" posy="7">
+		<option optionid="1" optiontext="Back to the task itself, something about it sounds awfully familiar." next="134">
+		</option>
+		<option optionid="2" optiontext="About the keys, any suggestions on how to get those?" next="135">
+		</option>
+		<option optionid="3" optiontext="Actually, I'm here to discuss a matter relating to the Dungeons of Greywall." next="Dialogue_GreywallDungeon-850" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="4" optiontext="I see." next="0">
+		</option>
+	</node>
+	<node id="134" npcName="Ser Ames Verrington" anim="1" text="How do you mean? We're asking you to retrieve an artifact from the same crypt as before, which you will need to enter using a key acquired from the same person as before... Come to think of it, it does sound familiar." posx="825" posy="235">
+		<option optionid="1" optiontext="About the keys, any suggestions on how to get those?" next="135">
+		</option>
+		<option optionid="2" optiontext="What's the Scepter of Destiny, anyway?" next="132">
+		</option>
+		<option optionid="3" optiontext="Actually, I'm here to discuss a matter relating to the Dungeons of Greywall." next="Dialogue_GreywallDungeon-850" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="4" optiontext="It does, doesn't it?" next="0">
+		</option>
+	</node>
+	<node id="135" npcName="Ser Ames Verrington" anim="1" text="Ah yes, I suppose the locksmith wasn't most forthcoming last time either? I'm sure you'll think of something, perhaps the same way you got his keys last time...?" posx="1262" posy="387">
+		<option optionid="1" optiontext="What's the Scepter of Destiny, anyway?" next="132">
+		</option>
+		<option optionid="2" optiontext="Something about this task is starting to sound awfully familiar..." next="134">
+		</option>
+		<option optionid="3" optiontext="Actually, I'm here to discuss a matter relating to the Dungeons of Greywall." next="Dialogue_GreywallDungeon-850" icon="Quest" checks="Quest=54-2-2" />
+		<option optionid="4" optiontext="Why, what an incredible idea..." next="0">
+		</option>
+	</node>
+	<node id="140" npcName="Locksmith Adams" anim="1" text="You, do I know you? I don't want to hear any nonsense, I've had quite enough distractions for one day. I'll have you know, I take my work very - VERY - seriously." posx="8" posy="8">
+		<option optionid="1" optiontext="Listen, I'm really in need of a key to a crypt here..." next="142">
+		</option>
+		<option optionid="2" optiontext="How seriously, though?" next="141">
+		</option>
+		<option optionid="3" optiontext="Okay, I'm leaving." next="0">
+		</option>
+	</node>
+	<node id="141" npcName="Locksmith Adams" anim="1" text="Very, very, very seriously!" posx="428" posy="8">
+		<option optionid="1" optiontext="Listen, I'm really in need of a key to a crypt here..." next="142">
+		</option>
+		<option optionid="2" optiontext="Seriously, I'm leaving." next="0">
+		</option>
+	</node>
+	<node id="142" npcName="Locksmith Adams" anim="1" text="What?! I'm not allowed to give my keys to anyone! Wait a moment, are you the one who's been rummaging around my keys? Last time I checked they were out of order and could almost swear I'm missing one..." posx="838" posy="9">
+		<option optionid="1" optiontext="" next="143">
+		</option>
+	</node>
+	<node id="143" npcName="Locksmith Adams" anim="1" text="You people need to stop messing around with my keys! I take my work very seriously! Now get out!\n\n&lt;color=#9C8C77&gt;*Couldn't hurt trying to appeal to the kids outside for help again...*&lt;/color&gt;" posx="1250" posy="12">
+		<option optionid="1" optiontext="Uh..." next="0">
+		</option>
+	</node>
+	<node id="150" npcName="Ser Ames Verrington" anim="1" text="Outstanding work, as always, Master Aercrest! We will now have to take that scepter from you, for safekeeping of course... yes... yes... but fear not! We have no shortage of trinkets of lesser prominence to offer as payment." posx="14" posy="12">
+		<option optionid="1" optiontext="" next="151"></option>
+	</node>
+	<node id="151" npcName="Ser Ames Verrington" anim="1" text="Let's see now... We have piles and piles of ancient treasure coins stored away, we'll be happy to give you a share as payment. Or perhaps a more practical object? A bright golden candelabrum with some power..." posx="423" posy="13">
+		<option optionid="1" optiontext="Tell me about the ancient coins." next="152" itemIcon="1262"></option>
+		<option optionid="2" optiontext="Tell me about the candelabrum." next="153" itemIcon="1259"></option>
+	</node>
+	<node id="152" npcName="Ser Ames Verrington" anim="1" itemIcon="1262" text="Who wouldn't want to put on display golden piles of wealth and power, hm? These are currencies that have long since fallen out of favor with shopkeepers of today's times, but they're quite impressive nonetheless. Of course, you may exchange them here for very real coins as well." posx="832" posy="13">
+		<option optionid="1" optiontext="Tell me about the candelabrum." next="153" itemIcon="1259"></option>
+		<option optionid="2" optiontext="I'll take it." next="154" actions="SetVar=Q95Reward-1" icon="Quest"></option>
+	</node>
+	<node id="153" npcName="Ser Ames Verrington" anim="1" itemIcon="1259" text="Something my men acquired in a recent tomb robb... ahem, relic protection mission. I do believe it contains some magical properties, empowering whoever carries it. Its candles seem to burn with eternal lights, to help you navigate the darkest caves and tombs you may yet find yourself exploring." posx="834" posy="333">
+		<option optionid="1" optiontext="Tell me about the ancient coins." next="152" itemIcon="1262"></option>
+		<option optionid="2" optiontext="I'll take it." next="154" actions="SetVar=Q95Reward-2" icon="Quest"></option>
+	</node>
+	<node id="154" npcName="Ser Ames Verrington" anim="1" text="Excellent choice! For the rest, I'm always willing to sell it to you for a fair price - you need but let me know. Farewell, Master Aercrest." posx="1312" posy="193">
+		<option optionid="1" optiontext="Thanks." next="0" checks="Var=Q95Reward-1-1" actions="RemoveItems=987-1,AddItems=1260-1|1261-1|1262-1,UpdateQuest=95-999"></option>
+		<option optionid="2" optiontext="Thanks." next="0" checks="Var=Q95Reward-2-2" actions="RemoveItems=987-1,AddItems=1259-1,UpdateQuest=95-999"></option>
+	</node>
+
+	<node id="160" npcName="Arcanist Naela" anim="1" text="What rumor? There is no rumor about that. In fact, I'm pretty sure the only ones who know about my bombs are those nosy kids from the neighborhood. Did they send you?" posx="5" posy="5">
+		<option optionid="1" optiontext="Uh... do you have the bombs or not?" next="161" icon="Quest">
+		</option>
+	</node>
+	<node id="161" npcName="Arcanist Naela" anim="1" text="You shouldn't let children play around with such things, they're not toys! I really don't feel comfortable just giving them to you, not without you getting something for me first." posx="413" posy="5">
+		<option optionid="1" optiontext="Color me shocked, what is it you want then?" next="162" icon="Quest">
+		</option>
+	</node>
+	<node id="162" npcName="Arcanist Naela" anim="1" text="There's a shaman man living on the north side of Prowler's Thicket, up from the tavern. I've been trying to get him to make divination bones for me for some time, but he's not been very forthcoming. Get him to make my divination bones, and I'll consider letting you have the explosive." posx="819" posy="5">
+		<option optionid="1" optiontext="Right." next="0" actions="UpdateQuest=95-5-5">
+		</option>
+	</node>
+	<node id="163" npcName="Arcanist Naela" anim="1" text="There's a shaman man living on the north side of Prowler's Thicket, up from the tavern. I've been trying to get him to make divination bones for me for some time, but he's not been very forthcoming. Get him to make my divination bones, and I'll consider letting you have the explosive." posx="8" posy="306">
+		<option optionid="1" optiontext="Right." next="0">
+		</option>
+	</node>
+	<node id="165" npcName="Arcanist Naela" anim="1" text="You do? Oh. Frankly I thought I was just getting you off my hair, wasn't actually expecting you to come back with those bones. Well I guess I now owe you one of my specialty arcane bombs..." posx="8" posy="10">
+		<option optionid="1" optiontext="" next="166">
+		</option>
+	</node>
+	<node id="166" npcName="Arcanist Naela" anim="1" itemIcon="1807" text="Yes, fine, have one. But please remember to take care with them! They can really knock a man in the air." posx="419" posy="9">
+		<option optionid="1" optiontext="Yes, yes..." next="0" actions="UpdateQuest=95-8-8,AddItems=1807-1-true,RemoveItems=1808-1">
+		</option>
+	</node>
+	<node id="170" npcName="Thor Ganesh" anim="1" text="She is a seeker of wisdom and secrets, this is true. It is not out of spite I have rejected her previous requests. The skull of an ancestor is required, this I do not have. But I know of one who holds it." posx="11" posy="8">
+		<option optionid="1" optiontext="" next="171">
+		</option>
+	</node>
+	<node id="171" npcName="Thor Ganesh" anim="1" text="Next to my home is a hill, on that hill lives a troll. The troll is old, he has hunted humans for many decades. The first one he ever killed, he kept the skull as a trophy. It is now the skull of an ancestor. Bring it to me and I may complete the Bones of Divination." posx="419" posy="6">
+		<option optionid="1" optiontext="So I need to take out the troll, of course." next="0" checks="Quest=95-5-5" actions="UpdateQuest=95-6">
+		</option>
+		<option optionid="2" optiontext="So I need to take out the troll, of course." next="0" checks="Quest=95-6-6">
+		</option>
+	</node>
+	<node id="175" npcName="Thor Ganesh" anim="1" itemIcon="1808" text="&lt;color=#9C8C77&gt;*The shaman takes the skull and uses it to create an odd looking trinket from bones, then he hands it to you.*&lt;/color&gt;\n\nThe spirits will guide you, as they eventually always do. Now they will guide the Arcanist of Thornhill also." posx="9" posy="10">
+		<option optionid="1" optiontext="Thanks." next="0" actions="UpdateQuest=95-7-7,AddItems=1808-1-true,RemoveItems=1809-1">
+		</option>
+	</node>
+	<node id="200" npcName="Ser Ames Verrington" anim="1" text="Back for more, eh? This is a big one, same place as always. Last one there, I promise.">
+		<option optionid="1" optiontext="Ah, this is getting old, but okay - go on." next="201" />
+		<option optionid="2" optiontext="Nope, not today, sorry." next="0" />
+	</node>
+	<node id="201" npcName="Ser Ames Verrington" anim="1" text="First, we need your signature - you know the routine.">
+		<option optionid="1" optiontext="Aye, hand it over." icon="Quest" actions="UpdateQuest=109-1,AddItems=1805-1" next="0" />
+		<option optionid="2" optiontext="You know what? I'm not in the mood for dealing with undead right now." next="0" />
+	</node>
+	<node id="215" npcName="Ser Ames Verrington" anim="1" text="Sign it yet?">
+		<option optionid="1" optiontext="Yes." checks="HasItem=1806-1" icon="Quest" actions="UpdateQuest=109-2,RemoveItems=1806-1" next="217" />
+		<option optionid="2" optiontext="I lost my contract." checks="Quest=95-1-1,!ItemExistsGlobal=1805|1806" icon="Loot" next="216" />
+		<option optionid="3" optiontext="Not yet." next="0" />
+	</node>
+	<node id="216" npcName="Ser Ames Verrington" anim="1" text="No idea how you managed that, but here you go.">
+		<option optionid="1" optiontext="Thanks." next="0" icon="Loot" actions="AddItems=1805-1" />
+	</node>
+	<node id="217" npcName="Ser Ames Verrington" anim="1" text="Okay, with that out of the way...we need you to get to the end of the crypt, where it is rumored that the last artifact of interest is. We don't have much detail about it, though. You'll need to get through the last of the 3 gates in order to reach it...">
+		<option optionid="1" optiontext="You know, it would have been great if I knew I'd need all these keys and just got them all at once." icon="Quest" actions="UpdateQuest=109-3" next="218" />
+	</node>
+	<node id="218" npcName="Ser Ames Verrington" anim="1" text="Perhaps - that would have been a logical approach, but nonetheless it isn't my problem, as you are paid for these to be your problems. Now, will you do it?">
+		<option optionid="1" optiontext="Consider it done." next="0" />
+		<option optionid="2" optiontext="I'll get around to it. Maybe." next="0" />
+	</node>
+	<node id="219" npcName="Ser Ames Verrington" anim="1" text="Have you retrieved the final artifact yet?">
+		<option optionid="1" optiontext="What was I supposed to do again?" next="220" />
+		<option optionid="2" optiontext="Aye, here it is." checks="Quest=109-7-7,HasItem=1807-1" icon="Quest" next="245" />
+		<option optionid="3" optiontext="Not yet." next="0" />
+	</node>
+	<node id="220" npcName="Ser Ames Verrington" anim="1" text="Get the key from the locksmith. Get to the end of the crypt, get the artifact for us.">
+		<option optionid="1" optiontext="Okay." next="0" />
+	</node>
+	<node id="245" npcName="Ser Ames Verrington" anim="1" text="Great job, you've gathered all the things we need. We appreciate your efforts greatly.">
+		<option optionid="1" optiontext="Thanks." actions="RemoveItems=1807-1,AddItems=131-412,UpdateQuest=109-999" next="0" />
+	</node>
+	<node id="250" npcName="Locksmith Adams" anim="1" text="Oh no, not you again! Everytime I see you, something bad happens! Stay away!">
+		<option optionid="1" optiontext="But, I need a key..." next="251" />
+		<option optionid="2" optiontext="Okay, sure." next="0" />
+	</node>
+	<node id="251" npcName="Locksmith Adams" anim="1" text="OUT! GET OUT!">
+		<option optionid="1" optiontext="Fine, fine!" next="0" />
+	</node>
+	<node id="260" npcName="Bored Child" anim="1" switchtalker="894" text="Oh, it's you. We got in trouble with our parents from last time, you know?" posx="6" posy="4">
+		<option optionid="1" optiontext="Um, I was actually hoping you could distract the locksmith again." next="261" icon="Quest">
+		</option>
+		<option optionid="2" optiontext="Leave." next="0">
+		</option>
+	</node>
+	<node id="261" npcName="Bored Child" anim="1" switchtalker="895" text="No, we're not doing anything for you! Cranky Adams is gonna shout at our parents again and we'll get in more trouble. And we're full of berry pie now, so there's nothing we want from you anymore!" posx="421" posy="4">
+		<option optionid="1" optiontext="Nothing, really? Surely there must be something..." next="262" icon="Quest">
+		</option>
+	</node>
+	<node id="262" npcName="Bored Child" anim="1" switchtalker="896" text="Well, maybe... umm... hmm... if you were to get us a thing... The magical lady who sells magical things in this neighborhood has a thing we want. It's like a magical bomb..." posx="831" posy="4">
+		<option optionid="1" optiontext="" next="263">
+		</option>
+	</node>
+	<node id="263" npcName="Bored Child" anim="1" switchtalker="894" text="Oh yea, we want the magic bomb! But we got in trouble with the magic lady just for asking for it... But you're a grown up, you can get it for us!" posx="1243" posy="4">
+		<option optionid="1" optiontext="Where's the magic lady?" next="264">
+		</option>
+		<option optionid="2" optiontext="Deal, I get you the magic bomb and you'll distract the locksmith." next="265" icon="Quest">
+		</option>
+	</node>
+	<node id="264" npcName="Bored Child" anim="1" switchtalker="895" text="In the neighborhood like we said, silly! Like just behind the corner towards the market." posx="1657" posy="5">
+		<option optionid="1" optiontext="Deal, I get you the magic bomb and you'll distract the locksmith." next="265" icon="Quest">
+		</option>
+	</node>
+	<node id="265" npcName="Bored Child" anim="1" switchtalker="896" text="Yay! You're like what my parents call a responsible adult!" posx="1680" posy="348">
+		<option optionid="1" optiontext="Cool..." next="0" actions="UpdateQuest=95-4">
+		</option>
+	</node>
+	<node id="270" npcName="Bored Child" anim="1" text="We'll prank the locksmith again, but this time we wanna see something really cool. We won't do it unless you bring us a magic bomb from the magic lady!" posx="2" posy="0">
+		<option optionid="1" optiontext="Just as well, I brought the magic bomb with me." next="272" checks="HasItem=1807-1" icon="Quest">
+		</option>
+		<option optionid="2" optiontext="Remind me again, a magic bomb from a magic lady?" next="271">
+		</option>
+		<option optionid="3" optiontext="Leave." next="0">
+		</option>
+	</node>
+	<node id="271" npcName="Bored Child" anim="1" text="Oh my gods, are you like slow or something? There's a magic lady in this neighborhood who has a magic shop. And she has magic bombs, we've seen them! We want one, but she won't give any to us." posx="417" posy="222">
+		<option optionid="1" optiontext="I'm joking, I've brought the bomb already." next="0" checks="HasItem=1807-1" icon="Quest">
+		</option>
+		<option optionid="2" optiontext="Just hold on, I'm working on it." next="0">
+		</option>
+	</node>
+	<node id="272" npcName="Bored Child" anim="1" text="Woooaaah, really? No wayyy! Wow, so cool!" posx="419" posy="5">
+		<option optionid="1" optiontext="" next="273">
+		</option>
+	</node>
+	<node id="273" npcName="Bored Child" anim="1" text="Hold back, sir! I know just the place to put this. We want revenge on Cranky Adams for telling on us to our parents!" posx="827" posy="5">
+		<option optionid="1" optiontext="Works for me..." next="0" actions="Cinematic=205,RemoveItems=1807-1" icon="Quest">
+		</option>
+	</node>
+</dialogue>

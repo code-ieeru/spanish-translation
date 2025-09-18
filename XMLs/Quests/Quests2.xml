@@ -1,0 +1,11 @@
+<quests>
+	<quest id="9000" name="new test quest" mainquest="1" questdescription="" completiontext="..?">
+		<phase id="1" trackerdescription="??" description="??"></phase>
+		<phase id="2" trackerdescription="???" description="???"></phase>
+		<phase id="999" trackerdescription="Quest complete!" description=""></phase>
+		<rewards>
+			<reward skill="magic" xp="200"/>
+		</rewards>
+	</quest>
+
+</quests>

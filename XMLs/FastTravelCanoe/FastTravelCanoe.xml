@@ -1,0 +1,12 @@
+<locations>
+	<location id="1" name="Grainwater River Banks"				pos="750.9,27.54685,316.1" ></location>
+	<location id="2" name="Haywind Docks"				pos="607.439,28.22,567.788" ></location>
+	<location id="3" name="Smuggler's Hideout (Silvermirror Fen)" checks="Quest=70-2-999" pos="866.14,27.94,1203.37" ></location>
+	<location id="4" name="Thornhill Slums" checks="Quest=16-1-999" pos="376.81,28.41179,1127.54" ></location>
+	<location id="5" name="Haywind Militia Encampment"				pos="423.64,27.90085,350.56" ></location>
+	<location id="6" name="Aure Riverside (North Haywind)" checks="HasTrait=273"	pos="540.9645,28.13087,771.4391" ></location>
+	<location id="7" name="Aurfield Village" checks="HasTrait=273"	pos="658.37,27.84851,767.499" ></location>
+	<location id="8" name="Mossneedle Pond (Timberwell)" checks="HasTrait=273"	pos="1012.57,30.41613,462.1" ></location>
+	<location id="9" name="South of the River (Ratcliffe)" checks="HasTrait=273"	pos="813.4,28.16666,216.9" ></location>
+	<location id="10" name="Witch's Throne (Silvermirror Fen)" checks="HasTrait=273,Quest=70-3-999"	pos="1106.17,27.81664,1127.65" ></location>
+</locations>

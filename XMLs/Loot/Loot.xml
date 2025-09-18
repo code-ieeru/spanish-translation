@@ -1,0 +1,1758 @@
+<loot>
+	<table npcid="45,459" name="Crab">
+		<drop item="180" rate="3" minamount="1" maxamount="1" comment="shell"></drop>
+		<drop item="973" rate="10" minamount="1" maxamount="1" comment="mutated crab leg"></drop>
+		<drop item="181" rate="1" minamount="1" maxamount="1" comment="meat"></drop>
+		<drop item="486" rate="100" minamount="1" maxamount="1" comment="golden fishing hook"></drop>
+		<drop checks="Quest=59-1-1" item="561" rate="15" minamount="1" maxamount="1" comment="perfect claw"></drop>
+	</table>
+	<table npcid="49" name="Rabbit">
+		<drop item="810" rate="1" minamount="1" maxamount="1" comment="raw meat"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="209" rate="10" minamount="1" maxamount="1" comment="brain"></drop>
+		<drop item="210" rate="7" minamount="1" maxamount="1" comment="mushroom"></drop>
+		<drop item="273" rate="5" minamount="1" maxamount="1" comment="mushroom"></drop>
+		<drop item="145" rate="7" minamount="1" maxamount="1" comment="acorn"></drop>
+		<drop checks="Quest=59-1-1" item="560" rate="30" minamount="1" maxamount="1" comment="perfect ear"></drop>
+	</table>
+	<table npcid="50,1,71,72,73,224,225,460" name="Wild animal (low level)">
+		<drop item="204" rate="1" minamount="1" maxamount="1" comment="raw meat"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="209" rate="10" minamount="1" maxamount="1" comment="brain"></drop>
+		<drop item="210" rate="7" minamount="1" maxamount="1" comment="mushroom"></drop>
+		<drop item="145" rate="7" minamount="1" maxamount="2" comment="acorn"></drop>
+		<drop item="943" rate="25" minamount="1" maxamount="2" comment="firewood"></drop>
+	</table>
+	<table npcid="63,584" name="Rat">
+		<drop item="709" rate="1" minamount="1" maxamount="1" comment="raw rat meat"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="209" rate="10" minamount="1" maxamount="1" comment="brain"></drop>
+		<drop item="145" rate="7" minamount="1" maxamount="2" comment="acorn"></drop>
+	</table>
+	<table npcid="50" name="bear (low level)">
+		<drop item="207" rate="10" minamount="1" maxamount="1" comment="pelt"></drop>
+		<drop item="208" rate="15" minamount="1" maxamount="1" comment="paw"></drop>
+	</table>
+	<table npcid="3" name="thug(low level)">
+		<drop item="131" rate="1" minamount="5" maxamount="10" comment="coins"></drop>
+		<drop item="238" rate="5" minamount="1" maxamount="1" comment="copper dagger"></drop>
+		<drop item="485" rate="3" minamount="1" maxamount="1" comment="rope"></drop>
+		<drop item="488" rate="3" minamount="1" maxamount="2" comment="turbonuts"></drop>
+	</table>
+	<table npcid="1" name="wolf (low level)">
+		<drop item="91" rate="3" minamount="1" maxamount="1" comment="leather"></drop>
+	</table>
+	<table npcid="71,72" name="cow (low level)">
+		<drop item="92" rate="2" minamount="1" maxamount="1" comment="leather"></drop>
+	</table>
+	<table npcid="73" name="sheep (low level)">
+		<drop item="93" rate="3" minamount="1" maxamount="1" comment="leather"></drop>
+		<drop item="125" rate="2" minamount="1" maxamount="1" comment="wool"></drop>
+	</table>
+	<table npcid="54,55,56" name="chicken">
+		<drop item="213" rate="1" minamount="1" maxamount="1" comment="meat"></drop>
+		<drop item="145" rate="5" minamount="1" maxamount="1" comment="acorn"></drop>
+		<drop item="215" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+	</table>
+	<table npcid="4,58,59,60,61" name="zombie">
+		<drop item="131" rate="2" minamount="2" maxamount="8" comment="coins"></drop>
+		<drop item="139" rate="5" minamount="1" maxamount="1" comment="hatchet"></drop>
+		<drop item="216" rate="5" minamount="1" maxamount="1" comment="peasant clothes"></drop>
+		<drop item="95" rate="8" minamount="1" maxamount="2" comment="linen"></drop>
+		<drop item="247" rate="5" minamount="1" maxamount="1" comment="copper helmet"></drop>
+		<drop item="238" rate="5" minamount="1" maxamount="1" comment="copper dagger"></drop>
+		<drop item="209" rate="1" minamount="1" maxamount="1" comment="brain"></drop>
+		<drop item="676" rate="20" minamount="1" maxamount="1" comment="torch"></drop>
+	</table>
+	<table npcid="29" name="Raider">
+		<drop item="131" rate="5" minamount="1" maxamount="8" comment="coins"></drop>
+		<drop item="211" rate="5" minamount="1" maxamount="3" comment="Weakness spell"></drop>
+		<drop item="219" rate="5" minamount="1" maxamount="1" comment="ring of accuracy"></drop>
+	</table>
+	<table npcid="66" name="fairy">
+		<drop item="131" rate="5" minamount="1" maxamount="10" comment="coins"></drop>
+		<drop item="145" rate="3" minamount="1" maxamount="1" comment="acorn"></drop>
+		<drop item="398" rate="10" minamount="1" maxamount="1" comment="bloodhoney"></drop>
+	</table>
+	<table npcid="117" name="highwayman">
+		<drop item="131" rate="1" minamount="30" maxamount="40" comment="coins"></drop>
+		<drop item="305" rate="15" minamount="1" maxamount="1" comment="highwayman armor"></drop>
+		<drop item="602" rate="15" minamount="1" maxamount="1" comment="highwayman hood"></drop>
+		<drop item="677" rate="20" minamount="1" maxamount="1" comment="t2 dagger"></drop>
+		<drop item="247" rate="10" minamount="1" maxamount="1" comment="copper helmet"></drop>
+		<drop item="135" rate="10" minamount="1" maxamount="1" comment="copper shield"></drop>
+		<drop item="651" rate="20" minamount="1" maxamount="1" comment="kite shield"></drop>
+		<drop item="238" rate="10" minamount="1" maxamount="1" comment="copper dagger"></drop>
+		<drop item="145" rate="15" minamount="1" maxamount="2" comment="acorn"></drop>
+		<drop item="169" rate="8" minamount="1" maxamount="1" comment="hp pot"></drop>
+		<drop item="195" rate="5" minamount="1" maxamount="2" comment="cooked fish"></drop>
+	</table>
+	<table npcid="122" name="thornhill jail guard boss">
+		<drop item="319" rate="1" minamount="1" maxamount="1" comment="arren key"></drop>
+		<drop item="131" rate="2" minamount="50" maxamount="75" comment="coins"></drop>
+	</table>
+	<table npcid="131" name="thornhill jail crossbow guard">
+		<drop item="330" rate="4" minamount="1" maxamount="1" comment="crossbow"></drop>
+		<drop item="131" rate="2" minamount="10" maxamount="25" comment="coins"></drop>
+	</table>
+	<table npcid="130" name="thornhill jail spear guard">
+		<drop item="331" rate="4" minamount="1" maxamount="1" comment="spear"></drop>
+		<drop item="131" rate="2" minamount="10" maxamount="25" comment="coins"></drop>
+	</table>
+	<table npcid="147" name="HW Quarry Thugs">
+		<drop item="131" rate="3" minamount="15" maxamount="30" comment="coins"></drop>
+		<drop item="677" rate="6" minamount="1" maxamount="1" comment="better copper dagger"></drop>
+		<drop item="238" rate="2" minamount="1" maxamount="1" comment="copper dagger"></drop>
+		<drop item="668" rate="5" minamount="1" maxamount="1" comment="reinforce noob bow"></drop>
+		<drop item="485" rate="3" minamount="1" maxamount="1" comment="rope"></drop>
+		<drop item="488" rate="3" minamount="1" maxamount="2" comment="turbonuts"></drop>
+		<drop item="710" rate="5" minamount="1" maxamount="5" comment="rat meat"></drop>
+
+		<drop item="308" rate="10" minamount="1" maxamount="1" comment="sheep armor"></drop>
+		<drop item="688" rate="15" minamount="1" maxamount="1" comment="reinforce bracers"></drop>
+
+	</table>
+	<table npcid="149" name="Q53 Bren Atrik, HW Quarry">
+		<drop item="484" rate="1" minamount="1" maxamount="1" checks="!Quest=53-999-999,!ItemExistsGlobal=484" comment="quest letter"></drop>
+		<drop item="131" rate="2" minamount="32" maxamount="56" comment="coins"></drop>
+		<drop item="217" rate="15" minamount="1" maxamount="1" comment="iron dagger"></drop>
+		<drop item="668" rate="2" minamount="1" maxamount="1" comment="reinforce noob bow"></drop>
+		<drop item="488" rate="3" minamount="1" maxamount="5" comment="turbonuts"></drop>
+		<drop item="710" rate="5" minamount="1" maxamount="5" comment="rat meat"></drop>
+
+		<drop item="688" rate="8" minamount="1" maxamount="1" comment="reinforce bracers"></drop>
+		<drop item="608" rate="12" minamount="1" maxamount="1" comment="reinforce armor"></drop>
+		<drop item="607" rate="12" minamount="1" maxamount="1" comment="reinforce hood"></drop>
+
+	</table>
+	<table npcid="146" name="troll">
+		<drop item="312" rate="5" minamount="1" maxamount="1" comment="troll leather"></drop>
+		<drop item="424" rate="10" minamount="1" maxamount="1" comment="troll nail"></drop>
+		<drop item="131" rate="2" minamount="10" maxamount="25" comment="coins"></drop>
+	</table>
+	<table npcid="631,1065" name="forest troll">
+		<drop item="312" rate="10" minamount="1" maxamount="1" comment="troll leather"></drop>
+		<drop item="424" rate="10" minamount="1" maxamount="1" comment="troll nail"></drop>
+		<drop item="1328" rate="5" minamount="1" maxamount="3" comment="troll blood"></drop>
+		<drop item="131" rate="2" minamount="10" maxamount="25" comment="coins"></drop>
+		<drop item="176" rate="30" minamount="1" maxamount="1" comment="copper warhammer"></drop>
+		<drop item="557" rate="40" minamount="1" maxamount="1" comment="iron warhammer"></drop>
+		<drop item="651" rate="30" minamount="1" maxamount="1" comment="copper kiteshield"></drop>
+		<drop item="652" rate="40" minamount="1" maxamount="1" comment="iron kiteshield"></drop>
+		<drop item="668" rate="30" minamount="1" maxamount="1" comment="reinforced spruce bow"></drop>
+		<drop item="811" rate="10" minamount="1" maxamount="1" comment="cooked rabbit"></drop>
+		<drop item="854" rate="30" minamount="1" maxamount="1" comment="phys dmg ring"></drop>
+		<drop item="860" rate="30" minamount="1" maxamount="1" comment="phys res ring"></drop>
+		<drop item="1006" rate="10" minamount="1" maxamount="3" comment="Mystic's Amber"></drop>
+	</table>
+	<table npcid="1444,1445,1446" name="Q108 trolls">
+		<drop item="312" rate="5" minamount="1" maxamount="1" comment="troll leather"></drop>
+		<drop item="424" rate="5" minamount="1" maxamount="1" comment="troll nail"></drop>
+		<drop item="1328" rate="3" minamount="1" maxamount="3" comment="troll blood"></drop>
+		<drop item="131" rate="2" minamount="10" maxamount="25" comment="coins"></drop>
+		<drop item="176" rate="30" minamount="1" maxamount="1" comment="copper warhammer"></drop>
+		<drop item="557" rate="40" minamount="1" maxamount="1" comment="iron warhammer"></drop>
+		<drop item="651" rate="30" minamount="1" maxamount="1" comment="copper kiteshield"></drop>
+		<drop item="652" rate="40" minamount="1" maxamount="1" comment="iron kiteshield"></drop>
+		<drop item="668" rate="30" minamount="1" maxamount="1" comment="reinforced spruce bow"></drop>
+		<drop item="205" rate="10" minamount="1" maxamount="1" comment="steak"></drop>
+		<drop item="854" rate="20" minamount="1" maxamount="1" comment="phys dmg ring"></drop>
+		<drop item="860" rate="20" minamount="1" maxamount="1" comment="phys res ring"></drop>
+		<drop item="1006" rate="8" minamount="1" maxamount="3" comment="Mystic's Amber"></drop>
+	</table>
+	<table npcid="393" name="mean cave troll">
+		<drop item="312" rate="10" minamount="1" maxamount="1" comment="troll leather"></drop>
+		<drop item="424" rate="10" minamount="1" maxamount="1" comment="troll nail"></drop>
+		<drop item="1328" rate="5" minamount="1" maxamount="3" comment="troll blood"></drop>
+		<drop item="131" rate="2" minamount="10" maxamount="25" comment="coins"></drop>
+		<drop item="176" rate="30" minamount="1" maxamount="1" comment="copper warhammer"></drop>
+		<drop item="557" rate="40" minamount="1" maxamount="1" comment="iron warhammer"></drop>
+		<drop item="651" rate="30" minamount="1" maxamount="1" comment="copper kiteshield"></drop>
+		<drop item="652" rate="40" minamount="1" maxamount="1" comment="iron kiteshield"></drop>
+		<drop item="668" rate="30" minamount="1" maxamount="1" comment="reinforced spruce bow"></drop>
+		<drop item="710" rate="10" minamount="1" maxamount="1" comment="cooked rat"></drop>
+		<drop item="854" rate="25" minamount="1" maxamount="1" comment="phys dmg ring"></drop>
+		<drop item="860" rate="25" minamount="1" maxamount="1" comment="phys res ring"></drop>
+	</table>
+	<table npcid="394" name="mean mountain troll">
+		<drop item="312" rate="5" minamount="1" maxamount="1" comment="troll leather"></drop>
+		<drop item="424" rate="5" minamount="1" maxamount="1" comment="troll nail"></drop>
+		<drop item="1328" rate="5" minamount="1" maxamount="3" comment="troll blood"></drop>
+		<drop item="131" rate="2" minamount="10" maxamount="25" comment="coins"></drop>
+		<drop item="176" rate="20" minamount="1" maxamount="1" comment="copper warhammer"></drop>
+		<drop item="557" rate="30" minamount="1" maxamount="1" comment="iron warhammer"></drop>
+		<drop item="651" rate="20" minamount="1" maxamount="1" comment="copper kiteshield"></drop>
+		<drop item="652" rate="30" minamount="1" maxamount="1" comment="iron kiteshield"></drop>
+		<drop item="341" rate="20" minamount="1" maxamount="1" comment="iron shield"></drop>
+		<drop item="346" rate="20" minamount="1" maxamount="1" comment="iron pick"></drop>
+		<drop item="361" rate="30" minamount="1" maxamount="1" comment="oak crossb"></drop>
+		<drop item="668" rate="20" minamount="1" maxamount="1" comment="reinforced spruce bow"></drop>
+		<drop item="710" rate="10" minamount="1" maxamount="1" comment="cooked rat"></drop>
+		<drop item="854" rate="20" minamount="1" maxamount="1" comment="phys dmg ring"></drop>
+		<drop item="860" rate="20" minamount="1" maxamount="1" comment="phys res ring"></drop>
+	</table>
+	<table npcid="587" name="cave troll">
+		<drop item="312" rate="20" minamount="1" maxamount="1" comment="troll leather"></drop>
+		<drop item="424" rate="20" minamount="1" maxamount="1" comment="troll nail"></drop>
+		<drop item="91" rate="8" minamount="1" maxamount="1" comment="sheep hide"></drop>
+		<drop item="92" rate="8" minamount="1" maxamount="1" comment="cow hide"></drop>
+		<drop item="93" rate="5" minamount="1" maxamount="1" comment="woof hide"></drop>
+		<drop item="207" rate="20" minamount="1" maxamount="1" comment="bear hide"></drop>
+		<drop item="659" rate="12" minamount="1" maxamount="1" comment="shep bracer"></drop>
+		<drop item="169" rate="10" minamount="1" maxamount="1" comment="hp pot"></drop>
+		<drop item="800" rate="10" minamount="1" maxamount="1" comment="dmg pot"></drop>
+		<drop item="142" rate="5" minamount="1" maxamount="1" comment="cooked fish"></drop>
+		<drop item="145" rate="8" minamount="1" maxamount="1" comment="acorn"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+	</table>
+	<table npcid="588" name="cave troll boss">
+		<drop item="312" rate="10" minamount="1" maxamount="1" comment="troll leather"></drop>
+		<drop item="424" rate="10" minamount="1" maxamount="1" comment="troll nail"></drop>
+		<drop item="169" rate="2" minamount="1" maxamount="1" comment="hp pot"></drop>
+		<drop item="800" rate="5" minamount="1" maxamount="1" comment="dmg pot"></drop>
+		<drop item="142" rate="5" minamount="1" maxamount="2" comment="cooked fish"></drop>
+		<drop item="145" rate="8" minamount="1" maxamount="2" comment="acorn"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+
+		<drop item="659" rate="8" minamount="1" maxamount="1" comment="shep bracer"></drop>
+		<drop item="308" rate="12" minamount="1" maxamount="1" comment="shep armor"></drop>
+		<drop item="330" rate="8" minamount="1" maxamount="1" comment="spruce crossb"></drop>
+		<drop item="668" rate="15" minamount="1" maxamount="1" comment="spruce bigg b"></drop>
+		<drop item="666" rate="10" minamount="1" maxamount="1" comment="spruce shield"></drop>
+
+		<drop item="176" rate="5" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="249" rate="25" minamount="1" maxamount="1" comment="copper plate gear"></drop>
+		<drop item="250" rate="30" minamount="1" maxamount="1" comment="copper plate gear"></drop>
+	</table>
+
+	<table npcid="48,58,63,441,60,59,440" name="hw intro crypt">
+		<drop item="1219" checks="!ItemExistsGlobal=1219" rate="5" minamount="1" maxamount="1" comment="tiny bag"></drop>
+	</table>
+
+
+	<table npcid="68,69,440,441,442,443,444" name="skeleton low lvl">
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="376" rate="12" minamount="1" maxamount="1" comment="gambeson"></drop>
+		<drop item="131" rate="3" minamount="5" maxamount="15" comment="coins"></drop>
+		<drop item="167" rate="15" minamount="1" maxamount="1" comment="fishing rod"></drop>
+		<drop item="164" rate="15" minamount="1" maxamount="1" comment="whisky"></drop>
+		<drop item="154" rate="15" minamount="1" maxamount="1" comment="spruce bow"></drop>
+		<drop item="330" rate="40" minamount="1" maxamount="1" comment="spruce crossbow"></drop>
+		<drop item="95" rate="8" minamount="1" maxamount="2" comment="linen"></drop>
+		<drop item="238" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="139" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="135" rate="20" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="466" rate="20" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="548" rate="20" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="676" rate="20" minamount="1" maxamount="1" comment="torch"></drop>
+	</table>
+
+	<table npcid="48" name="Ghost, low level">
+		<drop item="236" rate="5" minamount="1" maxamount="1" comment="mana pot"></drop>
+		<drop item="143" rate="3" minamount="1" maxamount="1" comment="novice staff"></drop>
+		<drop item="163" rate="10" minamount="1" maxamount="1" comment="novice robes"></drop>
+		<drop item="95" rate="8" minamount="1" maxamount="2" comment="linen"></drop>
+		<drop item="131" rate="5" minamount="1" maxamount="8" comment="coins"></drop>
+		<drop item="211" rate="6" minamount="1" maxamount="3" comment="Weakness spell"></drop>
+		<drop item="219" rate="8" minamount="1" maxamount="1" comment="ring of accuracy"></drop>
+		<drop item="402" rate="30" minamount="1" maxamount="1" comment="dark wizard robes"></drop>
+		<drop item="145" rate="4" minamount="1" maxamount="1" comment="acorn"></drop>
+		<drop item="676" rate="20" minamount="1" maxamount="1" comment="torch"></drop>
+	</table>
+	<table npcid="118" name="Tyroghar">
+		<drop item="1213" rate="1" minamount="3" maxamount="3" checks="Var=NpcKillCount118-0-0" comment="alchemy scroll"></drop>
+		<drop item="2102" rate="1" minamount="1" maxamount="1" checks="Var=NpcKillCount118-0-0" comment="sword"></drop>
+		<drop item="131" rate="1" minamount="25" maxamount="60" comment="coins"></drop>
+		<drop item="657" rate="25" minamount="1" maxamount="1" comment="sword"></drop>
+		<drop item="135" rate="12" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="150" rate="12" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="161" rate="12" minamount="1" maxamount="4" comment="copper gear"></drop>
+		<drop item="176" rate="12" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="238" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="247" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="248" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="249" rate="25" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="250" rate="30" minamount="1" maxamount="1" comment="copper gear"></drop>
+	</table>
+
+	<table npcid="271,272" name="hw cemetery crypt grave robbers">
+		<drop item="131" rate="2" minamount="2" maxamount="10" comment="coins"></drop>
+		<drop item="169" rate="2" minamount="1" maxamount="1" comment="hp pot"></drop>
+		<drop item="142" rate="2" minamount="1" maxamount="2" comment="cooked fish"></drop>
+		<drop item="154" rate="3" minamount="1" maxamount="1" comment="bow"></drop>
+	</table>
+
+	<table npcid="146" name="Copper gear">
+		<drop item="135" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="150" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="161" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="176" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="238" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="247" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="248" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="249" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="250" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+	</table>
+
+
+	<table npcid="838" name="mistywood snail">
+		<drop item="210" rate="7" minamount="1" maxamount="1" comment="mushroom"></drop>
+		<drop item="747" rate="5" minamount="1" maxamount="2" comment="mistypine needles"></drop>
+		<drop item="145" rate="10" minamount="1" maxamount="2" comment="acorn"></drop>
+		<drop item="565" rate="2" minamount="1" maxamount="1" comment="snail meat"></drop>
+	</table>
+
+	<table npcid="199,200,201" name="Hydrobor dueling wizards">
+		<drop item="131" rate="5" minamount="10" maxamount="25" comment="coins"></drop>
+		<drop item="236" rate="5" minamount="1" maxamount="1" comment="mana pot"></drop>
+		<drop item="336" rate="10" minamount="1" maxamount="1" comment="staff of ember"></drop>
+		<drop item="353" rate="50" minamount="1" maxamount="1" comment="staff of air"></drop>
+		<drop item="363" rate="100" minamount="1" maxamount="1" comment="hydrobor robes"></drop>
+	</table>
+
+	<table npcid="242" name="Maihani">
+		<drop item="398" rate="1" minamount="1" maxamount="1" comment="blood honey"></drop>
+	</table>
+
+	<table npcid="43" name="Davison">
+		<drop item="296" rate="1" minamount="1" maxamount="1" comment="beer"></drop>
+	</table>
+
+	<table npcid="244" name="Skeleton sorcerer">
+		<drop item="131" rate="4" minamount="2" maxamount="15" comment="coins"></drop>
+		<drop item="336" rate="20" minamount="1" maxamount="1" comment="staff of ember"></drop>
+		<drop item="236" rate="5" minamount="1" maxamount="1" comment="mana pot"></drop>
+		<drop item="378" rate="7" minamount="1" maxamount="1" comment="spruce staff"></drop>
+		<drop item="145" rate="10" minamount="1" maxamount="1" comment="acorn"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+	</table>
+	<table npcid="245" name="Skeleton sorcerer boss">
+		<drop item="131" rate="3" minamount="25" maxamount="75" comment="coins"></drop>
+		<drop item="145" rate="3" minamount="1" maxamount="2" comment="acorn"></drop>
+		<drop item="336" rate="10" minamount="1" maxamount="1" comment="staff of ember"></drop>
+		<drop item="236" rate="5" minamount="1" maxamount="1" comment="mana pot"></drop>
+		<drop item="407" rate="30" minamount="1" maxamount="1" comment="weakness spellbook"></drop>
+		<drop item="401" rate="30" minamount="1" maxamount="1" comment="skeleton sorcerer staff"></drop>
+		<drop item="211" rate="20" minamount="1" maxamount="3" comment="Weakness spell"></drop>
+		<drop item="219" rate="20" minamount="1" maxamount="1" comment="ring of accuracy"></drop>
+		<drop item="402" rate="20" minamount="1" maxamount="1" comment="dark wizard robes"></drop>
+		<drop item="662" rate="30" minamount="1" maxamount="1" comment="mage's ring"></drop>
+		<drop item="663" rate="30" minamount="1" maxamount="1" comment="sorcerer's ring"></drop>
+	</table>
+
+	<table npcid="151" name="Scrawny Wolf">
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="91" rate="5" minamount="1" maxamount="1" comment="leather"></drop>
+	</table>
+
+	<table npcid="740" name="TH jail boss">
+		<drop item="131" rate="3" minamount="100" maxamount="200" comment="coins"></drop>
+		<drop item="768" rate="75" comment="armor"></drop>
+		<drop item="771" rate="50" comment="helmet"></drop>
+		<drop item="772" rate="50" comment="helmet"></drop>
+		<drop item="542" rate="20" comment="iron greatsword"></drop>
+		<drop item="557" rate="20" comment="iron warhammer"></drop>
+		<drop item="243" rate="10" comment="reflex potion"></drop>
+		<drop item="476" rate="10" comment="hp potion"></drop>
+		<drop item="743" rate="10" comment="salted meat"></drop>
+	</table>
+	<table npcid="742,743,744,864,865,866" name="TH jail guards">
+		<drop item="131" rate="3" minamount="25" maxamount="100" comment="coins"></drop>
+		<drop item="766" rate="75" comment="armor"></drop>
+		<drop item="767" rate="75" comment="armor"></drop>
+		<drop item="769" rate="75" comment="helmet"></drop>
+		<drop item="770" rate="75" comment="halberd"></drop>
+		<drop item="361" rate="25" comment="oak crossbow"></drop>
+		<drop item="542" rate="80" comment="iron greatsword"></drop>
+		<drop item="557" rate="80" comment="iron warhammer"></drop>
+		<drop item="243" rate="15" comment="reflex potion"></drop>
+		<drop item="476" rate="15" comment="hp potion"></drop>
+		<drop item="743" rate="15" comment="salted meat"></drop>
+	</table>
+
+	<table npcid="729" name="Nature golem">
+		<drop item="423" rate="5" minamount="1" maxamount="2" comment="golemite, iron crafting mat"></drop>
+		<drop item="33" rate="5" minamount="1" maxamount="4" comment="copper ore"></drop>
+		<drop item="762" rate="8" minamount="1" maxamount="4" comment="high lv heal spell ingredient"></drop>
+		<drop item="34" rate="20" minamount="1" maxamount="2" comment="iron ore"></drop>
+		<drop item="421" rate="20" minamount="1" maxamount="1" comment="book of cooking lol"></drop>
+		<drop item="176" rate="20" minamount="1" maxamount="1" comment="copper warhammer"></drop>
+		<drop item="141" rate="10" minamount="1" maxamount="1" comment="copper pickaxe"></drop>
+		<drop item="346" rate="20" minamount="1" maxamount="1" comment="iron pickaxe"></drop>
+		<drop item="557" rate="40" minamount="1" maxamount="1" comment="iron warhammer"></drop>
+		<drop item="249" rate="35" minamount="1" maxamount="1" comment="copper plate helmet"></drop>
+		<drop item="250" rate="35" minamount="1" maxamount="1" comment="copper plate armor"></drop>
+	</table>
+
+	<table npcid="738" name="Swamp Slimes">
+		<drop item="874" rate="3" minamount="1" maxamount="1" comment="goop"></drop>
+	</table>
+
+	<table npcid="519" name="Forest spider">
+		<drop item="747" rate="5" minamount="1" maxamount="2" comment="mistypine needles"></drop>
+		<drop item="1327" rate="2" minamount="1" maxamount="1" comment="spooder venom"></drop>
+	</table>
+	<table npcid="520" name="Forest snake">
+		<drop item="747" rate="5" minamount="1" maxamount="2" comment="mistypine needles"></drop>
+		<drop item="325" rate="2" minamount="1" maxamount="2" comment="snake skin"></drop>
+	</table>
+	<table npcid="521" name="Black bear">
+		<drop item="747" rate="8" minamount="1" maxamount="2" comment="mistypine needles"></drop>
+		<drop item="207" rate="4" minamount="1" maxamount="1" comment="pelt"></drop>
+		<drop item="208" rate="6" minamount="1" maxamount="1" comment="paw"></drop>
+		<drop item="204" rate="1" minamount="1" maxamount="1" comment="raw meat"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="209" rate="10" minamount="1" maxamount="1" comment="brain"></drop>
+		<drop item="210" rate="7" minamount="1" maxamount="1" comment="mushroom"></drop>
+		<drop item="145" rate="5" minamount="1" maxamount="2" comment="acorn"></drop>
+	</table>
+
+	<table npcid="473" name="Bat">
+		<drop item="605" rate="4" minamount="1" maxamount="2" comment="fang"></drop>
+		<drop checks="Quest=59-1-1" item="562" rate="20" minamount="1" maxamount="1" comment="perfect wing"></drop>
+	</table>
+	<table npcid="462" name="Ent, treant">
+		<drop item="632" rate="10" minamount="1" maxamount="2" comment="bark"></drop>
+		<drop item="747" rate="3" minamount="1" maxamount="3" comment="mistypine needles"></drop>
+		<drop item="139" rate="5" minamount="1" maxamount="1" comment="copper hatchet"></drop>
+		<drop item="350" rate="40" minamount="1" maxamount="1" comment="iron hatchet"></drop>
+		<drop item="865" rate="40" minamount="1" maxamount="1" comment="spellbark shield"></drop>
+		<drop item="145" rate="15" minamount="5" maxamount="10" comment="acorn"></drop>
+	</table>
+	<table npcid="470" name="Spellbound Oak Tammi">
+		<drop item="242" checks="!ItemExistsGlobal=242,Quest=61-1-3" rate="1" minamount="1" maxamount="1" comment="questbark"></drop>
+
+		<drop item="852" rate="30" minamount="1" maxamount="1" comment="tammi armor"></drop>
+		<drop item="853" rate="30" minamount="1" maxamount="1" comment="tammi helmet"></drop>
+
+		<drop item="245" checks="Quest=61-999-999" rate="15" minamount="1" maxamount="1" comment="normalbark"></drop>
+		<drop item="747" rate="5" minamount="4" maxamount="15" comment="mistypine needles"></drop>
+		<drop item="664" rate="20" minamount="1" maxamount="1" comment="spruce wand"></drop>
+		<drop item="665" rate="40" minamount="1" maxamount="1" comment="oak wand"></drop>
+		<drop item="131" rate="2" minamount="50" maxamount="125" comment="coins"></drop>
+		<drop item="145" rate="10" minamount="5" maxamount="10" comment="acorn"></drop>
+		<drop item="611" rate="30" minamount="1" maxamount="1" comment="grand wool"></drop>
+		<drop item="612" rate="40" minamount="1" maxamount="1" comment="grand wool robe"></drop>
+		<drop item="158" rate="15" minamount="1" maxamount="1" comment="wool hat"></drop>
+		<drop item="335" rate="20" minamount="1" maxamount="1" comment="wool robe"></drop>
+		<drop item="632" rate="3" minamount="1" maxamount="1" comment="bark"></drop>
+		<drop item="728" rate="10" minamount="1" maxamount="1" comment="mistywoods tp"></drop>
+	</table>
+	<table npcid="83" name="Hubert">
+		<drop item="674" rate="25" minamount="1" maxamount="1" comment="hubert's axe"></drop>
+		<drop item="711" rate="25" minamount="1" maxamount="1" comment="bracelet"></drop>
+		<drop item="131" rate="2" minamount="50" maxamount="125" comment="coins"></drop>
+		<drop item="603" rate="10" minamount="3" maxamount="5" comment="noob mage bead"></drop>
+		<drop item="135" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="150" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="161" rate="15" minamount="2" maxamount="4" comment="copper ingot"></drop>
+		<drop item="176" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="238" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="247" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="248" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="669" rate="12" minamount="1" maxamount="1" comment="sickle swordy"></drop>
+		<drop item="249" rate="15" minamount="1" maxamount="1" comment="copper plate gear"></drop>
+		<drop item="250" rate="15" minamount="1" maxamount="1" comment="copper plate gear"></drop>
+		<drop item="169" rate="8" minamount="1" maxamount="1" comment="hp pot"></drop>
+		<drop item="195" rate="8" minamount="1" maxamount="2" comment="cooked fish"></drop>
+		<drop item="548" rate="5" minamount="1" maxamount="1" comment="copper b-axe"></drop>
+	</table>
+	<table npcid="86,88,528,529,530" name="low level Outlaws">
+		<drop item="131" rate="4" minamount="1" maxamount="12" comment="coins"></drop>
+		<drop item="95" rate="5" minamount="1" maxamount="2" comment="linen"></drop>
+		<drop item="135" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="150" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="161" rate="15" minamount="1" maxamount="2" comment="copper gear"></drop>
+		<drop item="176" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="238" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="247" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="248" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="669" rate="25" minamount="1" maxamount="1" comment="sickle swordy"></drop>
+		<drop item="169" rate="15" minamount="1" maxamount="1" comment="hp pot"></drop>
+		<drop item="142" rate="8" minamount="1" maxamount="2" comment="cooked fish"></drop>
+	</table>
+	<table npcid="1474" name="low level Outlaws(Ashenville Task)">
+		<drop item="131" rate="4" minamount="1" maxamount="12" comment="coins"></drop>
+		<drop item="95" rate="5" minamount="1" maxamount="2" comment="linen"></drop>
+		<drop item="135" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="150" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="161" rate="15" minamount="1" maxamount="2" comment="copper gear"></drop>
+		<drop item="176" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="238" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="247" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="248" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="669" rate="25" minamount="1" maxamount="1" comment="sickle swordy"></drop>
+		<drop item="169" rate="15" minamount="1" maxamount="1" comment="hp pot"></drop>
+		<drop item="142" rate="8" minamount="1" maxamount="2" comment="cooked fish"></drop>
+	</table>
+	<table npcid="722,723,724" name="West Haywind medium level banditos">
+		<drop item="131" rate="4" minamount="25" maxamount="30" comment="coins"></drop>
+		<drop item="669" rate="18" minamount="1" maxamount="1" comment="sickle swordy"></drop>
+		<drop item="677" rate="18" minamount="1" maxamount="1" comment="tempery dagger"></drop>
+		<drop item="251" rate="40" minamount="1" maxamount="1" comment="iron helmet"></drop>
+		<drop item="135" rate="5" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="150" rate="5" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="227" rate="15" minamount="1" maxamount="1" comment="iron ingot"></drop>
+		<drop item="176" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="238" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="247" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="248" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="249" rate="40" minamount="1" maxamount="1" comment="copper plate gear"></drop>
+		<drop item="250" rate="40" minamount="1" maxamount="1" comment="copper plate gear"></drop>
+		<drop item="169" rate="10" minamount="1" maxamount="1" comment="hp pot"></drop>
+		<drop item="195" rate="8" minamount="1" maxamount="2" comment="cooked fish"></drop>
+	</table>
+	<table npcid="727" name="West Haywind bandito chiefs">
+		<drop item="131" rate="2" minamount="40" maxamount="80" comment="coins"></drop>
+		<drop item="669" rate="12" minamount="1" maxamount="1" comment="sickle swordy"></drop>
+		<drop item="217" rate="35" minamount="1" maxamount="1" comment="iron dagger"></drop>
+		<drop item="251" rate="35" minamount="1" maxamount="1" comment="iron helmet"></drop>
+		<drop item="227" rate="20" minamount="1" maxamount="2" comment="iron ingot"></drop>
+		<drop item="161" rate="15" minamount="4" maxamount="6" comment="copper ingot"></drop>
+		<drop item="249" rate="15" minamount="1" maxamount="1" comment="copper plate gear"></drop>
+		<drop item="250" rate="18" minamount="1" maxamount="1" comment="copper plate gear"></drop>
+		<drop item="651" rate="15" minamount="1" maxamount="1" comment="kite shield"></drop>
+		<drop item="169" rate="10" minamount="1" maxamount="1" comment="hp pot"></drop>
+		<drop item="195" rate="8" minamount="1" maxamount="2" comment="cooked fish"></drop>
+		<drop item="743" rate="5" minamount="1" maxamount="1" comment="cured meat"></drop>
+	</table>
+
+
+	<table tags="17" name="magic/magical mobs">
+		<drop item="603" rate="5" checks="NpcLevel=5-15" comment="noob magic bead"></drop>
+		<drop item="604" rate="20" checks="NpcLevel=16-100" comment="magic bead"></drop>
+		<drop item="9074" rate="10" comment="magic crafting ingredient"></drop>
+	</table>
+	<table tags="3" name="Human">
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+	</table>
+
+	<table tags="18" name="Bird">
+		<drop item="145" rate="5" minamount="1" maxamount="1" comment="acorn"></drop>
+	</table>
+
+	<table npcid="598" name="haywind skeleton sorcerer boss">
+		<drop item="719" rate="50" minamount="1" maxamount="1" comment="boss ring"></drop>
+		<drop item="720" rate="60" minamount="1" maxamount="1" comment="boss staff"></drop>
+		<drop item="664" rate="20" minamount="1" maxamount="1" comment="spruce wand"></drop>
+		<drop item="665" rate="40" minamount="1" maxamount="1" comment="oak wand"></drop>
+		<drop item="131" rate="2" minamount="50" maxamount="125" comment="coins"></drop>
+		<drop item="145" rate="10" minamount="5" maxamount="10" comment="acorn"></drop>
+		<drop item="611" rate="30" minamount="1" maxamount="1" comment="grand wool"></drop>
+		<drop item="612" rate="40" minamount="1" maxamount="1" comment="grand wool robe"></drop>
+		<drop item="158" rate="15" minamount="1" maxamount="1" comment="wool"></drop>
+		<drop item="335" rate="20" minamount="1" maxamount="1" comment="wool robe"></drop>
+		<drop item="336" rate="20" minamount="1" maxamount="1" comment="emberstaff"></drop>
+		<drop item="337" rate="20" minamount="1" maxamount="1" comment="noob ring"></drop>
+		<drop checks="Quest=60-1-2,!ItemExistsGlobal=750" item="750" rate="1" minamount="1" maxamount="1" comment="quest item"></drop>
+	</table>
+
+	<table npcid="395" name="Bushwhacker1">
+		<drop item="131" rate="4" minamount="16" maxamount="28" comment="coins"></drop>
+		<drop item="164" rate="5" minamount="1" maxamount="1" comment="whiskey"></drop>
+		<drop item="296" rate="10" minamount="1" maxamount="1" comment="beer"></drop>
+		<drop item="996" rate="7" minamount="1" maxamount="3" comment="molotov"></drop>
+		<drop item="145" rate="15" minamount="1" maxamount="2" comment="acorn"></drop>
+		<drop item="804" rate="12" minamount="1" maxamount="1" comment="evasion pot"></drop>
+		<drop item="806" rate="12" minamount="1" maxamount="1" comment="painkiller pot"></drop>
+		<drop item="795" rate="12" minamount="1" maxamount="1" comment="ranged pot"></drop>
+		<drop item="797" rate="12" minamount="1" maxamount="1" comment="ranged pot"></drop>
+		<drop item="811" rate="5" minamount="1" maxamount="1" comment="cooked rabbit"></drop>
+
+		<drop item="669" rate="15" minamount="1" maxamount="1" comment="sickle sword"></drop>
+		<drop item="668" rate="15" minamount="1" maxamount="1" comment="reinforce bow"></drop>
+		<drop item="308" rate="12" minamount="1" maxamount="1" comment="leather armor"></drop>
+		<drop item="607" rate="20" minamount="1" maxamount="1" comment="leather armor"></drop>
+		<drop item="666" rate="12" minamount="1" maxamount="1" comment="spruce shield"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="828" rate="100" minamount="1" maxamount="1" comment="beer mug :S"></drop>
+	</table>
+	<table npcid="396" name="Bushwhacker2">
+		<drop item="131" rate="3" minamount="16" maxamount="28" comment="coins"></drop>
+		<drop item="164" rate="5" minamount="1" maxamount="1" comment="whiskey"></drop>
+		<drop item="296" rate="10" minamount="1" maxamount="1" comment="beer"></drop>
+		<drop item="996" rate="5" minamount="1" maxamount="3" comment="molotov"></drop>
+		<drop item="145" rate="12" minamount="1" maxamount="2" comment="acorn"></drop>
+		<drop item="804" rate="10" minamount="1" maxamount="1" comment="evasion pot"></drop>
+		<drop item="806" rate="10" minamount="1" maxamount="1" comment="painkiller pot"></drop>
+		<drop item="795" rate="10" minamount="1" maxamount="1" comment="ranged pot"></drop>
+		<drop item="797" rate="10" minamount="1" maxamount="1" comment="ranged pot"></drop>
+		<drop item="811" rate="5" minamount="1" maxamount="1" comment="cooked rabbit"></drop>
+
+		<drop item="669" rate="12" minamount="1" maxamount="1" comment="sickle sword"></drop>
+		<drop item="668" rate="12" minamount="1" maxamount="1" comment="reinforce bow"></drop>
+		<drop item="308" rate="10" minamount="1" maxamount="1" comment="leather armor"></drop>
+		<drop item="607" rate="15" minamount="1" maxamount="1" comment="leather armor"></drop>
+		<drop item="666" rate="10" minamount="1" maxamount="1" comment="spruce shield"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="828" rate="100" minamount="1" maxamount="1" comment="beer mug :S"></drop>
+	</table>
+
+	<table npcid="95" name="Murk crawler">
+		<drop item="621" rate="8" minamount="1" maxamount="1" comment="skin"></drop>
+		<drop item="665" rate="20" minamount="1" maxamount="1" comment="oak wand"></drop>
+		<drop item="217" rate="25" minamount="1" maxamount="1" comment="iron dagger"></drop>
+		<drop item="455" rate="10" minamount="1" maxamount="1" comment="poppy of the fallen"></drop>
+		<drop item="795" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="797" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="800" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="802" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="804" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="806" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="808" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="873" rate="20" minamount="1" maxamount="1" comment="th tp scroll"></drop>
+	</table>
+
+
+	<table npcid="624" name="goblin boss">
+		<drop item="725" rate="30" minamount="1" maxamount="1" comment="goblin trinket"></drop>
+		<drop item="726" rate="30" minamount="1" maxamount="1" comment="goblin magik trinket"></drop>
+		<drop item="727" rate="30" minamount="1" maxamount="1" comment="goblin bracelet"></drop>
+
+		<drop item="135" rate="15" minamount="1" maxamount="1" comment="copper shield"></drop>
+		<drop item="150" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="161" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="176" rate="12" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="238" rate="12" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="247" rate="15" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="131" rate="4" minamount="12" maxamount="63" comment="coins"></drop>
+		<drop item="169" rate="8" minamount="1" maxamount="1" comment="hp pot"></drop>
+		<drop item="142" rate="8" minamount="1" maxamount="2" comment="cooked fish"></drop>
+		<drop item="236" rate="15" minamount="1" maxamount="1" comment="mana pot"></drop>
+
+	</table>
+	<table npcid="494,495,522,601,624" name="goblins">
+		<drop item="131" rate="3" minamount="15" maxamount="35" comment="coins"></drop>
+		<drop item="169" rate="10" minamount="1" maxamount="1" comment="hp pot"></drop>
+		<drop item="142" rate="10" minamount="1" maxamount="2" comment="cooked fish"></drop>
+		<drop item="747" rate="20" minamount="1" maxamount="3" comment="mistypine needles"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+
+		<drop item="141" rate="15" minamount="1" maxamount="1" comment="copper pickaxe"></drop>
+		<drop item="251" rate="30" minamount="1" maxamount="1" comment="iron helmet"></drop>
+		<drop item="677" rate="20" minamount="1" maxamount="1" comment="tempered copper dagger"></drop>
+		<drop item="722" rate="30" minamount="1" maxamount="1" comment="goblin dagger"></drop>
+		<drop item="723" rate="30" minamount="1" maxamount="1" comment="goblin bow"></drop>
+		<drop item="724" rate="30" minamount="1" maxamount="1" comment="goblin staff"></drop>
+
+
+		<drop item="735" rate="50" minamount="1" maxamount="1" comment="goblin quiver"></drop>
+		<drop item="736" rate="15" minamount="1" maxamount="1" comment="goblin cloth"></drop>
+		<drop item="737" rate="50" minamount="1" maxamount="1" comment="goblin studs"></drop>
+		<drop item="728" rate="30" minamount="1" maxamount="1" comment="mistywoods tp"></drop>
+
+	</table>
+	<table npcid="871" name="cave goblin miner">
+		<drop item="131" rate="3" minamount="15" maxamount="35" comment="coins"></drop>
+		<drop item="169" rate="10" minamount="1" maxamount="1" comment="hp pot"></drop>
+		<drop item="142" rate="10" minamount="1" maxamount="2" comment="cooked fish"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="676" rate="10" minamount="1" maxamount="1" comment="torch"></drop>
+
+		<drop item="33" rate="4" minamount="1" maxamount="1" comment="copper ore"></drop>
+		<drop item="413" rate="10" minamount="1" maxamount="1" comment="book of mining"></drop>
+
+		<drop item="141" rate="8" minamount="1" maxamount="1" comment="copper pickaxe"></drop>
+		<drop item="911" rate="12" minamount="1" maxamount="1" comment="goblin pickaxe"></drop>
+
+	</table>
+
+	<table npcid="628" name="Etherlight Guardian">
+		<drop item="863" rate="40" minamount="1" maxamount="1" comment="bracelets"></drop>
+		<drop item="864" rate="40" minamount="1" maxamount="1" comment="bracelets"></drop>
+		<drop item="761" rate="40" minamount="1" maxamount="1" comment="Elemental lightning spellbook"></drop>
+		<drop item="665" rate="30" minamount="1" maxamount="1" comment="oak wand"></drop>
+		<drop item="131" rate="2" minamount="50" maxamount="125" comment="coins"></drop>
+		<drop item="501" rate="30" minamount="1" maxamount="1" comment="cotton hood"></drop>
+		<drop item="500" rate="40" minamount="1" maxamount="1" comment="cotton robe"></drop>
+		<drop item="353" rate="30" minamount="1" maxamount="1" comment="staff of winds"></drop>
+		<drop item="634" rate="20" minamount="1" maxamount="1" comment="oaken shield"></drop>
+		<drop item="993" rate="3" minamount="1" maxamount="1" comment="magical thing to craft robes"></drop>
+	</table>
+
+	<table npcid="736,739,95,738" name="Swamp monsters">
+		<drop item="890" rate="10" comment="essence"></drop>
+		<drop item="145" rate="10" minamount="4" maxamount="8" comment="acorn"></drop>
+		<drop item="891" rate="8" comment="bones"></drop>
+	</table>
+	<table npcid="737" name="Swamp moskitos">
+		<drop item="890" rate="10" comment="essence"></drop>
+		<drop item="145" rate="10" minamount="4" maxamount="8" comment="acorn"></drop>
+		<drop item="553" rate="2" comment="Q54 blood" checks="Var=Q54SwampAlchemyTracker-3-4"></drop>
+	</table>
+	<table npcid="736" name="Swamp tentacle">
+		<drop item="501" rate="30" minamount="1" maxamount="1" comment="cotton hood"></drop>
+		<drop item="500" rate="40" minamount="1" maxamount="1" comment="cotton robe"></drop>
+		<drop item="353" rate="30" minamount="1" maxamount="1" comment="staff of winds"></drop>
+		<drop item="619" rate="8" minamount="1" maxamount="1" comment="skin"></drop>
+		<drop item="747" rate="5" minamount="3" maxamount="6" comment="mistypine needles"></drop>
+	</table>
+
+	<table npcid="739" name="Lizardman">
+		<drop item="131" rate="3" minamount="15" maxamount="50" comment="coins"></drop>
+		<drop item="620" rate="8" minamount="1" maxamount="1" comment="skin"></drop>
+		<drop item="252" rate="40" minamount="1" maxamount="1" comment="iron armor"></drop>
+		<drop item="251" rate="40" minamount="1" maxamount="1" comment="iron helmet"></drop>
+		<drop item="250" rate="25" minamount="1" maxamount="1" comment="copper plate armor"></drop>
+		<drop item="548" rate="30" minamount="1" maxamount="1" comment="copper battleaxe"></drop>
+		<drop item="549" rate="40" minamount="1" maxamount="1" comment="iron battleaxe"></drop>
+		<drop item="660" rate="40" minamount="1" maxamount="1" comment="trollskin brace"></drop>
+		<drop item="309" rate="40" minamount="1" maxamount="1" comment="trollskin armor"></drop>
+		<drop item="316" rate="40" minamount="1" maxamount="1" comment="trollskin helmet"></drop>
+		<drop item="747" rate="5" minamount="3" maxamount="6" comment="mistypine needles"></drop>
+		<drop item="490" rate="5" minamount="1" maxamount="1" comment="hammer"></drop>
+		<drop item="749" rate="50" minamount="1" maxamount="1" comment="reinforced oak bow"></drop>
+
+	</table>
+
+
+	<table npcid="716" name="etherlight mob 1">
+		<drop item="753" rate="12" minamount="1" maxamount="1" comment="item base"></drop>
+		<drop item="754" rate="3" minamount="1" maxamount="1" comment="item piece"></drop>
+		<drop item="993" rate="8" minamount="1" maxamount="1" comment="magical thing to craft robes"></drop>
+	</table>
+	<table npcid="717" name="etherlight mob 2">
+		<drop item="753" rate="12" minamount="1" maxamount="1" comment="item base"></drop>
+		<drop item="746" rate="3" minamount="1" maxamount="1" comment="item piece"></drop>
+		<drop item="993" rate="8" minamount="1" maxamount="1" comment="magical thing to craft robes"></drop>
+	</table>
+	<table npcid="718" name="etherlight mob 3">
+		<drop item="753" rate="12" minamount="1" maxamount="1" comment="item base"></drop>
+		<drop item="756" rate="3" minamount="1" maxamount="1" comment="item piece"></drop>
+		<drop item="993" rate="8" minamount="1" maxamount="1" comment="magical thing to craft robes"></drop>
+	</table>
+	<table npcid="719" name="etherlight mob 4">
+		<drop item="753" rate="12" minamount="1" maxamount="1" comment="item base"></drop>
+		<drop item="755" rate="3" minamount="1" maxamount="1" comment="item piece"></drop>
+		<drop item="993" rate="8" minamount="1" maxamount="1" comment="magical thing to craft robes"></drop>
+	</table>
+
+
+	<table npcid="828,830" name="lvl 10-16 Skeleton sorcerer">
+		<drop item="131" rate="4" minamount="10" maxamount="40" comment="coins"></drop>
+		<drop item="336" rate="20" minamount="1" maxamount="1" comment="staff of ember"></drop>
+		<drop item="236" rate="5" minamount="1" maxamount="1" comment="mana pot"></drop>
+		<drop item="378" rate="7" minamount="1" maxamount="1" comment="spruce staff"></drop>
+		<drop item="145" rate="8" minamount="1" maxamount="2" comment="acorn"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+	</table>
+
+	<table npcid="829" name="lvl 12 Ghost">
+		<drop item="236" rate="3" minamount="1" maxamount="1" comment="mana pot"></drop>
+		<drop item="378" rate="5" minamount="1" maxamount="1" comment="spruce staff"></drop>
+		<drop item="131" rate="5" minamount="25" maxamount="30" comment="coins"></drop>
+		<drop item="211" rate="5" minamount="1" maxamount="3" comment="Weakness spell"></drop>
+		<drop item="219" rate="10" minamount="1" maxamount="1" comment="ring of accuracy"></drop>
+		<drop item="402" rate="15" minamount="1" maxamount="1" comment="dark wizard robes"></drop>
+		<drop item="145" rate="8" minamount="1" maxamount="2" comment="acorn"></drop>
+		<drop item="676" rate="20" minamount="1" maxamount="1" comment="torch"></drop>
+	</table>
+
+	<table npcid="831,832,833,834" name="Ancient mobs in etherlight dungeon">
+		<drop item="236" rate="3" minamount="1" maxamount="1" comment="mana pot"></drop>
+		<drop item="378" rate="5" minamount="1" maxamount="1" comment="spruce staff"></drop>
+		<drop item="131" rate="5" minamount="25" maxamount="30" comment="coins"></drop>
+		<drop item="402" rate="15" minamount="1" maxamount="1" comment="dark wizard robes"></drop>
+		<drop item="607" rate="50" minamount="1" maxamount="1" comment="studded sheepskin hood"></drop>
+		<drop item="308" rate="30" minamount="1" maxamount="1" comment="sheepskin armor"></drop>
+		<drop item="315" rate="20" minamount="1" maxamount="1" comment="sheepskin hood"></drop>
+		<drop item="659" rate="20" minamount="1" maxamount="1" comment="sheepskin bracelet"></drop>
+		<drop item="169" rate="7" minamount="1" maxamount="1" comment="hp pot"></drop>
+		<drop item="808" rate="7" minamount="1" maxamount="1" comment="dampening potion"></drop>
+		<drop item="993" rate="10" minamount="1" maxamount="1" comment="magical thing to craft robes"></drop>
+	</table>
+
+	<table npcid="877" name="Kyler Plair PKer in Q87">
+		<drop item="131" rate="1" minamount="300" maxamount="350" comment="coins"></drop>
+		<drop item="873" rate="1" minamount="1" maxamount="1" comment="TH tp scroll"></drop>
+		<drop item="922" rate="1" minamount="1" maxamount="1" comment="robes"></drop>
+	</table>
+
+	<table npcid="1025" name="Nyls Yellen">
+		<drop item="903" rate="1" minamount="1" maxamount="1" comment="usable dagger" checks="Quest=85-999-999,!ItemExistsGlobal=903"></drop>
+		<drop item="915" rate="1" minamount="1" maxamount="1" comment="bounty dagger" checks="Quest=85-4-5,!ItemExistsGlobal=915"></drop>
+
+		<drop item="131" rate="1" minamount="50" maxamount="100" comment="coins"></drop>
+		<drop item="316" rate="25" minamount="1" maxamount="1" comment="trollskin helm"></drop>
+		<drop item="305" rate="2" minamount="1" maxamount="1" comment="highway armor"></drop>
+		<drop item="819" rate="15" minamount="1" maxamount="1" comment="ranged ring"></drop>
+
+		<drop item="923" rate="5" minamount="1" maxamount="1" comment="toxxx bomb"></drop>
+		<drop item="975" rate="5" minamount="1" maxamount="1" comment="swift pot"></drop>
+		<drop item="243" rate="4" minamount="1" maxamount="1" comment="melee acc potion"></drop>
+		<drop item="804" rate="4" minamount="1" maxamount="1" comment="ranged res potion"></drop>
+		<drop item="743" rate="2" minamount="1" maxamount="2" comment="cured meat"></drop>
+	</table>
+
+	<table maps="5-1,6-1,6-0,14-7,14-8" name="Silderstone mobs">
+		<drop item="916" rate="20" minamount="1" maxamount="1" comment="stone key"></drop>
+	</table>
+
+	<table maps="0-7,0-8,0-9,0-10,1-7,1-8,1-9,1-10,2-7,2-8,2-9,2-10" name="pt forest keys">
+		<drop item="9089" rate="20" minamount="1" maxamount="1" comment="forest key"></drop>
+	</table>
+
+	<table maps="8-6,9-6,10-6,11-6,12-6,8-7,9-7,10-7,11-7,12-7,8-8,9-8,10-8,11-8,12-8,10-5,11-5,12-5" name="mw forest keys">
+		<drop item="9075" rate="20" minamount="1" maxamount="1" comment="forest key"></drop>
+	</table>
+	<table maps="2-3,3-3,4-3,5-3,2-4,3-4,4-4,5-4,2-5,3-5,4-5,5-5,2-6,3-6,4-6,5-6,2-7,3-7,4-7,5-7" name="hw/th forest keys">
+		<drop item="9076" rate="20" minamount="1" maxamount="1" comment="forest key"></drop>
+	</table>
+
+	<table npcid="878" name="Cave bear (Silderstone)">
+		<drop item="924" rate="40" minamount="1" maxamount="1" comment="bearhead"></drop>
+		<drop item="925" rate="20" minamount="1" maxamount="1" comment="pelt"></drop>
+		<drop item="207" rate="2" minamount="1" maxamount="1" comment="pelt"></drop>
+		<drop item="208" rate="3" minamount="1" maxamount="1" comment="paw"></drop>
+		<drop item="204" rate="1" minamount="1" maxamount="1" comment="raw meat"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="209" rate="10" minamount="1" maxamount="1" comment="brain"></drop>
+		<drop item="210" rate="7" minamount="1" maxamount="1" comment="mushroom"></drop>
+		<drop item="145" rate="10" minamount="2" maxamount="4" comment="acorn"></drop>
+
+		<drop item="607" rate="30" minamount="1" maxamount="1" comment="studded sheepskin hood"></drop>
+		<drop item="308" rate="30" minamount="1" maxamount="1" comment="sheepskin armor"></drop>
+		<drop item="315" rate="20" minamount="1" maxamount="1" comment="sheepskin hood"></drop>
+		<drop item="659" rate="20" minamount="1" maxamount="1" comment="sheepskin bracelet"></drop>
+		<drop item="150" rate="20" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="161" rate="20" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="176" rate="20" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="238" rate="20" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="247" rate="20" minamount="1" maxamount="1" comment="copper gear"></drop>
+	</table>
+
+	<table npcid="585,630,875" name="Vulture">
+		<drop item="928" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="929" rate="10" minamount="1" maxamount="1" comment="feather"></drop>
+		<drop item="204" rate="4" minamount="1" maxamount="1" comment="raw meat"></drop>
+		<drop item="131" rate="5" minamount="25" maxamount="30" comment="coins"></drop>
+	</table>
+
+	<table npcid="897,898" name="Q88 Crypt Guardians">
+		<drop item="131" rate="1" minamount="15" maxamount="43" comment="coins"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="955" rate="20" minamount="1" maxamount="1" comment="magic cape"></drop>
+	</table>
+	<table npcid="897" name="Q88 Crypt Guardians">
+		<drop item="210" rate="2" minamount="1" maxamount="3" comment="shroom"></drop>
+		<drop item="634" rate="35" minamount="1" maxamount="1" comment="oak shield"></drop>
+		<drop item="662" rate="5" minamount="1" maxamount="1" comment="caster ring"></drop>
+		<drop item="663" rate="5" minamount="1" maxamount="1" comment="another caster ring"></drop>
+		<drop item="501" rate="15" minamount="1" maxamount="1" comment="caster hood"></drop>
+		<drop item="922" rate="30" minamount="1" maxamount="1" comment="better caster robes"></drop>
+	</table>
+	<table npcid="898" name="Q88 Crypt Guardians">
+		<drop item="710" rate="2" minamount="2" maxamount="5" comment="rattata"></drop>
+		<drop item="660" rate="25" minamount="1" maxamount="1" comment="trollskin brace"></drop>
+		<drop item="309" rate="30" minamount="1" maxamount="1" comment="trollskin armor"></drop>
+		<drop item="316" rate="20" minamount="1" maxamount="1" comment="trollskin helmet"></drop>
+		<drop item="749" rate="35" minamount="1" maxamount="1" comment="reinforced oak bow"></drop>
+	</table>
+	<table npcid="906,907" name="Bigger Crabs">
+		<drop item="180" rate="3" minamount="1" maxamount="1" comment="shell"></drop>
+		<drop item="181" rate="1" minamount="1" maxamount="2" comment="meat"></drop>
+		<drop item="486" rate="30" minamount="1" maxamount="1" comment="golden fishing hook"></drop>
+		<drop item="964" rate="100" minamount="1" maxamount="1" comment="chitin torch"></drop>
+		<drop item="34" rate="20" minamount="1" maxamount="3" comment="iron ore"></drop>
+		<drop item="973" rate="3" minamount="1" maxamount="1" comment="mutated crab leg"></drop>
+		<drop item="974" rate="10" minamount="1" maxamount="1" comment="flawless crab eye"></drop>
+		<drop item="411" rate="18" minamount="1" maxamount="1" comment="fishing book"></drop>
+		<drop item="962" rate="8" minamount="1" maxamount="2" comment="worms"></drop>
+		<drop item="105" rate="8" minamount="1" maxamount="1" comment="raw wild goopy"></drop>
+		<drop item="186" rate="9" minamount="1" maxamount="1" comment="raw pebble sturgeon"></drop>
+		<drop item="187" rate="10" minamount="1" maxamount="1" comment="raw charcoal snapper"></drop>
+	</table>
+	<table npcid="908" name="Crab Boss">
+		<drop item="990" rate="50" minamount="1" maxamount="1" comment="waterblast spellbook"></drop>
+		<drop item="991" rate="60" minamount="1" maxamount="1" comment="crab helmet"></drop>
+		<drop item="180" rate="3" minamount="1" maxamount="1" comment="shell"></drop>
+		<drop item="974" rate="2" minamount="1" maxamount="1" comment="flawless crab eye"></drop>
+		<drop item="181" rate="1" minamount="1" maxamount="1" comment="meat"></drop>
+		<drop item="973" rate="1" minamount="1" maxamount="1" comment="mutated crab leg"></drop>
+		<drop item="188" rate="8" minamount="1" maxamount="3" comment="raw horsetail reed bass"></drop>
+		<drop item="189" rate="16" minamount="1" maxamount="1" comment="raw sandstone grouper"></drop>
+		<drop item="964" rate="20" minamount="1" maxamount="1" comment="chitin torch"></drop>
+		<drop item="962" rate="6" minamount="1" maxamount="3" comment="worms"></drop>
+		<drop item="411" rate="10" minamount="1" maxamount="1" comment="fishing book"></drop>
+		<drop checks="Quest=89-1-1,!ItemExistsGlobal=486|487" item="486" rate="1" minamount="1" maxamount="1"></drop>
+		<drop checks="Quest=92-3-4,!ItemExistsGlobal=976" item="976" rate="1" minamount="1" maxamount="1" comment="questitem claw"></drop>
+	</table>
+	<table npcid="940" name="river pirates">
+		<drop item="131" rate="3" minamount="25" maxamount="30" comment="coins"></drop>
+		<drop item="488" rate="8" minamount="1" maxamount="2" comment="nutty"></drop>
+		<drop item="981" rate="50" minamount="1" maxamount="1" comment="outfit1"></drop>
+		<drop item="983" rate="50" minamount="1" maxamount="1" comment="cutlass"></drop>
+		<drop item="607" rate="30" minamount="1" maxamount="1" comment="studded sheepskin hood"></drop>
+		<drop item="308" rate="20" minamount="1" maxamount="1" comment="sheepskin armor"></drop>
+		<drop item="315" rate="8" minamount="1" maxamount="1" comment="sheepskin hood"></drop>
+		<drop item="659" rate="15" minamount="1" maxamount="1" comment="sheepskin bracelet"></drop>
+		<drop item="150" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="161" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="176" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="238" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="247" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="243" rate="15" minamount="1" maxamount="1" comment="reflex potion"></drop>
+		<drop item="155" rate="100" minamount="1" maxamount="1" comment="oak bow"></drop>
+	</table>
+	<table npcid="941,942,943" name="river kaptains">
+		<drop item="131" rate="1" minamount="80" maxamount="125" comment="coins"></drop>
+		<drop item="979" rate="1" minamount="1" maxamount="1" comment="quest cargo crates"></drop>
+		<drop item="488" rate="3" minamount="3" maxamount="5" comment="nutty"></drop>
+		<drop item="981" rate="25" minamount="1" maxamount="1" comment="outfit1"></drop>
+		<drop item="982" rate="35" minamount="1" maxamount="1" comment="outfit2"></drop>
+		<drop item="983" rate="25" minamount="1" maxamount="1" comment="cutlass"></drop>
+		<drop item="607" rate="15" minamount="1" maxamount="1" comment="studded sheepskin hood"></drop>
+		<drop item="608" rate="18" minamount="1" maxamount="1" comment="studded sheepskin armor"></drop>
+		<drop item="688" rate="15" minamount="1" maxamount="1" comment="studded sheepskin bracelet"></drop>
+		<drop item="161" rate="10" minamount="2" maxamount="4" comment="copper gear"></drop>
+		<drop item="677" rate="8" minamount="1" maxamount="1" comment="tempery dagger"></drop>
+		<drop item="243" rate="10" minamount="1" maxamount="1" comment="reflex potion"></drop>
+		<drop item="975" rate="20" minamount="1" maxamount="1" comment="speed potion"></drop>
+		<drop item="155" rate="50" minamount="1" maxamount="1" comment="oak bow"></drop>
+	</table>
+	<table npcid="446" name="foxxx">
+		<drop item="145" rate="5" minamount="1" maxamount="1" comment="acorn"></drop>
+		<drop item="747" rate="8" minamount="1" maxamount="1" comment="needle"></drop>
+	</table>
+	<table npcid="1070" name="Troll(Crossbow)">
+		<drop item="312" rate="10" minamount="1" maxamount="1" comment="troll leather"></drop>
+		<drop item="424" rate="10" minamount="1" maxamount="1" comment="troll nail"></drop>
+		<drop item="1328" rate="5" minamount="1" maxamount="3" comment="troll blood"></drop>
+		<drop item="131" rate="2" minamount="10" maxamount="25" comment="coins"></drop>
+		<drop item="176" rate="30" minamount="1" maxamount="1" comment="copper warhammer"></drop>
+		<drop item="557" rate="40" minamount="1" maxamount="1" comment="iron warhammer"></drop>
+		<drop item="651" rate="30" minamount="1" maxamount="1" comment="copper kiteshield"></drop>
+		<drop item="652" rate="40" minamount="1" maxamount="1" comment="iron kiteshield"></drop>
+		<drop item="668" rate="30" minamount="1" maxamount="1" comment="reinforced spruce bow"></drop>
+		<drop item="811" rate="10" minamount="1" maxamount="1" comment="cooked rabbit"></drop>
+		<drop item="854" rate="30" minamount="1" maxamount="1" comment="phys dmg ring"></drop>
+		<drop item="860" rate="30" minamount="1" maxamount="1" comment="phys res ring"></drop>
+		<drop item="1006" rate="10" minamount="1" maxamount="3" comment="Mystic's Amber"></drop>
+		<drop item="1809" rate="1" minamount="1" maxamount="1" checks="Quest=95-6-6,!HasItem=1809-1" comment="q95 shaman wants a thing"></drop>
+	</table>
+	<table npcid="1145" name="Troll MiniBoss">
+		<drop item="1010" rate="40" minamount="1" maxamount="1" comment="troll crossbow"></drop>
+		<drop item="312" rate="5" minamount="1" maxamount="1" comment="troll leather"></drop>
+		<drop item="424" rate="5" minamount="1" maxamount="1" comment="troll nail"></drop>
+		<drop item="330" rate="10" minamount="1" maxamount="1" comment="spruce crossbow"></drop>
+		<drop item="361" rate="20" minamount="1" maxamount="1" comment="oak crossbow"></drop>
+		<drop item="131" rate="2" minamount="10" maxamount="25" comment="coins"></drop>
+		<drop item="176" rate="30" minamount="1" maxamount="1" comment="copper warhammer"></drop>
+		<drop item="557" rate="40" minamount="1" maxamount="1" comment="iron warhammer"></drop>
+		<drop item="651" rate="30" minamount="1" maxamount="1" comment="copper kiteshield"></drop>
+		<drop item="652" rate="40" minamount="1" maxamount="1" comment="iron kiteshield"></drop>
+		<drop item="668" rate="30" minamount="1" maxamount="1" comment="reinforced spruce bow"></drop>
+		<drop item="811" rate="10" minamount="1" maxamount="1" comment="cooked rabbit"></drop>
+		<drop item="854" rate="30" minamount="1" maxamount="1" comment="phys dmg ring"></drop>
+		<drop item="860" rate="30" minamount="1" maxamount="1" comment="phys res ring"></drop>
+		<drop item="1006" rate="5" minamount="1" maxamount="3" comment="Mystic's Amber"></drop>
+	</table>
+	<table npcid="1228" name="Harvy o'Drear, PUMPKIN MONSTER">
+		<drop item="131" rate="1" minamount="10" maxamount="100" comment="coins"></drop>
+		<drop item="284" rate="1" minamount="1" maxamount="2" comment="Pumpkin"></drop>
+		<drop item="1130" rate="3" minamount="1" maxamount="1" comment="ticket"></drop>
+		<drop item="1129" rate="40" minamount="1" maxamount="1" comment="Pumpkin head"></drop>
+		<drop item="1137" rate="80" minamount="1" maxamount="1" comment="Pumpkin pet"></drop>
+		<drop item="659" rate="8" minamount="1" maxamount="1" comment="shep bracer"></drop>
+		<drop item="308" rate="12" minamount="1" maxamount="1" comment="shep armor"></drop>
+		<drop item="330" rate="8" minamount="1" maxamount="1" comment="spruce crossb"></drop>
+		<drop item="668" rate="15" minamount="1" maxamount="1" comment="spruce bigg b"></drop>
+		<drop item="666" rate="10" minamount="1" maxamount="1" comment="spruce shield"></drop>
+		<drop item="238" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="139" rate="10" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="135" rate="20" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="466" rate="20" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="548" rate="20" minamount="1" maxamount="1" comment="copper gear"></drop>
+	</table>
+	<table npcid="1230" name="Halloween Forest Spider">
+		<drop item="1798" rate="20" minamount="1" maxamount="1" comment="Spider Wall Web"></drop>
+		<drop item="1799" rate="20" minamount="1" maxamount="1" comment="Spider Table Web"></drop>
+		<drop item="1800" rate="20" minamount="1" maxamount="1" comment="Spider Wall Web 2"></drop>
+		<drop item="1801" rate="20" minamount="1" maxamount="1" comment="Spider Wall Web 3"></drop>
+		<drop item="1134" rate="4" minamount="1" maxamount="1" comment="Spider Leg"></drop>
+		<drop item="210" rate="10" minamount="1" maxamount="3" comment="Mushroom"></drop>
+		<drop item="358" rate="15" minamount="1" maxamount="2" comment="poison Mushroom"></drop>
+		<drop item="308" rate="20" minamount="1" maxamount="1" comment="sheepskin armor"></drop>
+		<drop item="315" rate="8" minamount="1" maxamount="1" comment="sheepskin hood"></drop>
+		<drop item="659" rate="15" minamount="1" maxamount="1" comment="sheepskin bracelet"></drop>
+		<drop item="150" rate="20" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="161" rate="20" minamount="1" maxamount="1" comment="copper gear"></drop>
+		<drop item="176" rate="20" minamount="1" maxamount="1" comment="copper gear"></drop>
+	</table>
+
+
+	<table npcid="1204" name="festival tournament addams">
+		<drop item="1145" rate="40" minamount="1" maxamount="1" comment="reward"></drop>
+		<drop item="131" rate="5" minamount="25" maxamount="50" comment=""></drop>
+		<drop item="1130" rate="1" minamount="1" maxamount="1" comment=""></drop>
+		<drop item="296" rate="5" minamount="1" maxamount="2" comment="beer"></drop>
+		<drop item="205" rate="10" minamount="1" maxamount="1" comment="meat"></drop>
+		<drop item="800" rate="10" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="283" rate="10" minamount="1" maxamount="1" comment="potato"></drop>
+	</table>
+
+	<table npcid="1205" name="festival tournament wizard">
+		<drop item="1144" rate="40" minamount="1" maxamount="1" comment="reward"></drop>
+		<drop item="131" rate="5" minamount="30" maxamount="100" comment=""></drop>
+		<drop item="1130" rate="1" minamount="1" maxamount="3" comment=""></drop>
+		<drop item="407" rate="50" minamount="1" maxamount="1" comment="ability book"></drop>
+		<drop item="145" rate="7" minamount="1" maxamount="1" comment="acorn"></drop>
+		<drop item="164" rate="5" minamount="1" maxamount="1" comment="whisky"></drop>
+		<drop item="664" rate="10" minamount="1" maxamount="1" comment="spruce wand"></drop>
+		<drop item="335" rate="15" minamount="1" maxamount="1" comment="wool robe"></drop>
+		<drop item="611" rate="20" minamount="1" maxamount="1" comment="wizards hat"></drop>
+		<drop item="612" rate="30" minamount="1" maxamount="1" comment="wizards robbe"></drop>
+		<drop item="336" rate="20" minamount="1" maxamount="1" comment="emberstaff"></drop>
+	</table>
+
+	<table npcid="1206" name="festival tournament knight">
+		<drop item="1143" rate="40" minamount="1" maxamount="1" comment="reward"></drop>
+		<drop item="131" rate="5" minamount="70" maxamount="200" comment=""></drop>
+		<drop item="1130" rate="1" minamount="1" maxamount="4" comment=""></drop>
+		<drop item="1140" rate="70" minamount="1" maxamount="1" comment="ability book"></drop>
+		<drop item="1122" rate="60" minamount="1" maxamount="1" comment="tabard armor"></drop>
+		<drop item="1123" rate="60" minamount="1" maxamount="1" comment="bascinet"></drop>
+		<drop item="252" rate="30" minamount="1" maxamount="1" comment="iron armor"></drop>
+		<drop item="251" rate="30" minamount="1" maxamount="1" comment="iron helmet"></drop>
+		<drop item="250" rate="15" minamount="1" maxamount="1" comment="copper plate armor"></drop>
+		<drop item="548" rate="15" minamount="1" maxamount="1" comment="copper battleaxe"></drop>
+		<drop item="549" rate="30" minamount="1" maxamount="1" comment="iron battleaxe"></drop>
+		<drop item="660" rate="20" minamount="1" maxamount="1" comment="trollskin brace"></drop>
+		<drop item="800" rate="7" comment="dmg potion"></drop>
+	</table>
+
+	<table npcid="1207" name="festival tournament duelist">
+		<drop item="1121" rate="40" minamount="1" maxamount="1" comment="reward"></drop>
+		<drop item="131" rate="5" minamount="120" maxamount="300" comment=""></drop>
+		<drop item="1130" rate="1" minamount="1" maxamount="5" comment=""></drop>
+		<drop item="1120" rate="60" minamount="1" maxamount="1" comment="fencing armor"></drop>
+		<drop item="1128" rate="70" minamount="1" maxamount="1" comment="hat"></drop>
+		<drop item="1141" rate="70" minamount="1" maxamount="1" comment="ability book"></drop>
+		<drop item="217" rate="10" minamount="1" maxamount="1" comment="iron dagger"></drop>
+		<drop item="309" rate="20" minamount="1" maxamount="1" comment="troll armor"></drop>
+		<drop item="316" rate="20" minamount="1" maxamount="1" comment="troll helm"></drop>
+		<drop item="243" rate="10" comment="reflex potion"></drop>
+		<drop item="804" rate="7" comment="evasion potion"></drop>
+		<drop item="476" rate="10" comment="hp potion"></drop>
+		<drop item="743" rate="10" comment="salted meat"></drop>
+	</table>
+
+
+	<table npcid="1308" name="GoG Shanker">
+		<drop item="9021" rate="8" minamount="1" maxamount="1" comment="Weapon Piece"></drop>
+		<drop item="9008" rate="8" minamount="1" maxamount="1" comment="Uniform Piece"></drop>
+		<drop item="9013" rate="16" minamount="1" maxamount="1" comment="Hood"></drop>
+		<drop item="9009" rate="10" minamount="1" maxamount="1" comment="Flesh"></drop>
+	</table>
+
+	<table npcid="1309" name="GoG bound zombie">
+		<drop item="9008" rate="8" minamount="1" maxamount="1" comment="Uniform Piece"></drop>
+		<drop item="9013" rate="16" minamount="1" maxamount="1" comment="Hood"></drop>
+		<drop item="9009" rate="10" minamount="1" maxamount="1" comment="Flesh"></drop>
+		<drop item="9005" rate="10" minamount="1" maxamount="1" comment="Shackles"></drop>
+		<drop item="9006" rate="16" minamount="1" maxamount="1" comment="Chain"></drop>
+		<drop item="9103" rate="5" minamount="2" maxamount="4" comment="old bone"></drop>
+	</table>
+
+	<table npcid="1310" name="GoG Fodder zombie">
+		<drop item="9013" rate="16" minamount="1" maxamount="1" comment="Hood"></drop>
+		<drop item="9008" rate="8" minamount="1" maxamount="1" comment="Uniform Piece"></drop>
+		<drop item="9009" rate="10" minamount="1" maxamount="1" comment="Flesh"></drop>
+		<drop item="9103" rate="5" minamount="2" maxamount="4" comment="old bone"></drop>
+	</table>
+
+	<table npcid="1311" name="GoG Wraiths">
+		<drop item="9008" rate="8" minamount="1" maxamount="1" comment="Uniform Piece"></drop>
+		<drop item="9013" rate="16" minamount="1" maxamount="1" comment="Hood"></drop>
+		<drop item="9005" rate="10" minamount="1" maxamount="1" comment="Shackles"></drop>
+		<drop item="9006" rate="10" minamount="1" maxamount="1" comment="Chain"></drop>
+		<drop item="9010" rate="40" minamount="1" maxamount="1" comment="Fear"></drop>
+	</table>
+
+	<table npcid="1316" name="GoG Tormented Prisoner">
+		<drop item="9013" rate="16" minamount="1" maxamount="1" comment="Hood"></drop>
+		<drop item="9009" rate="10" minamount="1" maxamount="1" comment="Flesh"></drop>
+		<drop item="9005" rate="10" minamount="1" maxamount="1" comment="Shackles"></drop>
+		<drop item="9006" rate="16" minamount="1" maxamount="1" comment="Chain"></drop>
+		<drop item="9018" rate="30" minamount="1" maxamount="1" comment="Torment"></drop>
+	</table>
+
+	<table npcid="1317" name="GoG Dog">
+		<drop item="9022" rate="8" minamount="1" maxamount="2" comment="Sinew"></drop>
+		<drop item="9009" rate="10" minamount="1" maxamount="1" comment="Flesh"></drop>
+		<drop item="9016" rate="2" minamount="1" maxamount="1" comment="Tooth"></drop>
+		<drop item="9103" rate="10" minamount="2" maxamount="4" comment="old bone"></drop>
+	</table>
+
+	<table npcid="1318" name="GoG Diseased Dog">
+		<drop item="9022" rate="5" minamount="1" maxamount="3" comment="Sinew"></drop>
+		<drop item="9009" rate="10" minamount="1" maxamount="1" comment="Flesh"></drop>
+		<drop item="9016" rate="2" minamount="1" maxamount="2" comment="Tooth"></drop>
+		<drop item="9103" rate="10" minamount="2" maxamount="4" comment="old bone"></drop>
+	</table>
+
+	<table npcid="1319,1320,1321" name="GoG Prison Guards">
+		<drop item="9020" rate="8" minamount="1" maxamount="1" comment="Armor Fragment"></drop>
+		<drop item="9021" rate="8" minamount="1" maxamount="1" comment="Weapon Piece"></drop>
+		<drop item="9009" rate="10" minamount="1" maxamount="1" comment="Flesh"></drop>
+	</table>
+	<table npcid="1280" name="GoG melee ghost special">
+		<drop item="9010" rate="25" minamount="1" maxamount="1" comment="Fear"></drop>
+	</table>
+	<table npcid="1282" name="GoG spell ghost special">
+		<drop item="9018" rate="25" minamount="1" maxamount="1" comment="Torment"></drop>
+	</table>
+	<table npcid="1280,1308,1309,1310,1316,1319,1320" name="GoG melee">
+		<drop item="131" rate="5" minamount="50" maxamount="100" comment="coins"></drop>
+		<drop item="250" rate="20" minamount="1" maxamount="1" comment="copper armor"></drop>
+		<drop item="252" rate="30" minamount="1" maxamount="1" comment="iron armor"></drop>
+		<drop item="557" rate="35" minamount="1" maxamount="1" comment="iron hammer"></drop>
+		<drop item="542" rate="35" minamount="1" maxamount="1" comment="iron greatsword"></drop>
+		<drop item="341" rate="35" minamount="1" maxamount="1" comment="iron round shield"></drop>
+		<drop item="687" rate="45" minamount="1" maxamount="1" comment="iron greatsword"></drop>
+		<drop item="652" rate="40" minamount="1" maxamount="1" comment="iron kite shield"></drop>
+		<drop item="254" rate="45" minamount="1" maxamount="1" comment="iron plate"></drop>
+	</table>
+	<table npcid="1281,1282,1311,1321" name="GoG ranged/mage">
+		<drop item="131" rate="5" minamount="50" maxamount="100" comment="coins"></drop>
+		<drop item="612" rate="20" minamount="1" maxamount="1" comment="wizard robe"></drop>
+		<drop item="611" rate="20" minamount="1" maxamount="1" comment="wizard hat"></drop>
+		<drop item="500" rate="30" minamount="1" maxamount="1" comment="spellslinger robe"></drop>
+		<drop item="309" rate="30" minamount="1" maxamount="1" comment="trollskin armor"></drop>
+		<drop item="501" rate="27" minamount="1" maxamount="1" comment="spellslinger hood"></drop>
+		<drop item="634" rate="35" minamount="1" maxamount="1" comment="oak shield"></drop>
+		<drop item="749" rate="40" minamount="1" maxamount="1" comment="reinforced oak bow"></drop>
+		<drop item="354" rate="40" minamount="1" maxamount="1" comment="staff of spiteful seas"></drop>
+		<drop item="613" rate="40" minamount="1" maxamount="1" comment="battlemage hood"></drop>
+		<drop item="614" rate="45" minamount="1" maxamount="1" comment="battlemage robe"></drop>
+		<drop item="610" rate="45" minamount="1" maxamount="1" comment="studded trollskin armor"></drop>
+		<drop item="609" rate="40" minamount="1" maxamount="1" comment="studded trollskin helm"></drop>
+	</table>
+	<table npcid="1280,1308,1309,1310,1316,1319,1320,1281,1282,1311,1321,1326,1327,1328,1344" name="GoG all mobs">
+		<drop item="1169" rate="1" minamount="1" maxamount="1" checks="DoesntHaveAnyItem=1169-1|1170-1|1171-1,PlayerMapPosition=18-13-19-16" comment="empty key ring"></drop>
+		<drop item="1172" rate="4" minamount="1" maxamount="1" checks="HasItem=1169-1,PlayerMapPosition=18-13-19-16" comment="prison key"></drop>
+		<drop item="1166" rate="25" minamount="1" maxamount="1" checks="Quest=106-1-999" comment="dreamguard armor scrap"></drop>
+		<drop item="389" rate="40" minamount="1" maxamount="1" comment="ampoule"></drop>
+		<drop item="390" rate="40" minamount="1" maxamount="1" comment="ampoule"></drop>
+		<drop item="391" rate="40" minamount="1" maxamount="1" comment="ampoule"></drop>
+		<drop item="207" rate="20" minamount="1" maxamount="1" comment="bear pelt"></drop>
+		<drop item="204" rate="25" minamount="1" maxamount="1" comment="raw meat"></drop>
+		<drop item="1223" rate="10" minamount="1" maxamount="4" comment="maggots"></drop>
+		<drop item="1224" rate="15" minamount="1" maxamount="1" comment="maggot stew"></drop>
+		<drop item="206" rate="8" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="217" rate="20" minamount="1" maxamount="1" comment="iron dagger"></drop>
+		<drop item="169" rate="20" minamount="1" maxamount="2" comment="health pot"></drop>
+		<drop item="145" rate="20" minamount="1" maxamount="4" comment="unusual acorn"></drop>
+		<drop item="747" rate="30" minamount="1" maxamount="4" comment="mistypine needles"></drop>
+
+		<drop item="795" rate="50" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="797" rate="50" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="800" rate="50" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="802" rate="50" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="804" rate="50" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="806" rate="50" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="808" rate="50" minamount="1" maxamount="1" comment="potion"></drop>
+	</table>
+	<table npcid="1326,1327,1328" name="GoG bossroom regular mobs">
+		<drop item="1227" rate="10" minamount="3" maxamount="14" comment="dried fish"></drop>
+		<drop item="1228" rate="30" minamount="1" maxamount="1" comment="gog tp scroll"></drop>
+	</table>
+
+	<table npcid="1302,1303,1322,1334,1335,1337,1338,1341,1342,1343,1345,1346,1347,1349" name="GoG officers general table">
+		<drop item="1173" rate="2" minamount="1" maxamount="1" comment="officer key" checks="HasItem=1170-1"></drop>
+		<drop item="1226" rate="8" minamount="1" maxamount="1" checks="Quest=54-999-999" comment="darkened spirit"></drop>
+		<drop item="1166" rate="12" minamount="1" maxamount="1" checks="Quest=106-1-999" comment="dreamguard armor scrap"></drop>
+
+		<drop item="131" rate="1" minamount="100" maxamount="200" comment="coins"></drop>
+		<drop item="1223" rate="10" minamount="1" maxamount="4" comment="maggots"></drop>
+		<drop item="9020" rate="5" minamount="1" maxamount="1" comment="Armor Fragment"></drop>
+		<drop item="9021" rate="5" minamount="1" maxamount="1" comment="Weapon Piece"></drop>
+		<drop item="9009" rate="8" minamount="1" maxamount="1" comment="Flesh"></drop>
+		<drop item="9005" rate="6" minamount="1" maxamount="1" comment="Shackles"></drop>
+		<drop item="9006" rate="10" minamount="1" maxamount="1" comment="Chain"></drop>
+		<drop item="9010" rate="10" minamount="1" maxamount="1" comment="Fear"></drop>
+		<drop item="9018" rate="10" minamount="1" maxamount="1" comment="Torment"></drop>
+		<drop item="777" rate="10" minamount="1" maxamount="10" comment="homecoming scroll"></drop>
+
+		<drop item="145" rate="10" minamount="1" maxamount="4" comment="unusual acorn"></drop>
+		<drop item="747" rate="10" minamount="1" maxamount="4" comment="mistypine needles"></drop>
+		<drop item="389" rate="15" minamount="1" maxamount="3" comment="ampoule"></drop>
+		<drop item="390" rate="15" minamount="1" maxamount="3" comment="ampoule"></drop>
+		<drop item="391" rate="15" minamount="1" maxamount="3" comment="ampoule"></drop>
+	</table>
+
+	<table npcid="1334" name="GoG 'officer' drummonds">
+		<drop item="1154" rate="1" minamount="1" maxamount="1" checks="!ItemExistsGlobal=1154" comment="drummond diary"></drop>
+		<drop item="341" rate="10" minamount="1" maxamount="1" comment="iron round shield"></drop>
+	</table>
+
+	<table npcid="1310,1316" name="GoG prisoners">
+		<drop item="1000033" rate="10" minamount="3" maxamount="15" comment="copper ore"></drop>
+		<drop item="1000034" rate="20" minamount="3" maxamount="10" comment="iron ore"></drop>
+		<drop item="141" rate="20" minamount="1" maxamount="1" comment="copper pickare"></drop>
+		<drop item="346" rate="30" minamount="1" maxamount="1" comment="iron pickare"></drop>
+		<drop item="9103" rate="20" minamount="1" maxamount="2" comment="old bone"></drop>
+	</table>
+
+	<table npcid="489" name="Drawyn">
+		<drop item="131" rate="1" minamount="1000" maxamount="2000" comment="coins"></drop>
+		<drop item="641" rate="1" minamount="1" maxamount="1" checks="!ItemExistsGlobal=641,Quest=54-13-13" comment="skull"></drop>
+		<drop item="1226" rate="1" minamount="1" maxamount="1" checks="Quest=54-999-999" comment="darkened spirit"></drop>
+		<drop item="1166" rate="2" minamount="1" maxamount="1" checks="Quest=106-1-999" comment="dreamguard armor scrap"></drop>
+		<drop item="389" rate="10" minamount="2" maxamount="5" comment="ampoule"></drop>
+		<drop item="390" rate="10" minamount="2" maxamount="5" comment="ampoule"></drop>
+		<drop item="391" rate="10" minamount="2" maxamount="5" comment="ampoule"></drop>
+		<drop item="9010" rate="2" minamount="1" maxamount="1" comment="Fear"></drop>
+		<drop item="9018" rate="2" minamount="1" maxamount="1" comment="Torment"></drop>
+		<drop item="9005" rate="2" minamount="1" maxamount="1" comment="Shackles"></drop>
+		<drop item="9006" rate="2" minamount="1" maxamount="1" comment="Chain"></drop>
+		<drop item="235" rate="1" minamount="10" maxamount="20" comment="bone dust"></drop>
+		<drop item="145" rate="15" minamount="10" maxamount="10" comment="unusual acorn"></drop>
+		<drop item="747" rate="20" minamount="10" maxamount="10" comment="mistypine needles"></drop>
+		<drop item="476" rate="5" minamount="1" maxamount="1" comment="decent hp potion"></drop>
+		<drop item="1230" rate="100" minamount="1" maxamount="1" comment="cleaver"></drop>
+		<drop item="1231" rate="100" minamount="1" maxamount="1" comment="cane"></drop>
+	</table>
+
+	<table npcid="1288,1289,1290,1291" name="GoG Boss gauntlet 1st room ghosts">
+		<drop item="1226" rate="4" minamount="1" maxamount="1" checks="Quest=54-999-999" comment="darkened spirit"></drop>
+		<drop item="9010" rate="20" minamount="1" maxamount="1" comment="Fear"></drop>
+		<drop item="9018" rate="20" minamount="1" maxamount="1" comment="Torment"></drop>
+	</table>
+
+	<table npcid="1292" name="GoG Boss gauntlet 2nd room sassassssin">
+		<drop item="1226" rate="1" minamount="1" maxamount="1" checks="Quest=54-999-999" comment="darkened spirit"></drop>
+		<drop item="9044" rate="25" minamount="1" maxamount="1" comment="shackles of regrety"></drop>
+		<drop item="9010" rate="5" minamount="1" maxamount="1" comment="Fear"></drop>
+		<drop item="9018" rate="5" minamount="1" maxamount="1" comment="Torment"></drop>
+		<drop item="1166" rate="8" minamount="1" maxamount="1" checks="Quest=106-1-999" comment="dreamguard armor scrap"></drop>
+		<drop item="316" rate="3" minamount="1" maxamount="1" comment="trollskin helm"></drop>
+		<drop item="660" rate="4" minamount="1" maxamount="1" comment="trollskin brace"></drop>
+		<drop item="309" rate="5" minamount="1" maxamount="1" comment="trollskin armor"></drop>
+		<drop item="476" rate="2" minamount="1" maxamount="1" comment="decent hp potion"></drop>
+	</table>
+
+	<table npcid="1296" name="GoG Boss gauntlet 3rd room mage">
+		<drop item="1229" rate="20" minamount="1" maxamount="1" comment="Mortar spellbook"></drop>
+		<drop item="1226" rate="1" minamount="1" maxamount="1" checks="Quest=54-999-999" comment="darkened spirit"></drop>
+		<drop item="9043" rate="25" minamount="1" maxamount="1" comment="mana font tiny"></drop>
+		<drop item="9010" rate="5" minamount="1" maxamount="1" comment="Fear"></drop>
+		<drop item="9018" rate="5" minamount="1" maxamount="1" comment="Torment"></drop>
+		<drop item="1166" rate="8" minamount="1" maxamount="1" checks="Quest=106-1-999" comment="dreamguard armor scrap"></drop>
+		<drop item="500" rate="5" minamount="1" maxamount="1" comment="spellsling robbe"></drop>
+		<drop item="501" rate="3" minamount="1" maxamount="1" comment="spellsling hodd"></drop>
+		<drop item="336" rate="1" minamount="1" maxamount="1" comment="emberstoff"></drop>
+		<drop item="476" rate="2" minamount="1" maxamount="1" comment="decent hp potion"></drop>
+	</table>
+
+	<table npcid="482" name="GoG boss">
+		<drop item="131" rate="1" minamount="300" maxamount="1500" comment="coins"></drop>
+		<drop item="1226" rate="1" minamount="1" maxamount="1" checks="Quest=54-999-999" comment="darkened spirit"></drop>
+
+		<drop item="1148" rate="20" minamount="1" maxamount="1" comment="gog robe"></drop>
+		<drop item="1149" rate="20" minamount="1" maxamount="1" comment="gog robe"></drop>
+		<drop item="1150" rate="20" minamount="1" maxamount="1" comment="gog robe"></drop>
+		<drop item="1151" rate="20" minamount="1" maxamount="1" comment="gog robe"></drop>
+		<drop item="1152" rate="20" minamount="1" maxamount="1" comment="gog robe"></drop>
+
+
+		<drop item="1009103" rate="20" minamount="10" maxamount="20" comment="old bone"></drop>
+
+		<drop item="1166" rate="5" minamount="1" maxamount="2" checks="Quest=106-1-999" comment="dreamguard armor scrap"></drop>
+
+		<drop item="747" rate="10" minamount="5" maxamount="20" comment="mistypine needles"></drop>
+		<drop item="145" rate="5" minamount="5" maxamount="10" comment="acorn"></drop>
+
+
+		<drop item="196" rate="15" minamount="3" maxamount="10" comment="charcoal snapper"></drop>
+		<drop item="743" rate="5" minamount="2" maxamount="3" comment="cured meat"></drop>
+
+		<drop item="500" rate="20" minamount="1" maxamount="1" comment="spellslinger robe"></drop>
+		<drop item="309" rate="20" minamount="1" maxamount="1" comment="trollskin armor"></drop>
+		<drop item="501" rate="17" minamount="1" maxamount="1" comment="spellslinger hood"></drop>
+		<drop item="634" rate="25" minamount="1" maxamount="1" comment="oak shield"></drop>
+		<drop item="749" rate="30" minamount="1" maxamount="1" comment="reinforced oak bow"></drop>
+		<drop item="354" rate="30" minamount="1" maxamount="1" comment="staff of spiteful seas"></drop>
+		<drop item="613" rate="30" minamount="1" maxamount="1" comment="battlemage hood"></drop>
+		<drop item="614" rate="35" minamount="1" maxamount="1" comment="battlemage robe"></drop>
+		<drop item="610" rate="35" minamount="1" maxamount="1" comment="studded trollskin armor"></drop>
+		<drop item="609" rate="30" minamount="1" maxamount="1" comment="studded trollskin helm"></drop>
+
+		<drop item="795" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="797" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="800" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="802" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="804" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="806" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="808" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+
+	</table>
+
+	<table npcid="1340" name="Undead Lieutenant">
+		<drop item="1171" rate="15" minamount="1" maxamount="1"></drop>
+		<drop item="131" rate="5" minamount="50" maxamount="100" comment="coins"></drop>
+		<drop item="341" rate="30" minamount="1" maxamount="1" comment="iron round shield"></drop>
+		<drop item="9020" rate="5" minamount="1" maxamount="1" comment="Armor Fragment"></drop>
+		<drop item="9021" rate="5" minamount="1" maxamount="1" comment="Weapon Piece"></drop>
+	</table>
+
+	<table npcid="612" name="TH catacomb zombo">
+		<drop item="206" rate="2" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="209" rate="1" minamount="1" maxamount="1" comment="brain"></drop>
+		<drop item="131" rate="4" minamount="12" maxamount="37" comment="coins"></drop>
+		<drop item="210" rate="5" minamount="1" maxamount="3" comment="shroom"></drop>
+		<drop item="145" rate="10" minamount="1" maxamount="2" comment="acorn"></drop>
+
+		<drop item="252" rate="60" minamount="1" maxamount="1" comment="iron armor"></drop>
+		<drop item="251" rate="40" minamount="1" maxamount="1" comment="iron helmet"></drop>
+		<drop item="250" rate="25" minamount="1" maxamount="1" comment="copper plate armor"></drop>
+		<drop item="548" rate="30" minamount="1" maxamount="1" comment="copper battleaxe"></drop>
+		<drop item="549" rate="40" minamount="1" maxamount="1" comment="iron battleaxe"></drop>
+		<drop item="660" rate="40" minamount="1" maxamount="1" comment="trollskin brace"></drop>
+		<drop item="309" rate="40" minamount="1" maxamount="1" comment="trollskin armor"></drop>
+		<drop item="316" rate="40" minamount="1" maxamount="1" comment="trollskin helmet"></drop>
+	</table>
+
+	<table npcid="1450,1451,1452" name="TH catacomb mobs">
+		<drop item="1812" rate="5" minamount="1" maxamount="1" comment="Ancient Wood Shard for crafting potion cabinet"></drop>
+		<drop item="131" rate="4" minamount="32" maxamount="60" comment="coins"></drop>
+		<drop item="236" rate="5" minamount="1" maxamount="1" comment="mana pot"></drop>
+		<drop item="145" rate="10" minamount="1" maxamount="2" comment="acorn"></drop>
+
+		<drop item="662" rate="15" minamount="1" maxamount="1" comment="caster ring"></drop>
+		<drop item="663" rate="15" minamount="1" maxamount="1" comment="another caster ring"></drop>
+		<drop item="501" rate="25" minamount="1" maxamount="1" comment="caster hood"></drop>
+		<drop item="548" rate="30" minamount="1" maxamount="1" comment="copper battleaxe"></drop>
+		<drop item="549" rate="40" minamount="1" maxamount="1" comment="iron battleaxe"></drop>
+		<drop item="749" rate="50" minamount="1" maxamount="1" comment="reinforced oak bow"></drop>
+		<drop item="402" rate="20" minamount="1" maxamount="1" comment="dark wizard robes"></drop>
+		<drop item="922" rate="40" minamount="1" maxamount="1" comment="better caster robes"></drop>
+	</table>
+
+	<table npcid="1230" name="Venomous Blackhair Spider">
+		<drop item="1134" rate="5" minamount="1" maxamount="1" comment="Hairy Spider Leg"></drop>
+		<drop item="1135" rate="3" minamount="1" maxamount="2" comment="Venomous Spider Egg"></drop>
+	</table>
+
+	<table npcid="1492" name="Harkon the Mangler, Q86 Bandit">
+		<drop item="1267" checks="Quest=86-1-2,!ItemExistsGlobal=1267" rate="1" minamount="1" maxamount="1" comment="bloody gauntlets qitem"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="557" rate="40" minamount="1" maxamount="1" comment="iron warhammar"></drop>
+		<drop item="542" rate="25" minamount="1" maxamount="1" comment="iron 2h sword"></drop>
+		<drop item="217" rate="15" minamount="1" maxamount="1" comment="iron dagg"></drop>
+		<drop item="541" rate="15" minamount="1" maxamount="1" comment="iron helm"></drop>
+		<drop item="249" rate="4" minamount="1" maxamount="1" comment="copper plate helm"></drop>
+		<drop item="651" rate="5" minamount="1" maxamount="1" comment="copper kite shield"></drop>
+		<drop item="250" rate="6" minamount="1" maxamount="1" comment="copper plate armor"></drop>
+		<drop item="205" rate="4" minamount="3" maxamount="6" comment="steak"></drop>
+	</table>
+
+	<table npcid="1493" name="Astratov the Razer, Q86 Bandit">
+		<drop item="1268" checks="Quest=86-1-2,!ItemExistsGlobal=1268" rate="1" minamount="1" maxamount="1" comment="throw knives qitem"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+		<drop item="217" rate="10" minamount="1" maxamount="1" comment="iron dagg"></drop>
+		<drop item="155" rate="10" minamount="1" maxamount="1" comment="oak bow"></drop>
+		<drop item="361" rate="15" minamount="1" maxamount="1" comment="oak crossbow"></drop>
+		<drop item="749" rate="40" minamount="1" maxamount="1" comment="strong oak bow"></drop>
+		<drop item="350" rate="20" minamount="1" maxamount="1" comment="iron hatch"></drop>
+		<drop item="660" rate="15" minamount="1" maxamount="1" comment="troll skin brace"></drop>
+		<drop item="309" rate="20" minamount="1" maxamount="1" comment="troll skin armor"></drop>
+		<drop item="495" rate="20" minamount="1" maxamount="1" comment="gudd fishing rod"></drop>
+		<drop item="632" rate="3" minamount="1" maxamount="5" comment="living wood"></drop>
+		<drop item="187" rate="3" minamount="1" maxamount="1" comment="charcoal snapper"></drop>
+		<drop item="186" rate="3" minamount="1" maxamount="2" comment="pebble sturg"></drop>
+		<drop item="975" rate="5" minamount="1" maxamount="1" comment="swiftness pot"></drop>
+		<drop item="1275" rate="8" minamount="1" maxamount="1" comment="trueshot pott"></drop>
+	</table>
+
+
+
+
+	<table npcid="1660,1661,1662,1663,1664" name="ogre mountain ambushers during journey quest">
+		<drop item="131" rate="3" minamount="50" maxamount="100" comment=""></drop>
+		<drop item="2046" rate="5" minamount="1" maxamount="1" comment="t1 crafting drop"></drop>
+		<drop item="478" rate="5" minamount="1" maxamount="1" comment="health pot"></drop>
+		<drop item="9063" rate="25" minamount="1" maxamount="1" comment="xp book"></drop>
+		<drop item="252" rate="30" minamount="1" maxamount="1" comment="iron armor"></drop>
+		<drop item="557" rate="35" minamount="1" maxamount="1" comment="iron hammer"></drop>
+		<drop item="542" rate="35" minamount="1" maxamount="1" comment="iron greatsword"></drop>
+		<drop item="341" rate="35" minamount="1" maxamount="1" comment="iron round shield"></drop>
+		<drop item="687" rate="45" minamount="1" maxamount="1" comment="iron greatsword"></drop>
+		<drop item="652" rate="40" minamount="1" maxamount="1" comment="iron kite shield"></drop>
+		<drop item="254" rate="45" minamount="1" maxamount="1" comment="iron plate"></drop>
+		<drop item="1274" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1275" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1276" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+	</table>
+
+
+
+	<table npcid="1550,1551,1552,1553,1554,1561" name="generik early ogres, battlefield">
+		<drop item="2046" rate="3" minamount="1" maxamount="1" comment="t1 crafting drop"></drop>
+		<drop item="2027" rate="5" minamount="1" maxamount="1" comment="miitu t1"></drop>
+		<drop item="1333" rate="8" minamount="1" maxamount="1" comment="ogre skull"></drop>
+		<drop item="2012" rate="15" minamount="1" maxamount="2" comment="leather"></drop>
+		<drop item="2015" rate="15" minamount="1" maxamount="2" comment="fur"></drop>
+
+		<drop item="557" rate="35" minamount="1" maxamount="1" comment="iron hammer"></drop>
+	</table>
+
+	<table npcid="450,9030" name="mountain meats t1">
+		<drop item="2027" rate="2" minamount="1" maxamount="1" comment="miitu t1"></drop>
+	</table>
+
+	<table npcid="1537" name="mountain meats t2">
+		<drop item="2028" rate="2" minamount="1" maxamount="1" comment="miitu t2"></drop>
+	</table>
+
+	<table npcid="1599" name="mountain meats t3">
+		<drop item="2029" rate="1" minamount="1" maxamount="1" comment="miitu t3"></drop>
+	</table>
+
+	<table npcid="1420,1421,1423,1424,1425,1426,1584,1586,1587,1588,1589,1598,1666,1667,1668,1669,1670,1671" name="Ogre stronghold all mobs">
+
+		<drop item="131" rate="3" minamount="50" maxamount="100" comment=""></drop>
+		<drop item="2046" rate="5" minamount="1" maxamount="1" comment="t1 crafting drop"></drop>
+		<drop item="478" rate="5" minamount="1" maxamount="1" comment="health pot"></drop>
+		<drop item="1316" rate="8" minamount="1" maxamount="2" comment="bersrks mint"></drop>
+		<drop item="2027" rate="8" minamount="1" maxamount="1" comment="miitu t1"></drop>
+		<drop item="2028" rate="15" minamount="1" maxamount="1" comment="miitu t2"></drop>
+		<drop item="9063" rate="25" minamount="1" maxamount="1" comment="xp book"></drop>
+		<drop item="252" rate="30" minamount="1" maxamount="1" comment="iron armor"></drop>
+		<drop item="557" rate="35" minamount="1" maxamount="1" comment="iron hammer"></drop>
+		<drop item="542" rate="35" minamount="1" maxamount="1" comment="iron greatsword"></drop>
+		<drop item="341" rate="35" minamount="1" maxamount="1" comment="iron round shield"></drop>
+		<drop item="687" rate="45" minamount="1" maxamount="1" comment="iron greatsword"></drop>
+		<drop item="652" rate="40" minamount="1" maxamount="1" comment="iron kite shield"></drop>
+		<drop item="254" rate="45" minamount="1" maxamount="1" comment="iron plate"></drop>
+		<drop item="1274" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1275" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1276" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+	</table>
+	<table npcid="1586,1587,1588,1589" name="Ogre stronghold humans">
+		<drop item="2024" rate="10" minamount="1" maxamount="1" comment="t2 crafting drop"></drop>
+		<drop item="2016" rate="3" minamount="1" maxamount="1" comment="shamanic linens t2 robe craft"></drop>
+	</table>
+	<table npcid="1420,1421,1423,1424,1425,1426,1598,1666,1667,1668,1670,1671" name="Ogre stronghold ogres">
+		<drop item="2013" rate="3" minamount="1" maxamount="1" comment="leather"></drop>
+		<drop item="1329" rate="8" minamount="1" maxamount="1" comment="beast heart"></drop>
+		<drop item="1333" rate="8" minamount="1" maxamount="1" comment="ogre skull"></drop>
+	</table>
+	<table npcid="1589,1669" name="Ogre stronghold magiksters">
+		<drop item="1331" rate="3" minamount="1" maxamount="1" comment="crafting drop"></drop>
+	</table>
+	<table npcid="1428" name="Ogre shaman">
+		<drop item="1331" rate="1" minamount="1" maxamount="1" comment="crafting drop"></drop>
+		<drop item="2016" rate="3" minamount="1" maxamount="1" comment="shamanic linens t2 robe craft"></drop>
+	</table>
+
+	<table npcid="1598" name="ogre stronghold berserk">
+		<drop item="2024" rate="3" minamount="1" maxamount="1" comment="t2 crafting drop"></drop>
+		<drop item="1055" rate="10" minamount="1" maxamount="1" comment="berserk scroll"></drop>
+		<drop item="1316" rate="1" minamount="1" maxamount="1" comment="bersrks mint"></drop>
+	</table>
+
+
+
+	<table npcid="1427" name="ice dungeon king">
+		<drop item="1053" rate="1" minamount="1" maxamount="1" comment="outfit"></drop>
+		<drop item="1054" rate="1" minamount="1" maxamount="1" comment="crown"></drop>
+	</table>
+
+
+	<table npcid="1419,1422,1427,1428,1429,1531,1532,1533,1534,1535,1536" name="ice dungeon all ogres">
+		<drop item="2014" rate="10" minamount="1" maxamount="1" comment="t3 crafting leather"></drop>
+		<drop item="2017" rate="10" minamount="1" maxamount="1" comment="t3 crafting cloth"></drop>
+		<drop item="2028" rate="8" minamount="1" maxamount="1" comment="miitu t2"></drop>
+		<drop item="1316" rate="5" minamount="1" maxamount="2" comment="bersrks mint"></drop>
+		<drop item="2033" rate="40" minamount="1" maxamount="1" comment="pick"></drop>
+		<drop item="2034" rate="40" minamount="1" maxamount="1" comment="rod"></drop>
+		<drop item="2035" rate="40" minamount="1" maxamount="1" comment="hatchet"></drop>
+		<drop item="1329" rate="15" minamount="1" maxamount="1" comment="beast heart"></drop>
+
+		<drop item="2025" rate="20" minamount="1" maxamount="1" comment="t3 crafting drop"></drop>
+
+		<drop item="2037" rate="15" minamount="1" maxamount="2" comment="fish"></drop>
+
+		<drop item="1000349" rate="15" minamount="1" maxamount="10" comment="coal"></drop>
+		<drop item="1002000" rate="25" minamount="1" maxamount="5" comment="ore"></drop>
+		<drop item="1002009" rate="25" minamount="1" maxamount="5" comment="wood"></drop>
+		<drop item="1002012" rate="25" minamount="1" maxamount="5" comment="leather"></drop>
+		<drop item="1002015" rate="25" minamount="1" maxamount="5" comment="leather"></drop>
+
+		<drop item="478" rate="5" minamount="1" maxamount="1" comment="health pot"></drop>
+		<drop item="9063" rate="25" minamount="1" maxamount="1" comment="xp book"></drop>
+		<drop item="252" rate="30" minamount="1" maxamount="1" comment="iron armor"></drop>
+		<drop item="557" rate="35" minamount="1" maxamount="1" comment="iron hammer"></drop>
+		<drop item="542" rate="35" minamount="1" maxamount="1" comment="iron greatsword"></drop>
+		<drop item="341" rate="35" minamount="1" maxamount="1" comment="iron round shield"></drop>
+		<drop item="687" rate="45" minamount="1" maxamount="1" comment="iron greatsword"></drop>
+		<drop item="652" rate="40" minamount="1" maxamount="1" comment="iron kite shield"></drop>
+		<drop item="254" rate="45" minamount="1" maxamount="1" comment="iron plate"></drop>
+		<drop item="1274" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1275" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1276" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+
+	</table>
+	<table npcid="1537" name="ice dungeon ice beast">
+		<drop item="2039" rate="3" minamount="1" maxamount="1" comment="icicle"></drop>
+		<drop item="1332" rate="8" minamount="1" maxamount="1" comment="blood"></drop>
+		<drop item="1329" rate="8" minamount="1" maxamount="1" comment="beast heart"></drop>
+		<drop item="2014" rate="8" minamount="1" maxamount="1" comment="hide"></drop>
+
+		<drop item="2033" rate="40" minamount="1" maxamount="1" comment="pick"></drop>
+		<drop item="2034" rate="40" minamount="1" maxamount="1" comment="rod"></drop>
+		<drop item="2035" rate="40" minamount="1" maxamount="1" comment="hatchet"></drop>
+
+		<drop item="1000349" rate="15" minamount="1" maxamount="10" comment="coal"></drop>
+		<drop item="1002000" rate="25" minamount="1" maxamount="5" comment="ore"></drop>
+		<drop item="1002009" rate="25" minamount="1" maxamount="5" comment="wood"></drop>
+		<drop item="1002012" rate="25" minamount="1" maxamount="5" comment="leather"></drop>
+		<drop item="1002015" rate="25" minamount="1" maxamount="5" comment="leather"></drop>
+
+		<drop item="478" rate="5" minamount="1" maxamount="1" comment="health pot"></drop>
+		<drop item="9063" rate="25" minamount="1" maxamount="1" comment="xp book"></drop>
+		<drop item="252" rate="30" minamount="1" maxamount="1" comment="iron armor"></drop>
+		<drop item="557" rate="35" minamount="1" maxamount="1" comment="iron hammer"></drop>
+	</table>
+
+	<table npcid="1491" name="Q111 bandit fortress minibosses">
+		<drop item="2116" rate="1" minamount="1" maxamount="1" comment=""></drop>
+	</table>
+	<table npcid="1490" name="Q111 bandit fortress minibosses">
+		<drop item="2117" rate="1" minamount="1" maxamount="1" comment=""></drop>
+	</table>
+
+
+
+	<table npcid="1490,1491,1489,1488,1653,1654,1651,1650,1652,1649,1648" name="Q111 bandit fortress all mobs">
+		<drop item="131" rate="4" minamount="12" maxamount="37" comment="coins"></drop>
+		<drop item="145" rate="10" minamount="1" maxamount="2" comment="acorn"></drop>
+		<drop item="252" rate="60" minamount="1" maxamount="1" comment="iron armor"></drop>
+		<drop item="251" rate="40" minamount="1" maxamount="1" comment="iron helmet"></drop>
+		<drop item="250" rate="25" minamount="1" maxamount="1" comment="copper plate armor"></drop>
+		<drop item="548" rate="30" minamount="1" maxamount="1" comment="copper battleaxe"></drop>
+		<drop item="549" rate="40" minamount="1" maxamount="1" comment="iron battleaxe"></drop>
+		<drop item="660" rate="40" minamount="1" maxamount="1" comment="trollskin brace"></drop>
+		<drop item="309" rate="40" minamount="1" maxamount="1" comment="trollskin armor"></drop>
+		<drop item="316" rate="40" minamount="1" maxamount="1" comment="trollskin helmet"></drop>
+	</table>
+
+	<table npcid="1487" name="Blackshield">
+		<drop item="131" rate="3" minamount="100" maxamount="200" comment="coins"></drop>
+		<drop item="2119" rate="30" comment="blackshield"></drop>
+		<drop item="2121" rate="30" comment="ability book"></drop>
+		<drop item="542" rate="20" comment="iron greatsword"></drop>
+		<drop item="557" rate="20" comment="iron warhammer"></drop>
+		<drop item="243" rate="10" comment="reflex potion"></drop>
+		<drop item="476" rate="10" comment="hp potion"></drop>
+		<drop item="743" rate="10" comment="salted meat"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+	</table>
+
+	<table npcid="9026" name="kreogu">
+		<drop item="1318" rate="1" minamount="1" maxamount="1" comment="gland"></drop>
+		<drop item="1843" rate="25" minamount="1" maxamount="1" comment="skeleton"></drop>
+		<drop item="1844" rate="25" minamount="1" maxamount="1" comment="trinket"></drop>
+		<drop item="131" rate="3" minamount="100" maxamount="300" comment=""></drop>
+
+		<drop item="1000349" rate="10" minamount="1" maxamount="20" comment="coal"></drop>
+		<drop item="1002000" rate="15" minamount="1" maxamount="15" comment="ore"></drop>
+		<drop item="1002009" rate="15" minamount="1" maxamount="15" comment="wood"></drop>
+		<drop item="1002012" rate="15" minamount="1" maxamount="15" comment="leather"></drop>
+		<drop item="1002015" rate="15" minamount="1" maxamount="15" comment="leather"></drop>
+
+		<drop item="252" rate="30" minamount="1" maxamount="1" comment="iron armor"></drop>
+		<drop item="557" rate="35" minamount="1" maxamount="1" comment="iron hammer"></drop>
+		<drop item="542" rate="35" minamount="1" maxamount="1" comment="iron greatsword"></drop>
+		<drop item="341" rate="35" minamount="1" maxamount="1" comment="iron round shield"></drop>
+		<drop item="687" rate="45" minamount="1" maxamount="1" comment="iron greatsword"></drop>
+		<drop item="652" rate="40" minamount="1" maxamount="1" comment="iron kite shield"></drop>
+		<drop item="254" rate="45" minamount="1" maxamount="1" comment="iron plate"></drop>
+
+		<drop item="609" rate="30" minamount="1" maxamount="1" comment="troll armor"></drop>
+		<drop item="610" rate="30" minamount="1" maxamount="1" comment="troll armor"></drop>
+
+
+
+		<drop item="1285" rate="30" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1286" rate="30" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1287" rate="30" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1294" rate="30" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1305" rate="30" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1308" rate="30" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1312" rate="30" minamount="1" maxamount="1" comment="potion"></drop>
+
+
+		<drop item="613" rate="30" minamount="1" maxamount="1" comment="magerobe"></drop>
+		<drop item="614" rate="30" minamount="1" maxamount="1" comment="magerobe"></drop>
+		<drop item="2111" rate="3" minamount="1" maxamount="1" comment="key"></drop>
+	</table>
+
+	<table npcid="474" name="Crow">
+		<drop item="813" rate="25" minamount="1" maxamount="1" comment=""></drop>
+		<drop item="131" rate="4" minamount="3" maxamount="10" comment=""></drop>
+	</table>
+	<table npcid="224,225" name="Deer">
+		<drop item="1034" rate="4" minamount="1" maxamount="1" comment=""></drop>
+	</table>
+
+
+
+	<table npcid="1593" name="ogre mountain wandering bandits drop table">
+		<drop item="131" rate="1" minamount="1" maxamount="1" comment=""></drop>
+	</table>
+
+	<table npcid="1620" name="ogre mountain spider">
+		<drop item="9069" rate="5" minamount="1" maxamount="1" comment="legs"></drop>
+		<drop item="1325" rate="3" minamount="1" maxamount="1" comment="venom"></drop>
+		<drop item="1288" rate="25" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1289" rate="25" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1290" rate="25" minamount="1" maxamount="1" comment="potion"></drop>
+	</table>
+
+	<table npcid="9032" name="ogre mountain burnt skele">
+		<drop item="9070" rate="4" minamount="1" maxamount="1" comment=""></drop>
+		<drop item="1851" rate="40" minamount="1" maxamount="1" comment="t1 sword"></drop>
+		<drop item="253" rate="30" minamount="1" maxamount="1" comment="iron helm"></drop>
+		<drop item="254" rate="30" minamount="1" maxamount="1" comment="iron armor"></drop>
+		<drop item="9064" rate="40" minamount="1" maxamount="1" comment="xp buk"></drop>
+	</table>
+
+	<table npcid="9030" name="ogre mountain scorp">
+		<drop item="9072" rate="4" minamount="1" maxamount="1" comment=""></drop>
+		<drop item="9063" rate="40" minamount="1" maxamount="1" comment="xp buk"></drop>
+		<drop item="609" rate="30" minamount="1" maxamount="1" comment="iron helm"></drop>
+		<drop item="610" rate="30" minamount="1" maxamount="1" comment="iron armor"></drop>
+	</table>
+
+	<table npcid="9029" name="ogre mountain crypt mage">
+		<drop item="9071" rate="4" minamount="1" maxamount="1" comment=""></drop>
+		<drop item="1320" rate="10" minamount="1" maxamount="1" comment=""></drop>
+		<drop item="1877" rate="40" minamount="1" maxamount="1" comment=""></drop>
+		<drop item="1878" rate="40" minamount="1" maxamount="1" comment=""></drop>
+	</table>
+	<table npcid="9031" name="ogre mountain minotaur beast">
+		<drop item="1329" rate="5" minamount="1" maxamount="1" comment="beast heart"></drop>
+	</table>
+
+	<table npcid="1580,1581,1582" name="ogre mountain gatherers">
+		<drop item="131" rate="1" minamount="1" maxamount="1" comment=""></drop>
+		<drop item="1052" rate="30" minamount="1" maxamount="1" comment="runners ring"></drop>
+
+		<drop item="2030" rate="20" minamount="1" maxamount="1" comment="tools"></drop>
+		<drop item="2031" rate="20" minamount="1" maxamount="1" comment="tools"></drop>
+		<drop item="2032" rate="20" minamount="1" maxamount="1" comment="tools"></drop>
+	</table>
+
+	<table npcid="450" name="mountain beast">
+		<drop item="2012" rate="3" minamount="1" maxamount="1" comment="leather for t1 items"></drop>
+		<drop item="2015" rate="3" minamount="1" maxamount="1" comment="cloth for t1 items"></drop>
+		<drop item="1332" rate="5" minamount="1" maxamount="1" comment="blood"></drop>
+		<drop item="1329" rate="10" minamount="1" maxamount="1" comment="beast heart"></drop>
+		<drop item="9073" rate="5" minamount="1" maxamount="1" comment="fang"></drop>
+	</table>
+	<table npcid="450,9029,9030,9032,1620" name="ogre wilderness all mobs">
+		<drop item="2046" rate="3" minamount="1" maxamount="1" comment="t3 crafting drop"></drop>
+		<drop item="2111" rate="10" minamount="1" maxamount="1" comment="key"></drop>
+	</table>
+
+	<table npcid="9100,9103" name="melee winter goblinos">
+		<drop item="9172" rate="1" minamount="1" maxamount="1" comment="fortune teller ach talisman part 1" checks="Var=EHAchFortune-1-1,!ItemExistsGlobal=9172-1"></drop>
+	</table>
+	<table npcid="9101,9104" name="archer winter goblinos">
+		<drop item="9173" rate="1" minamount="1" maxamount="1" comment="fortune teller ach talisman part 2" checks="Var=EHAchFortune-1-1,!ItemExistsGlobal=9173-1"></drop>
+	</table>
+	<table npcid="9102,9105" name="archer winter goblinos">
+		<drop item="9174" rate="1" minamount="1" maxamount="1" comment="fortune teller ach talisman part 3" checks="Var=EHAchFortune-1-1,!ItemExistsGlobal=9174-1"></drop>
+	</table>
+
+
+	<table npcid="9100,9101,9102,9103,9104,9105" name="all winter goblinos">
+		<drop item="9129" rate="50" minamount="1" maxamount="1" comment="frozen arrows book"></drop>
+		<drop item="9116" rate="10" minamount="5" maxamount="35" comment="token"></drop>
+		<drop item="9113" rate="10" minamount="1" maxamount="1" comment="bandage"></drop>
+		<drop item="501" rate="25" minamount="1" maxamount="1" comment="caster hood"></drop>
+		<drop item="548" rate="30" minamount="1" maxamount="1" comment="copper battleaxe"></drop>
+		<drop item="549" rate="35" minamount="1" maxamount="1" comment="iron battleaxe"></drop>
+		<drop item="250" rate="20" minamount="1" maxamount="1" comment="copper plate armor"></drop>
+		<drop item="548" rate="20" minamount="1" maxamount="1" comment="copper battleaxe"></drop>
+		<drop item="749" rate="40" minamount="1" maxamount="1" comment="reinforced oak bow"></drop>
+		<drop item="402" rate="20" minamount="1" maxamount="1" comment="dark wizard robes"></drop>
+		<drop item="922" rate="30" minamount="1" maxamount="1" comment="better caster robes"></drop>
+		<drop item="743" rate="15" minamount="1" maxamount="1" comment="cured meat"></drop>
+		<drop item="476" rate="15" minamount="1" maxamount="1" comment="healing potion"></drop>
+	</table>
+	<table npcid="9076" name="reindeer">
+		<drop item="9115" rate="1" minamount="1" maxamount="3" comment="leather"></drop>
+		<drop item="9153" rate="3" minamount="1" maxamount="1" comment="meat"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+	</table>
+	<table npcid="9082" name="snow wolf">
+		<drop item="9151" rate="8" minamount="1" maxamount="1" comment="fang"></drop>
+		<drop item="206" rate="1" minamount="1" maxamount="1" comment="bones"></drop>
+	</table>
+	<table npcid="9074" name="air elemental boss">
+		<drop item="9114" rate="10" minamount="1" maxamount="1" comment="crystal"></drop>
+		<drop item="9112" rate="20" minamount="1" maxamount="1" comment="snowstorm book"></drop>
+		<drop item="1009107" rate="10" minamount="5" maxamount="15" comment="log"></drop>
+		<drop item="1009108" rate="10" minamount="5" maxamount="15" comment="ore"></drop>
+		<drop item="1291" rate="15" minamount="1" maxamount="3" comment="hp potion"></drop>
+		<drop item="537" rate="15" minamount="1" maxamount="1" comment="mana potion"></drop>
+		<drop item="1000033" rate="10" minamount="2" maxamount="5" comment="copper ore"></drop>
+		<drop item="1000034" rate="20" minamount="1" maxamount="3" comment="iron ore"></drop>
+		<drop item="252" rate="20" minamount="1" maxamount="1" comment="iron armor"></drop>
+		<drop item="251" rate="20" minamount="1" maxamount="1" comment="iron helmet"></drop>
+		<drop item="361" rate="15" comment="oak crossbow"></drop>
+		<drop item="542" rate="15" comment="iron greatsword"></drop>
+		<drop item="557" rate="15" comment="iron warhammer"></drop>
+		<drop item="243" rate="10" comment="reflex potion"></drop>
+		<drop item="9061" rate="15" comment="xp book"></drop>
+		<drop item="415" rate="10" comment="magic xp book"></drop>
+	</table>
+	<table npcid="1805,1806,1807,1808,1809" name="goblin witch all">
+		<drop item="9129" rate="40" minamount="1" maxamount="1" comment="frozen arrows book"></drop>
+		<drop item="9152" rate="30" minamount="1" maxamount="1" comment="healing ring"></drop>
+	</table>
+	<table npcid="1805" name="goblin witch unique 1">
+		<drop item="2125" rate="1" minamount="1" maxamount="1" comment="effigy part 1" checks="Quest=119-7-8,!ItemExistsGlobal=2125-1|2130-1"></drop>
+	</table>
+	<table npcid="1806" name="goblin witch unique 2">
+		<drop item="2126" rate="1" minamount="1" maxamount="1" comment="effigy part 2" checks="Quest=119-7-8,!ItemExistsGlobal=2126-1|2130-1"></drop>
+	</table>
+	<table npcid="1807" name="goblin witch unique 3">
+		<drop item="2127" rate="1" minamount="1" maxamount="1" comment="effigy part 3" checks="Quest=119-7-8,!ItemExistsGlobal=2127-1|2130-1"></drop>
+	</table>
+	<table npcid="1808" name="goblin witch unique 4">
+		<drop item="2128" rate="1" minamount="1" maxamount="1" comment="effigy part 4" checks="Quest=119-7-8,!ItemExistsGlobal=2128-1|2130-1"></drop>
+	</table>
+	<table npcid="1809" name="goblin witch unique 5">
+		<drop item="2129" rate="1" minamount="1" maxamount="1" comment="effigy part 5" checks="Quest=119-7-8,!ItemExistsGlobal=2129-1|2130-1"></drop>
+	</table>
+
+	<table npcid="9187,9188,9189" name="ogre mountain bandit campers while minigame not active">
+		<drop item="131" rate="3" minamount="50" maxamount="100" comment=""></drop>
+		<drop item="2046" rate="5" minamount="1" maxamount="1" comment="t1 crafting drop"></drop>
+		<drop item="478" rate="5" minamount="1" maxamount="1" comment="health pot"></drop>
+		<drop item="9063" rate="25" minamount="1" maxamount="1" comment="xp book"></drop>
+		<drop item="252" rate="30" minamount="1" maxamount="1" comment="iron armor"></drop>
+		<drop item="557" rate="35" minamount="1" maxamount="1" comment="iron hammer"></drop>
+		<drop item="542" rate="35" minamount="1" maxamount="1" comment="iron greatsword"></drop>
+		<drop item="341" rate="35" minamount="1" maxamount="1" comment="iron round shield"></drop>
+		<drop item="687" rate="45" minamount="1" maxamount="1" comment="iron greatsword"></drop>
+		<drop item="652" rate="40" minamount="1" maxamount="1" comment="iron kite shield"></drop>
+		<drop item="254" rate="45" minamount="1" maxamount="1" comment="iron plate"></drop>
+		<drop item="1274" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1275" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+		<drop item="1276" rate="20" minamount="1" maxamount="1" comment="potion"></drop>
+	</table>
+	<table npcid="9189" name="ogre mountain bandit campers while minigame not active for quest item drop">
+		<drop item="1324" rate="10" minamount="1" maxamount="1" comment="fetch quest orb" checks="Quest=115-1-2,!ItemExistsGlobal=1324-1"></drop>
+	</table>
+	
+	<table npcid="9190,9191" name="elite pker cosmetic loot table">
+		<drop item="2047" rate="50" minamount="1" maxamount="1" comment="titanstone"></drop>
+		<drop item="9181" rate="25" minamount="1" maxamount="1" checks="Var=TalonRewardUnlocked-1-1" comment="reward sword" ></drop>
+	</table>
+
+</loot>

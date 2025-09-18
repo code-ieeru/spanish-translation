@@ -1,0 +1,58 @@
+<dialogue>
+	<node id="1" npcName="Amelia Amberbrew" anim="1" text="You must be thirsty, traveler! How 'bout a pint of beer?" contextBefore="" contextAfter="" posx="122" posy="65">
+		<option optionid="1" optiontext="Absolutely!" actions="OpenShop=40" next="0"></option>
+		<option optionid="2" optiontext="There's a handsome man in Timberwell without a bride - interested?" checks="Quest=55-1-1" next="2"></option>
+		<option optionid="3" optiontext="How's life in Grainwater?" next="3"></option>
+		<option optionid="4" optiontext="Don't you people eat anything first? &lt;color=orange&gt; (40 coins) &lt;/color&gt;" next="4" checks="HasTrait=41,HasItem=131-40" showGreyedOutOption="1"></option>
+		<option optionid="5" optiontext="No, thanks." next="0"></option>
+	</node>
+	<node id="2" npcName="Amelia Amberbrew" anim="1" text="I'm already taken, luv... 'sides I wouldn't abandon me tavern. Lots of single lassies to be found in Grainwater though, s'ppose could try asking one of them ones dancing in the corner. But how 'bout a pint of beer first?" contextBefore="" contextAfter="" posx="641" posy="54">
+		<option optionid="1" optiontext="Absolutely!" actions="OpenShop=40" next="0"></option>
+		<option optionid="2" optiontext="How's life in Grainwater?" next="3"></option>
+		<option optionid="3" optiontext="Don't you people eat anything first? &lt;color=orange&gt; (40 coins) &lt;/color&gt;" next="4" checks="HasTrait=41,HasItem=131-40" showGreyedOutOption="1"></option>
+		<option optionid="4" optiontext="Maybe later." next="0"></option>
+	</node>
+	<node id="3" npcName="Amelia Amberbrew" anim="1" text="Haven't you heard? Grainwater's the happiest town in Imberthale! We make good beer and we never run out, thanks to those wizards keeping the weather perfect and our crops growing. Speaking of beer, would you like a pint?" contextBefore="" contextAfter="" posx="628" posy="463">
+		<option optionid="1" optiontext="Absolutely!" actions="OpenShop=40" next="0"></option>
+		<option optionid="2" optiontext="There's a handsome man in Timberwell without a bride. Interested?" checks="Quest=55-1-1" next="2"></option>
+		<option optionid="3" optiontext="Don't you people eat anything first? &lt;color=orange&gt; (40 coins) &lt;/color&gt;" next="4" checks="HasTrait=41,HasItem=131-40" showGreyedOutOption="1"></option>
+		<option optionid="4" optiontext="Maybe later." next="0"></option>
+	</node>
+	<node id="4" npcName="Amelia Amberbrew" anim="1" text="Now that you mention it, a lot of the folk around here do tend to concentrate on drinking... But that isn't to say I couldn't whip something together for you, something a bit special you won't be finding anywhere outside this village!" posx="1819" posy="918">
+		<option optionid="1" optiontext="" next="5"></option>
+	</node>
+	<node id="5" npcName="Amelia Amberbrew" anim="1" text="&lt;color=#9C8C77&gt;*You observe as Amelia puts together a kind of flatbread with delicious toppings. You feel confident you could replicate her steps by yourself.*&lt;/color&gt;" posx="2238" posy="917">
+		<option optionid="1" optiontext="" next="6"></option>
+	</node>
+	<node id="6" npcName="Amelia Amberbrew" anim="1" itemIcon="1011" text="Here you go, luv! It's a recipe's that's been done in this tavern for centuries, now how about some beer to accompany that?\n\n&lt;color=#9C8C77&gt;*You've unlocked the cooking recipe for Grainwater Flatbread!*&lt;/color&gt;" posx="2662" posy="914">
+		<option optionid="1" optiontext="Absolutely!" next="0" actions="UnlockCrafting=1011,AddItems=1011-1,RemoveItems=131-40,OpenShop=40"></option>
+		<option optionid="2" optiontext="Thanks, maybe later." next="0" actions="UnlockCrafting=1011,AddItems=1011-1,RemoveItems=131-40"  icon="Loot"></option>
+	</node>
+
+	
+	<node id="10" npcName="Annie" anim="1" switchtalker="457" text="Wooo!" contextBefore="" contextAfter="" posx="47" posy="38">
+		<option optionid="1" optiontext="" next="11"></option>
+	</node>
+	<node id="11" npcName="Josie" anim="1" switchtalker="458" text="WOOOO!!!" contextBefore="" contextAfter="" posx="487" posy="40">
+		<option optionid="1" optiontext="Woo." next="12"></option>
+		<option optionid="2" optiontext="I'm looking for a bride on behalf of Aaron in Timberwell." icon="Quest" next="13"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="12" npcName="Annie" anim="1" switchtalker="457" text="WOOOOOOOO!!!" contextBefore="" contextAfter="" posx="941" posy="43">
+		<option optionid="1" optiontext="I'm looking for a bride on behalf of Aaron in Timberwell." icon="Quest" next="13"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="13" npcName="Annie" anim="1" switchtalker="457" text="Timberwell? Is it that dreary place in the woods? I don't think they even have a tavern!" contextBefore="" contextAfter="" posx="965" posy="312">
+		<option optionid="1" optiontext="" next="14"></option>
+	</node>
+	<node id="14" npcName="Josie" anim="1" switchtalker="458" text="Oh they got one, but it's a sad, dingy place! Nooo thank you very much! &lt;color=#9C8C77&gt;*giggles*&lt;/color&gt;!" contextBefore="" contextAfter="" posx="1409" posy="309">
+		<option optionid="1" optiontext="" next="15"></option>
+	</node>
+	<node id="15" npcName="Annie" anim="1" switchtalker="457" text="You could try asking our friend Ellen, she's outside catching some fresh air. Earlier she wouldn't stop going on about how desperate she is to get married.&lt;color=#9C8C77&gt;*Giggles*&lt;/color&gt;!" contextBefore="" contextAfter="" posx="1855" posy="311">
+		<option optionid="1" optiontext="I see." next="0"></option>
+	</node>
+</dialogue>
+
+
+
+

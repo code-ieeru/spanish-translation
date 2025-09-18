@@ -1,0 +1,520 @@
+﻿<dialogue>
+
+	<node id="1" npcName="Sir Taron Rimeholt" anim="1" text="Barbarian raiders prowl the mountains to the north, and though it pains me to admit, I must be frank with you - beyond this outpost there's very little protection we can offer against them." posx="0" posy="12">
+		<option optionid="1" optiontext="Who are you, Sir Taron Rimeholt?" next="2" icon="Quest"></option>
+		<option optionid="2" optiontext="What can you tell me about this outpost?" next="9"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="2" npcName="Sir Taron Rimeholt" anim="1" text="Ah yes, I am the last remaining Baron of Amarien Mountains... but the men here know as well as I, it is in name only. Long ago my great grandfather lost our home to the mountain raiders - the Squallstone Keep." posx="407" posy="16">
+		<option optionid="1" optiontext="" next="3"></option>
+	</node>
+	<node id="3" npcName="Sir Taron Rimeholt" anim="1" text="Out there in the northern highlands the keep still stands, though I dread to think of the state of disrepair it must have fallen in, over the past centuries. The barbarians control it now, and from it, they launch terrible raids all across the mountains." posx="815" posy="18">
+		<option optionid="1" optiontext="" next="11"></option>
+	</node>
+	<node id="4" npcName="Sir Taron Rimeholt" anim="1" text="Long since, the keep was occupied by a new master - the mockingly self-proclaimed 'Big Baron'. He's a gluttonous ogre brute, as mean as he is fat. I failed to dislodge him in the past, and while I became old and frail, he still remains strong. Some ogres can be astonishingly long lived." posx="1221" posy="21">
+		<option optionid="1" optiontext="Then perhaps I might defeat him." next="5" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me more about the fall of your barony." next="7"></option>
+		<option optionid="3" optiontext="What can you tell me about the castle itself?" next="8"></option>
+		<option optionid="4" optiontext="Unfortunate, but now I must leave." next="0"></option>
+	</node>
+	<node id="5" npcName="Sir Taron Rimeholt" anim="1" text="You would take on the challenge? I am not one to turn down an offer of aid, though for myself - for my family - it is too late. My personal vendetta aside, however, reclaiming the old castle would provide an excellent defensive position against the barbarian raiders of the north, as it was always intended." posx="1629" posy="23">
+		<option optionid="1" optiontext="" next="6"></option>
+	</node>
+	<node id="6" npcName="Sir Taron Rimeholt" anim="1" text="You will come upon the great old Squallstone Keep as you start heading north. But remember, it is not only the ogre lord who maintains his grip on the castle! Barbarian ambushers are known to descend upon those who stray too close..." posx="2039" posy="25">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=120-1,NpcChat=Stay on your guard> for barbarian ambushers prowl the way up to the keep!"></option>
+	</node>
+	<node id="7" npcName="Sir Taron Rimeholt" anim="1" text="The Rimeholt family kept order in these mountains for centuries, until eventually my great-grandfather, Edric Rimeholt, lost it all one dreadful night, and perished..." posx="1682" posy="533">
+		<option optionid="1" optiontext="" next="12"></option>
+	</node>
+	<node id="8" npcName="Sir Taron Rimeholt" anim="1" text="The Squallstone Keep? Centuries back my family carved great blocks of stone from the mountain walls of Amarien Peaks and constructed a sturdy fortress to guard against the hostile forces of these crude lands." posx="2103" posy="531">
+		<option optionid="1" optiontext="" next="15"></option>
+	</node>
+	<node id="9" npcName="Sir Taron Rimeholt" anim="1" text="Out here, we're the foremost line of defense against the barbarian raiders, who'd love nothing more than to lay waste to the village of Bulwark Cliff. Our watchtowers are carefully positioned here on this highground, to overlook the valleys below." posx="484" posy="306">
+		<option optionid="1" optiontext="And who are you exactly, Sir Taron Rimeholt?" next="2" icon="Quest"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+	<node id="10" npcName="Sir Taron Rimeholt" anim="1" text="Greetings, friend! While here, you are under the protection of Sir Taron Rimeholt and his men. Out in the lands to the north, however, it is a different matter..." posx="11" posy="908">
+		<option optionid="1" optiontext="" next="1"></option>
+	</node>
+	<node id="11" npcName="Sir Taron Rimeholt" anim="1" text="And here I stand, an old man with a hollow title to a land I have no hope to reclaim. I am the last in my line, you see? All my life I focused on this struggle, even at the cost of other duties... now my title will die with me." posx="906" posy="907">
+		<option optionid="1" optiontext="Why weren't you able to reclaim your keep?" next="4" icon="Quest"></option>
+		<option optionid="2" optiontext="That is very sad... anyway, I must go." next="0"></option>
+	</node>
+	<node id="12" npcName="Sir Taron Rimeholt" anim="1" text="You see, Sir Edric had once saved the life of a barbarian man, and thought to have befriended him. Edric invited him to stay at his court, hoping to make use of the barbarian's knowledge, in order to keep the mountain clans in check." posx="305" posy="1209">
+		<option optionid="1" optiontext="" next="13"></option>
+	</node>
+	<node id="13" npcName="Sir Taron Rimeholt" anim="1" text="Alas, he did not know the barbarian was crafty, and cared little for Edric's sense of honor. He prepared a plot to leave the Keep defenseless one night, and barbarian invaders slipped in, under the cover of darkness!" posx="718" posy="1274">
+		<option optionid="1" optiontext="" next="14"></option>
+	</node>
+	<node id="14" npcName="Sir Taron Rimeholt" anim="1" text="There was little poor Edric could do in the face of such an ambush. He sacrificed himself to allow his wife and children to escape the slaughter... Never since then has a Rimeholt stepped foot inside the castle, and things only got worse since the ogre took over." posx="1127" posy="1276">
+		<option optionid="1" optiontext="What can you tell me about the castle itself?" next="8"></option>
+		<option optionid="2" optiontext="Then perhaps I might help you reclaim your castle." next="5" icon="Quest"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="15" npcName="Sir Taron Rimeholt" anim="1" text="Over time the Squallstone Keep grew into a great castle, sturdy enough to withstand constant battering from stormy winds and barbarian raids - it never succumbed to a siege, nor the weather!" posx="1610" posy="1272">
+		<option optionid="1" optiontext="" next="16"></option>
+	</node>
+	<node id="16" npcName="Sir Taron Rimeholt" anim="1" text="Only betrayal from within would eventually lose our family our castle home... but I have no doubt in my mind, despite the many decades of neglect and abuse it may have suffered since its barbarian occupation, the foundations of the Squallstone Keep stand as firmly as ever!" posx="2023" posy="1272">
+		<option optionid="1" optiontext="Tell me more about the fall of your barony." next="7"></option>
+		<option optionid="2" optiontext="Then perhaps I might help you reclaim your castle." next="5" icon="Quest"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+
+
+	<node id="20" npcName="Sir Taron Rimeholt" anim="1" text="Greetings, friend! Remember to stay vigilant out there, especially towards the north, as there's very little protection we're able to offer outside this fort." contextBefore="during phases 1-4" posx="13" posy="53">
+		<option optionid="1" optiontext="Remind me, where should I head towards, in search of the Squallstone Keep?" next="33"></option>
+		<option optionid="2" optiontext="I wanted to revisit our earlier conversations..." next="21"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="21" npcName="Sir Taron Rimeholt" anim="1" text="Indeed? Few know or even care of my story, here at the edge of the world... What would you like to know?" posx="610" posy="611">
+		<option optionid="1" optiontext="Tell me again about yourself, Sir Rimeholt." next="22"></option>
+		<option optionid="2" optiontext="Tell me more about the fall of your barony." next="25"></option>
+		<option optionid="3" optiontext="What can you tell me about the Squallstone Keep?" next="29"></option>
+		<option optionid="4" optiontext="What can you tell me about this outpost?" next="32"></option>
+		<option optionid="5" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="22" npcName="Sir Taron Rimeholt" anim="1" text="Ah yes, I am the last remaining Baron of Amarien Mountains... but the men here know as well as I, it is in name only. Long ago my great grandfather lost our home to the mountain raiders - the Squallstone Keep." posx="1207" posy="310">
+		<option optionid="1" optiontext="" next="23"></option>
+	</node>
+	<node id="23" npcName="Sir Taron Rimeholt" anim="1" text="Out there in the northern highlands the keep still stands, though I dread to think of the state of disrepair it must have fallen in, over the past centuries. The barbarians control it now, and from it, they launch terrible raids all across the mountains." posx="1615" posy="311">
+		<option optionid="1" optiontext="" next="24"></option>
+	</node>
+	<node id="24" npcName="Sir Taron Rimeholt" anim="1" text="Long since, the keep was occupied by a new master - the mockingly self-proclaimed 'Big Baron'. He's a gluttonous ogre brute, as mean as he is fat. I failed to dislodge him in the past, and while I became old and frail, he still remains strong. Some ogres can be astonishingly long lived." posx="2026" posy="312">
+		<option optionid="1" optiontext="Tell me more about the fall of your barony." next="25"></option>
+		<option optionid="2" optiontext="What can you tell me about the castle itself?" next="29"></option>
+		<option optionid="3" optiontext="What can you tell me about this outpost?" next="32"></option>
+		<option optionid="4" optiontext="I see." next="0"></option>
+	</node>
+	<node id="25" npcName="Sir Taron Rimeholt" anim="1" text="The Rimeholt family kept order in these mountains for centuries, until eventually my great-grandfather, Edric Rimeholt, lost it all one dreadful night, and perished..." posx="1207" posy="609">
+		<option optionid="1" optiontext="" next="26"></option>
+	</node>
+	<node id="26" npcName="Sir Taron Rimeholt" anim="1" text="You see, Sir Edric had once saved the life of a barbarian man, and thought to have befriended him. Edric invited him to stay at his court, hoping to make use of the barbarian's knowledge, in order to keep the mountain clans in check." posx="1615" posy="611">
+		<option optionid="1" optiontext="" next="27"></option>
+	</node>
+	<node id="27" npcName="Sir Taron Rimeholt" anim="1" text="Alas, he did not know the barbarian was crafty, and cared little for Edric's sense of honor. He prepared a plot to leave the Keep defenseless one night, and barbarian invaders slipped in, under the cover of darkness!" posx="2023" posy="735">
+		<option optionid="1" optiontext="" next="28"></option>
+	</node>
+	<node id="28" npcName="Sir Taron Rimeholt" anim="1" text="There was little poor Edric could do in the face of such an ambush. He sacrificed himself to allow his wife and children to escape the slaughter... Never since then has a Rimeholt stepped foot inside the castle, and things only got worse since the ogre took over." posx="2438" posy="312">
+		<option optionid="1" optiontext="What can you tell me about the castle itself?" next="29"></option>
+		<option optionid="2" optiontext="What can you tell me about this outpost?" next="32"></option>
+		<option optionid="3" optiontext="Tell me again about yourself, Sir Rimeholt." next="22"></option>
+		<option optionid="4" optiontext="I see." next="0"></option>
+	</node>
+	<node id="29" npcName="Sir Taron Rimeholt" anim="1" text="The Squallstone Keep? Centuries back my family carved great blocks of stone from the mountain walls of Amarien Peaks and constructed a sturdy fortress to guard against the hostile forces of these crude lands." posx="1207" posy="909">
+		<option optionid="1" optiontext="" next="30"></option>
+	</node>
+	<node id="30" npcName="Sir Taron Rimeholt" anim="1" text="Over time the Squallstone Keep grew into a great castle, sturdy enough to withstand constant battering from stormy winds and barbarian raids - it never succumbed to a siege, nor the weather!" posx="1612" posy="909">
+		<option optionid="1" optiontext="" next="31"></option>
+	</node>
+	<node id="31" npcName="Sir Taron Rimeholt" anim="1" text="Only betrayal from within would eventually lose our family our castle home... but I have no doubt in my mind, despite the many decades of neglect and abuse it may have suffered since its barbarian occupation, the foundations of the Squallstone Keep stand as firmly as ever!" posx="2850" posy="314">
+		<option optionid="1" optiontext="What can you tell me about this outpost?" next="32"></option>
+		<option optionid="2" optiontext="Tell me again about yourself, Sir Rimeholt." next="22"></option>
+		<option optionid="3" optiontext="Tell me more about the fall of your barony." next="25"></option>
+		<option optionid="4" optiontext="I see." next="0"></option>
+	</node>
+	<node id="32" npcName="Sir Taron Rimeholt" anim="1" text="Out here, we're the foremost line of defense against the barbarian raiders, who'd love nothing more than to lay waste to the village of Bulwark Cliff. Our watchtowers are carefully positioned here on this highground, to overlook the valleys below." posx="2710" posy="909">
+		<option optionid="1" optiontext="Tell me again about yourself, Sir Rimeholt." next="22"></option>
+		<option optionid="2" optiontext="Tell me more about the fall of your barony." next="25"></option>
+		<option optionid="3" optiontext="What can you tell me about the Squallstone Keep?" next="29"></option>
+		<option optionid="4" optiontext="I see." next="0"></option>
+	</node>
+	<node id="33" npcName="Sir Taron Rimeholt" anim="1" text="The great old castle looms out there in the highlands towards the north... but remember, it is not only the ogre lord who maintains his grip on the castle! Barbarian ambushers are known to descend upon those who stray too close." posx="484" posy="7">
+		<option optionid="1" optiontext="I wanted to revisit our earlier conversations..." next="21"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+
+
+	<node id="40" npcName="Sir Taron Rimeholt" anim="1" text="Ah, there he is, the man of the hour! And here stands the Squallstone Keep, as imposing as ever... How I long to step inside after all this time, despite my fears the ogre overlord has done his worst to it." posx="6" posy="5">
+		<option optionid="1" optiontext="" next="41"></option>
+	</node>
+	<node id="41" npcName="Sir Taron Rimeholt" anim="1" text="Extensive repairs are no doubt needed, but we'll get to that. First, I must commend you for finally relieving my family legacy from the grasp of that filthy ogre!" posx="416" posy="6">
+		<option optionid="1" optiontext="I was expecting more of a challenge, though I regret I wasn't able to put him down for good." next="42" icon="Quest"></option>
+	</node>
+	<node id="42" npcName="Sir Taron Rimeholt" anim="1" text="Yes, yes... over the years the ogre must have become complacent, but I fear he's not out of the picture yet. Grimgull still commands the loyalty of many barbarian clans; he will have retreated deep into the mountains to recover for now..." posx="822" posy="7">
+		<option optionid="1" optiontext="" next="43"></option>
+	</node>
+	<node id="43" npcName="Sir Taron Rimeholt" anim="1" text="Mark my words, once he's had the chance to regroup, he will launch more vicious attacks than ever before to take back control of his territory!" posx="1234" posy="7">
+		<option optionid="1" optiontext="So, actually... you're saying I only made him more angry?" next="45"></option>
+		<option optionid="2" optiontext="What scale of attacks should we be expecting?" next="46"></option>
+		<option optionid="3" optiontext="Well, the Keep is yours - what now?" next="44" icon="Quest"></option>
+	</node>
+	<node id="44" npcName="Sir Taron Rimeholt" anim="1" text="I must assess the damage that has been done to my home. Luckily I brought talented men of the crafts with me. I only hope their skills will prove enough to recover the castle..." posx="1682" posy="662">
+		<option optionid="1" optiontext="" next="0" icon="Quest" actions="Cinematic=297"></option>
+	</node>
+	<node id="45" npcName="Sir Taron Rimeholt" anim="1" text="Err, that's quite likely, yes... but your victory was not for naught! We do occupy the castle now, remember?" posx="1818" posy="11">
+		<option optionid="1" optiontext="What scale of attacks should we be expecting?" next="46"></option>
+		<option optionid="2" optiontext="Well, the Keep is yours - what now?" next="44" icon="Quest"></option>
+	</node>
+	<node id="46" npcName="Sir Taron Rimeholt" anim="1" text="It's hard to say... I will have to send scouts to report on the barbarians' movements. Whatever Grimgull can send at us, I imagine will only increase in intensity." posx="2278" posy="7">
+		<option optionid="1" optiontext="So, you're saying I only made him more angry?" next="45"></option>
+		<option optionid="2" optiontext="Well, the Keep is yours - what now?" next="44" icon="Quest"></option>
+	</node>
+
+
+	<node id="60" npcName="Sir Taron Rimeholt" anim="1" text="After all this time... I dared not even dream I'd ever get the chance to step inside this castle again, to reclaim what my ancestors lost so long ago to those reckless barbarians..." contextBefore="quest complete, repairing castle" posx="0" posy="53">
+		<option optionid="1" optiontext="" next="61"></option>
+	</node>
+	<node id="61" npcName="Sir Taron Rimeholt" anim="1" text="As you can see, the decades have not been kind to what was once my family's home. The repairs are ongoing, however, and the foundations remain strong as ever! " posx="410" posy="53">
+		<option optionid="1" optiontext="" next="62"></option>
+	</node>
+	<node id="62" npcName="Sir Taron Rimeholt" anim="1" text="When my men are done clearing the rubble and fixing the walls, the Squallstone Keep will be restored to its former glory! If not for your aid, this would not have been possible." posx="820" posy="53">
+		<option optionid="1" optiontext="What will you do then, once the castle is repaired?" next="63"></option>
+		<option optionid="2" optiontext="What of the Ogre Baron? He's still out there..." next="67"></option>
+		<option optionid="3" optiontext="I wanted to return to our discussions about your family's history and that of this castle." next="82"></option>
+		<option optionid="4" optiontext="You're welcome." next="0"></option>
+	</node>
+	<node id="63" npcName="Sir Taron Rimeholt" anim="1" text="The legacy of the Squallstone Keep will live on. It will be the guardian of the mountains again, as it once served in the past. But as for the legacy of Lords Rimeholt..." posx="1495" posy="4">
+		<option optionid="1" optiontext="" next="64"></option>
+	</node>
+	<node id="64" npcName="Sir Taron Rimeholt" anim="1" text="As I've already mentioned, I am the last in my line and time has worn me down... I wish to remain here for the rest of my days, as an advisor and a protector..." posx="1907" posy="5">
+		<option optionid="1" optiontext="" next="65"></option>
+	</node>
+	<node id="65" npcName="Sir Taron Rimeholt" anim="1" text="But I fear it is no longer my place to assume lordship of this castle. Instead, for that role, I can think of no one better equipped than yourself - the great warrior, who liberated it at long last!" posx="2317" posy="5">
+		<option optionid="1" optiontext="You would grant the castle to me?" next="66"></option>
+		<option optionid="2" optiontext="What of the Ogre Baron? He's still out there..." next="67"></option>
+		<option optionid="3" optiontext="I wanted to return to our discussions about your family's history and that of this castle." next="82"></option>
+		<option optionid="4" optiontext="I'm honored." next="0"></option>
+	</node>
+	<node id="66" npcName="Sir Taron Rimeholt" anim="1" text="Indeed! I can think of nobody better suited, can you? So long as you use it for the defense of this mountain realm, you will have the loyalty of myself and the men I command." posx="2727" posy="6">
+		<option optionid="1" optiontext="What of the Ogre Baron? He's still out there..." next="67"></option>
+		<option optionid="2" optiontext="I wanted to return to our discussions about your family's history and that of this castle." next="82"></option>
+		<option optionid="3" optiontext="I'm honored." next="0"></option>
+	</node>
+	<node id="67" npcName="Sir Taron Rimeholt" anim="1" text="Yes, I'm afraid this isn't over for him... He may have retreated somewhere deep into the mountains for now, but make no mistake - Grimgull still commands the loyalty of many Barbarian Clans." posx="1375" posy="306">
+		<option optionid="1" optiontext="" next="68"></option>
+	</node>
+	<node id="68" npcName="Sir Taron Rimeholt" anim="1" text="Once he's had a chance to recover and regroup, he will no doubt launch vicious raids on the mountains to take back control of his territory!" posx="1793" posy="305">
+		<option optionid="1" optiontext="" next="69"></option>
+	</node>
+	<node id="69" npcName="Sir Taron Rimeholt" anim="1" text="I have ordered my scouts to surveil the situation out there. One is stationed outside the castle gates, and another one remains at the barracks north of Bulwark Cliff village. You can access their lates reports there." posx="1497" posy="608">
+		<option optionid="1" optiontext="" next="70"></option>
+	</node>
+	<node id="70" npcName="Sir Taron Rimeholt" anim="1" text="&lt;color=#9C8C77&gt;*You now have access to the 'Barbarian Raids' minigame. You will find Rimeholt's scouts by the gates of the Squallstone Keep, or the North Barracks above Bulwark Cliff village.*&lt;/color&gt;" posx="1908" posy="608">
+		<option optionid="1" optiontext="" next="71"></option>
+	</node>
+	<node id="71" npcName="Sir Taron Rimeholt" anim="1" text="&lt;color=#9C8C77&gt;*The scouts stand beside interactable 'tally boards', through which you can initiate the barbarian raids, or toggle them off, as you please. Activating the minigame will spawn dangerous barbarian groups in the mountains.*&lt;/color&gt;" posx="2317" posy="609">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*More details about the minigame.*&lt;/color&gt;" next="72"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Minigame rewards.*&lt;/color&gt;" next="76"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Alright, I know enough.*&lt;/color&gt;" next="81" icon="LeadingExit"></option>
+	</node>
+	<node id="72" npcName="Sir Taron Rimeholt" anim="1" text="&lt;color=#9C8C77&gt;*While the raids are active, you will encounter groups of barbarian ambushers roaming the mountains in areas between the castle and the village. You will notice them on the minimap marked with a skull, and when you get close, they will very aggressively seek to fight you.*&lt;/color&gt;" posx="2999" posy="606">
+		<option optionid="1" optiontext="" next="73"></option>
+	</node>
+	<node id="73" npcName="Sir Taron Rimeholt" anim="1" text="&lt;color=#9C8C77&gt;*Upon defeating a group of these barbarians, you will increase your score, or 'tally'. As your tally increases, so too does the strength of the minigame barbarians, but you may also unlock access to greater rewards.*&lt;/color&gt;" posx="3406" posy="605">
+		<option optionid="1" optiontext="" next="74"></option>
+	</node>
+	<node id="74" npcName="Sir Taron Rimeholt" anim="1" text="&lt;color=#9C8C77&gt;*But beware! If you die while the Barbarian Raids are active, your tally will reset. Likewise, if you initiate a fight with the raiders (as will be indicated on the UI), but then retreat from it, your tally will also reset.*&lt;/color&gt;" posx="3814" posy="605">
+		<option optionid="1" optiontext="" next="75"></option>
+	</node>
+	<node id="75" npcName="Sir Taron Rimeholt" anim="1" text="&lt;color=#9C8C77&gt;*As you continue to defeat the attackers and reach the end of the tally (30), Grimgull the Big Baron will finally show himself! He will no longer be hindered by spoiled mead, and will be much more difficult to defeat than before.*&lt;/color&gt;" posx="4220" posy="605">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Minigame rewards.*&lt;/color&gt;" next="76"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Remind me how to start the minigame.*&lt;/color&gt;" next="79"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Alright, I know enough.*&lt;/color&gt;" next="81" icon="LeadingExit"></option>
+	</node>
+	<node id="76" npcName="Sir Taron Rimeholt" anim="1" text="&lt;color=#9C8C77&gt;*As you manage to defeat groups of the minigame barbarians and rack up a higher tally, assuming you're able to return to the tally board safely, you will be able to unlock special rewards!*&lt;/color&gt;" posx="2999" posy="969">
+		<option optionid="1" optiontext="" next="77"></option>
+	</node>
+	<node id="77" npcName="Sir Taron Rimeholt" anim="1" text="&lt;color=#9C8C77&gt;*You may view the specific rewards at the tally board. Upon reaching a certain level, you will find Sir Rimeholt and his men have finished repairs on the castle, and you may unlock the Squallstone Keep as a player house!*&lt;/color&gt;" posx="3410" posy="968">
+		<option optionid="1" optiontext="" next="78"></option>
+	</node>
+	<node id="78" npcName="Sir Taron Rimeholt" anim="1" text="&lt;color=#9C8C77&gt;*But beware! If you die while the Barbarian Raids are active, your tally will reset. Likewise, if you initiate a fight with the raiders (as will be indicated on the UI), but then retreat from it, your tally will also reset. This won't cause you to lose rewards that have already been unlocked.*&lt;/color&gt;" posx="3819" posy="968">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*More details about the minigame.*&lt;/color&gt;" next="72"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Remind me how to start the minigame.*&lt;/color&gt;" next="79"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Alright, I know enough.*&lt;/color&gt;" next="81" icon="LeadingExit"></option>
+	</node>
+	<node id="79" npcName="Sir Taron Rimeholt" anim="1" text="&lt;color=#9C8C77&gt;*You will find Rimeholt's scouts by the gates of the Squallstone Keep, or the North Barracks above Bulwark Cliff village. The scouts stand beside interactable 'tally boards', through which you can initiate the barbarian raids, or toggle them off, as you please.*&lt;/color&gt;" posx="4496" posy="1203">
+		<option optionid="1" optiontext="" next="80"></option>
+	</node>
+	<node id="80" npcName="Sir Taron Rimeholt" anim="1" text="&lt;color=#9C8C77&gt;*These boards are also where you may unlock special rewards, once you've managed to rack up your tally by taking down groups of the barbarian raiders prowling the mountains.*&lt;/color&gt;" posx="4905" posy="1203">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*More details about the minigame.*&lt;/color&gt;" next="72"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Minigame rewards.*&lt;/color&gt;" next="76"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Alright, I know enough.*&lt;/color&gt;" next="81" icon="LeadingExit"></option>
+	</node>
+	<node id="81" npcName="Sir Taron Rimeholt" anim="1" text="Now, was there any other matter you wished to discuss?" posx="606" posy="905">
+		<option optionid="1" optiontext="What will you do then, once the castle is repaired?" next="63" checks="!HouseOwned=16"></option>
+		<option optionid="2" optiontext="I have defeated Grimgull the ogre baron, this time for good!" next="251" checks="Var=GrimgullVanquished-1-1"></option>
+		<option optionid="3" optiontext="What of the Ogre Baron? He's still out there..." next="67" checks="Var=GrimgullVanquished-0-0"></option>
+		<option optionid="4" optiontext="I wanted to return to our discussions about your family's history and that of this castle." next="82"></option>
+		<option optionid="5" optiontext="Farewell, Sir Rimeholt." next="0"></option>
+	</node>
+	<node id="82" npcName="Sir Taron Rimeholt" anim="1" text="Yes, the past... what would you like to know?" posx="3608" posy="5">
+		<option optionid="1" optiontext="Tell me again about yourself, Sir Rimeholt." next="83"></option>
+		<option optionid="2" optiontext="Tell me more about the fall of your barony." next="88"></option>
+		<option optionid="3" optiontext="What can you tell me about the Squallstone Keep?" next="92"></option>
+		<option optionid="4" optiontext="Nevermind." next="81" icon="LeadingExit"></option>
+	</node>
+	<node id="83" npcName="Sir Taron Rimeholt" anim="1" text="Ah yes, I am the last remaining Baron of Amarien Mountains... but the men here know as well as I, it is in name only. Long ago my great grandfather lost our home to the mountain raiders -  this very castle, the Squallstone Keep." posx="4505" posy="4">
+		<option optionid="1" optiontext="" next="84"></option>
+	</node>
+	<node id="84" npcName="Sir Taron Rimeholt" anim="1" text="Since then, decades ago, the gluttonous ogre lord Grimgull took charge and mockingly proclaimed himself 'The Big Baron'. I failed to dislodge him in the past, and while I became old and frail, he still remained strong, for some ogres can be astonishingly long lived." posx="4912" posy="5">
+		<option optionid="1" optiontext="" next="85"></option>
+	</node>
+	<node id="85" npcName="Sir Taron Rimeholt" anim="1" text="Only you were finally able to release the legacy of my ancestors from his grip. I am deeply grateful, though as for myself - for my family - it is too late..." posx="5316" posy="5">
+		<option optionid="1" optiontext="" next="86"></option>
+	</node>
+	<node id="86" npcName="Sir Taron Rimeholt" anim="1" text="I am an old man with little life left in me, the last in my line. All my life I spent chasing vengeance, in neglect of other duties. For my failures, my family name will die with me." posx="5779" posy="3">
+		<option optionid="1" optiontext="Harboring regrets, Sir Rimeholt?" next="87"></option>
+		<option optionid="2" optiontext="Tell me more about the fall of your barony." next="88"></option>
+		<option optionid="3" optiontext="What can you tell me about the Squallstone Keep?" next="92"></option>
+		<option optionid="4" optiontext="I see, interesting..." next="81" icon="LeadingExit"></option>
+	</node>
+	<node id="87" npcName="Sir Taron Rimeholt" anim="1" text="Hm? That my family's loss consumed all my life was indeed regrettable... but I'm too old for regrets now. What matters is that the Squallstone Keep is finally free - may its future stewards fare better than my ancestors did!" posx="6185" posy="4">
+		<option optionid="1" optiontext="Tell me more about the fall of your barony." next="88"></option>
+		<option optionid="2" optiontext="What can you tell me about the Squallstone Keep?" next="92"></option>
+		<option optionid="3" optiontext="I see, interesting..." next="81" icon="LeadingExit"></option>
+	</node>
+	<node id="88" npcName="Sir Taron Rimeholt" anim="1" text="The Rimeholt family kept order in these mountains for centuries, until eventually my great-grandfather, Edric Rimeholt, lost it all one dreadful night, and perished..." posx="4085" posy="303">
+		<option optionid="1" optiontext="" next="89"></option>
+	</node>
+	<node id="89" npcName="Sir Taron Rimeholt" anim="1" text="You see, Sir Edric had once saved the life of a barbarian man, and thought to have befriended him. Edric invited him to stay at his court, hoping to make use of the barbarian's knowledge, in order to keep the mountain clans in check." posx="4501" posy="305">
+		<option optionid="1" optiontext="" next="90"></option>
+	</node>
+	<node id="90" npcName="Sir Taron Rimeholt" anim="1" text="Alas, he did not know the barbarian was crafty, and cared little for Edric's sense of honor. He prepared a plot to leave the Keep defenseless one night, and barbarian invaders slipped in, under the cover of darkness!" posx="4909" posy="303">
+		<option optionid="1" optiontext="" next="91"></option>
+	</node>
+	<node id="91" npcName="Sir Taron Rimeholt" anim="1" text="There was little poor Edric could do in the face of such an ambush. He sacrificed himself to allow his wife and children to escape the slaughter... Since then, no Rimeholt stepped within these walls, until now." posx="5315" posy="304">
+		<option optionid="1" optiontext="What can you tell me about the Squallstone Keep?" next="92"></option>
+		<option optionid="2" optiontext="Tell me again about yourself, Sir Rimeholt." next="83"></option>
+		<option optionid="3" optiontext="I see, interesting..." next="81" icon="LeadingExit"></option>
+	</node>
+	<node id="92" npcName="Sir Taron Rimeholt" anim="1" text="The Squallstone Keep? Centuries back my family carved great blocks of stone from the mountain walls of Amarien Peaks and constructed a sturdy fortress to guard against the hostile forces of these crude lands." posx="4806" posy="675">
+		<option optionid="1" optiontext="" next="93"></option>
+	</node>
+	<node id="93" npcName="Sir Taron Rimeholt" anim="1" text="Over time the Squallstone Keep grew into a great castle, sturdy enough to withstand constant battering from stormy winds and barbarian raids - it never succumbed to a siege, nor the weather!" posx="5213" posy="677">
+		<option optionid="1" optiontext="" next="94"></option>
+	</node>
+	<node id="94" npcName="Sir Taron Rimeholt" anim="1" text="Only betrayal from within would eventually lose our family our castle home... even then, despite the many decades of neglect and abuse it suffered under its barbarian occupation, today the castle stands around us more proudly than ever!" posx="5622" posy="678">
+		<option optionid="1" optiontext="Tell me again about yourself, Sir Rimeholt." next="83"></option>
+		<option optionid="2" optiontext="Tell me more about the fall of your barony." next="88"></option>
+		<option optionid="3" optiontext="I see, interesting..." next="81" icon="LeadingExit"></option>
+	</node>
+
+
+	<node id="100" npcName="Grimgull, The Big Baron" anim="1" text="BRLAWLRHGHHHH...! I SENT FOR MORE MEAD... BUT I DON'T SEE NO MEAD! FETCH MEAD NOW, OR YOU MAKE ME ANGRY! HRRAAAGHR...!" posx="12" posy="7">
+		<option optionid="1" optiontext="I'm afraid you have me confused, I'm here for house cleaning..." next="101" icon="Quest"></option>
+		<option optionid="2" optiontext="Err, yes, sure..." next="0"></option>
+	</node>
+	<node id="101" npcName="Grimgull, The Big Baron" anim="1" text="HRRRRR... WHAT...? WAIT, *BURP*! YOU'S THE ONE WATCHMAN TELL ME CAUSING TROUBLE?! YOU... TINY BUG! *HIC*!" posx="423" posy="6">
+		<option optionid="1" optiontext="" next="102"></option>
+	</node>
+	<node id="102" npcName="Grimgull, The Big Baron" anim="1" text="INSOLENT BUG... CAUSE TROUBLE... CHALLENGE ME HERE?! HRRR... THIS CASTLE IS MINE!! " posx="831" posy="5">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=295" icon="Quest"></option>
+	</node>
+
+
+	<node id="120" npcName="Emerick the Steward" anim="1" text="Greetings, Master Aercrest! Sir Rimeholt has pledged my services to you, as relate to the upkeep of this great castle. Are there any improvements in particular that you wish to address?" contextBefore="after haus built" posx="0" posy="52">
+		<option optionid="1" optiontext="Yes, indeed, the interiors could use a little furnishing." next="121" icon="Shop"></option>
+		<option optionid="2" optiontext="I have a few special requests in mind..." next="122"></option>
+		<option optionid="3" optiontext="No, thank you - I'm all set for now." next="0"></option>
+	</node>
+	<node id="121" npcName="Emerick the Steward" anim="1" text="Of course, sir! I have a great many contacts across the realm, from whom I can source quality furniture. Please, take a look at what I can have delivered!" posx="409" posy="51">
+		<option optionid="1" optiontext="Very good, Emerick." next="0" actions="OpenShop=142"></option>
+	</node>
+	<node id="122" npcName="Emerick the Steward" anim="1" text="Indeed, Master? Well I must say, you have my curiosity piqued..." posx="779" posy="379">
+		<option optionid="7" optiontext="We ought to do something about that hideous throne, don't you think?" next="127" checks="Var=SquallstoneKeepThrone-0-0"></option>
+		<option optionid="8" optiontext="Nevermind." next="129" icon="LeadingExit"></option>
+	</node>
+	<node id="123" npcName="Emerick the Steward" anim="1" text="Quite right, Master, quite right... However, I must warn you, if I was to send out invitations, a little gold might also be required along the way, to persuade fine courtiers to travel to these distant parts... say, 10 000 coins?" posx="1377" posy="375">
+		<option optionid="1" optiontext="Not to worry, Emerick - I am a wealthy man. (10 000 coins)" next="124" checks="HasItem=131-10000" icon="Coins" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="On a second thought, that's too much..." next="129" icon="LeadingExit"></option>
+	</node>
+	<node id="124" npcName="Emerick the Steward" anim="1" text="Very good, Master, very good indeed! In that case, I shall send out invitations post-haste! Fortunately I have excellent contacts to draw from." posx="1788" posy="374">
+		<option optionid="1" optiontext="" next="0" actions="SetVar=SquallstoneKeepCourtiers-1" icon="Loot"></option>
+	</node>
+	<node id="125" npcName="Emerick the Steward" anim="1" text="As you say, Master, and I know of many skilled warriors who would no doubt answer the call... but I must warn you! Their services aren't cheap, and providing them with proper arms also carries a cost... say, 20 000 coins?" posx="1377" posy="760">
+		<option optionid="1" optiontext="Not to worry, Emerick - I am a wealthy man. (20 000 coins)" next="126" checks="HasItem=131-20000" icon="Coins" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="On a second thought, that's too much..." next="129" icon="LeadingExit"></option>
+	</node>
+	<node id="126" npcName="Emerick the Steward" anim="1" text="Very good, Master! In that case, I shall draw up recruitment letters post-haste, and contact the local smithies!" posx="1787" posy="761">
+		<option optionid="1" optiontext="" next="0" actions="SetVar=SquallstoneKeepGuards-1" icon="Loot"></option>
+	</node>
+	<node id="127" npcName="Emerick the Steward" anim="1" text="Yes, Master, I see what you're saying... but a proper throne? Well, I suppose I can think of a craftsman or two who could arrange for something like that, but I fear it may cost you a pretty penny... say, 30 000 coins?" posx="1383" posy="1208">
+		<option optionid="1" optiontext="Not to worry, Emerick - I am a wealthy man. (30 000 coins)" next="128" checks="HasItem=131-30000" icon="Coins" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="On a second thought, that's too much..." next="129" icon="LeadingExit"></option>
+	</node>
+	<node id="128" npcName="Emerick the Steward" anim="1" text="Of course Master, not that it was ever in doubt! I shall commission a throne befit for the Lord of the Squallstone Keep, then, and arrange for its swift delivery!" posx="1811" posy="1207">
+		<option optionid="1" optiontext="" next="0" actions="SetVar=SquallstoneKeepThrone-1,RemoveItems=131-30000,Cinematic=145" icon="Loot"></option>
+	</node>
+	<node id="129" npcName="Emerick the Steward" anim="1" text="Very good, sir. Was there anything else I might assist you with? I tend to find there are always improvements that could be made." posx="2" posy="607">
+		<option optionid="1" optiontext="Yes, indeed, the interiors could use a little furnishing." next="121" icon="Shop"></option>
+		<option optionid="2" optiontext="I have a few special requests in mind..." next="122"></option>
+		<option optionid="3" optiontext="No, thank you - I'm all set for now." next="0"></option>
+	</node>
+
+
+	<node id="150" npcName="Barbarian Watchman" anim="1" text="Oh my, oh my... look what wandered into the wrong territory? Is it a stray dog, a lost puppy?! Teeheee..." posx="0" posy="6">
+		<option optionid="1" optiontext="" next="151"></option>
+	</node>
+	<node id="151" npcName="Barbarian Watchman" anim="1" text="We a bit far from home, aren't we boy? Bad place to get lost, this... very bad place... teeheehee..." posx="408" posy="6">
+		<option optionid="1" optiontext="Open the gate, fool! I have business with the ''Baron'' of this castle." next="152" icon="Quest"></option>
+	</node>
+	<node id="152" npcName="Barbarian Watchman" anim="1" text="Ooh, hoho?! It wants to meet The Big Baron, it does? Too bad, the Baron doesn't like to play with the likes of you... But don't worry! I got friends right here, ready to give you a warm welcome!" posx="819" posy="6">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=292" icon="Quest"></option>
+	</node>
+
+
+	<node id="200" npcName="Sir Taron Rimeholt" anim="1" text="At long last, the legacy Squallstone Keep has been restored! It will once again resume its place as the guardian of the mountains against raiding barbarians - a beacon of civilization in this otherwise dark and stormy terrain!" contextBefore="quest complete, castle complete" posx="0" posy="54">
+		<option optionid="1" optiontext="" next="201"></option>
+	</node>
+	<node id="201" npcName="Sir Taron Rimeholt" anim="1" text="As for the Lords Rimeholt, however, our legacy shall fade into the past... As I may have already told you, I am the last in my line and time has worn me down." posx="404" posy="54">
+		<option optionid="1" optiontext="" next="202"></option>
+	</node>
+	<node id="202" npcName="Sir Taron Rimeholt" anim="1" text="I wish to remain here for the rest of my days, as an advisor and a protector, but it is my intention to entrust charge of this castle to you - the one who liberated it from its ogre overlord!" posx="812" posy="54">
+		<option optionid="1" optiontext="" next="204"></option>
+	</node>
+	<node id="204" npcName="Sir Taron Rimeholt" anim="1" text="I can think of no one better to take great care of the Squallstone Keep! To that end, you should approach my steward, Emerick. These halls will need refurbishing to make the castle truly livable again, and Emerick is best equipped to help you to that end." posx="1218" posy="54">
+		<option optionid="1" optiontext="Thank you, Sir Rimeholt - I'm honored!" next="205" icon="Quest"></option>
+	</node>
+	<node id="205" npcName="Sir Taron Rimeholt" anim="1" text="&lt;color=green&gt;*You have now unlocked the Squallstone Keep as a player house!*&lt;/color&gt;" posx="1623" posy="54">
+		<option optionid="1" optiontext="Fantastic!" next="0" actions="SetVar=RimeholtCastleUnlockDialogue-1" icon="Loot"></option>
+	</node>
+
+
+	<node id="250" npcName="Sir Taron Rimeholt" anim="1" text="Greetings, dear friend! How fare you, as the new Lord of the Squallstone Keep? I trust you're taking good care of the castle." posx="0" posy="6">
+		<option optionid="1" optiontext="I have defeated Grimgull the ogre baron, this time for good!" next="251" checks="Var=GrimgullVanquished-1-1"></option>
+		<option optionid="2" optiontext="What of the Ogre Baron? He's still out there..." next="67" checks="Var=GrimgullVanquished-0-0"></option>
+		<option optionid="3" optiontext="I wanted to return to our discussions about your family's history and that of this castle." next="82"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="251" npcName="Sir Taron Rimeholt" anim="1" text="Hah! Well done, dear chap, well done! With that you have truly set my family feud at rest... Well, you have done far more for me than I ever had any right to hope! You have my eternal gratitude." posx="485" posy="5">
+		<option optionid="1" optiontext="" next="252"></option>
+	</node>
+	<node id="252" npcName="Sir Taron Rimeholt" anim="1" text="How about setting up a fine banner in honor of the moment, hm? To celebrate a powerful foe well slain!" posx="904" posy="5">
+		<option optionid="1" optiontext="Indeed, I shall see to it..." next="0"></option>
+	</node>
+
+
+	<node id="500" npcName="Sergeant Limbgraves" anim="1" text="Alright there, sir? I've got charge of this camp now, since Sir Rimeholt returned to the castle. If you mean to travel there yourself, I can arrange an escort." posx="0" posy="5">
+		<option optionid="1" optiontext="Very good, I would like to travel to the Squallstone Keep!" next="501" icon="Travel"></option>
+		<option optionid="2" optiontext="Tell me about the Barbarian Raids." next="502"></option>
+		<option optionid="3" optiontext="What can you tell me about this outpost?" next="515"></option>
+		<option optionid="4" optiontext="Thank you, sergeant." next="0"></option>
+	</node>
+	<node id="501" npcName="Sergeant Limbgraves" anim="1" text="Very well, then. Bear with me, sir..." posx="478" posy="6">
+		<option optionid="1" optiontext="" next="0" actions="TeleportFadeToNpc=9172" icon="Travel"></option>
+	</node>
+	<node id="502" npcName="Sergeant Limbgraves" anim="1" text="Aye, Sir Rimeholt warned us you may have angered the ogre baron, and we must brace for his raiders attacking us..." posx="904" posy="305">
+		<option optionid="1" optiontext="" next="503"></option>
+	</node>
+	<node id="503" npcName="Sergeant Limbgraves" anim="1" text="&lt;color=#9C8C77&gt;*You now have access to the 'Barbarian Raids' minigame. You will find Rimeholt's scouts by the gates of the Squallstone Keep, or the North Barracks above Bulwark Cliff village.*&lt;/color&gt;" posx="1311" posy="305">
+		<option optionid="1" optiontext="" next="504"></option>
+	</node>
+	<node id="504" npcName="Sergeant Limbgraves" anim="1" text="&lt;color=#9C8C77&gt;*The scouts stand beside interactable 'tally boards', through which you can initiate the barbarian raids, or toggle them off, as you please. Activating the minigame will spawn dangerous barbarian groups in the mountains.*&lt;/color&gt;" posx="1718" posy="306">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*More details about the minigame.*&lt;/color&gt;" next="506"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Minigame rewards.*&lt;/color&gt;" next="510"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Alright, I know enough.*&lt;/color&gt;" next="505" icon="LeadingExit"></option>
+	</node>
+	<node id="505" npcName="Sergeant Limbgraves" anim="1" text="Anything else I can help you with, sir? If you mean to travel to the great old castle, I can arrange for an escort." posx="3" posy="604">
+		<option optionid="1" optiontext="Very good, I would like to travel to the Squallstone Keep!" next="501" icon="Travel"></option>
+		<option optionid="2" optiontext="Tell me about the Barbarian Raids." next="502"></option>
+		<option optionid="3" optiontext="What can you tell me about this outpost?" next="515"></option>
+		<option optionid="4" optiontext="Thank you, sergeant." next="0"></option>
+	</node>
+	<node id="506" npcName="Sergeant Limbgraves" anim="1" text="&lt;color=#9C8C77&gt;*While the raids are active, you will encounter groups of barbarian ambushers roaming the mountains in areas between the castle and the village. You will notice them on the minimap marked with a skull, and when you get close, they will very aggressively seek to fight you.*&lt;/color&gt;" posx="2126" posy="9">
+		<option optionid="1" optiontext="" next="507"></option>
+	</node>
+	<node id="507" npcName="Sergeant Limbgraves" anim="1" text="&lt;color=#9C8C77&gt;*Upon defeating a group of these barbarians, you will increase your score, or 'tally'. As your tally increases, so too does the strength of the minigame barbarians, but you may also unlock access to greater rewards.*&lt;/color&gt;" posx="2531" posy="9">
+		<option optionid="1" optiontext="" next="508"></option>
+	</node>
+	<node id="508" npcName="Sergeant Limbgraves" anim="1" text="&lt;color=#9C8C77&gt;*But beware! If you die while the Barbarian Raids are active, your tally will reset. Likewise, if you initiate a fight with the raiders (as will be indicated on the UI), but then retreat from it, your tally will also reset.*&lt;/color&gt;" posx="2934" posy="10">
+		<option optionid="1" optiontext="" next="509"></option>
+	</node>
+	<node id="509" npcName="Sergeant Limbgraves" anim="1" text="&lt;color=#9C8C77&gt;*As you continue to defeat the attackers and reach the end of the tally (30), Grimgull the Big Baron will finally show himself! He will no longer be hindered by spoiled mead, and will be much more difficult to defeat than before.*&lt;/color&gt;" posx="3339" posy="12">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Minigame rewards.*&lt;/color&gt;" next="510"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Remind me how to start the minigame.*&lt;/color&gt;" next="513"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Alright, I know enough.*&lt;/color&gt;" next="505" icon="LeadingExit"></option>
+	</node>
+	<node id="510" npcName="Sergeant Limbgraves" anim="1" text="&lt;color=#9C8C77&gt;*As you manage to defeat groups of the minigame barbarians and rack up a higher tally, assuming you're able to return to the tally board safely, you will be able to unlock special rewards!*&lt;/color&gt;" posx="2120" posy="306">
+		<option optionid="1" optiontext="" next="511"></option>
+	</node>
+	<node id="511" npcName="Sergeant Limbgraves" anim="1" text="&lt;color=#9C8C77&gt;*You may view the specific rewards at the tally board. Upon reaching a certain level, you will find Sir Rimeholt and his men have finished repairs on the castle, and you may unlock the Squallstone Keep as a player house!*&lt;/color&gt;" posx="2522" posy="306">
+		<option optionid="1" optiontext="" next="512"></option>
+	</node>
+	<node id="512" npcName="Sergeant Limbgraves" anim="1" text="&lt;color=#9C8C77&gt;*But beware! If you die while the Barbarian Raids are active, your tally will reset. Likewise, if you initiate a fight with the raiders (as will be indicated on the UI), but then retreat from it, your tally will also reset. This won't cause you to lose rewards that have already been unlocked.*&lt;/color&gt;" posx="2929" posy="306">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*More details about the minigame.*&lt;/color&gt;" next="506"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Remind me how to start the minigame.*&lt;/color&gt;" next="513"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Alright, I know enough.*&lt;/color&gt;" next="505" icon="LeadingExit"></option>
+	</node>
+	<node id="513" npcName="Sergeant Limbgraves" anim="1" text="&lt;color=#9C8C77&gt;*You will find Rimeholt's scouts by the gates of the Squallstone Keep, or the North Barracks above Bulwark Cliff village. The scouts stand beside interactable 'tally boards', through which you can initiate the barbarian raids, or toggle them off, as you please.*&lt;/color&gt;" posx="3402" posy="433">
+		<option optionid="1" optiontext="" next="514"></option>
+	</node>
+	<node id="514" npcName="Sergeant Limbgraves" anim="1" text="&lt;color=#9C8C77&gt;*These boards are also where you may unlock special rewards, once you've managed to rack up your tally by taking down groups of the barbarian raiders prowling the mountains.*&lt;/color&gt;" posx="3806" posy="433">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*More details about the minigame.*&lt;/color&gt;" next="506"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Minigame rewards.*&lt;/color&gt;" next="510"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Alright, I know enough.*&lt;/color&gt;" next="505" icon="LeadingExit"></option>
+	</node>
+	<node id="515" npcName="Sergeant Limbgraves" anim="1" text="Out here, sir, we're the foremost line of defense against the barbarian raiders, who'd love nothing more than to lay waste to the village of Bulwark Cliff! Our watchtowers are carefully positioned here on this highground, to overlook the valleys below." posx="910" posy="906">
+		<option optionid="1" optiontext="I would like to travel to the Squallstone Keep." next="501" icon="Travel"></option>
+		<option optionid="2" optiontext="Tell me about the Barbarian Raids." next="502"></option>
+		<option optionid="3" optiontext="Carry on, sergeant." next="0"></option>
+	</node>
+
+
+	<node id="550" npcName="Sergeant Falcreek" anim="1" text="Now you keep your eyes sharp and your blades sharper! These mountains ain't known to forgive mistakes... Sometimes you hear howlin' in the passes, can't be sure if it's wolves, or something worse..." posx="6" posy="7">
+		<option optionid="1" optiontext="" next="551"></option>
+	</node>
+	<node id="551" npcName="Sergeant Falcreek" anim="1" text="So you just say the word, in case you're looking to get back to the north barracks near the village, and I'll arrange for transport. It's safest that way, and we wouldn't want to see you go missing, stumbling out there on your own. " posx="415" posy="7">
+		<option optionid="1" optiontext="Fair enough, I wish to return to the outpost." next="552" icon="Travel"></option>
+		<option optionid="2" optiontext="Tell me about the Barbarian Raids." next="553"></option>
+		<option optionid="3" optiontext="Carry on, sergeant." next="0"></option>
+	</node>
+	<node id="552" npcName="Sergeant Falcreek" anim="1" text="Of course you do... Very well then, sir, just give me a moment..." posx="820" posy="8">
+		<option optionid="1" optiontext="" next="0" actions="TeleportFadeToNpc=9184" icon="Travel"></option>
+	</node>
+	<node id="553" npcName="Sergeant Falcreek" anim="1" text="Aye, Sir Rimeholt warned us you may have angered the ogre baron, and we must brace for his raiders attacking us... Scout over there's gonna tell you if there's been any sight of raiders." posx="901" posy="305">
+		<option optionid="1" optiontext="" next="554"></option>
+	</node>
+	<node id="554" npcName="Sergeant Falcreek" anim="1" text="&lt;color=#9C8C77&gt;*You now have access to the 'Barbarian Raids' minigame. You will find Rimeholt's scouts by the gates of the Squallstone Keep, or the North Barracks above Bulwark Cliff village.*&lt;/color&gt;" posx="1308" posy="305">
+		<option optionid="1" optiontext="" next="555"></option>
+	</node>
+	<node id="555" npcName="Sergeant Falcreek" anim="1" text="&lt;color=#9C8C77&gt;*The scouts stand beside interactable 'tally boards', through which you can initiate the barbarian raids, or toggle them off, as you please. Activating the minigame will spawn dangerous barbarian groups in the mountains.*&lt;/color&gt;" posx="1715" posy="306">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*More details about the minigame.*&lt;/color&gt;" next="556"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Minigame rewards.*&lt;/color&gt;" next="560"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Alright, I know enough.*&lt;/color&gt;" next="565" icon="LeadingExit"></option>
+	</node>
+	<node id="556" npcName="Sergeant Falcreek" anim="1" text="&lt;color=#9C8C77&gt;*While the raids are active, you will encounter groups of barbarian ambushers roaming the mountains in areas between the castle and the village. You will notice them on the minimap marked with a skull, and when you get close, they will very aggressively seek to fight you.*&lt;/color&gt;" posx="2123" posy="9">
+		<option optionid="1" optiontext="" next="557"></option>
+	</node>
+	<node id="557" npcName="Sergeant Falcreek" anim="1" text="&lt;color=#9C8C77&gt;*Upon defeating a group of these barbarians, you will increase your score, or 'tally'. As your tally increases, so too does the strength of the minigame barbarians, but you may also unlock access to greater rewards.*&lt;/color&gt;" posx="2528" posy="9">
+		<option optionid="1" optiontext="" next="558"></option>
+	</node>
+	<node id="558" npcName="Sergeant Falcreek" anim="1" text="&lt;color=#9C8C77&gt;*But beware! If you die while the Barbarian Raids are active, your tally will reset. Likewise, if you initiate a fight with the raiders (as will be indicated on the UI), but then retreat from it, your tally will also reset.*&lt;/color&gt;" posx="2931" posy="10">
+		<option optionid="1" optiontext="" next="559"></option>
+	</node>
+	<node id="559" npcName="Sergeant Falcreek" anim="1" text="&lt;color=#9C8C77&gt;*As you continue to defeat the attackers and reach the end of the tally (30), Grimgull the Big Baron will finally show himself! He will no longer be hindered by spoiled mead, and will be much more difficult to defeat than before.*&lt;/color&gt;" posx="3336" posy="12">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Minigame rewards.*&lt;/color&gt;" next="560"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Remind me how to start the minigame.*&lt;/color&gt;" next="563"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Alright, I know enough.*&lt;/color&gt;" next="565" icon="LeadingExit"></option>
+	</node>
+	<node id="560" npcName="Sergeant Falcreek" anim="1" text="&lt;color=#9C8C77&gt;*As you manage to defeat groups of the minigame barbarians and rack up a higher tally, assuming you're able to return to the tally board safely, you will be able to unlock special rewards!*&lt;/color&gt;" posx="2117" posy="306">
+		<option optionid="1" optiontext="" next="561"></option>
+	</node>
+	<node id="561" npcName="Sergeant Falcreek" anim="1" text="&lt;color=#9C8C77&gt;*You may view the specific rewards at the tally board. Upon reaching a certain level, you will find Sir Rimeholt and his men have finished repairs on the castle, and you may unlock the Squallstone Keep as a player house!*&lt;/color&gt;" posx="2519" posy="306">
+		<option optionid="1" optiontext="" next="562"></option>
+	</node>
+	<node id="562" npcName="Sergeant Falcreek" anim="1" text="&lt;color=#9C8C77&gt;*But beware! If you die while the Barbarian Raids are active, your tally will reset. Likewise, if you initiate a fight with the raiders (as will be indicated on the UI), but then retreat from it, your tally will also reset. This won't cause you to lose rewards that have already been unlocked.*&lt;/color&gt;" posx="2926" posy="306">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*More details about the minigame.*&lt;/color&gt;" next="556"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Remind me how to start the minigame.*&lt;/color&gt;" next="563"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Alright, I know enough.*&lt;/color&gt;" next="565" icon="LeadingExit"></option>
+	</node>
+	<node id="563" npcName="Sergeant Falcreek" anim="1" text="&lt;color=#9C8C77&gt;*You will find Rimeholt's scouts by the gates of the Squallstone Keep, or the North Barracks above Bulwark Cliff village. The scouts stand beside interactable 'tally boards', through which you can initiate the barbarian raids, or toggle them off, as you please.*&lt;/color&gt;" posx="3399" posy="433">
+		<option optionid="1" optiontext="" next="564"></option>
+	</node>
+	<node id="564" npcName="Sergeant Falcreek" anim="1" text="&lt;color=#9C8C77&gt;*These boards are also where you may unlock special rewards, once you've managed to rack up your tally by taking down groups of the barbarian raiders prowling the mountains.*&lt;/color&gt;" posx="3803" posy="433">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*More details about the minigame.*&lt;/color&gt;" next="556"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Minigame rewards.*&lt;/color&gt;" next="560"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Alright, I know enough.*&lt;/color&gt;" next="565" icon="LeadingExit"></option>
+	</node>
+	<node id="565" npcName="Sergeant Falcreek" anim="1" text="Now, is that all? Say the word, in case you're looking to get back to the north barracks near the village, and I'll arrange for transport. Otherwise, I should get back to my guard duties." posx="8" posy="606">
+		<option optionid="1" optiontext="Fair enough, I wish to return to the outpost." next="552" icon="Travel"></option>
+		<option optionid="2" optiontext="Tell me about the Barbarian Raids." next="553"></option>
+		<option optionid="3" optiontext="Carry on, sergeant." next="0"></option>
+	</node>
+
+
+
+</dialogue>
+
+
+
+

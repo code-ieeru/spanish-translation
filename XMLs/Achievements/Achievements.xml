@@ -1,0 +1,1502 @@
+<categories>
+
+	<category name="Questing">
+		<subcategory name="Main Story">
+			<achievement id="MSquests_rudeawakening" name="A Rude Awakening" level="3" shortdescription="Complete the prologue." description="">
+				<requirement text="Prologue completed." checks="Quest=56-999-999"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="MSquests_hubert" name="Bloody Hubert" level="8" shortdescription="Defeat Hubert the Axe." description="">
+				<requirement text="Defeated Hubert the Axe." checks="Quest=13-6-999"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="MSquests_ancient_temple" name="Secrets of the Ancients" level="12" shortdescription="Break into the Temple of Etherlight." description="">
+				<requirement text="Temple of Etherlight unlocked." checks="Quest=14-1-999"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="MSquests_scrying" name="Lifting the Veil" level="15" shortdescription="Complete the scrying event." description="">
+				<requirement text="Completed the scrying." checks="Quest=15-3-999"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="MSquests_lovehurttt" name="Love Literally Hurts..." level="20" shortdescription="Dispatch with the druid in Thornhill." description="">
+				<requirement text="Completed 'love hurts' quest." checks="Quest=16-999-999"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="MSquests_mindshield_amulet" name="A Slave No Longer" level="25" shortdescription="Gain the Amulet of Vesteris." description="">
+				<requirement text="Acquired trait: Amulet of Vesteris." checks="Quest=70-6-999"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="MSquests_gabrone_fight" name="Death is Merely an Inconvenience" level="35" shortdescription="Complete the quest 'Reunion of Fire and Death'." description="">
+				<requirement text="Completed quest: Reunion of Fire and Death." checks="Quest=72-999-999"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+		</subcategory>
+		<subcategory name="Side Stories">
+			<achievement id="Sidequests_blakkshield" name="Farmland Liberator" level="25" shortdescription="Defeat Lord Blackshield." description="">
+				<requirement text="Lord Blackshield defeated." checks="Quest=111-6-999"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="Sidequests_ghostbuster" name="Ghostbusting" level="40" shortdescription="Defeat the Ghost of Greywall." description="">
+				<requirement text="Defeated the Ghost of Greywall." checks="Quest=54-17-999"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="Sidequests_haywindhero" name="The Savior of Haywind!" level="60" shortdescription="Protect Haywind from the threat of the renegade wizard." description="">
+				<requirement text="Returned to the Mayor in Haywind after defeating the renegade wizard." checks="Quest=117-999-999"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="Sidequests_harvestchamp" name="The Harvest Champion" level="25" shortdescription="Complete all harvest festival quests." description="">
+				<requirement text="Completed quest: Pumpkin Pandemonium." checks="Quest=103-999-999"></requirement>
+				<requirement text="Completed quest: The Great Harvest Melee." checks="Quest=104-999-999"></requirement>
+				<requirement text="Completed quest: A Dangerous Brew." checks="Quest=105-999-999"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="Sidequests_riverwarden" name="The River Warden" level="15" shortdescription="Protect Aurfield against river pirates and the Great Mudclaw." description="">
+				<requirement text="Great Mudclaw defeated." checks="Quest=92-4-999"></requirement>
+				<requirement text="Completed the river pirates quest." checks="Quest=91-999-999"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="Sidequests_plaguedoc_apprentice" name="The Plague Doctor's Apprentice" level="20" shortdescription="Assist Apothecary Sven in Thornhill." description="">
+				<requirement text="Complete the Plague Doctor's Apprentice quest." checks="Quest=87-999-999"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="Sidequests_winterlands_elemental" name="Elemental Slayer" level="35" shortdescription="Defeat Zephirix, the Cruel Wind of the North." description="">
+				<requirement text="Defeated Zephirix, the Cruel Wind of the North." checks="Quest=119-11-999"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+		</subcategory>
+	</category>
+	
+	<category name="World Tasks">
+		<subcategory name="Timberwell">
+			<achievement id="timberwell_tales" level="4" name="Friend of Timberwell" shortdescription="Complete all tasks in Timberwell." description="Complete all key tasks to become a trusted friend of the Timberwell community.">
+				<requirement checks="HasAchievement=timberwell_tales_beasts_and_barns"></requirement>
+				<requirement checks="HasAchievement=timberwell_tales_helping_hands"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="timberwell_tales_beasts_and_barns" level="1" name="Animal Protection" shortdescription="Complete Timberwell's animal related tasks." description="Assist in resolving the animal-related issues in Timberwell.">
+				<requirement text="Build a pen for the sheep." checks="Var=TimberwellSheepsPen-2" info="Help the shepherd near the southern road by building a sheep pen."></requirement>
+				<requirement text="Rescue rabbits from wolves." checks="Var=TimberwellRabbitsSaviour-5" info="Assist a child in the northwest forest by saving rabbits from wolves."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="timberwell_tales_helping_hands" level="1" name="Polite Woodland Village Visitor" shortdescription="Assist locals of Timberwell in everyday tasks." description="Lend a hand to the residents of Timberwell with their daily tasks.">
+				<requirement text="Assist the lumberjack's wife." checks="Var=TimberwellAchWoodcutter-3" info="Assist the lumberjack's wife, whose husband won't talk to her."></requirement>
+				<requirement text="Help the gardener water his plants." checks="Var=TimberwellAchGardener-4" info="Assist the gardener in watering his plants."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Grainwater">
+			<achievement id="friend_of_grainwater" name="Friend of Grainwater" level="12" shortdescription="Complete all tasks in Grainwater." description="Assist the people of Grainwater by completing all their key tasks.">
+				<requirement text="Beer in Demand completed." checks="HasAchievement=beer_of_grainwater"></requirement>
+				<requirement text="Sobering Up completed." checks="HasAchievement=drunks_of_grainwater"></requirement>
+				<requirement text="Cart Delivery completed." checks="HasAchievement=cart_of_grainwater"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="beer_of_grainwater" name="Beer in Demand" level="6" shortdescription="Assist Grainwater's tavern." description="Help the bartender in Grainwater by providing the necessary assistance.">
+				<requirement text="Help the Grainwater bartender." checks="Var=GrainwaterBeerA-3-3" info="The bartender in the tavern's basement could use some help."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="drunks_of_grainwater" name="Sobering Up" level="6" shortdescription="Wake up the Grainwater drunkards." description="Help the Mayor of Grainwater by waking up the village drunkards.">
+				<requirement text="Wake up the drunkards in Grainwater." checks="Var=AchvGrainwaterDrunk1-1-1|AchvGrainwaterDrunk2-1-1|AchvGrainwaterDrunk3-1-1" info="Pour water on the sleeping drunks in the town square."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="cart_of_grainwater" name="Cart Delivery" level="6" shortdescription="Complete Grainwater cart seller's job." description="Help the cart seller by delivering wood for her business.">
+				<requirement text="Assist the cart seller." checks="Var=Grainwatercart-3-3" info="The cart seller at Grainwater's Value Carts shop is in need of more wood for her carts."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Haywind City">
+			<achievement id="friend_of_haywind" name="Friend of Haywind" level="8" shortdescription="Complete all tasks in Haywind." description="Assist the people of Haywind by completing various tasks around the village.">
+				<requirement checks="HasAchievement=citizen_of_haywind"></requirement>
+				<requirement checks="HasAchievement=shopkeeper_of_haywind"></requirement>
+				<requirement checks="HasAchievement=militia_of_haywind"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="citizen_of_haywind" name="The Model Citizen" level="8" shortdescription="Assist citizens of Haywind in everyday tasks." description="Help various citizens of Haywind with their daily challenges.">
+				<requirement text="Help Haywind gardener" checks="Var=HaywindFriendAchGardner-2" info="Help a farmer at Barnsmill Estate."></requirement>
+				<requirement text="Help Haywind bartender" checks="Var=HaywindFriendAchBartender-2" info="Assist the bartender at the Singing Sparrow Tavern in South Haywind."></requirement>
+				<requirement text="Help Haywind lumberjack" checks="Var=HaywindFriendAchLumberWork-2" info="Help a lumberjack at the lumber camp between the market and harbor."></requirement>
+				<requirement text="Help Haywind librarian" checks="Var=HaywindFriendAchLibrarian-2" info="Assist the librarian at Haywind College on the 2nd floor."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="shopkeeper_of_haywind" name="Open for Business" level="8" shortdescription="Assist Haywind's shopkeepers." description="Help local shopkeepers by running errands and helping with supplies.">
+				<requirement text="Help the Haywind merchant" checks="Var=HaywindFriendAchMerchant-2" info="Assist the merchant at Haywind Town Hall."></requirement>
+				<requirement text="Help the Haywind food vendor" checks="Var=HaywindFriendAchFoodVendor-2" info="Help the meat vendor in the market district."></requirement>
+				<requirement text="Help the Haywind furniture vendor" checks="Var=HaywindFriendAchFurnitureVendor-2" info="Assist the furniture vendor at the market district."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="militia_of_haywind" name="Law and Order" level="8" shortdescription="Complete tasks for Haywind Militia." description="Help the militia by providing supplies and scouting for threats.">
+				<requirement text="Help the Haywind scout" checks="Var=HaywindFriendAchMilitiaScout-3" info="Assist the scout near Silderstone Pass, south of Haywind."></requirement>
+				<requirement text="Help Sergeant Gray" checks="Var=HaywindFriendAchMilitiaCraft-2" info="Assist Sergeant Gray near the militia headquarters."></requirement>
+				<requirement text="Help Sergeant Carter" checks="Var=HaywindFriendAchMilitiaMedkit-2" info="Assist Sergeant Carter with first aid supplies."></requirement>
+				<requirement text="Help Sergeant Miller" checks="Var=HaywindFriendAchMilitiaBandit-3" info="Help Sergeant Miller deal with a bandit near the docks."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+		</subcategory>
+
+
+
+		<subcategory name="Ratcliffe">
+			<achievement id="ratcliffe_riddles" level="10" name="Friend of Ratcliffe" shortdescription="Complete all tasks in Ratcliffe." description="Earn the trust of the people of Ratcliffe by solving their pressing problems.">
+				<requirement checks="HasAchievement=household_mysteries"></requirement>
+				<requirement checks="HasAchievement=summit_secrets"></requirement>
+				<requirement checks="HasAchievement=stable_enigmas"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="household_mysteries" level="10" name="Trouble in the Mining Community" shortdescription="Solve domestic problems in Ratcliffe." description="Help residents of Ratcliffe with strange issues happening inside their homes.">
+				<requirement text="Deal with rats in the marketplace" checks="Var=RatcliffeAchNoisyHouse-6" info="Help a vendor at the market by getting rid of the rats causing trouble."></requirement>
+				<requirement text="Assist elderly villager with groceries" checks="Var=RatcliffeAchAloneVillager-2" info="Help an elderly villager in their home near the road leading to the mountain."></requirement>
+				<requirement text="Assist child with a magical mishap" checks="Var=RatcliffeAchMagicalKid-5" info="Help a child after an accidental spell gone wrong, near the mountain road."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="summit_secrets" level="10" name="Silderstone Mysteries" shortdescription="Solve mysteries in Silderstone mountains." description="Investigate strange occurrences near Ratcliffe's mountain summit.">
+				<requirement text="Destroy cursed statue" checks="Var=RatcliffeAchJinxedHill-3" info="Help a frightened villager in the market square by destroying a cursed statue on the hill."></requirement>
+				<requirement text="Retrieve miner's lost gear" checks="Var=RatcliffeAchCaveGhost-2" info="Assist a miner near the cave in the mountains by retrieving his lost equipment."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="stable_enigmas" level="10" name="Stable Solutions" shortdescription="Solve Ratcliffe's horse tasks." description="Assist travelers and solve problems involving horses and carts.">
+				<requirement text="Help move hay bales" checks="Var=RatcliffeAchStolenHay-5" info="Assist a traveler north of the chapel by moving hay bales."></requirement>
+				<requirement text="Craft a saddle for the rider" checks="Var=RatcliffeAchSaddle-2" info="Help a rider in the market square by crafting a saddle for his horse."></requirement>
+				<requirement text="Find the lost horse" checks="Var=RatcliffeAchRacingHorse-3" info="Help a villager find his missing horse near the Ratcliffe gate."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+		</subcategory>
+			<subcategory name="Evergreen Hearth">
+				<achievement id="EH_All" level="40" name="Friend of Evergreen Hearth" shortdescription="Complete the quest and all tasks in Evergreen Hearth." description="Become the trusted outlander in Evergreen Hearth.">
+					<requirement checks="HasAchievement=EH_Town"></requirement>
+					<requirement checks="HasAchievement=EH_Wilderness"></requirement>
+					<requirement checks="Quest=119-999-999"></requirement>
+					<reward id="5" skill="none"></reward>
+					<reward id="1" item="9116" amount="100"></reward>
+				</achievement>
+
+				<achievement id="EH_Town" level="30" name="Wintervillage Festival Crasher" shortdescription="Complete all tasks at the village of Evergreen Hearth." description="Join in on festival celebrations at Evergreen Hearth and assist the village people.">
+					<requirement text="Make deliveries of firewood in the village" checks="Var=EHAchFirewood-2" info=""></requirement>
+					<requirement text="Engage in ice sculpting" checks="Var=EHAchIce-2" info=""></requirement>
+					<requirement text="Aid children with their snowballs" checks="Var=EHAchBalls-2" info=""></requirement>
+					<reward id="5" skill="none"></reward>
+					<reward id="1" item="9116" amount="50"></reward>
+				</achievement>
+				<achievement id="EH_Wilderness" level="30" name="The Frozen Wilds" shortdescription="Complete all wilderness related tasks in Winterpine Forests." description="Brave the frozen wilds of Winterpine Forests while assisting the villagers of Evergreen Hearth.">
+					<requirement text="Complete the fortune teller's task" checks="Var=EHAchFortune-2" info=""></requirement>
+					<requirement text="Deliver resources to the Village Hall" checks="Var=EHAchGatherers-2" info="Deliver resources from gatherers in the wilderness back to the Village Hall."></requirement>
+					<requirement text="Make the delivery of a 'gift' to the lumberyard" checks="Var=EHAchLumberjackDelivery-2" info=""></requirement>
+					<reward id="5" skill="none"></reward>
+					<reward id="1" item="9116" amount="50"></reward>
+				</achievement>
+		</subcategory>
+		
+		
+		
+		<subcategory name="Ashenside Fields">
+			<achievement id="ashenside_fields_acres" name="Ashenside Ally" level="11" shortdescription="Complete key tasks in Ashenside Fields." description="Earn the trust of the farmers and protect Ashenside Fields from various threats.">
+				<requirement text="Assist the farmers with fieldwork" checks="HasAchievement=ashenside_fields_fieldwork"></requirement>
+				<requirement text="Defend Ashenside Fields from threats" checks="HasAchievement=ashenside_fields_farmers_fight"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="ashenside_fields_fieldwork" name="Farmwork" level="11" shortdescription="Assist Ashenside farmers in working the fields." description="Support the farmers of Ashenside Fields by helping with critical fieldwork tasks.">
+				<requirement text="Get rid of the rats in the fields" checks="Var=AshensideAcresRatKill-6" info="Clear out the rats bothering a farmer in the eastern field of Shearston Estate."></requirement>
+				<requirement text="Build scarecrows to protect the crops" checks="Var=AshensideAcresCrowHelp-2" info="Assist a farmer at the west gate of Shearston by gathering materials and building scarecrows to ward off crows."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="ashenside_fields_farmers_fight" name="Patrolling the Fields" level="11" shortdescription="Protect Ashenside people in need." description="Aid the locals of Ashenside Fields in defending their land from dangers that threaten their livelihood.">
+				<requirement text="Protect the shepherd's sheep from outlaws" checks="Var=AshensideAcresSheepOutlaws-5" info="Assist a shepherd on the northern side of Shearston in defending his sheep from outlaw attacks."></requirement>
+				<requirement text="Bring beer to the thirsty scout" checks="Var=AshensideAcresScout-3" info="Help the scout, stationed south-west of the militia camp, by fetching him a drink from the tavern."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+		</subcategory>
+
+
+		<subcategory name="Mistywoods">
+			<achievement id="mistywood_madness" name="Friend of Mistywood" level="15" shortdescription="Complete key tasks in the Mistywood." description="Complete all key tasks in Mistywood to earn the trust of its residents.">
+				<requirement checks="HasAchievement=foragers_life"></requirement>
+				<requirement checks="HasAchievement=beasts_expedition"></requirement>
+				<requirement checks="HasAchievement=traders_walk"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="foragers_life" name="Mistywood Forager" level="15" shortdescription="Forage supplies for Mistywood's residents." description="Assist the people of Mistywood by foraging for essential supplies.">
+				<requirement text="Collect corn for the farmer" checks="Var=MistywoodAchCornCollect-2" info="Find the farmer in the southern part of Fog’s Dwindling and collect 20 corn for him."></requirement>
+				<requirement text="Bring berries for the fisherman" checks="Var=MistywoodAchBerryCollect-2" info="Deliver 6 red and 6 blue berries to the fisherman at the pier in Fog's Dwindling."></requirement>
+				<reward id="5" skill="none"></reward>
+				<reward id="1" item="131" amount="100"></reward>
+			</achievement>
+
+			<achievement id="beasts_expedition" name="Wild Hunt" level="15" shortdescription="Hunt wild creatures in the Mistywood." description="Help with tracking and hunting the wild creatures of Mistywood.">
+				<requirement text="Bring bear paws" checks="Var=MistywoodAchBearPaw-2" info="Retrieve bear paws as a gift for the soldier stationed near the Fog’s Dwindling gate."></requirement>
+				<requirement text="Attack goblins at Mistywood" checks="Var=MistywoodAchGoblinAttack-11" info="Assist the hunters with their assault on the goblin camp located in the southeastern region of Mistywood."></requirement>
+				<requirement text="Bring forest snake skins" checks="Var=MistywoodAchSnakeSkin-2" info="Gather snake skins for a shaman near the lake in Mistywood."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="traders_walk" name="Forestland Samaritan" level="15" shortdescription="Assist people of Mistywood in everyday tasks." description="Support the merchants and workers of Mistywood with their various tasks.">
+				<requirement text="Help prepare a meal at the chapel" checks="Var=MistywoodAchHomelessGroceries-2" info="Assist a woman at the chapel in Fog’s Dwindling by gathering ingredients for a meal."></requirement>
+				<requirement text="Provide a new axe to the woodcutter" checks="Var=MistywoodAchNewAxe-2" info="Help a woodcutter at the eastern lumber camp by providing a new axe."></requirement>
+				<requirement text="Assist the alchemist’s assistant" checks="Var=MistywoodAchWaterTree-2" info="Help the alchemist’s assistant with the garden at the alchemist's hut, north of Fog’s Dwindling."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+		</subcategory>
+
+		
+		<subcategory name="Thornhill">
+			<achievement id="thornhillach_thornhill_tiding" name="Friend of Thornhill" level="20" shortdescription="Complete key tasks in the City of Thornhill." description="Become a pillar of Thornhill by supporting its merchants, guards, and skilled citizens in their day-to-day tasks and troubles.">
+				<requirement text="Help merchants of Thornhill" checks="HasAchievement=thornhill_tiding_market_problems"></requirement>
+				<requirement text="Help guards of Thornhill" checks="HasAchievement=thornhill_tiding_guardian_duties"></requirement>
+				<requirement text="Help skilled citizens of Thornhill" checks="HasAchievement=thornhill_tiding_skillful_citizens"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="thornhill_tiding_market_problems" name="Chaos at the Market" level="20" shortdescription="Resolve tasks at Thornhill's market." description="Support the merchants of Thornhill by solving their issues and helping protect their businesses.">
+				<requirement text="Deliver a package to Rainer's general store" checks="Var=ErrandForRainer-2" info="Deliver a package to Rainer's general store on Beggar's Gate Street."></requirement>
+				<requirement text="Assist the weapon merchant" checks="Var=ThornhillTidingAchMerchantCraft-2" info="Help the merchant at the general store near Beggar's Gate by bringing him crafting materials."></requirement>
+				<requirement text="Catch a bandit stealing from a marketplace merchant" checks="Var=ThornhillTidingAchBanditMerchant-3" info="Find the merchant in the marketplace and help him catch the thief."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="thornhill_tiding_guardian_duties" name="Guardsman of Thornhill" level="20" shortdescription="Complete tasks related to Thornhill guards." description="Help the guards of Thornhill maintain order and protect the town by completing tasks that ensure safety.">
+				<requirement text="Fight a guard to test your skills" checks="Var=ThornhillTidingAchGuardianFight-3" info="Meet the guard outside Castle Murk near the east gate and challenge him to a sparring match."></requirement>
+				<requirement text="Assist a guard in escorting a man out of the city" checks="Var=ThornhillTidingAchGuardianEscort-3" info="Help the guard near the Beggar's Way bank by escorting a guest out of the city."></requirement>
+				<requirement text="Kill bears to protect travelers" checks="Var=ThornhillTidingAchGuardianBear-8" info="Find the guard outside the south gate near the cotton field and eliminate the bears threatening travelers."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="thornhill_tiding_skillful_citizens" name="Tradesmen of the City" level="20" shortdescription="Assist Thornhill tradesmen with their tasks." description="Help Thornhill's skilled workers perfect their crafts by offering your assistance and improving the town’s trade.">
+				<requirement text="Assist an alchemist learning a new medicine recipe" checks="Var=ThornhillTidingAchSkillfulMed-2" info="Meet the alchemist in northern Thornhill at Mudderside and gather ingredients for their experiments."></requirement>
+				<requirement text="Help a sailor secure cargo" checks="Var=ThornhillTidingAchSkillfulEgravment-2" info="Locate the sailor in Thornhill harbor and help secure the ship’s cargo."></requirement>
+				<requirement text="Assist a handyman in fixing a sign" checks="Var=ThornhillTidingAchSkillfulCrown-2" info="Help the handyman at the Thornhill Preservation Society near Baronsgate repair a sign."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+		</subcategory>
+
+
+		<subcategory name="Fenwater Village">
+			<achievement id="friend_of_fenwater" level="25" name="Friend of Fenwater" shortdescription="Complete key tasks at Fenwater Village." description="Earn the trust and admiration of Fenwater by helping its residents and completing important tasks.">
+				<requirement checks="HasAchievement=friendoffenwater_town_welfare"></requirement>
+				<requirement checks="HasAchievement=friendoffenwater_professional_help"></requirement>
+				<requirement checks="HasAchievement=friendoffenwater_outsiders_job"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="friendoffenwater_town_welfare" name="Fenwater Groundskeeper" level="25" shortdescription="Assist in mainting order at Fenwater Village." description="Aid in the upkeep and safety of Fenwater by addressing critical town needs.">
+				<requirement text="Clean trash from the Fenwater road" checks="Var=FriendOfFenwaterTownWelfareTrash-5" info="Help the sweeper on the road to Thornhill."></requirement>
+				<requirement text="Deal with a bandit in the village" checks="Var=FriendOfFenwaterTownWelfareBandit-3" info="Help a man near the bank."></requirement>
+				<requirement text="Kill pests in the farms" checks="Var=FriendOfFenwaterTownWelfarePest-7" info="Assist the farmer north of Fenwater."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="friendoffenwater_professional_help" name="Rural Village Work" level="25" shortdescription="Complete gathering tasks for the people of Fenwater Village." description="Assist the skilled tradespeople of Fenwater in their important tasks.">
+				<requirement text="Harvest potatoes from the farm" checks="Var=FriendOfFenwaterProHelpFarm-2" info="Meet the farmer on the eastern farm."></requirement>
+				<requirement text="Help a blacksmith by collecting ores" checks="Var=FriendOfFenwaterProHelpBlacksmith-2" info="Meet the blacksmith by the river."></requirement>
+				<requirement text="Catch fish for the fisherman" checks="Var=FriendOfFenwaterProHelpFisherman-2" info="Find the fisherman south of Fenwater."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="friendoffenwater_outsiders_job" name="Bogside Disruptions" level="25" shortdescription="Assist Fenwater Village people with problems." description="Support the hardworking villagers of Fenwater by helping them with their essential tasks and responsibilities.">
+				<requirement text="Find the lost son" checks="Var=FriendOfFenwaterOutJobLostBoy-3" info="Help the lumberjack find his son in the southern forest."></requirement>
+				<requirement text="Help build a cart for traders" checks="Var=FriendOfFenwaterOutJobCart-2" info="Assist the trader near the market with building a cart."></requirement>
+				<requirement text="Gather herbs for the apothecary" checks="Var=FriendOfFenwaterOutJobApothecary-2" info="Collect herbs for the apothecary near the bank."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+		</subcategory>
+		
+		<subcategory name="Silvermirror Fen">
+			<achievement id="silvermirror_fen_shadows" name="Predators of the Silvermirror Fen" level="30" shortdescription="Complete key tasks in the Silvermirror Fen." description="Protect the residents of Silvermirror Fen by hunting monsters and helping them survive the treacherous swamp.">
+				<requirement text="Help locals hunt monsters" checks="HasAchievement=silvermirror_fen_monster_hunter"></requirement>
+				<requirement text="Help the weak survive the swamp" checks="HasAchievement=silvermirror_fen_swamp_survival"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="silvermirror_fen_monster_hunter" name="Monster Slayer" level="30" shortdescription="Resolve tasks related to hunting monsters in the Silvermirror Fen." description="Assist the hunters and travelers by slaying the dangerous creatures that lurk in the swamp.">
+				<requirement text="Help a traveler reach Fenwater" checks="Var=SilvermirrorShadowsMosquito-7" info="A traveler is being harassed by mosquitoes and needs help to continue their journey."></requirement>
+				<requirement text="Aid a hunter in the southern swamp" checks="Var=SilvermirrorShadowsTentacle-7" info="A hunter is stuck in the swamp due to swamp tentacles and needs assistance."></requirement>
+				<requirement text="Help a hunter cull lizards" checks="Var=SilvermirrorShadowsLizard-7" info="Assist the hunter in killing aggressive lizards east of Bootlegger's Shelter."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+
+			<achievement id="silvermirror_fen_swamp_survival" name="Swamp Survivor" level="30" shortdescription="Save people struggling to survive in the Silvermirror Fen." description="Assist the vulnerable people of Silvermirror Fen by helping them navigate the dangers of the swamp.">
+				<requirement text="Aid an injured miner" checks="Var=SilvermirrorShadowsOreCluster-2" info="Help an injured miner deep in the southern swamp."></requirement>
+				<requirement text="Assist a struggling fisherman" checks="Var=SilvermirrorShadowsReedBass-2" info="Help the fisherman at Bootlegger's Shelter who is struggling to catch fish."></requirement>
+				<requirement text="Cure a sick boy" checks="Var=SilvermirrorShadowsSilverIris-2" info="Find and help a sick boy suffering from mosquito bites northwest of Bootlegger's Shelter."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+		</subcategory>
+
+		
+	</category>
+
+	<category name="Exploration">
+
+		<subcategory name="Rural Haywind">
+			<achievement id="exp_timberwell" level="5" name="Explorer of Spurce Shade's Rest" shortdescription="Discover key locations in Spruce Shade woods and Timberwell." description="">
+				<requirement text="Visit the Stone Heart." checks="Var=exp_timberwell1-1"></requirement>
+				<requirement text="Visit the outlaw camp by the pond." checks="Var=exp_timberwell2-1"></requirement>
+				<requirement text="Visit the troll cave." checks="Var=exp_timberwell3-1"></requirement>
+				<requirement text="Visit Helga's hut." checks="Var=exp_timberwell4-1"></requirement>
+			</achievement>
+			<achievement id="exp_grainwater" level="5" name="Grainwater Explorer" shortdescription="Discover key locations near Grainwater village." description="">
+				<requirement text="Visit the tavern." checks="Var=exp_grainwater1-1"></requirement>
+				<requirement text="Visit the bat cave." checks="Var=exp_grainwater2-1"></requirement>
+				<requirement text="Visit the lumbercamp." checks="Var=exp_grainwater3-1"></requirement>
+				<requirement text="Visit Little Grainwater festival." checks="Var=exp_grainwater4-1"></requirement>
+			</achievement>
+			<achievement id="exp_ratcliffe" level="5" name="Silderstone Explorer" shortdescription="Discover key locations near Ratcliffe village." description="">
+				<requirement text="Visit the Greywall ruins." checks="Var=exp_ratcliffe1-1"></requirement>
+				<requirement text="Visit the mines." checks="Var=exp_ratcliffe2-1"></requirement>
+				<requirement text="Visit the mountain path." checks="Var=exp_ratcliffe3-1"></requirement>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Haywind">
+			<achievement id="exp_haywind" level="15" name="Haywind Explorer" shortdescription="Discover key locations in Haywind." description="">
+				<requirement text="Visit Haywind Fortress." checks="Var=exp_haywind1-1"></requirement>
+				<requirement text="Visit Forvan's smithy." checks="Var=exp_haywind2-1"></requirement>
+				<requirement text="Visit the cemetery." checks="Var=exp_haywind3-1"></requirement>
+				<requirement text="Visit the college." checks="Var=exp_haywind4-1"></requirement>
+				<requirement text="Visit the town hall." checks="Var=exp_haywind5-1"></requirement>
+			</achievement>
+			<achievement id="exp_hwfields" level="15" name="Ashenside Explorer" shortdescription="Discover key locations in Ashenside Fields, west of Haywind." description="">
+				<requirement text="Visit the militia camp." checks="Var=exp_hwfields1-1"></requirement>
+				<requirement text="Visit Scavenger's yard." checks="Var=exp_hwfields2-1"></requirement>
+				<requirement text="Visit Hubert's campsite." checks="Var=exp_hwfields3-1"></requirement>
+				<requirement text="Visit the site of the ongoing battle." checks="Var=exp_hwfields4-1"></requirement>
+			</achievement>
+			<achievement id="exp_hwforests" level="15" name="Explorer of Green Coppice" shortdescription="Discover key locations in the woods north of Haywind." description="">
+				<requirement text="Visit Shearston Ranch." checks="Var=exp_hwforests1-1"></requirement>
+				<requirement text="Visit the River Portal ruins." checks="Var=exp_hwforests2-1"></requirement>
+				<requirement text="Visit the ruins of Barnosgreene village." checks="Var=exp_hwforests3-1"></requirement>
+				<requirement text="Visit the Fallen Guardtower." checks="Var=exp_hwforests4-1"></requirement>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Mistywoods">
+			<achievement id="exp_fogdwindling" level="25" name="Explorer of Fog's Dwindling" shortdescription="Discover key locations near the village of Fog's Dwindling." description="">
+				<requirement text="Visit the fishing jetties." checks="Var=exp_fogdwindling1-1"></requirement>
+				<requirement text="Visit the blacksmith and the quarry." checks="Var=exp_fogdwindling2-1"></requirement>
+				<requirement text="Visit the town of Fog's Dwindling." checks="Var=exp_fogdwindling3-1"></requirement>
+			</achievement>
+			<achievement id="exp_aurfield" level="25" name="Aurfield Explorer" shortdescription="Discover key locations near Aurfield village." description="">
+				<requirement text="Visit the Willow Grove." checks="Var=exp_aurfield1-1"></requirement>
+				<requirement text="Visit the the Flooded Cave." checks="Var=exp_aurfield2-1"></requirement>
+				<requirement text="Visit Fisherman Gilles' house." checks="Var=exp_aurfield3-1"></requirement>
+				<requirement text="Visit the deputy's campsite." checks="Var=exp_aurfield4-1"></requirement>
+			</achievement>
+			<achievement id="exp_mwforest" level="25" name="Deep Forest Explorer" shortdescription="Discover key locations within the thickets of Mistywood." description="">
+				<requirement text="Visit the Ruins of Etherlight." checks="Var=exp_mwforest1-1"></requirement>
+				<requirement text="Visit the Forest's Heart." checks="Var=exp_mwforest2-1"></requirement>
+				<requirement text="Visit the Forest Watchtower." checks="Var=exp_mwforest3-1"></requirement>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Thornhill">
+			<achievement id="exp_thornhill" level="35" name="Thornhill Explorer" shortdescription="Discover key locations in Thornhill." description="">
+				<requirement text="Visit the harbor." checks="Var=exp_thornhill1-1"></requirement>
+				<requirement text="Visit the east gate." checks="Var=exp_thornhill2-1"></requirement>
+				<requirement text="Visit the college." checks="Var=exp_thornhill3-1"></requirement>
+				<requirement text="Visit the castle gates." checks="Var=exp_thornhill4-1"></requirement>
+			</achievement>
+			<achievement id="exp_harshwind" level="35" name="Explorer of Harshwind Shores" shortdescription="Discover key locations near Harshwind Shore." description="">
+				<requirement text="Visit the troll hills." checks="Var=exp_harshwind1-1"></requirement>
+				<requirement text="Visit Harshwind village." checks="Var=exp_harshwind2-1"></requirement>
+				<requirement text="Visit the black sand quarry." checks="Var=exp_harshwind3-1"></requirement>
+			</achievement>
+			<achievement id="exp_trollforests" level="35" name="Explorer of Prowler's Thicket" shortdescription="Discover key locations in the Prowler's Thicket." description="">
+				<requirement text="Visit Thornbark Sawmill." checks="Var=exp_trollforests1-1"></requirement>
+				<requirement text="Visit the shaman's hut." checks="Var=exp_trollforests2-1"></requirement>
+				<requirement text="Visit Wildsfir logging area." checks="Var=exp_trollforests3-1"></requirement>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Fenwaters">
+			<achievement id="exp_fenwater" level="50" name="Fenwater Explorer" shortdescription="Discover key locations near Fenwater Village." description="">
+				<requirement text="Visit the woodland quarry." checks="Var=exp_fenwater1-1"></requirement>
+				<requirement text="Travel the swamp path." checks="Var=exp_fenwater2-1"></requirement>
+				<requirement text="Visit the great cliff of Fenwater village." checks="Var=exp_fenwater3-1"></requirement>
+			</achievement>
+			<achievement id="exp_smugglertown" level="50" name="Bootlegger's Explorer" shortdescription="Discover key locations near Bootlegger's Shelter." description="">
+				<requirement text="Visit Bootlegger's Shelter." checks="Var=exp_smugglertown1-1"></requirement>
+				<requirement text="Visit the hut of 'The Real Witch'." checks="Var=exp_smugglertown2-1"></requirement>
+				<requirement text="Visit the lizardmen lair." checks="Var=exp_smugglertown3-1"></requirement>
+			</achievement>
+			<achievement id="exp_swamp" level="50" name="Silvermirror Explorer" shortdescription="Discover key locations in the Silvermirror Fen." description="">
+				<requirement text="Visit the Silvermirror Throne." checks="Var=exp_swamp1-1"></requirement>
+				<requirement text="Visit the Tomb of Vesteris." checks="Var=exp_swamp2-1"></requirement>
+				<requirement text="Visit the Foulpetal Lasher." checks="Var=exp_swamp3-1"></requirement>
+			</achievement>
+		</subcategory>
+
+
+	</category>
+
+	<category name="Skills">
+
+		<subcategory name="Mining">
+
+			<achievement id="level_mining_10" level="10" name="Novice Miner" description="Reach level 10 in Mining. The earth yields its first treasures to your novice hands." shortdescription="Reach level 10 in Mining.">
+				<requirement checks="HasSkillLevel=mining-10"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_mining_20" level="20" name="Apprentice Miner" description="Reach level 20 in Mining. The deeper you dig, the greater the riches." shortdescription="Reach level 20 in Mining.">
+				<requirement checks="HasSkillLevel=mining-20"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_mining_40" level="40" name="Adept Miner" description="Reach level 40 in Mining. Your pickaxe strikes with practiced precision, bringing forth rare minerals." shortdescription="Reach level 40 in Mining.">
+				<requirement checks="HasSkillLevel=mining-40"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_mining_50" level="50" name="Skilled Miner" description="Reach level 50 in Mining. Your skill in mining is evident as you uncover valuable resources." shortdescription="Reach level 50 in Mining.">
+				<requirement checks="HasSkillLevel=mining-50"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_mining_75" level="75" name="Expert Miner" description="Reach level 75 in Mining. Mastery of the craft reveals veins of precious gems." shortdescription="Reach level 75 in Mining.">
+				<requirement checks="HasSkillLevel=mining-75"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_mining_90" level="90" name="Master Miner" description="Reach level 90 in Mining. Only a master miner can extract the rarest and most valuable ores." shortdescription="Reach level 90 in Mining.">
+				<requirement checks="HasSkillLevel=mining-90"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_mining_100" level="100" name="Grandmaster Miner" description="Reach level 100 in Mining. As a grandmaster, no stone or gem can escape your expert eyes." shortdescription="Reach level 100 in Mining.">
+				<requirement checks="HasSkillLevel=mining-100"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+		</subcategory>
+
+		<subcategory name="Fishing">
+
+			<achievement id="level_fishing_10" level="10" name="Novice Fisherman" description="Reach level 10 in Fishing. The rivers and lakes yield their first catch to you." shortdescription="Reach level 10 in Fishing.">
+				<requirement checks="HasSkillLevel=fishing-10"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_fishing_20" level="20" name="Apprentice Fisherman" description="Reach level 20 in Fishing. You can now consistently reel in decent catches." shortdescription="Reach level 20 in Fishing.">
+				<requirement checks="HasSkillLevel=fishing-20"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_fishing_40" level="40" name="Adept Fisherman" description="Reach level 40 in Fishing. Bigger and rarer fish are now within your grasp." shortdescription="Reach level 40 in Fishing.">
+				<requirement checks="HasSkillLevel=fishing-40"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_fishing_50" level="50" name="Skilled Fisherman" description="Reach level 50 in Fishing. Your skill has turned you into a master of both rod and reel." shortdescription="Reach level 50 in Fishing.">
+				<requirement checks="HasSkillLevel=fishing-50"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_fishing_75" level="75" name="Expert Fisherman" description="Reach level 75 in Fishing. The waters now reveal their most elusive and valuable catches to you." shortdescription="Reach level 75 in Fishing.">
+				<requirement checks="HasSkillLevel=fishing-75"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_fishing_90" level="90" name="Master Fisherman" description="Reach level 90 in Fishing. A master fisherman, your skill draws the finest catches." shortdescription="Reach level 90 in Fishing.">
+				<requirement checks="HasSkillLevel=fishing-90"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_fishing_100" level="100" name="Grandmaster Fisherman" description="Reach level 100 in Fishing. As a grandmaster fisherman, you now catch only the rarest and most legendary fish." shortdescription="Reach level 100 in Fishing.">
+				<requirement checks="HasSkillLevel=fishing-100"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+		</subcategory>
+
+		<subcategory name="Crafting">
+
+			<achievement id="level_crafting_10" level="10" name="Novice Craftsman" description="Reach level 10 in Crafting. Your hands begin to shape simple but useful items." shortdescription="Reach level 10 in Crafting.">
+				<requirement checks="HasSkillLevel=carpentry-10"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_crafting_20" level="20" name="Apprentice Craftsman" description="Reach level 20 in Crafting. Your creations are more refined and valuable." shortdescription="Reach level 20 in Crafting.">
+				<requirement checks="HasSkillLevel=carpentry-20"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_crafting_40" level="40" name="Adept Craftsman" description="Reach level 40 in Crafting. Your skill allows for complex and intricate designs." shortdescription="Reach level 40 in Crafting.">
+				<requirement checks="HasSkillLevel=carpentry-40"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_crafting_50" level="50" name="Skilled Craftsman" description="Reach level 50 in Crafting. Your craftsmanship is widely recognized for its quality and detail." shortdescription="Reach level 50 in Crafting.">
+				<requirement checks="HasSkillLevel=carpentry-50"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_crafting_75" level="75" name="Expert Craftsman" description="Reach level 75 in Crafting. Only an expert can create items of such beauty and utility." shortdescription="Reach level 75 in Crafting.">
+				<requirement checks="HasSkillLevel=carpentry-75"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_crafting_90" level="90" name="Master Craftsman" description="Reach level 90 in Crafting. Your mastery is evident in every piece you create, each a work of art." shortdescription="Reach level 90 in Crafting.">
+				<requirement checks="HasSkillLevel=carpentry-90"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_crafting_100" level="100" name="Grandmaster Craftsman" description="Reach level 100 in Crafting. As a grandmaster, your items are legendary and coveted by all." shortdescription="Reach level 100 in Crafting.">
+				<requirement checks="HasSkillLevel=carpentry-100"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+		</subcategory>
+
+		<subcategory name="Sorcery">
+
+			<achievement id="level_sorcery_10" level="10" name="Novice Sorcerer" description="Reach level 10 in Sorcery. Your spells are weak but effective." shortdescription="Reach level 10 in Sorcery.">
+				<requirement checks="HasSkillLevel=magic-10"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_sorcery_20" level="20" name="Apprentice Sorcerer" description="Reach level 20 in Sorcery. You can now control more powerful spells." shortdescription="Reach level 20 in Sorcery.">
+				<requirement checks="HasSkillLevel=magic-20"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_sorcery_40" level="40" name="Adept Sorcerer" description="Reach level 40 in Sorcery. Your understanding of magic allows for advanced spellcasting." shortdescription="Reach level 40 in Sorcery.">
+				<requirement checks="HasSkillLevel=magic-40"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_sorcery_50" level="50" name="Skilled Sorcerer" description="Reach level 50 in Sorcery. Your magic is now a force to be reckoned with." shortdescription="Reach level 50 in Sorcery.">
+				<requirement checks="HasSkillLevel=magic-50"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_sorcery_75" level="75" name="Expert Sorcerer" description="Reach level 75 in Sorcery. The arcane arts reveal their deepest secrets to you." shortdescription="Reach level 75 in Sorcery.">
+				<requirement checks="HasSkillLevel=magic-75"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_sorcery_90" level="90" name="Master Sorcerer" description="Reach level 90 in Sorcery. As a master sorcerer, your magic is unrivaled." shortdescription="Reach level 90 in Sorcery.">
+				<requirement checks="HasSkillLevel=magic-90"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_sorcery_100" level="100" name="Grandmaster Sorcerer" description="Reach level 100 in Sorcery. A grandmaster sorcerer wields magic beyond mortal comprehension." shortdescription="Reach level 100 in Sorcery.">
+				<requirement checks="HasSkillLevel=magic-100"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+		</subcategory>
+
+		<subcategory name="Attack">
+
+			<achievement id="level_attack_10" level="10" name="Novice Attacker" description="Reach level 10 in Attack. Your strikes are basic but effective." shortdescription="Reach level 10 in Attack.">
+				<requirement checks="HasSkillLevel=swordsmanship-10"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_attack_20" level="20" name="Apprentice Attacker" description="Reach level 20 in Attack. Your combat abilities have improved, delivering more precise strikes." shortdescription="Reach level 20 in Attack.">
+				<requirement checks="HasSkillLevel=swordsmanship-20"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_attack_40" level="40" name="Adept Attacker" description="Reach level 40 in Attack. You now deliver more powerful and swift blows in battle." shortdescription="Reach level 40 in Attack.">
+				<requirement checks="HasSkillLevel=swordsmanship-40"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_attack_50" level="50" name="Skilled Attacker" description="Reach level 50 in Attack. Your skills in combat make you a formidable opponent." shortdescription="Reach level 50 in Attack.">
+				<requirement checks="HasSkillLevel=swordsmanship-50"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_attack_75" level="75" name="Expert Attacker" description="Reach level 75 in Attack. Your attacks are lethal, cutting down enemies with ease." shortdescription="Reach level 75 in Attack.">
+				<requirement checks="HasSkillLevel=swordsmanship-75"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_attack_90" level="90" name="Master Attacker" description="Reach level 90 in Attack. You strike with unmatched precision and power." shortdescription="Reach level 90 in Attack.">
+				<requirement checks="HasSkillLevel=swordsmanship-90"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_attack_100" level="100" name="Grandmaster Attacker" description="Reach level 100 in Attack. As a grandmaster attacker, no enemy can withstand your blows." shortdescription="Reach level 100 in Attack.">
+				<requirement checks="HasSkillLevel=swordsmanship-100"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+		</subcategory>
+
+		<subcategory name="Archery">
+
+			<achievement id="level_archery_10" level="10" name="Novice Archer" description="Reach level 10 in Archery. Your aim is steady, and your arrows find their mark." shortdescription="Reach level 10 in Archery.">
+				<requirement checks="HasSkillLevel=archery-10"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_archery_20" level="20" name="Apprentice Archer" description="Reach level 20 in Archery. Your shots are more accurate, and your enemies fall from a distance." shortdescription="Reach level 20 in Archery.">
+				<requirement checks="HasSkillLevel=archery-20"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_archery_40" level="40" name="Adept Archer" description="Reach level 40 in Archery. You strike from afar with deadly precision." shortdescription="Reach level 40 in Archery.">
+				<requirement checks="HasSkillLevel=archery-40"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_archery_50" level="50" name="Skilled Archer" description="Reach level 50 in Archery. Your bow is an extension of your body, and your skill is unmatched." shortdescription="Reach level 50 in Archery.">
+				<requirement checks="HasSkillLevel=archery-50"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_archery_75" level="75" name="Expert Archer" description="Reach level 75 in Archery. Your arrows strike with deadly precision, even at great distances." shortdescription="Reach level 75 in Archery.">
+				<requirement checks="HasSkillLevel=archery-75"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_archery_90" level="90" name="Master Archer" description="Reach level 90 in Archery. You are a master of the bow, feared by all who face you." shortdescription="Reach level 90 in Archery.">
+				<requirement checks="HasSkillLevel=archery-90"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_archery_100" level="100" name="Grandmaster Archer" description="Reach level 100 in Archery. As a grandmaster archer, your enemies fall before they even see you." shortdescription="Reach level 100 in Archery.">
+				<requirement checks="HasSkillLevel=archery-100"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+		</subcategory>
+
+		<subcategory name="Defence">
+
+			<achievement id="level_defence_10" level="10" name="Novice Defender" description="Reach level 10 in Defence. Your shield is your first line of defense, deflecting attacks." shortdescription="Reach level 10 in Defence.">
+				<requirement checks="HasSkillLevel=defence-10"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_defence_20" level="20" name="Apprentice Defender" description="Reach level 20 in Defence. You hold your ground with confidence, fending off stronger attacks." shortdescription="Reach level 20 in Defence.">
+				<requirement checks="HasSkillLevel=defence-20"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_defence_40" level="40" name="Adept Defender" description="Reach level 40 in Defence. Your defensive prowess allows you to block and parry effortlessly." shortdescription="Reach level 40 in Defence.">
+				<requirement checks="HasSkillLevel=defence-40"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_defence_50" level="50" name="Skilled Defender" description="Reach level 50 in Defence. Your defenses are impenetrable, making you a stalwart force in battle." shortdescription="Reach level 50 in Defence.">
+				<requirement checks="HasSkillLevel=defence-50"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_defence_75" level="75" name="Expert Defender" description="Reach level 75 in Defence. Few can match your ability to block, dodge, and absorb attacks." shortdescription="Reach level 75 in Defence.">
+				<requirement checks="HasSkillLevel=defence-75"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_defence_90" level="90" name="Master Defender" description="Reach level 90 in Defence. You are a master of defense, capable of withstanding the fiercest assaults." shortdescription="Reach level 90 in Defence.">
+				<requirement checks="HasSkillLevel=defence-90"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_defence_100" level="100" name="Grandmaster Defender" description="Reach level 100 in Defence. As a grandmaster defender, you stand unshakable, the ultimate bastion in battle." shortdescription="Reach level 100 in Defence.">
+				<requirement checks="HasSkillLevel=defence-100"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+		</subcategory>
+
+		<subcategory name="Smithing">
+
+			<achievement id="level_smithing_10" level="10" name="Novice Smith" description="Reach level 10 in Smithing. You can forge basic weapons and tools with confidence." shortdescription="Reach level 10 in Smithing.">
+				<requirement checks="HasSkillLevel=blacksmithy-10"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_smithing_20" level="20" name="Apprentice Smith" description="Reach level 20 in Smithing. Your creations are now more durable and efficient." shortdescription="Reach level 20 in Smithing.">
+				<requirement checks="HasSkillLevel=blacksmithy-20"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_smithing_40" level="40" name="Adept Smith" description="Reach level 40 in Smithing. Your forge produces items of remarkable quality." shortdescription="Reach level 40 in Smithing.">
+				<requirement checks="HasSkillLevel=blacksmithy-40"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_smithing_50" level="50" name="Skilled Smith" description="Reach level 50 in Smithing. Your skill as a smith is evident in the superior quality of your work." shortdescription="Reach level 50 in Smithing.">
+				<requirement checks="HasSkillLevel=blacksmithy-50"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_smithing_75" level="75" name="Expert Smith" description="Reach level 75 in Smithing. Your mastery of the forge allows you to create items of exceptional power and durability." shortdescription="Reach level 75 in Smithing.">
+				<requirement checks="HasSkillLevel=blacksmithy-75"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_smithing_90" level="90" name="Master Smith" description="Reach level 90 in Smithing. You are a master smith, capable of creating legendary weapons and armor." shortdescription="Reach level 90 in Smithing.">
+				<requirement checks="HasSkillLevel=blacksmithy-90"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_smithing_100" level="100" name="Grandmaster Smith" description="Reach level 100 in Smithing. As a grandmaster smith, your creations are unmatched in strength and value." shortdescription="Reach level 100 in Smithing.">
+				<requirement checks="HasSkillLevel=blacksmithy-100"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+		</subcategory>
+
+		<subcategory name="Woodsmanship">
+
+			<achievement id="level_woodcutting_10" level="10" name="Novice Woodsman" description="Reach level 10 in Woodsmanship. You can now fell small trees and gather basic wood." shortdescription="Reach level 10 in Woodsmanship.">
+				<requirement checks="HasSkillLevel=woodcutting-10"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_woodcutting_20" level="20" name="Apprentice Woodsman" description="Reach level 20 in Woodsmanship. You cut down trees with greater efficiency, gathering more useful wood." shortdescription="Reach level 20 in Woodsmanship.">
+				<requirement checks="HasSkillLevel=woodcutting-20"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_woodcutting_40" level="40" name="Adept Woodsman" description="Reach level 40 in Woodsmanship. You can now chop down large trees and gather rare types of wood." shortdescription="Reach level 40 in Woodsmanship.">
+				<requirement checks="HasSkillLevel=woodcutting-40"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_woodcutting_50" level="50" name="Skilled Woodsman" description="Reach level 50 in Woodsmanship. Your knowledge of wood types allows you to gather the most valuable resources." shortdescription="Reach level 50 in Woodsmanship.">
+				<requirement checks="HasSkillLevel=woodcutting-50"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_woodcutting_75" level="75" name="Expert Woodsman" description="Reach level 75 in Woodsmanship. You harvest wood with unmatched precision and skill." shortdescription="Reach level 75 in Woodsmanship.">
+				<requirement checks="HasSkillLevel=woodcutting-75"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_woodcutting_90" level="90" name="Master Woodsman" description="Reach level 90 in Woodsmanship. You are a master at gathering the rarest and most valuable wood." shortdescription="Reach level 90 in Woodsmanship.">
+				<requirement checks="HasSkillLevel=woodcutting-90"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_woodcutting_100" level="100" name="Grandmaster Woodsman" description="Reach level 100 in Woodsmanship. As a grandmaster woodsman, no forest is beyond your mastery." shortdescription="Reach level 100 in Woodsmanship.">
+				<requirement checks="HasSkillLevel=woodcutting-100"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+		</subcategory>
+
+		<subcategory name="Alchemy">
+
+			<achievement id="level_alchemy_10" level="10" name="Novice Alchemist" description="Reach level 10 in Alchemy. You can now brew basic potions with common ingredients." shortdescription="Reach level 10 in Alchemy.">
+				<requirement checks="HasSkillLevel=alchemy-10"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_alchemy_20" level="20" name="Apprentice Alchemist" description="Reach level 20 in Alchemy. You are able to brew stronger and more effective potions." shortdescription="Reach level 20 in Alchemy.">
+				<requirement checks="HasSkillLevel=alchemy-20"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_alchemy_40" level="40" name="Adept Alchemist" description="Reach level 40 in Alchemy. You now have the skill to create advanced potions and elixirs." shortdescription="Reach level 40 in Alchemy.">
+				<requirement checks="HasSkillLevel=alchemy-40"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_alchemy_50" level="50" name="Skilled Alchemist" description="Reach level 50 in Alchemy. Your brews are renowned for their potency and effectiveness." shortdescription="Reach level 50 in Alchemy.">
+				<requirement checks="HasSkillLevel=alchemy-50"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_alchemy_75" level="75" name="Expert Alchemist" description="Reach level 75 in Alchemy. You are able to brew rare and powerful potions that few others can replicate." shortdescription="Reach level 75 in Alchemy.">
+				<requirement checks="HasSkillLevel=alchemy-75"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_alchemy_90" level="90" name="Master Alchemist" description="Reach level 90 in Alchemy. You are a master alchemist, capable of creating legendary potions." shortdescription="Reach level 90 in Alchemy.">
+				<requirement checks="HasSkillLevel=alchemy-90"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_alchemy_100" level="100" name="Grandmaster Alchemist" description="Reach level 100 in Alchemy. As a grandmaster alchemist, your brews are highly sought after for their unmatched power." shortdescription="Reach level 100 in Alchemy.">
+				<requirement checks="HasSkillLevel=alchemy-100"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+		</subcategory>
+
+		<subcategory name="Tailoring">
+
+			<achievement id="level_tailoring_10" level="10" name="Novice Tailor" description="Reach level 10 in Tailoring. You can sew basic garments and simple outfits." shortdescription="Reach level 10 in Tailoring.">
+				<requirement checks="HasSkillLevel=tailoring-10"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_tailoring_20" level="20" name="Apprentice Tailor" description="Reach level 20 in Tailoring. Your tailoring skills allow you to create more durable and refined clothing." shortdescription="Reach level 20 in Tailoring.">
+				<requirement checks="HasSkillLevel=tailoring-20"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_tailoring_40" level="40" name="Adept Tailor" description="Reach level 40 in Tailoring. You can now craft stylish and well-fitting garments with ease." shortdescription="Reach level 40 in Tailoring.">
+				<requirement checks="HasSkillLevel=tailoring-40"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_tailoring_50" level="50" name="Skilled Tailor" description="Reach level 50 in Tailoring. Your clothes are crafted with precision and are highly valued for their quality." shortdescription="Reach level 50 in Tailoring.">
+				<requirement checks="HasSkillLevel=tailoring-50"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_tailoring_75" level="75" name="Expert Tailor" description="Reach level 75 in Tailoring. You can now create garments that are not only functional but also works of art." shortdescription="Reach level 75 in Tailoring.">
+				<requirement checks="HasSkillLevel=tailoring-75"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_tailoring_90" level="90" name="Master Tailor" description="Reach level 90 in Tailoring. As a master tailor, your garments are known for their beauty and utility." shortdescription="Reach level 90 in Tailoring.">
+				<requirement checks="HasSkillLevel=tailoring-90"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_tailoring_100" level="100" name="Grandmaster Tailor" description="Reach level 100 in Tailoring. As a grandmaster tailor, your creations are legendary and coveted by all." shortdescription="Reach level 100 in Tailoring.">
+				<requirement checks="HasSkillLevel=tailoring-100"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+		</subcategory>
+
+		<subcategory name="Cooking">
+
+			<achievement id="level_cooking_10" level="10" name="Novice Cook" description="Reach level 10 in Cooking. You can now prepare basic meals with simple ingredients." shortdescription="Reach level 10 in Cooking.">
+				<requirement checks="HasSkillLevel=cooking-10"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_cooking_20" level="20" name="Apprentice Cook" description="Reach level 20 in Cooking. Your meals are now more nutritious and flavorful." shortdescription="Reach level 20 in Cooking.">
+				<requirement checks="HasSkillLevel=cooking-20"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_cooking_40" level="40" name="Adept Cook" description="Reach level 40 in Cooking. You can prepare a variety of dishes with ease, pleasing the palates of many." shortdescription="Reach level 40 in Cooking.">
+				<requirement checks="HasSkillLevel=cooking-40"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_cooking_50" level="50" name="Skilled Cook" description="Reach level 50 in Cooking. Your culinary skills allow you to create meals that are both delicious and nutritious." shortdescription="Reach level 50 in Cooking.">
+				<requirement checks="HasSkillLevel=cooking-50"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_cooking_75" level="75" name="Expert Cook" description="Reach level 75 in Cooking. Your meals are renowned for their taste and presentation, making you a sought-after cook." shortdescription="Reach level 75 in Cooking.">
+				<requirement checks="HasSkillLevel=cooking-75"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_cooking_90" level="90" name="Master Cook" description="Reach level 90 in Cooking. As a master cook, your dishes are works of culinary art, satisfying even the most discerning tastes." shortdescription="Reach level 90 in Cooking.">
+				<requirement checks="HasSkillLevel=cooking-90"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+			<achievement id="level_cooking_100" level="100" name="Grandmaster Cook" description="Reach level 100 in Cooking. As a grandmaster cook, your meals are legendary, savored by all who taste them." shortdescription="Reach level 100 in Cooking.">
+				<requirement checks="HasSkillLevel=cooking-100"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+
+		</subcategory>
+
+	</category>
+
+	<category name="Monsters">
+		<subcategory name="Haywind Slayer">
+			<achievement id="HW_beasts_kills_crab" name="Haywind Crab Hunter" level="6" description="" shortdescription="Slay 40 Crabs in Haywind.">
+				<requirement text="Slay 40 Crabs in Haywind" checks="Var=HaywindCrabKills-40"></requirement>
+				<reward id="2" item="181" amount="12"></reward>
+			</achievement>
+			<achievement id="HW_beasts_kills_seagull" name="Haywind Seagull Thinner" level="6" description="" shortdescription="Slay 35 Seagulls in Haywind.">
+				<requirement text="Slay 35 Seagulls in Haywind" checks="Var=HaywindSeagullKills-35"></requirement>
+				<reward id="2" item="131" amount="100"></reward>
+			</achievement>
+			<achievement id="HW_beasts_kills_sparrow" name="Haywind Sparrow Catcher" level="6" description="" shortdescription="Slay 55 Sparrows in Haywind.">
+				<requirement text="Slay 55 Sparrows in Haywind" checks="Var=HaywindSparrowKills-55"></requirement>
+				<reward id="2" item="145" amount="25"></reward>
+			</achievement>
+			<achievement id="HW_beasts_kills_cow" name="Haywind Cow Culler" level="7" description="" shortdescription="Slay 50 Cows in Haywind.">
+				<requirement text="Slay 50 Cows in Haywind" checks="Var=HaywindCowKills-50"></requirement>
+				<reward id="2" item="92" amount="17"></reward>
+			</achievement>
+			<achievement id="HW_beasts_kills_sheep" name="Haywind Sheep Destroyer" level="7" description="" shortdescription="Slay 140 Sheep in Haywind.">
+				<requirement text="Slay 140 Sheep in Haywind" checks="Var=HaywindSheepKills-140"></requirement>
+				<reward id="1" item="93" amount="45"></reward>
+				<reward id="1" item="125" amount="45"></reward>
+			</achievement>
+			<achievement id="HW_beasts_kills_rabbit" name="Haywind Rabbit Slayer" level="8" description="" shortdescription="Slay 20 Rabbits in Haywind.">
+				<requirement text="Slay 20 Rabbits in Haywind" checks="Var=HaywindRabbitKills-20"></requirement>
+				<reward id="1" item="810" amount="20"></reward>
+				<reward id="1" item="206" amount="20"></reward>
+				<reward id="1" item="209" amount="10"></reward>
+			</achievement>
+			<achievement id="HW_beasts_kills_chicken" name="Haywind Chicken Bane" level="8" description="" shortdescription="Slay 25 Chickens in Haywind.">
+				<requirement text="Slay 25 Chickens in Haywind" checks="Var=HaywindChickenKills-25"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+			<achievement id="HW_beasts_kills_crow" name="Haywind Crow Catcher" level="9" description="" shortdescription="Slay 45 Crows in Haywind.">
+				<requirement text="Slay 45 Crows in Haywind" checks="Var=HaywindCrowKills-45"></requirement>
+				<reward id="2" item="131" amount="140"></reward>
+			</achievement>
+			<achievement id="HW_beasts_kills_rat" name="Haywind Rat Exterminator" level="9" description="" shortdescription="Slay 60 Rats in Haywind.">
+				<requirement text="Slay 60 Rats in Haywind" checks="Var=HaywindRatKills-60"></requirement>
+				<reward id="1" item="709" amount="20"></reward>
+				<reward id="1" item="206" amount="20"></reward>
+				<reward id="1" item="209" amount="20"></reward>
+				<reward id="1" item="145" amount="20"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Ashenside Fields">
+			<achievement id="ASF_beasts_kills_rabbit" name="Ashenside Rabbit Slayer" level="11" description="" shortdescription="Slay 125 Rabbits in Ashenside Fields.">
+				<requirement text="Slay 125 Rabbits in Ashenside Fields" checks="Var=AshensideRabbitKills-125"></requirement>
+				<reward id="1" item="810" amount="35"></reward>
+				<reward id="1" item="206" amount="35"></reward>
+				<reward id="1" item="209" amount="10"></reward>
+			</achievement>
+			<achievement id="ASF_beasts_kills_chicken" name="Ashenside Chicken Bane" level="11" description="" shortdescription="Slay 15 Chickens in Ashenside Fields.">
+				<requirement text="Slay 15 Chickens in Ashenside Fields" checks="Var=AshensideChickenKills-15"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+			<achievement id="ASF_beasts_kills_rat" name="Ashenside Rat Exterminator" level="12" description="" shortdescription="Slay 55 Rats in Ashenside Fields.">
+				<requirement text="Slay 55 Rats in Ashenside Fields" checks="Var=AshensideRatKills-55"></requirement>
+				<reward id="1" item="709" amount="10"></reward>
+				<reward id="1" item="206" amount="10"></reward>
+				<reward id="1" item="209" amount="10"></reward>
+				<reward id="1" item="145" amount="10"></reward>
+			</achievement>
+			<achievement id="ASF_beasts_kills_crow" name="Ashenside Crow Catcher" level="12" description="" shortdescription="Slay 40 Crows in Ashenside Fields.">
+				<requirement text="Slay 40 Crows in Ashenside Fields" checks="Var=AshensideCrowKills-40"></requirement>
+				<reward id="2" item="131" amount="170"></reward>
+			</achievement>
+			<achievement id="ASF_beasts_kills_sparrow" name="Ashenside Sparrow Catcher" level="13" description="" shortdescription="Slay 40 Sparrows in Ashenside Fields.">
+				<requirement text="Kill 40 Sparrows in Ashenside Fields" checks="Var=AshensideSparrowKills-40"></requirement>
+				<reward id="2" item="145" amount="20"></reward>
+			</achievement>
+			<achievement id="ASF_beasts_kills_wolf" name="Ashenside Wolf Slayer" level="13" description="" shortdescription="Slay 40 Wolves in Ashenside Fields.">
+				<requirement text="Slay 40 Wolves in Ashenside Fields" checks="Var=AshensideWolfKills-40"></requirement>
+				<reward id="2" item="92" amount="12"></reward>
+			</achievement>
+			<achievement id="ASF_beasts_kills_bear" name="Ashenside Bear Hunter" level="14" description="" shortdescription="Slay 20 Bears in Ashenside Fields.">
+				<requirement text="Slay 20 Bears in Ashenside Fields" checks="Var=AshensideBearKills-20"></requirement>
+				<reward id="1" item="207" amount="3"></reward>
+				<reward id="1" item="208" amount="3"></reward>
+				<reward id="1" item="204" amount="3"></reward>
+				<reward id="1" item="206" amount="2"></reward>
+				<reward id="1" item="209" amount="2"></reward>
+			</achievement>
+			<achievement id="ASF_beasts_kills_highwayman" name="Ashenside Highwayman Slayer" level="14" description="" shortdescription="Slay 30 Highwaymen in Ashenside Fields.">
+				<requirement text="Slay 30 Highwaymen in Ashenside Fields" checks="Var=AshensideHighwaymanKills-30"></requirement>
+				<reward id="2" item="195" amount="10"></reward>
+			</achievement>
+			<achievement id="ASF_beasts_kills_bandit" name="Ashenside Bandit Slayer" level="15" description="" shortdescription="Slay 40 Bandits in Ashenside Fields.">
+				<requirement text="Slay 40 Bandits in Ashenside Fields" checks="Var=AshensideBanditKills-40"></requirement>
+				<reward id="2" item="195" amount="12"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Golemwoods">
+			<achievement id="GW_beasts_kills_blackbear" name="Golemwoods Black Bear Hunter" level="20" description="" shortdescription="Slay 35 Black Bears in Golemwoods.">
+				<requirement text="Slay 35 Black Bears in Golemwoods" checks="Var=GolemwoodsBlackBearKills-35"></requirement>
+				<reward id="1" item="207" amount="5"></reward>
+				<reward id="1" item="208" amount="5"></reward>
+				<reward id="1" item="204" amount="5"></reward>
+				<reward id="1" item="206" amount="3"></reward>
+				<reward id="1" item="209" amount="3"></reward>
+			</achievement>
+			<achievement id="GW_beasts_kills_naturegolem" name="Golemwoods Nature Golem Destroyer" level="21" description="" shortdescription="Slay 40 Nature Golems in Golemwoods.">
+				<requirement text="Slay 40 Nature Golems in Golemwoods" checks="Var=GolemwoodsNatureGolemKills-40"></requirement>
+				<reward id="1" item="423" amount="20"></reward>
+			</achievement>
+			<achievement id="GW_beasts_kills_rabbit" name="Golemwoods Rabbit Slayer" level="21" description="" shortdescription="Slay 20 Rabbits in Golemwoods.">
+				<requirement text="Slay 20 Rabbits in Golemwoods" checks="Var=GolemwoodsRabbitKills-20"></requirement>
+				<reward id="1" item="810" amount="20"></reward>
+				<reward id="1" item="206" amount="20"></reward>
+				<reward id="1" item="209" amount="10"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Prowler's Thicket">
+			<achievement id="TF_beasts_kills_deer" name="Prowler's Thicket Deer Hunter" level="22" description="" shortdescription="Slay 75 Deer in Prowler's Thicket.">
+				<requirement text="Slay 75 Deer in Prowler's Thicket." checks="Var=TrollForestDeerKills-75"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+			<achievement id="TF_beasts_kills_troll" name="Prowler's Thicket Troll Slayer" level="22" description="" shortdescription="Slay 120 Trolls in Prowler's Thicket.">
+				<requirement text="Kill 120 Trolls in Prowler's Thicket." checks="Var=TrollForestTrollKills-120"></requirement>
+				<reward id="1" item="312" amount="40"></reward>
+			</achievement>
+			<achievement id="TF_beasts_kills_pigeon" name="Prowler's Thicket Pigeon Catcher" level="24" description="" shortdescription="Slay 50 Pigeons in Prowler's Thicket.">
+				<requirement text="Slay 50 Pigeons in Prowler's Thicket." checks="Var=TrollForestPigeonKills-50"></requirement>
+				<reward id="2" item="131" amount="300"></reward>
+			</achievement>
+			<achievement id="TF_beasts_kills_vulture" name="Prowler's Thicket Vulture Catcher" level="25" description="" shortdescription="Slay 20 Vultures in Prowler's Thicket.">
+				<requirement text="Slay 20 Vultures in Prowler's Thicket." checks="Var=TrollForestVultureKills-20"></requirement>
+				<reward id="1" item="928" amount="7"></reward>
+				<reward id="1" item="929" amount="7"></reward>
+				<reward id="1" item="204" amount="3"></reward>
+				<reward id="1" item="131" amount="350"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Mistywood">
+			<achievement id="MW_beasts_kills_rabbit" name="Mistywood Rabbit Slayer" level="16" description="" shortdescription="Slay 170 Rabbits in Mistywood.">
+				<requirement text="Slay 170 Rabbits in Mistywood" checks="Var=MistywoodRabbitKills-170"></requirement>
+				<reward id="1" item="810" amount="30"></reward>
+				<reward id="1" item="206" amount="30"></reward>
+				<reward id="1" item="209" amount="15"></reward>
+			</achievement>
+			<achievement id="MW_beasts_kills_evergreen" name="Mistywood Awakened Evergreen Feller" level="16" description="" shortdescription="Slay 40 Awakened Evergreens in Mistywood.">
+				<requirement text="Slay 40 Awakened Evergreens in Mistywood" checks="Var=MistywoodEvergreenKills-40"></requirement>
+				<reward id="2" item="632" amount="20"></reward>
+			</achievement>
+			<achievement id="MW_beasts_kills_goblin" name="Mistywood Goblin Exterminator" level="16" description="" shortdescription="Slay 200 Goblins in Mistywood.">
+				<requirement text="Slay 200 Goblins in Mistywood" checks="Var=MistywoodGoblinKills-200"></requirement>
+				<reward id="1" item="736" amount="15"></reward>
+				<reward id="1" item="737" amount="15"></reward>
+				<reward id="1" item="735" amount="15"></reward>
+			</achievement>
+			<achievement id="MW_beasts_kills_snake" name="Mistywood Forest Snake Hunter" level="17" description="" shortdescription="Slay 140 Forest Snakes in Mistywood.">
+				<requirement text="Slay 140 Forest Snakes in Mistywood" checks="Var=MistywoodSnakeKills-140"></requirement>
+				<reward id="2" item="747" amount="40"></reward>
+				<reward id="2" item="358" amount="20"></reward>
+			</achievement>
+			<achievement id="MW_beasts_kills_bear" name="Mistywood Bear Hunter" level="17" description="" shortdescription="Slay 80 Bears in Mistywood.">
+				<requirement text="Slay 80 Bears in Mistywood" checks="Var=MistywoodBearKills-80"></requirement>
+				<reward id="1" item="207" amount="15"></reward>
+				<reward id="1" item="208" amount="15"></reward>
+			</achievement>
+			<achievement id="MW_beasts_kills_snail" name="Mistywood Snail Crusher" level="17" description="" shortdescription="Slay 60 Snails in Mistywood.">
+				<requirement text="Slay 60 Snails in Mistywood" checks="Var=MistywoodSnailKills-60"></requirement>
+				<reward id="1" item="210" amount="10"></reward>
+				<reward id="1" item="747" amount="10"></reward>
+				<reward id="1" item="565" amount="10"></reward>
+			</achievement>
+			<achievement id="MW_beasts_kills_spider" name="Mistywood Spider Slayer" level="18" description="" shortdescription="Slay 100 Spiders in Mistywood.">
+				<requirement text="Slay 100 Spiders in Mistywood" checks="Var=MistywoodSpiderKills-100"></requirement>
+				<reward id="2" item="747" amount="30"></reward>
+			</achievement>
+			<achievement id="MW_beasts_kills_giant_rat" name="Mistywood Giant Rat Exterminator" level="18" description="" shortdescription="Slay 30 Giant Rats in Mistywood.">
+				<requirement text="Slay 30 Giant Rats in Mistywood" checks="Var=MistywoodGiantRatKills-30"></requirement>
+				<reward id="1" item="709" amount="5"></reward>
+				<reward id="1" item="206" amount="5"></reward>
+				<reward id="1" item="209" amount="5"></reward>
+				<reward id="1" item="145" amount="5"></reward>
+			</achievement>
+			<achievement id="MW_beasts_kills_wolf" name="Mistywood Wolf Slayer" level="18" description="" shortdescription="Slay 60 Wolves in Mistywood.">
+				<requirement text="Slay 60 Wolves in Mistywood" checks="Var=MistywoodWolfKills-60"></requirement>
+				<reward id="2" item="91" amount="20"></reward>
+			</achievement>
+			<achievement id="MW_beasts_kills_chicken" name="Mistywood Chicken Bane" level="19" description="" shortdescription="Slay 20 Chickens in Mistywood.">
+				<requirement text="Slay 20 Chickens in Mistywood" checks="Var=MistywoodChickenKills-20"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Silvermirror Fen">
+			<achievement id="SMF_beasts_kills_slime" name="Silvermirror Fen Slime Destroyer" level="36" description="" shortdescription="Slay 75 Slimes in Silvermirror Fen.">
+				<requirement text="Slay 75 Slimes in Silvermirror Fen" checks="Var=SilvermirrorFenSlimeKills-75"></requirement>
+				<reward id="2" item="874" amount="25"></reward>
+			</achievement>
+			<achievement id="SMF_beasts_kills_crawler" name="Silvermirror Fen Crawler Exterminator" level="37" description="" shortdescription="Slay 40 Crawlers in Silvermirror Fen.">
+				<requirement text="Slay 40 Crawlers in Silvermirror Fen" checks="Var=SilvermirrorFenCrawlerKills-40"></requirement>
+				<reward id="2" item="621" amount="15"></reward>
+			</achievement>
+			<achievement id="SMF_beasts_kills_mosquito" name="Silvermirror Fen Mosquito Exterminator" level="37" description="" shortdescription="Slay 400 Giant Mosquitoes in Silvermirror Fen.">
+				<requirement text="Slay 400 Giant Mosquitoes in Silvermirror Fen" checks="Var=SilvermirrorFenMosquitoKills-400"></requirement>
+				<reward id="2" item="890" amount="150"></reward>
+			</achievement>
+			<achievement id="SMF_beasts_kills_lizardman" name="Silvermirror Fen Lizardman Slayer" level="38" description="" shortdescription="Slay 65 Lizardmen in Silvermirror Fen.">
+				<requirement text="Slay 65 Lizardmen in Silvermirror Fen" checks="Var=SilvermirrorFenLizardmanKills-65"></requirement>
+				<reward id="2" item="620" amount="25"></reward>
+			</achievement>
+			<achievement id="SMF_beasts_kills_frog" name="Silvermirror Fen Frog Hunter" level="39" description="" shortdescription="Slay 20 Frogs in Silvermirror Fen.">
+				<requirement text="Slay 20 Frogs in Silvermirror Fen" checks="Var=SilvermirrorFenFrogKills-20"></requirement>
+				<reward id="2" item="131" amount="400"></reward>
+			</achievement>
+			<achievement id="SMF_beasts_kills_tentacle" name="Silvermirror Fen Tentacle Destroyer" level="40" description="" shortdescription="Slay 60 Tentacle Creatures in Silvermirror Fen.">
+				<requirement text="Slay 60 Tentacle Creatures in Silvermirror Fen" checks="Var=SilvermirrorFenTentacleKills-60"></requirement>
+				<reward id="2" item="619" amount="20"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Thornhill">
+			<achievement id="TH_beasts_kills_seagull" name="Thornhill Seagull Catcher" level="26" description="" shortdescription="Slay 30 Seagulls in Thornhill.">
+				<requirement text="Slay 30 Seagulls in Thornhill" checks="Var=ThornhillSeagullKills-30"></requirement>
+				<reward id="2" item="187" amount="30"></reward>
+			</achievement>
+			<achievement id="TH_beasts_kills_rat" name="Thornhill Rat Exterminator" level="27" description="" shortdescription="Slay 30 Rats in Thornhill.">
+				<requirement text="Slay 30 Rats in Thornhill" checks="Var=ThornhillRatKills-30"></requirement>
+				<reward id="1" item="131" amount="500"></reward>
+			</achievement>
+			<achievement id="TH_beasts_kills_pigeon" name="Thornhill Pigeon Catcher" level="27" description="" shortdescription="Slay 60 Pigeons in Thornhill.">
+				<requirement text="Slay 60 Pigeons in Thornhill" checks="Var=ThornhillPigeonKills-60"></requirement>
+				<reward id="2" item="145" amount="30"></reward>
+			</achievement>
+			<achievement id="TH_beasts_kills_black_bear" name="Thornhill Bear Hunter" level="28" description="" shortdescription="Slay 25 Bears in Thornhill.">
+				<requirement text="Slay 25 Bears in Thornhill" checks="Var=ThornhillBlackBearKills-25"></requirement>
+				<reward id="1" item="207" amount="10"></reward>
+				<reward id="1" item="208" amount="10"></reward>
+			</achievement>
+			<achievement id="TH_beasts_kills_vulture" name="Thornhill Vulture Catcher" level="28" description="" shortdescription="Slay 15 Vultures in Thornhill.">
+				<requirement text="Slay 15 Vultures in Thornhill" checks="Var=ThornhillVultureKills-15"></requirement>
+				<reward id="1" skill="none"></reward>
+			</achievement>
+			<achievement id="TH_beasts_kills_sheep" name="Thornhill Sheep Destroyer" level="29" description="" shortdescription="Slay 50 Sheep in Thornhill.">
+				<requirement text="Slay 50 Sheep in Thornhill" checks="Var=ThornhillSheepKills-50"></requirement>
+				<reward id="1" item="93" amount="30"></reward>
+				<reward id="1" item="125" amount="30"></reward>
+			</achievement>
+			<achievement id="TH_beasts_kills_sparrow" name="Thornhill Sparrow Catcher" level="29" description="" shortdescription="Slay 50 Sparrows in Thornhill.">
+				<requirement text="Slay 50 Sparrows in Thornhill" checks="Var=ThornhillSparrowKills-50"></requirement>
+				<reward id="2" item="145" amount="30"></reward>
+			</achievement>
+			<achievement id="TH_beasts_kills_wolf" name="Thornhill Wolf Slayer" level="29" description="" shortdescription="Slay 30 Wolves in Thornhill.">
+				<requirement text="Slay 30 Wolves in Thornhill" checks="Var=ThornhillWolfKills-30"></requirement>
+				<reward id="2" item="91" amount="20"></reward>
+			</achievement>
+			<achievement id="TH_beasts_kills_cow" name="Thornhill Cow Culler" level="30" description="" shortdescription="Slay 100 Cows in Thornhill.">
+				<requirement text="Slay 100 Cows in Thornhill" checks="Var=ThornhillCowKills-100"></requirement>
+				<reward id="2" item="92" amount="50"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Fenwater">
+			<achievement id="FW_beasts_kills_fox" name="Fenwater Fox Hunter" level="31" description="" shortdescription="Slay 10 Foxes in Fenwater.">
+				<requirement text="Slay 10 Foxes in Fenwater" checks="Var=FenwaterFoxKills-10"></requirement>
+				<reward id="1" item="747" amount="20"></reward>
+			</achievement>
+			<achievement id="FW_beasts_kills_deer" name="Fenwater Deer Hunter" level="33" description="" shortdescription="Slay 10 Deer in Fenwater.">
+				<requirement text="Slay 10 Deer in Fenwater" checks="Var=FenwaterDeerKills-10"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+			<achievement id="FW_beasts_kills_chicken" name="Fenwater Chicken Bane" level="35" description="" shortdescription="Slay 15 Chickens in Fenwater.">
+				<requirement text="Slay 15 Chickens in Fenwater" checks="Var=FenwaterChickenKills-15"></requirement>
+				<reward id="1" skill="none"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Harshwind">
+			<achievement id="HRW_beasts_kills_sparrow" name="Harshwind Sparrow Catcher" level="22" description="" shortdescription="Slay 25 Sparrows in Harshwind.">
+				<requirement text="Slay 25 Sparrows in Harshwind" checks="Var=HarshwindSparrowKills-25"></requirement>
+				<reward id="2" item="145" amount="20"></reward>
+			</achievement>
+			<achievement id="HRW_beasts_kills_chicken" name="Harshwind Chicken Bane" level="23" description="" shortdescription="Slay 10 Chickens in Harshwind.">
+				<requirement text="Slay 10 Chickens in Harshwind" checks="Var=HarshwindChickenKills-10"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+			<achievement id="HRW_beasts_kills_deer" name="Harshwind Deer Hunter" level="23" description="" shortdescription="Slay 20 Deer in Harshwind.">
+				<requirement text="Slay 20 Deer in Harshwind" checks="Var=HarshwindDeerKills-20"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Timberwell">
+			<achievement id="TW_beasts_kills_rabbit" name="Timberwell Rabbit Slayer" level="1" description="" shortdescription="Slay 50 Rabbits in Timberwell.">
+				<requirement text="Slay 50 Rabbits in Timberwell" checks="Var=TimberwellRabbitKills-50"></requirement>
+				<reward id="1" item="810" amount="30"></reward>
+				<reward id="1" item="206" amount="30"></reward>
+				<reward id="1" item="209" amount="10"></reward>
+			</achievement>
+			<achievement id="TW_beasts_kills_chicken" name="Timberwell Chicken Bane" level="1" description="" shortdescription="Slay 30 Chickens in Timberwell.">
+				<requirement text="Slay 30 Chickens in Timberwell" checks="Var=TimberwellChickenKills-30"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+			<achievement id="TW_beasts_kills_pidgeon" name="Timberwell Pigeon Catcher" level="2" description="" shortdescription="Slay 30 Pigeons in Timberwell.">
+				<requirement text="Slay 30 Pigeons in Timberwell" checks="Var=TimberwellPideonKills-30"></requirement>
+				<reward id="2" item="131" amount="70"></reward>
+			</achievement>
+			<achievement id="TW_beasts_kills_sparrow" name="Timberwell Sparrow Catcher" level="2" description="" shortdescription="Slay 40 Sparrows in Timberwell.">
+				<requirement text="Slay 40 Sparrows in Timberwell" checks="Var=TimberwellSparrowKills-40"></requirement>
+				<reward id="2" item="145" amount="20"></reward>
+			</achievement>
+			<achievement id="TW_beasts_kills_bear" name="Timberwell Bear Hunter" level="3" description="" shortdescription="Slay 60 Bears in Timberwell.">
+				<requirement text="Slay 60 Bears in Timberwell" checks="Var=TimberwellBearKills-60"></requirement>
+				<reward id="1" item="207" amount="10"></reward>
+				<reward id="1" item="208" amount="10"></reward>
+			</achievement>
+			<achievement id="TW_beasts_kills_outlaw" name="Timberwell Outlaw Slayer" level="3" description="" shortdescription="Slay 40 Outlaws in Timberwell.">
+				<requirement text="Slay 40 Outlaws in Timberwell" checks="Var=TimberwellOutlawKills-40"></requirement>
+				<reward id="1" item="131" amount="300"></reward>
+				<reward id="1" item="95" amount="30"></reward>
+			</achievement>
+			<achievement id="TW_beasts_kills_frog" name="Timberwell Frog Hunter" level="3" description="" shortdescription="Slay 50 Frogs in Timberwell.">
+				<requirement text="Slay 50 Frogs in Timberwell" checks="Var=TimberwellFrogKills-50"></requirement>
+				<reward id="2" item="131" amount="90"></reward>
+				<reward id="2" item="1306" amount="2"></reward>
+			</achievement>
+			<achievement id="TW_beasts_kills_sheep" name="Timberwell Sheep Destroyer" level="4" description="" shortdescription="Slay 30 Sheep in Timberwell.">
+				<requirement text="Slay 30 Sheep in Timberwell" checks="Var=TimberwellSheepKills-30"></requirement>
+				<reward id="1" item="93" amount="10"></reward>
+				<reward id="1" item="125" amount="10"></reward>
+			</achievement>
+			<achievement id="TW_beasts_kills_deer" name="Timberwell Deer Hunter" level="4" description="" shortdescription="Slay 10 Deer in Timberwell.">
+				<requirement text="Slay 10 Deer in Timberwell" checks="Var=TimberwellDeerKills-10"></requirement>
+				<reward id="2" skill="none"></reward>
+			</achievement>
+			<achievement id="TW_beasts_kills_crow" name="Timberwell Crow Catcher" level="4" description="" shortdescription="Slay 10 Crows in Timberwell.">
+				<requirement text="Slay 10 Crows in Timberwell" checks="Var=TimberwellCrowKills-10"></requirement>
+				<reward id="2" item="131" amount="200"></reward>
+			</achievement>
+			<achievement id="TW_beasts_kills_cow" name="Timberwell Cow Culler" level="5" description="" shortdescription="Slay 30 Cows in Timberwell.">
+				<requirement text="Slay 30 Cows in Timberwell" checks="Var=TimberwellCowKills-30"></requirement>
+				<reward id="2" item="92" amount="10"></reward>
+			</achievement>
+			<achievement id="TW_beasts_kills_wolf" name="Timberwell Wolf Slayer" level="5" description="" shortdescription="Slay 50 Wolves in Timberwell.">
+				<requirement text="Slay 50 Wolves in Timberwell" checks="Var=TimberwellWolfKills-50"></requirement>
+				<reward id="2" item="91" amount="15"></reward>
+			</achievement>
+		</subcategory>
+	</category>
+	<category name="Harvest">
+		<subcategory name="Thornhill">
+			<achievement id="TH_harvest_redberries" name="Thornhill Redberry Forager" level="27" shortdescription="Harvest 100 Redberries in Thornhill." description="">
+				<requirement text="Harvest 100 Redberries in Thornhill" checks="Var=ThornhillRedberriesHarvest-100"></requirement>
+				<reward id="2" item="168" amount="60"></reward>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="TH_cutting_oak" name="Thornhill Oak Feller" level="28" shortdescription="Cut 60 Oak Trees in Thornhill." description="">
+				<requirement text="Cut 60 Oak Trees in Thornhill" checks="Var=ThornhillOakCutting-60"></requirement>
+				<reward id="2" item="62" amount="20"></reward>
+				<reward id="5" skill="woodcutting"></reward>
+			</achievement>
+			<achievement id="TH_fish_charcoalsnapper" name="Thornhill Snapper Catcher" level="30" shortdescription="Catch 100 Charcoal Snappers in Thornhill." description="">
+				<requirement text="Catch 100 Charcoal Snappers in Thornhill" checks="Var=ThornhillCharcoalSnapper-100"></requirement>
+				<reward id="2" item="187" amount="30"></reward>
+				<reward id="5" skill="fishing"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Haywind">
+			<achievement id="HW_harvest_redberries" name="Haywind Redberry Forager" level="6" shortdescription="Harvest 40 Redberries in Haywind." description="">
+				<requirement text="Harvest 40 Redberries in Haywind" checks="Var=HaywindRedberriesHarvest-40"></requirement>
+				<reward id="2" item="168" amount="30"></reward>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="HW_harvest_corn" name="Haywind Corn Harvester" level="7" shortdescription="Harvest 20 Corn in Haywind." description="">
+				<requirement text="Harvest 20 Corn in Haywind" checks="Var=HaywindCornHarvest-20"></requirement>
+				<reward id="2" item="274" amount="30"></reward>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="HW_harvest_barley" name="Haywind Barley Harvester" level="8" shortdescription="Harvest 20 Barley in Haywind." description="">
+				<requirement text="Harvest 20 Barley in Haywind" checks="Var=HaywindBarleyHarvest-20"></requirement>
+				<reward id="2" item="220" amount="12"></reward>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="HW_harvest_cabbage" name="Haywind Cabbage Harvester" level="9" shortdescription="Harvest 15 Cabbages in Haywind." description="">
+				<requirement text="Harvest 15 Cabbages in Haywind" checks="Var=HaywindCabbageHarvest-15"></requirement>
+				<reward id="2" item="670" amount="15"></reward>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="HW_harvest_carrot" name="Haywind Carrot Harvester" level="10" shortdescription="Harvest 60 Carrots in Haywind." description="">
+				<requirement text="Harvest 60 Carrots in Haywind" checks="Var=HaywindCarrotHarvest-60"></requirement>
+				<reward id="2" item="273" amount="20"></reward>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="HW_fish_goopy" name="Haywind Goopy Catcher" level="15" shortdescription="Catch 100 Wild Goopys in Haywind." description="">
+				<requirement text="Catch 100 Wild Goopys in Haywind" checks="Var=HaywindFishGoopy-100"></requirement>
+				<reward id="2" item="105" amount="20"></reward>
+				<reward id="5" skill="fishing"></reward>
+			</achievement>
+			<achievement id="HW_fish_sturgeon" name="Haywind Sturgeon Catcher" level="20" shortdescription="Catch 60 Pebble Sturgeons in Haywind." description="">
+				<requirement text="Catch 60 Pebble Sturgeons in Haywind" checks="Var=HaywindFishSturgeon-60"></requirement>
+				<reward id="2" item="186" amount="20"></reward>
+				<reward id="5" skill="fishing"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Timberwell">
+			<achievement id="TW_fish_goopy" name="Timberwell Goopy Catcher" level="10" shortdescription="Catch 30 Wild Goopys in Timberwell." description="">
+				<requirement text="Catch 30 Wild Goopys in Timberwell" checks="Var=TimberwellFishGoopy-30"></requirement>
+				<reward id="2" item="105" amount="10"></reward>
+				<reward id="5" skill="fishing"></reward>
+			</achievement>
+			<achievement id="TW_harvest_redberries" name="Timberwell Redberry Forager" level="4" shortdescription="Harvest 20 Redberries in Timberwell." description="">
+				<requirement text="Harvest 20 Redberries in Timberwell" checks="Var=TimberwellRedberriesHarvest-20"></requirement>
+				<reward id="2" item="168" amount="30"></reward>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="TW_mine_copper" name="Timberwell Copper Miner" level="5" shortdescription="Mine 20 Copper Ores in Timberwell." description="">
+				<requirement text="Mine 20 Copper Ores in Timberwell" checks="Var=TimberwellCopperMining-20"></requirement>
+				<reward id="2" item="33" amount="10"></reward>
+				<reward id="5" skill="mining"></reward>
+			</achievement>
+			<achievement id="TW_cutting_spruce" name="Timberwell Spruce Feller" level="7" shortdescription="Cut 30 Spruce Trees in Timberwell." description="">
+				<requirement text="Cut 30 Spruce Trees in Timberwell" checks="Var=TimberwellSpruceCutting-30"></requirement>
+				<reward id="2" item="61" amount="10"></reward>
+				<reward id="5" skill="woodcutting"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Fenwater">
+			<achievement id="FW_harvest_cotton" name="Fenwater Cotton Harvester" level="32" shortdescription="Harvest 20 Cotton in Fenwater." description="">
+				<requirement text="Harvest 20 Cotton in Fenwater" checks="Var=FenwaterCottonHarvest-20"></requirement>
+				<reward id="2" item="126" amount="5"></reward>
+				<reward id="5" skill="tailoring"></reward>
+			</achievement>
+			<achievement id="FW_mine_iron" name="Fenwater Iron Miner" level="34" shortdescription="Mine 50 Iron Ores in Fenwater." description="">
+				<requirement text="Mine 50 Iron Ores in Fenwater" checks="Var=FenwaterIronMining-50"></requirement>
+				<reward id="2" item="34" amount="15"></reward>
+				<reward id="5" skill="mining"></reward>
+			</achievement>
+			<achievement id="FW_mine_copper" name="Fenwater Copper Miner" level="34" shortdescription="Mine 50 Copper Ores in Fenwater." description="">
+				<requirement text="Mine 50 Copper Ores in Fenwater" checks="Var=FenwaterCopperMining-50"></requirement>
+				<reward id="2" item="33" amount="30"></reward>
+				<reward id="5" skill="mining"></reward>
+			</achievement>
+			<achievement id="FW_cutting_spruce" name="Fenwater Spruce Feller" level="35" shortdescription="Cut 80 Spruce Trees in Fenwater." description="">
+				<requirement text="Cut 80 Spruce Trees in Fenwater" checks="Var=FenwaterSpruceCutting-80"></requirement>
+				<reward id="2" item="61" amount="40"></reward>
+				<reward id="5" skill="woodcutting"></reward>
+			</achievement>
+			<achievement id="FW_cutting_oak" name="Fenwater Oak Feller" level="35" shortdescription="Cut 40 Oak Trees in Fenwater." description="">
+				<requirement text="Cut 40 Oak Trees in Fenwater" checks="Var=FenwaterOakCutting-40"></requirement>
+				<reward id="2" item="62" amount="15"></reward>
+				<reward id="5" skill="woodcutting"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Harshwind">
+			<achievement id="HRW_harvest_potato" name="Harshwind Potato Harvester" level="22" shortdescription="Harvest 40 Potatoes in Harshwind." description="">
+				<requirement text="Harvest 40 Potatoes in Harshwind" checks="Var=HarshwindPotatoHarvest-40"></requirement>
+				<reward id="2" item="283" amount="12"></reward>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="HRW_harvest_redberries" name="Harshwind Redberry Forager" level="22" shortdescription="Harvest 40 Redberries in Harshwind." description="">
+				<requirement text="Harvest 40 Redberries in Harshwind" checks="Var=HarshwindRedberriesHarvest-40"></requirement>
+				<reward id="2" item="168" amount="30"></reward>
+				<reward id="5" skill="alchemy"></reward>
+			</achievement>
+			<achievement id="HRW_harvest_cotton" name="Harshwind Cotton Harvester" level="23" shortdescription="Harvest 100 Cotton in Harshwind." description="">
+				<requirement text="Harvest 100 Cotton in Harshwind" checks="Var=HarshwindCottonHarvest-100"></requirement>
+				<reward id="2" item="126" amount="30"></reward>
+				<reward id="5" skill="tailoring"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Ratcliffe">
+			<achievement id="RC_mine_copper" name="Ratcliffe Copper Miner" level="6" shortdescription="Mine 65 Copper Ores in Ratcliffe." description="">
+				<requirement text="Mine 65 Copper Ores in Ratcliffe" checks="Var=RattcliffeCopperMining-65"></requirement>
+				<reward id="2" item="33" amount="20"></reward>
+				<reward id="5" skill="mining"></reward>
+			</achievement>
+			<achievement id="RC_mine_arakite" name="Ratcliffe Arakite Miner" level="6" shortdescription="Mine 30 Arakite Ores in Ratcliffe." description="">
+				<requirement text="Mine 30 Arakite Ores in Ratcliffe" checks="Var=RattcliffeArakiteMining-30"></requirement>
+				<reward id="5" skill="mining"></reward>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="RC_cutting_spruce" name="Ratcliffe Spruce Feller" level="7" shortdescription="Cut 30 Spruce Trees in Ratcliffe." description="">
+				<requirement text="Cut 30 Spruce Trees in Ratcliffe" checks="Var=RattcliffeSpruceCutting-30"></requirement>
+				<reward id="2" item="61" amount="10"></reward>
+				<reward id="5" skill="woodcutting"></reward>
+			</achievement>
+			<achievement id="RC_cutting_oak" name="Ratcliffe Oak Feller" level="9" shortdescription="Cut 15 Oak Trees in Ratcliffe." description="">
+				<requirement text="Cut 15 Oak Trees in Ratcliffe" checks="Var=RattcliffeOakCutting-15"></requirement>
+				<reward id="2" item="62" amount="5"></reward>
+				<reward id="5" skill="woodcutting"></reward>
+			</achievement>
+		</subcategory>
+	</category>
+
+
+
+
+	<category name="Fame and Fortune">
+		<subcategory name="Fame">
+			<achievement id="MSC_shearston_loom" name="Industrial Revolution" level="15" shortdescription="Unlock the Shearston Loom and amass 100 Shearston Tokens." description="">
+				<requirement text="Unlocked the Shearston Loom." checks="Quest=96-999-999"></requirement>
+				<requirement text="Amass 100 Shearston Tokens." checks="ItemExistsGlobal=969-100"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="MSC_tbsawmill" name="Cutting Edge" level="18" shortdescription="Unlock the Thornbark Sawmill and amass 100 Thornbark Tokens." description="">
+				<requirement text="Unlocked the Thornbark Sawmill." checks="Quest=99-999-999"></requirement>
+				<requirement text="Amass 100 Thornbark Tokens." checks="ItemExistsGlobal=1025-100"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="MSC_bearhead" name="Bear with me..." level="20" shortdescription="Equip the bear's head helm." description="">
+				<requirement text="Equipped the bear's head helm." checks="HasItemEquipped=924"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="MSC_pumpkinhead" name="Squash it!" level="20" shortdescription="Equip the pumpkin head." description="">
+				<requirement text="Equipped the pumpkin head helmet." checks="HasItemEquipped=1129"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="MSC_captain" name="O' Captain, my Captain!" level="25" shortdescription="Equip Pirate Captain's overcoat, hat and cutlass." description="">
+				<requirement text="Equipped Pirate Captain's Overcoat." checks="HasItemEquipped=982"></requirement>
+				<requirement text="Equipped Pirate Captain's Hat." checks="HasItemEquipped=985"></requirement>
+				<requirement text="Equipped Pirate Captain's Cutlass." checks="HasItemEquipped=984"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="MSC_crabhead" name="CLACK CLACK CLACK" level="25" shortdescription="Equip the Crustacean Helm." description="">
+				<requirement text="Equipped the Crustacean Helm." checks="HasItemEquipped=991"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="MSC_smthrone" name="I AM the Silvermirror Witch" level="10" shortdescription="Sit on the witch's throne." description="">
+				<requirement text="Sat on the Silvermirror Throne." checks="Var=AchIAMtheWitch-1"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="MSC_stonefather_altar" name="Blessings of the Stone Father" level="15" shortdescription="Pray 5 times at the stone altar." description="">
+				<requirement text="Pray up to five times at the Stone Father's altar." checks="Var=AchPraygeAtStoneFatherAltar-5"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="MSC_horsycarrots" name="Horsy's Best Friend" level="12" shortdescription="Feed Horsy 100 carrots during your adventures." description="">
+				<requirement text="Fed Horsy 100 carrots." checks="Var=HorsyCarrots-100"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+		</subcategory>
+		
+		<subcategory name="Riches">
+			<achievement id="coin_1" name="Pocket Gold" level="10" shortdescription="Amass 1 000 coins." description="">
+				<requirement text="Amass 1 000 coins" checks="ItemExistsGlobal=131-1000"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="coin_2" name="Fine Savings" level="20" shortdescription="Amass 10 000 coins." description="">
+				<requirement text="Amass 10 000 coins" checks="ItemExistsGlobal=131-10000"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="coin_3" name="Becoming a Merchant" level="30" shortdescription="Amass 100 000 coins." description="">
+				<requirement text="Amass 100 000 coins" checks="ItemExistsGlobal=131-100000"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="coin_4" name="Genuine Riches!" level="50" shortdescription="Amass 500 000 coins." description="">
+				<requirement text="Amass 500 000 coins" checks="ItemExistsGlobal=131-500000"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="coin_5" name="Putting Dragons to Shame" level="70" shortdescription="Amass 1 000 000 coins." description="">
+				<requirement text="Amass 1 000 000 coins" checks="ItemExistsGlobal=131-1000000"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+		</subcategory>
+
+		<subcategory name="Home Ownership">
+			<achievement id="house_own" name="A Proud Homeowner" level="20" shortdescription="Buy a house." description="You've purchased a home of your own, well done!">
+				<requirement text="Buy a house." checks="AnyHouseOwned=1"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="house_own_10" name="Lord of Many Houses" level="50" shortdescription="Buy 10 houses." description="Owning 10 houses is no small feat, you're retaking control over the realm one house at a time!">
+				<requirement text="Buy 10 houses." checks="HousesOwned=10"></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+			<achievement id="house_own_castle" name="The Realest Baron of the Mountains" level="90" shortdescription="Place the Banner of Domination on the highest floor of the Squallstone Keep." description="Acquire the Banner of Domination and place it upon the highest floor of the castle.">
+				<requirement checks="HouseOwned=16" text="Become the owner of the Squallstone Keep."></requirement>
+				<requirement checks="ItemExistsGlobal=9298-1" text="Acquire Banner of Domination."></requirement>
+				<requirement checks="Var=BannerRewardUnlocked-1-1" text="Place the banner upon the highest floor of the castle."></requirement>
+				<reward id="5" skill="none"></reward>
+			</achievement>
+		</subcategory>
+	</category>
+
+</categories>

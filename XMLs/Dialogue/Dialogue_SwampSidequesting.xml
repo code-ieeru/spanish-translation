@@ -1,0 +1,249 @@
+<dialogue>
+	<node id="1" npcName="Agathe, 'The Real Witch'" anim="1" text="Well, well, look what the murky waters dragged in. Come closer, dearie, don't be shy! You've found 'the real Silvermirror Witch', alright... hah! It's just something the village fools have taken to calling me. So then, what can this old lady do for you?" posx="0" posy="7">
+		<option optionid="1" optiontext="You wouldn't happen to know what certain swamp brambles thirst for?" next="2" checks="Var=Q54SwampAlchemyTracker-1-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Any secret brews you can offer?" next="12" checks="!Var=Q54SwampAlchemyTracker-1-1" icon="Quest"></option>
+		<option optionid="3" optiontext="Who are you?" next="11"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+		<option optionid="5" optiontext="I need something to treat a mosquito bite." next="13" icon="task"></option>
+	</node>
+	<node id="2" npcName="Agathe, 'The Real Witch'" anim="1" text="&lt;color=#9C8C77&gt;*Gasp*&lt;/color&gt;! Someone's been snooping around the Garden of the Witches, haven't you dearie? I do know the brambles' trick, but dare I entrust it the knowledge to you? Dark secrets lie buried in that place. How about you help me with something first?" actions="SetVar=Q54SwampAlchemyTracker-2" posx="434" posy="4">
+		<option optionid="1" optiontext="Fine, what do you need?" next="12" icon="Quest"></option>
+		<option optionid="2" optiontext="I'll consider it." next="0"></option>
+	</node>
+	<node id="3" npcName="Agathe, 'The Real Witch'" anim="1" text="The plants I require are Silvermirror Irises &lt;color=teal&gt;(20)&lt;/color&gt;, Darkmire Damp Roots &lt;color=teal&gt;(10)&lt;/color&gt;, Gravelstem Whiteflowers &lt;color=teal&gt;(10)&lt;/color&gt; and Marshland Feather Reeds &lt;color=teal&gt;(10)&lt;/color&gt;. I assure you, they all grow around Silvermirror Fen somewhere." posx="611" posy="506">
+		<option optionid="1" optiontext="Anything more specific you could describe about the plants at least?" next="4"></option>
+		<option optionid="2" optiontext="Very well, I'll get you your herbs." next="10" icon="Quest"></option>
+		<option optionid="3" optiontext="Not my kind of job, I'm afraid." next="0"></option>
+	</node>
+	<node id="4" npcName="Agathe, 'The Real Witch'" anim="1" text="I could talk about plants all day, flower. Which one shall we start with?" posx="1029" posy="509">
+		<option optionid="1" optiontext="Silvermirror Iris?" next="5"></option>
+		<option optionid="2" optiontext="Darkmire Damp Root?" next="6"></option>
+		<option optionid="3" optiontext="Gravelstem Whiteflowers?" next="7"></option>
+		<option optionid="4" optiontext="Marshland Feather Reed?" next="8"></option>
+		<option optionid="5" optiontext="I guess I've heard enough." next="9" checks="Quest=107-0-0" icon="LeadingExit"></option>
+		<option optionid="6" optiontext="I guess I've heard enough." next="16" checks="!Quest=107-0-0" icon="LeadingExit"></option>
+	</node>
+	<node id="5" npcName="Agathe, 'The Real Witch'" anim="1" text="Ah yes, the 'rose of the witches', flower... It grows in abundance all around the swamp, which is good. It contains magical properties useful for most potions, thus much of it is also required." itemIcon="433" posx="1443" posy="508">
+		<option optionid="1" optiontext="Darkmire Damp Root?" next="6"></option>
+		<option optionid="2" optiontext="Gravelstem Whiteflowers?" next="7"></option>
+		<option optionid="3" optiontext="Marshland Feather Reed?" next="8"></option>
+		<option optionid="4" optiontext="I guess I've heard enough." next="9" checks="Quest=107-0-0" icon="LeadingExit"></option>
+		<option optionid="5" optiontext="I guess I've heard enough." next="16" checks="!Quest=107-0-0" icon="LeadingExit"></option>
+	</node>
+	<node id="6" npcName="Agathe, 'The Real Witch'" anim="1" text="Oh yes, one that draws power from decay. Look for it near waterlogged places, oftentimes near shade too. It's there that the root grows thickest." itemIcon="1183" posx="1856" posy="508">
+		<option optionid="1" optiontext="Gravelstem Whiteflowers?" next="7"></option>
+		<option optionid="2" optiontext="Marshland Feather Reed?" next="8"></option>
+		<option optionid="3" optiontext="Silvermirror Iris?" next="5"></option>
+		<option optionid="4" optiontext="I guess I've heard enough." next="9" checks="Quest=107-0-0" icon="LeadingExit"></option>
+		<option optionid="5" optiontext="I guess I've heard enough." next="16" checks="!Quest=107-0-0" icon="LeadingExit"></option>
+	</node>
+	<node id="7" npcName="Agathe, 'The Real Witch'" anim="1" text="The Gravelstem, a small flower, but so hardy its roots bite their way into stone itself! The minerals they extract from stone power the very plant itself. You need only to keep your eye out for rocky places, and the white flowers are likely to catch your eye." itemIcon="1181" posx="2267" posy="511">
+		<option optionid="1" optiontext="Marshland Feather Reed?" next="8"></option>
+		<option optionid="2" optiontext="Silvermirror Iris?" next="5"></option>
+		<option optionid="3" optiontext="Darkmire Damp Root?" next="6"></option>
+		<option optionid="4" optiontext="I guess I've heard enough." next="9" checks="Quest=107-0-0" icon="LeadingExit"></option>
+		<option optionid="5" optiontext="I guess I've heard enough." next="16" checks="!Quest=107-0-0" icon="LeadingExit"></option>
+	</node>
+	<node id="8" npcName="Agathe, 'The Real Witch'" anim="1" text="Mmm... the Feather Reed likes to sway in the wind. There's not much of that in the swamp, so it often chooses to grow on the banks of open water. There are a few such places here, dearie, if you keep your eyes peeled." itemIcon="1182" posx="2682" posy="510">
+		<option optionid="1" optiontext="Silvermirror Iris?" next="5"></option>
+		<option optionid="2" optiontext="Darkmire Damp Root?" next="6"></option>
+		<option optionid="3" optiontext="Gravelstem Whiteflowers?" next="7"></option>
+		<option optionid="4" optiontext="I guess I've heard enough." next="9" checks="Quest=107-0-0" icon="LeadingExit"></option>
+		<option optionid="5" optiontext="I guess I've heard enough." next="16" checks="!Quest=107-0-0" icon="LeadingExit"></option>
+	</node>
+	<node id="9" npcName="Agathe, 'The Real Witch'" anim="1" text="So how about it, dearie - got a green thumb on you? Remember, the plants I require are Silvermirror Irises &lt;color=teal&gt;(20)&lt;/color&gt;, Darkmire Damp Roots &lt;color=teal&gt;(10)&lt;/color&gt;, Gravelstem Whiteflowers &lt;color=teal&gt;(10)&lt;/color&gt; and Marshland Feather Reeds &lt;color=teal&gt;(10)&lt;/color&gt;." posx="5" posy="911">
+		<option optionid="1" optiontext="Hold on, anything more specific you could describe about the plants at least?" next="4"></option>
+		<option optionid="2" optiontext="Very well, I'll get you your herbs." next="10" icon="Quest"></option>
+		<option optionid="3" optiontext="This isn't my kind of job, I'm afraid." next="0"></option>
+	</node>
+	<node id="10" npcName="Agathe, 'The Real Witch'" anim="1" text="You do that, flower, and I promise the potions I've got for you won't let you down. Keep yourself alive out there!" posx="522" posy="958">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=107-1"></option>
+	</node>
+	<node id="11" npcName="Agathe, 'The Real Witch'" anim="1" text="Who am I? Oooh, the whisper in the shadows, perhaps? The keeper of forbidden knowledge, the master of the occult! Hahaha! No, oh no, dearie! In truth, I'm just someone with a deep appreciation for rare, exotic herbs and curious little potions. 'Tis why I live here in this swamp of all places, because of the plants that grow here." posx="1046" posy="8">
+		<option optionid="1" optiontext="You wouldn't happen to know what certain swamp brambles thirst for?" next="2" checks="Var=Q54SwampAlchemyTracker-1-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Any secret brews you can offer?" next="3" checks="!Var=Q54SwampAlchemyTracker-1-1" icon="Quest"></option>
+		<option optionid="3" optiontext="I see, now I must leave." next="0"></option>
+	</node>
+	<node id="12" npcName="Agathe, 'The Real Witch'" anim="1" text="You see, it's becoming difficult for 'The Real Witch' to craft her brews, as she's running low on special herbs. Alas, I'm not as nimble as I once was and every year I swear the swamp only grows more dangerous. I hope you're familiar with the handling of alchemical plants, dearie?" posx="143" posy="575">
+		<option optionid="1" optiontext="" next="3"></option>
+	</node>
+	<node id="13" npcName="Agathe, 'The Real Witch'" anim="1" text="There's a bottle on the table, use that!" itemIcon="9059" posx="448" posy="-257">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+
+
+
+	<node id="15" npcName="Agathe, 'The Real Witch'" anim="1" text="Ah, there you are, flower! I was beginning to wonder if I'd see you again. Have the marshlands treated you kindly, or did they show you their ugly, brutal side?" posx="0" posy="13">
+		<option optionid="1" optiontext="Are these the plants you're looking for? &lt;color=#9C8C77&gt;*offer quest items*&lt;/color&gt;" next="17" checks="HasItem=433-20|1181-10|1182-10|1183-10" icon="Quest"></option>
+		<option optionid="2" optiontext="Remind me, which plants were you running short on?" next="23" checks="DoesntHaveAnyItem=433-20|1181-10|1182-10|1183-10"></option>
+		<option optionid="3" optiontext="Remind me, which plants were you running short on?" next="23" checks="HasAnyItemButNotAll=433-20|1181-10|1182-10|1183-10"></option>
+		<option optionid="4" optiontext="Tell me, who are you really?" next="21"></option>
+		<option optionid="5" optiontext="You wouldn't happen to know what certain swamp brambles thirst for?" next="22" checks="Var=Q54SwampAlchemyTracker-1-2,DoesntHaveAnyItem=433-20|1181-10|1182-10|1183-10" icon="Quest"></option>
+		<option optionid="6" optiontext="You wouldn't happen to know what certain swamp brambles thirst for?" next="22" checks="Var=Q54SwampAlchemyTracker-1-2,HasAnyItemButNotAll=433-20|1181-10|1182-10|1183-10" icon="Quest"></option>
+		<option optionid="7" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="16" npcName="Agathe, 'The Real Witch'" anim="1" text="As you say, dearie. Well anyway, if you come across them, I'd very much appreciate you bring me the Silvermirror Irises &lt;color=teal&gt;(20)&lt;/color&gt;, Darkmire Damp Roots &lt;color=teal&gt;(10)&lt;/color&gt;, Gravelstem Whiteflowers &lt;color=teal&gt;(10)&lt;/color&gt; and Marshland Feather Reeds &lt;color=teal&gt;(10)&lt;/color&gt;." posx="9" posy="593">
+		<option optionid="1" optiontext="Hold on, describe these plants in detail again..." next="4"></option>
+		<option optionid="2" optiontext="Tell me, who are you really?" next="21"></option>
+		<option optionid="3" optiontext="You wouldn't happen to know what certain swamp brambles thirst for?" next="22" checks="Var=Q54SwampAlchemyTracker-1-2,DoesntHaveAnyItem=433-20|1181-10|1182-10|1183-10" icon="Quest"></option>
+		<option optionid="4" optiontext="You wouldn't happen to know what certain swamp brambles thirst for?" next="22" checks="Var=Q54SwampAlchemyTracker-1-2,HasAnyItemButNotAll=433-20|1181-10|1182-10|1183-10" icon="Quest"></option>
+		<option optionid="5" optiontext="Goodbye." next="0"></option>
+	</node>
+	<node id="17" npcName="Agathe, 'The Real Witch'" anim="1" itemIcon="389" text="Oooh, and such lovely specimens you found too! Thank you, dearie. How about I show you what they can be turned into? It only takes a bit of skill for these brews, really...\n\n&lt;color=#9C8C77&gt;*You observe carefully as the 'witch' extracts oils from the swamp plants into protective ampoules.*&lt;/color&gt;" posx="583" posy="10">
+		<option optionid="1" optiontext="What are the fancy potions good for?" next="18"></option>
+		<option optionid="2" optiontext="I wanted to know about certain brambles in the swamp, what they thirst for..." next="19" checks="Var=Q54SwampAlchemyTracker-1-2" icon="Quest"></option>
+		<option optionid="3" optiontext="Interesting..." next="24" checks="!Var=Q54SwampAlchemyTracker-1-2" icon="Quest"></option>
+	</node>
+	<node id="18" npcName="Agathe, 'The Real Witch'" anim="1" itemIcon="389" text="Well, dearie, my ampoules only have the potential to render you near invulnerable against mortal blows, though their effects dissipate quickly. But while it lasts, gods themselves couldn't strike you down! Well, figuratively speaking - don't test that theory. If you do find yourself up against a particularly gnarly monster, though, keep one of my ampoules at hand." posx="997" posy="11">
+		<option optionid="1" optiontext="I wanted to know about certain brambles in the swamp, what they thirst for..." next="19" checks="Var=Q54SwampAlchemyTracker-1-2" icon="Quest"></option>
+		<option optionid="2" optiontext="Interesting..." next="24" checks="!Var=Q54SwampAlchemyTracker-1-2" icon="Quest"></option>
+	</node>
+	<node id="19" npcName="Agathe, 'The Real Witch'" anim="1" text="Yes, brambles that whisper and groan in their thirst... You should take care with such things, normally plants aren't meant to speak, you know? The only ones thirsty around here would be those created by the Witches of the Silvermirror Fen. Anything they ever touched is just bad news." posx="1807" posy="6">
+		<option optionid="1" optiontext="" next="20"></option>
+	</node>
+	<node id="20" npcName="Agathe, 'The Real Witch'" anim="1" text="Their brambles have no thirst for water, oh no dearie. It's blood they crave, and unless you intend to feed yourself to them, you'll want to carry a vial of blood concentrate to pour onto them. Seeing as you helped me, I'll make it for you. Just bring me 3 blood sacs from the giant bloodsuckers that are a pestilence on this swamp." posx="2214" posy="7">
+		<option optionid="1" optiontext="" next="24" actions="SetVar=Q54SwampAlchemyTracker-3"></option>
+	</node>
+	<node id="21" npcName="Agathe, 'The Real Witch'" anim="1" text="Who am I? Oooh, the whisper in the shadows, perhaps? The keeper of forbidden knowledge, the master of the occult! Hahaha! No, oh no, dearie! In truth, I'm just someone with a deep appreciation for rare, exotic herbs and curious little potions. 'Tis why I live here in this swamp of all places, because of the plants that grow here." posx="519" posy="499">
+		<option optionid="1" optiontext="Are these the plants you're looking for? &lt;color=#9C8C77&gt;*offer quest items*&lt;/color&gt;" next="17" checks="HasItem=433-20|1181-10|1182-10|1183-10" icon="Quest"></option>
+		<option optionid="2" optiontext="Remind me, which plants were you running short on?" next="23" checks="DoesntHaveAnyItem=433-20|1181-10|1182-10|1183-10"></option>
+		<option optionid="3" optiontext="Remind me, which plants were you running short on?" next="23" checks="HasAnyItemButNotAll=433-20|1181-10|1182-10|1183-10"></option>
+		<option optionid="4" optiontext="You wouldn't happen to know what certain swamp brambles thirst for?" next="22" checks="Var=Q54SwampAlchemyTracker-1-2,DoesntHaveAnyItem=433-20|1181-10|1182-10|1183-10" icon="Quest"></option>
+		<option optionid="5" optiontext="You wouldn't happen to know what certain swamp brambles thirst for?" next="22" checks="Var=Q54SwampAlchemyTracker-1-2,HasAnyItemButNotAll=433-20|1181-10|1182-10|1183-10" icon="Quest"></option>
+		<option optionid="6" optiontext="Goodbye." next="0"></option>
+	</node>
+	<node id="22" npcName="Agathe, 'The Real Witch'" anim="1" text="&lt;color=#9C8C77&gt;*Gasp*&lt;/color&gt;! Someone's been snooping around the Garden of the Witches, haven't you dearie? I do know the brambles' trick, but dare I entrust it the knowledge to you? Dark secrets lie buried in that place. How about you help me restock with rare swamp herbs and I'll consider helping you in return." actions="SetVar=Q54SwampAlchemyTracker-2" posx="943" posy="499">
+		<option optionid="1" optiontext="Are these the plants you're looking for? &lt;color=#9C8C77&gt;*offer quest items*&lt;/color&gt;" next="17" checks="HasItem=433-20|1181-10|1182-10|1183-10"></option>
+		<option optionid="2" optiontext="Remind me, which plants were you running short on?" next="23" checks="DoesntHaveAnyItem=433-20|1181-10|1182-10|1183-10"></option>
+		<option optionid="3" optiontext="Remind me, which plants were you running short on?" next="23" checks="HasAnyItemButNotAll=433-20|1181-10|1182-10|1183-10"></option>
+		<option optionid="4" optiontext="Tell me, who are you really?" next="21"></option>
+		<option optionid="5" optiontext="Goodbye." next="0"></option>
+	</node>
+	<node id="23" npcName="Agathe, 'The Real Witch'" anim="1" text="The plants I require are Silvermirror Irises &lt;color=teal&gt;(20)&lt;/color&gt;, Darkmire Damp Roots &lt;color=teal&gt;(10)&lt;/color&gt;, Gravelstem Whiteflowers &lt;color=teal&gt;(10)&lt;/color&gt; and Marshland Feather Reeds &lt;color=teal&gt;(10)&lt;/color&gt;. I assure you, they all grow around these marshlands somewhere." posx="1355" posy="500">
+		<option optionid="1" optiontext="Anything more specific you could describe about them, like where they normally grow?" next="4"></option>
+		<option optionid="2" optiontext="Tell me, who are you really?" next="21"></option>
+		<option optionid="3" optiontext="You wouldn't happen to know what certain swamp brambles thirst for?" next="22" checks="Var=Q54SwampAlchemyTracker-1-2,DoesntHaveAnyItem=433-20|1181-10|1182-10|1183-10" icon="Quest"></option>
+		<option optionid="4" optiontext="You wouldn't happen to know what certain swamp brambles thirst for?" next="22" checks="Var=Q54SwampAlchemyTracker-1-2,HasAnyItemButNotAll=433-20|1181-10|1182-10|1183-10" icon="Quest"></option>
+		<option optionid="5" optiontext="Goodbye." next="0"></option>
+	</node>
+	<node id="24" npcName="Agathe, 'The Real Witch'" anim="1" itemIcon="389" text="Here, have a few of the potions I made too. Afraid I can't spare the whole patch, think I'll have to start relying on these to gather more herbs, But you'll know how to make your own now, won't you, dearie?" posx="1810" posy="314">
+		<option optionid="1" optiontext="Right, thanks." next="0" actions="UpdateQuest=107-999,RemoveItems=433-20|1181-10|1182-10|1183-10"></option>
+	</node>
+
+
+	<node id="30" npcName="Agathe, 'The Real Witch'" anim="1" text="Yes, flower? Come seeking the mighty brews of this old 'Witch'? I'm afrain I only maintain a small stock, some of these herbs I require are painfully rare after all." posx="0" posy="7">
+		<option optionid="1" optiontext="You wouldn't happen to know what certain swamp brambles thirst for?" next="31" checks="Quest=54-13-13,Var=Q54SwampAlchemyTracker-1-2" icon="Quest"></option>
+		<option optionid="2" optiontext="Remind me, what do I need for those thirsty swamp brambles?" next="34" checks="Quest=54-13-13,!HasItem=553-3,Var=Q54SwampAlchemyTracker-3-3" icon="Quest"></option>
+		<option optionid="3" optiontext="I brought bloodsucker sacs for the concentrate." next="35" checks="Quest=54-13-13,HasItem=553-3,Var=Q54SwampAlchemyTracker-3-4" itemIcon="553"></option>
+		<option optionid="4" optiontext="Could use a vial of your good stuff." next="0" actions="OpenShop=106"></option>
+		<option optionid="5" optiontext="Remind me, who are you really?" next="37"></option>
+		<option optionid="6" optiontext="Wanted to ask more about the swamp plants." next="40"></option>
+		<option optionid="7" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="31" npcName="Agathe, 'The Real Witch'" anim="1" text="&lt;color=#9C8C77&gt;*Gasp*&lt;/color&gt;! Someone's been snooping around the Garden of the Witches, haven't you dearie? I do know the brambles' trick, but dare I entrust it the knowledge to you? Dark secrets lie buried in that place." posx="423" posy="6">
+		<option optionid="1" optiontext="" next="32"></option>
+	</node>
+	<node id="32" npcName="Agathe, 'The Real Witch'" anim="1" text="Well, I guess you did help me before, didn't you dearie? But you should take care with brambles that whisper and groan in their thirst, normally plants aren't meant to speak, you know? And it's no thirst for water those ones complain about." posx="840" posy="5">
+		<option optionid="1" optiontext="" next="33" actions="SetVar=Q54SwampAlchemyTracker-3"></option>
+	</node>
+	<node id="33" npcName="Agathe, 'The Real Witch'" anim="1" text="It's blood they crave, and unless you intend to feed yourself to them, you'll want to carry a vial of blood concentrate to pour onto them. Not to worry, I'll make it for you, dearie. But I'll need 3 blood sacs from those giant bloodsuckers that are a pestilence on this swamp." posx="1259" posy="6">
+		<option optionid="1" optiontext="Could use a vial of your good stuff in the meantime." next="0" actions="OpenShop=106"></option>
+		<option optionid="2" optiontext="Remind me, who are you really?" next="37"></option>
+		<option optionid="3" optiontext="I see..." next="0"></option>
+	</node>
+	<node id="34" npcName="Agathe, 'The Real Witch'" anim="1" text="Those brambles have no thirst for water, oh no dearie. It's blood they crave, and unless you intend to feed yourself to them, you'll want to carry a vial of blood concentrate to pour onto them. Not to worry, I'll make it for you, dearie. But I'll need 3 blood sacs from those giant bloodsuckers that are a pestilence on this swamp." posx="434" posy="236">
+		<option optionid="1" optiontext="Could use a vial of your good stuff in the meantime." next="0" actions="OpenShop=106"></option>
+		<option optionid="2" optiontext="Remind me, who are you really?" next="37"></option>
+		<option optionid="3" optiontext="I see..." next="0"></option>
+	</node>
+	<node id="35" npcName="Agathe, 'The Real Witch'" anim="1" text="Right then, dearie, these will do nicely. Now, I believe I lectured you enough about the Silvermirror Witches before, didn't I? Village sarcasm about me aside, those hags were, and always will be the real witches in these swamps - and I mean that in the worst possible way. I hope whatever of theirs you're looking for is worth it." posx="936" posy="446">
+		<option optionid="1" optiontext="" next="36" actions="RemoveItems=553-3,AddItems=554-1,SetVar=Q54SwampAlchemyTracker-4"></option>
+	</node>
+	<node id="36" npcName="Agathe, 'The Real Witch'" itemIcon="554" anim="1" text="Anyhow, here's your blood concentrate. Take care of yourself now, flower, and... are you sure you don't want to buy a healing potion off me... just in case?" posx="1353" posy="446">
+		<option optionid="1" optiontext="Sure, if it eases your conscience." next="0" actions="OpenShop=106"></option>
+		<option optionid="2" optiontext="Thanks for the concern, but I'll be alright." next="0" icon="Quest"></option>
+	</node>
+	<node id="37" npcName="Agathe, 'The Real Witch'" anim="1" text="Who am I? Oooh, the whisper in the shadows, perhaps? The keeper of forbidden knowledge, the master of the occult! Hahaha! No, oh no, dearie! In truth, I'm just someone with a deep appreciation for rare, exotic herbs and curious little potions. 'Tis why I live here in this swamp of all places, because of the plants that grow here." posx="609" posy="909">
+		<option optionid="1" optiontext="You wouldn't happen to know what certain swamp brambles thirst for?" next="31" checks="Quest=54-13-13,Var=Q54SwampAlchemyTracker-1-2" icon="Quest"></option>
+		<option optionid="2" optiontext="Remind me, what do I need for those thirsty swamp brambles?" next="34" checks="Quest=54-13-13,!HasItem=553-3,Var=Q54SwampAlchemyTracker-3-3" icon="Quest"></option>
+		<option optionid="3" optiontext="I brought bloodsucker sacs for the concentrate." next="35" checks="Quest=54-13-13,HasItem=553-3,Var=Q54SwampAlchemyTracker-3-4" itemIcon="553"></option>
+		<option optionid="4" optiontext="Could use a vial of your good stuff." next="0" actions="OpenShop=106"></option>
+		<option optionid="5" optiontext="Fair enough." next="0"></option>
+	</node>
+
+	<node id="38" npcName="Agathe, 'The Real Witch'" anim="1" text="As you say, dearie. Is there anything else I can help you with?" posx="912" posy="913">
+		<option optionid="1" optiontext="You wouldn't happen to know what certain swamp brambles thirst for?" next="31" checks="Quest=54-13-13,Var=Q54SwampAlchemyTracker-1-2" icon="Quest"></option>
+		<option optionid="2" optiontext="Remind me, what do I need for those thirsty swamp brambles?" next="34" checks="Quest=54-13-13,!HasItem=553-3,Var=Q54SwampAlchemyTracker-3-3" icon="Quest"></option>
+		<option optionid="3" optiontext="I brought bloodsucker sacs for the concentrate." next="35" checks="Quest=54-13-13,HasItem=553-3,Var=Q54SwampAlchemyTracker-3-4" itemIcon="553"></option>
+		<option optionid="4" optiontext="Could use a vial of your good stuff." next="0" actions="OpenShop=106"></option>
+		<option optionid="5" optiontext="Remind me, who are you really?" next="37"></option>
+		<option optionid="6" optiontext="Wanted to ask more about the swamp plants." next="40"></option>
+		<option optionid="7" optiontext="Nevermind." next="0"></option>	
+	</node>
+	<node id="40" npcName="Agathe, 'The Real Witch'" anim="1" text="I could talk about plants all day, flower. Which one shall we start with?" posx="1820" posy="913">
+		<option optionid="1" optiontext="Silvermirror Iris?" next="41"></option>
+		<option optionid="2" optiontext="Darkmire Damp Root?" next="42"></option>
+		<option optionid="3" optiontext="Gravelstem Whiteflowers?" next="43"></option>
+		<option optionid="4" optiontext="Marshland Feather Reed?" next="44"></option>
+		<option optionid="5" optiontext="I guess I've heard enough." next="38" icon="LeadingExit"></option>
+	</node>
+	<node id="41" npcName="Agathe, 'The Real Witch'" itemIcon="433" anim="1" text="Ah yes, the 'rose of the witches', flower... It grows in abundance all around the swamp, which is good. It contains magical properties useful for most potions, thus much of it is also required." posx="2234" posy="913">
+		<option optionid="1" optiontext="Darkmire Damp Root?" next="42"></option>
+		<option optionid="2" optiontext="Gravelstem Whiteflowers?" next="43"></option>
+		<option optionid="3" optiontext="Marshland Feather Reed?" next="44"></option>
+		<option optionid="4" optiontext="I guess I've heard enough." next="38" icon="LeadingExit"></option>
+	</node>
+	<node id="42" npcName="Agathe, 'The Real Witch'" itemIcon="1183" anim="1" text="Oh yes, one that draws power from decay. Look for it near waterlogged places, oftentimes near shade too. It's there that the root grows thickest." posx="2643" posy="911">
+		<option optionid="1" optiontext="Gravelstem Whiteflowers?" next="43"></option>
+		<option optionid="2" optiontext="Marshland Feather Reed?" next="44"></option>
+		<option optionid="3" optiontext="Silvermirror Iris?" next="41"></option>
+		<option optionid="4" optiontext="I guess I've heard enough." next="38" icon="LeadingExit"></option>
+	</node>
+	<node id="43" npcName="Agathe, 'The Real Witch'" itemIcon="1181" anim="1" text="The Gravelstem, a small flower, but so hardy its roots bite their way into stone itself! The minerals they extract from stone power the very plant itself. You need only to keep your eye out for rocky places, and the white flowers are likely to catch your eye." posx="3052" posy="909">
+		<option optionid="1" optiontext="Marshland Feather Reed?" next="44"></option>
+		<option optionid="2" optiontext="Silvermirror Iris?" next="41"></option>
+		<option optionid="3" optiontext="Darkmire Damp Root?" next="42"></option>
+		<option optionid="4" optiontext="I guess I've heard enough." next="38" icon="LeadingExit"></option>
+	</node>
+	<node id="44" npcName="Agathe, 'The Real Witch'" itemIcon="1182" anim="1" text="Mmm... the Feather Reed likes to sway in the wind. There's not much of that in the swamp, so it often chooses to grow on the banks of open water. There are a few such places here, dearie, if you keep your eyes peeled." posx="3464" posy="910">
+		<option optionid="1" optiontext="Silvermirror Iris?" next="41"></option>
+		<option optionid="2" optiontext="Darkmire Damp Root?" next="42"></option>
+		<option optionid="3" optiontext="Gravelstem Whiteflowers?" next="43"></option>
+		<option optionid="4" optiontext="I guess I've heard enough." next="38" icon="LeadingExit"></option>
+	</node>
+	
+
+	<node id="50" npcName="Bramble Door" anim="1" text="&lt;color=#9C8C77&gt;*As you approach the brambles, they rustle and shift in an uneasy manner. Blocked behind them, you see a barrow entrance disappear into the darkness beneath the ground.*&lt;/color&gt;" posx="15" posy="13">
+		<option optionid="1" optiontext="" next="51" checks="Var=Q54SwampAlchemyTracker-0-3"></option>
+		<option optionid="2" optiontext="" next="55" checks="Var=Q54SwampAlchemyTracker-4-5"></option>
+	</node>
+	<node id="51" npcName="Bramble Door" anim="1" text="&lt;color=#9C8C77&gt;*Suddenly, reacting to your presence, the rustling of the brambles begins to resemble more of a whisper!*&lt;/color&gt;\n\nThirsty... thirsty... thirsty...!" posx="432" posy="15">
+		<option optionid="1" optiontext="Um... hello?" next="52"></option>
+		<option optionid="2" optiontext="What do you mean 'thirsty'? This swamp isn't exactly dry." next="53"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Step away, keep your distance.*&lt;/color&gt;" next="54"></option>
+	</node>
+	<node id="52" npcName="Bramble Door" anim="1" text="&lt;color=#9C8C77&gt;*The brambles ignore your words, merely continuing their chant.*&lt;/color&gt;\n\nThirsty... thirsty... thirsty...!" posx="849" posy="15">
+		<option optionid="1" optiontext="What do you mean 'thirsty'? This swamp isn't exactly dry." next="53"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Step away, keep your distance.*&lt;/color&gt;" next="54"></option>
+	</node>
+	<node id="53" npcName="Bramble Door" anim="1" text="&lt;color=#9C8C77&gt;*The brambles' whispers turn agitated.*&lt;/color&gt;\n\nNot water... not water... not water!" posx="1260" posy="16">
+		<option optionid="1" optiontext="" next="54"></option>
+	</node>
+	<node id="54" npcName="Bramble Door" anim="1" text="&lt;color=#9C8C77&gt;*You get the feeling these brambles aren't of the mind to simply allow you to pass into the barrow. Perhaps if you could satiate their thirst somehow? But first you'd have to know what they thirst for. You think it may be best to look for advice from an alchemist within the smuggler village of the swamp.*&lt;/color&gt;" posx="1674" posy="18">
+		<option optionid="1" optiontext="" next="0" checks="Var=Q54SwampAlchemyTracker-0-0" actions="SetVar=Q54SwampAlchemyTracker-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Leave." next="0" checks="!Var=Q54SwampAlchemyTracker-0-0"></option>
+	</node>
+	<node id="55" npcName="Bramble Door" anim="1" text="&lt;color=#9C8C77&gt;*Just as before, the rustling of the brambles turns into a familiar chant.*&lt;/color&gt;\n\nThirsty... thirsty... thirsty... thirsty... thirsty...!" posx="610" posy="609">
+		<option optionid="1" itemIcon="554" optiontext="&lt;color=#9C8C77&gt;*Pour a vial of concentrated blood onto the roots.*&lt;/color&gt;" next="56" checks="HasItem=554-1" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="56" npcName="Bramble Door" anim="1" text="&lt;color=#9C8C77&gt;*The dark brambles quiver in excitement!*&lt;/color&gt;" posx="1022" posy="609">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=184,RemoveItems=554-1" icon="Quest"></option>
+	</node>
+
+
+</dialogue>
+
+
+
+

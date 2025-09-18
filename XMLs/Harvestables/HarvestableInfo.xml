@@ -1,0 +1,321 @@
+<harvestables>
+	<harvestable typeid="1" harvestSfx="94" name="Spruce" animation="510" takehitanimation="880" interactDistance="1.5" endSfx="70" receiveItemSfx="532" actionname="Chop" desc="A common tree" level="1" endgfx="8" skill="Woodcutting" tool="hatchet" health="3-5" harvesttime="1500" hittime="800" respawntime="60" tree="1">
+		<item id="61" comment="Spruce log" minamount="1" maxamount="1" droprate="4" droprateboost="10" amountboost="0"></item>
+		<item id="145" comment="acorn" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" dontconsumehealth="1"></item>
+		<item id="145" comment="acorn" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" checks="HasTrait=204" dontconsumehealth="1"></item>
+		<item id="943" comment="firewood" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" checks="HasTrait=205" dontconsumehealth="1"></item>
+	</harvestable>
+	<harvestable typeid="2" harvestSfx="4" name="Copper Ore" actionname="Mine" desc="" animation="33" level="1" skill="mining" tool="pickaxe" health="5-10" harvesttime="1500" hittime="750" respawntime="60">
+		<item id="33" minamount="1" maxamount="1" droprate="4" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="3" harvestSfx="4" name="Iron Ore" actionname="Mine" desc="" animation="33" level="20" endgfx="0" skill="mining" tool="pickaxe" health="5-10" harvesttime="1500" hittime="750" respawntime="60">
+		<item id="34" minamount="1" maxamount="1" droprate="5" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="6" harvestSfx="94" name="Oak" actionname="Chop" interactDistance="1.5" animation="510"  takehitanimation="880" endSfx="70" desc="A common tree" receiveItemSfx="532" level="20" endgfx="39" skill="Woodcutting" tool="hatchet" health="4-7" harvesttime="1500" hittime="900" respawntime="60" tree="1">
+		<item id="62" minamount="1" maxamount="1" droprate="5" droprateboost="10" amountboost="0"></item>
+		<item id="145" comment="acorn" minamount="1" maxamount="1" droprate="10" droprateboost="10" amountboost="0" dontconsumehealth="1"></item>
+		<item id="145" comment="acorn" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" checks="HasTrait=204" dontconsumehealth="1"></item>
+		<item id="943" comment="firewood" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" checks="HasTrait=205" dontconsumehealth="1"></item>
+	</harvestable>
+	<harvestable typeid="9" harvestSfx="0" name="Wild Goopy" actionname="Fish" interactDistance="15" animation="106" desc="A common fys" level="1" endgfx="0" skill="Fishing" tool="fishingrod" health="5-10" harvesttime="5000" respawntime="60">
+		<item id="105" minamount="1" maxamount="1" droprate="2" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="10" harvestSfx="0" name="Barley" animation="15" actionname="Harvest" desc="Barley" level="1" endgfx="0" skill="none" health="2-4" harvesttime="1000" respawntime="300">
+		<item id="220" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="11" harvestSfx="515" name="Redberries" animation="17" actionname="Pick" desc="" level="2" endgfx="0" skill="Alchemy" health="2-4" harvesttime="1000" respawntime="60">
+		<item id="168" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+		<item id="145" comment="acorn" minamount="1" maxamount="1" droprate="10" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+
+	<harvestable typeid="12" harvestSfx="0"  name="Pebble Sturgeon" interactDistance="15" actionname="Fish" receiveItemSfx="86" animation="106" desc="A common fys" level="10" endgfx="0" skill="Fishing" tool="fishingrod" health="5-20" harvesttime="5000" respawntime="60">
+		<item id="186" minamount="1" maxamount="1" droprate="3" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+
+
+	<harvestable typeid="13" harvestSfx="0" name="Arcane Everbloom" hidemilestone="1" animation="17" actionname="Pick" desc="" level="1" skill="Alchemy" health="3-3" harvesttime="1500" respawntime="60">
+		<item id="223" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="14" harvestSfx="0" name="Mageflower" hidemilestone="1" animation="15" actionname="Pick" desc="" level="5"  skill="Alchemy" health="1-1" harvesttime="1500" respawntime="60">
+		<item id="224" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="15" harvestSfx="515" name="Blueberries" animation="17" actionname="Pick" desc="" level="2"  skill="Alchemy" health="2-4" harvesttime="1000" respawntime="60">
+		<item id="233" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+		<item id="145" comment="acorn" minamount="1" maxamount="1" droprate="10" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="18" harvestSfx="0" name="Dust" nohighlight="1" hideMinimap="1" noLeftClickInteract="1" animation="511" actionname="Clean" desc="" level="1" endgfx="0" tool="broom" skill="none" health="5-10" harvesttime="1500" respawntime="60">
+		<item id="168" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="19" harvestSfx="4" name="Coal" actionname="Mine" desc="" animation="33" level="35" skill="mining" tool="pickaxe" health="5-10" harvesttime="1500" hittime="750" respawntime="60">
+		<item id="349" minamount="1" maxamount="1" droprate="5" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="20" harvestSfx="0" name="Cavern Puffball" animation="15" actionname="Pick" desc="" level="10"  skill="Alchemy" health="2-4" harvesttime="1000" respawntime="60">
+		<item id="358" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="21" harvestSfx="0"  name="Charcoal Snapper" actionname="Fish" interactDistance="15" receiveItemSfx="86" animation="106" desc="A common fys" level="20" endgfx="0" skill="Fishing" tool="fishingrod" health="5-10" harvesttime="5000" respawntime="60">
+		<item id="187" minamount="1" maxamount="1" droprate="3" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="22" harvestSfx="0"  name="Sandstone Grouper" actionname="Fish"  interactDistance="15" receiveItemSfx="86" animation="106" desc="A common fys" level="40" endgfx="0" skill="Fishing" tool="fishingrod" health="5-10" harvesttime="5000" respawntime="60">
+		<item id="189" minamount="1" maxamount="1" droprate="3" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="28" harvestSfx="0"  name="Horsetail Reed Bass" interactDistance="15" actionname="Fish" receiveItemSfx="86" animation="106" desc="A common fys" level="30" endgfx="0" skill="Fishing" tool="fishingrod" health="5-10" harvesttime="5000" respawntime="60">
+		<item id="188" minamount="1" maxamount="1" droprate="2" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+
+	<harvestable typeid="30" harvestSfx="515" name="Heartbell Vine" animation="17" actionname="Pick" desc="" level="54" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="430" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="31" harvestSfx="515" name="Bloodpetal Rose" hidemilestone="1" animation="17" actionname="Pick" desc="" level="84" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="431" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="32" harvestSfx="515" name="Lakesberry" hidemilestone="1" animation="17" actionname="Pick" desc="" level="5" endgfx="0" skill="Alchemy" health="3-3" harvesttime="1000" respawntime="60">
+		<item id="432" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="33" harvestSfx="515" name="Silvermirror Iris" hidemilestone="1" animation="17" actionname="Pick" desc="" level="35" endgfx="0" skill="Alchemy" health="4-6" harvesttime="1000" respawntime="60">
+		<item id="433" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="34" harvestSfx="515" name="Sorcerer's Weed" hidemilestone="1" animation="17" actionname="Pick" desc="" level="50" endgfx="0" skill="Alchemy" health="6-10" harvesttime="1000" respawntime="60">
+		<item id="434" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="35" harvestSfx="0" name="Red Nymph" hidemilestone="1" actionname="Fish" desc="I could fish that." level="34" endgfx="0" animation="106" skill="Alchemy" tool="fishingrod" health="1-1" harvesttime="4000" respawntime="30">
+		<item id="435" checks="HasSkillLevel=Fishing-10" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+		<item id="461" checks="!HasSkillLevel=Fishing-10" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="36" harvestSfx="515" name="Noblerose" hidemilestone="1" animation="17" actionname="Pick" desc="" level="20" endgfx="0"  skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="436" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="37" harvestSfx="515" name="Ancient's Tears" animation="17" actionname="Pick" desc="" level="21" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="437" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="38" harvestSfx="515" name="Dandelions" animation="15" actionname="Pick" desc="" level="1" endgfx="0" skill="Alchemy" health="5-5" harvesttime="1000" respawntime="180">
+		<item id="438" minamount="1" maxamount="2" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="39" harvestSfx="515" name="Dawnflame Ivy" hidemilestone="1" animation="17" actionname="Pick" desc="" level="62" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="439" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="40" harvestSfx="515" name="Night's Bloom" hidemilestone="1" animation="17" actionname="Pick" desc="" level="44" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="440" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="41" harvestSfx="515" name="Falls Hydrangea" hidemilestone="1" animation="17" actionname="Pick" desc="" level="8" endgfx="0" skill="Alchemy" health="1-3" harvesttime="1000" respawntime="60">
+		<item id="441" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="42" harvestSfx="515" name="Wight's Pearls" comment="Greywall alchemy plant" animation="17" actionname="Pick" desc="" level="40" endgfx="0" skill="Alchemy" health="1-3" harvesttime="1000" respawntime="60">
+		<item id="442" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+
+	<harvestable typeid="44" harvestSfx="515" name="Voidlight Tendril" hidemilestone="1" animation="17" actionname="Pick" desc="" level="100" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="444" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="45" harvestSfx="515" name="Autumnleaf Lily" hidemilestone="1" animation="17" actionname="Pick" desc="" level="70" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="445" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="46" harvestSfx="515" name="Cloud Yarrow" hidemilestone="1" animation="17" actionname="Pick" desc="" level="53" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="446" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="47" harvestSfx="515" name="Spellspore Cap" hidemilestone="1" animation="17" actionname="Pick" desc="" level="18" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="447" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="48" harvestSfx="515" name="Sorrowleaf" hidemilestone="1" animation="17" actionname="Pick" desc="" level="90" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="448" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="49" harvestSfx="515" name="Dreamylion" hidemilestone="1" animation="17" actionname="Pick" desc="" level="28" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="449" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="50" harvestSfx="515" name="Haniflower" hidemilestone="1" animation="17" actionname="Pick" desc="" level="10" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="450" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="51" harvestSfx="515" name="Royal Daisy" hidemilestone="1" animation="17" actionname="Pick" desc="" level="12" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="451" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="52" harvestSfx="515" name="Shyflower Orchid" hidemilestone="1" animation="17" actionname="Pick" desc="" level="76" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="452" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="53" harvestSfx="515" name="Drakefire Root" hidemilestone="1" animation="17" actionname="Pick" desc="" level="95" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="453" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="54" harvestSfx="515" name="Golden Sunflower" hidemilestone="1" animation="17" actionname="Pick" desc="" level="15" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="454" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="55" harvestSfx="515" name="Poppy of the Fallen" comment="mountains battlefields plant" animation="17" actionname="Pick" desc="" level="51" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="455" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="56" harvestSfx="515" name="Deepforest Daisy" animation="17" actionname="Pick" desc="" level="15" endgfx="0" skill="Alchemy" health="1-4" harvesttime="1000" respawntime="60">
+		<item id="456" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="57" harvestSfx="515" name="Queen's Lily" hidemilestone="1" animation="17" actionname="Pick" desc="" level="73" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="457" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="58" harvestSfx="515" name="Radiant Sunflower" animation="17" actionname="Pick" desc="" level="20" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="458" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="59" harvestSfx="515" name="Evening's Cup" hidemilestone="1" animation="17" actionname="Pick" desc="" level="66" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="459" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="60" harvestSfx="515" name="Golden Tulip" hidemilestone="1" animation="17" actionname="Pick" desc="" level="88" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="460" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="61" harvestSfx="0" name="Eggplants" animation="15" actionname="Harvest" desc="Eggplant" level="1" endgfx="0" skill="none" health="2-4" harvesttime="1000" respawntime="300">
+		<item id="275" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="62" harvestSfx="0" name="Chili Peppers" animation="15" actionname="Harvest" desc="Peppers" level="1" endgfx="0" skill="none" health="2-4" harvesttime="1000" respawntime="300">
+		<item id="294" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="63" harvestSfx="0" name="Corn" animation="15" actionname="Harvest" desc="Corn" level="1" endgfx="0" skill="none" health="2-4" harvesttime="1000" respawntime="300">
+		<item id="274" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="64" harvestSfx="0" name="Carrots" animation="15" actionname="Harvest" desc="Carrots" level="1" endgfx="0" skill="none" health="2-4" harvesttime="1000" respawntime="300">
+		<item id="273" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="65" harvestSfx="0" name="Radishes" animation="15" actionname="Harvest" desc="Radishes" level="1" endgfx="0" skill="none" health="2-4" harvesttime="1000" respawntime="300">
+		<item id="291" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="66" harvestSfx="0" name="Pumpkins" animation="15" actionname="Harvest" desc="Pumpkins" level="1" endgfx="0" skill="none" health="2-4" harvesttime="1000" respawntime="300">
+		<item id="284" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="67" harvestSfx="0" name="Northwind Cotton" animation="15" actionname="Harvest" interactDistance="2" desc="Cotton" level="20" endgfx="0" skill="tailoring" health="2-4" harvesttime="1000" respawntime="300">
+		<item id="126" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="68" harvestSfx="4" name="Arakite Ore" actionname="Mine" desc="" animation="33" level="5" endgfx="0" skill="mining" tool="pickaxe" health="5-10" harvesttime="1500" hittime="750" respawntime="60">
+		<item id="615" minamount="1" maxamount="1" droprate="3" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="69" comment="nice" harvestSfx="0" name="Potatoes" animation="15" actionname="Harvest" desc="Potatoes" level="1" endgfx="0" skill="none" health="2-4" harvesttime="1000" respawntime="300">
+		<item id="283" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="70" harvestSfx="0" name="Cabbage" animation="15" actionname="Harvest" desc="Cabbage" level="1" endgfx="0" skill="none" health="2-4" harvesttime="1000" respawntime="300">
+		<item id="670" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="71" harvestSfx="515" name="Nest" animation="15" actionname="Harvest" desc="Nest with eggs" level="1" endgfx="0" skill="none" health="3-3" harvesttime="1000" respawntime="300">
+		<item id="684" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="72" harvestSfx="4" name="MinigameOre" hidemilestone="1" actionname="Mine" desc="" animation="33" level="1" skill="mining" tool="pickaxe" health="20-25" harvesttime="1500" hittime="750" respawntime="60">
+		<item id="764" comment="MinigameOre" minamount="1" maxamount="1" droprate="5" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="73" harvestSfx="515" name="Sweetgrass" animation="17" actionname="Pick" desc="" level="12" endgfx="0" skill="alchemy" health="1-3" harvesttime="1000" respawntime="60">
+		<item id="907" comment="Medicinal Herbs" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="74" harvestSfx="515" name="Soothing Mallow" visibilitychecks="Quest=87-8-999" animation="15" actionname="Pick" desc="" level="1" endgfx="0" skill="none" health="1-1" harvesttime="1000" respawntime="180">
+		<item id="914" comment="Medicinal Herbs" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="75" harvestSfx="0" name="Aurora Trout" comment="For Quest 89" actionname="Fish" interactDistance="15" animation="106" desc="A common fys" level="20" endgfx="0" skill="Fishing" tool="fishingrod" health="5-10" harvesttime="5000" respawntime="60">
+		<item id="960" minamount="1" maxamount="1" droprate="5" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="76" harvestSfx="515" name="Waspheart Iris" animation="15" comment="grows around Aurfield, to make speed potions" actionname="Pick" desc="" level="17" endgfx="0" skill="alchemy" health="1-3" harvesttime="1000" respawntime="300">
+		<item id="978" comment="Medicinal Herbs" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="77" harvestSfx="94" name="Glowing Willow" animation="510" takehitanimation="880" interactDistance="1.5" endSfx="70" receiveItemSfx="532" actionname="Chop" desc="A common tree" level="9" endgfx="169" skill="Woodcutting" tool="hatchet" health="3-5" harvesttime="1500" hittime="800" respawntime="60" tree="1">
+		<item id="977" comment="glowing willow log" minamount="1" maxamount="1" droprate="4" droprateboost="10" amountboost="0"></item>
+		<item id="145" comment="acorn" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" dontconsumehealth="1"></item>
+		<item id="603" comment="glowing orb" minamount="1" maxamount="1" droprate="35" dontconsumehealth="1"></item>
+		<item id="145" comment="acorn" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" checks="HasTrait=204" dontconsumehealth="1"></item>
+		<item id="943" comment="firewood" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" checks="HasTrait=205" dontconsumehealth="1"></item>
+	</harvestable>
+	<harvestable typeid="78" harvestSfx="515" name="Firestick Plant" animation="17" actionname="Pick" desc="" level="5" endgfx="0" skill="alchemy" health="1-3" harvesttime="1000" respawntime="60">
+		<item id="997" comment="Firestick plant" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="79" harvestSfx="94" name="Wildsfir" actionname="Chop" desc="" animation="510" level="15" endgfx="173" skill="Woodcutting" tool="hatchet" health="4-12" harvesttime="1500" respawntime="60" tree="1">
+		<item id="1007" minamount="1" maxamount="1" droprate="4" droprateboost="0" amountboost="0"></item>
+		<item id="1006" comment="mystic amber" minamount="1" maxamount="1" droprate="25" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="80" harvestSfx="0"  name="Sunburst Marlin" hidemilestone="1" actionname="Fish" interactDistance="15" receiveItemSfx="86" animation="106" desc="A common fys" level="20" endgfx="0" skill="Fishing" tool="fishingrod" health="5-10" harvesttime="5000" respawntime="60">
+		<item id="1042" minamount="1" maxamount="1" droprate="3" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="81" harvestSfx="515" name="Puppet Flower" hidemilestone="1" animation="17" actionname="Pick" desc="" level="84" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="431" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="82" harvestSfx="515" name="Spider Egg" hidemilestone="1" animation="17" actionname="Pick" desc="" level="1" endgfx="0" skill="Alchemy" health="1-1" harvesttime="1000" respawntime="60">
+		<item id="1135" minamount="1" maxamount="3" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="83" harvestSfx="515" name="Gravelstem Whiteflower" animation="17" actionname="Pick" desc="" level="35" endgfx="0" skill="Alchemy" health="2-4" harvesttime="1000" respawntime="60">
+		<item id="1181" minamount="1" maxamount="3" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="84" harvestSfx="515" name="Marshland Feather Reed" animation="17" actionname="Pick" desc="" level="35" endgfx="0" skill="Alchemy" health="2-4" harvesttime="1000" respawntime="60">
+		<item id="1182" minamount="1" maxamount="3" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="85" harvestSfx="515" name="Darkmire Damp Root" animation="17" actionname="Pick" desc="" level="35" endgfx="0" skill="Alchemy" health="2-4" harvesttime="1000" respawntime="60">
+		<item id="1183" minamount="1" maxamount="3" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="86" harvestSfx="4" name="Ore Cluster" visibilitychecks="HasTrait=274" actionname="Mine" desc="" animation="33" level="35" endgfx="0" skill="mining" tool="pickaxe" health="10-20" harvesttime="1500" hittime="750" respawntime="900">
+		<item id="1241" minamount="1" maxamount="1" droprate="5" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="87" harvestSfx="515" name="Wildgrowth" visibilitychecks="HasTrait=275" animation="937" actionname="Pick" desc="" level="35" endgfx="0" skill="Alchemy" health="10-20" harvesttime="3000" respawntime="900">
+		<item id="1242" minamount="1" maxamount="1" droprate="2" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="88" harvestSfx="4" name="Black Stone" animation="33" actionname="Mine" desc="Saltpeter Mine" level="25" endgfx="0" skill="mining" tool="pickaxe" health="2-4" harvesttime="1500" hittime="750" respawntime="900">
+		<item id="9054" comment="Explosive Material" minamount="1" maxamount="1" droprate="3" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+
+
+	<harvestable typeid="100" harvestSfx="0"  name="Rockwater Lobster" interactDistance="15" actionname="Fish" receiveItemSfx="86" animation="106" desc="A common fys" level="60" endgfx="0" skill="Fishing" tool="fishingrod" health="15-20" harvesttime="5000" respawntime="60">
+		<item id="2003" minamount="1" maxamount="1" droprate="2" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="101" harvestSfx="0"  name="Frostmelt Karp" interactDistance="15" actionname="Fish" receiveItemSfx="86" animation="106" desc="A common fys" level="75" endgfx="0" skill="Fishing" tool="fishingrod" health="15-20" harvesttime="5000" respawntime="60">
+		<item id="2004" minamount="1" maxamount="1" droprate="2" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="102" harvestSfx="0"  name="Icewater Eel" interactDistance="15" actionname="Fish" receiveItemSfx="86" animation="106" desc="A common fys" level="90" endgfx="0" skill="Fishing" tool="fishingrod" health="15-20" harvesttime="5000" respawntime="60">
+		<item id="2005" minamount="1" maxamount="1" droprate="2" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="103" harvestSfx="94" name="Highland Cypress" animation="510" takehitanimation="880" interactDistance="1.5" endSfx="70" receiveItemSfx="532" actionname="Chop" desc="A common tree" level="60" endgfx="246" skill="Woodcutting" tool="hatchet" health="15-20" harvesttime="1500" hittime="800" respawntime="60" tree="1">
+		<item id="2009" comment="log" minamount="1" maxamount="1" droprate="4" droprateboost="10" amountboost="0"></item>
+		<item id="145" comment="acorn" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" dontconsumehealth="1"></item>
+		<item id="145" comment="acorn" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" checks="HasTrait=204" dontconsumehealth="1"></item>
+		<item id="943" comment="firewood" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" checks="HasTrait=205" dontconsumehealth="1"></item>
+	</harvestable>
+	<harvestable typeid="104" harvestSfx="94" name="Deadwood Yew" animation="510" takehitanimation="880" interactDistance="1.5" endSfx="70" receiveItemSfx="532" actionname="Chop" desc="A common tree" level="75" endgfx="251" skill="Woodcutting" tool="hatchet" health="15-20" harvesttime="1500" hittime="800" respawntime="60" tree="1">
+		<item id="2010" comment="log" minamount="1" maxamount="1" droprate="4" droprateboost="10" amountboost="0"></item>
+		<item id="145" comment="acorn" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" dontconsumehealth="1"></item>
+		<item id="145" comment="acorn" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" checks="HasTrait=204" dontconsumehealth="1"></item>
+		<item id="943" comment="firewood" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" checks="HasTrait=205" dontconsumehealth="1"></item>
+	</harvestable>
+	<harvestable typeid="105" harvestSfx="94" name="Crystalbark Birch" animation="510" takehitanimation="880" interactDistance="1.5" endSfx="70" receiveItemSfx="532" actionname="Chop" desc="A common tree" level="90" endgfx="252" skill="Woodcutting" tool="hatchet" health="15-20" harvesttime="1500" hittime="800" respawntime="60" tree="1">
+		<item id="2011" comment="log" minamount="1" maxamount="1" droprate="4" droprateboost="10" amountboost="0"></item>
+		<item id="145" comment="acorn" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" dontconsumehealth="1"></item>
+		<item id="145" comment="acorn" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" checks="HasTrait=204" dontconsumehealth="1"></item>
+		<item id="943" comment="firewood" minamount="1" maxamount="1" droprate="15" droprateboost="10" amountboost="0" checks="HasTrait=205" dontconsumehealth="1"></item>
+	</harvestable>
+	<harvestable typeid="106" harvestSfx="4" name="Imberite Ore" actionname="Mine" desc="" animation="33" level="60" endgfx="0" skill="mining" tool="pickaxe" health="15-20" harvesttime="1500" hittime="750" respawntime="60">
+		<item id="2000" minamount="1" maxamount="1" droprate="4" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="107" harvestSfx="4" name="Titan's Blood Ore" actionname="Mine" desc="" animation="33" level="75" endgfx="0" skill="mining" tool="pickaxe" health="15-20" harvesttime="1500" hittime="750" respawntime="60">
+		<item id="2001" minamount="1" maxamount="1" droprate="5" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="108" harvestSfx="4" name="Ice Mountain Crystals" actionname="Mine" desc="" animation="33" level="90" endgfx="0" skill="mining" tool="pickaxe" health="15-20" harvesttime="1500" hittime="750" respawntime="60">
+		<item id="2002" minamount="1" maxamount="1" droprate="5" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	
+	<harvestable typeid="109" harvestSfx="515" name="Skyfall Orchid" animation="15" actionname="Pick" desc="" level="60" endgfx="0" skill="alchemy" health="2-4" harvesttime="1000" respawntime="300">
+		<item id="443" comment="Medicinal Herbs" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="110" harvestSfx="515" name="Crystalvein Rose" animation="15" actionname="Pick" desc="" level="75" endgfx="0" skill="alchemy" health="2-4" harvesttime="1000" respawntime="300">
+		<item id="1317" comment="Medicinal Herbs" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="111" harvestSfx="515" name="Deep Earth Moss" animation="15" actionname="Pick" desc="" level="88" endgfx="0" skill="alchemy" health="2-4" harvesttime="1000" respawntime="300">
+		<item id="1321" comment="Medicinal Herbs" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="112" harvestSfx="0" name="Rye" animation="15" actionname="Harvest" desc="Rye" level="1" endgfx="0" skill="none" health="2-4" harvesttime="1000" respawntime="300">
+		<item id="284" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="113" harvestSfx="515" name="Soulgrowth Mushrooms" animation="15" actionname="Pick" desc="" level="47" endgfx="0" skill="alchemy" health="1-2" harvesttime="1000" respawntime="300">
+		<item id="1322" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="114" harvestSfx="515" name="Coldwater Lily" animation="15" actionname="Pick" desc="" level="51" endgfx="0" skill="alchemy" health="2-4" harvesttime="1000" respawntime="300">
+		<item id="1313" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="115" harvestSfx="515" name="Malicious Sporecap" animation="15" actionname="Pick" desc="" level="69" endgfx="0" skill="alchemy" health="1-1" harvesttime="1000" respawntime="300">
+		<item id="1314" minamount="1" maxamount="1" droprate="1" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="116" harvestSfx="94" name="Winterpine Tree" animation="510" takehitanimation="880" interactDistance="1.5" endSfx="70" receiveItemSfx="532" actionname="Chop" desc="A common tree" level="45" endgfx="261" skill="Woodcutting" tool="hatchet" health="15-20" harvesttime="1500" hittime="800" respawntime="60" tree="1">
+		<item id="9107" comment="log" minamount="1" maxamount="1" droprate="4" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="117" harvestSfx="4" name="Coldstone Iron" actionname="Mine" desc="" animation="33" level="45" endgfx="0" skill="mining" tool="pickaxe" health="15-20" harvesttime="1500" hittime="750" respawntime="60">
+		<item id="9108" minamount="1" maxamount="1" droprate="5" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="118" harvestSfx="4" name="Evergreen Hearth Firewood" comment="handled by script, xml entry to show milestone" actionname="Split" desc="" animation="33" level="40" endgfx="0" skill="Woodcutting" tool="pickaxe" health="15-20" harvesttime="1500" hittime="750" respawntime="60">
+		<item id="9118" minamount="1" maxamount="1" droprate="5" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="119" harvestSfx="4" name="Ice Fishing" comment="handled by script, xml entry to show milestone" actionname="Learn" desc="" animation="33" level="45" endgfx="0" skill="fishing" tool="pickaxe" health="15-20" harvesttime="1500" hittime="750" respawntime="60">
+		<item id="9109" minamount="1" maxamount="1" droprate="5" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+	<harvestable typeid="120" harvestSfx="94" name="Bramblewood Thicket" animation="510" takehitanimation="880" interactDistance="1.5" endSfx="70" receiveItemSfx="532" actionname="Chop" desc="A common tree" level="35"  skill="Woodcutting" tool="hatchet" health="5-10" harvesttime="1500" hittime="800" respawntime="60" tree="1">
+		<item id="9155" comment="log" minamount="1" maxamount="1" droprate="4" droprateboost="10" amountboost="0"></item>
+	</harvestable>
+</harvestables>

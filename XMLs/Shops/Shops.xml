@@ -1,0 +1,1153 @@
+<shops>
+	<shop shopid="1" name = "Armor">
+	</shop>
+	<shop shopid="3" name = "Haywind General Store" isgeneralstore="1">
+		<item id="139"></item>
+		<item id="141"></item>
+		<item id="167" name="fishing rod"></item>
+		<item id="485" name="rope"></item>
+		<item id="489" name="knife"></item>
+		<item id="490" name="hammer"></item>
+		<item id="322" name="nails"></item>
+		<item id="171" name="empty vial"></item>
+		<item id="492" name="plank"></item>
+		<item id="216" name="peasant clothes"></item>
+		<item id="676" name="torch"></item>
+	</shop>
+	<shop shopid="5" name = "Hydrobor Curios" comment="haywind magic store">
+		<item id="211" price="50" name="weakness"></item>
+		<item id="269" price="1800" name="Teleport book"></item>
+		<item id="307" price ="75" name="Teleport scroll"></item>
+
+		<item id="777" price ="40" name="House teleport scroll"></item>
+
+		<item id="163" name="novice magical robe"></item>
+		<item id="763" price="1200" name="Quenna's Reinvigoration spellbook"></item>
+
+		<item id="158" name="Wool wizard hat"></item>
+		<item id="335" name="Wool wizard robe"></item>
+		<item id="611" name="Grand Wool wizard hat" maxstock="0"></item>
+		<item id="612" name="Grand Wool wizard robe" maxstock="0"></item>
+		<item id="666" name="Spruce shield"></item>
+
+		<item id="694" price="1800" name="pyre's paralysis"></item>
+
+	</shop>
+	<shop shopid="6" name = "Potions">
+		<item id="169" maxstock="3"></item>
+		<item id="243" maxstock="1"></item>
+	</shop>
+	<shop shopid="7" name = "Haywind Armorer">
+		<item id="248" name="Copper armor"></item>
+		<item id="247" name="Copper helmet"></item>
+		<item id="250" name="Copper platearmor" maxstock="0"></item>
+		<item id="249" name="Copper platehelmet" maxstock="0"></item>
+		<item id="308" name="Sheep leather armor"></item>
+		<item id="315" name="Sheep leather hood"></item>
+		<item id="607" name="studded Sheep leather armor" maxstock="0"></item>
+		<item id="608" name="studded Sheep leather hood" maxstock="0"></item>
+		<item id="659" name="Sheepskin bracer"></item>
+		<item id="688" name="studded Sheepskin bracer" maxstock="0"></item>
+		<item id="135" name="Copper round shield"></item>
+		<item id="651" name="Copper kite shield" maxstock="0"></item>
+	</shop>
+	<shop shopid="8" name = "Hunter">
+		<item id="91" name = "Wolf Leather" maxstock="3" restocktime="120"></item>
+		<item id="92" name = "Cow Leather" maxstock="3" restocktime="120"></item>
+		<item id="93" name = "Sheep Leather" maxstock="3" restocktime="120"></item>
+		<item id="207" name = "Bear Leather" maxstock="3" price="140" restocktime="240"></item>
+		<item id="605" name = "bat fang" maxstock="3" price="140" restocktime="240"></item>
+		<item id="383" name = "Hunting crossbow" price="350"></item>
+	</shop>
+	<shop shopid="9" name = "Barnsy's Distillery">
+		<item id="483" price="0" name="abi book recovery"></item>
+		<item id="222" price="25" name="Whiskey"></item>
+		<item id="220" price="5" maxstock="10" restocktime="300" buyprice="1" name="Barley"></item>
+	</shop>
+	<shop shopid="10" name = "The Brinebridge Armorer" comment = "Thornhill Armor Store">
+		<item id="252" name="Iron armor"></item>
+		<item id="251" name="Iron helmet"></item>
+		<item id="254" name="Iron platearmor" maxstock="0"></item>
+		<item id="253" name="Iron platehelmet" maxstock="0"></item>
+		<item id="309" name="Troll leather armor"></item>
+		<item id="316" name="Troll leather hood"></item>
+		<item id="660" name="Trollskin bracelet"></item>
+		<item id="610" name="studded Troll leather armor" maxstock="0"></item>
+		<item id="609" name="studded Troll leather hood" maxstock="0"></item>
+		<item id="690" name="studded Trollskin bracelet" maxstock="0"></item>
+		<item id="341" name="Iron round shield"></item>
+		<item id="652" name="Iron kite shield" maxstock="0"></item>
+
+	</shop>
+	<shop shopid="11" name = "The Broken Cliff Arcanist" comment = "Thornhill Magic Store">
+		<item id="267" price="4500" name="Thornhill tp book"></item>
+		<item id="873" price="500" name="Thornhill tp scroll" maxstock="5" restocktime="300"></item>
+		<item id="354" name="Staff of water"></item>
+
+		<item id="665" name="oak wand"></item>
+		<item id="379" name="oak staff"></item>
+
+		<item id="145" name="unusual acorn" price="80" maxstock="5" restocktime="120"></item>
+		<item id="747" name="mistywood needles" price="140" maxstock="5" restocktime="120"></item>
+
+		<item id="501" name="Cotton wizard hat"></item>
+		<item id="500" name="Cotton wizard robe"></item>
+		<item id="613" name="Grand Cotton wizard hat" maxstock="0"></item>
+		<item id="614" name="Grand Cotton wizard robe" maxstock="0"></item>
+		<item id="634" name="Oaken shield"></item>
+	</shop>
+	<shop shopid="12" name = "Haywind Weapons" comment="haywind">
+		<item id="copper broadsword" maxstock="2" restocktime="120"></item>
+		<item id="copper dagger" maxstock="2" restocktime="120"></item>
+		<item id="copper battleaxe" maxstock="2" restocktime="120"></item>
+		<item id="copper greatsword" maxstock="2" restocktime="120"></item>
+		<item id="669" comment="tier 2 broadsword" maxstock="5" restocktime="120"></item>
+	</shop>
+	<shop shopid="13" name = "Haywind Meat Stall">
+		<item id="205" name="Cooked meat" maxstock="5" restocktime="60"></item>
+		<item id="182" name="Crab meat" maxstock="5" restocktime="60"></item>
+		<item id="214" name="Cooked chicken" maxstock="5" restocktime="60"></item>
+	</shop>
+	<shop shopid="14" name = "Haywind Vegetable Stall">
+		<item id="273" name="Corn" maxstock="3" restocktime="600"></item>
+		<item id="275" name="Eggplant" maxstock="3" restocktime="600"></item>
+		<item id="283" name="Potato" maxstock="3" restocktime="600"></item>
+		<item id="287" name="Lettuce" maxstock="3" restocktime="600"></item>
+		<item id="289" name="Tomato" maxstock="3" restocktime="600"></item>
+		<item id="290" name="Cucumber" maxstock="3" restocktime="600"></item>
+		<item id="273" name="Carrot" maxstock="3" restocktime="600"></item>
+	</shop>
+	<shop shopid="15" name = "Secret Tavern Menu">
+		<item id="298" name="Meat meal"></item>
+	</shop>
+	<shop shopid="16" name = "Dusteny's General Appliances" comment = "Thornhill General Store" isgeneralstore="1">
+		<item id="490" name="hammer"></item>
+		<item id="346" name="Iron Pickaxe"></item>
+		<item id="350" name="Iron Hatchet"></item>
+		<item id="167" name="Fishing Rod"></item>
+		<item id="322" name="nails"></item>
+		<item id="676" name="torch"></item>
+	</shop>
+	<shop shopid="17" name = "Ironspike Armaments" comment = "Thornhill Weapons Store">
+		<item id="176" name="copper warhammer"></item>
+		<item id="677" name="tempred copper dagger"></item>
+		<item id="687" name="tempred copper greatsword"></item>
+		<item id="151" name="Iron broadsword"></item>
+		<item id="217" name="Iron dagger"></item>
+		<item id="iron battleaxe"></item>
+		<item id="iron greatsword"></item>
+		<item id="687" name="tempered iron greatsword" maxstock="0"></item>
+	</shop>
+	<shop shopid="18" name = "Hydrobor Spells">
+		<item id="211" name="Weakness"></item>
+		<item id="212" name="Revive"></item>
+	</shop>
+	<shop shopid="19" name = "Hydrobor Equipment">
+		<item id="363" name="Hydrobor robe"></item>
+		<item id="336" name="Staff of ember"></item>
+		<item id="353" name="Staff of air"></item>
+	</shop>
+	<shop shopid="20" name = "The Fairy Shop">
+		<item id="389" name="Treant spell"></item>
+	</shop>
+	<shop shopid="21" name = "Katelyn's Bows" comment="haywind">
+		<item id="154" name="t1 bow"></item>
+		<item id="668" name="t2 bow"></item>
+		<item id="330" name="t1 crossbow"></item>
+		<item id="ring of accuracy"></item>
+		<item id="659" name="sheepskin bracer"></item>
+	</shop>
+	<shop shopid="22" name = "Mareya's Healing Shop">
+		<item id="168" name="redberries" maxstock="20" restocktime="15"></item>
+		<item id="169" name="Weak potion of healing" maxstock="3" restocktime="600"></item>
+	</shop>
+
+	<shop shopid="23" name = "Haywind Seamstress">
+		<item id="163" name="Slightly magical robes"></item>
+		<item id="sheepskin armor"></item>
+		<item id="sheepskin hood"></item>
+		<item id="wolfskin bracer"></item>
+		<item id="608" comment="studded sheepskin armor"></item>
+		<item id="607" comment="studded sheepskin hood"></item>
+		<item id="688" comment="studded sheepskin bracer"></item>
+	</shop>
+
+	<shop shopid="24" name = "Forvan's Smithy">
+		<item id="copper broadsword"></item>
+		<item id="copper dagger"></item>
+		<item id="copper round shield"></item>
+		<item id="copper plate helmet"></item>
+	</shop>
+
+	<shop shopid="25" name = "Opticus Aluminar">
+		<item id="169" name = "Mild Healing Potion"></item>
+		<item id="243" name="Potion of Accuracy"></item>
+		<item id="241" name="Focusing Crystal"></item>
+	</shop>
+	<shop shopid="26" name = "Haywind Inn">
+		<item id="296" comment="Beer"></item>
+		<item id="297" comment="Bread"></item>
+		<item id="164" comment="Whiskey"></item>
+	</shop>
+	<shop shopid="27" name = "Grainwater Grocery Store" pricemodifier="0.75">
+		<item id="297" name="Bread"></item>
+		<item id="273" name="carrot"></item>
+		<item id="274" name="corn"></item>
+		<item id="289" name="tomat"></item>
+		<item id="290" name="cucumbr"></item>
+		<item id="295" name="onion"></item>
+		<item id="744" name="salt"></item>
+	</shop>
+	<shop shopid="28" name = "Grainwater Fish Stall" pricemodifier="0.75">
+		<item id="105" name="goopy" maxstock="6" restocktime="60"></item>
+	</shop>
+
+	<shop shopid="29" name = "Grainwater General Store" isgeneralstore="1">
+		<item id="139"></item>
+		<item id="141"></item>
+		<item id="167" name="fishing rod"></item>
+		<item id="485" name="rope"></item>
+		<item id="489" name="knife"></item>
+		<item id="490" name="hammer"></item>
+		<item id="322" name="nails"></item>
+		<item id="171" name="empty vial"></item>
+		<item id="492" name="plank"></item>
+		<item id="216" name="peasant clothes"></item>
+		<item id="676" name="torch"></item>
+	</shop>
+	<shop shopid="30" name = "Ratcliffe pickaxe store" pricemodifier="0.85">
+		<item id="141" name="copper"></item>
+		<item id="346" name="iron"></item>
+		<item id="676" name="torch"></item>
+		<item id="961" name="shovel"></item>
+	</shop>
+
+	<shop shopid="31" name = "Ratcliffe General Store" isgeneralstore="1">
+		<item id="139"></item>
+		<item id="141"></item>
+		<item id="167" name="fishing rod"></item>
+		<item id="485" name="rope"></item>
+		<item id="489" name="knife"></item>
+		<item id="490" name="hammer"></item>
+		<item id="322" name="nails"></item>
+		<item id="171" name="empty vial"></item>
+		<item id="492" name="plank"></item>
+		<item id="216" name="peasant clothes"></item>
+		<item id="676" name="torch"></item>
+	</shop>
+
+	<shop shopid="32" name = "Spruce Shade General Store" isgeneralstore="1">
+		<item id="167" name="fishing rod"></item>
+		<item id="485" name="rope"></item>
+		<item id="489" name="knife"></item>
+		<item id="490" name="hammer"></item>
+		<item id="322" name="nails"></item>
+		<item id="171" name="empty vial"></item>
+		<item id="492" name="plank"></item>
+		<item id="216" name="peasant clothes"></item>
+		<item id="297" name="bread" price="10" maxstock="5" restocktime="60"></item>
+		<item id="233" name="blueberries" price="10" maxstock="5" restocktime="60"></item>
+		<item id="676" name="torch"></item>
+	</shop>
+	<shop shopid="33" name = "Hydrobor Accessories" comment="haywind">
+		<item id="337" price="230" name="Magicky ring"></item>
+		<item id="662" price="420" name="Magicky ring2"></item>
+		<item id="663" price="550" name="Magicky ring3"></item>
+	</shop>
+	<shop shopid="34" name = "Hydrobor Spellwood" comment="haywind">
+		<item id="664" name="spruce wand"></item>
+		<item id="378" name="spruce staff"></item>
+		<item id="336" name="Ember staff"></item>
+		<item id="353" name="Air staff"></item>
+	</shop>
+	<shop shopid="35" name = "Ratcliffe Swords" comment="ratcliffe">
+		<item id="669" name="tier 2 broadsword"></item>
+		<item id="copper broadsword" name="tier 2 broadsword"></item>
+	</shop>
+	<shop shopid="36" name = "Aaron Summervale" comment="timberwell">
+		<item id="490" name="hammer"></item>
+		<item id="Copper hatchet"></item>
+		<item id="Copper pickaxe"></item>
+		<item id="489" name="knife"></item>
+		<item id="417" name="book of blacksmithing" price="30" maxstock="2" restocktime="300"></item>
+		<item id="413" name="book of mining" price="30" maxstock="2" restocktime="300"></item>
+		<item id="33" name="copper ore" maxstock="3" restocktime="300"></item>
+	</shop>
+	<shop shopid="37" name = "Haywind Candle Store" comment="haywind">
+		<item id="639" name="candldewax"></item>
+		<item id="torch"></item>
+	</shop>
+	<shop shopid="38" name = "Fisherman" comment="generic" >
+		<item id="167" name="fishing rod"></item>
+		<item id="934" name="gutty knife" price="300" checks="HasTrait=199"></item>
+	</shop>
+
+	<shop shopid="39" name = "General Store" comment="generic" isgeneralstore="1">
+		<item id="139"></item>
+		<item id="141"></item>
+		<item id="167" name="fishing rod"></item>
+		<item id="485" name="rope"></item>
+		<item id="489" name="knife"></item>
+		<item id="490" name="hammer"></item>
+		<item id="322" name="nails"></item>
+		<item id="171" name="empty vial"></item>
+		<item id="492" name="plank"></item>
+		<item id="216" name="peasant clothes"></item>
+		<item id="961" name="shovel"></item>
+		<item id="676" name="torch"></item>
+	</shop>
+
+	<shop shopid="40" name = "Grainwater Tavern">
+		<item id="296" comment="Beer"></item>
+		<item id="297" comment="Bread"></item>
+		<item id="298" name="Meat meal"></item>
+	</shop>
+
+	<shop shopid="41" name = "Alchemist">
+		<item id="243"></item>
+		<item id="359"></item>
+	</shop>
+
+	<shop shopid="42" name = "Leatherworker">
+		<item id="315"></item>
+		<item id="308"></item>
+		<item id="659"></item>
+	</shop>
+	<shop shopid="43" name = "Fog's Dwindling General Store" isgeneralstore="1">
+		<item id="139"></item>
+		<item id="141"></item>
+		<item id="167" name="fishing rod"></item>
+		<item id="485" name="rope"></item>
+		<item id="489" name="knife"></item>
+		<item id="490" name="hammer"></item>
+		<item id="322" name="nails"></item>
+		<item id="171" name="empty vial"></item>
+		<item id="492" name="plank"></item>
+		<item id="216" name="peasant clothes"></item>
+		<item id="676" name="torch"></item>
+	</shop>
+	<shop shopid="44" name = "Tavern">
+		<item id="beer"></item>
+		<item id="steak"></item>
+	</shop>
+	<shop shopid="45" name = "Fog's Dwindling Hunting Store">
+		<item id="hunting spear"></item>
+		<item id="spruce bow"></item>
+		<item id="723" name="Goblin bow"></item>
+
+	</shop>
+	<shop shopid="46" name = "Fog's Dwindling Grocery Store">
+		<item id="297" name="Bread" maxstock="5" restocktime="600"></item>
+		<item id="205" name="cooked meat" maxstock="5" restocktime="600"></item>
+		<item id="bucket of water" maxstock="5" restocktime="600"></item>
+		<item id="743" name="salted meat" maxstock="3" restocktime="600"></item>
+		<item id="744" name="salt"></item>
+	</shop>
+	<shop shopid="47" name = "Fog's Dwindling Alchemist">
+		<item id="169" name="Smol hp potion" maxstock="5" restocktime="300"></item>
+		<item id="476" name="hp potion" maxstock="1" restocktime="3600"></item>
+	</shop>
+	<shop shopid="48" name = "Fog's Dwindling Weapon Merchant">
+		<item id="copper broadsword" name=""></item>
+		<item id="copper greatsword" name=""></item>
+		<item id="Haywoods Sickle Sword" name=""></item>
+		<item id="iron dagger" name="" maxstock="0"></item>
+		<item id="722" name="goblin dagger" maxstock="0"></item>
+		<item id="iron broadsword" name="" maxstock="0"></item>
+	</shop>
+	<shop shopid="49" name = "Healer" comment="healer guard outside west hw bandit village">
+		<item id="mild healing potion" name="" maxstock="3"></item>
+		<item id="mild mana potion" name="" maxstock="3"></item>
+		<item id="bucket of water" name=""></item>
+		<item id="745" name="healer bracelet"></item>
+		<item id="steak" name="" maxstock="5"></item>
+	</shop>
+
+	<shop shopid="50" name = "Silverhair Bows" comment = "Thornhill archery Store">
+		<item id="155" name="Oak bow"></item>
+		<item id="361" name="Oak crossbow"></item>
+		<item id="749" name="reinforced Oak bow"></item>
+	</shop>
+
+	<shop shopid="51" name = "Haywind Potion Store">
+		<item id="533" name="potion of healing" maxstock="3" restocktime="600"></item>
+		<item id="535" name="mana potion" maxstock="3" restocktime="600"></item>
+
+		<item id="243" name="phy acc" maxstock="1" restocktime="600"></item>
+		<item id="795" name="ra acc" maxstock="1" restocktime="600"></item>
+		<item id="359" name="ma acc" maxstock="1" restocktime="600"></item>
+
+		<item id="800" name="phy da" maxstock="1" restocktime="600"></item>
+		<item id="797" name="ra da" maxstock="1" restocktime="600"></item>
+		<item id="802" name="ma da" maxstock="1" restocktime="600"></item>
+
+		<item id="806" name="phy res" maxstock="1" restocktime="600"></item>
+		<item id="804" name="ra res" maxstock="1" restocktime="600"></item>
+		<item id="808" name="ma res" maxstock="1" restocktime="600"></item>
+
+		<item id="476" name="Potion of greater Healing" maxstock="1" restocktime="600"></item>
+		<item id="537" name="Potion of greater mana" maxstock="1" restocktime="600"></item>
+	</shop>
+	<shop shopid="52" name = "Haywind Jewelry Store">
+		<item id="812" price="1240" name="all the mass produce rings okey"></item>
+		<item id="813" price="1240" name=""></item>
+		<item id="814" price="1240" name=""></item>
+		<item id="815" price="1300" name=""></item>
+		<item id="816" price="1300" name=""></item>
+		<item id="817" price="1300" name=""></item>
+		<item id="818" price="1360" name=""></item>
+		<item id="819" price="1360" name=""></item>
+		<item id="820" price="1360" name="maybe something else after this"></item>
+	</shop>
+	<shop shopid="53" name = "Scavenger">
+	</shop>
+	<shop shopid="54" name = "Furniture test shop">
+	</shop>
+	<shop shopid="55" name = "Haywind Furniture Store">
+		<item id="1762" price="5000" maxstock="2" name="storage chest"></item>
+		<item id="1750" price="120" name=""></item>
+		<item id="1751" price="180" name=""></item>
+		<item id="1752" price="40" name=""></item>
+		<item id="1753" price="100" name=""></item>
+		<item id="1754" price="75" name=""></item>
+		<item id="1755" price="200" name=""></item>
+		<item id="1756" price="50" name=""></item>
+		<item id="1757" price="150" name=""></item>
+		<item id="1758" price="300" name=""></item>
+		<item id="1759" price="250" name=""></item>
+		<item id="1760" price="225" name=""></item>
+		<item id="1761" price="1250" name=""></item>
+		<item id="1763" price="80" name=""></item>
+		<item id="1764" price="650" name=""></item>
+		<item id="1767" price="250" name=""></item>
+		<item id="1768" price="160" name=""></item>
+		<item id="1769" price="80" name=""></item>
+		<item id="1770" price="100" name=""></item>
+		<item id="1771" price="150" name=""></item>
+		<item id="1772" price="50" name=""></item>
+		<item id="1773" price="80" name=""></item>
+		<item id="1774" price="40" name=""></item>
+		<item id="1775" price="80" name=""></item>
+		<item id="1776" price="120" name=""></item>
+		<item id="1777" price="80" name=""></item>
+		<item id="1778" price="300" name=""></item>
+		<item id="1779" price="200" name=""></item>
+		<item id="1780" price="40" name=""></item>
+		<item id="1781" price="150" name=""></item>
+		<item id="1782" price="150" name=""></item>
+		<item id="1783" price="50" name=""></item>
+		<item id="1784" price="150" name=""></item>
+		<item id="1785" price="250" name=""></item>
+		<item id="1786" price="150" name=""></item>
+		<item id="1787" price="50" name=""></item>
+		<item id="1789" price="800" name=""></item>
+		<item id="780" name=""></item>
+	</shop>
+	<shop shopid="56" name = "Timberwell Tavern">
+		<item id="296" comment="Beer"></item>
+		<item id="297" comment="Bread"></item>
+	</shop>
+	<shop shopid="57" name = "Traveling Mage" comment="Fogs dwindling">
+		<item id="728" comment="mistywoods tp" price="150" maxstock="1" restocktime="600"></item>
+		<item id="777" price ="40" name="House teleport scroll"></item>
+		<item id="236" comment="mana pot" maxstock="1" restocktime="600"></item>
+		<item id="359" comment="mage pot" maxstock="1" restocktime="600"></item>
+		<item id="802" comment="mage pot" maxstock="1" restocktime="600"></item>
+		<item id="808" comment="mage pot" maxstock="1" restocktime="600"></item>
+	</shop>
+	<shop shopid="58" name = "Marcus the Fence" comment="Thornhill jewels">
+		<item id="854" price="4499" name="all the mass produce rings okey"></item>
+		<item id="855" price="4499"  name=""></item>
+		<item id="856" price="4499"  name=""></item>
+		<item id="857" price="4899"  name=""></item>
+		<item id="858" price="4899"  name=""></item>
+		<item id="859" price="4899"  name=""></item>
+		<item id="860" price="5299"  name=""></item>
+		<item id="861" price="5299"  name=""></item>
+		<item id="862" price="5299"  name="maybe something else after this"></item>
+		<item id="1758" price="175" name=""></item>
+	</shop>
+	<shop shopid="59" name = "Elias Deadbolt" comment="smugglertown chests">
+		<item id="1762" price="5000" name=""></item>
+	</shop>
+	<shop shopid="60" name = "Beggar's Way Weapons Store" comment="">
+		<item id="151" name="Iron broadsword" maxstock="0"></item>
+		<item id="217" name="Iron dagger"></item>
+		<item id="330" name="spruce crossbow"></item>
+		<item id="176" name="warhammer"></item>
+		<item id="361" name="oak crossbow"></item>
+		<item id="iron battleaxe" maxstock="0"></item>
+		<item id="iron greatsword" maxstock="0"></item>
+		<item id="687" name="tempered iron greatsword" maxstock="0"></item>
+		<item id="412" name="book of weapons" maxstock="1" price="300" restocktime="600"></item>
+	</shop>
+	<shop shopid="61" name = "Thornhill Food Stall">
+		<item id="196" name="charcoal snapper" maxstock="2" restocktime="60"></item>
+		<item id="182" name="Crab meat" maxstock="2" restocktime="60"></item>
+		<item id="214" name="Cooked chicken" maxstock="2" restocktime="60"></item>
+		<item id="142" name="goopy" maxstock="5" restocktime="60"></item>
+	</shop>
+	<shop shopid="62" name = "Thornhill Potion Store">
+		<item id="476" name="potion of healing" maxstock="1" restocktime="600"></item>
+		<item id="169" name="Weak potion of healing" maxstock="3" restocktime="600"></item>
+
+		<item id="243" name="phy acc" maxstock="2" restocktime="600"></item>
+		<item id="795" name="ra acc" maxstock="2" restocktime="600"></item>
+		<item id="359" name="ma acc" maxstock="2" restocktime="600"></item>
+
+		<item id="800" name="phy da" maxstock="2" restocktime="600"></item>
+		<item id="797" name="ra da" maxstock="2" restocktime="600"></item>
+		<item id="802" name="ma da" maxstock="2" restocktime="600"></item>
+
+		<item id="806" name="phy res" maxstock="2" restocktime="600"></item>
+		<item id="804" name="ra res" maxstock="2" restocktime="600"></item>
+		<item id="808" name="ma res" maxstock="2" restocktime="600"></item>
+	
+		<item id="171" name="Empty Vial" maxstock="1" restocktime="600"></item>
+	</shop>
+	<shop shopid="63" name = "Thornhill Tailor">
+		<item id="335" name="magik robes"></item>
+		<item id="158" name="magik hat"></item>
+		<item id="604" name="magik thread" maxstock="3" restocktime="600"></item>
+	</shop>
+	<shop shopid="64" name = "Ratcliffe Charms Peddler">
+		<item id="921" name="Miner's charm" price="99"></item>
+	</shop>
+	<shop shopid="65" name = "Haywind Mining Trainer" pricemodifier="1.5">
+		<item id="413" name="xp book" maxstock="2" price="300" restocktime="1800"></item>
+		<item id="141" name="copper pickaxe"></item>
+		<item id="676" name="torch"></item>
+		<item id="485" name="rope"></item>
+		<item id="931" name="Chisel" price="300" checks="HasTrait=198"></item>
+		<item id="384" name="copper storage bag" price="250" checks="!ItemExistsGlobal=384" maxstock="1" restocktime="3600"></item>
+	</shop>
+	<shop shopid="66" name = "Haywind Fishing Trainer" pricemodifier="1.5">
+		<item id="411" name="xp book" maxstock="2" price="300" restocktime="1800"></item>
+		<item id="167" name="fishing rod"></item>
+		<item id="961" name="shovel" price="140"></item>
+		<item id="934" name="gutty knife" price="300" checks="HasTrait=199"></item>
+		<item id="790" name="goopy storage bag" price="250" checks="!ItemExistsGlobal=790" maxstock="1" restocktime="3600"></item>
+	</shop>
+	<shop shopid="67" name = "Haywind Woodsmanship Trainer" pricemodifier="1.5">
+		<item id="410" name="xp book" maxstock="2" price="300" restocktime="1800"></item>
+		<item id="139" name="copper hatchet"></item>
+		<item id="942" name="splitting axe" price="300" checks="HasTrait=203"></item>
+		<item id="388" name="spruce storage bag" price="250" checks="!ItemExistsGlobal=388" maxstock="1" restocktime="3600"></item>
+	</shop>
+	<shop shopid="68" name = "Haywind Alchemy Trainer" pricemodifier="1.5">
+		<item id="420" name="xp book" maxstock="2" price="300" restocktime="1800"></item>
+		<item id="792" name=" storage bag" price="250" checks="!ItemExistsGlobal=792" maxstock="1" restocktime="3600"></item>
+		<item id="793" name=" storage bag" price="250" checks="!ItemExistsGlobal=793" maxstock="1" restocktime="3600"></item>
+		<item id="234" maxstock="1" restocktime="3600" name="pestle"></item>
+		<item id="171" name="empty vial"></item>
+	</shop>
+	<shop shopid="69" name = "Haywind Smithing Trainer" pricemodifier="1.5">
+		<item id="417" name="xp book" maxstock="2" price="300" restocktime="1800"></item>
+		<item id="490" name="hammer"></item>
+		<item id="788" name="storage bag" price="250" checks="!ItemExistsGlobal=788" maxstock="1" restocktime="3600"></item>
+	</shop>
+	<shop shopid="70" name = "Haywind Sorcery Trainer" pricemodifier="1.5">
+		<item id="236" name="mana potion" maxstock="1" restocktime="900"></item>
+		<item id="415" name="xp book" maxstock="2"  price="300" restocktime="1800"></item>
+		<item id="359" name="ma acc" maxstock="2" restocktime="600"></item>
+
+	</shop>
+	<shop shopid="71" name = "Haywind Crafting Trainer" pricemodifier="1.5">
+		<item id="419" name="xp book" maxstock="2"  price="300" restocktime="1800"></item>
+		<item id="794" name="saw" price="150"></item>
+	</shop>
+	<shop shopid="72" name = "Haywind Attack Trainer" pricemodifier="1.5">
+		<item id="412" name="xp book" maxstock="2"  price="300" restocktime="1800"></item>
+		<item id="243" name="phy acc" maxstock="2" restocktime="600"></item>
+	</shop>
+	<shop shopid="73" name = "Haywind Defence Trainer" pricemodifier="1.5">
+		<item id="416" name="xp book" maxstock="2"  price="300" restocktime="1800"></item>
+		<item id="806" name="phy res" maxstock="1" restocktime="600"></item>
+		<item id="804" name="ra res" maxstock="1" restocktime="600"></item>
+	</shop>
+	<shop shopid="74" name = "Haywind Cooking Trainer" pricemodifier="1.5">
+		<item id="421" name="xp book" maxstock="2"  price="300" restocktime="1800"></item>
+		<item id="692" name="spoon" price="150"></item>
+		<item id="787" name="chef's hat" price="150"></item>
+		<item id="744" name="salt"></item>
+	</shop>
+	<shop shopid="75" name = "Haywind Archery Trainer" pricemodifier="1.5">
+		<item id="414" name="xp book" maxstock="2"  price="300" restocktime="1800"></item>
+		<item id="795" name="ra acc" maxstock="2" restocktime="600"></item>
+	</shop>
+	<shop shopid="76" name = "Haywind Tailoring Trainer" pricemodifier="1.5">
+		<item id="418" name="xp book" maxstock="2" price="300"  restocktime="1800"></item>
+		<item id="789" name="thimble" price="150"></item>
+		<item id="791" name="scissors" price="150"></item>
+	</shop>
+	<shop shopid="77" name = "Thornhill Preservation Society" comment="timberwell">
+		<item id="952" name="chalice" price="1200" maxstock="1" restocktime="600"></item>
+		<item id="953" name="throne" price="2400" maxstock="1" restocktime="600"></item>
+		<item id="954" name="crown" price="1600" maxstock="1" restocktime="600"></item>
+		<item id="1260" name="treasure pile 1" maxstock="1" restocktime="600" checks="Quest=95-999-999"></item>
+		<item id="1261" name="treasure pile 2" maxstock="1" restocktime="600" checks="Quest=95-999-999"></item>
+		<item id="1262" name="treasure pile 3" maxstock="1" restocktime="600" checks="Quest=95-999-999"></item>
+		<item id="1259" name="kandelbra" maxstock="1" restocktime="600" checks="Quest=95-999-999"></item>
+	</shop>
+	<shop shopid="78" name = "Shearston Estate" currencyTypeId="969" comment="tailory minigame shop">
+		<item id="418" price="50" name="tailoring xp book"></item>
+		<item id="529" price="200" name="fancy outfit"></item>
+		<item id="989" price="90" name="Shepard's Call"></item>
+		<item id="992" price="100" name="MagicalMagicCloth"></item>
+		<item id="994" price="300" name="TailoringTraitBook"></item>
+		<item id="998" price="140" name="wool storage bag"  nosell="1" checks="!ItemExistsGlobal=998" maxstock="1" restocktime="300"></item>
+		<item id="125" price="1" name="wool" maxstock="10" restocktime="60"></item>
+		<item id="970" price="100" maxstock="0" name="MagicalMagicCloth robes"></item>
+	</shop>
+	<shop shopid="79" name = "Aurfield Fish Stall" pricemodifier="0.75">
+		<item id="167" name="fishing rod" maxstock="1" restocktime="60"></item>
+		<item id="105" name="goopy" maxstock="6" restocktime="60"></item>
+		<item id="181" name="crab meat" maxstock="5" restocktime="60"></item>
+		<item id="186" name="pebble sturgeon" maxstock="4" restocktime="60"></item>
+		<item id="187" name="charcoal snapper" maxstock="3" restocktime="60"></item>
+	</shop>
+	<shop shopid="81" name = "Prowler's Thicket General Store" isgeneralstore="1">
+		<item id="141"></item>
+		<item id="167" name="fishing rod"></item>
+		<item id="485" name="rope"></item>
+		<item id="489" name="knife"></item>
+		<item id="490" name="hammer"></item>
+		<item id="322" name="nails"></item>
+		<item id="171" name="empty vial"></item>
+		<item id="492" name="plank"></item>
+		<item id="216" name="peasant clothes"></item>
+		<item id="676" name="torch"></item>
+	</shop>
+	<shop shopid="82" name = "Prowler's Thicket Woodcutting Supplies" pricemodifier="1.2">
+		<item id="139"></item>
+		<item id="794"></item>
+		<item id="1029"></item>
+	</shop>
+	<shop shopid="83" name = "Thornbark Sawmill" currencyTypeId="1025" comment="sawmill minigame shop">
+		<item id="410" price="5" name="xp book"></item>
+		<item id="1006" price="20" name="mystic amber" nosell="1"></item>
+		<item id="1021" price="100" name="outfit"></item>
+		<item id="1022" price="140" name="outfit"></item>
+		<item id="1023" price="120" name="outfit"></item>
+		<item id="1024" price="90" name="outfit"></item>
+		<item id="1009" price="70" name="tom outfit"></item>
+		<item id="1030" price="40" name="storage bag" maxstock="1" restocktime="900" checks="!ItemExistsGlobal=1030"></item>
+	</shop>
+	<shop shopid="84" name = "Harshwind Hunting" comment = "harshwind archery Store" pricemodifier="0.75">
+		<item id="155" name="Oak bow" maxstock="1" restocktime="600"></item>
+		<item id="361" name="Oak crossbow" maxstock="1" restocktime="600"></item>
+		<item id="749" name="reinforced Oak bow" maxstock="0"></item>
+		<item id="1010" name="troll crossbow" maxstock="0"></item>
+		<item id="795" name="ranged potion" maxstock="2" restocktime="300"></item>
+		<item id="797" name="ranged potion" maxstock="2" restocktime="300"></item>
+	</shop>
+	<shop shopid="85" name = "Thor Ganesh the Shaman" currencyTypeId="1006" comment = "Trollwood Mystic Store" >
+		<item id="1038" name="Spellbook: spirit heal" price="10"></item>
+		<item id="1036" name="antler helm low level"  nosell="1" price="20"></item>
+	</shop>
+	<shop shopid="86" name = "Miranda's Tonics" comment="quirky grainwater tonic seller">
+		<item id="mild healing potion" name="" restocktime="300" maxstock="2"></item>
+		<item id="mild mana potion" name="" restocktime="300" maxstock="2"></item>
+		<item id="806" name="dmg resi potion" restocktime="480" maxstock="1"></item>
+		<item id="bucket of water" name=""></item>
+		<item id="284" name="pumpuuukin"></item>
+	</shop>
+	
+	
+	<shop shopid="87" name = "Fenwater Fisherman" comment="">
+		<item id="105" name="goopy" maxstock="6" restocktime="60"></item>
+		<item id="181" name="crab meat" maxstock="5" restocktime="60"></item>
+	</shop>
+	<shop shopid="88" name = "Fenwater Jewelry Shop" comment="">
+		<item id="813" price="1240" name=""></item>
+		<item id="814" price="1240" name=""></item>
+		<item id="815" price="1300" name=""></item>
+		<item id="816" price="1300" name=""></item>
+		<item id="817" price="1300" name=""></item>
+		<item id="818" price="1360" name=""></item>
+		<item id="819" price="1360" name=""></item>
+	</shop>
+	<shop shopid="89" name = "Fenwater Weapons" comment="">
+		<item id="176" name="copper warhammer" maxstock="1" restocktime="300"></item>
+		<item id="677" name="tempred copper dagger" maxstock="1" restocktime="300"></item>
+		<item id="687" name="tempred copper greatsword" maxstock="1" restocktime="300"></item>
+		<item id="151" name="Iron broadsword" maxstock="1" restocktime="300"></item>
+		<item id="217" name="Iron dagger" maxstock="1" restocktime="300"></item>
+		<item id="330" name="spruce crossbow" maxstock="1" restocktime="300"></item>
+		<item id="361" name="oak crossbow" maxstock="1" restocktime="300"></item>
+	</shop>
+	<shop shopid="90" name = "Fenwater Meat Stall" comment="">
+		<item id="182" name="Crab meat" maxstock="2" restocktime="60"></item>
+		<item id="214" name="Cooked chicken" maxstock="2" restocktime="60"></item>
+		<item id="743" name="salted meat" maxstock="3" restocktime="600"></item>
+	</shop>
+	<shop shopid="91" name = "Fenwater Lumberjack" comment="">
+		<item id="61" name="Spruce Log" maxstock="5" restocktime="300"></item>
+		<item id="62" name="Oak Log" maxstock="5" restocktime="300"></item>
+	</shop>
+	<shop shopid="92" name = "Fenwater Farmer" comment="">
+		<item id="273" name="Carrot" maxstock="5" restocktime="300"></item>
+		<item id="274" name="Corn" maxstock="5" restocktime="300"></item>
+		<item id="284" name="Pumpkin" maxstock="5" restocktime="300"></item>
+		<item id="289" name="Tomato" maxstock="5" restocktime="300"></item>
+		<item id="293" name="Plum" maxstock="5" restocktime="300"></item>
+	</shop>
+	<shop shopid="93" name = "Fenwater Blacksmith" comment="">
+		<item id="150" name="Copper Broadsword" maxstock="1" restocktime="300"></item>
+		<item id="161" name="Copper Ingot" maxstock="3" restocktime="300"></item>
+		<item id="227" name="Iron Ingot" maxstock="2" restocktime="300"></item>
+		<item id="135" name="Copper Round Shield" maxstock="1" restocktime="300"></item>
+		<item id="238" name="Copper Dagger" maxstock="1" restocktime="300"></item>
+	</shop>
+	<shop shopid="94" name = "Fenwater Farmer's Shop" comment="">
+		<item id="213" name="Raw Chicken" maxstock="5" restocktime="300"></item>
+		<item id="276" name="Cheese" maxstock="5" restocktime="300"></item>
+		<item id="297" name="Bread" maxstock="5" restocktime="300"></item>
+		<item id="298" name="Hearty Meal" maxstock="1" restocktime="300"></item>
+		<item id="304" name="Salad" maxstock="1" restocktime="300"></item>
+		<item id="684" name="Egg" maxstock="5" restocktime="300"></item>
+	</shop>
+	<shop shopid="95" name = "Fenwater Carpenter's Shop" comment="">
+		<item id="1774" name="Wooden Stool" maxstock="1" restocktime="300"></item>
+		<item id="1756" name="Wooden Chair" maxstock="1" restocktime="300"></item>
+	</shop>
+	<shop shopid="96" name = "Fenwater Apothecary" comment="">
+		<item id="637" name="Nightsight Potion" maxstock="1" restocktime="300"></item>
+		<item id="169" maxstock="3" comment="hp"></item>
+		<item id="243" maxstock="1" comment="reflex"></item>
+	</shop>
+	<shop shopid="97" name = "Fenwater Fisherman" comment="">
+		<item id="105" name="Raw Wild Goopy" maxstock="5" restocktime="300"></item>
+		<item id="167" name="Fishing Rod" maxstock="1" restocktime="300"></item>
+		<item id="186" name="Raw Pebble Sturgeon" maxstock="5" restocktime="300"></item>
+	</shop>
+	
+	
+	
+	
+	<shop shopid="99" name="Unforgettable Festival Prizes" currencyTypeId="1130" comment="festival shop">
+		<item id="1118" price="250" name="jester outfit"></item>
+		<item id="1119" price="150" name="jester outfit"></item>
+		<item id="1792" price="50" name="furniture"></item>
+		<item id="1793" price="50" name="furniture"></item>
+		<item id="1794" price="50" name="furniture"></item>
+		<item id="1795" price="75" name="furniture"></item>
+		<item id="1796" price="25" name="furniture"></item>
+		<item id="1797" price="25" name="furniture"></item>
+
+		<item id="1100" price="25" name="outfit"></item>
+		<item id="1101" price="25" name="outfit"></item>
+		<item id="1102" price="25" name="outfit"></item>
+		<item id="1103" price="25" name="outfit"></item>
+		<item id="1109" price="25" name="outfit"></item>
+		<item id="1110" price="25" name="outfit"></item>
+		<item id="1111" price="25" name="outfit"></item>
+		<item id="1112" price="25" name="outfit"></item>
+
+
+		<item id="1131" price="120" name="executioner outfit"></item>
+		<item id="1132" price="80" name="executioner outfit"></item>
+	</shop>
+
+	<shop shopid="100" name="Festival Meat Vendor" comment="">
+		<item id="182" name="Crab meat" maxstock="2" restocktime="60"></item>
+		<item id="214" name="Cooked chicken" maxstock="2" restocktime="60"></item>
+		<item id="743" name="salted meat" maxstock="3" restocktime="600"></item>
+		<item id="938" name="Grilled Fish" maxstock="3" restocktime="600"></item>
+	</shop>
+	<shop shopid="101" name="Festival Jewelry Vendor" comment="">
+		<item id="812" name="Robust Iron Band" maxstock="2" restocktime="60"></item>
+		<item id="813" name="Stylish Iron Band" maxstock="2" restocktime="60"></item>
+		<item id="814" name="Graceful Iron Band" maxstock="3" restocktime="600"></item>
+	</shop>
+
+
+	<shop shopid="102" name="Iron Ike's Scrap Shop" comment="Metal scrap shop" currencyTypeId="1185">
+		<item id="1000033" price="20" name="Copper"></item>
+		<item id="1000034" price="80" name="Iron"></item>
+		<item id="1000349" price="80" name="Coal"></item>
+		<item id="1000423" price="200" name="golemstone"></item>
+		<item id="1263" name="hp scroll" price="2000"></item>
+		<item id="1264" name="mana scroll" price="2000"></item>
+		<item id="2108" price="5000" name="salvaging toolkit"></item>
+		<item id="9099" price="100" name="tp"></item>
+	</shop>
+	<shop shopid="103" name="Woody Willow's Scrap Shop" comment="" currencyTypeId="1195">
+		<item id="1000061" price="20" name="spruce"></item>
+		<item id="1000062" price="80" name="oak"></item>
+		<item id="1000632" price="200" name="living wood"></item>
+		<item id="1263" name="hp scroll" price="2000"></item>
+		<item id="1264" name="mana scroll" price="2000"></item>
+		<item id="2108" price="5000" name="salvaging toolkit"></item>
+		<item id="9099" price="100" name="tp"></item>
+	</shop>
+	<shop shopid="104" name="Fancy Fiona's Scrap Shop" comment="" currencyTypeId="1194">
+		<item id="1000093" price="20" name="sheep skin"></item>
+		<item id="1000125" price="20" name="wool"></item>
+		<item id="1000126" price="80" name="cotton"></item>
+		<item id="1000312" price="80" name="troll"></item>
+		<item id="1000424" price="200" name="troll claw"></item>
+		<item id="1263" name="hp scroll" price="2000"></item>
+		<item id="1264" name="mana scroll" price="2000"></item>
+		<item id="2108" price="5000" name="salvaging toolkit"></item>
+		<item id="9099" price="100" name="tp"></item>
+	</shop>
+	<shop shopid="105" name="Tinkering Ted's Scrap Shop" comment="Trinket Scrap" currencyTypeId="1198">
+
+		<item id="603" name="glowing orb" price="150"></item>
+		<item id="604" name="arcane thread" price="300"></item>
+		
+		<item id="1263" name="hp scroll" price="2000"></item>
+		<item id="1264" name="mana scroll" price="2000"></item>
+		<item id="1213" name="alchemy scroll" price="300"></item>
+		<item id="2108" price="5000" name="salvaging toolkit"></item>
+		<item id="9099" price="100" name="tp"></item>
+	</shop>
+
+	<shop shopid="106" name = "Agathe, the 'Real Witch'" comment="swamp village potioner">
+		<item id="389" name="range resi amploule" restocktime="900" maxstock="2"></item>
+		<item id="390" name="spell resi amploule" restocktime="900" maxstock="2"></item>
+		<item id="391" name="melee resi amploule" restocktime="900" maxstock="2"></item>
+		<item id="478" name="tier 4 robust hp potion" restocktime="900" maxstock="1"></item>
+		<item id="9059" name="mosquito salve for ach task" price="10"></item>
+	</shop>
+
+
+
+	<shop shopid="107" name = "Thornhill Mining Trainer" pricemodifier="1.5">
+		<item id="413" name="xp book" maxstock="2" price="300" restocktime="1800"></item>
+		<item id="141" name="copper pickaxe"></item>
+		<item id="676" name="torch"></item>
+		<item id="485" name="rope"></item>
+		<item id="931" name="Chisel" price="300" checks="HasTrait=198"></item>
+		<item id="384" name="copper storage bag" price="250" checks="!ItemExistsGlobal=384" maxstock="1" restocktime="3600"></item>
+		<item id="1255" name="tools"  checks="HasTrait=283" price="2500"></item>
+	</shop>
+	<shop shopid="108" name = "Thornhill Fishing Trainer" pricemodifier="1.5">
+		<item id="411" name="xp book" maxstock="2" price="300" restocktime="1800"></item>
+		<item id="167" name="fishing rod"></item>
+		<item id="495" name="fly fishing rod"></item>
+		<item id="961" name="shovel" price="140"></item>
+		<item id="934" name="gutty knife" price="300" checks="HasTrait=199"></item>
+		<item id="790" name="goopy storage bag" price="250" checks="!ItemExistsGlobal=790" maxstock="1" restocktime="3600"></item>
+		<item id="1254" name="tools" checks="HasTrait=281"  price="2500"></item>
+	</shop>
+	<shop shopid="109" name = "Thornhill Woodsmanship Trainer" pricemodifier="1.5">
+		<item id="410" name="xp book" maxstock="2" price="300" restocktime="1800"></item>
+		<item id="139" name="copper hatchet"></item>
+		<item id="942" name="splitting axe" price="300" checks="HasTrait=203"></item>
+		<item id="388" name="spruce storage bag" price="250" checks="!ItemExistsGlobal=388" maxstock="1" restocktime="3600"></item>
+		<item id="1253" name="tools" checks="HasTrait=280" price="2500"></item>
+	</shop>
+	<shop shopid="110" name = "Thornhill Alchemy Trainer" pricemodifier="1.5">
+		<item id="420" name="xp book" maxstock="2" price="300" restocktime="1800"></item>
+		<item id="792" name=" storage bag" price="250" checks="!ItemExistsGlobal=792" maxstock="1" restocktime="3600"></item>
+		<item id="793" name=" storage bag" price="250" checks="!ItemExistsGlobal=793" maxstock="1" restocktime="3600"></item>
+		<item id="234" maxstock="1" restocktime="3600" name="pestle"></item>
+		<item id="171" name="empty vial"></item>
+		<item id="1249" name="workbench" checks="HasTrait=290"  price="2500"></item>
+	</shop>
+	<shop shopid="111" name = "Thornhill Smithing Trainer" pricemodifier="1.5">
+		<item id="417" name="xp book" maxstock="2" price="300" restocktime="1800"></item>
+		<item id="490" name="hammer"></item>
+		<item id="788" name="storage bag" price="250" checks="!ItemExistsGlobal=788" maxstock="1" restocktime="3600"></item>
+		<item id="1251" name="anvil"  checks="HasTrait=287" price="2500"></item>
+		<item id="1252" name="forge" checks="HasTrait=287"  price="2500"></item>
+	</shop>
+	<shop shopid="112" name = "Thornhill Sorcery Trainer" pricemodifier="1.5">
+		<item id="236" name="mana potion" maxstock="1" restocktime="900"></item>
+		<item id="415" name="xp book" maxstock="2"  price="300" restocktime="1800"></item>
+		<item id="359" name="ma acc" maxstock="2" restocktime="600"></item>
+
+	</shop>
+	<shop shopid="113" name = "Thornhill Crafting Trainer" pricemodifier="1.5">
+		<item id="419" name="xp book" maxstock="2"  price="300" restocktime="1800"></item>
+		<item id="794" name="saw" price="150"></item>
+		<item id="1248" name="workbench"  checks="HasTrait=289" price="2500"></item>
+	</shop>
+	<shop shopid="114" name = "Thornhill Attack Trainer" pricemodifier="1.5">
+		<item id="412" name="xp book" maxstock="2"  price="300" restocktime="1800"></item>
+		<item id="243" name="phy acc" maxstock="2" restocktime="600"></item>
+	</shop>
+	<shop shopid="115" name = "Thornhill Defence Trainer" pricemodifier="1.5">
+		<item id="416" name="xp book" maxstock="2"  price="300" restocktime="1800"></item>
+		<item id="806" name="phy res" maxstock="1" restocktime="600"></item>
+		<item id="804" name="ra res" maxstock="1" restocktime="600"></item>
+	</shop>
+	<shop shopid="116" name = "Thornhill Cooking Trainer" pricemodifier="1.5">
+		<item id="421" name="xp book" maxstock="2"  price="300" restocktime="1800"></item>
+		<item id="692" name="spoon" price="150"></item>
+		<item id="787" name="chef's hat" price="150"></item>
+		<item id="744" name="salt"></item>
+		<item id="1250" name="workbench"  checks="HasTrait=291" price="2500"></item>
+	</shop>
+	<shop shopid="117" name = "Thornhill Archery Trainer" pricemodifier="1.5">
+		<item id="414" name="xp book" maxstock="2"  price="300" restocktime="1800"></item>
+		<item id="795" name="ra acc" maxstock="2" restocktime="600"></item>
+	</shop>
+	<shop shopid="118" name = "Thornhill Tailoring Trainer" pricemodifier="1.5">
+		<item id="418" name="xp book" maxstock="2" price="300"  restocktime="1800"></item>
+		<item id="789" name="thimble" price="150"></item>
+		<item id="791" name="scissors" price="150"></item>
+		<item id="1247" name="workbench" checks="HasTrait=288"  price="2500"></item>
+	</shop>
+
+
+	<shop shopid="120" name="Arnish's Weapon Store" comment="ogremnt town weapon store">
+		<item id="1850" name="Tier 1 Sword"></item>
+		<item id="1851" name="Tier 1 Greatsword"></item>
+		<item id="1854" name="Tier 1 Bow"></item>
+		<item id="1855" name="Tier 1 Crossbow"></item>
+		<item id="1856" name="Tier 2 Barbarian Sword" maxstock="0"></item>
+		<item id="1857" name="Tier 2 Barbarian Greatsword" maxstock="0"></item>
+		<item id="1860" name="Tier 2 Barbarian Bow" maxstock="0"></item>
+		<item id="1861" name="Tier 2 Barbarian Crossbow" maxstock="0"></item>
+		<item id="1862" name="Tier 3 Clean Sword" maxstock="0"></item>
+		<item id="1863" name="Tier 3 Clean Greatsword" maxstock="0"></item>
+		<item id="1866" name="Tier 3 Clean Bow" maxstock="0"></item>
+		<item id="1867" name="Tier 3 Clean Crossbow" maxstock="0"></item>
+	</shop>
+	
+	<shop shopid="121" name="Bodwan's Armor Store"  comment="ogremnt town armor store">
+		<item id="1869" name="Tier 1 Leather Armor"></item>
+		<item id="1870" name="Tier 1 Wooden shield"></item>
+		<item id="1872" name="Tier 2 Barbarian Armor" maxstock="0"></item>
+		<item id="1873" name="Tier 2 Barbarian Wooden shield" maxstock="0"></item>
+		<item id="1875" name="Tier 3 Clean Leather Armor" maxstock="0"></item>
+		<item id="1876" name="Tier 3 Clean Wooden shield" maxstock="0"></item>
+		<item id="1884" name="Tier 1 Plate Armor"></item>
+		<item id="1885" name="Tier 1 shield"></item>
+		<item id="1887" name="Tier 2 Barbarian Armor" maxstock="0"></item>
+		<item id="1888" name="Tier 2 Barbarian shield" maxstock="0"></item>
+		<item id="1890" name="Tier 3 Clean Plate Armor" maxstock="0"></item>
+		<item id="1891" name="Tier 3 Clean shield" maxstock="0"></item>
+		<item id="1868" name="Tier 1 Leather Headgear"></item>
+		<item id="1871" name="Tier 2 Barbarian Headgear" maxstock="0"></item>
+		<item id="1874" name="Tier 3 Clean Leather Headgear" maxstock="0"></item>
+		<item id="1883" name="Tier 1 Plate Helmet"></item>
+		<item id="1886" name="Tier 2 Barbarian Helmet" maxstock="0"></item>
+		<item id="1889" name="Tier 3 Clean Plate Helmet" maxstock="0"></item>
+	</shop>
+
+	<shop shopid="122" name = "Kharaddin's General Store"  comment="ogremnt town gen store" isgeneralstore="1">
+		<item id="139"></item>
+		<item id="141"></item>
+		<item id="167" name="fishing rod"></item>
+		<item id="485" name="rope"></item>
+		<item id="489" name="knife"></item>
+		<item id="490" name="hammer"></item>
+		<item id="322" name="nails"></item>
+		<item id="171" name="empty vial"></item>
+		<item id="492" name="plank"></item>
+		<item id="216" name="peasant clothes"></item>
+		<item id="676" name="torch"></item>
+	</shop>
+	<shop shopid="123" name = "Erminston's Natural Remedies"  comment="ogremnt town alchemy store" >
+		<item id="476" maxstock="3" restocktime="300"></item>
+		<item id="478" maxstock="1" restocktime="300"></item>
+
+		<item id="9100" price="2500" name="ebin xp herb"></item>
+		<item id="9101" price="2500" name="ebin xp herb"></item>
+		<item id="9102" price="2500" name="ebin xp herb"></item>
+
+		<item id="1326" price="8200" name="dragon bonemarrow"></item>
+		<item id="1320" price="2800" name="bottled lightning"></item>
+
+	</shop>
+	<shop shopid="124" name="Sara Croft's Archaeological Magics Store" pricemodifier="3" comment="ogremnt town magic store">
+		<item id="1323" name="weird stone lol, maybe unlocks something" price="15"></item>
+		<item id="2106" name="tp scroll" maxstock="2" price="1000" restocktime="3600"></item>
+		<item id="2109" name="tp book" price="15000"></item>
+		<item id="1852" name="Tier 1 Wand"></item>
+		<item id="1853" name="Tier 1 Staff"></item>
+		<item id="1858" name="Tier 2 Barbarian Wand" maxstock="0"></item>
+		<item id="1859" name="Tier 2 Barbarian Staff" maxstock="0"></item>
+		<item id="1864" name="Tier 3 Clean Wand" maxstock="0"></item>
+		<item id="1865" name="Tier 3 Clean Staff" maxstock="0"></item>
+		<item id="1878" name="Tier 1 Robe"></item>
+		<item id="1877" name="Tier 1 Hood"></item>
+		<item id="1880" name="Tier 2 Barbarian Robe" maxstock="0"></item>
+		<item id="1879" name="Tier 2 Barbarian Hood" maxstock="0"></item>
+		<item id="1882" name="Tier 3 Clean Robe" maxstock="0"></item>
+		<item id="1881" name="Tier 3 Clean Hood" maxstock="0"></item>
+	</shop>
+
+	<shop shopid="125" name = "Mecklenburn's Elegantly Cultural Jewelry"  comment="ogremnt town jewlz store" >
+		<item id="2040" price="12000" name="ring"></item>
+		<item id="2042" price="25000" name="bracelet"></item>
+	</shop>
+
+
+	<shop shopid="130" name = "Arty's Special Items Section" currencyTypeId="1008" comment="achievements artefact shop">
+		<item id="1041" price="50" name="speedboost xp book"></item>
+		<item id="1044" price="20" name="horsy whistle"></item>
+		<item id="2101" price="40" name="crafting guild tp"></item>
+		<item id="2103" price="100" name="call horsy ability book"></item>
+		<item id="1219" price="10" name="tiny bag" checks="!ItemExistsGlobal=1219" maxstock="1" restocktime="3600"></item>
+		<item id="2100" price="40" name="smol bag" checks="!ItemExistsGlobal=2100" maxstock="1" restocktime="3600"></item>
+		<item id="2104" price="100" name="med bag" checks="!ItemExistsGlobal=2104" maxstock="1" restocktime="3600"></item>
+		<item id="2105" price="250" name="mega bag" checks="!ItemExistsGlobal=2105" maxstock="1" restocktime="3600"></item>
+		<item id="2112" price="80" name="alchemy spell"></item>
+		<item id="1019" price="100" name="explorer map"></item>
+		<item id="1020" price="100" name="eagle ms boost furniture item"></item>
+	</shop>
+	<shop shopid="131" name = "Arty's Library of Knowledge" currencyTypeId="1008" comment="achievements artefact shop">
+		<item id="410" price="10" name="xp book"></item>
+		<item id="411" price="10" name="xp book"></item>
+		<item id="412" price="10" name="xp book"></item>
+		<item id="413" price="10" name="xp book"></item>
+		<item id="414" price="10" name="xp book"></item>
+		<item id="415" price="10" name="xp book"></item>
+		<item id="416" price="10" name="xp book"></item>
+		<item id="417" price="10" name="xp book"></item>
+		<item id="418" price="10" name="xp book"></item>
+		<item id="419" price="10" name="xp book"></item>
+		<item id="420" price="10" name="xp book"></item>
+		<item id="421" price="10" name="xp book"></item>
+	</shop>
+	<shop shopid="132" name = "Quartermaster Felix" comment="ogry assault armorer">
+		<item id="252" maxstock="1" restocktime="300"></item>
+		<item id="251" maxstock="1" restocktime="300"></item>
+		<item id="476" maxstock="2" restocktime="120"></item>
+		<item id="1277" maxstock="2" restocktime="120"></item>
+		<item id="1302" maxstock="1" restocktime="900"></item>
+	</shop>
+	<shop shopid="133" name = "Hamardale the Smith" comment="ogremnt town smith">
+		<item id="490" name="hammer"></item>
+		<item id="349" name="coal" maxstock="4" restocktime="900"></item>
+		<item id="2000" name="ore" maxstock="1" restocktime="900"></item>
+		<item id="2001" name="ore" maxstock="0"></item>
+		<item id="2002" name="ore" maxstock="0"></item>
+		<item id="2021" name="ingot" maxstock="0"></item>
+		<item id="2022" name="ingot" maxstock="0"></item>
+		<item id="2023" name="ingot" maxstock="0"></item>
+	</shop>
+	<shop shopid="134" name = "Ashenside Trader">
+		<item id="125" name="wool" maxstock="5" restocktime="60"></item>
+		<item id="492" name="plank"  maxstock="10" restocktime="60"></item>
+	</shop>
+	<shop shopid="135" name = "Simo's Supplies">
+		<item id="485" name="Rope"></item>
+		<item id="1756" name="Chair"></item>
+	</shop>
+	<shop shopid="136" name = "Ratcliffe Vegetable Stall">
+		<item id="273" name="Corn" maxstock="5" restocktime="600"></item>
+		<item id="283" name="Potato" maxstock="5" restocktime="600"></item>
+		<item id="273" name="Carrot" maxstock="5" restocktime="600"></item>
+		<item id="136" name="Apple" maxstock="5" restocktime="600"></item>
+		<item id="290" name="Cucumber" maxstock="5" restocktime="600"></item>
+	</shop>
+
+	<shop shopid="137" name = "Sly Jonne's Slick Goodies" comment="sly jonne after q111">
+		<item id="1307" name="poison" maxstock="1" restocktime="600"></item>
+		<item id="1280" name="poison" maxstock="1" restocktime="600"></item>
+		<item id="2121" name="shield bash book" price="12000"></item>
+		<item id="2120" name="armor" price="9000"></item>
+	</shop>
+
+
+	<shop shopid="138" name = "Evergreen Hearth General Store"  comment="ogremnt town gen store" isgeneralstore="1">
+		<item id="139"></item>
+		<item id="141"></item>
+		<item id="167" name="fishing rod"></item>
+		<item id="485" name="rope"></item>
+		<item id="489" name="knife"></item>
+		<item id="490" name="hammer"></item>
+		<item id="322" name="nails"></item>
+		<item id="171" name="empty vial"></item>
+		<item id="492" name="plank"></item>
+		<item id="216" name="peasant clothes"></item>
+		<item id="676" name="torch"></item>
+	</shop>
+
+	<shop shopid="139" name = "Fantastic Trophies and Decorations" currencyTypeId="9116" comment="winter village">
+		<item id="9141" name="snow globe furniture" price="100"></item>
+		<item id="9140" name="reindeer trophy" price="50"></item>
+		<item id="9139" name="reindeer hat" price="100"></item>
+		<item id="9130" name="furniture" price="40"></item>
+		<item id="9131" name="furniture" price="40"></item>
+		<item id="9132" name="furniture" price="40"></item>
+		<item id="9133" name="furniture" price="40"></item>
+		<item id="9134" name="furniture" price="40"></item>
+		<item id="9135" name="furniture" price="40"></item>
+		<item id="9136" name="furniture" price="40"></item>
+		<item id="9137" name="furniture" price="40"></item>
+		<item id="9138" name="furniture" price="40"></item>
+	</shop>
+	<shop shopid="140" name = "Evergreen Hearth Fabrics" currencyTypeId="9116" comment="winter village">
+		<item id="9110" name="bandage cloth" price="20"></item>
+	</shop>
+	<shop shopid="141" name = "Hearthlight Trinkets Stall" currencyTypeId="9116" comment="winter village">
+		<item id="9143" name="tp" price="150"></item>
+		<item id="9150" name="ring" price="1000"></item>
+	</shop>
+
+	<shop shopid="142" name="Castle Furniture" comment="Mountain Castle">
+		<item id="9190" name="Wooden Chest" price="200"></item>
+		<item id="9191" name="Table with War Map" price="200"></item>
+		<item id="9192" name="Iron Maiden" price="500"></item>
+		<item id="9193" name="Wooden Throne" price="200"></item>
+		<item id="9194" name="Wooden Chair" price="200"></item>
+		<item id="9195" name="Sturdy Wooden Table" price="200"></item>
+		<item id="9196" name="Banquet Table" price="200"></item>
+		<item id="9197" name="Sturdy Bench" price="200"></item>
+		<item id="9198" name="Lectern with Book" price="200"></item>
+		<item id="9199" name="Fancy Bed with Curtains" price="500"></item>
+		<item id="9200" name="Regal Folding Chair" price="100"></item>
+		<item id="9201" name="Wooden Pillory" price="200"></item>
+		<item id="9202" name="Portal" price="15000"></item>
+		<item id="9203" name="Portal" price="30000"></item>
+
+		<item id="9250" name="Swords and Shield on Wall" price="200"></item>
+		<item id="9251" name="Golden Candle" price="200"></item>
+		<item id="9252" name="Barrels" price="200"></item>
+		<item id="9253" name="Crates" price="200"></item>
+		<item id="9254" name="Shaman Drum" price="200"></item>
+		<item id="9255" name="Monster Skull" price="200"></item>
+		<item id="9256" name="Cannon" price="1000"></item>
+		<item id="9257" name="Cannonball" price="200"></item>
+		<item id="9258" name="Book Case" price="200"></item>
+		<item id="9259" name="Sacks" price="100"></item>
+		<item id="9260" name="Statue" price="500"></item>
+		<item id="9261" name="Sack of Potatoes" price="100"></item>
+		<item id="9262" name="Sleeping Mattress" price="50"></item>
+		<item id="9263" name="Sacks" price="200"></item>
+		<item id="9264" name="Sack" price="50"></item>
+		<item id="9265" name="Red Rug" price="100"></item>
+		<item id="9266" name="Vase" price="50"></item>
+		<item id="9267" name="Decorative Square Rug" price="200"></item>
+		<item id="9268" name="Decorative Rug" price="200"></item>
+		<item id="9269" name="Plant in a Vase" price="200"></item>
+		<item id="9270" name="Ballista" price="1000"></item>
+		<item id="9271" name="Divine Statue" price="1000"></item>
+		<item id="9272" name="Weapon Rack" price="200"></item>
+		<item id="9273" name="Flowers in a Potter" price="100"></item>
+		<item id="9274" name="Barrel" price="50"></item>
+		<item id="9275" name="Crate" price="50"></item>
+		<item id="9276" name="Barbaric Banner" price="200"></item>
+		<item id="9277" name="Blue Rug" price="100"></item>
+		<item id="9278" name="Skeleton Statue" price="1000"></item>
+		<item id="9279" name="Night Table" price="200"></item>
+		<item id="9280" name="Vase" price="50"></item>
+		<item id="9281" name="Mirror" price="200"></item>
+		<item id="9282" name="Potion Holder" price="200"></item>
+		<item id="9283" name="Green Rug" price="100"></item>
+		<item id="9284" name="Wooden Chair" price="100"></item>
+		<item id="9285" name="Brazier" price="200"></item>
+		<item id="9286" name="Headless Skeleton Warrior Statue" price="500"></item>
+		<item id="9287" name="Bear Rug" price="200"></item>
+		<item id="9288" name="Wooden Bench" price="200"></item>
+		<item id="9289" name="Chest" price="200"></item>
+		<item id="9290" name="Rug" price="100"></item>
+		<item id="9291" name="Catapult" price="1000"></item>
+		<item id="9292" name="Bucket of Scrolls" price="200"></item>
+		<item id="9293" name="Pile of Buckets" price="200"></item>
+		<item id="9294" name="Wooden Chest" price="200"></item>
+		<item id="9295" name="Red Round Rug" price="200"></item>
+		<item id="9296" name="Big Wooden Table" price="200"></item>
+		<item id="9297" name="Decorative Round Rug" price="200"></item>
+	</shop>
+
+
+
+</shops>

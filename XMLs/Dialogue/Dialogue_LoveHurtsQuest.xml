@@ -1,0 +1,542 @@
+<dialogue>
+	<node id="1" npcName="Sanya Efren" anim="1" text="This is terrible! The most horrible miscarriage of justice! Poor Arren..." posx="60" posy="42">
+		<option optionid="1" optiontext="Arren? I need to 'talk' to him." next="2"></option>
+	</node>
+	<node id="2" npcName="Sanya Efren" anim="1" text="That won't be possible now. They took him away to the dungeons of Castle Murk! Nobody's allowed to see the prisoners down there..." posx="478" posy="43">
+		<option optionid="1" optiontext="Why, what has he done?" next="8"></option>
+		<option optionid="2" optiontext="Castle Murk..? I recall it used to be called the Mistcastle in times past." next="3"></option>
+		<option optionid="3" optiontext="Can I check inside Arren's house?" next="4"></option>
+		<option optionid="4" optiontext="There's no way into the dungeons?" next="5"></option>
+	</node>
+	<node id="3" npcName="Sanya Efren" anim="1" text="The Mistcastle...? I remember an old man called it that when I was a little girl. But everyone really calls it Castle Murk, which is fitting if you ask me, for the oppressive tyrant residing within it." posx="904" posy="43">
+		<option optionid="1" optiontext="Why did they imprison Arren?" next="8"></option>
+		<option optionid="2" optiontext="Can I check inside Arren's house?" next="4"></option>
+		<option optionid="3" optiontext="There's no way into the dungeons?" next="5"></option>
+		<option optionid="4" optiontext="I see, thank you." next="0" checks="Var=Q16DungeonInfo-1-1" actions="UpdateQuest=16-3"></option>
+	</node>
+	<node id="4" npcName="Sanya Efren" anim="1" text="Well, yes I suppose... The door should be open, but mind his herbal cabinet. Arren once told me some of his herbs can even cause death if mishandled." posx="1322" posy="42">
+		<option optionid="1" optiontext="Why did they imprison Arren?" next="8"></option>
+		<option optionid="2" optiontext="So, Castle Murk..? I recall it used to be called the Mistcastle in times past." next="3"></option>
+		<option optionid="3" optiontext="There's no way into the dungeons?" next="5"></option>
+		<option optionid="4" optiontext="I see, thank you." next="0" checks="Var=Q16DungeonInfo-1-1" actions="UpdateQuest=16-3"></option>
+	</node>
+	<node id="5" npcName="Sanya Efren" anim="1" text="That's just not happened in ages. No matter how much townsfolk have pleaded with the guards, they never let anyone in. Far too often people get thrown in and they just disappear, never to be heard from again..." posx="1758" posy="42">
+		<option optionid="1" optiontext="" next="6" actions="SetVar=Q16DungeonInfo-1"></option>
+	</node>
+	<node id="6" npcName="Sanya Efren" anim="1" text="It's monstrous! Though, awhile back there were rumors that somebody managed to escape, somehow through underground tunnels, but I don't really know anything more about that." posx="2182" posy="44">
+		<option optionid="1" optiontext="A way out might also mean a way in... who'd know more?" next="7"></option>
+		<option optionid="2" optiontext="Why would they imprison Arren?" next="8"></option>
+		<option optionid="3" optiontext="So, Castle Murk..? I recall it used to be called the Mistcastle in times past." next="3"></option>
+		<option optionid="4" optiontext="Can I check inside Arren's house?" next="4"></option>
+		<option optionid="5" optiontext="I see, thank you." next="0" checks="Var=Q16DungeonInfo-1-1" actions="UpdateQuest=16-3"></option>
+	</node>
+	<node id="7" npcName="Sanya Efren" anim="1" text="Umm... I'm not really sure. Those aren't really the kind of secrets good folk like I would know. But if you're very determined, maybe you could ask some of the more seedy characters around Thornhill. Sadly, they're not hard to find these days." posx="2596" posy="43">
+		<option optionid="1" optiontext="Why would they imprison Arren?" next="8"></option>
+		<option optionid="2" optiontext="So, Castle Murk..? I recall it used to be called the Mistcastle in times past." next="3"></option>
+		<option optionid="3" optiontext="Can I check inside Arren's house?" next="4"></option>
+		<option optionid="4" optiontext="I see, thank you." next="0" checks="Var=Q16DungeonInfo-1-1" actions="UpdateQuest=16-3"></option>
+	</node>
+	<node id="8" npcName="Sanya Efren" anim="1" text="He hasn't done anything wrong! He's been healing the city's poor, especially since the Blistering Plague swept through our city. But he made our traditional 'village healer' Marlene look bad, so now she's trying to get rid of him! She's a terrible healer too; tells people to smear cow dung on their faces for their every ill!" posx="80" posy="66">
+		<option optionid="1" optiontext="So, Castle Murk..? I recall it used to be called the Mistcastle in times past." next="3"></option>
+		<option optionid="2" optiontext="Can I check inside Arren's house?" next="4"></option>
+		<option optionid="3" optiontext="There's no way into the dungeons?" next="5"></option>
+		<option optionid="4" optiontext="I see, thank you." next="0" checks="Var=Q16DungeonInfo-1-1" actions="UpdateQuest=16-3"></option>
+	</node>
+
+	<node id="10" npcName="Sanya Efren" anim="1" text="Poor Arren... He really is a good man, broke my daughter's fever when she had the plague. I just hope they don't hurt him." posx="42" posy="478">
+		<option optionid="1" optiontext="Do they not allow seeing the prisoners?" next="14"></option>
+		<option optionid="2" optiontext="Where did you say they were holding him?" next="11"></option>
+		<option optionid="3" optiontext="Why would they imprison Arren?" next="12"></option>
+		<option optionid="4" optiontext="Can I check inside Arren's house?" next="13"></option>
+		<option optionid="5" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="11" npcName="Sanya Efren" anim="1" text="They took him away to the dungeons of Castle Murk! Nobody's allowed to see the prisoners down there..." posx="505" posy="484">
+		<option optionid="1" optiontext="There's no way to reach him?" next="14"></option>
+		<option optionid="2" optiontext="Why would they imprison Arren?" next="12"></option>
+		<option optionid="3" optiontext="Can I check inside Arren's house?" next="13"></option>
+		<option optionid="4" optiontext="I see, goodbye." next="0"></option>
+	</node>
+	<node id="12" npcName="Sanya Efren" anim="1" text="He hasn't done anything wrong! He's been healing the city's poor, especially since the Blistering Plight swept through our city. But he made our traditional 'village healer' Marlene look bad, so now she's trying to get rid of him! She's a terrible healer too; tells people to smear cow dung on their faces for their every ill!" posx="945" posy="485">
+		<option optionid="1" optiontext="Where did you say they were holding him?" next="11"></option>
+		<option optionid="2" optiontext="Can I check inside Arren's house?" next="13"></option>
+		<option optionid="3" optiontext="I see, goodbye." next="0"></option>
+	</node>
+	<node id="13" npcName="Sanya Efren" anim="1" text="Well, yes I suppose... The door should be open, but mind his herbal cabinet. Arren once told me some of his herbs can even cause death if mishandled." posx="1373" posy="489">
+		<option optionid="1" optiontext="Where did you say they were holding him?" next="11"></option>
+		<option optionid="2" optiontext="Why would they imprison Arren?" next="12"></option>
+		<option optionid="3" optiontext="I see, goodbye." next="0"></option>
+	</node>
+	<node id="14" npcName="Sanya Efren" anim="1" text="That's just not happened in ages. No matter how much townsfolk have pleaded with the guards, they never let anyone in. Far too often people get thrown in and they just disappear, never to be heard from again..." posx="364" posy="128">
+		<option optionid="1" optiontext="" next="15"></option>
+	</node>
+	<node id="15" npcName="Sanya Efren" anim="1" text="It's monstrous! Though, awhile back there were rumors that somebody managed to escape, somehow through underground tunnels, but I don't really know anything more about that." posx="796" posy="131">
+		<option optionid="1" optiontext="A way out might also mean a way in... who'd know more?" next="16"></option>
+		<option optionid="2" optiontext="Why would they imprison Arren?" next="12"></option>
+		<option optionid="3" optiontext="Can I check inside Arren's house?" next="13"></option>
+		<option optionid="4" optiontext="I see, goodbye." next="0"></option>
+	</node>
+	<node id="16" npcName="Sanya Efren" anim="1" text="Umm... I'm not really sure. Those aren't really the kind of secrets good folk like I would know. But if you're very determined, maybe you could ask some of the more seedy characters around Thornhill. Sadly, they're not hard to find these days." posx="1240" posy="129">
+		<option optionid="1" optiontext="Why would they imprison Arren?" next="12"></option>
+		<option optionid="2" optiontext="Can I check inside Arren's house?" next="13"></option>
+		<option optionid="3" optiontext="I see, goodbye." next="0"></option>
+	</node>
+
+
+	<node id="20" npcName="Arren Oakenthorn" anim="1" text="The Lord Mayor and his men want a scapegoat for the plague that recently swept the streets - the Blistering Plight - to draw attention away from their own incompetency I think. Who better than the fearsome ''Witch of the Silvermirror Fen''." posx="1611" posy="641">
+		<option optionid="1" optiontext="" next="21"></option>
+	</node>
+	<node id="21" npcName="Arren Oakenthorn" anim="1" text="Obviously they can't get the witch, so the witch's servant must do. Perhaps you noticed the so-called-healer, Marlene, my accuser? I'm the one who actually tried to help people during the plague, to heal them, but... alas that made Marlene look bad." posx="2047" posy="642">
+		<option optionid="1" optiontext="People really fear this Witch?" next="22"></option>
+		<option optionid="2" optiontext="Are you really a druid?" next="24"></option>
+		<option optionid="3" optiontext="Any ideas how to open your cell?" next="28" checks="!HasItem=319-1"></option>
+		<option optionid="4" optiontext="Let's get you out of there - I've found the keys." icon="Quest" next="35" checks="HasItem=319-1"></option>
+		<option optionid="5" optiontext="Wait here, I'll try to find a way to release you." icon="LeadingExit" next="31"></option>
+	</node>
+	<node id="22" npcName="Arren Oakenthorn" anim="1" text="A dark reputation rightly lingers around the Witch. I would know, I myself spent a moment in her captivity, only... The Witch was vanquished by someone. Someone who became the new Witch, someone who's different, righteous..." posx="2478" posy="644">
+		<option optionid="1" optiontext="You're speaking of Eloria?" next="23" checks="Var=Q16EloriaChat-1-1"></option>
+		<option optionid="2" optiontext="Are you really a druid?" next="24"></option>
+		<option optionid="3" optiontext="Any ideas how to open your cell?" next="28" checks="!HasItem=319-1"></option>
+		<option optionid="4" optiontext="Let's get you out of there - I've found the keys." next="35" icon="Quest" checks="HasItem=319-1"></option>
+		<option optionid="5" optiontext="Wait here, I'll try to find a way to release you." icon="LeadingExit" next="31"></option>
+	</node>
+	<node id="23" npcName="Arren Oakenthorn" anim="1" text="Yes, she... made quite the impression on me." posx="2914" posy="644">
+		<option optionid="1" optiontext="Are you really a druid?" next="24"></option>
+		<option optionid="2" optiontext="Any ideas how to open your cell?" next="28" checks="!HasItem=319-1"></option>
+		<option optionid="3" optiontext="Let's get you out of there - I've found the keys." next="35" icon="Quest" checks="HasItem=319-1"></option>
+		<option optionid="4" optiontext="Wait here, I'll try to find a way to release you." icon="LeadingExit" next="31"></option>
+	</node>
+	<node id="24" npcName="Arren Oakenthorn" anim="1" text="Wondering what one of my kind is doing in a big city? Sadly, I've not been in touch with my Ebongreen brothers and sisters in some time now. Yet my talents were needed here, especially with the onset of the Blistering Plight." posx="1269" posy="1090">
+		<option optionid="1" optiontext="Why were they so eager to arrest you?" next="20"></option>
+		<option optionid="2" optiontext="Any ideas how to open your cell?" next="28" checks="!HasItem=319-1"></option>
+		<option optionid="3" optiontext="Let's get you out of there - I've found the keys." next="35" icon="Quest" checks="HasItem=319-1"></option>
+		<option optionid="4" optiontext="Wait here, I'll try to find a way to release you." icon="LeadingExit" next="31"></option>
+	</node>	
+	
+	<node id="26" npcName="Arren Oakenthorn" anim="1" text="Wait, you don't look like one of the guards... who are you?" posx="49" posy="29">
+		<option optionid="1" optiontext="A concerned citizen, here to get you out." next="27"></option>
+		<option optionid="2" optiontext="The lady in the swamp is our mutual friend - I need you to contact her." next="29" actions="SetVar=Q16EloriaChat-1"></option>
+	</node>
+	<node id="27" npcName="Arren Oakenthorn" anim="1" text="Oh, truly? Then I shan't turn down your offer. I'm glad there are still those in this city who do not sit idly by in the face of injustice." posx="505" posy="15">
+		<option optionid="1" optiontext="Any ideas how to open your cell?" next="28" checks="!HasItem=319-1"></option>
+		<option optionid="2" optiontext="I have the keys, let's get you out of there." next="35" icon="Quest" checks="HasItem=319-1"></option>
+		<option optionid="3" optiontext="Why were they so eager to arrest you?" next="20"></option>
+		<option optionid="4" optiontext="Are you really a druid?" next="24"></option>
+		<option optionid="5" optiontext="Wait here, I'll try to find a way to release you." icon="LeadingExit" next="31"></option>
+	</node>
+	<node id="28" npcName="Arren Oakenthorn" anim="1" text="I've been watching the guards on this level. Every time they open and lock the cells, they return to the end of this hallway. I think that's where they have their break room, and where they keep the keys." posx="961" posy="18">
+		<option optionid="1" optiontext="Why were they so eager to arrest you?" next="20"></option>
+		<option optionid="2" optiontext="Are you really a druid?" next="24"></option>
+		<option optionid="3" optiontext="Wait here, I'll see if I can retrieve them." icon="LeadingExit" next="31"></option>
+	</node>
+	<node id="29" npcName="Arren Oakenthorn" anim="1" text="You know of her - you know Eloria? But... I don't remember she ever mentioned anyone like you. Who are you?" posx="31" posy="476">
+		<option optionid="1" optiontext="Someone whose connection goes far back..." next="30"></option>
+	</node>
+	<node id="30" npcName="Arren Oakenthorn" anim="1" text="I see... so you heard the accusations? That I contact her through a magical mirror. It's true, but the Lord-Mayor's men confiscated the mirror when they arrested me. For all I know, it's securely guarded now." posx="511" posy="534">
+		<option optionid="1" optiontext="Let's get you out first; any ideas how to open your cell?" next="28" checks="!HasItem=319-1"></option>
+		<option optionid="2" optiontext="Let's get you out of there first - I've found the keys." next="35" icon="Quest" checks="HasItem=319-1"></option>
+		<option optionid="3" optiontext="Why were they so eager to arrest you?" next="20"></option>
+		<option optionid="4" optiontext="Are you really a druid?" next="24"></option>
+		<option optionid="5" optiontext="Wait here, I'll try to find a way to release you." icon="LeadingExit" next="31"></option>
+	</node>
+	<node id="31" npcName="Arren Oakenthorn" anim="1" text="Sure, I don't think I'm going anywhere." posx="1000" posy="495">
+		<option optionid="1" optiontext="" next="0" actions="SetVar=Q16ArrenInJail-1"></option>
+	</node>
+	
+	<node id="32" npcName="Arren Oakenthorn" anim="1" text="You're back, friend! Have you found a way to free me?" posx="88" posy="51">
+		<option optionid="1" optiontext="Any ideas how to open your cell?" checks="!HasItem=319-1" next="28"></option>
+		<option optionid="2" optiontext="I've found the keys, let's get you out of there." checks="HasItem=319-1" icon="Quest" next="35"></option>
+		<option optionid="3" optiontext="Why were they so eager to arrest you?" next="20"></option>
+		<option optionid="4" optiontext="Are you really a druid?" next="24"></option>
+		<option optionid="5" optiontext="Wait, I'm still looking for a way." next="0"></option>
+	</node>
+
+	<node id="35" npcName="Arren Oakenthorn" anim="1" text="We'll still need to get my magical mirror, it's important not to leave it behind. I believe they hold confiscated items under guard in the warden's office below." posx="333" posy="25">
+		<option optionid="1" optiontext="Know anything about the warden?" next="36"></option>
+		<option optionid="2" optiontext="Are you able to fight?" next="37"></option>
+		<option optionid="3" optiontext="Let's go." actions="Cinematic=89,RemoveItems=319-1" icon="Quest" next="0"></option>
+	</node>
+	<node id="36" npcName="Arren Oakenthorn" anim="1" text="Only in the way of rumors, that Warden Garrick Ravidrasse is one of the Lord Mayor's most trusted and most ruthless men, quick to resort to violence." posx="821" posy="25">
+		<option optionid="1" optiontext="Are you able to fight?" next="37"></option>
+		<option optionid="2" optiontext="Let's go." actions="Cinematic=89,RemoveItems=319-1" icon="Quest" next="0"></option>
+	</node>
+	<node id="37" npcName="Arren Oakenthorn" anim="1" text="I'm quite capable in curing diseases, but much less so as a fighter I'm afraid. I was hoping I can count on you, friend." posx="1301" posy="334">
+		<option optionid="1" optiontext="Know anything about the warden?" next="36"></option>
+		<option optionid="2" optiontext="Let's go." actions="Cinematic=89,RemoveItems=319-1" icon="Quest" next="0"></option>
+	</node>
+
+	<node id="40" npcName="Arren Oakenthorn" anim="1" text="Please, friend... it's important we get my magical mirror back from the warden downstairs." posx="148" posy="38">
+		<option optionid="1" optiontext="Know anything about the warden?" next="41"></option>
+		<option optionid="2" optiontext="Why were they so eager to arrest you?" next="42"></option>
+		<option optionid="3" optiontext="Are you really a druid?" next="46"></option>
+		<option optionid="4" optiontext="Don't worry." next="0"></option>
+	</node>
+	<node id="41" npcName="Arren Oakenthorn" anim="1" text="Only in the way of rumors, that Warden Garrick Ravidrasse is one of the Lord Mayor's most trusted and most ruthless men, quick to resort to violence." posx="651" posy="43">
+		<option optionid="1" optiontext="Why were they so eager to arrest you?" next="42"></option>
+		<option optionid="2" optiontext="Are you really a druid?" next="46"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="42" npcName="Arren Oakenthorn" anim="1" text="The Lord Mayor and his men want a scapegoat for the plague that recently swept the streets - the Blistering Plight - to draw attention away from their own incompetency I think. Who better than the fearsome ''Witch of the Silvermirror Fen''." posx="1125" posy="165">
+		<option optionid="1" optiontext="" next="43"></option>
+	</node>
+	<node id="43" npcName="Arren Oakenthorn" anim="1" text="Obviously they can't get the witch, so the witch's servant must do. Perhaps you noticed the so-called-healer, Marlene, my accuser? I'm the one who actually tried to help people during the plague, to heal them, but... alas that made Marlene look bad." posx="1562" posy="163">
+		<option optionid="1" optiontext="People really fear this Witch?" next="44"></option>
+		<option optionid="2" optiontext="Know anything about the warden?" next="41"></option>
+		<option optionid="3" optiontext="Are you really a druid?" next="46"></option>
+		<option optionid="4" optiontext="I see." next="0"></option>
+	</node>
+	<node id="44" npcName="Arren Oakenthorn" anim="1" text="A dark reputation rightly lingers around the Witch. I would know, I myself spent a moment in her captivity, only... The Witch was vanquished by someone. Someone who became the new Witch, someone who's different, righteous..." posx="2003" posy="160">
+		<option optionid="1" optiontext="You're speaking of Eloria?" next="45" checks="Var=Q16EloriaChat-1-1"></option>
+		<option optionid="2" optiontext="Know anything about the warden?" next="41"></option>
+		<option optionid="3" optiontext="Are you really a druid?" next="46"></option>
+		<option optionid="4" optiontext="I see." next="0"></option>
+	</node>
+	<node id="45" npcName="Arren Oakenthorn" anim="1" text="Yes, she... made quite the impression on me." posx="2446" posy="161">
+		<option optionid="1" optiontext="Know anything about the warden?" next="41"></option>
+		<option optionid="2" optiontext="Are you really a druid?" next="46"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="46" npcName="Arren Oakenthorn" anim="1" text="Wondering what one of my kind is doing in a big city? Sadly, I've not been in touch with my Ebongreen brothers and sisters in some time now. Yet my talents were needed here, especially with the onset of the Blistering Plight." posx="1053" posy="440">
+		<option optionid="1" optiontext="Know anything about the warden?" next="41"></option>
+		<option optionid="2" optiontext="Why were they so eager to arrest you?" next="42"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+
+	<node id="50" npcName="Arren Oakenthorn" anim="1" text="No point in delaying. We should make ourselves scarce before more guards arrive." posx="78" posy="44">
+		<option optionid="1" optiontext="Remind me, what's so important about this mirror?" checks="Var=Q16EloriaChat-1-1" next="52"></option>
+		<option optionid="2" optiontext="Remind me, what's so important about this mirror?" checks="Var=Q16EloriaChat-0-0" next="53"></option>
+		<option optionid="3" optiontext="Wait, I'm not done looting." icon="LeadingExit" next="51"></option>
+		<option optionid="4" optiontext="You're right." icon="Quest" actions="Cinematic=92" next="0"></option>
+	</node>
+	<node id="51" npcName="Arren Oakenthorn" anim="1" text="But would you place us at further risk? It saddens me that material gains mean so much to you..." posx="534" posy="44">
+		<option optionid="1" optiontext="Shush now, Mr. Druid." next="0"></option>
+	</node>
+	<node id="52" npcName="Arren Oakenthorn" anim="1" text="You said you were looking to contact Eloria? Well this mirror offers a way to do it. It will connect to its counterpart at the swamp, where Eloria resides. I must urgently speak with her as well." posx="187" posy="78">
+		<option optionid="1" optiontext="Wait here, I'm not done looting." icon="LeadingExit" next="51"></option>
+		<option optionid="2" optiontext="We should get going then." next="0" icon="Quest" actions="Cinematic=92"></option>
+	</node>
+	<node id="53" npcName="Arren Oakenthorn" anim="1" text="It will connect with the lady in the swamp. Don't worry friend, she's nothing evil like people here believe. I must speak with her urgently, she must be worried sick after not hearing from me." posx="633" posy="77">
+		<option optionid="1" optiontext="Wait here, I'm not done looting." icon="LeadingExit" next="51"></option>
+		<option optionid="2" optiontext="We should get going then." next="0" icon="Quest" actions="Cinematic=92"></option>
+	</node>
+
+
+	<node id="55" npcName="Arren Oakenthorn" anim="1" text="It will sadden me to leave behind my home in the city, but I fear I'm no longer welcome here. Thank you, friend, for getting me out of there. I'm not sure how I'll ever repay you." posx="63" posy="65">
+		<option optionid="1" optiontext="Nevermind that, what do you plan to do now?" next="58"></option>
+	</node>
+	<node id="56" npcName="Arren Oakenthorn" anim="1" text="It will sadden me to leave behind my home in the city, but I fear I'm no longer welcome here. Thank you for getting me out of there. Arranging a meeting with Eloria is the least I can do for you." posx="40" posy="459">
+		<option optionid="1" optiontext="Let's not waste any time on that; you said we reach her through the mirror?" next="60" icon="Quest"></option>
+		<option optionid="2" optiontext="Mind if we talk first?" next="59"></option>
+		<option optionid="3" optiontext="How about we have some tea, to calm the nerves...?" next="62" checks="Var=Q16HadTea-0-0"></option>
+	</node>
+	<node id="57" npcName="Arren Oakenthorn" anim="1" text="Great tea, don't you think?" posx="42" posy="963">
+		<option optionid="1" optiontext="Let's not waste more time, I'm eager to meet Eloria." next="60" icon="Quest"></option>
+		<option optionid="2" optiontext="There's something I wanted to ask." next="59"></option>
+	</node>
+	<node id="58" npcName="Arren Oakenthorn" anim="1" text="I must contact the lady in the swamp - Eloria - and let her know I am well. Yes, she is now the 'Silvermirror Witch' but I hate calling her that. She's a benevolent woman who saved my life." posx="535" posy="63">
+		<option optionid="1" optiontext="Let's not waste time, I am eager to meet her as well." next="60" icon="Quest"></option>
+		<option optionid="2" optiontext="Mind if we talk first?" next="59"></option>
+		<option optionid="3" optiontext="How about we have some tea, to calm the nerves...?" next="62" checks="Var=Q16HadTea-0-0"></option>
+	</node>
+	<node id="59" npcName="Arren Oakenthorn" anim="1" text="Indeed, we should take a breath and talk. Well done handling Warden Ravidrasse, by the way. He was a man with a fearsome reputation." posx="720" posy="579">
+		<option optionid="1" optiontext="So, you have a mirror that connects to the 'Silvermirror Witch'?" next="63"></option>
+		<option optionid="2" optiontext="Are you really a druid?" next="68"></option>
+		<option optionid="3" optiontext="How about we have some tea, to calm the nerves...?" next="62" checks="Var=Q16HadTea-0-0"></option>
+		<option optionid="4" optiontext="Let's not waste more time, I'm eager to meet Eloria." next="60" icon="Quest"></option>
+	</node>
+	<node id="60" npcName="Arren Oakenthorn" anim="1" text="Indeed, there is but a simple chant I must recite to make her appear." posx="1401" posy="-22">
+		<option optionid="1" optiontext="Let's do it." next="0" actions="Cinematic=82" icon="Quest"></option>
+		<option optionid="2" optiontext="Wait, there's something I wanted to ask." next="59"></option>
+		<option optionid="3" optiontext="How about we have some tea first, to calm the nerves...?" next="62" checks="Var=Q16HadTea-0-0"></option>
+	</node>
+	<node id="61" npcName="Arren Oakenthorn" anim="1" text="Great tea, don't you thi...*cough, cough, cough!* ...ahem...! ...how strange...\n\n&lt;color=#9C8C77&gt; *The poison burns ever so slightly in your throat. Out of the two of you, however, you're the one who literally cannot die.* &lt;/color&gt;" posx="182" posy="1295">
+		<option optionid="1" optiontext="Let's not waste more time, I'm eager to meet Eloria." next="60" icon="Quest"></option>
+		<option optionid="2" optiontext="There's something I wanted to ask." next="59"></option>
+	</node>
+	<node id="62" npcName="Arren Oakenthorn" anim="1" text="That is an excellent idea! My special blend of herbal tea is exactly what situations like these call for." posx="1300" posy="418">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=81" icon="Quest"></option>
+	</node>
+	<node id="63" npcName="Arren Oakenthorn" anim="1" text="I see what you're thinking. Mine is not *the* infamous Silver Mirror, though it's certainly an object of magic created by the Silvermirror Witches. The original was made for possessing minds, according to legends anyway." posx="1321" posy="718">
+		<option optionid="1" optiontext="Then how does your mirror work?" next="64"></option>
+		<option optionid="2" optiontext="Are you really a druid?" next="68"></option>
+		<option optionid="3" optiontext="How about we have some tea, to calm the nerves...?" next="62" checks="Var=Q16HadTea-0-0"></option>
+		<option optionid="4" optiontext="Let's not waste more time, I'm eager to meet Eloria." next="60" icon="Quest"></option>
+	</node>
+	<node id="64" npcName="Arren Oakenthorn" anim="1" text="A simple means for communication. The mirror has a sibling at the swamp, with my lady Eloria. When properly activated, it allows us to see each other through its glass, even across vast distances." posx="1759" posy="719">
+		<option optionid="1" optiontext="To be fair, that 'Wise Woman' wasn't too far off in her accusations." next="65"></option>
+		<option optionid="2" optiontext="Are you really a druid?" next="68"></option>
+		<option optionid="3" optiontext="How about we have some tea, to calm the nerves...?" next="62" checks="Var=Q16HadTea-0-0"></option>
+		<option optionid="4" optiontext="Let's not waste more time, I'm eager to meet Eloria." next="60" icon="Quest"></option>
+	</node>
+	<node id="65" npcName="Arren Oakenthorn" anim="1" text="Ah yes, Marlene... The Silvermirror Witch has always been greatly feared and despised in Thornhill, and understandably so. But the reason Marlene would even begin to accuse me of acting in service of evil, it lies elsewhere entirely I'm afraid." posx="2123" posy="232">
+		<option optionid="1" optiontext="" next="66"></option>
+	</node>
+	<node id="66" npcName="Arren Oakenthorn" anim="1" text="You see, Marlene isn't really very adept at healing at all. But I am, and this has made her look bad. She must have been lurking behind my windows, must have seen me me speaking with Eloria..." posx="2573" posy="231">
+		<option optionid="1" optiontext="You weren't busy spreading a plague among the townsfolk then?" next="67"></option>
+		<option optionid="2" optiontext="You're really a druid?" next="68"></option>
+		<option optionid="3" optiontext="How about we have some tea, to calm the nerves...?" next="62" checks="Var=Q16HadTea-0-0"></option>
+		<option optionid="4" optiontext="Let's not waste more time, I'm eager to meet Eloria." next="60" icon="Quest"></option>
+	</node>
+	<node id="67" npcName="Arren Oakenthorn" anim="1" text="Goodness, of course not! I was trying to heal them. The plague was most likely brought by traders from faraway lands, I do not believe there was anything sinister behind it. Such plagues are known to happen, simply an unfortunate tragedy." posx="3008" posy="231">
+		<option optionid="1" optiontext="You're really a druid?" next="68"></option>
+		<option optionid="2" optiontext="How about we have some tea, to calm the nerves...?" next="62" checks="Var=Q16HadTea-0-0"></option>
+		<option optionid="3" optiontext="Let's not waste more time, I'm eager to meet Eloria." next="60" icon="Quest"></option>
+	</node>
+	<node id="68" npcName="Arren Oakenthorn" anim="1" text="Wondering what one of my kind is doing in a big city? Sadly, I've not been in touch with my Ebongreen brothers and sisters in some time now. Yet my talents were needed here, especially with the onset of the Blistering Plight." posx="2434" posy="796">
+		<option optionid="1" optiontext="And you have a mirror that connects to the 'Silvermirror Witch'?" next="63"></option>
+		<option optionid="2" optiontext="How about we have some tea, to calm the nerves...?" next="62" checks="Var=Q16HadTea-0-0"></option>
+		<option optionid="3" optiontext="Let's not waste more time, I'm eager to meet Eloria." next="60" icon="Quest"></option>
+	</node>
+
+
+	
+	<node id="83" npcName="Medicine Cabinet" anim="1" text="You find Arren's cabinet full of various medicinal herbs and substances, alongside a mortar and pestle. Medicine, or maybe even a deadly poison could be created with the right know-how. Perhaps there is an instructive book nearby." posx="35" posy="923">
+		<option optionid="1" optiontext="Attempt to brew a mixture. " next="84"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="84" npcName="Medicine Cabinet" anim="1" text="Select your first ingredient." posx="498" posy="905">
+		<option optionid="1" optiontext="Violet Alder's Pollen" next="85"></option>
+		<option optionid="2" optiontext="Moonshade Leaf" next="89"></option>
+		<option optionid="3" optiontext="Dragon's Marrow" next="90"></option>
+		<option optionid="4" optiontext="Barblethorn Berries" next="85"></option>
+		<option optionid="5" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="85" npcName="Medicine Cabinet" anim="1" text="Second ingredient." posx="913" posy="1447">
+		<option optionid="1" optiontext="Dragon's marrow" next="86"></option>
+		<option optionid="2" optiontext="Hogsmoss" next="86"></option>
+		<option optionid="3" optiontext="Moonshade leaf" next="86"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="86" npcName="Medicine Cabinet" anim="1" text="Third ingredient." posx="1381" posy="1472">
+		<option optionid="1" optiontext="Licorice root" next="87"></option>
+		<option optionid="2" optiontext="Dried bellspore" next="87"></option>
+		<option optionid="3" optiontext="Everspring bramble" next="87"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="87" npcName="Medicine Cabinet" anim="1" text="Final ingredient." posx="1823" posy="1448">
+		<option optionid="1" optiontext="Snowdrop flower" next="88"></option>
+		<option optionid="2" optiontext="Thule pepper" next="88"></option>
+		<option optionid="3" optiontext="Juniper seeds" next="88"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="88" npcName="Medicine Cabinet" anim="1" text="You have no idea what this mess you've created is, so you throw it away." posx="2290" posy="1487">
+		<option optionid="1" optiontext="Let's start over." next="84"></option>
+		<option optionid="2" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="89" npcName="Medicine Cabinet" anim="1" text="Second ingredient." posx="931" posy="869">
+		<option optionid="1" optiontext="Dragon's Marrow" next="92"></option>
+		<option optionid="2" optiontext="Fennelrot" next="86"></option>
+		<option optionid="3" optiontext="Dreamy Yarrow" next="91"></option>
+		<option optionid="4" optiontext="Hogsmoss" next="86"></option>
+		<option optionid="5" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="90" npcName="Medicine Cabinet" anim="1" text="Second ingredient." posx="1350" posy="1040">
+		<option optionid="1" optiontext="Moonshade Leaf" next="92"></option>
+		<option optionid="2" optiontext="Hogsmoss" next="86"></option>
+		<option optionid="3" optiontext="Fennelrot" next="86"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="91" npcName="Medicine Cabinet" anim="1" text="Third ingredient." posx="1764" posy="864">
+		<option optionid="1" optiontext="Blackslime root." next="93"></option>
+		<option optionid="2" optiontext="Dried bellspore" next="87"></option>
+		<option optionid="3" optiontext="Licorice root" next="87"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="92" npcName="Medicine Cabinet" anim="1" text="Third ingredient." posx="2181" posy="1036">
+		<option optionid="1" optiontext="Dried bellspore" next="87"></option>
+		<option optionid="2" optiontext="Bloodvine ivy" next="94"></option>
+		<option optionid="3" optiontext="Everspring bramble" next="87"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="93" npcName="Medicine Cabinet" anim="1" text="Final ingredient." posx="2202" posy="586">
+		<option optionid="1" optiontext="More blackslime root!" next="95"></option>
+		<option optionid="2" optiontext="Snowdrop flower" next="88"></option>
+		<option optionid="3" optiontext="Thule pepper" next="88"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="94" npcName="Medicine Cabinet" anim="1" text="Final ingredient." posx="2680" posy="998">
+		<option optionid="1" optiontext="Snowdrop flower" next="88"></option>
+		<option optionid="2" optiontext="Thule pepper" next="88"></option>
+		<option optionid="3" optiontext="Hellhock" next="96"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="95" npcName="Medicine Cabinet" anim="1" text="You managed to create plenty of Tipsy Owl agent!" actions="AddItems=778-1" posx="2671" posy="597">
+		<option optionid="1" optiontext="I want to craft something else." next="84"></option>
+		<option optionid="2" optiontext="Perfect! Now, where to put this..." next="0"></option>
+	</node>
+	<node id="96" npcName="Medicine Cabinet" anim="1" text="You managed to create plenty of Rosethorn agent!" actions="AddItems=779-1" posx="3156" posy="834">
+		<option optionid="1" optiontext="I want to craft something else." next="84"></option>
+		<option optionid="2" optiontext="Perfect! Now, where to put this..." next="0"></option>
+	</node>
+
+	<node id="100" npcName="Arren's Teatable" anim="1" text="The table is littered with some sort of tea leaves and a pot that has a note saying 'especially good for nerves'. The pot appears to be full of ground tea." posx="15" posy="11">
+		<option optionid="1" optiontext="Spike the tea with an abundance of Tipsy Owl agent." next="101" checks="HasItem=778-1" actions="SetVar=Q16PoisonedTea-1,RemoveItems=778-1"></option>
+		<option optionid="2" optiontext="Spike the tea with an abundance of Rosethorn agent." next="101" checks="HasItem=779-1" actions="SetVar=Q16PoisonedTea-2,RemoveItems=779-1"></option>
+		<option optionid="3" optiontext="Leave it be." next="0"></option>
+	</node>
+	<node id="101" npcName="Arren's Teatable" anim="1" text="Now if only you could get Arren to drink this..." posx="523" posy="37">
+		<option optionid="1" optiontext="Leave." next="0"></option>
+	</node>
+
+	
+	<node id="115" npcName="Sergeant Malborn" anim="1" text="State your purpose in Thornhill, traveler! The Lord Mayor doesn't take kindly to vagrants wandering his streets." posx="33" posy="18">
+		<option optionid="1" optiontext="Looking for a healer, goes by the name Arren." next="116"></option>
+		<option optionid="2" optiontext="Erm... trade, I'm here to trade." next="126"></option>
+		<option optionid="3" optiontext="None of your business." next="127"></option>
+	</node>
+	<node id="116" npcName="Sergeant Malborn" anim="1" text="Why, you ain't sick are you? You look a bit too pale for my liking. Maybe I should gut you where you stand for trying to bring disease into our city, Thornhill only just survived one plague." posx="485" posy="17">
+		<option optionid="1" optiontext="I see we got off on the wrong foot, how about I pay you coin for the ''toll''? &lt;color=orange&gt;(50 coins)&lt;/color&gt;" next="117" showGreyedOutOption="1" checks="HasItem=131-50" actions="RemoveItems=131-50"></option>
+		<option optionid="2" optiontext="Not here for healing, I have other business to settle." next="120"></option>
+		<option optionid="3" optiontext="Sure you want to do that? Whatever I have, might get yourself infected." next="130"></option>
+	</node>
+	<node id="117" npcName="Sergeant Malborn" anim="1" text="Hold on, hold on, hold on... Am I to understand that you're trying to offer us - the good honest soldiers of Thornhill - a bribe?" posx="1268" posy="22">
+		<option optionid="1" optiontext="That's exactly what I'm offering." next="118"></option>
+		<option optionid="2" optiontext="Erm... ''toll?''" next="119"></option>
+	</node>
+	<node id="118" npcName="Sergeant Malborn" anim="1" text="Bwahahaha, I like the balls on you! You have us pecked right, what matters most here is what you have in your purse - welcome to Thornhill, traveler. Let the man through!" posx="1778" posy="-119">
+		<option optionid="1" optiontext="Wait, where do I find the healer - Arren?" next="125"></option>
+		<option optionid="2" optiontext="Thanks." actions="UpdateQuest=16-2" next="0"></option>
+	</node>
+	<node id="119" npcName="Sergeant Malborn" anim="1" text="Bwahahaha! Just messing with you, we'll take your coin gladly. Only thing that matters 'round here is what you got in your purse - welcome to Thornhill, traveler. Let the man through!" posx="1776" posy="194">
+		<option optionid="1" optiontext="Wait, where do I find the healer - Arren?" next="125"></option>
+		<option optionid="2" optiontext="Thanks." actions="UpdateQuest=16-2" next="0"></option>
+	</node>
+	<node id="120" npcName="Sergeant Malborn" anim="1" text="Is that so? And what other business might you have with a healer?" posx="962" posy="332">
+		<option optionid="1" optiontext="Umm... delivering supplies, of course." next="121"></option>
+		<option optionid="2" optiontext="That's not your problem." next="128"></option>
+	</node>
+	<node id="121" npcName="Sergeant Malborn" anim="1" text="I'll need to inspect that." posx="1520" posy="551">
+		<option optionid="1" optiontext="I'm carrying simple healing herbs." next="122"></option>
+		<option optionid="2" optiontext="I carry simple healing potions." next="123"></option>
+		<option optionid="3" optiontext="How about I pay you coin for the ''toll'' instead'? &lt;color=orange&gt;(50 coins)&lt;/color&gt;" next="117" showGreyedOutOption="1" checks="HasItem=131-50" actions="RemoveItems=131-50"></option>
+		<option optionid="4" optiontext="It really is none of your business." next="128"></option>
+	</node>
+	<node id="122" npcName="Sergeant Malborn" anim="1" text="I'll need to inspect that." posx="2012" posy="549">
+		<option optionid="1" optiontext="See - dandelions?" next="124" showGreyedOutOption="1" checks="HasItem=438-1"></option>
+		<option optionid="2" optiontext="See - redberries?" next="124" showGreyedOutOption="1" checks="HasItem=168-1"></option>
+		<option optionid="3" optiontext="Actually, I carry healing potions." next="123"></option>
+		<option optionid="4" optiontext="How about I pay you coin for the ''toll'' instead'? &lt;color=orange&gt;(50 coins)&lt;/color&gt;" next="117" showGreyedOutOption="1" checks="HasItem=131-50" actions="RemoveItems=131-50"></option>
+		<option optionid="5" optiontext="It really is none of your business." next="128"></option>
+	</node>
+	<node id="123" npcName="Sergeant Malborn" anim="1" text="I'll need to inspect that." posx="2447" posy="553">
+		<option optionid="1" optiontext="See - a mild healing potion?" next="124" checks="HasItem=169-1"></option>
+		<option optionid="2" optiontext="See - a healing potion?" next="124" checks="HasItem=476-1"></option>
+		<option optionid="3" optiontext="See - a robust healing potion?" next="124" checks="HasItem=478-1"></option>
+		<option optionid="4" optiontext="Actually, I carry healing herbs." next="122"></option>
+		<option optionid="5" optiontext="How about I pay you coin for the ''toll'' instead'? &lt;color=orange&gt;(50 coins)&lt;/color&gt;" next="117" showGreyedOutOption="1" checks="HasItem=131-50" actions="RemoveItems=131-50"></option>
+		<option optionid="6" optiontext="It really is none of your business." next="128"></option>
+	</node>
+	<node id="124" npcName="Sergeant Malborn" anim="1" text="Ah well, what do I know about healing anyway? Let the man through!" posx="2406" posy="75">
+		<option optionid="1" optiontext="Wait, where do I find the healer - Arren?" next="125"></option>
+		<option optionid="2" optiontext="Thanks." actions="UpdateQuest=16-2" next="0"></option>
+	</node>
+	<node id="125" npcName="Sergeant Malborn" anim="1" text="Eh? I look like a tour guide to you? Ah well, if it gets you out of my hair..." posx="2951" posy="33">
+		<option optionid="1" optiontext="" next="131"></option>
+	</node>
+	<node id="126" npcName="Sergeant Malborn" anim="1" text="Take me for a fool, eh? Then where's your caravan, where's your goods? Liar... give me one good reason I shouldn't gut you where you stand!" posx="405" posy="502">
+		<option optionid="1" optiontext="I see we got off on the wrong foot, how about I pay you coin for the ''toll''? &lt;color=orange&gt;(50 coins)&lt;/color&gt;" next="117" showGreyedOutOption="1" checks="HasItem=131-50" actions="RemoveItems=131-50"></option>
+		<option optionid="2" optiontext="I'd certainly like to see you try." next="129"></option>
+	</node>
+	<node id="127" npcName="Sergeant Malborn" anim="1" text="Yeah, it kind of is. Either you explain yourself, or I won't let you enter the city." posx="47" posy="906">
+		<option optionid="1" optiontext="I'd like to see you try and stop me." next="129"></option>
+		<option optionid="2" optiontext="Looking for a healer, goes by the name Arren." next="116"></option>
+		<option optionid="3" optiontext="Erm... Trade, I'm here to trade." next="126"></option>
+	</node>
+	<node id="128" npcName="Sergeant Malborn" anim="1" text="Eh? Sounds like you got something to hide. Give me one good reason I shouldn't gut you where you stand!" posx="942" posy="705">
+		<option optionid="1" optiontext="I see we got off on the wrong foot, how about I pay you coin for the ''toll''? &lt;color=orange&gt;(50 coins)&lt;/color&gt;" next="117" showGreyedOutOption="1" checks="HasItem=131-50" actions="RemoveItems=131-50"></option>
+		<option optionid="2" optiontext="I'd certainly like to see you try." next="129"></option>
+	</node>
+	<node id="129" npcName="Sergeant Malborn" anim="1" text="Alright then! Men, let's welcome this worm to Thornhill!" posx="680" posy="1159">
+		<option optionid="1" optiontext="" icon="Fight" actions="UpdateQuest=16-2,SetVar=Q16GateGuardAggro-1" next="0"></option>
+	</node>
+	<node id="130" npcName="Sergeant Malborn" anim="1" text="Diseased freak... Just stay the hell away from me." posx="3040" posy="555">
+		<option optionid="1" optiontext="" actions="UpdateQuest=16-2,SetNpcVar=ScaredOfDisease-1" next="0"></option>
+	</node>
+	<node id="131" npcName="Sergeant Malborn" anim="1" text="Northeastern side of the city, Mudderside. You'll have to cross the bridge by the marketplace to get there. The location for beggars smugglers and healers apparently. Now get going." posx="-237" posy="1042">
+		<option optionid="1" optiontext="Thanks." actions="UpdateQuest=16-2,SetVar=Q16GuardDirections-1" next="0"></option>
+	</node>
+
+
+	<node id="140" npcName="Smuggler Captain" anim="1" text="I might... who're you lookin' to break out?" posx="35" posy="36">
+		<option optionid="1" optiontext="What's it to you?" next="141"></option>
+	</node>
+	<node id="141" npcName="Smuggler Captain" anim="1" text="Usually folks who're lookin' to escape the dungeons are also lookin' to escape the city. I can help with that... for a price of course." posx="485" posy="46">
+		<option optionid="1" optiontext="Just need to know about the passage." next="142"></option>
+		<option optionid="2" optiontext="Forget I asked." next="0"></option>
+	</node>
+	<node id="142" npcName="Smuggler Captain" anim="1" text="Just knowledge, eh? Ain't so sure I'm willin' to divulge such sensitive informations to folks outside of my customs, you understand?" posx="923" posy="48">
+		<option optionid="1" optiontext="" next="143"></option>
+	</node>
+	<node id="143" npcName="Thug" anim="89" switchtalker="377" lookAtNpc="380" text="Rharharharharhar! Listen to you go, usin' such fancy language all learned like." posx="1363" posy="51">
+		<option optionid="1" optiontext="" next="144"></option>
+	</node>
+	<node id="144" npcName="Smuggler Captain" switchtalker="380" lookAtNpc="377" anim="904" text="You shut your mouth!" posx="1813" posy="57">
+		<option optionid="1" optiontext="How about I enter your 'customs' then? &lt;color=orange&gt;(80 coins)&lt;/color&gt;" next="145" showGreyedOutOption="1" checks="HasItem=131-80" actions="RemoveItems=131-80,SetVar=Q16SmugglerCaptainCustoms-1"></option>
+		<option optionid="2" optiontext="Forget I asked." next="0"></option>
+	</node>
+	<node id="145" npcName="Smuggler Captain" anim="1" text="That'll do. Ain't long ago I shipped a guy out of the city, had been locked up for gettin' a bit too political with the Lord-Mayor. Apparently his wife arranged his exit through the cemetery. You see..." posx="1046" posy="550">
+		<option optionid="1" optiontext="" next="147"></option>
+	</node>
+
+	<node id="146" npcName="Smuggler Captain" anim="1" text="Ain't long ago I shipped a guy out of the city, had been locked up for gettin' bit too political with them Lord-Mayor. Apparently his wife arranged the exit through the cemetery. You see..." posx="1048" posy="809">
+		<option optionid="1" optiontext="" next="147"></option>
+	</node>
+
+	<node id="147" npcName="Smuggler Captain" anim="1" actions="SetVar=Q16ShadyDirections-1" text="There's a network of old catacombs runnin' beneath the city, opening up at the cemetery. And as it happens, it ain't a stretch to use those catacombs to break in and out of the castle's underground prison." posx="1543" posy="628">
+		<option optionid="1" optiontext="But if there's already been an escape, wouldn't they have sealed the route?" next="148"></option>
+		<option optionid="2" optiontext="That's all I need, thanks." next="0"></option>
+	</node>
+	<node id="148" npcName="Thug" anim="1" switchtalker="377" text="Hah! Heard the guards tried to get the best stonemason in the city to do that for them, but the bugger had the nerve to demand payment for his services. The guards didn't like that, so they locked him up." posx="1988" posy="626">
+		<option optionid="1" optiontext="" next="149"></option>
+	</node>
+	<node id="149" npcName="Smuggler Captain" switchtalker="380" anim="1" actions="SetVar=Q16ShadyDirections-2" text="Flamin' idiots... Still, I heard they boarded up the opening, but that ain't a problem exactly... If your're determined, you can probably break it down with somethin' heavy, like a massive hammer." posx="2420" posy="624">
+		<option optionid="1" optiontext="Interesting, I see..." next="0"></option>
+	</node>
+
+
+	<node id="155" npcName="Marcus Glint" anim="1" text="And you come to me with this question, why? I'm an honest business man. What makes you think I'd know anything about such topics?" posx="72" posy="27">
+		<option optionid="1" optiontext="Well, do you?" next="156"></option>
+	</node>
+	<node id="156" npcName="Marcus Glint" anim="1" text="Of course I do, but that's beside the point! Ah, whatever... I will tell you what you want to know, but it shall cost you 100 gold coins. Nothing in my shop comes for free." posx="524" posy="28">
+		<option optionid="1" optiontext="Fine, then speak. &lt;color=orange&gt;(100 coins)&lt;/color&gt;" next="157" showGreyedOutOption="1" checks="HasItem=131-100" actions="RemoveItems=131-100,SetVar=Q16MarcusFenceInfo-1"></option>
+		<option optionid="2" optiontext="Phaw, forget I asked." next="0"></option>
+	</node>
+	<node id="157" npcName="Marcus Glint" anim="1" text="Indeed, this passage you so carelessly mention is a broken wall that connects the dungeons with the old catacombs running beneath the city. The catacombs on the other hand can be accessed from the cemetery." posx="1004" posy="27">
+		<option optionid="1" optiontext="" next="158"></option>
+	</node>
+	<node id="158" npcName="Marcus Glint" anim="1" actions="SetVar=Q16ShadyDirections-2" text="Oh and you may also want to know there already was an escape not too long ago, which prompted the guards to attempt to seal the way. However, as always, they did a lousy job of it, boarding it up. I'd estimate a hefty warhammer is enough to break it down." posx="1446" posy="25">
+		<option optionid="1" optiontext="I see..." next="0"></option>
+	</node>
+
+
+	<node id="165" npcName="Tavernkeeper Barrelbottom" anim="1" text="An' ye thought this might be the right place to ask? Well yer right - it is - but thing is folk 'ere ain't very talkative, 'specially to other folk they don't know." posx="161" posy="34">
+		<option optionid="1" optiontext="How about you, could you be talkative?" next="166"></option>
+		<option optionid="2" optiontext="Hm, maybe there's an easy way to make friends..." next="167"></option>
+		<option optionid="3" optiontext="Nevermind, forget I asked." next="0"></option>
+	</node>
+	<node id="166" npcName="Tavernkeeper Barrelbottom" anim="1" text="Nah, I don't know nothin'. I ain't some underworld mastermind, y'know? Just tryin' to make an honest livin' sellin' beer. Tell ya what though, that fellow next door sellin' jewelry? He's definitely connected. Take care though, he also has a price - always." posx="625" posy="38">
+		<option optionid="1" optiontext="Hm, maybe there's an easy way to make friends here..." next="167"></option>
+		<option optionid="2" optiontext="Alright, thanks for the info." next="0"></option>
+	</node>
+	<node id="167" npcName="Tavernkeeper Barrelbottom" anim="1" text="Huh...?" posx="1128" posy="45">
+		<option optionid="1" optiontext="Let me see what you're serving." next="0" actions="OpenShop=44"></option>
+		<option optionid="2" optiontext="How about you, could you be talkative?" next="166"></option>
+		<option optionid="3" optiontext="Nevermind." next="0"></option>
+	</node>
+
+
+	<node id="170" npcName="Shady Patron" anim="1" text="Oh yeah mate. There's a broken bit of wall between the prison and the underground catacombs. Use it all the time to pass messages to prisoners. All you gotta do is slip in through the cemetery." posx="151" posy="178">
+		<option optionid="1" optiontext="" next="171"></option>
+	</node>
+	<node id="171" npcName="Shady Patron" anim="1" actions="SetVar=Q16ShadyDirections-1" text="Thing is, anyone trying to escape has still gotta get through all the guards, so that part ain't as easy. That one lad who managed it, only did it cause he was some political guy with influence, so he had one of the guards helping him." posx="600" posy="176">
+		<option optionid="1" optiontext="I see... cheers." next="0"></option>
+	</node>
+
+
+	<node id="200" npcName="Innkeeper Jenny" anim="1" text="Look, I run a clean inn here, and I don't get involved in any shady business. I can't say I know anything about the dungeons, but if you're looking for some questionable information, you might want to try chatting up those sailors behind the building in the harbor. They seem to be privy to things that go beyond my knowledge." posx="151" posy="178">
+		<option optionid="1" optiontext="I see, thanks." next="0"></option>
+	</node>
+</dialogue>
+
+
+
+

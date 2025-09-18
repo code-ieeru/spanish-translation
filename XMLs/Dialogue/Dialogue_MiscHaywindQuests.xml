@@ -1,0 +1,1127 @@
+<dialogue>
+
+	<node id="1" npcName="Madam Hubbs" anim="1" text="Please, sir! You have to help me! If you're not going to help me, I don't know who will!" posx="58" posy="29">
+		<option optionid="1" optiontext="Calm down, what's the matter missus?" next="2" icon="Quest"></option>
+		<option optionid="2" optiontext="No, I can't stop..." next="0"></option>
+	</node>
+	<node id="2" npcName="Madam Hubbs" anim="1" text="My husband, Thomas! Yesterday he set out for the mountains in search of new rich ore deposits... but he never returned! I'd prepared his favourite stew - he'd never miss my stew - yet when he didn't show... something must have happened, I know it in my heart!" posx="529" posy="27">
+		<option optionid="1" optiontext="I'll look for him, just tell me where he was going?" next="4" icon="Quest"></option>
+		<option optionid="2" optiontext="Why don't you ask the other miners for help?" next="3"></option>
+		<option optionid="3" optiontext="That really is very sad." next="0"></option>
+	</node>
+	<node id="3" npcName="Madam Hubbs" anim="1" text="Don't you think I haven't?! Of course, I asked the foreman - Bvoric... that heartless excuse of a man, he just told me prospectors get lost in the mountains all the time, that it's all part of the statistics! Well not my Thomas, he would never get lost like this...!" posx="577" posy="461">
+		<option optionid="1" optiontext="Fine, where was he going?" next="4" icon="Quest"></option>
+		<option optionid="2" optiontext="That really is very sad." next="0"></option>
+	</node>
+	<node id="4" npcName="Madam Hubbs" anim="1" text="He'd gone looking for new deposits, up the mountain. Everyone knows it's more dangerous that way, but he was saying there'd be more chance of finding rich deposits, y'know? Something that'd change our lives forever..." posx="1023" posy="6">
+		<option optionid="1" optiontext="Rest easy woman, I'll look for your husband." next="8" icon="Quest"></option>
+		<option optionid="2" optiontext="More dangerous, why?" next="5"></option>
+		<option optionid="3" optiontext="How should I prepare myself going up the mountain?" next="7"></option>
+		<option optionid="4" optiontext="How do you know he didn't just get himself lost and won't turn up soon?" next="9"></option>
+	</node>
+	<node id="5" npcName="Madam Hubbs" anim="1" text="Why, every untamed bit of the mountain is inhabited by trolls and goblins and who knows what other manner of creatures! My, I've even heard stories of the very rock walls themselves springing to life. Not to mention that one case of pickaxes developing a will of their own, and started hacking at poor miners' flesh..." posx="1480" posy="440">
+		<option optionid="1" optiontext="Sounds like quite the stories." next="6"></option>
+		<option optionid="2" optiontext="Nevermind that, what does one need venturing up the mountain?" next="7"></option>
+		<option optionid="3" optiontext="How do you know he didn't just get himself lost and won't turn up soon?" next="9"></option>
+		<option optionid="4" optiontext="Rest easy woman, I'll look for your husband." next="8" icon="Quest"></option>
+	</node>
+	<node id="6" npcName="Madam Hubbs" anim="1" text="You don't believe me?! Maybe you should ask the widows of all those poor, dead miners, how even dare you...?!" posx="1929" posy="444">
+		<option optionid="1" optiontext="Nevermind that, what does one need venturing up the mountain?" next="7"></option>
+		<option optionid="2" optiontext="How do you know he didn't just get himself lost and won't turn up soon?" next="9"></option>
+		<option optionid="3" optiontext="Rest easy woman, I'll look for your husband." next="8" icon="Quest"></option>
+	</node>
+	<node id="7" npcName="Madam Hubbs" anim="1" text="You're asking me...? Ugh I'm no miner, but I guess I am the wife to one... Well, I know my Thomas would never venture up there without at least a sturdy pickaxe, a hardy bit of rope and a torch. Never forget a torch, it can get quite dark in those caves." posx="1024" posy="554">
+		<option optionid="1" optiontext="Why do you say the mountain's so dangerous?" next="5"></option>
+		<option optionid="2" optiontext="How do you know he didn't just get himself lost and won't turn up soon?" next="9"></option>
+		<option optionid="3" optiontext="Rest easy woman, I'll look for your husband." next="8" icon="Quest"></option>
+	</node>
+	<node id="8" npcName="Madam Hubbs" anim="1" text="You will? Thank you, oh thank you good sir! Please find him, I'm sure we can find a way to reward you for your effort once you get him back home safely!" posx="1693" posy="-103">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=84-1"></option>
+	</node>
+	<node id="9" npcName="Madam Hubbs" anim="1" text="You sound exactly like that man, Bvoric! I'll have you know, my Thomas does not get lost in the mountains! And not once ever has he been late to miss my rabbit stew in the evening, I knew at once he was in trouble when he didn't show!" posx="2407" posy="442">
+		<option optionid="1" optiontext="How should I prepare myself going up the mountain?" next="7"></option>
+		<option optionid="2" optiontext="Why do you say the mountain's so dangerous?" next="5"></option>
+		<option optionid="3" optiontext="Rest easy woman, I'll look for your husband." next="8" icon="Quest"></option>
+	</node>
+
+
+	<node id="14" npcName="Miner" anim="1" text="Oi, these are my rocks, would prefer you look for yer own rocks if you don't mind... just sayin'..." posx="45" posy="25">
+		<option optionid="1" optiontext="I'm looking for a missing miner - Thomas?" next="16" checks="Quest=84-1-1" icon="Quest"></option>
+		<option optionid="2" optiontext="I don't really care about these rocks." next="15"></option>
+		<option optionid="3" optiontext="As you wish." next="0"></option>
+	</node>
+	<node id="15" npcName="Miner" anim="1" text="I ain't here to argue with you, just lookin' out for my rocks." posx="626" posy="317">
+		<option optionid="1" optiontext="I'm looking for a missing miner - Thomas?" next="16" checks="Quest=84-1-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Okay then." next="0"></option>
+	</node>
+	<node id="16" npcName="Miner" anim="1" text="Yea I saw Tommy-boy alright, but he knew these ones are my rocks so he went further up. Guess he never came back down, huh?" posx="648" posy="-72">
+		<option optionid="1" optiontext="Didn't say where he was going exactly?" next="17"></option>
+		<option optionid="2" optiontext="Okay, thanks." next="0"></option>
+	</node>
+	<node id="17" npcName="Miner" anim="1" text="Nah, don't think he knew exactly. He was gonna be explorin', understand? Deeper into the mountain, through the cave down the path m'khey?" posx="1217" posy="29">
+		<option optionid="1" optiontext="Exploring up the mountain, okay..." next="0"></option>
+	</node>
+
+
+
+	<node id="20" npcName="Madam Hubbs" anim="1" text="Please, you must find my husband. I you don't help me, I don't know who will..." posx="113" posy="36">
+		<option optionid="1" optiontext="I believe I've found him, but I still need to rescue him." checks="Quest=84-2-2" next="27"></option>
+		<option optionid="2" optiontext="So he went up the mountain?" next="21"></option>
+		<option optionid="3" optiontext="Won't the other miners here help you?" next="26"></option>
+		<option optionid="4" optiontext="I'll look for him." next="0"></option>
+	</node>
+	<node id="21" npcName="Madam Hubbs" anim="1" text="Yes! In search of new ore deposits, up the mountain. Everyone knows it's more dangerous that way, but he was saying there'd be more chance of finding rich deposits, y'know? Something that'd change our lives forever..." posx="743" posy="16">
+		<option optionid="1" optiontext="Why do you say the mountain's so dangerous?" next="22"></option>
+		<option optionid="2" optiontext="How should I prepare myself going up the mountain?" next="24"></option>
+		<option optionid="3" optiontext="You're sure he didn't just get himself lost and won't turn up soon?" next="25"></option>
+		<option optionid="4" optiontext="I'll look for him." next="0"></option>
+	</node>
+	<node id="22" npcName="Madam Hubbs" anim="1" text="Why, every untamed bit of the mountain is inhabited by trolls and goblins and who knows what other manner of creatures! My, I've even heard stories of the very rock walls themselves springing to life. Not to mention that one case of pickaxes developing a will of their own, and started hacking at poor miners' flesh..." posx="1269" posy="24">
+		<option optionid="1" optiontext="Sounds like quite the stories." next="23"></option>
+		<option optionid="2" optiontext="Nevermind that, what does one need venturing up the mountain?" next="24"></option>
+		<option optionid="3" optiontext="You're sure he didn't just get himself lost and won't turn up soon?" next="25"></option>
+		<option optionid="4" optiontext="I'll look for him." next="0"></option>
+	</node>
+	<node id="23" npcName="Madam Hubbs" anim="1" text="You don't believe me?! Maybe you should ask the widows of all those poor, dead miners, how even dare you...?!" posx="1728" posy="22">
+		<option optionid="1" optiontext="Nevermind that, what does one need venturing up the mountain?" next="24"></option>
+		<option optionid="2" optiontext="You're sure he didn't just get himself lost and won't turn up soon?" next="25"></option>
+		<option optionid="3" optiontext="I'll look for him." next="0"></option>
+	</node>
+	<node id="24" npcName="Madam Hubbs" anim="1" text="You're asking me...? Ugh I'm no miner, but I guess I am the wife to one... Well, I know my Thomas would never venture up there without at least a sturdy pickaxe, a hardy bit of rope and a torch. Never forget a torch, it can get quite dark in those caves." posx="1272" posy="638">
+		<option optionid="1" optiontext="Why do you say the mountain's so dangerous?" next="22"></option>
+		<option optionid="2" optiontext="You're sure he didn't just get himself lost and won't turn up soon?" next="25"></option>
+		<option optionid="3" optiontext="I'll look for him." next="0"></option>
+	</node>
+	<node id="25" npcName="Madam Hubbs" anim="1" text="You sound exactly like that man, Bvoric! I'll have you know, my Thomas does not get lost in the mountains! And not once ever has he been late to miss my rabbit stew in the evening, I knew at once he was in trouble when he didn't show!" posx="1823" posy="550">
+		<option optionid="1" optiontext="Why do you say the mountain's so dangerous?" next="22"></option>
+		<option optionid="2" optiontext="Nevermind that, what does one need venturing up the mountain?" next="24"></option>
+		<option optionid="3" optiontext="I'll look for him." next="0"></option>
+	</node>
+	<node id="26" npcName="Madam Hubbs" anim="1" text="Don't you think I haven't?! Of course, I asked the foreman - Bvoric... that heartless excuse of a man, he just told me prospectors get lost in the mountains all the time, that it's all part of the statistics! Well not my Thomas, he would never get lost like this...!" posx="405" posy="576">
+		<option optionid="1" optiontext="So he went up the mountain?" next="21"></option>
+		<option optionid="2" optiontext="I'll look for him." next="0"></option>
+	</node>
+	<node id="27" npcName="Madam Hubbs" anim="1" text="You've found him, are you sure? Oh Thomas, what's happened to him?" posx="49" posy="21">
+		<option optionid="1" optiontext="He's stuck in a ravine, I think I may need some rope and a pickaxe to rescue him?" next="28"></option>
+		<option optionid="2" optiontext="He's stuck, but don't worry - I'll get him out." next="0"></option>
+	</node>
+	<node id="28" npcName="Madam Hubbs" anim="1" text="Thank the heavens he's alive, then! Yes, a rope and a pickaxe can be most needed up the mountain. Luckily this is a mining town, you should easily find those goods on our shopkeepers." posx="531" posy="24">
+		<option optionid="1" optiontext="I see, thank you." next="0"></option>
+	</node>
+
+	
+	<node id="30" npcName="Master Hubbs" anim="1" text="Rescued, finally! You can't imagine what it's been like, sharing a cave with a troll. I've not dared close my eyes. I owe you my life, friend." posx="82" posy="28">
+		<option optionid="1" optiontext="That shan't be necessary, a material reward will do just fine." next="31"></option>
+		<option optionid="2" optiontext="Are you hurt?" next="34"></option>
+	</node>
+	<node id="31" npcName="Master Hubbs" anim="1" text="Ah, heh... I understand. I'm not ungrateful. I'm sure we can find something suitable once I'm returned home, to my wife." posx="626" posy="21">
+		<option optionid="1" optiontext="Are you able to walk?" next="32"></option>
+		<option optionid="2" optiontext="How did you end up stuck here anyway - you fell?" next="33"></option>
+		<option optionid="3" optiontext="I'll meet you back there." next="35" icon="Quest"></option>
+	</node>
+	<node id="32" npcName="Master Hubbs" anim="1" text="Uh, I only bruised my leg a bit when I took the fall... but I should be fine. The village isn't too far off." posx="1140" posy="26">
+		<option optionid="1" optiontext="How did you end up stuck here anyway - you fell?" next="33"></option>
+		<option optionid="2" optiontext="Then I'll meet you back at the village." next="35" icon="Quest"></option>
+	</node>
+	<node id="33" npcName="Master Hubbs" anim="1" text="Yeah, I fell alright... The other miners in the village are gonna have a laugh about it for weeks in the tavern if they ever find out. " posx="1135" posy="402">
+		<option optionid="1" optiontext="Are you able to walk?" next="32"></option>
+		<option optionid="2" optiontext="I'll meet you back at the village." next="35" icon="Quest"></option>
+	</node>
+	<node id="34" npcName="Master Hubbs" anim="1" text="Nah, nothing too badly. Scrapes and bruises, much bigger blow to my ego than anything else I'd say." posx="368" posy="492">
+		<option optionid="1" optiontext="So you're able to walk?" next="32"></option>
+		<option optionid="2" optiontext="How did you end up stuck here anyway - you fell?" next="33"></option>
+		<option optionid="3" optiontext="Then I'll meet you back at the village?" next="35"></option>
+	</node>
+	<node id="35" npcName="Master Hubbs" anim="1" text="Thanks again, I'll just get limping now... Oh, and watch out for that troll if you plan on sticking around... and goblins... and who knows what..." posx="1723" posy="280">
+		<option optionid="1" optiontext="" next="0"  icon="Quest" actions="Cinematic=135"></option>
+	</node>
+
+
+	<node id="40" npcName="Master Hubbs" anim="537" text="Ughhh...! Heavens sakes, man! Why couldn't you just keep your voice down...?!" posx="93" posy="41">
+		<option optionid="1" optiontext="Are you... alright?" next="41"></option>
+	</node>
+	<node id="41" npcName="Master Hubbs" anim="1" text="Eh...? What do you think? That troll knocked the living out of me, whacked me on the torso... may have broken a few ribs, I reckon... &lt;color=#9C8C77&gt; *cough, cough...!* &lt;/color&gt;" posx="559" posy="39">
+		<option optionid="1" optiontext="But are you able to walk? " next="42"></option>
+		<option optionid="2" optiontext="Yeah, that was really unfortunate..." next="43"></option>
+		<option optionid="3" optiontext="You should get back to the village." next="45" icon="Quest"></option>
+	</node>
+	<node id="42" npcName="Master Hubbs" anim="1" text="Yeah, yeah... I think so... lucky the village ain't too far from here..." posx="1007" posy="38">
+		<option optionid="1" optiontext="Yeah, that troll was really unfortunate..." next="43"></option>
+		<option optionid="2" optiontext="Then you should get back to the village." next="45" icon="Quest"></option>
+	</node>
+	<node id="43" npcName="Master Hubbs" anim="1" text="Unfortunate...?! &lt;color=#9C8C77&gt; *cough, cough...!* &lt;/color&gt; Heavens man, if you'd just stopped screeching...! I managed to keep away from that thing for over a whole day before you came along...!" posx="990" posy="371">
+		<option optionid="1" optiontext="" next="44"></option>
+	</node>
+	<node id="44" npcName="Master Hubbs" anim="1" text="Ah well, what's done is done. To be fair, I guess I'd still be waiting down here if not for you. Win some, lose some..." posx="1427" posy="416">
+		<option optionid="1" optiontext="Are you able to walk? " next="42"></option>
+		<option optionid="2" optiontext="You should get back to the village." next="45" icon="Quest"></option>
+	</node>
+	<node id="45" npcName="Master Hubbs" anim="1" text="Yeah, alright - I'll start limping... Wife must be waiting for me, sick with worry... By the way, take care if you plan on sticking around, pretty sure there are also goblins scuttling about, maybe even more trolls..." posx="1732" posy="33">
+		<option optionid="1" optiontext="" next="0" icon="Quest" actions="Cinematic=135"></option>
+	</node>
+
+
+	<node id="55" npcName="Steep Ravine" anim="1" text="&lt;color=#9C8C77&gt; *A dark ravine drops down in front of you. Haphazardly, someone appears to have dropped a few tools on the ground next to it.* &lt;/color&gt;" posx="62" posy="35">
+		<option optionid="1" optiontext="Hello?! Is anyone down there?!" next="56" checks="Quest=84-1-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="56" npcName="Steep Ravine" anim="1" text="&lt;color=#9C8C77&gt; *You hear sudden sounds of frantic scrambling down below. Eventually someone speaks back up at you in very hushed tones.* &lt;/color&gt;" posx="516" posy="31">
+		<option optionid="1" optiontext="" next="57"></option>
+	</node>
+	<node id="57" npcName="Steep Ravine" anim="1" text="Be quiet...! Stop shouting...! I'm down here, thank the ancestors you've found me...!" posx="963" posy="34">
+		<option optionid="1" optiontext="I'm looking for a missing miner - Thomas?" next="63"></option>
+		<option optionid="2" optiontext="What did you say?! Speak up please!!" next="58"></option>
+	</node>
+	<node id="58" npcName="Steep Ravine" anim="1" text="No...! Stop it...! You have to stay quiet, there's a troll down here, right down the corridor...! I'm in trouble if it hears you...!" posx="1452" posy="311">
+		<option optionid="1" optiontext="I CAN'T HEAR YOU, PLEASE SPEAK LOUDER!!!" next="59"></option>
+		<option optionid="2" optiontext="I'm looking for a missing miner - Thomas?" next="63"></option>
+	</node>
+	<node id="59" npcName="Steep Ravine" anim="1" text="Oh for heavens sake, cut it out...! You're gonna attract the... oh no...! No, no, no...!" posx="1899" posy="336">
+		<option optionid="1" optiontext="IS EVERYTHING ALRIGHT DOWN THERE?!" next="60"></option>
+	</node>
+	<node id="60" npcName="Steep Ravine" anim="1" text="&lt;color=#9C8C77&gt; *Noises of bestial snorting emerge from down below. Then a roar and shouting, and the sounds of a scuffle.* &lt;/color&gt;" posx="2345" posy="338">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt; *I should probably get down there.* &lt;/color&gt;" next="61"></option>
+		<option optionid="2" optiontext="HELLOOO...?! ARE YOU OKAYYY?!" next="62"></option>
+	</node>
+	<node id="61" npcName="Steep Ravine" anim="1" text="&lt;color=#9C8C77&gt; *A rope will likely be required in order to lower youself down to see what's happened. It's pretty dark too, so a torch might come in handy, not to mention a pickaxe.* &lt;/color&gt;" posx="2855" posy="311">
+		<option optionid="1" optiontext="" next="0" actions="SetVar=Q84TrollAttack-1,UpdateQuest=84-2"></option>
+	</node>
+	<node id="62" npcName="Steep Ravine" anim="1" text="&lt;color=#9C8C77&gt; *No intelligible response comes back to you, only the odd sounds of grunting and scrambling.* &lt;/color&gt;" posx="2650" posy="697">
+		<option optionid="1" optiontext="" next="61"></option>
+	</node>
+	<node id="63" npcName="Steep Ravine" anim="1" text="Yes, that'd be me... Did my wife send you...? She must have, bless that woman..." posx="1572" posy="-236">
+		<option optionid="1" optiontext="Let's get you out of there." next="67" icon="Quest"></option>
+		<option optionid="2" optiontext="How did you end up down there?" next="64"></option>
+		<option optionid="3" optiontext="Why are you whispering?" next="66"></option>
+	</node>
+	<node id="64" npcName="Steep Ravine" anim="1" text="I fell, alright...? I know how it sounds, if the other miners in the village hear that, they'll be laughing about it in the tavern for weeks to come..." posx="1347" posy="914">
+		<option optionid="1" optiontext="" next="65"></option>
+	</node>
+	<node id="65" npcName="Steep Ravine" anim="1" text="I was inspecting some of the rocks nearby, took a step back, stumbled on a large stone... next thing I know I'm down here... didn't hurt myself too badly though, if there's a silverlining..." posx="1777" posy="913">
+		<option optionid="1" optiontext="Why are you whispering?" next="66"></option>
+		<option optionid="2" optiontext="Let's get you out of there." next="67" icon="Quest"></option>
+	</node>
+	<node id="66" npcName="Steep Ravine" anim="1" text="I ain't exactly alone down here... know for a fact a troll resides just down the corridor near me... pretty sure there are goblins further down too... Been staying veeery quiet-like since I got stuck here..." posx="2417" posy="1078">
+		<option optionid="1" optiontext="How did you end up down there?" next="64"></option>
+		<option optionid="2" optiontext="Let's get you out of there." next="67" icon="Quest"></option>
+	</node>
+	<node id="67" npcName="Steep Ravine" anim="1" text="Uhh... yeah, I hope you're carrying rope... unless you intend to tumble down here like I did... then we'll both be stuck... It's pretty dark too, bring a torch! Oh, and a pickaxe - there are some boulders in the way!" posx="2320" posy="-172">
+		<option optionid="1" optiontext="Worry not, I'm on it." next="0" actions="UpdateQuest=84-2"></option>
+		<option optionid="2" optiontext="I mean, what kind of an idiot goes up the mountain without carrying rope anyway?" checks="HasItem=485-1" next="69"></option>
+		<option optionid="3" optiontext="I mean, what kind of an idiot goes up the mountain without carrying rope anyway?" checks="!HasItem=485-1" next="68"></option>
+	</node>
+	<node id="68" npcName="Steep Ravine" anim="1" text="&lt;color=#9C8C77&gt; *You know full well you're not carrying any rope with you.* &lt;/color&gt;" posx="3398" posy="205">
+		<option optionid="1" optiontext="" next="69"></option>
+	</node>
+	<node id="69" npcName="Steep Ravine" anim="1" text="Heh, I guess you're right there... well, any time you're ready... I'm definitely ready to get out of here..." posx="2919" posy="-96">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=84-2"></option>
+	</node>
+
+
+	<node id="80" npcName="Madam Hubbs" switchtalker="869" lookAtNpc="870" anim="1" text="Thomas, you're home! I had begun to fear the worst, thank the ancestors you're safe!" posx="75" posy="48">
+		<option optionid="1" optiontext="" next="81"></option>
+	</node>
+	<node id="81" npcName="Master Hubbs" switchtalker="870" lookAtNpc="869" anim="1" text="Thanks to this fellow you sent looking for me, I got out with naught but a few scrapes and bruises, and a scare." posx="504" posy="48">
+		<option optionid="1" optiontext="" next="82"></option>
+	</node>
+	<node id="82" npcName="Madam Hubbs" switchtalker="869" lookAtNpc="870" anim="1" text="To think none of your so-called friends in the village would even lift a finger! Pretending you were merely lost and that you'd show up any moment on your own, bah! This fellow deserves to be rewarded!" posx="935" posy="49">
+		<option optionid="1" optiontext="Try to be more careful next time?" next="83"></option>
+		<option optionid="2" optiontext="He certainly does." next="86" icon="Quest"></option>
+	</node>
+	<node id="83" npcName="Madam Hubbs" switchtalker="869" lookAtNpc="870" anim="1" text="Oh, must you venture into the mountain again, Thomas? Surely you could be doing something safer?" posx="1434" posy="22">
+		<option optionid="1" optiontext="" next="84"></option>
+	</node>
+	<node id="84" npcName="Master Hubbs" switchtalker="870" lookAtNpc="869" anim="1" text="But do it I must, for you and the children, my darling! All I do has always been for you and the children..." posx="1895" posy="28">
+		<option optionid="1" optiontext="" next="85"></option>
+	</node>
+	<node id="85" npcName="Madam Hubbs" switchtalker="869" lookAtNpc="870" anim="1" text="Oh...! &lt;color=#9C8C77&gt; *sob!* &lt;/color&gt; Oh, Thomas...!" posx="2333" posy="32">
+		<option optionid="1" optiontext="Yes well, I hate to stand in the way of awkward cliches, but my reward?" next="86" icon="Quest"></option>
+	</node>
+	<node id="86" npcName="Madam Hubbs" anim="1" text="We are not rich folk, but I hope our offering will please you nonetheless. Thomas - will you please find something for the man who saved your life?" posx="1616" posy="344">
+		<option optionid="1" optiontext="" next="99"></option>
+	</node>
+
+	<node id="90" npcName="Madam Hubbs" switchtalker="869" lookAtNpc="870" anim="1" text="Thomas?! What on earth has happened to you?!" posx="24" posy="31">
+		<option optionid="1" optiontext="" next="91"></option>
+	</node>
+	<node id="91" npcName="Master Hubbs" switchtalker="870" lookAtNpc="869" anim="537" text="&lt;color=#9C8C77&gt; *cough!* &lt;/color&gt; Maimed by a troll... think I'll need some time to heal..." posx="472" posy="31">
+		<option optionid="1" optiontext="" next="92"></option>
+	</node>
+	<node id="92" npcName="Madam Hubbs" switchtalker="869" lookAtNpc="870" anim="1" text="Thank the ancestors I sent this man to find you when I did! Who knows, otherwise I might've lost you forever!" posx="907" posy="34">
+		<option optionid="1" optiontext="" next="93"></option>
+	</node>
+	<node id="93" npcName="Master Hubbs" switchtalker="870" lookAtNpc="869" anim="537" text="Yeah... &lt;color=#9C8C77&gt; *cough!* &lt;/color&gt; He's a real hero this one, alright..." posx="1349" posy="33">
+		<option optionid="1" optiontext="What will you do now?" next="94"></option>
+		<option optionid="2" optiontext="Ahem, perhaps the hero might be rewarded?" next="97" icon="Quest"></option>
+	</node>
+	<node id="94" npcName="Madam Hubbs" switchtalker="869" lookAtNpc="870" anim="1" text="I'm just grateful to have Thomas safely back home with me, where he belongs. And when you've recovered, you're going to pick up farming, Thomas! Leave this nasty prospecting business behind!" posx="1846" posy="10">
+		<option optionid="1" optiontext="" next="95"></option>
+	</node>
+	<node id="95" npcName="Master Hubbs" switchtalker="870" lookAtNpc="869" anim="537" text="Wait... but... there's a lot more gold to be had from prospecting... &lt;color=#9C8C77&gt; *cough!* &lt;/color&gt; literally..." posx="2284" posy="9">
+		<option optionid="1" optiontext="" next="96"></option>
+	</node>
+	<node id="96" npcName="Madam Hubbs" switchtalker="869" lookAtNpc="870" anim="1" text="And how will you provide for your children if you're dead? No arguments, Thomas!" posx="2722" posy="11">
+		<option optionid="1" optiontext="I should be on my way, but perhaps there's a reward for saving your husband's life?" next="97" icon="Quest"></option>
+	</node>
+	<node id="97" npcName="Madam Hubbs" switchtalker="869" anim="1" text="Of course! We are not rich folk, but I hope our offering will please you nonetheless. Thomas - will you please find something for the man who saved your life?" posx="2008" posy="358">
+		<option optionid="1" optiontext="" next="99"></option>
+	</node>
+
+	<node id="99" npcName="Master Hubbs" switchtalker="870" anim="1" text="I'd be happy to give you one of my better mining bags, how about it? Are you more of a copper or an iron miner? Let me know, we can also switch the bags later if you'd like." posx="29" posy="24">
+		<option optionid="1" optiontext="Copper, certainly." next="100" actions="SetVar=Q84OreBag-1"></option>
+		<option optionid="2" optiontext="Iron is the good stuff." next="100" actions="SetVar=Q84OreBag-2"></option>
+	</node>
+	<node id="100" npcName="Madam Hubbs" switchtalker="869" anim="1" text="Then it's settled! Now I must tend to my husband's wounds. Thank you and farewell, kind traveler!" posx="47" posy="22">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=84-999"></option>
+	</node>
+
+
+	<node id="105" npcName="Master Hubbs" anim="1" text="Can't thank you enough, stranger! If not for you, I suppose I might have ended in a troll cook pot by now." posx="33" posy="24">
+		<option optionid="1" optiontext="I was hoping to switch your mining bag to one more suitable for iron." icon="Loot" next="106" checks="HasItem=926-1"></option>
+		<option optionid="2" optiontext="I was hoping to switch your mining bag to one more suitable for copper." icon="Loot" next="107" checks="HasItem=927-1"></option>
+		<option optionid="3" optiontext="My pleasure." next="0"></option>
+	</node>
+	<node id="106" npcName="Master Hubbs" itemIcon="927" anim="1" text="Sure thing, hope it serves you well!" posx="556" posy="20">
+		<option optionid="1" optiontext="Thanks!" next="0" icon="Loot" actions="RemoveItems=926-1,AddItems=927-1"></option>
+	</node>
+	<node id="107" npcName="Master Hubbs" itemIcon="926" anim="1" text="Sure thing, hope it serves you well!" posx="547" posy="311">
+		<option optionid="1" optiontext="Thanks!" next="0" icon="Loot" actions="RemoveItems=927-1,AddItems=926-1"></option>
+	</node>
+
+
+	<node id="118" npcName="Kurt" anim="1" text="Oi you! Think you can 'elp me out?" posx="0" posy="554">
+		<option optionid="1" optiontext="Depends, what do you need help with?" next="119" icon="Quest"></option>
+		<option optionid="2" optiontext="Not today, sorry." next="0"></option>
+	</node>
+	<node id="119" npcName="Kurt" anim="1" text="Me name's Kurt and me leg's bum from them blasted critters outside. I was tryin'a thin 'em out since they keep comin' back so fast, but the blasted things are fast as devil an' I tripped an' hurt meself." posx="400" posy="554">
+		<option optionid="1" optiontext="I didn't see any monsters on the way in..." next="120"></option>
+	</node>
+	<node id="120" npcName="Kurt" anim="1" text="Eh? With the gnarled teeth and long skinny tails? Outside on the streets? They look a man in the eye with no hint o' fear. Those cold, dead eyes starin' right through ya like tonights supper. Brought cats in to deal with 'em but buggers grown so large even cats fear 'em!" posx="800" posy="554">
+		<option optionid="1" optiontext="...rats?" next="121"></option>
+	</node>
+	<node id="121" npcName="Kurt" anim="1" text="Thin 'em out a bit fo' me, would ya? At least eight of 'em should keep 'em away from the larders a bit. There's coin in it for you." posx="1200" posy="554">
+		<option optionid="1" optiontext="Sure, I guess." next="0" actions="UpdateQuest=17-1"></option>
+		<option optionid="2" optiontext="Sorry, I can think of a lot more important things to do than running after some rats." next="0"></option>
+	</node>
+
+	<node id="122" npcName="Kurt" anim="1" text="I still see too many of 'em beasts about. Go on now, git!" posx="1600" posy="554">
+		<option optionid="2" optiontext="Yes, fine." next="0"></option>
+	</node>
+
+	<node id="123" npcName="Kurt" anim="1" text="Is it done?" posx="2000" posy="554">
+		<option optionid="1" optiontext="I valiantly slew 8 of the wretched beasts. They were so dangerous, so feral, I don't know how I managed to survive..." next="124" icon="Quest"></option>
+		<option optionid="2" optiontext="Wait, there are still a few too many about." next="0"></option>
+	</node>
+	<node id="124" npcName="Kurt" anim="1" text="Then the great town o' Haywind appreciates yer service! Here's the payment, as agreed." posx="2400" posy="554">
+		<option optionid="1" optiontext="You're most welcome." next="0" actions="UpdateQuest=17-999"></option>
+	</node>
+
+
+	<node id="200" npcName="Fisherman Charles Gilles" anim="1" text="You oughta know, we're highly competitive about fishing here at the cabins of Aurfield. Best fishermen of the realm gather here, that's for sure. Or the most enthusiastic ones anyway... Say, don't reckon I've seen you here before?" posx="23" posy="15">
+		<option optionid="1" optiontext="Rothar Aercrest, my pleasure." next="201" icon="Quest"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="201" npcName="Fisherman Charles Gilles" anim="1" text="Charles Gilles, expert fisherman at your service. Say lad, you into fishing?" posx="449" posy="16">
+		<option optionid="1" optiontext="Fishing is life!" next="202" checks="HasTrait=13"></option>
+		<option optionid="2" optiontext="I've certainly had quite the catch over the years." next="211" checks="HasSkillLevel=Fishing-20" showGreyedOutOption="1"></option>
+		<option optionid="3" optiontext="Well, I cast my trusty rod every now and then..." next="212"></option>
+	</node>
+	<node id="202" npcName="Fisherman Charles Gilles" anim="1" text="Hah, a man after me own heart! The river's full of trout of all sorts - it's an excellent place for it! Although, between you and meself, there are places even better..." posx="910" posy="14">
+		<option optionid="1" optiontext="" next="203"></option>
+	</node>
+	<node id="203" npcName="Fisherman Charles Gilles" anim="1" text="What say you we cut a deal? The lads here in the village are in the midst of a fishing competition and I'm of a mind to collect the trophy. I know a secret location where one can find the elusive Aurora Trout!" posx="1331" posy="18">
+		<option optionid="1" optiontext="" next="204"></option>
+	</node>
+	<node id="204" npcName="Fisherman Charles Gilles" anim="1" text="Alas, over the years the entrance's become so overgrown I can't reach it. But, if someone like you could figure out a way through, you could catch the fish for me and we'd split the prize!" posx="1763" posy="18">
+		<option optionid="1" optiontext="Why does that sound like I'll doing all the heavy work...?" next="205"></option>
+		<option optionid="2" optiontext="Sounds like a deal!" next="206" icon="Quest"></option>
+	</node>
+	<node id="205" npcName="Fisherman Charles Gilles" anim="1" text="Well yeah, kinda... but! The secret fishing spot and the existence of the Aurora Trout is all down to my knowledge, so it's a fair deal. All I want is the trophy and the bragging rights, you'll get everything else, hehe!" posx="2211" posy="21">
+		<option optionid="1" optiontext="In that case I'll need the location of this Aurora Trout." next="206" icon="Quest"></option>
+	</node>
+	<node id="206" npcName="Fisherman Charles Gilles" anim="1" text="Perfection! Y'know, folks here are so complacent they never think to look for spots outside the River Aure. But across the grove to the east, I once ventured through a tunnel that opened up to a sheltered clearing..." posx="2231" posy="341">
+		<option optionid="1" optiontext="" next="207"></option>
+	</node>
+	<node id="207" npcName="Fisherman Charles Gilles" anim="1" text="And there it is...! A waterfall runs down to a small pond below - into perfectly clear waters - where I spotted the glistening scales of none other than the mysterious Aurora Trout!" posx="2667" posy="343">
+		<option optionid="1" optiontext="Then you've been fishing there before?" next="208"></option>
+		<option optionid="2" optiontext="So the secret clearing's to the east?" next="209"></option>
+		<option optionid="3" optiontext="I'll catch that trout." next="210" icon="Quest"></option>
+	</node>
+	<node id="208" npcName="Fisherman Charles Gilles" anim="1" text="Have I, mate? I used to win every contest with fish I caught from that pond. But never did I manage catch that Aurora Trout, it really left me feeling incomplete I guess." posx="3100" posy="344">
+		<option optionid="1" optiontext="So the secret clearing's to the east?" next="209"></option>
+		<option optionid="2" optiontext="I'll catch that trout." next="210" icon="Quest"></option>
+	</node>
+	<node id="209" npcName="Fisherman Charles Gilles" anim="1" text="Aye, over the sheltered grove, way at the edge of the large forest I guess they call Mistywood. The tunnel entrance is there, but keep in mind it's overgrown so I hope you're as handy with a hatchet as you claim to be with a fishing rod, eh?" posx="3122" posy="693">
+		<option optionid="1" optiontext="You've been fishing there before?" next="208"></option>
+		<option optionid="2" optiontext="I'll catch that trout." next="210" icon="Quest"></option>
+	</node>
+	<node id="210" npcName="Fisherman Charles Gilles" anim="1" text="That's music to my ears! Oh, one more thing I nearly forgot! According to tales, the Aurora Trout is only attracted to shiny bait, so make sure to use a gilded hook!" posx="3680" posy="507">
+		<option optionid="1" optiontext="Wait... don't suppose you could lend me one?" next="217"></option>
+		<option optionid="2" optiontext="That won't be a problem." next="0" actions="UpdateQuest=89-1"></option>
+	</node>
+	<node id="211" npcName="Fisherman Charles Gilles" anim="1" text="Always glad to meet a true veteran! The river's full of trout of all sorts - it's an excellent place for it! Although, between you and meself, there are places even better..." posx="911" posy="250">
+		<option optionid="1" optiontext="" next="203"></option>
+	</node>
+	<node id="212" npcName="Fisherman Charles Gilles" anim="1" text="Heh, far be it from me to look down on a casual. You've come to an excellent place to practice, the river's full of trout of all sorts. And if you really get the fishing bug, maybe we'll be exchanging a few secrets later, eh?" posx="1346" posy="509">
+		<option optionid="1" optiontext="I'll keep that in mind." next="0" actions="SetNpcVar=FisherIntro-1"></option>
+	</node>
+
+	<node id="213" npcName="Fisherman Charles Gilles" anim="1" text="Charles Gilles, expert fisherman at your service. And if memory serves... you're Rowther Aerendale, yeah? Any luck fishing lately?" posx="111" posy="625">
+		<option optionid="1" optiontext="Truly, fishing is life!" next="202" checks="HasTrait=13"></option>
+		<option optionid="2" optiontext="I've certainly racked up quite the catch." next="211" checks="HasSkillLevel=Fishing-20" showGreyedOutOption="1"></option>
+		<option optionid="3" optiontext="Actually, it's Rothar Aercrest..." next="214"></option>
+		<option optionid="4" optiontext="How's life around here?" next="215"></option>
+		<option optionid="5" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="214" npcName="Fisherman Charles Gilles" anim="1" text="Yeah whatever, exactly! So any luck fishing lately?" posx="625" posy="618">
+		<option optionid="1" optiontext="Truly, fishing is life!" next="202" checks="HasTrait=13"></option>
+		<option optionid="2" optiontext="I've certainly racked up quite the catch." next="211" checks="HasSkillLevel=Fishing-20" showGreyedOutOption="1"></option>
+		<option optionid="3" optiontext="How's life around here?" next="215"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="215" npcName="Fisherman Charles Gilles" anim="1" text="Ah well, y'know... We're highly competitive about fishing here at the cabins of Aurfield. Best fishermen of the realm gather here, that's for sure. Or the most enthusiastic ones anyway. There's something of a competition brewing right now as a matter of fact." posx="1215" posy="915">
+		<option optionid="1" optiontext="" next="216"></option>
+	</node>
+	<node id="216" npcName="Fisherman Charles Gilles" anim="1" text="Which reminds me - any luck fishing lately?" posx="1677" posy="924">
+		<option optionid="1" optiontext="Truly, fishing is life!" next="202" checks="HasTrait=13"></option>
+		<option optionid="2" optiontext="I've certainly racked up quite the catch." next="211" checks="HasSkillLevel=Fishing-20" showGreyedOutOption="1"></option>
+		<option optionid="3" optiontext="Some, I'll keep at it..." next="0"></option>
+	</node>
+	<node id="217" npcName="Fisherman Charles Gilles" anim="1" text="Ah... nah mate, sorry! Couple years back I accidentally got mine stuck onto a crab shell, and the bugger scurried off with it. Happens to a lot of folk all the time, I hear." posx="4221" posy="314">
+		<option optionid="1" optiontext="Right then..." next="0" actions="UpdateQuest=89-1"></option>
+	</node>
+
+
+	<node id="220" npcName="Fisherman Charles Gilles" anim="1" text="Rowther Aerendale, my new best mate! Tell me, any luck finding the elusive Aurora Trout? Don't forget to use a gilded hook! According to tales the Aurora Trout is only attracted to shiny bait." posx="24" posy="18">
+		<option optionid="1" optiontext="Don't suppose you could lend me a gold hook?" next="225"></option>
+		<option optionid="2" optiontext="Remind me, where should I be looking?" next="221"></option>
+		<option optionid="3" optiontext="So you think the Aurora Trout will win a fishing competition?" next="224"></option>
+		<option optionid="4" optiontext="Um, it's Rothar, actually..." next="222"></option>
+		<option optionid="5" optiontext="Nothing yet..." next="0"></option>
+	</node>
+	<node id="221" npcName="Fisherman Charles Gilles" anim="1" text="Aye, so head over the grove due east, way to the edge of the large forest I guess they call Mistywood. A tunnel entrance leads to a secret clearing in the woods, where a waterfall runs down to a small pond below - that's where you'll find the Aurora Trout!" posx="486" posy="22">
+		<option optionid="1" optiontext="" next="223"></option>
+	</node>
+	<node id="222" npcName="Fisherman Charles Gilles" anim="1" text="Yeah exactly! The elusive Aurora Trout - any luck yet?" posx="472" posy="390">
+		<option optionid="1" optiontext="Don't suppose you could lend me a gold hook?" next="225"></option>
+		<option optionid="2" optiontext="Remind me, where should I be looking?" next="221"></option>
+		<option optionid="3" optiontext="So you think the Aurora Trout will win a fishing competition?" next="224"></option>
+		<option optionid="4" optiontext="Nothing yet..." next="0"></option>
+	</node>
+	<node id="223" npcName="Fisherman Charles Gilles" anim="1" text="But keep in mind the entrance's become overgrown so I hope you're as handy with a hatchet as you claim to be with a fishing rod, eh?" posx="927" posy="21">
+		<option optionid="1" optiontext="Don't suppose you could lend me a gold hook?" next="225"></option>
+		<option optionid="2" optiontext="So you think the Aurora Trout will win a fishing competition?" next="224"></option>
+		<option optionid="3" optiontext="Righto..." next="0"></option>
+	</node>
+	<node id="224" npcName="Fisherman Charles Gilles" anim="1" text="I'm absolutely positive, mate! Used to win competitions all the time from fish I caught from the sheltered clearing. Never did manage to catch that Aurora Trout though, left me feeling kind of incomplete I guess..." posx="951" posy="371">
+		<option optionid="1" optiontext="Don't suppose you could lend me a gold hook?" next="225"></option>
+		<option optionid="2" optiontext="Remind me, where should I be looking?" next="221"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="225" npcName="Fisherman Charles Gilles" anim="1" text="Ah... nah mate, sorry! Couple years back I accidentally got mine stuck onto a crab shell, and the bugger scurried off with it. Happens to a lot of folk all the time, I hear." posx="1209" posy="1231">
+		<option optionid="1" optiontext="Remind me, where should I be looking for the Aurora Trout?" next="221"></option>
+		<option optionid="2" optiontext="So you think the fish will win a competition?" next="224"></option>
+		<option optionid="3" optiontext="Right then." next="0"></option>	
+	</node>
+
+
+	<node id="240" npcName="Fisherman Charles Gilles" anim="1" text="Master Oarkness, any luck with the Aurora Trout? We'll be needing it soon if we're to win the village competition." posx="41" posy="23">
+		<option optionid="1" optiontext="I found it swimming in the sheltered pond like you said, but the fish wouldn't bite..." next="241" icon="Quest"></option>
+		<option optionid="2" optiontext="What's the situation in the competitition like?" next="247"></option>
+		<option optionid="3" optiontext="It's Aercrest, actually..." next="248"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="241" npcName="Fisherman Charles Gilles" anim="1" text="And you're absolutely positive you tried with a gilded hook? Bugger it, I was convinced that oughta do the trick! Seeing the fish's eluded you and me both, mayhap the fault ain't in the angler but the bait just ain't enough. Hm, that reminds me..." posx="459" posy="23">
+		<option optionid="1" optiontext="" next="242"></option>
+	</node>
+	<node id="242" npcName="Fisherman Charles Gilles" anim="1" text="I once met one of those druid fellows in the clearing. He kept going on about these luminiscent worms found in the soil by the roots of glowing willows. Now, I just wanted him to leave me in peace, but you reckon he was trying to tell me something?" posx="883" posy="22">
+		<option optionid="1" optiontext="You don't think..." next="243"></option>
+		<option optionid="2" optiontext="What trees, where?" next="244"></option>
+		<option optionid="3" optiontext="But how does one retrieve worms?" next="245"></option>
+		<option optionid="4" optiontext="I think it sounds like worth a shot." next="246" icon="Quest"></option>
+	</node>
+	<node id="243" npcName="Fisherman Charles Gilles" anim="1" text="I mean there I was getting frustrated because the Aurora Trout wouldn't bite, and I thought the weird tree lover was just scaring the fish away with all his blathering." posx="1311" posy="25">
+		<option optionid="1" optiontext="What trees, where?" next="244"></option>
+		<option optionid="2" optiontext="But how does one retrieve worms?" next="245"></option>
+		<option optionid="3" optiontext="Sounds like worth a shot." next="246" icon="Quest"></option>
+	</node>
+	<node id="244" npcName="Fisherman Charles Gilles" anim="1" text="The glowing willows, y'know? I guess they're all over the grove to the east, right beside our secret tunnel. Hard not to recognize 'em when you see 'em." posx="1347" posy="442">
+		<option optionid="1" optiontext="And how does one retrieve worms?" next="245"></option>
+		<option optionid="2" optiontext="Sounds like worth a shot." next="246" icon="Quest"></option>
+	</node>
+	<node id="245" npcName="Fisherman Charles Gilles" anim="1" text="Mate...? I can't tell if you're asking that seriously, or just to jest... You grab a shovel and dig them up, innit? Speaking of which, I have one resting here right beside me, on the table." posx="1835" posy="136">
+		<option optionid="1" optiontext="What were these trees I should be digging at?" next="244"></option>
+		<option optionid="2" optiontext="Sounds like worth a shot." next="246" icon="Quest"></option>
+	</node>
+	<node id="246" npcName="Fisherman Charles Gilles" anim="1" text="Yeah, yeah... I think we're onto something here too. A glowing worm at the end of a gilded hook? If the fish don't bite it, then I'll say the legends about it loving shiny things are complete poppycock." posx="1935" posy="555">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=89-3"></option>
+	</node>
+	<node id="247" npcName="Fisherman Charles Gilles" anim="1" text="Folk casting away at the river, catching same old average fish. They never think to look for spots outside the river, y'know? It's got lots of fish for sure, but you'll never catch anything special there." posx="462" posy="295">
+		<option optionid="1" optiontext="I found the Aurora Trout like you said, but the fish wouldn't bite..." next="241" icon="Quest"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+	<node id="248" npcName="Fisherman Charles Gilles" anim="1" text="Yeah, ain't that what I said? Anyway, the Aurora Trout - we'll be needing it soon if we're to win the village competition." posx="1566" posy="1105">
+		<option optionid="1" optiontext="I found it swimming in the sheltered pond like you said, but the fish wouldn't bite..." next="241" icon="Quest"></option>
+		<option optionid="2" optiontext="What's the situation in the competitition like?" next="247"></option>
+		<option optionid="3" optiontext="Nevermind." next="0"></option>
+	</node>
+
+
+	<node id="260" npcName="Fisherman Charles Gilles" anim="1" text="Alright, Master Eargrass? You get one of them glowing worms at the end of a gilded hook, and if the fish don't bite, I'd say the legends about it loving shiny things are complete poppycock." posx="34" posy="23">
+		<option optionid="1" optiontext="Where should I be looking for the worms again?" next="261"></option>
+		<option optionid="2" optiontext="Um... how does one retrieve worms?" next="263"></option>
+		<option optionid="3" optiontext="Seriously, it's Aercrest..." next="264"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="261" npcName="Fisherman Charles Gilles" anim="1" text="Well, one of them druid fellows I once met in the clearing said they're found at the roots of the glowing willows in the grove east of here. Kept going on about those luminiscent worms too, when I just wanted him to let me try to fish in peace..." posx="495" posy="30">
+		<option optionid="1" optiontext="And you didn't think he was maybe trying to give you a hint?" next="262"></option>
+		<option optionid="2" optiontext="Um, so... how does one retrieve worms?" next="263"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="262" npcName="Fisherman Charles Gilles" anim="1" text="Aye, well, I mean... I was getting frustrated because the Aurora Trout wouldn't bite, and I thought the weird tree lover was just scaring the fish away with all his blathering. Besides, I swear their kind always speak in riddles - shoulda just told me straight, innit?" posx="946" posy="32">
+		<option optionid="1" optiontext="Um, so... how does one retrieve worms?" next="263"></option>
+		<option optionid="2" optiontext="Right." next="0"></option>
+	</node>
+	<node id="263" npcName="Fisherman Charles Gilles" anim="1" text="Mate...? I can't tell if you're asking that seriously, or just to jest... You grab a shovel and dig them up, innit? Speaking of which, I have one resting here right beside me, on the table." posx="939" posy="351">
+		<option optionid="1" optiontext="Where should I be looking for the worms again?" next="261"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+	<node id="264" npcName="Fisherman Charles Gilles" anim="1" text="Aye, it sure is...?" posx="474" posy="436">
+		<option optionid="1" optiontext="Where should I be looking for the worms again?" next="261"></option>
+		<option optionid="2" optiontext="Um... how does one retrieve worms?" next="263"></option>
+		<option optionid="3" optiontext="Forget it." next="0"></option>
+	</node>
+
+
+	<node id="280" npcName="Fisherman Charles Gilles" anim="1" text="The competition's about to finish, Master Fairchess! I hope the glowing worms finally brought success, or we'll be out of the prize!" posx="27" posy="16">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt; *Present the Aurora Trout.* &lt;/color&gt;" next="283" checks="HasItem=960-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Yes, I caught the fish!" next="282" checks="!HasItem=960-1"></option>
+		<option optionid="3" optiontext="My... name... is... Aercrest!" next="281"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="281" npcName="Fisherman Charles Gilles" anim="1" text="Get a hold of yourself man! We need that Aurora Trout to win the fishing competition!" posx="526" posy="389">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt; *Present the Aurora Trout.* &lt;/color&gt;" next="283" checks="HasItem=960-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Yes, I caught the fish!" next="282" checks="!HasItem=960-1"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="282" npcName="Fisherman Charles Gilles" anim="1" text="Well...? Don't keep me waiting, lad... I'm about to burst with excitement!" posx="1021" posy="619">
+		<option optionid="1" optiontext="That is, I did catch an Aurora Trout... just hold on for a second..." next="0"></option>
+	</node>
+	<node id="283" npcName="Fisherman Charles Gilles" anim="1" text="Hah, I can scarcely believe it! And look at those scales, lad! They truly do shift in color with the sun's rays, it's mesmerizing! I can't wait for that old coot Raymond to eat his socks when he sees this..." posx="985" posy="23">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=138" icon="Quest"></option>
+	</node>
+
+
+	<node id="300" npcName="Fisherman Charles Gilles" anim="1" text="Excellent stuff with the Aurora Trout, Master Airfresh! Hope the rewards were to your liking, I was only really after the fame here. Well that and seeing the sour face of Fishermate Raymond, hahah! Long standing rivalry between us, don't even ask." posx="32" posy="20">
+		<option optionid="1" optiontext="I'll bite, what's between you and Fisherman Raymond?" next="309"></option>
+		<option optionid="2" optiontext="Got any cool fishing stories to tell?" next="301"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="301" npcName="Fisherman Charles Gilles" anim="1" text="Aye, I got a tale for you. Starts out as when I was a young lad, no more than sixteen summers old, I took out in the middle of a moonlit night while my pa was still sleeping." posx="543" posy="249">
+		<option optionid="1" optiontext="" next="302"></option>
+	</node>
+	<node id="302" npcName="Fisherman Charles Gilles" anim="1" text="Wanted to go out on the rowboat on me own, you see, and pa would never had stood for it. So I went rogue-like. River was calm, night was quiet... and fish weren't bitin'. Well not at first anyway. But then it happened...!" posx="968" posy="247">
+		<option optionid="1" optiontext="" next="303"></option>
+		<option optionid="2" optiontext="I don't have time for this..." next="0"></option>
+	</node>
+	<node id="303" npcName="Fisherman Charles Gilles" anim="1" text="Saw a fish as long as my leg and twice as thick beneath the waters - the Gargantuan! The monstropus fish began leapin' and trashin', trying to free itself from my line, and I was in for the battle of my life! " posx="1397" posy="246">
+		<option optionid="1" optiontext="" next="304"></option>
+		<option optionid="2" optiontext="I don't have time for this..." next="0"></option>
+	</node>
+	<node id="304" npcName="Fisherman Charles Gilles" anim="1" text="I swear I struggled for hours with that colossal fish, until eventually it dragged me off the boat into the river below! T'was then I realized I had to let go of my pole, else it might drown me..." posx="1830" posy="241">
+		<option optionid="1" optiontext="" next="305"></option>
+		<option optionid="2" optiontext="I don't have time for this..." next="0"></option>
+	</node>
+	<node id="305" npcName="Fisherman Charles Gilles" anim="1" text="Had to return home soaked, cold and empty handed, having lost the fancy pole my pa'd made me. Oh, he was not happy with me that day, not happy at all. Never encountered anything of the like since, although..." posx="2260" posy="240">
+		<option optionid="1" optiontext="" next="306"></option>
+		<option optionid="2" optiontext="I don't have time for this..." next="0"></option>
+	</node>
+	<node id="306" npcName="Fisherman Charles Gilles" anim="1" text="Sometimes still while out there on the river, I feel like I spotted that Gargantuan's shadow silhouettin' below the surface. But then it's gone, and I ain't sure if it's just my imagination... Food for thought, eh?" posx="2695" posy="243">
+		<option optionid="1" optiontext="Sure, inspirational..." next="307" checks="NpcVar=FishingTaleTold-0-0"></option>
+		<option optionid="2" optiontext="Sure, inspirational..." next="0" checks="NpcVar=FishingTaleTold-1-1"></option>
+	</node>
+	<node id="307" npcName="Fisherman Charles Gilles" anim="0" text="&lt;color=#9C8C77&gt; *Having listened through the fisherman's tale, you feel as though some of the man's experience may have rubbed off on you.* &lt;/color&gt;\n\n&lt;color=green&gt;Gain 1200 base experience in fishing.&lt;/color&gt;" posx="3158" posy="241">
+		<option optionid="1" optiontext="Excellent!" next="0" actions="AddXp=fishing-1200,SetNpcVar=FishingTaleTold-1"></option>
+	</node>
+	<node id="309" npcName="Fisherman Charles Gilles" anim="1" text="Ah, well, it ain't anything that serious really. Used to be inseparable as kids, the two of us, united by our love for fishing. But as we got older and started taking part in competitions around here, it all slowly soured between us." posx="549" posy="-120">
+		<option optionid="1" optiontext="How so?" next="310"></option>
+		<option optionid="2" optiontext="Happens to the best of us." next="0"></option>
+	</node>
+	<node id="310" npcName="Fisherman Charles Gilles" anim="1" text="Oh it's like eons ago now, but one time I had a legendary catch and Raymond accused me of violating his trust. You see, I'd scored it at a fishing spot he'd once shared with me. Said I'd won the competition at his expense, which was ridiculous of course!" posx="997" posy="-123">
+		<option optionid="1" optiontext="" next="311"></option>
+	</node>
+	<node id="311" npcName="Fisherman Charles Gilles" anim="1" text="Took that loss pretty hard, he did. And it only got worse between us every competition since. If you ask me, he just never got over the fact that I turned out to be the better angler out of the two of us." posx="1432" posy="-119">
+		<option optionid="1" optiontext="Got any cool fishing stories to tell?" next="301"></option>
+		<option optionid="2" optiontext="As you say..." next="0"></option>
+	</node>
+
+
+	<node id="315" npcName="Mutilated Fisherman" anim="1" text="&lt;color=#9C8C77&gt; *Lying pitiably against the rocks, you come across the dead body of a fisherman. Entire chunks of his flesh have been torn off and there’s blood everywhere. No man, but a beast must be the culprit of this.* &lt;/color&gt;" posx="40" posy="26">
+		<option optionid="1" optiontext="Search the body." next="317" checks="!ItemExistsGlobal=972" icon="Quest"></option>
+		<option optionid="2" optiontext="Inspect his wounds." next="318"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="316" npcName="Mutilated Fisherman" anim="1" text="&lt;color=#9C8C77&gt; *Lying pitiably against the rocks, you come across the dead body of a fisherman. Entire chunks of his flesh have been torn off and there’s blood everywhere. No man, but a beast must be the culprit of this.\n\nYou wonder if this might be Jonathan, the fisherman who has been missing at the village.* &lt;/color&gt;" posx="41" posy="458">
+		<option optionid="1" optiontext="Search the body." next="317" checks="!ItemExistsGlobal=972" icon="Quest"></option>
+		<option optionid="2" optiontext="Inspect his wounds." next="318"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="317" npcName="Mutilated Fisherman" anim="1" text="&lt;color=#9C8C77&gt; *At a glance, there's nothing too remarkable about the poor fisherman. He was carrying a sturdy but plain fishing rod and a small leather pouch containing an assortment of hooks and lures rests by his hip. You find a smooth wooden wedding ring on his finger, with images of two intertwined fish carved to its inner side.* &lt;/color&gt;" posx="688" posy="245">
+		<option optionid="1" optiontext="Perhaps someone back at the village will recognize the ring." next="0" itemIcon="972" actions="UpdateQuest=92-2,AddItems=972-1"></option>
+	</node>
+	<node id="318" npcName="Mutilated Fisherman" anim="1" text="&lt;color=#9C8C77&gt; *Deep lacerations crisscross his flesh and his arms, once strong and calloused, now display jagged gashes, oozing trails of crimson. The man bears the scars of a desperate struggle against a creature of overwhelming power. There is no doubt about it - this can only be the work of a terrible beast.* &lt;/color&gt;" posx="155" posy="1037">
+		<option optionid="1" optiontext="Search the body." next="317" checks="!ItemExistsGlobal=972" icon="Quest"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>	
+
+	
+	<node id="320" npcName="Villager Ashlyn" switchtalker="915" anim="1" text="Oh, hello there traveler! I'm sorry, I have no supper to offer right now as I'm terribly beside myself. My dear husband, Jonathan, hasn't returned from his fishing trip..." posx="44" posy="38">
+		<option optionid="1" optiontext="Hmm, recognize this ring I found?" checks="HasItem=972-1" next="324" icon="Quest"></option>
+		<option optionid="2" optiontext="I could search for him, any idea where he was going?" checks="!HasItem=972-1" next="321" icon="Quest"></option>
+		<option optionid="3" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="321" npcName="Fisherman Borre" switchtalker="916" anim="1" text="Ahem, I saw him briefly in the morning. The man told me he'd go looking for new fishing spots along the river, though he never said exactly where..." posx="552" posy="296">
+		<option optionid="1" optiontext="Any guesses?" next="322"></option>
+		<option optionid="2" optiontext="I'll let you know if I find him." next="323" icon="Quest"></option>
+	</node>
+	<node id="322" npcName="Fisherman Borre" anim="1" text="&lt;color=#9C8C77&gt; *The fisherman shrugs.* &lt;/color&gt;\n\nWell, knowing the man, he did like wandering off the beaten path. But that's all I can really tell you. He would be fishing somewhere along the river for sure, though." posx="997" posy="298">
+		<option optionid="1" optiontext="I'll let you know if I find him." next="323" icon="Quest"></option>
+	</node>
+	<node id="323" npcName="Villager Ashlyn" switchtalker="915" anim="1" text="Thank you so kindly, traveler! I hope you do, I'm so sick with worry..." posx="1060" posy="588">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=92-1"></option>
+	</node>
+
+	<node id="324" npcName="Villager Ashlyn" switchtalker="915" anim="1" text="Yes, that's Jonathan's wedding ring! I'd recognize it anywhere, for we are poor, I'm the one who carved it for him. Oh my... where did you find it?" posx="1519" posy="17">
+		<option optionid="1" optiontext="Um, I'm afraid I have bad news for you, madam..." actions="Cinematic=139,RemoveItems=972-1" next="0" icon="Quest"></option>
+	</node>
+
+
+	<node id="330" npcName="Villager Ashlyn" switchtalker="915" anim="1" text="It's not like my husband to get lost, you know? He's never worried me like this before." posx="35" posy="28">
+		<option optionid="1" optiontext="Hmm, recognize this ring I found?" checks="HasItem=972-1" next="324" icon="Quest"></option>
+		<option optionid="2" optiontext="Any idea where he might have been going?" next="331"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="331" npcName="Fisherman Borre" switchtalker="916" anim="1" text="Ahem, I saw him briefly in the morning. The man told me he'd go looking for new fishing spots along the river, though he never said exactly where..." posx="548" posy="311">
+		<option optionid="1" optiontext="" next="332"></option>
+	</node>
+	<node id="332" npcName="Fisherman Borre" anim="1" text="Knowing the man, he did like wandering off the beaten path. But that's all I can really tell you. He would be fishing somewhere along the river for sure, though." posx="983" posy="311">
+		<option optionid="1" optiontext="Hmm, recognize this ring I found?" checks="HasItem=972-1" next="324"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+
+
+	<node id="340" npcName="Torwald the Retired Fisherman" lookAtNpc="916" anim="1" text="Will you people listen now? The Great Mudclaw lurks about! It was only going to be a matter of time before it claimed a victim!" posx="32" posy="29">
+		<option optionid="1" optiontext="" next="341"></option>
+	</node>
+	<node id="341" npcName="Fisherman Borre" switchtalker="916" lookAtNpc="911" anim="1" text="Will you ease off it?! Don't you see how much pain this news has caused Ashlyn?" posx="464" posy="28">
+		<option optionid="1" optiontext="" next="350"></option>
+	</node>
+	<node id="342" npcName="Torwald the Retired Fisherman" switchtalker="911" lookAtNpc="916" anim="1" text="I sympathize with her pain, I do... but it was inevitable someone was going to end up hurt! At least now you must see the truth in my words! Action must be taken - The Great Mudclaw must be vanquished!" posx="896" posy="28">
+		<option optionid="1" optiontext="What in the world is 'The Great Mudclaw'?" next="343"></option>
+		<option optionid="2" optiontext="How do you presume to know what happened to the dead fisherman?" next="346"></option>
+		<option optionid="3" optiontext="I'm known to vanquish great beasts, for a reward of course." next="348" icon="Quest"></option>
+	</node>
+	<node id="343" npcName="Torwald the Retired Fisherman" switchtalker="911" anim="1" text="Why, a mutant crab with a colossal form! It has eyes gleaming like obsidian orbs reflecting a mean, primal intelligence! Its massive pincers can crush river boats with ease, let alone poor fishermen! Its insatiable appetite capable of devouring entire shoals of fish, leaving men in despair!" posx="1342" posy="33">
+		<option optionid="1" optiontext="" next="344"></option>
+	</node>
+	<node id="344" npcName="Fisherman Borre" switchtalker="916" lookAtNpc="911" anim="1" text="But it's a local myth, nothing but tall fishermen's tales told at night in taverns alongside a mug of ale..." posx="1773" posy="36">
+		<option optionid="1" optiontext="" next="345"></option>
+	</node>
+	<node id="345" npcName="Torwald the Retired Fisherman" switchtalker="911" lookAtNpc="916" anim="1" text="A myth and a tale is it, that left your friend in a brutalized heap on the river shore, eh?!" posx="2191" posy="37">
+		<option optionid="1" optiontext="How do you presume to know what happened to the dead fisherman?" next="346"></option>
+		<option optionid="2" optiontext="I'm known to vanquish great beasts, for a reward of course." next="348" icon="Quest"></option>
+	</node>
+	<node id="346" npcName="Torwald the Retired Fisherman" switchtalker="911" anim="1" text="I've been trying to tell people for some time now, but nobody listens! They only laugh, 'oh, there goes crazy Torwald again'! Well who's laughing now, eh?!" posx="1317" posy="309">
+		<option optionid="1" optiontext="" next="347"></option>
+	</node>
+	<node id="347" npcName="Torwald the Retired Fisherman" switchtalker="911" anim="1" text="As a younger lad I saw the beast with me own eyes! Since then it must've only grown further. What else would be capable of smashing our boats, breaking our nets, stealing our catch from the barrels, eh? I knew at first it is the beast! But who'd believe 'crazy old Torwald's' tales?" posx="1741" posy="309">
+		<option optionid="1" optiontext="'The Great Mudclaw', but what is it really?" next="343"></option>
+		<option optionid="2" optiontext="I'm known to vanquish great beasts, for a reward of course." next="348" icon="Quest"></option>
+	</node>
+	<node id="348" npcName="Torwald the Retired Fisherman" switchtalker="911" anim="1" text="I will ask the other villagers to pool together a reward, ancestors willing they'll take me more seriously now. We must be rid of this terrible beast at any cost! Please, bring us back its pincer claw as proof of its demise." posx="2253" posy="425">
+		<option optionid="1" optiontext="I'll need to know where to find the beast first, though." next="349"></option>
+	</node>
+	<node id="349" npcName="Torwald the Retired Fisherman" switchtalker="911" anim="1" text="I might have an idea about that. Where did you find the corpse of our Fisherman Jonathan? I'm willing to wager the beast's lair ain't far behind. I bid you good luck, champion!" posx="2763" posy="323">
+		<option optionid="1" optiontext="Very well." next="0" actions="UpdateQuest=92-3"></option>
+	</node>
+	<node id="350" npcName="Villager Ashlyn" switchtalker="915" anim="549" text="He was only looking for a secret fishing spot...! He didn't deserve this...!" posx="464" posy="28">
+		<option optionid="1" optiontext="" next="342"></option>
+	</node>
+
+	<node id="355" npcName="Torwald the Retired Fisherman" anim="1" text="I'm asking the villagers to pool together a reward, ancestors willing they'll take me more seriously now! I implore you, champion - rid our village of this monster that is The Great Mudclaw." posx="31" posy="29">
+		<option optionid="1" optiontext="I need to know where to find the beast first, though." next="356"></option>
+		<option optionid="2" optiontext="I'll do my best." next="0"></option>
+	</node>
+	<node id="356" npcName="Torwald the Retired Fisherman" anim="1" text="I might have an idea about that. Where did you find the corpse of our Fisherman Jonathan? I'm willing to wager the beast's lair ain't far behind." posx="505" posy="31">
+		<option optionid="1" optiontext="I'll do my best." next="0"></option>
+	</node>
+
+
+	<node id="360" npcName="Torwald the Retired Fisherman" anim="1" text="Jonathan's death finally opened the other villagers' eyes to the danger that has been lurking so near to their peaceful homes. They agreed the monster must be slain." posx="32" posy="25">
+		<option optionid="1" optiontext="I've avenged his death, and return with the beast's claw to prove it." next="361" checks="HasItem=976-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="361" npcName="Torwald the Retired Fisherman" anim="1" text="This will bring immense relief to the village, and perhaps closure to the grieving widow as well. They went off to give the poor man a proper burial. Hopefully now the villagers will also stop seeing me as just a kooky old man." posx="611" posy="11">
+		<option optionid="1" optiontext="How come you knew about it in the first place, you said you'd seen it?" next="362"></option>
+		<option optionid="2" optiontext="What's behind the monster's name, the mudclaw?" next="364"></option>
+		<option optionid="3" optiontext="And hopefully now the 'champion' will also be rewarded for his efforts." next="365" icon="Quest"></option>
+	</node>
+	<node id="362" npcName="Torwald the Retired Fisherman" anim="1" text="I saw it a couple of decades ago already. While out in the forest, fishing, a trading boat was sailing down the river from Thornhill. Out of nowhere, the pincers of the great crab snatched the barge and tore it to pieces, taking the merchant down to the depths with it!" posx="1153" posy="-17">
+		<option optionid="1" optiontext="" next="363"></option>
+	</node>
+	<node id="363" npcName="Torwald the Retired Fisherman" anim="1" text="But no one would believe my word then either! Sometimes there would be other 'incidents', but the beast struck rarely enough and folk always found alternative explanations for what happened." posx="1594" posy="-16">
+		<option optionid="1" optiontext="What's behind the monster's name, the mudclaw?" next="364"></option>
+		<option optionid="2" optiontext="Hopefully now the 'champion' will also be rewarded for his efforts." next="365" icon="Quest"></option>
+	</node>
+	<node id="364" npcName="Torwald the Retired Fisherman" anim="1" text="The Great Mudclaw I called it! For once I had seen the beast, I saw it's colossal claws caked by the hardened mud from the river's depths, making them appear only more menacing!" posx="1106" posy="252">
+		<option optionid="1" optiontext="So you actually saw the beast yourself?" next="362"></option>
+		<option optionid="2" optiontext="Hopefully now the 'champion' will also be rewarded for his efforts." next="365" icon="Quest"></option>
+	</node>
+	<node id="365" npcName="Torwald the Retired Fisherman" anim="1" text="Upon seeing the hideous wounds on Fisherman Jonathan, the villagers were eager to chip in for a bounty. The widow also asked me to hand you something on her behalf, a fine bracelet in return for avenging her departed husband. And on behalf of the whole village, I thank you mighty adventurer!" posx="1700" posy="419">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=92-999,RemoveItems=976-1"></option>
+	</node>
+
+
+	<node id="400" npcName="Deputy Ernsthart" anim="1" text="Hm... you look battlehardened. I wonder if I could entice you with some mercenary work, traveler?" posx="0" posy="20">
+		<option optionid="1" optiontext="What needs doing?" next="401" icon="Quest"></option>
+		<option optionid="2" optiontext="I'm gathering allies for an assault on the bandit fortress." next="408" checks="Quest=111-1-1" icon="Quest"></option>
+		<option optionid="3" optiontext="Not at this time." next="0"></option>
+	</node>
+	<node id="401" npcName="Deputy Ernsthart" anim="1" text="It's these blasted bandits! They prey on merchant barges traversing up and down the river, and there doesn't seem to be a thing I can do about it!" posx="457" posy="22">
+		<option optionid="1" optiontext="Why's that?" next="402"></option>
+		<option optionid="2" optiontext="But you think I can?" next="403" icon="Quest"></option>
+	</node>
+	<node id="402" npcName="Deputy Ernsthart" anim="1" text="I simply haven't got the numbers here! Marshal Harrington has tasked me to restore order up the river here, near Aurfield, but all he grants me is a few half-trained sacks of porridge as men. How does he expect me to face down a seemingly endless horde of river pirates with that?!" posx="910" posy="23">
+		<option optionid="1" optiontext="Then what do you expect from me?" next="403" icon="Quest"></option>
+	</node>
+	<node id="403" npcName="Deputy Ernsthart" anim="1" text="The pirates have set up three camps along the river nearby, each commanded by a captain. I'm thinking someone capable and unhidered - like you - could sneak up to the camps and take out the captains for us. Cut the heads off the hydra in a manner of speaking." posx="925" posy="303">
+		<option optionid="1" optiontext="" next="405"></option>
+	</node>
+	<node id="404" npcName="Deputy Ernsthart" anim="1" text="Based on my scouting, there are three of them spread out over the river banks on the opposite side of Aurfield, just north of here. Each one is commanded by a captain, and they ruthlessly hoard cargo stolen from river barges on those campsites." posx="1839" posy="549">
+		<option optionid="1" optiontext="You know I don't exactly work for free?" next="406"></option>
+		<option optionid="2" optiontext="I'll see what I can do." next="407" icon="Quest"></option>
+	</node>
+	<node id="405" npcName="Deputy Ernsthart" anim="1" text="Once you've dealt with the captains, recovering some of the cargo the bandits have plundered would be a great service to the city of Haywind. I understand I'm asking for a lot here, but at this point I'm hoping for a miracle to drive the pirates away." posx="1359" posy="299">
+		<option optionid="1" optiontext="I don't exactly work for free." next="406"></option>
+		<option optionid="2" optiontext="Tell me more about their camps." next="404"></option>
+		<option optionid="3" optiontext="I'll see what I can do." next="407" icon="Quest"></option>
+	</node>
+	<node id="406" npcName="Deputy Ernsthart" anim="1" text="I understand, and I'm not asking you to risk yourself for the good of your heart. I'm sure we can allocate an adequate share of the stolen cargo as a reward, once you manage to recover it." posx="1849" posy="200">
+		<option optionid="1" optiontext="Tell me more about their camps." next="404"></option>
+		<option optionid="2" optiontext="I'll see what I can do." next="407" icon="Quest"></option>
+	</node>
+	<node id="407" npcName="Deputy Ernsthart" anim="1" text="That's all I'm asking for, thank you traveler!" posx="1287" posy="805">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=91-1"></option>
+	</node>
+	<node id="408" npcName="Deputy Ernsthart" anim="1" text="Ah, Zathe sent you, I presume? I would join you, but I can't just abandon my mission here. If I leave this post now, the river will be overrun with raiders in no time! Things would be different if you were to help me deal with the pirates though..." actions="SetVar=Q111DeputyErnsthartRecruited-1" posx="307" posy="608">
+		<option optionid="1" optiontext="What needs doing?" next="401" icon="Quest"></option>
+		<option optionid="2" optiontext="I'll check in later." next="0"></option>
+	</node>
+
+
+	<node id="410" npcName="Deputy Ernsthart" anim="1" text="If you were to sneak up on the pirate encampments, take out their captains and recover some of the cargo they've plundered, the city of Haywind would be ever so greatful. Also, I'm sure we can appropriate a portion of the cargo to you as a reward." posx="0" posy="23">
+		<option optionid="1" optiontext="I come bearing salvaged cargo..." next="413" checks="Quest=91-2-2,HasItem=979-5" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me about the pirate camps." next="411"></option>
+		<option optionid="3" optiontext="Why haven't you been able to deal with the river bandits yourself?" next="412"></option>
+		<option optionid="4" optiontext="I'm gathering allies for an assault on the bandit fortress." next="415" checks="Quest=111-1-1" icon="Quest"></option>
+		<option optionid="5" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="411" npcName="Deputy Ernsthart" anim="1" text="Based on my scouting, there are three of them spread out over the river banks on the opposite side of Aurfield, just north of here. Each one is commanded by a captain, and they ruthlessly hoard cargo stolen from river barges on those campsites." posx="432" posy="285">
+		<option optionid="1" optiontext="Why haven't you been able to deal with the river bandits yourself?" next="412"></option>
+		<option optionid="2" optiontext="I come bearing salvaged cargo..." next="413" checks="Quest=91-2-2,HasItem=979-5" icon="Quest"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="412" npcName="Deputy Ernsthart" anim="1" text="I simply haven't got the numbers here! Marshal Harrington has tasked me to restore order up the river here, near Aurfield, but all he grants me is a few half-trained sacks of porridge as men. How does he expect me to face down a seemingly endless horde of river pirates with that?!" posx="854" posy="291">
+		<option optionid="1" optiontext="Tell me about the pirate camps." next="411"></option>
+		<option optionid="2" optiontext="I come bearing salvaged cargo..." next="413" checks="Quest=91-2-2,HasItem=979-5" icon="Quest"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="413" npcName="Deputy Ernsthart" anim="1" text="Hah! You're a right miracle-worker. My men report the pirates are scrambling, which means you took out their captains like I asked. I'm sure they'll elect new ones before too long, but your actions should've bought us some respite." posx="527" posy="15">
+		<option optionid="1" optiontext="" next="414"></option>
+	</node>
+	<node id="414" npcName="Deputy Ernsthart" anim="1" text="The cargo's what's really valuable to us though. And would you look at that - there's a pirate dagger of all things, hidden here in the crates! It's all yours, and if you were to pick a fight with them pirates again, keep an eye out for any more cargo would you? I'll be happy to divulge a share of the contents for every five crates you bring back." posx="976" posy="18">
+		<option optionid="1" optiontext="I'll bear that in mind." next="0" actions="UpdateQuest=91-999,RemoveItems=979-5"></option>
+	</node>
+	<node id="415" npcName="Deputy Ernsthart" anim="1" text="Ah, Zathe sent you, I presume? I would join you, but I can't just abandon my mission here. If I leave this post now, the river will be overrun with raiders in no time! Things would be different if you were to help me deal with the pirates though..." actions="SetVar=Q111DeputyErnsthartRecruited-1" posx="1508" posy="305">
+		<option optionid="1" optiontext="I come bearing salvaged cargo..." next="413" checks="Quest=91-2-2,HasItem=979-5" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me about the pirate camps." next="411"></option>
+		<option optionid="3" optiontext="Why haven't you been able to deal with the river bandits yourself?" next="412"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+
+
+	<node id="420" npcName="Deputy Ernsthart" anim="1" text="If it isn't my favorite merc around these parts. I wouldn't dare hope you've been giving hell to the river pirates north of here, would I?" posx="34" posy="27">
+		<option optionid="1" optiontext="I do come bearing salvaged cargo... &lt;color=#9C8C77&gt; *5 crates required* &lt;/color&gt;" next="422" checks="HasItem=979-5" itemIcon="979" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Any news of the pirate camps north of here?" next="421"></option>
+		<option optionid="3" optiontext="I'm gathering allies for an assault on the bandit fortress." next="423" checks="Quest=111-1-1,Var=Q111DeputyErnsthartRecruited-0-1" icon="Quest"></option>
+		<option optionid="4" optiontext="We can count on your help in assaulting the bandit fortress?" next="424" checks="Quest=111-1-2,Var=Q111DeputyErnsthartRecruited-2-2"></option>
+		<option optionid="5" optiontext="I'm afraid not..." next="0"></option>
+	</node>
+	<node id="421" npcName="Deputy Ernsthart" anim="1" text="Your previous efforts have kept them at bay for now, but they continue to reinforce their men, presumably straight from that fortress they've set up in the woods further west. If you happen to assault their camps again, I'd be happy to take any stolen cargo you find off your hands, for a reward of course." posx="496" posy="339">
+		<option optionid="1" optiontext="I do come bearing salvaged cargo... &lt;color=#9C8C77&gt; *5 crates required* &lt;/color&gt;" next="422" checks="HasItem=979-5" itemIcon="979" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="I'm gathering allies for an assault on the bandit fortress." next="423" checks="Quest=111-1-1,Var=Q111DeputyErnsthartRecruited-0-1" icon="Quest"></option>
+		<option optionid="3" optiontext="We can count on your help in assaulting the bandit fortress?" next="424" checks="Quest=111-1-2,Var=Q111DeputyErnsthartRecruited-2-2"></option>
+		<option optionid="4" optiontext="Alright." next="0"></option>
+	</node>
+	<node id="422" npcName="Deputy Ernsthart" anim="1" text="That's music to my ears! These ought to bring some relief to the citizens of Haywind - your compensation is well earned. Still, more is always needed, if you happen to come across it." posx="554" posy="22">
+		<option optionid="1" optiontext="I'll bear that in mind." next="0" icon="Quest"></option>
+	</node>
+	<node id="423" npcName="Deputy Ernsthart" anim="1" text="Ah yes, Zathe must have sent you. I understand, you've helped me a great deal in protecting the river, but things here won't ever really improve until we take the fight to their fortress. I'm glad somebody finally has the sense to do just that. You can tell Zathe I'll be rounding up my most capable men for the effort." posx="1204" posy="374">
+		<option optionid="1" optiontext="Excellent!" next="0" actions="SetVar=Q111DeputyErnsthartRecruited-2,NpcChat=You can tell Zathe I'll be rounding up my most capable men for the effort." icon="Quest"></option>
+	</node>
+	<node id="424" npcName="Deputy Ernsthart" anim="1" text="You've helped me a great deal in protecting the river, but things here won't ever really improve until we take the fight to their fortress. I'm glad somebody finally has the sense to do just that. You can tell Zathe I'll be rounding up my most capable men for the effort." posx="1615" posy="374">
+		<option optionid="1" optiontext="I do come bearing salvaged cargo... &lt;color=#9C8C77&gt; *5 crates required* &lt;/color&gt;" next="422" checks="HasItem=979-5" itemIcon="979" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Any news of the pirate camps north of here?" next="421"></option>
+		<option optionid="3" optiontext="I'm afraid not..." next="0"></option>
+	</node>
+
+
+	<node id="430" npcName="Eryk the Rancher" anim="1" text="Woah, you really oughta spend more time out in the sun. Farming's good for you like that, you know?" posx="29" posy="13">
+		<option optionid="1" optiontext="You need help...?" next="431" icon="Quest"></option>
+		<option optionid="2" optiontext="I don't have time for this." next="0"></option>
+	</node>
+	<node id="431" npcName="Eryk the Rancher" anim="1" text="I do, aye... Was hoping to ask, you good with your hands? My trusty old cart's broken down. It's been in my family for generations, but I've grown too old to repair it meself." posx="473" posy="24">
+		<option optionid="1" optiontext="What's wrong with it?" next="432" icon="Quest"></option>
+	</node>
+	<node id="432" npcName="Eryk the Rancher" anim="1" text="Needs a new wheel, but custom made - handcrafted at a workbench if you have the skill, you know? The cart's originally made from the local willow. It's a special tree, with special properties, you know? Can't just slap any wheel on it." posx="922" posy="27">
+		<option optionid="1" optiontext="Where would I get the willow then?" next="433"></option>
+		<option optionid="2" optiontext="How is it special?" next="434"></option>
+		<option optionid="3" optiontext="Couldn't get any of the townsfolk to help you with this?" next="437"></option>
+		<option optionid="4" optiontext="No promises, I'll see what I can do." next="436" icon="Quest"></option>
+		<option optionid="5" optiontext="Not really a task for me." next="0"></option>
+	</node>
+	<node id="433" npcName="Eryk the Rancher" anim="1" text="You know, out in the woods? It don't grow in a lot of places, but there's a nice little grove just east of here. Grows there nicely, and it's a very special kind of wood too. I reckon six logs ought to suffice." posx="1361" posy="32">
+		<option optionid="1" optiontext="Special, how?" next="434"></option>
+		<option optionid="2" optiontext="Couldn't get any of the townsfolk to help you with this?" next="437"></option>
+		<option optionid="3" optiontext="So you're asking if I can craft the wheel?" next="438"></option>
+		<option optionid="4" optiontext="No promises, I'll see what I can do." next="436" icon="Quest"></option>
+		<option optionid="5" optiontext="Not really a task for me." next="0"></option>
+	</node>
+	<node id="434" npcName="Eryk the Rancher" anim="1" text="It just is, you know? We local folk like to say the spirits of our ancestors grow in those trees, that's the kind of special they are." posx="1813" posy="31">
+		<option optionid="1" optiontext="And... you want me to turn your ancestors into a cartwheel?" next="435"></option>
+		<option optionid="2" optiontext="Couldn't get any of the townsfolk to help you with this?" next="437"></option>
+		<option optionid="3" optiontext="So you're asking if I can craft the wheel?" next="438"></option>
+		<option optionid="4" optiontext="Where would I get this willow?" next="432"></option>
+		<option optionid="5" optiontext="No promises, I'll see what I can do." next="436" icon="Quest"></option>
+		<option optionid="6" optiontext="Not really a task for me." next="0"></option>
+	</node>
+	<node id="435" npcName="Eryk the Rancher" anim="1" text="Eh? Well, now you put it like that, I always thought those myths were pretty dumb anyway... I mean, the trees makes a good cartwheel. It's been a good cart for generations in my family, you know?" posx="2243" posy="38">
+		<option optionid="1" optiontext="Couldn't get any of the townsfolk to help you with this?" next="437"></option>
+		<option optionid="2" optiontext="So you're asking if I can craft the wheel?" next="438"></option>
+		<option optionid="3" optiontext="Where would I get the willow then?" next="432"></option>
+		<option optionid="4" optiontext="No promises, I'll see what I can do." next="436" icon="Quest"></option>
+		<option optionid="5" optiontext="Not really a task for me." next="0"></option>
+	</node>
+	<node id="436" npcName="Eryk the Rancher" anim="1" text="Aye, well... thank you nonetheless. It would be a great help, you know? Be good to deliver my goods to the city again, you know? They've not seen my meats for a while now..." posx="2079" posy="728">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=94-1"></option>
+	</node>
+
+	<node id="437" npcName="Eryk the Rancher" anim="1" text="Can't just slap any poor wheel onto it, you know? The cart's originally made from the local willow, passed down generations in my family. Folk just don't craft things that way anymore, except in the big cities maybe..." posx="2734" posy="37">
+		<option optionid="1" optiontext="Where would I get the willow then?" next="433"></option>
+		<option optionid="2" optiontext="So you're asking if I can craft the wheel?" next="438"></option>
+		<option optionid="3" optiontext="No promises, I'll see what I can do." next="436" icon="Quest"></option>
+		<option optionid="5" optiontext="Not really a task for me." next="0"></option>
+	</node>
+	<node id="438" npcName="Eryk the Rancher" anim="1" text="Aye, if you happen to have the talent, that is. Reckon you'd need one of them specialized workbenches, though. Ones that can be found in big cities and such." posx="2887" posy="530">
+		<option optionid="1" optiontext="Where would I get the willow then?" next="433"></option>
+		<option optionid="2" optiontext="Couldn't get any of the townsfolk to help you with this?" next="437"></option>
+		<option optionid="3" optiontext="No promises, I'll see what I can do." next="436" icon="Quest"></option>
+		<option optionid="4" optiontext="Not really a task for me." next="0"></option>
+	</node>
+
+
+	<node id="440" npcName="Eryk the Rancher" anim="1" text="It would really be a great help if you could repair my cart, you know? Be good to deliver my goods to the city again, they've not seen my meats for a while now..." posx="55" posy="26">
+		<option optionid="1" optiontext="What was wrong with your cart again?" next="441"></option>
+		<option optionid="2" optiontext="I needed to find some kind of a willow?" next="444"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="441" npcName="Eryk the Rancher" anim="1" text="Needs a new wheel, but custom made - handcrafted at a workbench if you have the skill, you know? The cart's originally made from the local willow. It's a special tree, with special properties, you know? Can't just slap any wheel on it." posx="541" posy="23">
+		<option optionid="1" optiontext="Special how?" next="442"></option>
+		<option optionid="2" optiontext="Where would I find this willow?" next="444"></option>
+		<option optionid="3" optiontext="So you're asking if I can craft the wheel?" next="445"></option>
+		<option optionid="4" optiontext="Couldn't get any of the townsfolk to help you with this?" next="446"></option>
+		<option optionid="5" optiontext="I see." next="0"></option>
+	</node>
+	<node id="442" npcName="Eryk the Rancher" anim="1" text="It just is, you know? We local folk like to say the spirits of our ancestors grow in those trees, that's the kind of special they are." posx="990" posy="23">
+		<option optionid="1" optiontext="And... you want me to turn your ancestors into a cartwheel?" next="443"></option>
+		<option optionid="2" optiontext="Where would I find this willow?" next="444"></option>
+		<option optionid="3" optiontext="What exactly was wrong with the cart again?" next="441"></option>
+		<option optionid="4" optiontext="I see." next="0"></option>
+	</node>
+	<node id="443" npcName="Eryk the Rancher" anim="1" text="Eh? Well, now you put it like that, I always thought those myths were pretty dumb anyway... I mean, the trees makes a good cartwheel. It's been a good cart for generations in my family, you know?" posx="1436" posy="24">
+		<option optionid="1" optiontext="Where would I find this willow?" next="444"></option>
+		<option optionid="2" optiontext="What exactly was wrong with the cart again?" next="441"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="444" npcName="Eryk the Rancher" anim="1" text="You know, out in the woods? It don't grow in a lot of places, but there's a nice little grove just east of here. Grows there nicely, and it's a very special kind of wood too." posx="511" posy="593">
+		<option optionid="1" optiontext="Special how?" next="442"></option>
+		<option optionid="2" optiontext="What exactly was wrong with the cart again?" next="441"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="445" npcName="Eryk the Rancher" anim="1" text="Aye, if you happen to have the talent, that is. Reckon you'd need one of them specialized workbenches, though. Ones that can be found in big cities and such." posx="1272" posy="643">
+		<option optionid="1" optiontext="Where would I get the willow then?" next="444"></option>
+		<option optionid="2" optiontext="Couldn't get any of the townsfolk to help you with this?" next="446"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="446" npcName="Eryk the Rancher" anim="1" text="Can't just slap any poor wheel onto it, you know? The cart's originally made from the local willow, passed down generations in my family. Folk just don't craft things that way anymore, except in the big cities maybe..." posx="1827" posy="633">
+		<option optionid="1" optiontext="So you're asking if I can craft the wheel?" next="445"></option>
+		<option optionid="2" optiontext="Where would I get the willow then?" next="444"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+
+
+	<node id="450" npcName="Eryk the Rancher" anim="1" text="It would really be a great help if you could repair my cart, you know? Be good to deliver my goods to the city again, they've not seen my meats for a while now..." posx="25" posy="15">
+		<option optionid="1" optiontext="I've made a stylish wheel from willow..." next="451" icon="Quest" checks="HasItem=986-1"></option>
+		<option optionid="2" optiontext="Couldn't get any of the townsfolk to help you with this?" next="452"></option>
+		<option optionid="3" optiontext="I'll see what I can do." next="0"></option>
+	</node>
+	<node id="451" npcName="Eryk the Rancher" anim="1" text="How exquisite! You're quite the craftsman, you know? Yes I believe this wheel will fit my cart perfectly! Go on, see how it fares." posx="468" posy="17">
+		<option optionid="1" optiontext="Couldn't get any of the townsfolk to help you with this?" next="452"></option>
+		<option optionid="2" optiontext="What's so special about the willow anyway?" next="453"></option>
+		<option optionid="3" optiontext="Alright." next="0"></option>
+	</node>
+	<node id="452" npcName="Eryk the Rancher" anim="1" text="Wheel needs to be custom made - can't just fit any poor wheel onto it, you know? The cart's originally made from the local willow, passed down generations in my family. Folk just don't craft things that way anymore, except in the big cities maybe..." posx="446" posy="420">
+		<option optionid="1" optiontext="What's so special about the willow anyway?" next="453"></option>
+		<option optionid="2" optiontext="Well, I've made a stylish replacement wheel..." next="451" checks="HasItem=986-1"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="453" npcName="Eryk the Rancher" anim="1" text="It just is, you know? We local folk like to say the spirits of our ancestors grow in those trees, that's the kind of special they are." posx="899" posy="16">
+		<option optionid="1" optiontext="And... you want me to turn your ancestors into a cartwheel?" next="454"></option>
+		<option optionid="2" optiontext="Couldn't get any of the townsfolk to help you with this?" next="452"></option>
+		<option optionid="3" optiontext="Well, I've made a stylish replacement wheel..." next="451" checks="HasItem=986-1"></option>
+		<option optionid="4" optiontext="As you say." next="0"></option>
+	</node>
+	<node id="454" npcName="Eryk the Rancher" anim="1" text="Eh? Well, now you put it like that, I always thought those myths were pretty dumb anyway... I mean, the trees makes a good cartwheel. It's been a good cart for generations in my family, you know?" posx="1325" posy="17">
+		<option optionid="1" optiontext="Couldn't get any of the townsfolk to help you with this?" next="452"></option>
+		<option optionid="2" optiontext="Well, I've made a stylish replacement wheel..." next="451" checks="HasItem=986-1"></option>
+		<option optionid="3" optiontext="As you say." next="0"></option>
+	</node>
+
+
+	<node id="460" npcName="Eryk the Rancher" anim="1" text="Well I'll be, the cart's not looked so steady in ages! Now I gotta load it up and head on over to the city to trade my meats. I have some coin stashed away, hope it's enough for your payment." posx="21" posy="15">
+		<option optionid="1" optiontext="" next="461"></option>
+	</node>
+	<node id="461" npcName="Eryk the Rancher" anim="1" text="Can't spare much more than that, I'm afraid. But if you're ever looking for a ride between the city and Aurfield, you're welcome to hop on my cart any time!" posx="444" posy="17">
+		<option optionid="1" optiontext="Alright, thanks!" next="0" actions="UpdateQuest=94-999"></option>
+	</node>
+
+
+	<node id="470" npcName="James Shearston" anim="1" text="You come to us at a dire time, friend. We're cut off from Haywind and marauders are threatening to raze us to the ground, same as they did to Baronsgreene just down the road west. You look well armed, if I may say so - could really use someone like you here." posx="26" posy="20">
+		<option optionid="1" optiontext="Haywind's militia cannot protect you?" next="477" icon="Quest"></option>
+		<option optionid="2" optiontext="You people lead this village?" next="472"></option>
+		<option optionid="3" optiontext="How bad is your situation?" next="474"></option>
+		<option optionid="4" optiontext="Sorry, I cannot stay." next="0"></option>
+	</node>
+	<node id="471" npcName="Madelaine Shearston" anim="1" text="You're welcome here, pale traveler. But we're in no position to offer hospitality, as you find us with marauders on our doorstep, threatening to lay waste to our home. I'm instead embarrassed for having to ask, but you look well armed - would you fight for us?" posx="41" posy="558">
+		<option optionid="1" optiontext="Haywind's militia cannot protect you?" next="477" icon="Quest"></option>
+		<option optionid="2" optiontext="You people lead this village?" next="472"></option>
+		<option optionid="3" optiontext="How bad is your situation?" next="474"></option>
+		<option optionid="4" optiontext="Sorry, I cannot stay." next="0"></option>
+	</node>
+	<node id="472" switchtalker="973" npcName="Madelaine Shearston" anim="1" text="In a manner of speaking. You've come to the Shearston Estate, and we are the Shearston family. We're usually known for producing Imberthale's finest wool clothing. The estate's grown quite a bit over the decades, I guess to the point where it's starting to look like a little village of our own." posx="610" posy="559">
+		<option optionid="1" optiontext="" next="473"></option>
+	</node>
+	<node id="473" switchtalker="958" npcName="James Shearston" anim="1" text="My wife and I maintain the estate now. Though my old man still lives, time has stripped him of the vigor he once had. And now, our once peaceful home has come under siege by a bandit horde, same as the rest of Haywind. A day I never imagined I'd have to witness." posx="1032" posy="560">
+		<option optionid="1" optiontext="How bad is it?" next="474"></option>
+		<option optionid="2" optiontext="Haywind's militia cannot protect you?" next="477" icon="Quest"></option>
+		<option optionid="3" optiontext="I'm truly sorry, but I cannot help you." next="0"></option>
+	</node>
+	<node id="474" switchtalker="958" npcName="James Shearston" anim="1" text="They have us pinned in here, they've blocked the only road out, and I think they're just biding their time before storming in here to pillage. If it comes to the worst, we must leave everything behind, dash across the fields towards the city and pray their arrows don't find our backs, but..." posx="1529" posy="618">
+		<option optionid="1" optiontext="" next="475"></option>
+	</node>
+	<node id="475" switchtalker="973" npcName="Madelaine Shearston" anim="1" text="We'd like to think we can prevent the worst from happening, don't we? We can't let them rob and burn everything from us! We need to make a stand, all of us, to protect our home!" posx="1716" posy="391">
+		<option optionid="1" optiontext="" next="476"></option>
+	</node>
+	<node id="476" switchtalker="958" npcName="James Shearston" anim="1" text="Yes, my wife speaks rightly. But we may need some help, I'm not convinced we can do this all on our own." posx="1944" posy="621">
+		<option optionid="1" optiontext="You people lead this village?" next="472"></option>
+		<option optionid="2" optiontext="Haywind's militia cannot protect you?" next="477" icon="Quest"></option>
+		<option optionid="3" optiontext="I'm truly sorry, but I cannot help you." next="0"></option>
+	</node>
+	<node id="477" switchtalker="958" npcName="James Shearston" anim="1" text="I don't think it's for lack of wanting, but the bandit horde has them pinned elsewhere. Their threat emerged out of nowhere and took us all by surprise, overwhelmed us you know? I think for now we're on our own." posx="483" posy="28">
+		<option optionid="1" optiontext="" next="478"></option>
+	</node>
+	<node id="478" switchtalker="980" npcName="Shearston Farmhand" anim="1" text="If we gotta fight to protect our home, then it's what we'll do. But sir, we've no weapons... none at all...!" posx="904" posy="27">
+		<option optionid="1" optiontext="" next="479"></option>
+	</node>
+	<node id="479" switchtalker="958" npcName="James Shearston" anim="1" text="I'm painfully aware of the fact. How about you, pale friend? You know how to arm yourself, perhaps you'd know how to arm us here too? If only we had swords and shields - nothing flashy, but simple tools that do the job - I'd already feel much better about our chances." posx="1324" posy="30">
+		<option optionid="1" optiontext="How many, exactly?" next="480"></option>
+		<option optionid="2" optiontext="I'll think about it." next="482" icon="Quest"></option>
+		<option optionid="3" optiontext="I'm truly sorry, but I cannot help you." next="0"></option>
+	</node>
+	<node id="480" switchtalker="980" npcName="Shearston Farmhand" anim="1" text="Well, if you were to arm all of us lads here at least..." posx="1753" posy="23">
+		<option optionid="1" optiontext="" next="481"></option>
+	</node>
+	<node id="481" switchtalker="958" npcName="James Shearston" anim="1" text="Three copper broadswords and round shields will suffice. I already have what I need." posx="2188" posy="26">
+		<option optionid="1" optiontext="I'll think about it." next="482" icon="Quest"></option>
+		<option optionid="2" optiontext="I'm truly sorry, but I cannot help you." next="0"></option>
+	</node>
+	<node id="482" switchtalker="973" npcName="Madelaine Shearston" anim="1" text="Thank you, pale traveler. Just... please don't think too long. I fear time isn't on our side. Before too long, the bandits might decide to make their move." posx="2226" posy="298">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=96-1"></option>
+	</node>
+
+
+	<node id="490" npcName="James Shearston" anim="1" text="We're in a tight spot here, pale friend. Your aid could just be the difference we need to save our home." posx="15" posy="13">
+		<option optionid="1" optiontext="I bring the arms you asked for." next="502" checks="Quest=96-1-1,HasItem=150-3|135-3" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me again, what do you need to repel the bandits?" next="500" checks="Quest=96-1-1,!HasItem=150-3|135-3"></option>
+		<option optionid="3" optiontext="You wanted me to collect some kind of a plant?" next="505" checks="Quest=96-2-2,!HasItem=996-4"></option>
+		<option optionid="4" optiontext="I've been to that wise woman of yours..." next="507" checks="Quest=96-2-2,HasItem=996-4" icon="Quest"></option>
+		<option optionid="5" optiontext="I had questions about this place..." next="492"></option>
+		<option optionid="6" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="491" npcName="Madelaine Shearston" anim="1" text="We've built our lives here. In no world should we just let raiders take it all away from us!" posx="20" posy="608">
+		<option optionid="1" optiontext="I bring the arms you asked for." next="502" checks="Quest=96-1-1,HasItem=150-3|135-3" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me again, what do you need to repel the bandits?" next="500" checks="Quest=96-1-1,!HasItem=150-3|135-3"></option>
+		<option optionid="3" optiontext="You wanted me to collect some kind of a plant?" next="505" checks="Quest=96-2-2,!HasItem=996-4"></option>
+		<option optionid="4" optiontext="I've been to that wise woman of yours..." next="507" checks="Quest=96-2-2,HasItem=996-4" icon="Quest"></option>
+		<option optionid="5" optiontext="I had questions about this place..." next="492"></option>
+		<option optionid="6" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="492" npcName="Madelaine Shearston" switchtalker="973" anim="1" text="We're used to living peaceful lives, shearing wool from the sheep our family's bred for the purpose for generations. What pure malice a man's heart must be filled with, threatening to raid us like this!" posx="614" posy="616">
+		<option optionid="1" optiontext="Why won't Haywind's militia protect you?" next="494"></option>
+		<option optionid="2" optiontext="You people lead this village?" next="495"></option>
+		<option optionid="3" optiontext="How bad is your situation?" next="497"></option>
+		<option optionid="4" optiontext="I had something else to discuss..." next="493"></option>
+		<option optionid="5" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="493" npcName="James Shearston" switchtalker="958" anim="1" text="No pressure, but we're in a tight spot here, pale friend. Your aid could just be the difference we need to save our home." posx="1066" posy="619">
+		<option optionid="1" optiontext="I bring the arms you asked for." next="502" checks="Quest=96-1-1,HasItem=150-3|135-3" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me again, what do you need to repel the bandits?" next="500" checks="Quest=96-1-1,!HasItem=150-3|135-3"></option>
+		<option optionid="3" optiontext="You wanted me to collect some kind of a plant?" next="505" checks="Quest=96-2-2,!HasItem=996-4"></option>
+		<option optionid="4" optiontext="I've been to that wise woman of yours..." next="507" checks="Quest=96-2-2,HasItem=996-4" icon="Quest"></option>
+		<option optionid="5" optiontext="I had questions about this place..." next="492"></option>
+		<option optionid="6" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="494" npcName="James Shearston" switchtalker="958" anim="1" text="I don't think it's for lack of wanting, but the bandit horde has them pinned elsewhere. Their threat emerged out of nowhere and took us all by surprise, overwhelmed us you know? I think for now we're on our own." posx="1826" posy="618">
+		<option optionid="1" optiontext="You people lead this village?" next="495"></option>
+		<option optionid="2" optiontext="How bad is your situation?" next="497"></option>
+		<option optionid="3" optiontext="I had something else to discuss..." next="493"></option>
+		<option optionid="4" optiontext="I see." next="0"></option>
+	</node>
+	<node id="495" npcName="Madelaine Shearston" switchtalker="973" anim="1" text="In a manner of speaking. You've come to the Shearston Estate, and we are the Shearston family. We're usually known for producing Imberthale's finest wool clothing. The estate's grown quite a bit over the decades, I guess to the point where it's starting to look like a little village of our own." posx="1857" posy="366">
+		<option optionid="1" optiontext="" next="496"></option>
+	</node>
+	<node id="496" npcName="James Shearston" switchtalker="958" anim="1" text="My wife and I maintain the estate now. Though my old man still lives, time has stripped him of the vigor he once had. And now, our once peaceful home has come under siege by a bandit horde, same as the rest of Haywind. A day I never imagined I'd have to witness." posx="2259" posy="621">
+		<option optionid="1" optiontext="How bad is your situation?" next="497"></option>
+		<option optionid="2" optiontext="Why won't Haywind's militia protect you?" next="494"></option>
+		<option optionid="3" optiontext="I had something else to discuss..." next="493"></option>
+		<option optionid="4" optiontext="I see." next="0"></option>
+	</node>
+	<node id="497" npcName="James Shearston" switchtalker="958" anim="1" text="They have us pinned in here, they've blocked the only road out, and I think they're just biding their time before storming in here to pillage. If it comes to the worst, we must leave everything behind, dash across the fields towards the city and pray their arrows don't find our backs, but..." posx="2686" posy="816">
+		<option optionid="1" optiontext="" next="498"></option>
+	</node>
+	<node id="498" npcName="Madelaine Shearston" switchtalker="973" anim="1" text="We'd like to think we can prevent the worst from happening, don't we? We can't let them rob and burn everything from us! We need to make a stand, all of us, to protect our home!" posx="2885" posy="574">
+		<option optionid="1" optiontext="" next="499"></option>
+	</node>
+	<node id="499" npcName="James Shearston" switchtalker="958" anim="1" text="Yes, my wife speaks rightly. But we may need some help, I'm not convinced we can do this all on our own." posx="3111" posy="817">
+		<option optionid="1" optiontext="You people lead this village?" next="495"></option>
+		<option optionid="2" optiontext="Why won't Haywind's militia protect you?" next="494"></option>
+		<option optionid="3" optiontext="I had something else to discuss..." next="493"></option>
+		<option optionid="4" optiontext="I see." next="0"></option>
+	</node>
+	<node id="500" npcName="James Shearston" switchtalker="958" anim="1" text="I've rounded up these good men, who're willing and able to fight. But they have reservations about their lack of armaments, and frankly I don't blame them. The bandits wield menacing swords, axes and shields, bows and arrows..." posx="1527" posy="1053">
+		<option optionid="1" optiontext="" next="501"></option>
+	</node>
+	<node id="501" npcName="James Shearston" switchtalker="958" anim="1" text="If we are to defend ourselves, we need at least rudimentary weapons. And to my eye, you look like a man who'd know where to get himself armed. So I plead to you, please supply us with three copper broadswords and roundshields, so my men have more than their fists to fight with." posx="1943" posy="1054">
+		<option optionid="1" optiontext="I had questions about this place..." next="492"></option>
+		<option optionid="2" optiontext="Fair enough." next="0"></option>
+	</node>
+	<node id="502" npcName="James Shearston" switchtalker="958" anim="1" text="I can't thank you enough, pale friend! You've given us a fighting chance. We shouldn't waste it waiting on the bandits to move. I think we ought to strike their positions in a surprise attack." posx="463" posy="15">
+		<option optionid="1" optiontext="" next="503"></option>
+	</node>
+	<node id="503" npcName="Madelaine Shearston" switchtalker="973" anim="1" text="Though you've already helped us more than we had any right to hope for, I must still ask that you join my husband in his assault. He could really use an experienced fighter watching over his back." posx="667" posy="241">
+		<option optionid="1" optiontext="" next="504"></option>
+	</node>
+	<node id="504" npcName="James Shearston" switchtalker="958" anim="1" text="If you're up for it, I can actually think of a daring solo mission for you... involving fire. There's a very special kind of plant out in the woods north behind the shed. Please bring five to our Brienna, the wise woman living in the hut opposite the main building - she'll know what to do with them." posx="883" posy="12">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=96-2,RemoveItems=150-3|135-3,Cinematic=145"></option>
+	</node>
+	<node id="505" npcName="James Shearston" switchtalker="958" anim="1" text="Indeed... Now that you've armed us, I want to strike the bandit positions before they figure it's time to strike us. And we could really use your help in the assault, friend." posx="2393" posy="1087">
+		<option optionid="1" optiontext="" next="506"></option>
+	</node>
+	<node id="506" npcName="James Shearston" switchtalker="958" anim="1" text="In fact, I can think of a daring solo mission for you... involving fire. There's a very special kind of plant out in the woods north behind the shed. Please bring five to our Brienna, the wise woman living in the hut opposite the main building - she'll know what to do with them." posx="2823" posy="1256">
+		<option optionid="1" optiontext="I had questions about this place..." next="492"></option>
+		<option optionid="2" optiontext="Easy enough." next="0"></option>
+	</node>
+	<node id="507" npcName="James Shearston" switchtalker="958" anim="1" text="So you have her explosive mix. I know just where to stick that stuff too, but let's talk more on the way. Are you ready to begin the assault?" posx="1361" posy="185">
+		<option optionid="1" optiontext="I stand with you." next="0" actions="Cinematic=147" icon="Quest"></option>
+		<option optionid="2" optiontext="I still need to take care of something..." next="0"></option>
+	</node>
+
+	
+	<node id="515" npcName="Brienna the Wise Woman" anim="1" text="Yes, dear?" posx="71" posy="28">
+		<option optionid="1" optiontext="Master Shearston said you'd know what to do with the Firestick Plant?  &lt;color=#9C8C77&gt;*Requires 5 Firestick Plant*&lt;/color&gt;" next="516" checks="HasItem=997-5" icon="Quest" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="516" npcName="Brienna the Wise Woman" anim="1" text="Oh my? I can surmise he's planning to make some of those threatening marauders uncomfortably hot. And such plump flowers you've found, lots of juice in these - oh yes!" posx="507" posy="31">
+		<option optionid="1" optiontext="" next="517"></option>
+	</node>
+	<node id="517" npcName="Brienna the Wise Woman" anim="931" text="&lt;color=#9C8C77&gt;*Brienna meticulously squeezes oil from the plants into vials to make a mixture, then carefully seals them and offers them to you.*&lt;/color&gt;\n\nHere you go, dear. Tell Master Shearston to have fun, will you?" posx="926" posy="31">
+		<option optionid="1" optiontext="Sure..." next="0" actions="SetVar=Q96WiseWoman-1,RemoveItems=997-5,AddItems=996-10" icon="Loot"></option>
+	</node>
+
+	<node id="518" npcName="Brienna the Wise Woman" anim="1" text="Yes, dear?" posx="328" posy="616">
+		<option optionid="1" optiontext="I'm in dire need of more Firestick Mixture. &lt;color=#9C8C77&gt;*Requires 2 Firestick Plant*&lt;/color&gt;" next="519" checks="HasItem=997-2" icon="Loot" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="519" npcName="Brienna the Wise Woman" anim="1" text="That's alright, dear.\n\n&lt;color=#9C8C77&gt;*Brienna meticulously squeezes oil from the plants into vials to make a mixture, then carefully seals them and offers them to you.*&lt;/color&gt;" posx="784" posy="623">
+		<option optionid="1" optiontext="Thanks." next="0" actions="RemoveItems=997-2,AddItems=996-1" icon="Loot"></option>
+	</node>
+
+
+	<node id="525" npcName="James Shearston" anim="1" text="This is a quiet little spot I scouted out before. There's a small hidden path over these brambles, through the thicket, which should lead you to the bandit encampment. That's where the Firestick bombs come into play." posx="35" posy="22">
+		<option optionid="1" optiontext="" next="526"></option>
+	</node>
+	<node id="526" npcName="James Shearston" anim="1" text="As I engage the bandits on the battlefield, I want you to circle around and hit them from behind. Burn down their camp, so they have no position to fall back to. They'll be forced to retreat, and hopefully leave us alone." posx="464" posy="24">
+		<option optionid="1" optiontext="You can count on me." icon="Quest" next="527"></option>
+	</node>
+	<node id="527" npcName="James Shearston" anim="1" text="Whatever happens, meet us back at the farm estate when you're done. Next time we meet, I pray we will be celebrating our victory." posx="895" posy="25">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=96-5"></option>
+	</node>
+
+
+	<node id="535" npcName="James Shearston" anim="1" text="I'll be joining my men on the battlefield. Whatever happens, meet us back at the farm estate when you're done. Next time we meet, I pray we will be celebrating our victory." posx="42" posy="24">
+		<option optionid="1" optiontext="Wait, let's go over your plan again, quickly." next="536"></option>
+		<option optionid="2" optiontext="Good luck!" next="0"></option>
+	</node>
+	<node id="536" npcName="James Shearston" anim="1" text="This is a quiet little spot I scouted out before. There's a small hidden path over these brambles, through the thicket, which should lead you to the bandit encampment. That's where the Firestick bombs come into play." posx="502" posy="24">
+		<option optionid="1" optiontext="" next="537"></option>
+	</node>
+	<node id="537" npcName="James Shearston" anim="1" text="As I engage the bandits on the battlefield, I want you to circle around and hit them from behind. Burn down their camp, so they have no position to fall back to. They'll be forced to retreat, and hopefully leave us alone." posx="933" posy="26">
+		<option optionid="1" optiontext="You can count on me." next="0"></option>
+	</node>
+
+
+	<node id="545" npcName="James Shearston" switchtalker="958" anim="1" text="We did it! The moment those raiders saw fire and smoke rising from their camps, the cowards took flight! I couldn't be more proud of my men, I didn't know they had it in them. And you I have to thank most of all, my pale friend." posx="32" posy="24">
+		<option optionid="1" optiontext="" next="546"></option>
+	</node>
+	<node id="546" npcName="Madelaine Shearston" switchtalker="973" anim="1" text="As thanks, you deserve to have Brienna's secrets for the Firestick Mixture. I think you may find good use for it." posx="452" posy="24">
+		<option optionid="1" optiontext="" next="547"></option>
+	</node>
+	<node id="547" npcName="James Shearston" switchtalker="958" anim="1" text="And my finest pitchfork! Ahem... I know it may not be the greatest of weapons, but I'm sure a great warrior such as yourself can turn anything into a fearsome menace." posx="865" posy="25">
+		<option optionid="1" optiontext="" next="548"></option>
+	</node>
+	<node id="548" npcName="Madelaine Shearston" switchtalker="973" anim="1" text="Oh, now that the road is finally cleared of raiders, we'll be able to cart our fine woolen clothing off the farm. I'm certain my sister-in-law will be delighted by the news! If you're interested, you should talk to her in the shed where we have the loom. Hannah will surely appreciate any help to keep the machine churning." posx="1291" posy="29">
+		<option optionid="1" optiontext="Thanks! Take care now." next="549" icon="Quest"></option>
+	</node>
+	<node id="549" npcName="James Shearston" switchtalker="958" anim="1" text="Thank you once more, my pale friend. May our ancestors watch over you on your path!" posx="1291" posy="29">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=96-999"></option>
+	</node>
+
+
+	<node id="600" npcName="Deputy Charlesworth" anim="1" text="Hey there, merc! I'm the new deputy around here, taken things over since the old one thought he was too good for this post or something. Well I've got a plan to restore order to this river, and it could be worth your while!" posx="15" posy="10">
+		<option optionid="1" optiontext="I come bearing salvaged cargo... &lt;color=#9C8C77&gt; *5 crates required* &lt;/color&gt;" next="602" checks="HasItem=979-5" itemIcon="979" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Let's hear it then." next="601"></option>
+		<option optionid="3" optiontext="Not interested." next="0"></option>
+	</node>
+	<node id="601" npcName="Deputy Charlesworth" anim="1" text="So here's something I bet old Deputy Ernsthart never figured; I'll hire adventurers like you to salvage cargo crates the outlaws along the river have stolen, and in exchange I'll offer you a small share of the crates' contents in payment! How's that sound?" posx="457" posy="427">
+		<option optionid="1" optiontext="I do come bearing salvaged cargo... &lt;color=#9C8C77&gt; *5 crates required* &lt;/color&gt;" next="602" checks="HasItem=979-5" itemIcon="979" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Incredible, I must get going." next="0"></option>
+	</node>
+	<node id="602" npcName="Deputy Charlesworth" anim="1" text="Fantastic, that's the kind of initiative I like to see from adventurers! I'll skim a few items from the crates for your payment, the rest of the supplies will go to the citizens, who sorely need them. Could always use more crates, by the way, if you fancy the work!" posx="610" posy="8">
+		<option optionid="1" optiontext="I'll bear that in mind." next="0" icon="Quest"></option>
+	</node>
+
+</dialogue>
+
+
+
+

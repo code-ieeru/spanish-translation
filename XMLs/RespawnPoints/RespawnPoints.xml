@@ -1,0 +1,21 @@
+<locations>
+	<location name="Aercrest Manor" checks="Quest=56-2-10" pos="1743.82, 42.38235, 262.2" disabledistancecheck="1"></location>
+	<location name="Spruce Shade's Rest" pos="1087.87,29.4415,335.58"></location>
+	<location name="Haywind Cemetery" pos="475.44,32.10867,372.03"></location>
+	<location name="Mossneedle Pond" pos="1070.399,31.22335,424.341"></location>
+	<location name="Thornhill Cemetery" checks="Quest=16-2-999" pos="355.4477,46.57784,1069.479"></location>
+	<location name="Mistywood Cemetery" checks="Quest=1-999-999" pos="1029.22,41.619,629.68"></location>
+	<location name="Ratcliffe Cemetery"  pos="760.4,30.64873,177.86"></location>
+	<location name="Grainwater Cemetery"  pos="812.19,30.64336,309.89"></location>
+	<location name="Harshwind Cemetery"  pos="71.57,31.79302,977.51"></location>
+	<location name="Fenwater Cemetery" checks="Quest=16-2-999" pos="604.49,38.97087,934.96"></location>
+	<location name="Ashen Greene Cemetery" comment="where?" pos="383.8,31.13797,383.63"></location>
+	<location name="Smuggler Outpost Cemetery"  pos="839.59,28.2983,1184.5" checks="Quest=70-2-999"></location>
+	<location name="Silvermirror Boneyard"  pos="1056.17,29.24482,1159.48" checks="Quest=71-1-999"></location>
+	<location name="The Hallowed Cave" checks="Quest=72-1-999" pos="1335.56,35.16445,977.07"></location>
+	<location name="Greywall Mortuary" pos="1887.6,20.05468,1454.42" checks="PlayerMapPosition=16-13-19-16"></location>
+	<location name="Greywall Chapel" pos="1915.05,46.06828,1520.12" checks="PlayerMapPosition=16-13-19-16"></location>
+	<location name="Greywall Graveyard" pos="997.63,31.33501,175.08"></location>
+	<location name="Amarien's Foothills Cemetery" pos="2401.79,46.97383,804.34"></location>
+	<location name="Evergreen Hearth" pos="2255.28,25.65228,1479.21" checks="PlayerMapPosition=21-14-24-16"></location>
+</locations>

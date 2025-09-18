@@ -1,0 +1,421 @@
+<dialogue>
+
+	<node id="1" npcName="Maice Finchley" anim="1" text="You there, stranger! You look strong and fearless. I need your help urgently!" posx="19" posy="9">
+		<option optionid="1" optiontext="I'm listening." next="2" icon="Quest"></option>
+		<option optionid="2" optiontext="Can't stop now, sorry." next="0"></option>
+	</node>
+	<node id="2" npcName="Maice Finchley" anim="1" text="It's those blasted trolls, they're becoming impossible! My father went out into the woods with his usual hunting party, but only the huntsmen have returned! They were beset upon by the trolls not far in, and I'm told they grabbed my father and carried him away!" posx="472" posy="10">
+		<option optionid="1" optiontext="" next="3"></option>
+	</node>
+	<node id="3" npcName="Maice Finchley" anim="1" text="Please, it's important that you help! He's the mayor of our village and... well... he's all I got! My mother died when I was young, I can't lose my father too!" posx="900" posy="11">
+		<option optionid="1" optiontext="I could look for him." next="4" icon="Quest"></option>
+		<option optionid="2" optiontext="Heartbreaking, but I really haven't the time." next="0"></option>
+	</node>
+	<node id="4" npcName="Huntsman Kale" anim="1" switchtalker="1115" text="We can't know where they took him for sure, but they ambushed us not far in the region south of here. The trolls have camps all over, but I've long suspected they have a proper lair somewhere down there too." posx="1321" posy="10">
+		<option optionid="1" optiontext="" next="5"></option>
+	</node>
+	<node id="5" npcName="Huntsman Farrow" anim="1" switchtalker="1116" text="Yeah, best bet is to look for a cave, I reckon. They like dark, dingy places. We'd help you, of course, but erm... well, we're used to hunting deer and such, when we face trolls we know to just run for it." posx="1734" posy="8">
+		<option optionid="1" optiontext="" next="6"></option>
+	</node>
+	<node id="6" npcName="Maice Finchley" anim="1" switchtalker="1066" text="Please see my father safely back home, you seem like my only hope!" posx="2149" posy="8">
+		<option optionid="1" optiontext="I can try." next="0" actions="UpdateQuest=101-1"></option>
+	</node>
+
+
+	<node id="10" npcName="Maice Finchley" anim="1" text="Please... my father... have you looked for him?" posx="15" posy="16">
+		<option optionid="1" optiontext="Where did he go missing again?" next="11" checks="Quest=101-1-3"></option>
+		<option optionid="2" optiontext="Leave." next="0" checks="Quest=101-1-3"></option>
+		<option optionid="3" optiontext="Working on getting him home, trust me..." checks="Quest=101-4-999" next="0"></option>
+	</node>
+	<node id="11" npcName="Maice Finchley" anim="1" text="My father went out into the woods with his usual hunting party, but only the huntsmen have returned! They were beset upon by the trolls not far in, and I'm told they grabbed my father and carried him away!" posx="435" posy="14">
+		<option optionid="1" optiontext="" next="12"></option>
+		<option optionid="2" optiontext="I've heard enough." next="0"></option>
+	</node>
+	<node id="12" npcName="Huntsman Kale" anim="1" switchtalker="1115" text="We can't know where they took him for sure, but they ambushed us not far in the region south of here. The trolls have camps all over, but I've long suspected they have a proper lair somewhere down there too." posx="862" posy="15">
+		<option optionid="1" optiontext="" next="13"></option>
+		<option optionid="2" optiontext="I've heard enough." next="0"></option>
+	</node>
+	<node id="13" npcName="Huntsman Farrow" anim="1" switchtalker="1116" text="Yeah, best bet is to look for a cave, I reckon. They like dark, dingy places. We'd help you, of course, but erm... well, we're used to hunting deer and such, when we face trolls we know to just run for it." posx="1289" posy="16">
+		<option optionid="1" optiontext="" next="14"></option>
+		<option optionid="2" optiontext="I've heard enough." next="0"></option>
+	</node>
+	<node id="14" npcName="Maice Finchley" anim="1" switchtalker="1066" text="It's not only my father we're talking about, he's also the village mayor - it's really important you bring him back to us! Besides, I can't lose him! I lost my mother when I was young, he's the only family I've got!" posx="1714" posy="11">
+		<option optionid="1" optiontext="I'll see what I can do." next="0"></option>
+	</node>
+
+
+	<node id="20" npcName="Mayor Finchley" anim="1" text="Dare I hope you'd be here to save me...? I'd stand but my legs are feeling a bit wobbly right now... That jailor didn't exactly treat me gently..." posx="23" posy="12">
+		<option optionid="1" optiontext="What do you need, a healing potion?" next="21" icon="Quest"></option>
+		<option optionid="2" optiontext="Just wait here a second." next="0"></option>
+	</node>
+	<node id="21" npcName="Mayor Finchley" anim="1" text="No! That kind of vile stuff is invented by crazy hags, I've never let a single drop enter my body and I'm not about to start! All a man in my state really needs is one juicy steak." posx="449" posy="15">
+		<option optionid="1" optiontext="A steak? You're joking." next="22" icon="Quest"></option>
+	</node>
+	<node id="22" npcName="Mayor Finchley" anim="1" text="Never been more serious in my life! The trolls tried to feed me hay... said they'd fatten me up like a pig before putting me to stew in their cookpot. Don't think they have a clue, humans don't eat hay..." posx="869" posy="15">
+		<option optionid="1" optiontext="I guess I'll return with a steak then." next="23" icon="Quest"></option>
+	</node>
+	<node id="23" npcName="Mayor Finchley" anim="1" text="Please do... we can talk more about getting me out of here when I've recovered energy enough to stand at least." posx="1292" posy="15">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=101-4"></option>
+	</node>
+
+
+	<node id="25" npcName="Maice Finchley" anim="1" text="I can't believe those monsters would force my father to eat hay! Never put anything past the imagination of mean trolls. But I'm sure my father wanted you to hide rope within our haybales - they've been goin missing and I've wondered why." posx="27" posy="18">
+		<option optionid="1" optiontext="Which haybales exactly?" next="26"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="26" npcName="Maice Finchley" anim="1" text="Our village has a small shed facing the woods to the south where we keep most our hay. That's where you should hide the rope." posx="462" posy="20">
+		<option optionid="1" optiontext="Right, I'm on it." next="0"></option>
+	</node>
+	
+
+	<node id="30" npcName="Maice Finchley" anim="1" text="What news of my father?" posx="17" posy="13">
+		<option optionid="1" optiontext="I'm struggling to free him from the troll dungeon..." next="31" icon="Quest"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="31" npcName="Maice Finchley" text="&lt;color=#9C8C77&gt; *You explain to Maice about needing to deliver rope to the mayor, how you were interrupted by a particularly nasty troll now guarding his cell, and how all the mayor could manage to say was something about the hay the trolls have been feeding him.* &lt;/color&gt;" posx="442" posy="15">
+		<option optionid="1" optiontext="" next="32"></option>
+	</node>
+	<node id="32" npcName="Maice Finchley" anim="1" text="They've been feeding my father hay?! The monsters! Hmm, come to think of it, haybales have been disappearing from our shed facing the woods..." posx="867" posy="15">
+		<option optionid="1" optiontext="" next="33"></option>
+	</node>
+	<node id="33" npcName="Maice Finchley" anim="1" text="Oh, that must be what my father meant! You can hide the rope within the village haybales! Then the trolls will steal the hay and deliver the rope to my father." posx="1289" posy="14">
+		<option optionid="1" optiontext="Wait, which haybales exactly?" next="34"></option>
+		<option optionid="2" optiontext="Right, I'm on it." next="0" actions="SetVar=Q101MaiceTalk-1" icon="Quest"></option>
+	</node>
+	<node id="34" npcName="Maice Finchley" anim="1" text="Our village has a small shed facing the woods to the south where we keep most our hay. That's where you should hide the rope." posx="1722" posy="12">
+		<option optionid="1" optiontext="Right, I'm on it." next="0" actions="SetVar=Q101MaiceTalk-1" icon="Quest"></option>
+	</node>
+
+
+	<node id="35" npcName="Maice Finchley" anim="1" text="&lt;color=#9C8C77&gt; *You explain to Maice about needing to deliver rope to the mayor, how you were interrupted by a particularly nasty troll now guarding his cell, and how all the mayor could manage to say was something about the hay the trolls have been feeding him.* &lt;/color&gt;" posx="27" posy="18">
+		<option optionid="1" optiontext="" next="36"></option>
+	</node>
+	<node id="36" npcName="Maice Finchley" anim="1" text="They've been feeding my father hay?! Those monsters! So you thought you should maybe hide rope in the hay? Good thinking, these haybales have been disappearing mysteriously and now we know why. " posx="447" posy="17">
+		<option optionid="1" optiontext="" next="37"></option>
+	</node>
+	<node id="37" npcName="Maice Finchley" anim="1" text="Wouldn't hurt to try. If you hide rope within the hay, the trolls might actually deliver it to him! I'd like to see if this works." posx="865" posy="19">
+		<option optionid="1" optiontext="I'm on it." next="0" actions="SetVar=C162Maice-0|Q101MaiceTalk-1,Cinematic=152" icon="Quest"></option>
+	</node>
+
+
+	<node id="40" npcName="Mayor Finchley" anim="1" text="Oof, gotta say... that troll jailor didn't exactly treat me gently... tried to feed me hay... didn't like that I refused, so he forced it down..." posx="17" posy="15">
+		<option optionid="1" optiontext="Well, I brought a steak like you requested." next="42" checks="HasItem=205-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Are you sure you don't need a healing potion instead?" next="41"></option>
+		<option optionid="3" optiontext="Just hang in there for a bit." next="0"></option>
+	</node>
+	<node id="41" npcName="Mayor Finchley" anim="1" text="No! That kind of vile stuff is invented by crazy hags, I've never let a single drop enter my body and I'm not about to start! All a man in my state really needs is one juicy steak." posx="454" posy="286">
+		<option optionid="1" optiontext="Well, if you're sure... I brought one." next="42" checks="HasItem=205-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Just hang in there for a bit." next="0"></option>
+	</node>
+	<node id="42" npcName="Mayor Finchley" anim="1" text="Ancestors be praised! Trust me, a good steak can restore a man better than any crazy shaman's 'healing' potion." posx="475" posy="19">
+		<option optionid="1" optiontext="" checks="!HasSkillLevel=Cooking-20" next="43"></option>
+		<option optionid="2" optiontext="" checks="HasSkillLevel=Cooking-20" next="44"></option>
+	</node>
+	<node id="43" npcName="Mayor Finchley" anim="1" text="&lt;color=#9C8C77&gt; *The mayor winces as he bites into the steak.* &lt;/color&gt;\n\nIt's overcooked! Medium-rare, my man, it's meant to be medium-rare!" posx="475" posy="19">
+		<option optionid="1" optiontext="C'mon, quit complaining..." next="0" actions="Cinematic=151,UpdateQuest=101-5,RemoveItems=205-1"></option>
+	</node>
+	<node id="44" npcName="Mayor Finchley" anim="1" text="&lt;color=#9C8C77&gt; *The mayor devours your steak rabidly.* &lt;/color&gt;\n\nDeliciously juicy, my man - cooked to perfection!" posx="475" posy="19">
+		<option optionid="1" optiontext="I'm quite experienced, if I do say so myself..." next="0" actions="Cinematic=151,UpdateQuest=101-5,RemoveItems=205-1"></option>
+	</node>
+	
+	<node id="50" npcName="Mayor Finchley" anim="537" text="I think there's an opening on the ceiling large enough for me to crawl through, I'll just need to get up there somehow." posx="21" posy="21">
+		<option optionid="1" optiontext="You'll be fine with a bit of rope?" next="52" icon="Quest"></option>
+		<option optionid="2" optiontext="You're sure we can't just break through this door instead?" next="51"></option>
+	</node>
+	<node id="51" npcName="Mayor Finchley" anim="537" text="Look carefully, it's not a door at all! Those foolish trolls even strapped a lock on it, but it's just metal bars! They lift the whole thing off when they 'open' the cell." posx="158" posy="351">
+		<option optionid="1" optiontext="You'll be fine with a bit of rope, then?" next="52" icon="Quest"></option>
+	</node>
+	<node id="52" npcName="Mayor Finchley" anim="537" text="Yeah, I reckon if you'd slip me some rope... wait...!\n\n&lt;color=#9C8C77&gt; *The Mayor cuts off quickly at the emerging sounds of grunting and giant footsteps.* &lt;/color&gt;" posx="631" posy="19">
+		<option optionid="1" optiontext="" next="53"></option>
+	</node>
+	<node id="53" npcName="Mayor Finchley" anim="537" text="Oh no...! I get the feeling the trolls are about to intensify my guard! Oh, I know - use the hay, stranger, use the hay!" posx="1055" posy="17">
+		<option optionid="1" optiontext="Um, what...?" next="55" checks="!HasItem=485-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Hold on, I've actually got rope in my bags right now..." next="55" checks="HasItem=485-1" icon="Quest"></option>
+	</node>
+	<node id="54" npcName="Mayor Finchley" anim="537" text="The hay, stranger! There isn't time to think this through; just hide the rope in the hay up in the village! They'll steal it and feed it to me, I'm sure of it!" posx="1079" posy="638">
+		<option optionid="1" optiontext="" next="0"></option>
+		<option optionid="2" optiontext="Hold on, I've actually got rope in my bags right now..." next="0" checks="HasItem=485-1" icon="Quest"></option>
+	</node>
+	<node id="55" npcName="Mayor Finchley" anim="537" text="&lt;color=#9C8C77&gt; *The noise from what can only be a particularly sizable troll draws very close...* &lt;/color&gt;\n\nMaice will know, she'll understand...!" posx="1487" posy="18">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=158" icon="Quest"></option>
+	</node>
+
+
+	<node id="60" npcName="Mayor Finchley" anim="1" text="There you are, the person who helped me set free! I'm lucky you came along when you did. Who knows how much longer before those trolls would've lost their patience with me and stuffed me into their cookpot." posx="15" posy="10">
+		<option optionid="1" optiontext="" next="61"></option>
+	</node>
+	<node id="61" npcName="Mayor Finchley" anim="1" text="Speaking of, I managed to grab something from the troll lair as I headed out. I reckon it's some kind of a troll trinket, like something their shamans use or some such. Anyway, thought you should have it as thanks for rescuing me." posx="435" posy="11">
+		<option optionid="1" optiontext="You usually have trouble with the trolls?" next="62"></option>
+		<option optionid="2" optiontext="How are your huntsmen doing?" next="63"></option>
+		<option optionid="3" optiontext="I'm sure I'll find use for it, take care." next="64" icon="Quest"></option>
+	</node>
+	<node id="62" npcName="Mayor Finchley" anim="1" text="While we're in the village, we can usually rely on shooting arrows at them from behind the safety of our palisades. But out there in the woods, gotta always be on your guard. Maybe it's about time we start fighting back, thinning their numbers." posx="919" posy="13">
+		<option optionid="1" optiontext="How are your huntsmen doing?" next="63"></option>
+		<option optionid="2" optiontext="Alright then, take care." next="64" checks="Quest=101-6-6" icon="Quest"></option>
+		<option optionid="3" optiontext="Alright then, take care." next="0" checks="Quest=101-999-999"></option>
+	</node>
+	<node id="63" npcName="Mayor Finchley" anim="1" text="Kale and Farrow? They'll be alright, I'm not mad at them for running, if that's what you're thinking. Getting surprised by giant trolls like that, wouldn't expect anyone in the village stand and fight against that. They're good men though, good with their bows given the chance." posx="918" posy="391">
+		<option optionid="1" optiontext="You usually have trouble with the trolls?" next="62"></option>
+		<option optionid="2" optiontext="Alright then, take care." next="64" checks="Quest=101-6-6" icon="Quest"></option>
+		<option optionid="3" optiontext="Alright then, take care." next="0" checks="Quest=101-999-999"></option>
+	</node>
+	<node id="64" npcName="Mayor Finchley" anim="1" text="You too, drop by from time to time. Who knows, maybe we could use more of your help with the trolls..." posx="1667" posy="626">
+		<option optionid="1" optiontext="" actions="UpdateQuest=101-999" next="0"></option>
+	</node>
+
+	<node id="70" npcName="Mayor Finchley" anim="1" text="Glad to see you around, friend. Ain't gonna forget about you saving me from the trolls anytime soon." posx="34" posy="15">
+		<option optionid="1" optiontext="&lt;color=green&gt;*Recover the Bracelet of the Troll Berserker.*&lt;/color&gt;" checks="!ItemExistsGlobal=1033" itemIcon="1033" next="71"></option>
+		<option optionid="2" optiontext="You usually have trouble with the trolls?" next="62"></option>
+		<option optionid="3" optiontext="How are your huntsmen doing?" next="63"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="71" npcName="Mayor Finchley" itemIcon="1033" text="&lt;color=#9C8C77&gt;*Recover the bracelet for 250 gold?*&lt;/color&gt;" posx="34" posy="15">
+		<option optionid="1" optiontext="Yes." checks="HasItem=131-250" actions="AddItems=1033-1-true,RemoveItems=131-250" itemIcon="131" next="0" showGreyedOutOption="1"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+
+	<node id="80" npcName="Foreman Woadbraith" anim="1" text="What now?! Who are you and what d'you want?! Can't you tell I'm a busy man?!" posx="24" posy="17">
+		<option optionid="1" optiontext="Not really, can't see anything going on here in fact." next="81" icon="Quest"></option>
+		<option optionid="2" optiontext="I'll leave you to it then." next="0"></option>
+	</node>
+	<node id="81" npcName="Foreman Woadbraith" anim="1" text="That's obviously because we have a crisis on our hands! The whole operation's halted! Just the other night a massive log appeared along the path to our Wildsfir clearing - we can't bring our carts through! " posx="440" posy="18">
+		<option optionid="1" optiontext="" next="82"></option>
+	</node>
+	<node id="82" npcName="Foreman Woadbraith" anim="1" text="But hold on... you could go down there and remove it for us. The log's way too big so you'd have to chop it down to pieces I reckon. I can spare a few coins for the job, how about it?" posx="856" posy="20">
+		<option optionid="1" optiontext="Why can't your men just tow it away?" next="83"></option>
+		<option optionid="2" optiontext="What's Wildsfir?" next="85"></option>
+		<option optionid="3" optiontext="Sure, I could do it." next="86" icon="Quest"></option>
+		<option optionid="4" optiontext="I'm too busy right now." next="0"></option>
+	</node>
+	<node id="83" npcName="Foreman Woadbraith" anim="1" text="Well, ahem... isn't it obvious? It's a very big log and it's a very tough job, yes... need a man who's extremely skilled with a hatchet... and maybe a weapon..." posx="1315" posy="319">
+		<option optionid="1" optiontext="Um, what?" next="84"></option>
+		<option optionid="2" optiontext="What's Wildsfir?" next="85"></option>
+		<option optionid="3" optiontext="Sure, I could do it." next="86" icon="Quest"></option>
+		<option optionid="4" optiontext="I'm too busy right now." next="0"></option>
+	</node>
+	<node id="84" npcName="Foreman Woadbraith" anim="1" text="What, what? Look it's a simple job, either take it or don't!" posx="1742" posy="320">
+		<option optionid="1" optiontext="What's Wildsfir?" next="85"></option>
+		<option optionid="2" optiontext="Sure, I could do it." next="86" icon="Quest"></option>
+		<option optionid="3" optiontext="I'm too busy right now." next="0"></option>
+	</node>
+	<node id="85" npcName="Foreman Woadbraith" anim="1" text="What is Wildsfir, he asks... only the lifeblood of these rugged, northern forests! It's wooden gold! Grows only in these harsh woodlands, and rarely as more than lone stragglers, but we have a whole clearing full of 'em. Only we can't very well access it right now, so will you help?" posx="827" posy="659">
+		<option optionid="1" optiontext="And why can't your men clear the way?" next="83"></option>
+		<option optionid="2" optiontext="Sure, I could do it." next="86" icon="Quest"></option>
+		<option optionid="3" optiontext="I'm too busy right now." next="0"></option>
+	</node>
+	<node id="86" npcName="Foreman Woadbraith" anim="1" text="That's my man! Now, the log blocking the path is just southwest of here, past the little bridge that leads over the stream. It's a tough one, so any old axe just won't do. Could buy a nice one with a Wildsfir handle off our vendors, unless you're already packing one of those fancy iron ones..." posx="1375" posy="19">
+		<option optionid="1" optiontext="Alright then." next="0" actions="UpdateQuest=99-1"></option>
+	</node>
+
+
+	<node id="90" npcName="Foreman Woadbraith" anim="1" text="Well what? Is the path clear yet? I need to get this mill back up and running." posx="24" posy="21">
+		<option optionid="1" optiontext="It's clear, and oh yeah - I was ambushed by forest trolls!" next="95" checks="Quest=99-3-3" icon="Quest"></option>
+		<option optionid="2" optiontext="Sorry I forgot, what was you issue again?" next="91" checks="!Quest=99-3-3"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="91" npcName="Foreman Woadbraith" anim="1" text="What do you mean you 'forgot'?! There's a giant log blocking the path to our Wildsfir grove, just to the southwest, across the bridge over the stream! You agreed to get rid of it!" posx="454" posy="349">
+		<option optionid="1" optiontext="" next="92"></option>
+	</node>
+	<node id="92" npcName="Foreman Woadbraith" anim="1" text="It's a tough one too, so any old axe just won't do. Could buy a nice one with a Wildsfir handle off our vendors, unless you're already packing one of those fancy iron ones..." posx="876" posy="351">
+		<option optionid="1" optiontext="Why can't your men remove the log?" next="93"></option>
+		<option optionid="2" optiontext="What's Wildsfir?" next="94"></option>
+		<option optionid="3" optiontext="Right." next="0"></option>
+	</node>
+	<node id="93" npcName="Foreman Woadbraith" anim="1" text="Well, ahem... isn't it obvious? It's a very big log and it's a very tough job, yes... need a man who's extremely skilled with a hatchet... and maybe a weapon..." posx="1335" posy="612">
+		<option optionid="1" optiontext="What's Wildsfir?" next="94"></option>
+		<option optionid="2" optiontext="Right." next="0"></option>
+	</node>
+	<node id="94" npcName="Foreman Woadbraith" anim="1" text="What is Wildsfir, he asks... only the lifeblood of these rugged, northern forests! It's wooden gold! Grows only in these harsh woodlands, and rarely as more than lone stragglers, but we have a whole clearing full of 'em. Only we can't very well access it right now!" posx="1777" posy="607">
+		<option optionid="1" optiontext="Why can't your men remove the log?" next="93"></option>
+		<option optionid="2" optiontext="Right." next="0"></option>
+	</node>
+	<node id="95" npcName="Foreman Woadbraith" anim="1" text="Yeah, they tend to do that. But you handled them alright, didn't you? Knew you had it in you!" posx="1311" posy="19">
+		<option optionid="1" optiontext="Could have given me the heads up." next="96"></option>
+		<option optionid="2" optiontext="I expect there's some hazard pay for this." next="97" icon="Quest"></option>
+	</node>
+	<node id="96" npcName="Foreman Woadbraith" anim="1" text="Erm... yes, perhaps, but then I wasn't sure if it was a troll trick or just an innocent log! Besides, didn't want to scare you away from the job." posx="1755" posy="-90">
+		<option optionid="1" optiontext="I expect there's some hazard pay for this." next="97" icon="Quest"></option>
+	</node>
+	<node id="97" npcName="Foreman Woadbraith" anim="1" text="Of course, and listen! You're free to use our mill here too. I got some special supplies I carefully share between my best workers, just so you know." posx="1764" posy="183">
+		<option optionid="1" optiontext="Tell me about the sawmill." next="98"></option>
+		<option optionid="2" optiontext="Fair enough." next="0" actions="UpdateQuest=99-999"></option>
+	</node>
+	<node id="98" npcName="Foreman Woadbraith" anim="1" text="It's simply ingenius! Wildsfir is a particularly tough wood, so we're using the machinery here to quickly turn its logs into planks. First step, of course, is to gather Wildsfir itself - down the path where you fought the trolls." posx="2426" posy="205">
+		<option optionid="1" optiontext="" next="99"></option>
+		<option optionid="2" optiontext="Fair enough." next="0" actions="UpdateQuest=99-999"></option>
+	</node>
+	<node id="99" npcName="Foreman Woadbraith" anim="1" text="You'll be able to load up logs into the machine here, but you might also meet Tom along the way. He's our muscular cart guy; any logs you load up on his cart will end up here at the machine also." posx="2861" posy="205">
+		<option optionid="1" optiontext="" next="100"></option>
+		<option optionid="2" optiontext="Fair enough." next="0" actions="UpdateQuest=99-999"></option>
+	</node>
+	<node id="100" npcName="Foreman Woadbraith" anim="1" text="Whenever the machine's stopped, just pull the lever to get it going again. You can also pull the lever to prompt the machine run faster, just not too fast or the blade overheats and breaks - make sure the previous log has always made its way onto the planks pile." posx="3292" posy="205">
+		<option optionid="1" optiontext="" next="101"></option>
+		<option optionid="2" optiontext="Fair enough." next="0" actions="UpdateQuest=99-999"></option>
+	</node>
+	<node id="101" npcName="Foreman Woadbraith" anim="1" text="Last step is simply to load up the planks onto our cart here, that's all there is to it really. Efficiency is key, I like to see efficiency in my workers, *chuckles*!" posx="3292" posy="215">
+		<option optionid="1" optiontext="Fair enough." next="0" actions="UpdateQuest=99-999"></option>
+	</node>
+
+
+	<node id="110" npcName="Foreman Woadbraith" anim="1" text="I hope you're here to keep the mill running, every moment it's not making planks is a moment wasted!" posx="48" posy="13">
+		<option optionid="1" optiontext="Why don't you show me what you have in store?" next="0" actions="OpenShop=83"></option>
+		<option optionid="2" optiontext="Tell me about the sawmill." next="111"></option>
+		<option optionid="3" optiontext="These strange ambers within the logs - what're they for?" HasItem="1006-1" itemIcon="1006" showGreyedOutOption="1" next="115"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="111" npcName="Foreman Woadbraith" anim="1" text="It's simply ingenius! Wildsfir is a particularly tough wood, so we're using the machinery here to quickly turn its logs into planks. First step, of course, is to gather Wildsfir itself - down the path where you fought the trolls." posx="492" posy="13">
+		<option optionid="1" optiontext="" next="112"></option>
+		<option optionid="2" optiontext="Nevermind, show me what you have in store." next="0" actions="OpenShop=83"></option>
+		<option optionid="3" optiontext="I've heard enough." next="0"></option>
+	</node>
+	<node id="112" npcName="Foreman Woadbraith" anim="1" text="You'll be able to load up logs into the machine here, but you might also meet Tom along the way. He's our muscular cart guy; any logs you load up on his cart will end up here at the machine also." posx="918" posy="13">
+		<option optionid="1" optiontext="" next="113"></option>
+		<option optionid="2" optiontext="Nevermind, show me what you have in store." next="0" actions="OpenShop=83"></option>
+		<option optionid="3" optiontext="I've heard enough." next="0"></option>
+	</node>
+	<node id="113" npcName="Foreman Woadbraith" anim="1" text="Whenever the machine's stopped, just pull the lever to get it going again. You can also pull the lever to prompt the machine run faster, just not too fast or the blade overheats and breaks - make sure the previous log has always made its way onto the planks pile." posx="1346" posy="10">
+		<option optionid="1" optiontext="" next="114"></option>
+		<option optionid="2" optiontext="Nevermind, show me what you have in store." next="0" actions="OpenShop=83"></option>
+		<option optionid="3" optiontext="I've heard enough." next="0"></option>
+	</node>
+	<node id="114" npcName="Foreman Woadbraith" anim="1" text="Last step is simply to load up the planks onto our cart here, that's all there is to it really. Efficiency is key, I like to see efficiency in my workers, *chuckles*!" posx="1774" posy="10">
+		<option optionid="1" optiontext="Show me what you have in store." next="0" actions="OpenShop=83"></option>
+		<option optionid="2" optiontext="Alright then." next="0"></option>
+	</node>
+	<node id="115" npcName="Foreman Woadbraith" anim="1" text="Oh yeah, them. They form inside the trees, find them from time to time when splitting the logs here. Not sure if they're any useful really, at least we don't have any use for them." posx="944" posy="1223">
+		<option optionid="1" optiontext="" next="116"></option>
+	</node>
+	<node id="116" npcName="Foreman Woadbraith" anim="1" text="That cuckoo shaman, though, he's a different matter altogether. Lives in a solitary hut on the hills to the east. Craves for those gems, he does. I'm sure he'll trade you some of his trash for them if you're interested, hah!" posx="1373" posy="1222">
+		<option optionid="1" optiontext="Why don't you show me what you have in store?" next="0" actions="OpenShop=83"></option>
+		<option optionid="2" optiontext="Tell me about the sawmill." next="111"></option>
+		<option optionid="3" optiontext="Fair enough." next="0"></option>
+	</node>
+
+
+	<node id="200" npcName="Bardo the Forest Nomad" anim="1" text="&lt;color=#9C8C77&gt; *The man with his disheveled hair and beard full of twigs gives you a silent stare, then a nod.* &lt;/color&gt;" posx="-25" posy="-47">
+		<option optionid="1" optiontext="Mind if I hitch a ride on your cart?" next="201" icon="FastTravel"></option>
+		<option optionid="2" optiontext="Tell me about yourself." next="202"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	
+	<node id="201" npcName="Bardo the Forest Nomad" anim="1" text="Hrm, could use the company... where're you headed?" posx="51" posy="35">
+		<option optionid="1" icon="FastTravel" optiontext="Harshwind Village" next="0"></option>
+		<option optionid="2" icon="FastTravel" optiontext="Thornbark Sawmill" next="0"></option>
+		<option optionid="3" icon="FastTravel" optiontext="Thornhill Gates" next="0"></option>
+		<option optionid="4" icon="FastTravel" optiontext="Main Road" next="0"></option>
+		<option optionid="10" optiontext="Nevermind." next="0"></option>
+	</node>
+
+
+	<node id="202" npcName="Bardo the Forest Nomad" anim="1" text="Bardo's the name. I like to travel through the forest, foraging goods, trading them here and there... Prefer the forest to the cities... much quieter, y'know?" posx="345" posy="641">
+		<option optionid="1" optiontext="You're not worried about trolls?" next="203"></option>
+		<option optionid="2" optiontext="Mind if I hitch a ride on your cart?" icon="FastTravel" next="201"></option>
+		<option optionid="3" optiontext="See you around." next="0"></option>
+	</node>
+	<node id="203" npcName="Bardo the Forest Nomad" anim="1" text="Nah, not much to worry about once you get familiar with them. Most of them aren't all that smart, so they're easy to avoid when you know what you're doing." posx="773" posy="643">
+		<option optionid="1" optiontext="Mind if I hitch a ride on your cart?" icon="FastTravel" next="201"></option>
+		<option optionid="2" optiontext="See you around." next="0"></option>
+	</node>
+
+
+
+
+	<node id="300" npcName="Thor Ganesh" anim="1" text="I sense your spirit stir, like a whispering breeze through ancient woods. Have you come seeking the guidance of earth's wisdom - the path to the shores of truth? My totems will show the way." posx="0" posy="-145">
+		<option optionid="1" optiontext="The Arcanist in Thornhill is looking for divination bones."  icon="Quest" next="Dialogue_GhastlyWeapons-170" checks="Quest=95-5-5"></option>
+		<option optionid="2" optiontext="The Arcanist in Thornhill is looking for divination bones." next="Dialogue_GhastlyWeapons-170" checks="Quest=95-6-6,!HasItem=1809-1"></option>
+		<option optionid="3" optiontext="So I got the skull of an ancestor." next="Dialogue_GhastlyWeapons-175" icon="Quest" checks="Quest=95-6-6,HasItem=1809-1"></option>
+		<option optionid="4" optiontext="Those Bones of Divination, are you sure you gave them to me? I can't seem to find them anywhere..." next="0" icon="Quest" checks="Quest=95-7-7,!HasItem=1808-1" actions="AddItems=1808-1-true,NpcChat=The spirits are always certain."></option>
+		<option optionid="5" optiontext="What secrets can you share?" next="307" icon="Shop"></option>
+		<option optionid="6" optiontext="I'd like to buy your totems." next="301"></option>
+		<option optionid="7" optiontext="Tell me about these totems you speak of." next="308"></option>
+		<option optionid="8" optiontext="What would it take for me to carve my own totems?" next="305" checks="HasSkillLevel=Carpentry-15,Var=GaneshTotems-0-0"></option>
+		<option optionid="9" optiontext="Indeed." next="0"></option>
+	</node>
+	<node id="301" npcName="Thor Ganesh" anim="1" text="Wise choice, seeker. Each totem will strengthen your connection with the spirits of the forest, offering guidance or protection. How great is your need?" posx="616" posy="323">
+		<option optionid="1" optiontext="5 totems &lt;color=orange&gt; (100 coins) &lt;/color&gt;" next="303" checks="HasItem=131-100" actions="RemoveItems=131-100,AddItems=1039-5" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="10 totems &lt;color=orange&gt; (200 coins) &lt;/color&gt;" next="303" checks="HasItem=131-200" actions="RemoveItems=131-200,AddItems=1039-10" showGreyedOutOption="1"></option>
+		<option optionid="3" optiontext="20 totems &lt;color=orange&gt; (400 coins) &lt;/color&gt;" next="303" checks="HasItem=131-400" actions="RemoveItems=131-400,AddItems=1039-20" showGreyedOutOption="1"></option>
+		<option optionid="4" optiontext="Nevermind." next="302" icon="LeadingExit"></option>
+	</node>
+	<node id="302" npcName="Thor Ganesh" anim="1" text="Often the heart that hoards its treasures finds itself empty, for the true wealth of life is in the giving. My totems always offer guidance." posx="10" posy="715">
+		<option optionid="1" optiontext="What secrets can you share?" next="307" icon="Shop"></option>
+		<option optionid="2" optiontext="I'd like to buy your totems." next="301"></option>
+		<option optionid="3" optiontext="Tell me about these totems you speak of." next="308"></option>
+		<option optionid="4" optiontext="What would it take for me to carve my own totems?" next="305" checks="HasSkillLevel=Carpentry-15,Var=GaneshTotems-0-0"></option>
+		<option optionid="5" optiontext="Indeed." next="0"></option>
+	</node>
+	<node id="303" npcName="Thor Ganesh" anim="1" text="May the earth cradle you and the winds carry your spirits to distant horizons. My totems always offer guidance." posx="1050" posy="322">
+		<option optionid="1" optiontext="What secrets can you share?" next="307" icon="Shop"></option>
+		<option optionid="2" optiontext="I could use more spirit totems." next="301"></option>
+		<option optionid="3" optiontext="Tell me about these totems you speak of." next="308"></option>
+		<option optionid="4" optiontext="What would it take for me to carve my own totems?" next="305" checks="HasSkillLevel=Carpentry-15,Var=GaneshTotems-0-0"></option>
+		<option optionid="5" optiontext="Indeed." next="0"></option>
+	</node>
+	<node id="304" npcName="Thor Ganesh" anim="1" text="For those whose sights are firmly rooted in the earth, I advice to place the totems around their homes to ward off bad spirits. A practiced shaman can of course find more uses for them." posx="598" posy="910">
+		<option optionid="1" optiontext="Would you teach me how to use the power of the totems?" next="307" icon="Shop"></option>
+		<option optionid="2" optiontext="I'd like to buy some." next="301"></option>
+		<option optionid="3" optiontext="How about you teach me to make my own totems?" next="305" checks="HasSkillLevel=Carpentry-15,Var=GaneshTotems-0-0"></option>
+		<option optionid="4" optiontext="Interesting, but I must go." next="0"></option>
+	</node>
+	<node id="305" npcName="Thor Ganesh" anim="1" text="Ah, you have understanding of how to bend wood to your will. But for the sacred knowledge of shaping wooden effigys of the spirit world, I must demand something in return - 5 Mystic's Amber, each offering glimpses into the world of spirits." posx="1205" posy="948">
+		<option optionid="1" optiontext="A small price to pay." next="306" checks="HasItem=1006-5" actions="RemoveItems=1006-5" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Where would I find Mystic's Amber?" next="309"></option>
+		<option optionid="3" optiontext="I can't spare that right now." next="302" icon="LeadingExit"></option>
+	</node>
+	<node id="306" npcName="Thor Ganesh" anim="1" text="&lt;color=#9C8C77&gt;*The shaman teaches you the secrets to carving spirit totems out of Wildsfir Logs at a crafting workbench.*&lt;/color&gt;" posx="1625" posy="948">
+		<option optionid="1" optiontext="Much appreciated!" next="303" actions="UnlockCrafting=1039,SetVar=GaneshTotems-1" icon="Skills/carpentry"></option>
+	</node>
+	<node id="307" npcName="Thor Ganesh" anim="1" text="The great mysteries of life are like roots hidden deep in the earth, only to be revealed to those who demonstrate their willingness to nurture their growth. An offering of Mystic's Amber will be the measure of your spirit here." posx="1582" posy="36">
+		<option optionid="1" optiontext="" next="0" actions="OpenShop=85"></option>
+		<option optionid="2" optiontext="Where would I find Mystic's Amber?" next="309"></option>
+	</node>
+	<node id="308" npcName="Thor Ganesh" anim="1" text="They bring connection with the spirits of nature; the clever and adaptable fox, the graceful and gentle deer, the loyal wolf and the vision and clarity of the eagle." posx="123" posy="1311">
+		<option optionid="1" optiontext="" next="304"></option>
+	</node>
+	<node id="309" npcName="Thor Ganesh" anim="1" text="The sacred gem forms in the trunk of the mightiest Wildsfir trees. Men from the sawmill bring them to me sometimes, as they split the logs and find them. Forest trolls are also known to sometimes rip the trees and gather their shiny gems." posx="2420" posy="1218">
+		<option optionid="1" optiontext="What secrets can you share?" next="307" icon="Shop"></option>
+		<option optionid="2" optiontext="I'd like to buy your totems." next="301"></option>
+		<option optionid="3" optiontext="Tell me about your totems." next="308"></option>
+		<option optionid="4" optiontext="What would it take for me to carve totems of my own?" next="305" checks="HasSkillLevel=Carpentry-15,Var=GaneshTotems-0-0"></option>
+		<option optionid="5" optiontext="I see." next="0"></option>
+	</node>
+
+
+
+
+
+
+
+
+
+	<node id="500" anim="1" npcName="Lumberjack Alden" text="Ah, stranger! Not often we get visitors at my humble abode. What brings you here?">
+		<option optionid="1" next="501" optiontext="Can you tell me about the sawmill in the village?"></option>
+		<option optionid="2" next="502" optiontext="Where can I find Harshwind village?"></option>
+		<option optionid="3" next="503" optiontext="Where is the nearest bank?"></option>
+		<option optionid="4" next="0" optiontext=""></option>
+	</node>
+
+	<node id="501" anim="1" npcName="Lumberjack Alden" text="Ah, the sawmill. That's where most of us in the village work. If you're looking for more details, you'd best speak to Foreman Woadbraith. Just be cautious, I've heard there's been some trouble with trolls lately.">
+		<option optionid="1" next="504" optiontext=""></option>
+	</node>
+
+	<node id="502" anim="1" npcName="Lumberjack Alden" text="Harshwind? It's known for its harsh weather and cold climate. Head north-west from here and you'll find it right by the shoreline. Wrap up warm!">
+		<option optionid="1" next="504" optiontext=""></option>
+	</node>
+
+	<node id="503" anim="1" npcName="Lumberjack Alden" text="The nearest bank is in Thornhill to the north-east. However, be careful on your journey. There have been rumors of a plague there recently.">
+		<option optionid="1" next="504" optiontext=""></option>
+	</node>
+
+	<node id="504" anim="1" npcName="Lumberjack Alden" text="Was there anything else?">
+		<option optionid="1" next="501" optiontext="Can you tell me about the sawmill in the village?"></option>
+		<option optionid="2" next="502" optiontext="Where can I find Harshwind village?"></option>
+		<option optionid="3" next="503" optiontext="Where is the nearest bank?"></option>
+		<option optionid="4" next="0" optiontext="Leave."></option>
+	</node>
+
+</dialogue>
+
+
+
+

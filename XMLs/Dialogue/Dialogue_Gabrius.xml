@@ -1,0 +1,1244 @@
+<dialogue>
+	<node id="1" npcName="Gabrius" anim="1" text="Welcome back to the land of the living, Lord Aercrest! Did you enjoy your sleep?" posx="48" posy="37">
+		<option optionid="1" optiontext="What...?" next="2"></option>
+		<option optionid="2" optiontext="Who...?" next="2"></option>
+		<option optionid="3" optiontext="Where...?" next="2"></option>
+	</node>
+	<node id="2" npcName="Gabrius" anim="1" text="Feeling a little lost, are we? Understandable. After all, you have been slumbering in that grave for, well... it must be over a century now." posx="538" posy="40">
+		<option optionid="1" optiontext="" next="3"></option>
+	</node>
+	<node id="3" npcName="Gabrius" anim="1" text="Oh that's right, Lord Aercrest. Take a moment to let that sink in. It may have eluded you in the afterlife, but you've been dead for quite some time. I'm merely here to wake you from your illusions." posx="502" posy="303">
+		<option optionid="1" optiontext="No, no, no... this can't be right, I was in the middle of a banquet, I need to get back..." next="15"></option>
+		<option optionid="2" optiontext="What is this, some kind of an illusion?!" next="16"></option>
+		<option optionid="3" optiontext="Why... who are you and why would you do this?!" next="4"></option>
+	</node>
+	<node id="4" npcName="Gabrius" anim="1" text="You may call me Gabrius - a mage of extraordinary talents, in case that wasn't obvious. I am in need of a servant - a blackguard, if you will - and that's where you come in. You will find you're placed under a curse of enslavement, to obey my every command." posx="1111" posy="243">
+		<option optionid="1" optiontext="What will it take for you to let me go?" icon="Quest" next="6"></option>
+		<option optionid="2" optiontext="Why me?! What did I ever do to you?" next="23"></option>
+		<option optionid="3" optiontext="I have no intention of obeying you!" next="12"></option>
+		<option optionid="4" optiontext="You cursed me with undeath?! You sicken me!" next="13"></option>
+	</node>
+	<node id="6" npcName="Gabrius" anim="1" text="We shall see. Promise to serve me well and perhaps in due time, once you've expended your usefulness to me, I may show you mercy. To begin with, I need you to dig up a little secret buried in these woods." posx="1605" posy="47">
+		<option optionid="1" optiontext="What 'secret'?" next="7"></option>
+		<option optionid="2" optiontext="I'll find a way to break your curse before I have to count on your 'mercy'." next="8"></option>
+	</node>
+	<node id="7" npcName="Gabrius" anim="1" text="We'll discuss that, but not here. Take these supplies I brought for you - death has not been kind to your possessions, but I knew to expect that." itemIcon="1219" posx="2055" posy="-9">
+		<option optionid="1" optiontext="" next="10"></option>
+	</node>
+	<node id="8" npcName="Gabrius" anim="1" text="And how exactly do you plan to achieve that? You cannot kill me, you cannot even attack me. No, your curse ends when I will it so - not a moment sooner." posx="1779" posy="368">
+		<option optionid="1" optiontext="And what kind of a 'secret' are you expecting me to find?" next="7"></option>
+	</node>
+	<node id="9" npcName="Gabrius" anim="1" text="&lt;color=#9C8C77&gt;*Gabrius ignores you, as he begins casting a spell of teleportation*&lt;/color&gt;" actions="Cinematic=11" posx="2535" posy="128">
+		<option optionid="1" optiontext="" icon="Quest" next="0"></option>
+	</node>
+
+
+	<node id="10" npcName="Gabrius" anim="1" text="Next, make your way out of the cemetery. There's an abandoned shack just outside Spruce Shade village. We should be out of sight from any curious eyes there."  posx="1779" posy="368">
+		<option optionid="1" optiontext="Whatever you say..." icon="Quest" next="0" actions="Cinematic=11"></option>
+		<option optionid="2" optiontext="Wait, I have questions...!" next="9"></option>
+		<option optionid="3" optiontext="What curious eyes...?" next="9"></option>
+	</node>
+	<node id="11" npcName="Gabrius" anim="1" text=" Here are some supplies and food, it's been a while since you've eaten hohoho" itemIcon="1219" posx="2055" posy="-9">
+		<option optionid="1" optiontext="" next="10"></option>
+	</node>
+	
+	
+	<node id="12" npcName="Gabrius" anim="1" text="Not willingly, perhaps, but then my magic gives you no choice in the matter. The sooner you learn to accept that you're entirely powerless to resist me, the easier it will be." posx="1247" posy="784">
+		<option optionid="1" optiontext="You cursed me with undeath?! You sicken me!" next="13"></option>
+		<option optionid="2" optiontext="Why me?! What did I ever do to you?" next="23"></option>
+		<option optionid="3" optiontext="What will it take for you to let me go?" icon="Quest" next="6"></option>
+	</node>
+	<node id="13" npcName="Gabrius" anim="1" text="Honestly, calling it a curse is a little unfair. I've gifted you with immortality, Lord Aercrest! I even did what I could for your body - it was badly decomposed - though I'd advice you not to look too keenly in the mirror." posx="1786" posy="707">
+		<option optionid="1" optiontext="You call this a gift?! I already had immortality in the afterlife! What you've done is a nightmare!" next="14"></option>
+		<option optionid="2" optiontext="You know I have no intention of obeying you!" next="12"></option>
+		<option optionid="3" optiontext="Why me?! What did I ever do to you?" next="23"></option>
+		<option optionid="4" optiontext="What will it take for you to let me go?" icon="Quest" next="6"></option>
+	</node>
+	<node id="14" npcName="Gabrius" anim="1" text="Oh, the afterlife - the Dream - offers nothing but a meaningless existence. You have a renewed purpose now, I suggest you embrace it." posx="1715" posy="1158">
+		<option optionid="1" optiontext="You know I have no intention of obeying you!" next="12"></option>
+		<option optionid="2" optiontext="Why me?! What did I ever do to you?" next="23"></option>
+		<option optionid="3" optiontext="What will it take for you to let me go?" icon="Quest" next="6"></option>
+	</node>
+	<node id="15" npcName="Gabrius" anim="1" text="A banquet, was it? Ah how lovely that sounds, Lord Aercrest, but the reality is whatever banquets you held only exist in history books now - something you were merely reliving within the Dream." posx="75" posy="44">
+		<option optionid="1" optiontext="I don't believe you, this has to be some kind of an illusion!" next="16"></option>
+		<option optionid="2" optiontext="You're some sick necromancer?! I'll kill you for this!!" next="22"></option>
+		<option optionid="3" optiontext="Why... who are you and why would you do this?!" next="4"></option>
+	</node>
+	<node id="16" npcName="Gabrius" anim="1" text="I assure you, it is not. Your disbelief at your current situation is to be expected, but I am not a patient man, so let me state this in no uncertain terms - you're dead, Lord Aercrest. You have been dead for a long time and now you've risen to serve me." posx="623" posy="48">
+		<option optionid="1" optiontext="You're some sick necromancer?! I'll kill you for this!!" next="22"></option>
+		<option optionid="2" optiontext="Why... who are you and why would you do this?!" next="4"></option>
+	</node>
+	<node id="22" npcName="Gabrius" anim="1" text="Hahaha, that's cute! But no, I don't think you will. You will find you're unable to lift a finger against me. Allow me to introduce myself." posx="564" posy="665">
+		<option optionid="1" optiontext="" next="4"></option>
+	</node>
+	<node id="23" npcName="Gabrius" anim="1" text="Oh it's nothing personal, Lord Rothar. History remembers you as a rather capable man; something that comes in short supply in this backwater excuse of a land. " posx="766" posy="945">
+		<option optionid="1" optiontext="" next="24"></option>
+	</node>
+	<node id="24" npcName="Gabrius" anim="1" text="Finding you wasn't easy, you know. Someone had taken the pains to remove your body from your family crypt and hide it here in this forsaken cemetery. But I expect you will prove your worth." posx="626" posy="1213">
+		<option optionid="1" optiontext="Wait, this isn't the Aercrest Manor! Where are we?" next="25"></option>
+		<option optionid="2" optiontext="You know I have no intention of helping you!" next="12"></option>
+		<option optionid="3" optiontext="And you cursed me with undeath?! You sicken me!" next="13"></option>
+		<option optionid="4" optiontext="What will it take for you to let me go?" icon="Quest" next="6"></option>
+	</node>
+	<node id="25" npcName="Gabrius" anim="1" text="A truly forgotten corner of the land the locals call Spruce Shade's Rest. You must have been moved here for some reason after your family was thrown from power, but that's an irrelevant bit of history now. You have returned to serve me." posx="1150" posy="1239">
+		<option optionid="1" optiontext="You know I have no intention of obeying you!" next="12"></option>
+		<option optionid="2" optiontext="And you cursed me with undeath?! You sicken me!" next="13"></option>
+		<option optionid="3" optiontext="What will it take for you to let me go?" icon="Quest" next="6"></option>
+	</node>
+
+	<node id="28" npcName="Gabrius" anim="1" text="What happened, slave? Where are you?" posx="82" posy="31">
+		<option optionid="1" optiontext="The storm blocked the road out, I'm forced to make my way through an underground crypt." next="29"></option>
+		<option optionid="2" optiontext="You're in my... head?" next="30"></option>
+	</node>
+	<node id="29" npcName="Gabrius" anim="1" text="Then do so. One of the crypt's entrances surfaces on the other side, at the outskirts of Spruce Shade village. Find me once you reach it." posx="679" posy="-13">
+		<option optionid="1" optiontext="That storm... was it your doing?" next="31"></option>
+		<option optionid="2" optiontext="Do you know anything about this place?" next="33"></option>
+		<option optionid="3" optiontext="There are a lot of undead wandering about, you know..." next="32"></option>
+		<option optionid="4" optiontext="Yes, yes..." actions="SetVar=Q73GabroCryptDialogue-1" next="0"></option>
+	</node>
+	<node id="30" npcName="Gabrius" anim="1" text="I hope you didn't think I'd need to be physically present to command you. Explain yourself, why do you dally?" posx="234" posy="366">
+		<option optionid="1" optiontext="The storm blocked the road out, I'm forced to make my way through an underground crypt." next="29"></option>
+	</node>
+	<node id="31" npcName="Gabrius" anim="1" text="It is simply the world screaming in agony as my magic cut through its fabric. I pay its cries no heed, nor should you." posx="1163" posy="-19">
+		<option optionid="1" optiontext="Do you know anything about this place?" next="33"></option>
+		<option optionid="2" optiontext="There are a lot of undead wandering about, you know..." next="32"></option>
+		<option optionid="3" optiontext="Right..." actions="SetVar=Q73GabroCryptDialogue-1" next="0"></option>
+	</node>
+	<node id="32" npcName="Gabrius" anim="1" text="I imagine returning you to this world disturbed their rest, but what of it? If you're afraid of losing your life, don't be. It's already long gone." posx="941" posy="511">
+		<option optionid="1" optiontext="That storm... was it your doing?" next="31"></option>
+		<option optionid="2" optiontext="Do you know anything about this place?" next="33"></option>
+		<option optionid="3" optiontext="Right..." actions="SetVar=Q73GabroCryptDialogue-1" next="0"></option>
+	</node>
+	<node id="33" npcName="Gabrius" anim="1" text="Not much, beyond that it's an old resting place for the dead. In the old times, people used to build to a grander scale and crypts like these are notorious for stretching on forever. Don't think I would come to your rescue if you lose yourself in there." posx="1410" posy="405">
+		<option optionid="1" optiontext="That storm... was it your doing?" next="31"></option>
+		<option optionid="2" optiontext="There are a lot of undead wandering about, you know..." next="32"></option>
+		<option optionid="3" optiontext="Right..." actions="SetVar=Q73GabroCryptDialogue-1" next="0"></option>
+	</node>
+
+	<node id="34" npcName="Gabrius" anim="1" text="One of the crypt's entrances surfaces on the other side, at the outskirts of Spruce Shade village. Remaining here won't help you find it." posx="75" posy="30">
+		<option optionid="1" optiontext="Am I hearing you in my head...?" next="35"></option>
+		<option optionid="2" optiontext="That storm... was it your doing?" next="31"></option>
+		<option optionid="3" optiontext="There are a lot of undead wandering about, you know..." next="32"></option>
+		<option optionid="4" optiontext="Do you know anything about this place?" next="33"></option>
+		<option optionid="5" optiontext="Right..." next="0"></option>
+	</node>
+	<node id="35" npcName="Gabrius" anim="1" text="You didn't think I'd need to be physically present to command you, did you?" posx="539" posy="32">
+		<option optionid="1" optiontext="Was that storm your doing?" next="31"></option>
+		<option optionid="2" optiontext="There are a lot of undead wandering about, you know..." next="32"></option>
+		<option optionid="3" optiontext="Do you know anything about this place?" next="33"></option>
+		<option optionid="4" optiontext="Right..." next="0"></option>
+	</node>
+
+	<node id="40" npcName="Gabrius" text="&lt;color=#9C8C77&gt;*I sense your task is complete, return to me at once.*&lt;/color&gt;" contextBefore="" contextAfter="" posx="49" posy="51">
+		<option optionid="1" optiontext="*Return where?*" icon="Quest" next="42"></option>
+		<option optionid="2" optiontext="*Get out of my skull!*" next="41"></option>
+	</node>
+	<node id="41" npcName="Gabrius"  text="&lt;color=#9C8C77&gt;*Not today, Lord Aercrest. Continue to serve me and perhaps soon enough you will have to hear my voice no longer.*&lt;/color&gt;" contextBefore="" contextAfter="" posx="538" posy="49">
+		<option optionid="1" optiontext="Where am I supposed to return to?" icon="Quest" next="42"></option>
+	</node>
+	<node id="42" npcName="Gabrius"  text="&lt;color=#9C8C77&gt;*Look for the cliffs north of Haywind, the light points towards me.*&lt;/color&gt;" contextBefore="" contextAfter="" posx="619" posy="322">
+		<option optionid="1" optiontext="" actions="UpdateQuest=1-2" icon="Quest" next="0"></option>
+	</node>
+
+	<node id="50" npcName="Gabrius" anim="1" text="Must you distract me now?" posx="47" posy="26">
+		<option optionid="1" optiontext="About those spell ingredients you asked for..." next="51"></option>
+		<option optionid="2" optiontext="Nice magic, I guess... what's it for?" next="55"></option>
+		<option optionid="3" optiontext="You said something about vengeance before?" next="56"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="51" npcName="Gabrius" anim="1" text="Yes?" posx="496" posy="30">
+		<option optionid="1" optiontext="Where should I look for the crystal you need?" next="52"></option>
+		<option optionid="2" optiontext="The whiskey you need, won't just any bottle do?" next="53"></option>
+		<option optionid="3" optiontext="Where should I find you, once I have the items?" next="54"></option>
+		<option optionid="4" optiontext="Nevermind, I had another question." next="57"></option>
+		<option optionid="5" optiontext="Forget it." next="0"></option>
+	</node>
+	<node id="52" npcName="Gabrius" anim="1" text="They're often chiseled by master craftsmen. I suggest you head to Haywind City to the west and ask around." posx="954" posy="28">
+		<option optionid="1" optiontext="What about the whiskey, won't just any bottle do?" next="53"></option>
+		<option optionid="2" optiontext="Where should I find you, once I have the items?" next="54"></option>
+		<option optionid="3" optiontext="I wanted to ask something else." next="57"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="53" npcName="Gabrius" anim="1" text="I wouldn't have asked for a specific bottle then, would I? I understand it is made in the area, your best bet is to search around Haywind's farms." posx="1390" posy="29">
+		<option optionid="1" optiontext="And the crystal?" next="52"></option>
+		<option optionid="2" optiontext="Where should I find you, once I have the items?" next="54"></option>
+		<option optionid="3" optiontext="I wanted to ask something else." next="57"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="54" npcName="Gabrius" anim="1" text="Oh, don't worry about that - I'll call you." posx="1002" posy="510">
+		<option optionid="1" optiontext="So where should I look for the crystal?" next="52"></option>
+		<option optionid="2" optiontext="What about the whiskey, won't just any bottle do?" next="53"></option>
+		<option optionid="3" optiontext="I wanted to ask something else." next="57"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="55" npcName="Gabrius" anim="1" text="I'm crafting something... for you actually. You'll find out soon enough." posx="1750" posy="608">
+		<option optionid="1" optiontext="You said something about vengeance before?" next="56"></option>
+		<option optionid="2" optiontext="About those spell ingredients you asked for..." next="51"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="56" npcName="Gabrius" anim="1" text="Yes... Just focus on getting me those items. Vengeance is best delivered with patience." posx="2247" posy="608">
+		<option optionid="1" optiontext="Nice magic, I guess... what's it for?" next="55"></option>
+		<option optionid="2" optiontext="About those spell ingredients you asked for..." next="51"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="57" npcName="Gabrius" anim="1" text="..." posx="28" posy="629">
+		<option optionid="1" optiontext="Nice magic, I guess... what's it for?" next="55"></option>
+		<option optionid="2" optiontext="You said something about vengeance before?" next="56"></option>
+		<option optionid="3" optiontext="Nevermind." next="0"></option>
+	</node>
+
+	<node id="60" npcName="Gabrius" anim="1" text="You took your time." posx="41" posy="49">
+		<option optionid="1" optiontext="" next="61"></option>
+	</node>
+	<node id="61" npcName="Gabrius" anim="1" text="Well...? Hand them over." posx="473" posy="51">
+		<option optionid="1" optiontext="Yes, well... acquiring your supplies proved more troublesome than expected." icon="Quest" next="62" checks="HasItem=222-1|241-1"></option>
+		<option optionid="2" optiontext="Wait, where did I put the items...?" next="0"></option>
+	</node>
+	<node id="62" npcName="Gabrius" anim="49" text="&lt;color=#9C8C77&gt;*Upon handing him the whiskey, Gabrius pulls out the cork with his teeth and takes a sizable gulp.*&lt;/color&gt;" posx="909" posy="52">
+		<option optionid="1" optiontext="So... you have what you need?" icon="Quest" next="64"></option>
+		<option optionid="2" optiontext="You're not the first wizard to demand whiskey that I've met. It's true it boosts magical affinities?" next="63"></option>
+	</node>
+	<node id="63" npcName="Gabrius" anim="1" text="Hahaha! Not at all, I just haven't had a drink in ages. Truly, I have no idea where that particular myth originated from. I suspect many a magi find it amusing, thus continue perpetuating it. You didn't actually believe it, did you?" posx="1352" posy="56">
+		<option optionid="1" optiontext="Unbelievable... just tell me you have what you need." icon="Quest" next="64"></option>
+		<option optionid="2" optiontext="So you've had me running around for whiskey just because you wanted a drink?! Exactly what are we doing here?!" next="69"></option>
+	</node>
+	<node id="64" npcName="Gabrius" anim="1" text="Not quite. After all, this is a Qaeshtari temple we're breaking into, not some peasant's silverware cabinet. I'll need to bind a powerful spellwood to the focus." posx="1809" posy="56">
+		<option optionid="1" optiontext="Let me guess - you're making it my task to get it?" icon="Quest" next="65"></option>
+		<option optionid="2" optiontext="The Qaeshtari...? They were the Old Folk? Like the ones who built those monoliths?" next="71"></option>
+	</node>
+	<node id="65" npcName="Gabrius" anim="1" text="How very astute, Lord Aercrest. In the meantime, I will be heading to the Temple of Etherlight to prepare the spell. According to the monolith spirit, its ruins should lie on a hill at the center of the Mistywood, east of here." posx="2242" posy="55">
+		<option optionid="1" optiontext="" next="66"></option>
+	</node>
+	<node id="66" npcName="Gabrius" anim="1" text="You will also be entering the Mistywood, but for a different purpose. Search for the 'Forest's Heart', a sheltered clearing hiding a powerful old tree spirit. Once you find it, cut down the creature and bring me its bark." posx="2699" posy="65">
+		<option optionid="1" optiontext="You're telling me there's a sacred place within the woods, where a sacred tree spirit resides... and you want me to kill it?" next="67"></option>
+		<option optionid="2" optiontext="Where exactly should I look for this 'Forest's Heart'?" next="68"></option>
+		<option optionid="3" optiontext="Remind me again, how will I find the Temple afterwards?" next="82"></option>
+		<option optionid="4" optiontext="It shall be done..." icon="Quest" next="80"></option>
+	</node>
+	<node id="67" npcName="Gabrius" anim="1" text="Precisely, Lord Aercrest. Try not to shed any tears, I'm sure the forest will grow another in a few hundred years or so." posx="3171" posy="-17">
+		<option optionid="1" optiontext="Where exactly should I look for this 'Forest's Heart'?" next="68"></option>
+		<option optionid="2" optiontext="Remind me again, how will I find the Temple afterwards?" next="82"></option>
+		<option optionid="3" optiontext="It shall be done..." icon="Quest" next="80"></option>
+	</node>
+	<node id="68" npcName="Gabrius" anim="1" text="Forests hide their secrets, but someone familiar with the land might be able to guide your way. Either way, scour the woods 'till you find it and bring its bark to me at the Temple of Etherlight." posx="3165" posy="359">
+		<option optionid="1" optiontext="So, you're telling me a sacred tree spirit resides within the forest... and you want me to kill it?" next="67"></option>
+		<option optionid="2" optiontext="Remind me again, how will I find the Temple afterwards?" next="82"></option>
+		<option optionid="3" optiontext="It shall be done..." icon="Quest" next="80"></option>
+	</node>
+	<node id="69" npcName="Gabrius" anim="1" text="What are you getting so upset about? I can't imagine acquiring a simple bottle of whiskey could have required tremendous effort on your part. " posx="990" posy="425">
+		<option optionid="1" optiontext="Oh, you have no idea..." next="70"></option>
+	</node>
+	<node id="70" npcName="Gabrius" anim="1" text="Regardless, we're breaking into a Qaeshtari temple. The crystal is certainly required, but it alone is not enough. I shall need to bind it to a powerful spellwood to create an adequate focus." posx="1453" posy="429">
+		<option optionid="1" optiontext="Let me guess - you want me to get it?" icon="Quest" next="65"></option>
+		<option optionid="2" optiontext="The Qaeshtari...? They were the Old Folk? Like the ones who built those monoliths?" next="71"></option>
+	</node>
+	<node id="71" npcName="Gabrius" anim="1" text="The Old Folk...? How very peasant of you, Lord Aercrest. Most civilized world calls them Ancients for lack of better knowledge, but Qaeshtar is the name they gave themselves. Weren't you listening at the monolith?" posx="1932" posy="585">
+		<option optionid="1" optiontext="Why do you pretend to know so much about them?" next="72"></option>
+		<option optionid="2" optiontext="Enlighten me, who were they really?" next="73"></option>
+		<option optionid="3" optiontext="Nevermind that, what about the spellwood you need?" icon="Quest" next="79"></option>
+	</node>
+	<node id="72" npcName="Gabrius" anim="1" text="Perhaps it is because I dedicated a significant amount of my life into studying what they left behind. I've walked into death traps for the tiniest nuggets on their history, their language, their power... There is not a person alive who knows them like I do; the person you're so inadvertently speaking to." posx="2387" posy="584">
+		<option optionid="1" optiontext="Then enlighten me, who were they really?" next="73"></option>
+		<option optionid="2" optiontext="Whatever you say, but what about the spellwood you need?" icon="Quest" next="79"></option>
+	</node>
+	<node id="73" npcName="Gabrius" anim="1" text="An advanced civilization of spellcasters, who emerged from the Qaesir River Valley in lands far southwest from here. Their entire culture revolved around the study of magic, to understand magic more intimately than anyone else dared possible." posx="2175" posy="959">
+		<option optionid="1" optiontext="" next="74"></option>
+	</node>
+	<node id="74" npcName="Gabrius" anim="1" text="Once they conquered its secrets, they went on to conquer all the known lands on this continent, and in some way beyond. There was nothing that could oppose them." posx="2607" posy="961">
+		<option optionid="1" optiontext="" next="75"></option>
+	</node>
+	<node id="75" npcName="Gabrius" anim="1" text="And in the lands they conquered, they erected grand temples, monuments to their magic. Monuments that lasted for ages even after their downfall. Monuments such as the temple we're going to breach." posx="3036" posy="962">
+		<option optionid="1" optiontext="If they truly were so powerful, what could possibly cause their downfall?" next="76"></option>
+		<option optionid="2" optiontext="How is it you pretend to know so much about them, again?" next="72"></option>
+		<option optionid="3" optiontext="As you say, but what about the spellwood you need?" icon="Quest" next="79"></option>
+	</node>
+	<node id="76" npcName="Gabrius" anim="1" text="They were wiped out by something the writings only mention as the 'Spellplague', though much of the details are murky. Should I hazard a guess, I imagine they flew too close to the sun and were burned by it - metaphorically speaking." posx="3475" posy="965">
+		<option optionid="1" optiontext="Magic has its limits, eh?" next="77" checks="Var=Q1MagicTalk-0-0" actions="SetVar=Q1MagicTalk-1"></option>
+		<option optionid="2" optiontext="Magic has its limits, eh?" next="78" checks="Var=Q1MagicTalk-1-1"></option>
+		<option optionid="3" optiontext="How is it you pretend to know so much about them, again?" next="72"></option>
+		<option optionid="4" optiontext="As you say, but what about the spellwood you need?" icon="Quest" next="79"></option>
+	</node>
+	<node id="77" icon="Sorcery" npcName="Gabrius" anim="1" text="Not magic, but people, Lord Aercrest.\n\n&lt;color=#9C8C77&gt;*Your conversations with Gabrius have deepened your understanding of magic, increasing your experience in Sorcery by 200.*&lt;/color&gt;" posx="3907" posy="961">
+		<option optionid="1" optiontext="How is it you pretend to know so much about them, again?" next="72"></option>
+		<option optionid="2" optiontext="As you say, but what about the spellwood you need?" icon="Quest" next="79"></option>
+	</node>
+	<node id="78" npcName="Gabrius" anim="1" text="Not magic, but people, Lord Aercrest." posx="4346" posy="961">
+		<option optionid="1" optiontext="How is it you pretend to know so much about them, again?" next="72"></option>
+		<option optionid="2" optiontext="As you say, but what about the spellwood you need?" icon="Quest" next="79"></option>
+	</node>
+	<node id="79" npcName="Gabrius" anim="1" text="That is a task I leave to you. In the meantime, I will be heading to the Temple of Etherlight to prepare the spell. According to the monolith spirit, its ruins should lie on a hill at the center of the Mistywood east of here." posx="2246" posy="316">
+		<option optionid="1" optiontext="" next="66"></option>
+	</node>
+	<node id="80" npcName="Gabrius" anim="1" text="One more thing before you go. Take this crystal I fashioned in your absence. After all, you're of no use to me weak and powerless." posx="3809" posy="221">
+		<option optionid="1" optiontext="Thanks... What does it do?" next="81"></option>
+		<option optionid="2" optiontext="Thanks, I guess..." next="0" actions="RemoveItems=222-1|241-1,UpdateQuest=1-999|61-1"></option>
+	</node>
+	<node id="81" npcName="Gabrius" anim="1" text="You'll figure it out." posx="4279" posy="222">
+		<option optionid="1" optiontext="" next="0" actions="RemoveItems=222-1|241-1,UpdateQuest=1-999|61-1"></option>
+	</node>
+	<node id="82" npcName="Gabrius" anim="1" text="Its ruins rest on a hill central to the Mistywood, according to the ancient monolith. I believe there's a dreary peasant village called Fog's Dwindling nearby. Once you reach it, you shan't be far from the temple." posx="3667" posy="559">
+		<option optionid="1" optiontext="So, you're telling me a sacred tree spirit resides within the forest... and you want me to kill it?" next="67"></option>
+		<option optionid="2" optiontext="Where exactly should I look for this 'Forest's Heart'?" next="68"></option>
+		<option optionid="3" optiontext="It shall be done..." icon="Quest" next="80"></option>
+	</node>
+
+	<node id="85" npcName="Gabrius" anim="1" text="The Mistywood lies firmly to the east, Lord Aercrest. I will be making my way to the temple shortly. Meet me there once you have the spellwood." posx="62" posy="50">
+		<option optionid="1" optiontext="About my task..." next="86"></option>
+		<option optionid="2" optiontext="I wanted to ask about the Old Folk... the Qaeshtari?" next="87"></option>
+		<option optionid="3" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="86" npcName="Gabrius" anim="1" text="Yes?" posx="540" posy="14">
+		<option optionid="1" optiontext="Our next moves - let's go over them one more time." next="88"></option>
+		<option optionid="2" optiontext="Where exactly should I look for this 'Forest's Heart'?" next="91"></option>
+		<option optionid="3" optiontext="I wanted to ask about the Old Folk... the Qaeshtari?" next="87"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="87" npcName="Gabrius" anim="1" text="Then ask." posx="59" posy="543">
+		<option optionid="1" optiontext="How do you know so much about them?" next="93"></option>
+		<option optionid="2" optiontext="Who were they really?" next="94"></option>
+		<option optionid="3" optiontext="If they were so powerful, what could have caused their downfall?" next="97"></option>
+		<option optionid="4" optiontext="About my task..." next="86"></option>
+		<option optionid="5" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="88" npcName="Gabrius" anim="1" text="I will be heading to the ruined Temple of Etherlight, surrounded by the Mistywood to the east, to prepare the spell to breach its gates. However, a powerful spellwood will still be required." posx="978" posy="17">
+		<option optionid="1" optiontext="" next="89"></option>
+	</node>
+	<node id="89" npcName="Gabrius" anim="1" text="Thus you will also be entering the forest. Search for the 'Forest's Heart', a sheltered clearing hiding a powerful old tree spirit. Once you find it, cut down the creature and bring me its bark." posx="1417" posy="18">
+		<option optionid="1" optiontext="You're telling me a sacred tree spirit resides within the forest... and you want me to kill it?" next="90"></option>
+		<option optionid="2" optiontext="Where exactly should I look for this 'Forest's Heart'?" next="91"></option>
+		<option optionid="3" optiontext="Remind me again, how will I find the Temple afterwards?" next="92"></option>
+		<option optionid="4" optiontext="I wanted to ask about the Old Folk... the Qaeshtari?" next="87"></option>
+		<option optionid="5" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="90" npcName="Gabrius" anim="1" text="Precisely, Lord Aercrest. Try not to shed any tears, I'm sure the forest will grow another in a few hundred years or so." posx="1861" posy="21">
+		<option optionid="1" optiontext="Where exactly should I look for this 'Forest's Heart'?" next="91"></option>
+		<option optionid="2" optiontext="Remind me again, how will I find the Temple afterwards?" next="92"></option>
+		<option optionid="3" optiontext="I wanted to ask about the Old Folk... the Qaeshtari?" next="87"></option>
+		<option optionid="4" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="91" npcName="Gabrius" anim="1" text="If I knew that, I'd already have told you. Forests hide their secrets, but someone familiar with the land might be able to guide your way. Either way, scour the woods 'till you find it and bring its bark to me at the Temple of Etherlight." posx="1410" posy="537">
+		<option optionid="1" optiontext="Remind me again, how will I find the Temple afterwards?" next="92"></option>
+		<option optionid="2" optiontext="I wanted to ask about the Old Folk... the Qaeshtari?" next="87"></option>
+		<option optionid="3" optiontext="Our next moves - let's go over them one more time." next="88"></option>
+		<option optionid="4" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="92" npcName="Gabrius" anim="1" text="Its ruins rest on a hill central to the Mistywood, according to the ancient monolith. I believe there's a dreary peasant village called Fog's Dwindling nearby. Once you reach it, you shan't be far from the temple." posx="1926" posy="524">
+		<option optionid="1" optiontext="Where exactly should I look for this 'Forest's Heart'?" next="91"></option>
+		<option optionid="2" optiontext="I wanted to ask about the Old Folk... the Qaeshtari?" next="87"></option>
+		<option optionid="3" optiontext="Our next moves - let's go over them one more time." next="88"></option>
+		<option optionid="4" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="93" npcName="Gabrius" anim="1" text="Because I dedicated a significant amount of my life into studying what they left behind, Lord Aercrest. I've walked into death traps for the tiniest nuggets on their history, their language, their power... There may not be a person alive who knows them like I do." posx="570" posy="574">
+		<option optionid="1" optiontext="Who were they really?" next="94"></option>
+		<option optionid="2" optiontext="If they were so powerful, what could have caused their downfall?" next="97"></option>
+		<option optionid="3" optiontext="About my task..." next="86"></option>
+		<option optionid="4" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="94" npcName="Gabrius" anim="1" text="An advanced civilization of spellcasters, who emerged from the Qaesir River Valley in lands far southwest from here. Their entire culture revolved around the study of magic, to understand magic more intimately than anyone else dared possible." posx="1051" posy="1035">
+		<option optionid="1" optiontext="" next="95"></option>
+	</node>
+	<node id="95" npcName="Gabrius" anim="1" text="Once they conquered its secrets, they went on to conquer all known lands on this continent, and in some way beyond. There was nothing that could oppose them. " posx="1485" posy="1039">
+		<option optionid="1" optiontext="" next="96"></option>
+	</node>
+	<node id="96" npcName="Gabrius" anim="1" text="And in the lands they conquered, they erected grand temples, monuments to their magic. Monuments that lasted for ages even since their downfall. Monuments such as the temple we're going to breach." posx="1913" posy="1041">
+		<option optionid="1" optiontext="If they were so powerful, what could have caused their downfall?" next="97"></option>
+		<option optionid="2" optiontext="How do you know so much about them?" next="93"></option>
+		<option optionid="3" optiontext="About my task..." next="86"></option>
+		<option optionid="4" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="97" npcName="Gabrius" anim="1" text="They were wiped out by something the writings only mention as the 'Spellplague', though much of the details are murky. Should I hazard a guess, I imagine they flew too close to the sun and were burned by it - metaphorically speaking." posx="2361" posy="1041">
+		<option optionid="1" optiontext="Magic has its limits, eh?" next="98"></option>
+		<option optionid="2" optiontext="How do you know so much about them?" next="93"></option>
+		<option optionid="3" optiontext="But who were they really?" next="94"></option>
+		<option optionid="4" optiontext="About my task..." next="86"></option>
+		<option optionid="5" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="98" npcName="Gabrius" anim="1" text="Not magic, but people, Lord Aercrest." posx="2815" posy="1038">
+		<option optionid="1" optiontext="How do you know so much about them?" next="93"></option>
+		<option optionid="2" optiontext="But who were they really?" next="94"></option>
+		<option optionid="3" optiontext="About my task..." next="86"></option>
+		<option optionid="4" optiontext="I should go." next="0"></option>
+	</node>
+
+	<node id="100" npcName="Gabrius" anim="1" text="A peasant might look upon it and see nothing but a worthless pile of rubble. Men and women who once became gods dwelled here. You're standing upon their graves, thrall." contextBefore="" contextAfter="" posx="30" posy="25">
+		<option optionid="1" optiontext="The task is done - I bring you your spellwood." checks="Quest=61-3-3,HasItem=242-1" icon="Quest" next="106"></option>
+		<option optionid="2" optiontext="What have you got against peasants?" next="101"></option>
+		<option optionid="3" optiontext="Is that what you'd like to be, then? A god like them?" next="102"></option>
+		<option optionid="4" optiontext="So this is it, the Temple of Etherlight?" next="103"></option>
+		<option optionid="5" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="101" npcName="Gabrius" anim="1" text="I dislike anyone who pretends to understand the world while remaining blind to it. Yes, that includes peasants. But I've met plenty enough lords and ladies, rich merchants, Archmagi even... all of them fools." contextBefore="" contextAfter="" posx="611" posy="319">
+		<option optionid="1" optiontext="It's just you against the world, isn't it?" next="107"></option>
+		<option optionid="2" optiontext="So what, you'd like to be a 'god' like the Old Folk?" next="102"></option>
+		<option optionid="3" optiontext="So this is it, the Temple of Etherlight?" next="103"></option>
+		<option optionid="4" optiontext="The task is done - I bring you your spellwood." checks="Quest=61-3-3,HasItem=242-1" icon="Quest" next="106"></option>
+		<option optionid="5" optiontext="Whatever." next="0"></option>
+	</node>
+	<node id="102" npcName="Gabrius" anim="1" text="Oh, I merely want what they already understood is the only way to navigate this world without falling victim to random fate - control." contextBefore="" contextAfter="" posx="120" posy="657">
+		<option optionid="1" optiontext="What do you seem to have against peasants, anyway?" next="101"></option>
+		<option optionid="2" optiontext="So this is it, the Temple of Etherlight?" next="103"></option>
+		<option optionid="3" optiontext="The task is done - I bring you your spellwood." checks="Quest=61-3-3,HasItem=242-1" icon="Quest" next="106"></option>
+		<option optionid="4" optiontext="Whatever." next="0"></option>
+	</node>
+	<node id="103" npcName="Gabrius" anim="1" text="If you insist on observing the obvious, then yes - this is the temple. For now, the way in is shielded by a barrier maintained by the temple's guardian, deep inside. It won't stop us though, once I have the wood from the Forest's Heart." contextBefore="" contextAfter="" posx="638" posy="792">
+		<option optionid="1" optiontext="What's the relic you're looking for here? Do I even want to know?" next="104"></option>
+		<option optionid="2" optiontext="What do you seem to have against peasants, anyway?" next="101"></option>
+		<option optionid="3" optiontext="So what, you'd like to be a 'god' like the Old Folk?" next="102"></option>
+		<option optionid="4" optiontext="Well then, I have your spellwood." checks="Quest=61-3-3,HasItem=242-1" icon="Quest" next="106"></option>
+		<option optionid="5" optiontext="Whatever." next="0"></option>
+	</node>
+	<node id="104" npcName="Gabrius" anim="1" text="Nothing world ending, I assure you. The Forest's Heart, Lord Aercrest?" contextBefore="" contextAfter="" posx="1081" posy="797">
+		<option optionid="1" optiontext="What do you seem to have against peasants, anyway?" next="101"></option>
+		<option optionid="2" optiontext="So what, you'd like to be a 'god' like the Old Folk?" next="102"></option>
+		<option optionid="3" optiontext="The task is done - I have your spellwood." checks="Quest=61-3-3,HasItem=242-1" icon="Quest" next="106"></option>
+		<option optionid="4" optiontext="I don't have it yet." next="0"></option>
+	</node>
+	<node id="105" npcName="Gabrius" anim="1" text="Wiped out by something mentioned in writings as the 'Spellplague', though the details are murky. They flew too close to the sun and were burned by it, for all we may know." contextBefore="" contextAfter="" posx="1516" posy="800">
+		<option optionid="1" optiontext="What do you seem have against peasants?" next="101"></option>
+		<option optionid="2" optiontext="So what, you'd like to be a 'god' like them?" next="102"></option>
+		<option optionid="3" optiontext="The task is done - I bring you your spellwood." checks="Quest=61-3-3,HasItem=242-1" icon="Quest" next="106"></option>
+		<option optionid="4" optiontext="Whatever." next="0"></option>
+	</node>
+	<node id="106" npcName="Gabrius" anim="1" text="Finally done running errands, then? Well good... that means we can actually progress." contextBefore="" contextAfter="" posx="560" posy="30">
+		<option optionid="1" optiontext="" icon="Quest" actions="Cinematic=72" next="0"></option>
+	</node>
+	<node id="107" npcName="Gabrius" anim="1" text="Don't act like you're any better. You used to defacto rule these lands, how often did you have to play kindergarten with your vassals? You know exactly what I'm talking about." posx="71" posy="39">
+		<option optionid="1" optiontext="So what, you'd like to be a 'god' like the Old Folk?" next="102"></option>
+		<option optionid="2" optiontext="So this is it, the Temple of Etherlight?" next="103"></option>
+		<option optionid="3" optiontext="The task is done - I bring you your spellwood." checks="Quest=61-3-3,HasItem=242-1" icon="Quest" next="106"></option>
+		<option optionid="4" optiontext="Whatever." next="0"></option>
+	</node>
+
+	<node id="109" npcName="Gabrius" anim="1" text="No, I think I cannot." posx="20" posy="15">
+		<option optionid="1" optiontext="" next="114"></option>
+	</node>
+	<node id="110" npcName="Gabrius" anim="1" text="It was foolish of Eloria to think she could hide from me. Considering all the years we shared, she should've known me better." posx="20" posy="15">
+		<option optionid="1" optiontext="Who... are you talking about?" next="111"></option>
+	</node>
+	<node id="111" npcName="Gabrius" anim="1" text="Oh, I believe I mentioned before, Lord Aercrest - there is vengeance to be done. In fact, it is the only thing we've been working towards. I will watch Eloria suffer." posx="453" posy="16">
+		<option optionid="1" optiontext="And you think she's hiding in these ruins?" next="112"></option>
+		<option optionid="2" optiontext="Who is this woman you hate with such passion?" next="114"></option>
+	</node>
+	<node id="112" npcName="Gabrius" anim="1" text="What? No, fool, she's hiding behind the Grimoire of Concealment. A Qaeshtari artifact of magic, its power has turned her practically invisible to me. Even my most advanced spells could only track her into these remote lands, but no further." posx="887" posy="18">
+		<option optionid="1" optiontext="" next="113"></option>
+	</node>
+	<node id="113" npcName="Gabrius" anim="1" text="But it matters not; the power of a Grimoire can be defeated by that of a stronger one, and one of the most potent ever made lies here - the Grimoire of Truesight. That is what we're here to retrieve, Lord Aercrest." actions="SetNpcVar=GrimoireTalk-1" posx="1320" posy="19">
+		<option optionid="1" optiontext="Grimoires...? Like, some sort of spellbooks?" next="120"></option>
+		<option optionid="2" optiontext="What did this woman possibly do for you to hate her so?" next="114"></option>
+		<option optionid="3" optiontext="Let's get going then." icon="Quest" next="123"></option>
+	</node>
+	<node id="114" npcName="Gabrius" anim="1" text="I wouldn't expect you to understand, Lord Aercrest. Eloria and I have a long history; for the longest time we were friends and allies..." posx="199" posy="361">
+		<option optionid="1" optiontext="" next="115"></option>
+	</node>
+	<node id="115" npcName="Gabrius" anim="1" text="Later, partners even... after I'd lost everything in the war we fought together against the so called ''Mage King'', Desrim Arthraime... \n\n&lt;color=#9C8C77&gt;*The orb in Gabrius' staff flashes violently at the mention of the name.*&lt;/color&gt;" posx="346" posy="616">
+		<option optionid="1" optiontext="" next="116"></option>
+	</node>
+	<node id="116" npcName="Gabrius" anim="1" text="Which is why her betrayal in the end was that much more antagonizing, not only for the dagger she sank into me." posx="779" posy="617">
+		<option optionid="1" optiontext="Can't blame her to be honest, considering what you've done to me." next="117"></option>
+		<option optionid="2" optiontext="A war against a 'Mage King'? What did I miss while I was dead?" next="118"></option>
+		<option optionid="3" optiontext="What are we doing in these ruins, though?" next="119"></option>
+		<option optionid="4" optiontext="Let's get going then." icon="Quest" next="123" checks="NpcVar=GrimoireTalk-1-1"></option>
+	</node>
+	<node id="117" npcName="Gabrius" anim="1" text="How very droll, Lord Aercrest. You can raise your complaints to whatever monsters are left lurking within these ruins." posx="1284" posy="620">
+		<option optionid="1" optiontext="A war against a 'Mage King'? What did I miss while I was dead?" next="118"></option>
+		<option optionid="2" optiontext="What are we doing here, though?" next="119"></option>
+		<option optionid="3" optiontext="Let's get going then." icon="Quest" next="123" checks="NpcVar=GrimoireTalk-1-1"></option>
+	</node>
+	<node id="118" npcName="Gabrius" anim="1" text="Nothing that would have concerned you - it happened far from here in the Vhosphoran Kingdom. Although, as an unexpected consequence, the Hydrobor Circle ended up migrating and settling their academy here. But if you care to know more, I suggest you read a book." posx="1248" posy="997">
+		<option optionid="1" optiontext="What are we doing in these ruins, though?" next="119"></option>
+		<option optionid="2" optiontext="Let's get going then." icon="Quest" next="123" checks="NpcVar=GrimoireTalk-1-1"></option>
+	</node>
+	<node id="119" npcName="Gabrius" anim="1" text="Eloria's hiding behind the Grimoire of Concealment. A Qaeshtari artifact of magic, its power has turned her practically invisible to me. Even my most advanced spells could only track her into these remote lands, but no further." posx="838" posy="342">
+		<option optionid="1" optiontext="" next="113"></option>
+	</node>
+	<node id="120" npcName="Gabrius" anim="1" text="A spellbook is what you'd buy from a vagrant pretending to be a wizard, Lord Aercrest - Grimoires are much more profound. The ancient Qaeshtari created them as objects of pure magic given physical form." posx="1812" posy="44">
+		<option optionid="1" optiontext="" next="121"></option>
+	</node>
+	<node id="121" npcName="Gabrius" anim="1" text="Eloria and I studied them to uncover the secrets to creating one. But the closer we got to the answers, the more we began to have... let's call them fundamental philosophical disagreements." posx="2233" posy="47">
+		<option optionid="1" optiontext="" next="122"></option>
+	</node>
+	<node id="122" npcName="Gabrius" anim="1" text="She turned our entire Circle against me, you know. All those I had once called brothers and sisters, I made sure they each came to regret it. Only Eloria remains left alive now." posx="2669" posy="49">
+		<option optionid="1" optiontext="Why hunt her? You could just let the past be." next="109"></option>
+		<option optionid="2" optiontext="Let's get going then." icon="Quest" next="123"></option>
+	</node>
+	<node id="123" npcName="Gabrius" anim="1" text="You will be the one to enter the ruins. I shall remain here and regain my strength. Breaking through the Qaeshtari barrier took much out of me, and I will need to recover before channelling the Grimoire's magic." posx="1990" posy="557">
+		<option optionid="1" optiontext="" next="124"></option>
+	</node>
+	<node id="124" npcName="Gabrius" anim="1" itemIcon="400" text="The temple's guardian is still very much active - I could feel it pushing back against me, trying to maintain the barrier. Take the channeling focus I used. Much of its power was burned up but it should still prove useful." posx="2427" posy="557">
+		<option optionid="1" optiontext="So you're leaving the dangerous work for me to deal with?" next="125"></option>
+		<option optionid="2" optiontext="As you say..." next="0" actions="UpdateQuest=61-999|14-1"></option>
+	</node>
+	<node id="125" npcName="Gabrius" anim="1" text="Yes, the grunt work. Why do you care? You're immortal now, need I remind you? Facing whatever is left in these ruins should prove no more than an inconvenience by now." posx="2877" posy="562">
+		<option optionid="1" optiontext="As you say..." next="0" actions="UpdateQuest=61-999|14-1"></option>
+	</node>
+
+	<node id="1250" npcName="Gabrius" anim="1" text="What is it now, Lord Aercrest?" contextBefore="" contextAfter="" posx="24" posy="24">
+		<option optionid="1" optiontext="What are Grimoires, exactly?" next="126"></option>
+		<option optionid="2" optiontext="What is it between you and this Eloria?" next="129"></option>
+		<option optionid="3" optiontext="How do even know all this stuff about the Old Folk? The Qaeshtari?" next="133"></option>
+		<option optionid="4" optiontext="The temple's guardian is felled, the Grimoire is yours..." checks="Quest=14-5-5,HasItem=264-1" icon="Quest" next="135"></option>
+		<option optionid="5" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="126" npcName="Gabrius" anim="1" text="Profound artifacts, the ancient Qaeshtari created them as objects of pure magic given physical form. One of the most potent ever made lies here - the Grimoire of Truesight. That is what you are to retrieve, Lord Aercrest." contextBefore="" contextAfter="" posx="457" posy="25">
+		<option optionid="1" optiontext="" next="127"></option>
+	</node>
+	<node id="127" npcName="Gabrius" anim="1" text="You know, Eloria and I studied Qaeshtari Grimoires to uncover the secrets to creating one. But the closer we got to the answers, the more we began to have... fundamental philosophical disagreements." contextBefore="" contextAfter="" posx="884" posy="27">
+		<option optionid="1" optiontext="What is it between you and this Eloria?" next="129"></option>
+		<option optionid="2" optiontext="How do even know all this stuff about the Old Folk? The Qaeshtari?" next="133"></option>
+		<option optionid="3" optiontext="The temple's guardian is felled, the Grimoire is yours..." checks="Quest=14-5-5,HasItem=264-1" icon="Quest" next="135"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="128" npcName="Gabrius" anim="1" text="How very droll, Lord Aercrest... If you feel like raising complaints, perhaps you can do so to whatever monsters are left lurking within these ruins." contextBefore="" contextAfter="" posx="1319" posy="30">
+		<option optionid="1" optiontext="What is it between you and this Eloria?" next="129"></option>
+		<option optionid="2" optiontext="How do even know all this stuff about the Old Folk? The Qaeshtari?" next="133"></option>
+		<option optionid="3" optiontext="The temple's guardian is felled, the Grimoire is yours..." checks="Quest=14-5-5,HasItem=264-1" icon="Quest" next="135"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="129" npcName="Gabrius" anim="1" text="Oh, Eloria and I have a long history; for the longest time we were friends and allies..." contextBefore="" contextAfter="" posx="454" posy="265">
+		<option optionid="1" optiontext="" next="130"></option>
+	</node>
+	<node id="130" npcName="Gabrius" anim="1" text="Later, partners even... after I'd lost everything in the war we fought together against the so called ''Mage King'', Desrim Arthraime... \n\n&lt;color=#9C8C77&gt;*The orb in Gabrius' staff flashes violently at the mention of the name.*&lt;/color&gt;" contextBefore="" contextAfter="" posx="329" posy="478">
+		<option optionid="1" optiontext="" next="131"></option>
+	</node>
+	<node id="131" npcName="Gabrius" anim="1" text="Which is why her betrayal in the end was that much more agitating, beyond just the dagger she sank into me." contextBefore="" contextAfter="" posx="384" posy="692">
+		<option optionid="1" optiontext="A war against a 'Mage King'? What did I miss while I was dead?" next="132"></option>
+		<option optionid="2" optiontext="So, what are Grimoires, exactly?" next="126"></option>
+		<option optionid="3" optiontext="So, how do even know all the stuff about the Old Folk? The Qaeshtari?" next="133"></option>
+		<option optionid="4" optiontext="The temple's guardian is felled, the Grimoire is yours..." checks="Quest=14-5-5,HasItem=264-1" icon="Quest" next="135"></option>
+		<option optionid="5" optiontext="Tragic." next="0"></option>
+	</node>
+	<node id="132" npcName="Gabrius" anim="1" text="Nothing that would have concerned you - it happened far from here in the Vhosphoran Kingdom. Although, as one unexpected consequence, the Hydrobor Circle ended up migrating here. But if you care to know more, I suggest you read a book." contextBefore="" contextAfter="" posx="861" posy="532">
+		<option optionid="1" optiontext="What are Grimoires, anyway?" next="126"></option>
+		<option optionid="2" optiontext="So, how do even know all the stuff about the Old Folk? The Qaeshtari?" next="133"></option>
+		<option optionid="3" optiontext="The temple's guardian is felled, the Grimoire is yours..." checks="Quest=14-5-5,HasItem=264-1" icon="Quest" next="135"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="133" npcName="Gabrius" anim="1" text="You didn't think these are the first Qaeshtari ruins that I've explored? Eloria and I spent decades studying their works. I've seen entire halls sealed in, you know - filled with their dead still huddled in beds. Killed by something, for all their knowledge, they couldn't even understand." contextBefore="" contextAfter="" posx="1333" posy="527">
+		<option optionid="1" optiontext="What are Grimoires, anyway?" next="126"></option>
+		<option optionid="2" optiontext="So what's between you and this Eloria?" next="129"></option>
+		<option optionid="3" optiontext="The temple's guardian is felled, the Grimoire is yours..." checks="Quest=14-5-5,HasItem=264-1" icon="Quest" next="135"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+
+	<node id="134" npcName="Gabrius" anim="1" text="I grow impatient, Lord Aercrest. Are you done rummaging around the ruins?" contextBefore="" contextAfter="" posx="33" posy="957">
+		<option optionid="1" optiontext="The temple's guardian is felled, the Grimoire is yours..." next="135" checks="Quest=14-5-5,HasItem=264-1" icon="Quest"></option>
+		<option optionid="2" optiontext="There's still something I wanted to know." next="1250"></option>
+		<option optionid="3" optiontext="Not yet." next="0"></option>
+	</node>
+	<node id="135" npcName="Gabrius" anim="1" text="Perfect, only one thing now remains in order to reveal the traitorous woman to me." contextBefore="" contextAfter="" posx="492" posy="956">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=73" icon="Quest"></option>
+	</node>
+	
+	<node id="139" npcName="Gabrius" anim="1" text="You're here, good. I will once again require your assistance." contextBefore="" contextAfter="" posx="25" posy="26">
+		<option optionid="1" optiontext="okey" actions="UpdateQuest=15-2" next="0"></option>
+		<option optionid="2" optiontext="no" next="0"></option>
+	</node>
+
+	<node id="140" npcName="Gabrius" anim="1" text="You're here, good. I will require your assistance while I use the Grimoire of Truesight to scry beyond Eloria's defenses." posx="13" posy="9">
+		<option optionid="1" optiontext="What must I do?" icon="Quest" next="142"></option>
+		<option optionid="2" optiontext="This stone ring is more of the Qaeshtari remnants?" next="141"></option>
+		<option optionid="3" optiontext="I need a moment to prepare myself." next="0"></option>
+	</node>
+	<node id="141" npcName="Gabrius" anim="1" text="Indeed, this was one of their Circles of Divination. Specifically created for demanding ritual spells, such that the Grimoires often demand." posx="468" posy="293">
+		<option optionid="1" optiontext="What must I do?" icon="Quest" next="142"></option>
+		<option optionid="2" optiontext="I need a moment to prepare myself." next="0"></option>
+	</node>
+	<node id="142" npcName="Gabrius" anim="1" text="Channelling the Grimoire's magic is going to require my full attention. While I do so, I will be vulnerable and in need of your protection." posx="472" posy="13">
+		<option optionid="1" optiontext="Protection, from what?" next="143"></option>
+	</node>
+	<node id="143" npcName="Gabrius" anim="1" text="Of that I am... not entirely clear. The Grimoire breaks beyond what the Qaeshtari called the Curtain of Etherlight - the world between all worlds. Their writings also mention an... entity, within the domain of Etherlight..." posx="911" posy="17">
+		<option optionid="1" optiontext="So, what are you expecting to happen?" next="144"></option>
+		<option optionid="2" optiontext="An entity...?" next="146"></option>
+	</node>
+	<node id="144" npcName="Gabrius" anim="1" text="That will remain to be seen, but be prepared for anything. Whatever you do, my focus must not be interrupted. So I don't care if Demon Overlords themselves begin pouring in, you will do what it takes to keep them away from me." posx="1354" posy="18">
+		<option optionid="1" optiontext="" next="145"></option>
+	</node>
+	<node id="145" npcName="Gabrius" anim="1" text="I have lain my staff on the carpet here, alongside disruptive Qaeshtari spell bombs I looted from the ruins. You won't be facing this Etherlight ''Entity'' defenseless." posx="1780" posy="19">
+		<option optionid="1" optiontext="You'll let me use your staff?" next="148"></option>
+		<option optionid="2" optiontext="An 'Entity' from within the 'Curtain'? Seems a little vague." next="149"></option>
+		<option optionid="3" optiontext="I'm ready to begin." next="0" icon="Quest" actions="Cinematic=77"></option>
+	</node>
+	<node id="146" npcName="Gabrius" anim="1" text="Like I said, it is not clear. It may be the ancient Qaeshtari did not fully understand the Curtain either, only that something within it ''resisted'' whenever their magics pierced through it." posx="908" posy="339">
+		<option optionid="1" optiontext="" next="147"></option>
+	</node>
+	<node id="147" npcName="Gabrius" anim="1" text="Be prepared for anything. Whatever you do, my focus must not be interrupted. So I don't care if Demon Overlords themselves begin pouring in, you will do what it takes to keep them away from me." posx="1345" posy="342">
+		<option optionid="1" optiontext="" next="145"></option>
+	</node>
+	<node id="148" npcName="Gabrius" anim="1" text="The staff is not a gift, Lord Aercrest. I shall grant you temporary authority over it, but the staff is familiar serving its one true master. You may find it has something of a will of its own, should you try to employ it without my blessing." posx="2222" posy="34">
+		<option optionid="1" optiontext="So an 'Entity' from within the 'Curtain'? Seems a little vague." next="149"></option>
+		<option optionid="2" optiontext="I'm ready to begin." next="0" icon="Quest" actions="Cinematic=77"></option>
+	</node>
+	<node id="149" npcName="Gabrius" anim="1" text="It's as much as I ever came across in ancient writings. When the Qaeshtari discovered varying dimensions of existence, they learned that those were separated by a world that was not quite a world, a world between worlds - the 'Curtain of Etherlight'." posx="2217" posy="373">
+		<option optionid="1" optiontext="" next="150"></option>
+	</node>
+	<node id="150" npcName="Gabrius" anim="1" text="It may be they never fully understood it either. From what I gather, it is a place that can neither be seen nor entered, but one must pass through it in order to pass between the different worlds." posx="2662" posy="375">
+		<option optionid="1" optiontext="" next="151"></option>
+	</node>
+	<node id="151" npcName="Gabrius" anim="1" text="But every time you pierce through it, something within it resists. Something that is hard to define... Perhaps not quite a creature, but certainly more than a mere force of nature. " posx="3118" posy="383">
+		<option optionid="1" optiontext="You'd let me use your staff to defend against it?" next="148"></option>
+		<option optionid="2" optiontext="I'm ready to begin." next="0" icon="Quest" actions="Cinematic=77"></option>
+	</node>
+
+	<node id="155" npcName="Gabrius" anim="1" text="Useless! Lord Aercrest, I would deal with these apparitions myself if the scrying spell didn't require my full attention. It is the only reason why I continue to entertain you - do not fail me again!" contextBefore="" contextAfter="" posx="24" posy="36">
+		<option optionid="1" optiontext="What were those things?" next="156"></option>
+		<option optionid="2" optiontext="I'll be ready for them this time." actions="UpdateQuest=15-2" next="0"></option>
+		<option optionid="3" optiontext="I need a moment... to catch my breath... figuratively..." actions="SetVar=ScryingSpell-2" next="0"></option>
+	</node>
+	<node id="156" npcName="Gabrius" anim="1" text="Precisely what I warned you about - the ''Entity'' of Etherlight. What it is exactly is of no consequence. All that matters is that once they appear, you blow those apparitions into oblivion." contextBefore="" contextAfter="" posx="482" posy="19">
+		<option optionid="1" optiontext="I'll be ready for them this time." actions="UpdateQuest=15-2" next="0"></option>
+		<option optionid="2" optiontext="I'll need a moment... to catch my breath... figuratively..." actions="SetVar=ScryingSpell-2" next="0"></option>
+	</node>
+
+	<node id="157" npcName="Gabrius" anim="1" text="Are you done resting, slave? Eloria continues to evade me while you sit idly." contextBefore="" contextAfter="" posx="512" posy="380">
+		<option optionid="1" optiontext="What were those things?" next="156"></option>
+		<option optionid="2" optiontext="I'll be ready for them this time." actions="UpdateQuest=15-2,SetVar=ScryingSpell-1" next="0"></option>
+		<option optionid="3" optiontext="Still need a moment..." next="0"></option>
+	</node>
+
+	<node id="160" npcName="Gabrius" anim="1" text="&lt;color=#9C8C77&gt; *Gabrius stands still in brooding silence. The apparitions have dispersed. You hear only the wind.* &lt;/color&gt;" contextBefore="" contextAfter="" posx="79" posy="36">
+		<option optionid="1" optiontext="Is that it...? Is it done?" next="161"></option>
+	</node>
+	<node id="161" npcName="Gabrius" anim="1" text="Yes, I see her now. I see it all." contextBefore="" contextAfter="" posx="497" posy="38">
+		<option optionid="1" optiontext="" next="162"></option>
+	</node>
+	<node id="162" npcName="Gabrius" anim="1" text="&lt;color=#9C8C77&gt; *Gabrius channels magic through your eyes. Visions begin to fill your skull.* &lt;/color&gt;" contextBefore="" contextAfter="" posx="917" posy="39">
+		<option optionid="1" optiontext="" actions="Cinematic=78" icon="Quest" next="0"></option>
+	</node>
+
+	<node id="165" npcName="Gabrius" anim="1" text="Eloria thought that she could turn on me, and when she failed, she thought she could run and hide from me. It is time she understood how wrong she was." posx="38" posy="44">
+		<option optionid="1" optiontext="" next="166"></option>
+	</node>
+	<node id="166" npcName="Gabrius" anim="1" text="You have been a decent servant to me thus far, Lord Aercrest. Once we are through with this, I promise, you will have to hear my voice no longer. For now, I wish you to act as my hand in carrying out vengeance against Eloria." posx="194" posy="284">
+		<option optionid="1" optiontext="" next="167"></option>
+	</node>
+	<node id="167" npcName="Gabrius" anim="1" text="Travel to the city of Thornhill and look for this man of hers - Arren Oakenthorn. In the wake of a recent plague, the young druid took on the role of a noble healer and a herbalist within the city. How quaint indeed." posx="460" posy="47">
+		<option optionid="1" optiontext="" next="168"></option>
+	</node>
+	<node id="168" npcName="Gabrius" anim="1" text="Pay him a surprise visit. I expect he and Eloria maintain contact somehow through magic. Use this connection, Lord Aercrest, and slay Arren before her very eyes." posx="647" posy="288">
+		<option optionid="1" optiontext="What?! That is the most vile request!" next="169"></option>
+		<option optionid="2" optiontext="Those visions you showed me, what were they?" next="173"></option>
+		<option optionid="3" optiontext="Wait, Who is this lad Arren, and why kill him?" next="175"></option>
+		<option optionid="4" optiontext="How do I get to Thornhill from here?" next="171"></option>
+		<option optionid="5" optiontext="I must obey..." next="172" icon="Quest"></option>
+	</node>
+	<node id="169" npcName="Gabrius" anim="1" text="Oh I'm sorry, does this not sit well with your sense of honor? Were you perhaps expecting Eloria and I to sort our differences out in a noble duel, hm?" posx="1015" posy="38">
+		<option optionid="1" optiontext="" next="170"></option>
+	</node>
+	<node id="170" npcName="Gabrius" anim="1" text="Perhaps you'd like for us to sit down, talk about the good old days we shared? That we'd shake hands and embrace? Once there was a time I acted with honor like you, Lord Aercrest. It brought me naught but misery." posx="1632" posy="64">
+		<option optionid="1" optiontext="Those visions you showed me, what were they?" next="173"></option>
+		<option optionid="2" optiontext="Wait, Who is this lad Arren, and why kill him?" next="175"></option>
+		<option optionid="3" optiontext="How do I get to Thornhill from here?" next="171"></option>
+		<option optionid="4" optiontext="I must obey..." next="172" icon="Quest"></option>
+	</node>
+	<node id="171" npcName="Gabrius" anim="1" text="&lt;color=#9C8C77&gt; *You stop yourself short of asking. As the past ruler of Imberthale, you recall the major roads leading northwest of Haywind will eventually take you to Thornhill.* &lt;/color&gt;" posx="1171" posy="274">
+		<option optionid="1" optiontext="I may have no choice in obeying you, but your task is most vile!" next="169"></option>
+		<option optionid="2" optiontext="Those visions you showed me, what were they?" next="173"></option>
+		<option optionid="3" optiontext="Wait, Who is this lad Arren, and why kill him?" next="175"></option>
+		<option optionid="4" optiontext="I must obey..." next="172" icon="Quest"></option>
+	</node>
+	<node id="172" npcName="Gabrius" anim="1" text="Oh, and Lord Aercrest? Do try to make him suffer." posx="2600" posy="-174">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=132" icon="Quest"></option>
+	</node>
+
+	<node id="173" npcName="Gabrius" anim="1" text="They were of the Silvermirror Fen. A notoriously swampy terrain east of Thornhill City, long served as the home to various degenerates and the Silvermirror Witches. Now, it seems, the Witch has become none other than the very woman I seek." posx="1822" posy="798">
+		<option optionid="1" optiontext="The Silvermirror Witches?" next="174"></option>
+		<option optionid="2" optiontext="Who is this lad Arren, and why kill him?" next="175"></option>
+		<option optionid="3" optiontext="I may have no choice in obeying you, but your task is most vile!" next="169"></option>
+		<option optionid="4" optiontext="How do I get to Thornhill from here?" next="171"></option>
+		<option optionid="5" optiontext="I must obey..." next="172" icon="Quest"></option>
+	</node>
+	<node id="174" npcName="Gabrius" anim="1" text="A long line of witches native to the swamp, always feared and hated by the people of Thornhill. But there is not much more I know of them. Their ambitions never were grand; they preferred to revel in their own depravity in the quiet seclusion of the swamp, such as I understand." posx="2275" posy="798">
+		<option optionid="1" optiontext="Who is this lad Arren, and why kill him?" next="175"></option>
+		<option optionid="2" optiontext="I may have no choice in obeying you, but your task is most vile!" next="169"></option>
+		<option optionid="3" optiontext="How do I get to Thornhill from here?" next="171"></option>
+		<option optionid="4" optiontext="I must obey..." next="172" icon="Quest"></option>
+	</node>
+	<node id="175" npcName="Gabrius" anim="1" text="A young druid Eloria came to rescue, as she vanquished the Witch of the Swamp and assumed her role. According to my visions, the two developed an intimate bond. Who the druid is doesn't really matter, only that Eloria cares for him." posx="2150" posy="246">
+		<option optionid="1" optiontext="You would kill this man only to hurt Eloria?!" next="176"></option>
+		<option optionid="2" optiontext="Those visions you showed me, what were they?" next="173"></option>
+		<option optionid="3" optiontext="I may have no choice in obeying you, but your task is most vile!" next="169"></option>
+		<option optionid="4" optiontext="How do I get to Thornhill from here?" next="171"></option>
+		<option optionid="5" optiontext="I must obey..." next="172" icon="Quest"></option>
+	</node>
+	<node id="176" npcName="Gabrius" anim="1" text="Oh no, you will do the killing, remember? In any case, I would do far worse. You can rest assured of that." posx="2646" posy="307">
+		<option optionid="1" optiontext="Those visions you showed me, what were they?" next="173"></option>
+		<option optionid="2" optiontext="I may have no choice in obeying you, but your task is most vile!" next="169"></option>
+		<option optionid="3" optiontext="How do I get to Thornhill from here?" next="171"></option>
+		<option optionid="4" optiontext="I must obey..." next="172" icon="Quest"></option>
+	</node>
+
+
+	<node id="185" npcName="Gabrius" anim="1" text="You have served me well thus far, Lord Aercrest. Do this more. Act as my hand, delivering vengeance to Eloria, and I promise you shall soon be free of me." posx="89" posy="30">
+		<option optionid="1" optiontext="About your task..." next="186"></option>
+		<option optionid="2" optiontext="This portal you opened... tell me about it." next="195"></option>
+		<option optionid="3" optiontext="Which way do I reach Thornhill?" next="194"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="186" npcName="Gabrius" anim="1" text="Speak, Lord Aercrest." posx="1001" posy="28">
+		<option optionid="1" optiontext="I may have no choice in obeying you, but your task is most vile!" next="188"></option>
+		<option optionid="2" optiontext="Those visions you showed me, what were they?" next="190"></option>
+		<option optionid="3" optiontext="Who is this lad Arren, and why kill him?" next="192"></option>
+		<option optionid="4" optiontext="Another question..." next="187"></option>
+		<option optionid="5" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="187" npcName="Gabrius" anim="1" text="Yes...?" posx="310" posy="565">
+		<option optionid="1" optiontext="This portal you opened... tell me about it." next="195"></option>
+		<option optionid="2" optiontext="Which way do I reach Thornhill?" next="194"></option>
+		<option optionid="3" optiontext="About your task..." next="186"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="188" npcName="Gabrius" anim="1" text="Oh I'm sorry, does this not sit well with your sense of honor? Were you perhaps expecting Eloria and I to sort our differences out in a noble duel, hm?" posx="1604" posy="21">
+		<option optionid="1" optiontext="" next="189"></option>
+	</node>
+	<node id="189" npcName="Gabrius" anim="1" text="Perhaps you'd like for us to sit down, talk about the good old days we shared? That we'd shake hands and embrace? Once there was a time I acted with honor like you, Lord Aercrest. It brought me naught but misery." posx="2066" posy="19">
+		<option optionid="1" optiontext="Those visions you showed me, what were they?" next="190"></option>
+		<option optionid="2" optiontext="Who is this lad Arren, and why kill him?" next="192"></option>
+		<option optionid="3" optiontext="Another question..." next="187"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="190" npcName="Gabrius" anim="1" text="They were of the Silvermirror Fen. A notoriously swampy terrain east of Thornhill City, long served as the home to various degenerates and the Silvermirror Witches. Now, it seems, the Witch has become none other than the very woman I seek." posx="1599" posy="544">
+		<option optionid="1" optiontext="The Silvermirror Witches?" next="191"></option>
+		<option optionid="2" optiontext="Who is this lad Arren, and why kill him?" next="192"></option>
+		<option optionid="3" optiontext="I may have no choice in obeying you, but your task is most vile!" next="188"></option>
+		<option optionid="4" optiontext="Another question..." next="187"></option>
+		<option optionid="5" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="191" npcName="Gabrius" anim="1" text="A long line of witches native to the swamp, always feared and hated by the people of Thornhill. But there is not much more I know of them. Their ambitions never were grand; they preferred to revel in their own depravity in the quiet seclusion of the swamp, such as I understand." posx="2089" posy="554">
+		<option optionid="1" optiontext="Who is this lad Arren, and why kill him?" next="192"></option>
+		<option optionid="2" optiontext="I may have no choice in obeying you, but your task is most vile!" next="188"></option>
+		<option optionid="3" optiontext="Another question..." next="187"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="192" npcName="Gabrius" anim="1" text="A young druid Eloria came to rescue, as she vanquished the Witch of the Swamp and assumed her role. According to my visions, the two developed an intimate bond. Who the druid is doesn't really matter, only that Eloria cares for him." posx="2608" posy="389">
+		<option optionid="1" optiontext="You would kill this man only to hurt Eloria?!" next="193"></option>
+		<option optionid="2" optiontext="I may have no choice in obeying you, but your task is most vile!" next="188"></option>
+		<option optionid="3" optiontext="Those visions you showed me, what were they?" next="190"></option>
+		<option optionid="4" optiontext="Another question..." next="187"></option>
+		<option optionid="5" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="193" npcName="Gabrius" anim="1" text="Oh no, you will do the killing, remember? In any case, I would do far worse. You can rest assured of that." posx="3071" posy="388">
+		<option optionid="1" optiontext="I may have no choice in obeying you, but your task is most vile!" next="188"></option>
+		<option optionid="2" optiontext="Those visions you showed me, what were they?" next="190"></option>
+		<option optionid="3" optiontext="Another question..." next="187"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="194" npcName="Gabrius" anim="1" text="&lt;color=#9C8C77&gt; *You stop yourself short of asking. As the past ruler of Imberthale, you recall the major roads leading northwest of Haywind will eventually take you to Thornhill.* &lt;/color&gt;" posx="954" posy="936">
+		<option optionid="1" optiontext="This portal you opened... tell me about it." next="195"></option>
+		<option optionid="2" optiontext="About your task..." next="186"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="195" npcName="Gabrius" anim="1" text="It should come as no surprise that the ancient Qaeshtari built vast networks of portals across their empire. ''Roadbuilders'' as it were. Such portals can be found even in these backwater lands." posx="1629" posy="1193">
+		<option optionid="1" optiontext="" next="196"></option>
+	</node>
+	<node id="196" npcName="Gabrius" anim="1" text="As you can see, no portal was built here. Nonetheless, this scrying platform is a point of convergence for dormant Qaeshtari magic. It was no stretch for one such as I to tap into that magic, to connect with the portals." posx="2091" posy="1192">
+		<option optionid="1" optiontext="" next="197"></option>
+	</node>
+	<node id="197" npcName="Gabrius" anim="1" text="By extention, you now ought to be attuned with their magic as well. Should you find dormant portals across the land, they should activate from your touch. Consider it a perk of being my servant." posx="2529" posy="1193">
+		<option optionid="1" optiontext="Which way do I reach Thornhill?" next="194"></option>
+		<option optionid="2" optiontext="About your task..." next="186"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+
+
+	<node id="200" npcName="Gabrius" anim="1" text="You're here? Surely you did not already acquire the spellwood?" posx="23" posy="17">
+		<option optionid="1" optiontext="Where exactly should I be looking for this 'Forest's Heart'?" next="201"></option>
+		<option optionid="2" optiontext="So this is it, the Temple of Etherlight?" next="204"></option>
+		<option optionid="3" optiontext="I'm still searching." next="0"></option>
+	</node>
+	<node id="201" npcName="Gabrius" anim="1" text="If I knew that, I'd already have told you. Forests hide their secrets, but someone familiar with the land might be able to guide your way. Either way, scour the woods 'till you find it and bring its bark to me here." posx="474" posy="19">
+		<option optionid="1" optiontext="I'd rather not roam the woods aimlessly..." next="202"></option>
+		<option optionid="2" optiontext="So this is it, the Temple of Etherlight?" next="204"></option>
+		<option optionid="3" optiontext="As you say..." next="0"></option>
+	</node>
+	<node id="202" npcName="Gabrius" anim="1" text="Hmph... The Ebongreen Druids undoubtedly know these forests the best, but they're intolerable to interact with and aren't likely to just blurt out the location to the Forest's Heart when asked." posx="919" posy="22">
+		<option optionid="1" optiontext="" next="203"></option>
+	</node>
+	<node id="203" npcName="Gabrius" anim="1" text="Your second best bet therefore is to ask local hunters, trackers, those sort of people. Half of them may spin fancy tales and myths at you, but with luck some of them might actually know something." posx="1348" posy="23">
+		<option optionid="1" optiontext="So this is it, the Temple of Etherlight?" next="204"></option>
+		<option optionid="2" optiontext="As you say..." next="0"></option>
+	</node>
+	<node id="204" npcName="Gabrius" anim="1" text="If you insist on observing the obvious, then yes - this is the temple. For now, the way in is shielded by a barrier maintained by the temple's guardian, deep inside. It won't stop us though, once I have the wood from the Forest's Heart." posx="488" posy="419">
+		<option optionid="1" optiontext="What's the relic you're looking for here? Do I even want to know?" next="205"></option>
+		<option optionid="2" optiontext="About that... where exactly should I be looking?" next="201"></option>
+		<option optionid="3" optiontext="As you say..." next="0"></option>
+	</node>
+	<node id="205" npcName="Gabrius" anim="1" text="Nothing world ending, I assure you. For now, concentrate your mind on bringing me the adequate spellwood." posx="953" posy="420">
+		<option optionid="1" optiontext="About that... where exactly should I be looking?" next="201"></option>
+		<option optionid="2" optiontext="As you say..." next="0"></option>
+	</node>
+
+	<node id="245" npcName="Gabrius" anim="1" text="Very good, now make sure to check inside, see if there's anything worth salvaging." posx="479" posy="243">
+		<option optionid="1" optiontext="" actions="UpdateQuest=76-3"  next="0"></option>
+	</node>
+
+	<node id="249" npcName="Gabrius" anim="1" text="There's just one problem, a small matter of housecleaning..." posx="479" posy="243">
+		<option optionid="1" optiontext="" actions="Cinematic=98"  next="250"></option>
+	</node>
+	<node id="250" npcName="Gabrius" anim="1" text="See here? While you were absent, taking your time, a few bottomfeeders appear to have settled into my shack. Why don't you go ahead and clear them out?" posx="31" posy="21">
+		<option optionid="1" optiontext="As you order..."  next="252"></option>
+		<option optionid="2" optiontext="What exactly do you propose I do about them?" next="251"></option>
+	</node>
+	<node id="251" npcName="Gabrius" anim="1" text="Oh, I don't care what you do. Erase them from existence if you have to. Just get rid of them." posx="479" posy="243">
+		<option optionid="1" optiontext="" next="252"></option>
+	</node>
+	<node id="252" npcName="Gabrius" anim="1" text="Once they're removed, we'll perhaps finally have the peace to talk." posx="479" posy="243">
+		<option optionid="1" optiontext="" actions="UpdateQuest=73-999|76-1"  next="0"></option>
+	</node>
+
+	<node id="255" npcName="Gabrius" anim="1" text="Perhaps now, finally, we can move forward without disruptions. There's vengeance to be done." posx="31" posy="22">
+		<option optionid="1" optiontext="Vengeance? What are you talking about?" icon="Quest" next="256"></option>
+		<option optionid="2" optiontext="Why the sneaking and an isolated shack in the woods, surely you're not hiding from something?" next="257"></option>
+		<option optionid="3" optiontext="Back in the crypts I ran into the remains of a Barbarian King Tyroghar, know anything about him?" next="259"></option>
+	</node>
+	<node id="256" npcName="Gabrius" anim="1" text="Everything in good time. For now, I need you to focus on a bit of lost knowledge. You see, a number of ancient ruins lie forgotten in these lands and I'm looking for a specific one. Luckily I've found something nearby that can point the way." posx="1529" posy="34">
+		<option optionid="1" optiontext="" next="261"></option>
+	</node>
+	<node id="257" npcName="Gabrius" anim="1" text="Well... I do not wish to be seen, if I can avoid it. The pesky magi of Hydrobor settled in these lands some decades back. I do not want them meddling in my affairs." posx="546" posy="329">
+		<option optionid="1" optiontext="Wait, you're afraid of them?" next="258"></option>
+		<option optionid="2" optiontext="Back in the crypts I ran into the remains of a Barbarian King Tyroghar, know anything about him?" next="259"></option>
+		<option optionid="3" optiontext="What vengeance were you talking about?" icon="Quest" next="256"></option>
+	</node>
+	<node id="258" npcName="Gabrius" anim="1" text="Afraid? Last time I dealt with them, I slaughtered their Archmage. I have a feeling they may still be a little upset about that and I'd rather not rehash our old arguments." posx="1068" posy="346">
+		<option optionid="1" optiontext="Back in the crypts I ran into the remains of a Barbarian King Tyroghar, know anything about him?" next="259"></option>
+		<option optionid="2" optiontext="What vengeance were you talking about?" icon="Quest" next="256"></option>
+	</node>
+	<node id="259" npcName="Gabrius" anim="1" text="Nothing more than another inbred woodland warrior of the past, no doubt. I'm not so well versed in the history of these lands, nor should it be a concern to us now." posx="84" posy="551">
+		<option optionid="1" optiontext="Then where do you hail from?" next="260"></option>
+		<option optionid="2" optiontext="Why the sneaking and an isolated shack in the woods, surely you're not hiding from something?" next="257"></option>
+		<option optionid="3" optiontext="What vengeance were you talking about?" icon="Quest" next="256"></option>
+	</node>
+	<node id="260" npcName="Gabrius" anim="1" text="From civilization, compared to this dirt anyway. Are you done asking pointless questions?" posx="548" posy="764">
+		<option optionid="1" optiontext="Why the sneaking and an isolated shack in the woods, surely you're not hiding from something?" next="257"></option>
+		<option optionid="2" optiontext="What vengeance were you talking about?" icon="Quest" next="256"></option>
+	</node>
+	<node id="261" npcName="Gabrius" anim="1" text="It's an ancient monolith. Within it resides a magical apparition of sorts, created by the very same people who left behind the temples. I need it to tell me where to find the Temple of Etherlight. However, it refuses to speak to me - most vexing." posx="1603" posy="309">
+		<option optionid="1" optiontext="" next="262"></option>
+	</node>
+	<node id="262" npcName="Gabrius" anim="1" text="When I approached it earlier, it droned on about sensing an 'unauthorized power' and deemed me 'dangerous', before powering itself down. But while it won't talk to me, I'm thinking you may have better luck. Get to the monolith north of here and make it talk about the Temple of Etherlight." posx="2042" posy="34">
+		<option optionid="1" optiontext="I shall act as you command." icon="Quest" next="266"></option>
+		<option optionid="2" optiontext="What's the Temple of Etherlight?" next="263"></option>
+		<option optionid="3" optiontext="Everybody knows Ancient remains are best left to lie still, treasure hunters are lost to them all the time." next="264"></option>
+		<option optionid="4" optiontext="So I'm looking for a talking magical monolith?" next="265"></option>
+	</node>
+	<node id="263" npcName="Gabrius" anim="1" text="Like I said, one among numerous temple ruins the Ancient Civilization left behind. This one served a unique purpose, though, and if indeed it has remained untouched all these centuries, I should think it contains an object I need." posx="2689" posy="75">
+		<option optionid="1" optiontext="Everybody knows Ancient remains are best left to lie still, treasure hunters are lost to them all the time." next="264"></option>
+		<option optionid="2" optiontext="So I'm looking for a talking magical monolith?" next="265"></option>
+		<option optionid="3" optiontext="I shall act as you command." icon="Quest" next="266"></option>
+	</node>
+	<node id="264" npcName="Gabrius" anim="1" text="Indeed? And do I seem to you like an ordinary treasure hunter, Lord Aercrest? It is no secret, many a fool has lost their life in hopes of merely touching the power the Ancient people wielded - to touch what they cannot comprehend. But I am no such fool." posx="2481" posy="516">
+		<option optionid="1" optiontext="Then what's the Temple of Etherlight?" next="263"></option>
+		<option optionid="2" optiontext="So I'm looking for a talking magical monolith?" next="265"></option>
+		<option optionid="3" optiontext="I shall act as you command." icon="Quest" next="266"></option>
+	</node>
+	<node id="265" npcName="Gabrius" anim="1" text="If you wish to put it so crudely, yes. It's the kind of thing that's hard to miss, even surrounded by the woods here as it is." posx="2481" posy="516">
+		<option optionid="1" optiontext="Then what's the Temple of Etherlight?" next="263"></option>
+		<option optionid="2" optiontext="Everybody knows Ancient remains are best left to lie still, treasure hunters are lost to them all the time." next="264"></option>
+		<option optionid="3" optiontext="I shall act as you command." icon="Quest" next="266"></option>
+	</node>
+
+	<node id="266" npcName="Gabrius" anim="1" text="So you shall. You may also use this shelter as you best see fit. I trust whatever trinkets you found inside might prove useful. After all, you weren't exactly buried with a whole host of treasures." posx="2481" posy="516">
+		<option optionid="1" optiontext="" checks="!Quest=76-999-999" actions="UpdateQuest=76-999|74-1" next="0"></option>
+		<option optionid="2" optiontext="" checks="Quest=76-999-999" actions="UpdateQuest=74-1" next="0"></option>
+	</node>
+	
+	<node id="270" npcName="Gabrius" anim="1" text="Though my powers may stretch our lives infinitely, Lord Aercrest, I'm afraid they do not achieve the same for my patience. Was there ambiguity in my orders?" posx="44" posy="34">
+		<option optionid="1" optiontext="Any ideas how to activate the monolith again?" checks="Quest=74-2-2" next="278"></option>
+		<option optionid="2" optiontext="The ancient monolith, what is it exactly?" next="271"></option>
+		<option optionid="3" optiontext="Why are we digging for old secrets anyway?" next="273"></option>
+		<option optionid="4" optiontext="What is all this for? You spoke of vengeance before..." next="276"></option>
+		<option optionid="5" optiontext="Why the sneaking and an isolated shack in the woods, surely you're not hiding from something?" next="274"></option>
+		<option optionid="6" optiontext="There was not..." next="0"></option>
+	</node>
+	<node id="271" npcName="Gabrius" anim="1" text="One among several structures left behind by the Qaeshtari, the Ancient civilization. This one houses a magical apparition of sorts with knowledge of the Ancients. I need it to tell me where we find the temple ruins of Etherlight." posx="480" posy="27">
+		<option optionid="1" optiontext="" next="272"></option>
+	</node>
+	<node id="272" npcName="Gabrius" anim="1" text="When I approached it earlier, it droned on about sensing an 'unauthorized power' about me and deemed me 'dangerous', before powering itself down. But while it won't talk to me, I'm thinking you may have better luck. Get to the monolith north of here and find out for me." posx="909" posy="29">
+		<option optionid="1" optiontext="Everybody knows Ancient remains are best left to lie still. Treasure hunters are lost to them all the time." next="277"></option>
+		<option optionid="2" optiontext="What do you care with these temple ruins?" next="273"></option>
+		<option optionid="3" optiontext="What is all this for? You spoke of vengeance before..." next="276"></option>
+		<option optionid="4" optiontext="Why the sneaking and an isolated shack in the woods, surely you're not hiding from something?" next="274"></option>
+		<option optionid="5" optiontext="Any ideas how to activate the monolith again?" checks="Quest=74-2-2" next="278"></option>
+		<option optionid="6" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="273" npcName="Gabrius" anim="1" text="Many ruined temples of the Ancients dot these lands, but I need to find a specific one - the Temple of Etherlight. According to legends, it served a unique purpose, and if indeed it has remained untouched all these centuries, I should think it contains an object I need." posx="521" posy="561">
+		<option optionid="1" optiontext="Everybody knows Ancient remains are best left to lie still. Treasure hunters are lost to them all the time." next="277"></option>
+		<option optionid="2" optiontext="How's this monolith you have me looking for meant to help?" next="271"></option>
+		<option optionid="3" optiontext="What is all this for? You spoke of vengeance before..." next="276"></option>
+		<option optionid="4" optiontext="Why the sneaking and an isolated shack in the woods, surely you're not hiding from something?" next="274"></option>
+		<option optionid="5" optiontext="Any ideas how to activate the monolith again?" checks="Quest=74-2-2" next="278"></option>
+		<option optionid="6" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="274" npcName="Gabrius" anim="1" text="Well... I do not wish to be seen, if I can avoid it. The pesky magi of Hydrobor settled in these lands some decades back. I do not want them meddling in my affairs." posx="1374" posy="-16">
+		<option optionid="1" optiontext="So, you're afraid of them?" next="275"></option>
+		<option optionid="2" optiontext="The ancient monolith, what is it exactly?" next="271"></option>
+		<option optionid="3" optiontext="Why are we digging for old secrets anyway?" next="273"></option>
+		<option optionid="4" optiontext="What is all this for? You spoke of vengeance before..." next="276"></option>
+		<option optionid="5" optiontext="Any ideas how to activate the monolith again?" checks="Quest=74-2-2" next="278"></option>
+		<option optionid="6" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="275" npcName="Gabrius" anim="1" text="Afraid? Last time I dealt with them, I slaughtered their Archmage. I have a feeling they may still be a little upset about that and I'd rather not rehash our old arguments." posx="1827" posy="0">
+		<option optionid="1" optiontext="The ancient monolith, what is it exactly?" next="271"></option>
+		<option optionid="2" optiontext="Why are we digging for old secrets anyway?" next="273"></option>
+		<option optionid="3" optiontext="What is all this for? You spoke of vengeance before..." next="276"></option>
+		<option optionid="4" optiontext="Any ideas how to activate the monolith again?" checks="Quest=74-2-2" next="278"></option>
+		<option optionid="5" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="276" npcName="Gabrius" anim="1" text="Ah yes, I did indeed. But let's not get ahead of ourselves, Lord Aercrest. For now, we focus on the secrets of Etherlight. The rest will come in time." posx="1025" posy="601">
+		<option optionid="1" optiontext="The ancient monolith, what is it exactly?" next="271"></option>
+		<option optionid="2" optiontext="Why are we digging for old secrets anyway?" next="273"></option>
+		<option optionid="3" optiontext="Why the sneaking and an isolated shack in the woods, surely you're not hiding from something?" next="274"></option>
+		<option optionid="4" optiontext="Any ideas how to activate the monolith again?" checks="Quest=74-2-2" next="278"></option>
+		<option optionid="5" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="277" npcName="Gabrius" anim="1" text="Indeed? And do I seem to you like an ordinary treasure hunter, Lord Aercrest? It is no secret, many a fool has lost their life in hopes of merely touching the power the Ancient people wielded - to touch what they cannot comprehend. But I am no such fool." posx="1563" posy="632">
+		<option optionid="1" optiontext="The ancient monolith, what is it exactly?" next="271"></option>
+		<option optionid="2" optiontext="Why are we digging for old secrets anyway?" next="273"></option>
+		<option optionid="3" optiontext="What is all this for? You spoke of vengeance before..." next="276"></option>
+		<option optionid="4" optiontext="Why the sneaking and an isolated shack in the woods, surely you're not hiding from something?" next="274"></option>
+		<option optionid="5" optiontext="Any ideas how to activate the monolith again?" checks="Quest=74-2-2" next="278"></option>
+		<option optionid="6" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="278" npcName="Gabrius" anim="1" text="It's merely a part of a larger ancient structure buried beneath dirt. I suggest you look for other remnants nearby. If you can activate them somehow, perhaps their power will feed back to our monolith here." posx="34" posy="25">
+		<option optionid="1" optiontext="The ancient monolith, what is it exactly?" next="271"></option>
+		<option optionid="2" optiontext="Why are we digging for old secrets anyway?" next="273"></option>
+		<option optionid="3" optiontext="What is all this for? You spoke of vengeance before..." next="276"></option>
+		<option optionid="4" optiontext="Why the sneaking and an isolated shack in the woods, surely you're not hiding from something?" next="274"></option>
+		<option optionid="5" optiontext="Leave." next="0"></option>
+	</node>
+
+	<node id="280" npcName="Gabrius" anim="1" text="We have what we came for. Assuming our ghostly friend wasn't speaking nonsense, the temple ruins must be deep within the forests north of here - what locals call the Mistywood. There is a spell to prepare." posx="46" posy="25">
+		<option optionid="1" optiontext="I'm not sure how much I'm of help with those." checks="!HasTrait=17" icon="Quest" next="281"></option>
+		<option optionid="2" optiontext="Indeed? You know, I like to say I'm something of a wizard myself." checks="HasTrait=17" next="284"></option>
+		<option optionid="3" optiontext="That thing spoke a lot of strange words..." next="286"></option>
+		<option optionid="4" optiontext="What do you make of that guardian the spirit mentioned?" next="288"></option>
+	</node>
+	<node id="281" npcName="Gabrius" anim="1" text="I will handle the spellcasting. All I need from you is... to go shopping. Some of the ingredients I need should be fairly easy to find in a large city, which is what you have when you enter Haywind further out west." posx="499" posy="24">
+		<option optionid="1" optiontext="And what ingredients would those be?" icon="Quest" next="282"></option>
+		<option optionid="2" optiontext="Haywind? When I ruled these lands, it was barely worthy of mention on a map." next="289"></option>
+	</node>
+	<node id="282" npcName="Gabrius" anim="1" text="A focusing crystal, for one thing - an object used to focus magic, you know? Look for a specialized craftsman, an artisan within the city. And as for the other thing..." posx="966" posy="26">
+		<option optionid="1" optiontext="" next="283"></option>
+	</node>
+	<node id="283" npcName="Gabrius" anim="1" text="Bring me a bottle of the infamous Mistywood Dew whiskey - I've heard rumors that it's quite potent. I will call upon you when I sense your task is complete." posx="1440" posy="-56">
+		<option optionid="1" optiontext="It shall be done." actions="Cinematic=107" icon="Quest" next="0"></option>
+		<option optionid="2" optiontext="How do I find the right craftsman for the crystal?" next="290"></option>
+		<option optionid="3" optiontext="Where do I find this whiskey?" next="291"></option>
+	</node>
+	<node id="284" npcName="Gabrius" anim="1" text="I'm glad you haven't lost your sense of humor, Lord Aercrest. I'm sure your skills are enough to awe peasant simpletons, but let's leave real magic to me." posx="222" posy="494">
+		<option optionid="1" optiontext="" next="285"></option>
+	</node>
+	<node id="285" npcName="Gabrius" anim="1" text="Instead, I need you to... go shopping. Some of the ingredients I need should be fairly easy to find in a large city, which is what you have when you enter Haywind further out west." posx="683" posy="497">
+		<option optionid="1" optiontext="And what ingredients would those be?" icon="Quest" next="282"></option>
+		<option optionid="2" optiontext="Haywind? When I ruled these lands, it was barely worthy of mention on a map." next="289"></option>
+	</node>
+	<node id="286" npcName="Gabrius" anim="1" text="Yes... The Ancients once conquered these lands, but never sought integration of its peoples. Our language derives from their subjects, as the Zatrin - the 'Servant' - recognized. But as for their words, only few remain who still know them." posx="177" posy="844">
+		<option optionid="1" optiontext="" next="287"></option>
+	</node>
+	<node id="287" npcName="Gabrius" anim="1" text="It is perhaps an irony of fate that that the civilizations they considered beneath them were ultimately the ones to survive through the ages, while they themselves perished. But enough of that, we have a spell to prepare." posx="626" posy="848">
+		<option optionid="1" optiontext="What do you make of that guardian the spirit mentioned?" next="288"></option>
+		<option optionid="2" optiontext="I'm not sure how much I'm of help with those." checks="!HasTrait=17" icon="Quest" next="281"></option>
+		<option optionid="3" optiontext="Indeed? You know, I like to say I'm something of a wizard myself." checks="HasTrait=17" icon="Quest" next="284"></option>
+	</node>
+	<node id="288" npcName="Gabrius" anim="1" text="Whoever, or whatever it is, it won't be happy to let us enter the temple. Towards their end, the Ancients took care to seal their sacred places. But that won't matter to me, we only have a spell to prepare." posx="1138" posy="863">
+		<option optionid="1" optiontext="That thing spoke a lot of strange words..." next="286"></option>
+		<option optionid="2" optiontext="I'm not sure how much I'm of help with those." checks="!HasTrait=17" icon="Quest" next="281"></option>
+		<option optionid="3" optiontext="Indeed? You know, I like to say I'm something of a wizard myself." checks="HasTrait=17" icon="Quest" next="284"></option>
+	</node>
+	<node id="289" npcName="Gabrius" anim="1" text="Is it truly shocking? New places and people emerge as the ages press forward, while the old fall away to be forgotten. Time corrodes everything, Lord Aercrest. One day yet, no one will spare a thought to the dirt Haywind stood upon." posx="1180" posy="405">
+		<option optionid="1" optiontext="Always a joy conversing with a depressing necromancer." next="292"></option>
+		<option optionid="2" optiontext="Indeed... Only an immortal could truly understand." next="293"></option>
+		<option optionid="3" optiontext="Maybe, but I believe some things are eternal..." next="294"></option>
+	</node>
+	<node id="290" npcName="Gabrius" anim="1" text="Ask the locals in Haywind, perhaps. I'm sure those bumbling fools will trip over themselves in their eagerness to help." posx="1999" posy="1">
+		<option optionid="1" optiontext="What about the whiskey?" next="291"></option>
+		<option optionid="2" optiontext="It shall be done." actions="Cinematic=107" icon="Quest" next="0"></option>
+	</node>
+	<node id="291" npcName="Gabrius" anim="1" text="I understand it is made in the area, your best bet is to search around Haywind's farms." posx="1726" posy="359">
+		<option optionid="1" optiontext="What about the crystal?" next="290"></option>
+		<option optionid="2" optiontext="It shall be done." actions="Cinematic=107" icon="Quest" next="0"></option>
+	</node>
+	<node id="292" npcName="Gabrius" anim="1" text="Despite everything, your soul is still young and naive, Lord Aercrest. Time will take care of that too." posx="138" posy="56">
+		<option optionid="1" optiontext="What do you need from the city, anyway?" next="282"></option>
+	</node>
+	<node id="293" npcName="Gabrius" anim="1" text="Ultimately immortality is a state of mind, which only the strong may bear. The rest would be driven insane by it. I'm glad you understand." posx="575" posy="57">
+		<option optionid="1" optiontext="What do you need from the city, anyway?" next="282"></option>
+	</node>
+	<node id="294" npcName="Gabrius" anim="1" text="Oh, please. Whatever you're thinking of, I'm sure I don't want to hear it." posx="1017" posy="55">
+		<option optionid="1" optiontext="What do you need from the city, anyway?" next="282"></option>
+	</node>
+
+	<node id="305" npcName="Gabrius" anim="1" text="For several years, Eloria has evaded my wrath. Now the moment for her reckoning is finally at hand." posx="43" posy="54">
+		<option optionid="1" optiontext="" next="306"></option>
+	</node>
+	<node id="306" npcName="Gabrius" anim="1" text="It was a pleasure watching her through your eyes, squirming helplessly as you slaughtered Arren. She may not realize this yet, but it was only to be the beginning of her suffering." posx="493" posy="31">
+		<option optionid="1" optiontext="" checks="Var=Q16PoisonedTea-2-2|Q16HadTea-1-1" next="307"></option>
+		<option optionid="2" optiontext="" checks="Var=Q16PoisonedTea-1-1|Q16HadTea-1-1" next="308"></option>
+		<option optionid="3" optiontext="" checks="Var=Q16PoisonedTea-1-2|Q16HadTea-0-0" next="310"></option>
+		<option optionid="4" optiontext="" checks="Var=Q16PoisonedTea-0-0|Q16HadTea-0-1" next="310"></option>
+	</node>
+	<node id="307" npcName="Gabrius" anim="1" text="Truth be told, I had no idea you had it in you, Lord Aercrest! The way you utterly destroyed the man... hahaha! You exceeded all my expectations!" comment="rosethorn variant" posx="926" posy="30">
+		<option optionid="1" optiontext="Destroying my enemies is what I'm known for." next="311"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt; *Say nothing.* &lt;/color&gt;" next="314"></option>
+	</node>
+	<node id="308" npcName="Gabrius" anim="1" text="Though in your execution, I believe you skirted my wishes. I wanted him to suffer, did I not? Yet you granted him a peaceful death..." comment="tipsy owl variant" posx="1370" posy="-131">
+		<option optionid="1" optiontext="" next="309"></option>
+	</node>
+	<node id="309" npcName="Gabrius" anim="1" text="Perhaps still you harbor a rebellious spark? Clearly, I ought to have enforced my will more strictly. No matter, a mistake that shall not be repeated." posx="1370" posy="121">
+		<option optionid="1" optiontext="Heh, all your curses and you still can't control me." next="312"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt; *Say nothing.* &lt;/color&gt;" next="314"></option>
+	</node>
+	<node id="310" npcName="Gabrius" anim="1" text="Though perhaps your execution lacked the flair one might have hoped for, but it will have served its purpose, I'm sure." comment="no poison variant" posx="1830" posy="174">
+		<option optionid="1" optiontext="It was a vile deed and you're vile man." next="313"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt; *Say nothing.* &lt;/color&gt;" next="314"></option>
+	</node>
+	<node id="311" npcName="Gabrius" anim="1" text="And for that you will be rewarded. But my vengeance is not quite complete. I have decided what is to be Eloria's fate and you still have your role to play in it." posx="927" posy="631">
+		<option optionid="1" optiontext="Perhaps you've done enough already? Just let her go." next="315"></option>
+		<option optionid="2" optiontext="What do you plan to do with her?" next="316"></option>
+		<option optionid="3" optiontext="Just tell me what you want from me, and be done with it." next="323"></option>
+	</node>
+	<node id="312" npcName="Gabrius" anim="1" text="Challenging me really isn't in your best interests, Lord Aercrest. I have decided what is to be Eloria's fate and you still have your role to play in it. Nothing you do or say can change that now." posx="1351" posy="633">
+		<option optionid="1" optiontext="Haven't you done enough already? Just let her go." next="315"></option>
+		<option optionid="2" optiontext="What do you plan to do with her?" next="316"></option>
+		<option optionid="3" optiontext="Just tell me what you want from me, and be done with it." next="323"></option>
+	</node>
+	<node id="313" npcName="Gabrius" anim="1" text="Spare me your tiresome lectures, Lord Aercrest. I have decided what is to be Eloria's fate and you still have your role to play in it. But your usefulness to me is soon to be at an end." posx="1772" posy="632">
+		<option optionid="1" optiontext="Haven't you done enough already? Just let her go." next="315"></option>
+		<option optionid="2" optiontext="What do you plan to do with her?" next="316"></option>
+		<option optionid="3" optiontext="Just tell me what you want from me, and be done with it." next="323"></option>
+	</node>
+	<node id="314" npcName="Gabrius" anim="1" text="Brooding, are we Lord Aercrest? Lighten up. I have decided what is to be Eloria's fate and you still have your role to play in it. But once your part is done, I will have no further use for you - I will let you go." posx="2237" posy="511">
+		<option optionid="1" optiontext="Haven't you done enough already? Just let her go." next="315"></option>
+		<option optionid="2" optiontext="What do you plan to do with her?" next="316"></option>
+		<option optionid="3" optiontext="Just tell me what you want from me, and be done with it." next="323"></option>
+	</node>
+	<node id="315" npcName="Gabrius" anim="1" text="You must realize how empty your pleading sounds to my ears. Eloria will suffer immensely, not because I find it necessary to satisfy some burning passion inside me..." posx="2719" posy="34">
+		<option optionid="1" optiontext="" next="317"></option>
+	</node>
+	<node id="316" npcName="Gabrius" anim="1" text="I don't want to spoil the surprise just yet, Lord Aercrest. I must still finalize the preparations, but in the meantime I want you to venture into the swamp and fetch the guest of honor, my ''beloved'' Eloria." posx="2807" posy="614">
+		<option optionid="1" optiontext="''Fetch'' Eloria - how do you see that happening, you want me to ask her nicely?" next="318"></option>
+		<option optionid="2" optiontext="This swamp stretches as far as the eye can see, how will I find her?" next="320"></option>
+		<option optionid="3" optiontext="You want me to abduct her and bring her where exactly?" icon="Quest" next="321"></option>
+	</node>
+	<node id="317" npcName="Gabrius" anim="1" text="But simply because I have come to despise her, and her suffering will please me greatly. And so you see, Lord Aercrest; there is nothing you can possibly say to spare this woman from what is to come." posx="3145" posy="32">
+		<option optionid="1" optiontext="And what would that be exactly, what have you planned?" next="316"></option>
+		<option optionid="2" optiontext="Just tell me what you want from me, and be done with it." next="323"></option>
+	</node>
+	<node id="318" npcName="Gabrius" anim="1" text="Why yes, you can do that if you're feeling courteous. More than likely, however, I expect you'll have to brutally beat her into submission." posx="3332" posy="364">
+		<option optionid="1" optiontext="Wait, this woman - she is a powerful mage, is she not?" next="319"></option>
+		<option optionid="2" optiontext="This swamp stretches as far as the eye can see, how will I find her?" next="320"></option>
+		<option optionid="3" optiontext="You want me to abduct her and bring her where exactly?" icon="Quest" next="321"></option>
+	</node>
+	<node id="319" npcName="Gabrius" anim="1" text="Indeed she is and summoning fire was always her forte, do be aware of that. She will no doubt believe she can turn you to ashes. Trust me, she will discover that she cannot." posx="3766" posy="365">
+		<option optionid="1" optiontext="This swamp stretches as far as the eye can see, how will I find her?" next="320"></option>
+		<option optionid="2" optiontext="You want me to abduct her and bring her where exactly?" icon="Quest" next="321"></option>
+	</node>
+	<node id="320" npcName="Gabrius" anim="1" text="She sits upon the throne of the Silvermirror Witches, deep within the heart of the swamp. You will have to carve your own way through the monsters and the terrain. But the Silvermirror Throne itself will be impossible to miss, once you spot it." posx="3329" posy="747">
+		<option optionid="1" optiontext="''Fetch'' Eloria - how do you see that happening, you want me to ask her nicely?" next="318"></option>
+		<option optionid="2" optiontext="You want me to abduct her and bring her where exactly?" icon="Quest" next="321"></option>
+	</node>
+	<node id="321" npcName="Gabrius" anim="1" text="There is a remote forest cavern, far southeast of the swamp. Deep within, a hallowed stone circle of the ancient druids sits lost and forgotten, only revealed to me by the Grimoire of Truesight you so kindly helped me acquire." posx="3926" posy="776">
+		<option optionid="1" optiontext="" next="322"></option>
+	</node>
+	<node id="322" npcName="Gabrius" anim="1" text="An exceptional place, it is there that Eloria shall meet her fate. And your service to me shall be ended." posx="4378" posy="780">
+		<option optionid="1" optiontext="As you command..." checks="Var=Q16PoisonedTea-2-2|Q16HadTea-1-1" next="324"></option>
+		<option optionid="2" optiontext="As you command..." checks="Var=Q16PoisonedTea-0-1|Q16HadTea-0-1" actions="UpdateQuest=70-2" next="0"></option>
+		<option optionid="3" optiontext="As you command..." checks="Var=Q16PoisonedTea-2-2|Q16HadTea-0-0" actions="UpdateQuest=70-2" next="0"></option>
+	</node>
+	<node id="323" npcName="Gabrius" anim="1" text="Eager to be done with it? Fine. I must still finalize preparations, but in the meantime I want you to venture into the swamp and fetch the guest of honor, my ''beloved'' Eloria." posx="2509" posy="1077">
+		<option optionid="1" optiontext="''Fetch'' Eloria - how do you see that happening, want me to ask her nicely?" next="318"></option>
+		<option optionid="2" optiontext="This swamp stretches as far as the eye can see, how will I find her?" next="320"></option>
+		<option optionid="3" optiontext="You want me to abduct her and bring her where exactly?" icon="Quest" next="321"></option>
+	</node>
+	<node id="324" npcName="Gabrius" anim="1" itemIcon="875" text="As always, serving me diligently has its merits, Lord Aercrest. Take this weapon, for how you handled Arren. I trust it will suit your style." posx="323" posy="318">
+		<option optionid="1" optiontext="" actions="UpdateQuest=70-2,AddItems=875-1" next="0"></option>
+	</node>
+
+	<node id="355" npcName="Gabrius" anim="1" text="Perhaps now, finally, we can move forward without disruptions. There's vengeance to be done." posx="31" posy="22">
+		<option optionid="1" optiontext="Why the sneaking and an isolated shack in the woods, surely you're not hiding from something?" next="357"></option>
+		<option optionid="2" optiontext="Back in the crypts I ran into the remains of a Barbarian King Tyroghar, know anything about him?" next="359"></option>
+		<option optionid="3" optiontext="Vengeance? What are you talking about?" icon="Quest" next="356"></option>
+	</node>
+	<node id="356" npcName="Gabrius" anim="1" text="Everything in good time, Lord Aercrest. Stay in the viscinity, I will call upon you when I am ready to move forward." posx="1526" posy="42">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=76-999"></option>
+	</node>
+	<node id="357" npcName="Gabrius" anim="1" text="Well... I do not wish to be seen, if I can avoid it. The pesky magi of Hydrobor settled in these lands some decades back. I do not want them meddling in my affairs." posx="546" posy="329">
+		<option optionid="1" optiontext="Wait, so you're afraid of them?" next="358"></option>
+		<option optionid="2" optiontext="Back in the crypts I ran into the remains of a Barbarian King Tyroghar, know anything about him?" next="359"></option>
+		<option optionid="3" optiontext="You said you're after vengeance?" icon="Quest" next="356"></option>
+	</node>
+	<node id="358" npcName="Gabrius" anim="1" text="Afraid? Last time I dealt with them, I slaughtered their Archmage. I have a feeling they may still be a little upset about that and I'd rather not rehash our old arguments." posx="1073" posy="484">
+		<option optionid="1" optiontext="Back in the crypts I ran into the remains of a Barbarian King Tyroghar, know anything about him?" next="359"></option>
+		<option optionid="2" optiontext="You said you're after vengeance?" icon="Quest" next="356"></option>
+	</node>
+	<node id="359" npcName="Gabrius" anim="1" text="Nothing more than another inbred woodland warrior of the past, no doubt. I'm not so well versed in the history of these lands, nor should it be a concern to us now." posx="-23" posy="559">
+		<option optionid="1" optiontext="Then where do you hail from?" next="360"></option>
+		<option optionid="2" optiontext="Why the sneaking and an isolated shack in the woods, surely you're not hiding from something?" next="357"></option>
+		<option optionid="3" optiontext="You said you're after vengeance?" icon="Quest" next="356"></option>
+	</node>
+	<node id="360" npcName="Gabrius" anim="1" text="From civilization, compared to this dirt anyway. Are you done asking pointless questions?" posx="548" posy="764">
+		<option optionid="1" optiontext="Why the sneaking and an isolated shack in the woods, surely you're not hiding from something?" next="357"></option>
+		<option optionid="2" optiontext="You said you're after vengeance?" icon="Quest" next="356"></option>
+	</node>
+	<node id="366" npcName="Gabrius" anim="1" text="&lt;color=#9C8C77&gt; *You've reached the end of this demo, but if you feel like it, you're still free to roam the surrounding areas. Thanks for playing, we hope you've enjoyed your time!* &lt;/color&gt;" posx="2054" posy="218">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=76-999"></option>
+	</node>
+
+
+	<node id="375" npcName="Gabrius" anim="1" text="Your methods are rather crude, Lord Aercrest, but I'm sure the message came across." posx="51" posy="30">
+		<option optionid="1" optiontext="Where should I find you?" next="378"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="376" npcName="Gabrius" anim="1" text="A far too peaceful death for my liking, but I'm sure the impact was felt intensely nonetheless." posx="68" posy="550">
+		<option optionid="1" optiontext="Where should I find you?" next="378"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="377" npcName="Gabrius" anim="1" text="Masterfully done, Lord Aercrest! I could almost taste Eloria's anguish through you." posx="75" posy="1093">
+		<option optionid="1" optiontext="Where should I find you?" next="378"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="378" npcName="Gabrius" anim="1" text="Look for me east of the city, my servant, at the edge of the notorious Silvermirror Fen. Travel past Fenwater Village and you shall soon find my encampment. It is time we paid Eloria a visit." posx="1039" posy="467">
+		<option optionid="1" optiontext="Leave." next="0"></option>
+	</node>
+
+
+	<node id="385" npcName="Gabrius" anim="1" text="Once upon a time this was an entirely unassuming swamp, same as any other. Cue generations of witches practicing dark magic and it's crawling with strange monsters. Hm, amusing to think..." posx="70" posy="87">
+		<option optionid="1" optiontext="What are you planning to do with Eloria?" icon="Quest" next="386"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="386" npcName="Gabrius" anim="1" text="Oh, I don't want to spoil the surprise just yet, Lord Aercrest. Rest assured, I have decided what is to be Eloria's fate and you still have your role to play in it." posx="623" posy="23">
+		<option optionid="1" optiontext="" next="387"></option>
+	</node>
+	<node id="387" npcName="Gabrius" anim="1" text="But I must still finalize the preparations. In the meantime I want you to venture into the swamp and fetch the guest of honor, my ''beloved'' Eloria." posx="1093" posy="20">
+		<option optionid="1" optiontext="''Fetch'' Eloria - how do you see that happening, you want me to ask her nicely?" next="388"></option>
+		<option optionid="2" optiontext="This swamp stretches as far as the eye can see, how will I find her?" next="389"></option>
+		<option optionid="3" optiontext="You want me to abduct her and bring her where exactly?" next="390"></option>
+		<option optionid="4" optiontext="As you say." next="0"></option>
+	</node>
+	<node id="388" npcName="Gabrius" anim="1" text="Why yes, you can do that if you're feeling courteous. More than likely, however, I expect you'll have to brutally beat her into submission." posx="1691" posy="18">
+		<option optionid="1" optiontext="This swamp stretches as far as the eye can see, how will I find her?" next="389"></option>
+		<option optionid="2" optiontext="You want me to abduct her and bring her where exactly?" next="390"></option>
+		<option optionid="3" optiontext="As you say." next="0"></option>
+	</node>
+	<node id="389" npcName="Gabrius" anim="1" text="She sits upon the throne of the Silvermirror Witches, deep within the heart of the swamp. You will have to carve your own way through the monsters and the terrain. But the Silvermirror Throne itself will be impossible to miss, once you spot it." posx="1127" posy="527">
+		<option optionid="1" optiontext="You want me to abduct her and bring her where exactly?" next="390"></option>
+		<option optionid="2" optiontext="''Fetch'' Eloria - how do you see that happening, you want me to ask her nicely?" next="388"></option>
+		<option optionid="3" optiontext="As you say." next="0"></option>
+	</node>
+	<node id="390" npcName="Gabrius" anim="1" text="There is a remote forest cavern, far southeast of the swamp. Deep within, a hallowed stone circle of the ancient druids sits lost and forgotten, only revealed to me by the Grimoire of Truesight you so kindly helped me acquire." posx="1615" posy="472">
+		<option optionid="1" optiontext="" next="391"></option>
+	</node>
+	<node id="391" npcName="Gabrius" anim="1" text="An exceptional place, it is there that Eloria shall meet her fate. And your service to me shall be ended." posx="2089" posy="475">
+		<option optionid="1" optiontext="''Fetch'' Eloria - how do you see that happening, you want me to ask her nicely?" next="388"></option>
+		<option optionid="2" optiontext="This swamp stretches as far as the eye can see, how will I find her?" next="389"></option>
+		<option optionid="3" optiontext="As you say." next="0"></option>
+	</node>
+
+
+
+
+	<node id="1000" npcName="Gabrius" anim="1" text="Upon their downfall, the Qaeshtari sealed the way into this temple, forever." contextBefore="ETHERLIGHT BARRIER CINEMA" contextAfter="" posx="91" posy="68">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1001" npcName="Gabrius" anim="1" text="This barrier they erected must have stood for thousands of years. I doubt anyone has managed to pass through." contextBefore="" contextAfter="" posx="505" posy="72">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1002" npcName="Gabrius" anim="1" text="Today it falls." contextBefore="" contextAfter="" posx="923" posy="72">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1003" npcName="Gabrius" anim="1" text="With the crystal and the spellbound bark you have brought me, I can fashion a focus for my magic." contextBefore="" contextAfter="" posx="1353" posy="76">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1004" npcName="Gabrius" anim="1" text="A focus that allows me to channel enough power to even challenge the works of the Ancients! Observe, slave!" contextBefore="" contextAfter="" posx="1793" posy="77">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+
+	<node id="1005" npcName="Gabrius" anim="1" text="I must perform the scrying itself to unveil Eloria, but not here." contextBefore="" contextAfter="" posx="1232" posy="973">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1006" npcName="Gabrius" anim="1" text="Across the small pond east there remains a Qaeshtari stone circle; a place dedicated for ritual spells. Meet me there and we may begin." contextBefore="" contextAfter="" posx="1674" posy="974">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>	
+
+	<node id="1007" npcName="Gabrius" anim="1" text="Whatever happens, my channeling must not be disturbed. Use my staff if you have to." contextBefore="" contextAfter="" posx="54" posy="46">
+		<option optionid="1" optiontext="" next="1008"></option>
+	</node>
+	<node id="1008" npcName="Gabrius" anim="1" text="It won't matter whether there are wolves or bears, or an immortal extradimensional monster. It will disintegrate them all the same." contextBefore="" contextAfter="" posx="470" posy="45">
+		<option optionid="1" optiontext="" next="1009"></option>
+	</node>
+	<node id="1009" npcName="Gabrius" anim="1" text="Brace yourself, Lord Aercrest. It's time I begin." contextBefore="" contextAfter="" posx="897" posy="47">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+
+	<node id="1010" npcName="Gabrius" anim="1" text="I trust even you must be familiar with the witches of the Silvermirror Fen, Lord Aercrest." contextBefore="vision after grimoire maby" contextAfter="" posx="40" posy="26">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1011" npcName="Gabrius" anim="1" text="Folklore would have you believe there's only ever been the one, immortal witch." contextBefore="" contextAfter="" posx="37" posy="246">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1012" npcName="Gabrius" anim="1" text="But in truth, there have been many over the centuries. And at times, she has been an entire coven." contextBefore="" contextAfter="" posx="461" posy="25">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1013" npcName="Gabrius" anim="1" text="But now the witch has come to be none other than my beloved ex-companion Eloria Mirvren. A clever disguise, I suppose." contextBefore="" contextAfter="" posx="462" posy="246">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1014" npcName="Gabrius" anim="1" text="It appears some time back she defeated the hateful hag that was the previous witch and decided to adopt her identity." contextBefore="" contextAfter="" posx="881" posy="29">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1015" npcName="Gabrius" anim="1" text="Coincidentally she came to rescue a young druid, Arren Irethorn, from the witch's captivity. Curious..." contextBefore="" contextAfter="" posx="894" posy="246">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1016" npcName="Gabrius" anim="1" text="The two developed a rather close bond. I wonder, does Eloria not know? " contextBefore="" contextAfter="" posx="1324" posy="27">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1017" npcName="Gabrius" anim="1" text="Love hurts... literally..." contextBefore="" contextAfter="" posx="1330" posy="243">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+
+	<node id="1020" npcName="Gabrius" anim="1" text="The monolith appears to be lifeless now. You'll have to restore power to it somehow." contextBefore="AT ANCIENT MONOLITH" posx="34" posy="49">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1021" npcName="Rothar" anim="1" text="Any ideas for how to do that?" posx="461" posy="50">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1022" npcName="Gabrius" anim="1" text="This monolith is merely a part of a larger structure buried beneath dirt." posx="890" posy="50">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1023" npcName="Gabrius" anim="1" text="Look for other places nearby, where Ancient remains stick out of the ground." posx="1321" posy="53">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1024" npcName="Gabrius" anim="1" text="If you can activate them somehow, perhaps the power will feed back to the monolith here." posx="1756" posy="55">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+
+	<node id="1025" npcName="Ancient Apparition" anim="1" text="It seeks the great temple, Ahran'yi Etriem, and it shall find it..." posx="61" posy="38">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1026" npcName="Ancient Apparition" anim="1" text="The temple overlooks these lands, these forests, on a hill surrounded by endless trees, to the north..." posx="499" posy="38">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1027" npcName="Ancient Apparition" anim="1" text="But it shall find the great temple sealed by its guardian. If Ta'Irek deems it worthy, it may pass..." posx="942" posy="43">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1028" npcName="Rothar" anim="1" text="A guardian...? Worthy, how exactly...?" posx="1383" posy="45">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1029" npcName="Gabrius" anim="1" text="*enters from behind*" posx="1829" posy="49">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1030" npcName="Gabrius" anim="1" text="It hardly matters. We make our own entrance, regardless of how the temple guardian feels about it." posx="2263" posy="52">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1031" npcName="Ancient Apparition" anim="1" text="The presence of an illicit Grimoire detected! Its transgressions have been recorded, the Masters must be made aware!" posx="2709" posy="50">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1032" npcName="Gabrius" anim="1" text="Oh, I don't think your 'Masters' are much aware of anything these days. But I do thank you for the service you've provided me." posx="3142" posy="52">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="1033" npcName="Ancient Apparition" anim="1" text="It may hear the Masters' voice no longer! The Zatrin falls silent." posx="3578" posy="51">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+</dialogue>
+
+
+
+

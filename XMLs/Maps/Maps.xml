@@ -1,0 +1,406 @@
+<!--
+=== Default values === 
+fogginess 0.6
+npcviewdistance 50
+fogcolor  63,98,106
+viewdistance 90
+ambientcolor 128,128,128
+indoorsunlight 0.2
+sunlight 1
+suncolor 255,251,230
+-->
+<maps>
+	<map sceneid="0,0" name="" music="27" ambience="1"></map>
+	<map sceneid="0,1" name="" music="27" ambience="1"></map>
+	<map sceneid="0,2" name="" music="27" ambience="1"></map>
+	<map sceneid="0,3" name="" music="27" ambience="1"></map>
+	<map sceneid="0,4" name="" music="27" ambience="1"></map>
+	<map sceneid="0,5" name="" music="27" ambience="1"></map>
+	<map sceneid="0,6" name="" music="27" ambience="1"></map>
+	<map sceneid="0,7" name="" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="0,8" name="Prowler's Thicket" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="0,9" name="Harshwind Shore" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="0,10" name="Harshwind Shore" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="0,11" name="" music="27" ambience="1"></map>
+	<map sceneid="0,12" name="" music="27" ambience="1"></map>
+	<map sceneid="0,13" name="" music="27" ambience="1"></map>
+	<map sceneid="0,14" name="Prototype Map" music="27" ambience="1"></map>
+
+	<map sceneid="1,0" name="" music="27" ambience="1"></map>
+	<map sceneid="1,1" name="" music="27" ambience="1"></map>
+	<map sceneid="1,2" name="" music="27" ambience="1"></map>
+	<map sceneid="1,3" name="" music="27" ambience="1"></map>
+	<map sceneid="1,4" name="" music="27" ambience="1"></map>
+	<map sceneid="1,5" name="" music="27" ambience="1"></map>
+	<map sceneid="1,6" name="" music="27" ambience="1"></map>
+	<map sceneid="1,7" name="Prowler's Thicket" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="1,8" name="Prowler's Thicket" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="1,9" name="Harshwind Shore" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="1,10" name="Harshwind Shore" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="1,11" name="" music="27" ambience="1"></map>
+	<map sceneid="1,12" name="" music="27" ambience="1"></map>
+	<map sceneid="1,13" name="" music="27" ambience="1"></map>
+	<map sceneid="1,14" name="" music="27" ambience="1"></map>
+
+	<map sceneid="2,0" name="" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="2,1" name="Oldroot Fringes" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="2,2" name="Oldroot Fringes" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="2,3" name="Oldroot Forest" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="2,4" name="Oldroot Forest" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="2,5" name="Forest's Edge" music="38" ambience="1" fogginess="1.2" fogcolor="50,50,50" sunlight="0.6"></map>
+	<map sceneid="2,6" name="The Green Coppice" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="2,7" name="Forest's Edge" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="2,8"  name="Prowler's Thicket" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="2,9" name="Thornhill" fogcolor="50,50,50" sunlight="0.6" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="2,10" name="Thornhill City" fogcolor="50,50,50" sunlight="0.6" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="2,11" name="Thornhill" fogcolor="50,50,50" sunlight="0.6" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="2,12" name="" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="2,13" name="Haywind sewer" music="16" suncolor="0,0,0" fogginess="2" noworldmap="1" ambience="5" fogcolor="0,0,0" viewdistance="40" indoorsunlight="0" indoors="1"></map>
+	<map sceneid="2,14" name="The Steward's Gatehouse" music="16" ambience="5" fogcolor="0,0,0" viewdistance="40" indoorsunlight="0" indoors="1"></map>
+
+	<map sceneid="3,0" name="" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="3,1" name="West Aure Banks" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="3,2" name="West Aure Banks" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="3,3" name="Ashenside Fields" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="3,4" name="Ashenside Fields" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="3,5" name="Ashenside Fields" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="3,6"  name="The Green Coppice" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="38" ambience="1"></map>
+	<map sceneid="3,7"  name="The Green Coppice" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="3,8"  name="Golemwoods" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="3,9" name="Thornhill City" fogcolor="50,50,50" sunlight="0.6" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="3,10" name="Thornhill City" fogcolor="50,50,50" sunlight="0.6" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="3,11" name="Thornhill City" fogcolor="50,50,50" sunlight="0.6" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="3,12" name="" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="3,13" name="" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="3,14" name="Small Island Upon River Aure" respawnmap="3,10" comment="fight map Q90" music="38" viewdistance="30" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+
+	<map sceneid="4,0" name="" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="4,1" name="" music="48" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="4,2" name="Mount Silderstone" music="48" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="4,3" name="Haywind" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="4,4" name="Haywind" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="4,5" name="Ashenside Fields" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="4,6" name="The Green Coppice" music="38" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="4,7"  name="The Green Coppice" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="4,8"  name="Golemwoods" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="4,9" name="Thornhill City" fogcolor="50,50,50" sunlight="0.6" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="4,10" name="Thornhill City" fogcolor="50,50,50" sunlight="0.6" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="4,11" name="Thornhill City" fogcolor="50,50,50" sunlight="0.6" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="4,12" name="" music="27" ambience="1"></map>
+	<map sceneid="4,13" name="" music="27" ambience="1"></map>
+	<map sceneid="4,14" name="" music="27" ambience="1"></map>
+
+	<map sceneid="5,0" name="" music="48" ambience="1"></map>
+	<map sceneid="5,1" name="Mount Silderstone" music="48" ambience="1"></map>
+	<map sceneid="5,2" name="Mount Silderstone" music="48" ambience="1"></map>
+	<map sceneid="5,3" name="Haywind" music="27" ambience="8" viewdistance="60"></map>
+	<map sceneid="5,4" name="Haywind" music="27" ambience="8" viewdistance="60"></map>
+	<map sceneid="5,5" name="Haywind" music="27" ambience="8" viewdistance="60"></map>
+	<map sceneid="5,6" name="Aure Cliffs" music="27" ambience="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="5,7"  name="River Aure Banks" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="5,8"  name="River Aure Banks" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="5,9" name="Thornhill City" fogcolor="50,50,50" sunlight="0.6" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="5,10" name="Thornhill City" fogcolor="50,50,50" sunlight="0.6" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="5,11" name="Thornhill City" fogcolor="50,50,50" sunlight="0.6" fogginess="1.2" music="51" ambience="1"></map>
+	<map sceneid="5,12" name="" music="27" ambience="1"></map>
+	<map sceneid="5,13"  name="Thornhill Catacombs" music="56"  connectedmaps="5-14" indoorsunlight="0" suncolor="124,165,255" ambience="5"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="5,14"  name="Thornhill Catacombs" music="56"  connectedmaps="5-13" indoorsunlight="0" suncolor="124,165,255" ambience="5"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+
+	<map sceneid="6,0" name="Mount Silderstone" music="48" ambience="1"></map>
+	<map sceneid="6,1" name="Mount Silderstone" music="48" ambience="1"></map>
+	<map sceneid="6,2" name="Haywind Outskirts" music="27" ambience="1"></map>
+	<map sceneid="6,3" name="Haywind Outskirts" music="27" ambience="1"></map>
+	<map sceneid="6,4" name="Haywind Outskirts" music="27" ambience="1"></map>
+	<map sceneid="6,5" name="Haywind Outskirts" music="27" ambience="1"></map>
+	<map sceneid="6,6" name="River Aure Banks" music="27" ambience="1"></map>
+	<map sceneid="6,7" name="River Aure Banks" music="27" ambience="1"></map>
+	<map sceneid="6,8" name="" music="51" ambience="1"></map>
+	<map sceneid="6,9" name="Fenwater Village" music="51" ambience="1" fogcolor="53,63,41" fogginess="1.25"></map>
+	<map sceneid="6,10" name="" music="51" ambience="1" fogcolor="53,63,41" fogginess="1.25"></map>
+	<map sceneid="6,11" name="" music="51" ambience="1" fogcolor="53,63,41" fogginess="1.25"></map>
+	<map sceneid="6,12" name="" music="27" ambience="1" fogcolor="53,63,41" fogginess="1.25"></map>
+	<map sceneid="6,13" name="Marauder's Underbelly" dontloadnearbyscenes="1" respawnmap="4,7" music="47" ambience="14" indoorsunlight="0" suncolor="51,51,204"  fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="6,14"  name="Thornhill Catacombs"  music="40" ambience="14" dontloadnearbyscenes="1" indoorsunlight="0" suncolor="0,0,0"  fogcolor="0,0,0" ambientcolor="0,0,0" indoors="1"></map>
+
+	<map sceneid="7,0" name="Mount Silderstone" music="48" ambience="1"></map>
+	<map sceneid="7,1" name="Ratcliffe Village" music="31" ambience="1" fogginess="1" fogcolor="72,72,72"></map>
+	<map sceneid="7,2" name="East Aure Banks" music="27" ambience="1"></map>
+	<map sceneid="7,3" name="Grainwater" music="27" ambience="1"></map>
+	<map sceneid="7,4" name="Haywind Fields" music="27" ambience="1"></map>
+	<map sceneid="7,5" name="Barnsmill Estate" music="27" ambience="1"></map>
+	<map sceneid="7,6" name="Meadow's Way" music="27" ambience="1"></map>
+	<map sceneid="7,7" name="Sheltered Grove" music="27" ambience="1"></map>
+	<map sceneid="7,8" name="" music="51" ambience="1"></map>
+	<map sceneid="7,9" name="Fenwater Village" music="51" ambience="1" fogcolor="53,63,41" fogginess="1.25"></map>
+	<map sceneid="7,10" name="Silvermirror Fen" music="15" ambience="15" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="7,11" name="Silvermirror Fen" music="15" ambience="15" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="7,12" name="" music="27" ambience="1" fogcolor="53,63,41" fogginess="1.25"></map>
+	<map sceneid="7,13" name="Flooded Cave" music="52" ambience="5" indoors="1" respawnmap="6,7"  fogcolor="0,0,0" fogginess="1" connectedmaps="8-13" dontloadnearbyscenes="1" indoorsunlight="0.3" suncolor="0,0,0" noworldmap="1" borderleft="1" borderup="1" borderdown="1"></map>
+	<map sceneid="7,14" name="Bandit Fortress Basement" music="47" respawnmap="4,7" dontloadnearbyscenes="1" indoorsunlight="0.3" suncolor="124,165,255" ambience="5" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+
+	<map sceneid="8,0" name="Mount Silderstone" music="48" ambience="1"></map>
+	<map sceneid="8,1" name="Forsaken Woods" music="31" fogcolor="63,63,63" fogginess="1.2" ambience="1"></map>
+	<map sceneid="8,2" name="Haywoods" music="27" ambience="1"></map>
+	<map sceneid="8,3" name="Haywoods" music="27" ambience="1"></map>
+	<map sceneid="8,4" name="Haywoods" music="27" ambience="1"></map>
+	<map sceneid="8,5" name="Haywoods" music="27" ambience="1"></map>
+	<map sceneid="8,6" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="8,7" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="8,8" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="8,9" name="Silvermirror Fen" music="27" ambience="1"></map>
+	<map sceneid="8,10"  name="Silvermirror Fen" music="15" ambience="15" fogcolor="53,63,41" fogginess="1.25"></map>
+	<map sceneid="8,11"  name="Silvermirror Fen" music="15" ambience="15" fogcolor="53,63,41" fogginess="1.25"></map>
+	<map sceneid="8,12"  name="Silvermirror Fen" music="15" ambience="15" fogcolor="53,63,41" fogginess="1.25"></map>
+	<map sceneid="8,13" name="Flooded Cave" music="52" ambience="5"  respawnmap="6,7"  indoors="1" fogcolor="0,0,0" fogginess="2" connectedmaps="7-13" dontloadnearbyscenes="1" indoorsunlight="0" suncolor="0,0,0" noworldmap="1" borderright="1" borderup="1" borderdown="1"></map>
+	<map sceneid="8,14"  name="Character Creation" music="18"  viewdistance="80" dontloadnearbyscenes="1"  indoorsunlight="0.3" suncolor="124,165,255" ambience="10" fogginess="1.5"  fogcolor="0,10,20" ambientcolor="70,70,70" indoors="1"></map>
+
+	<map sceneid="9,0" name="" music="27" ambience="1"></map>
+	<map sceneid="9,1" name="Forsaken Woods" music="31" ambience="1" fogginess="1.4" fogcolor="50,54,58" sunlight="0.75" ></map>
+	<map sceneid="9,2" name="Spruce Shade Forest" music="27" ambience="1" fogginess="1" fogcolor="39,53,43" sunlight="0.5"></map>
+	<map sceneid="9,3" name="Spruce Shade Forest" music="31" ambience="1"></map>
+	<map sceneid="9,4" name="Timberwell Village" music="27" ambience="1"></map>
+	<map sceneid="9,5" name="The Stone's Heart" music="27" ambience="1"></map>
+	<map sceneid="9,6" name="Fog's Dwindling" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="9,7" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="9,8" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="9,9" name="" music="27" ambience="1"></map>
+	<map sceneid="9,10"  name="Silvermirror Fen" music="15" ambience="15" fogcolor="53,63,41" fogginess="1.5"></map>
+	<map sceneid="9,11"  name="Silvermirror Fen" music="15" ambience="15" fogcolor="53,63,41" fogginess="1.5"></map>
+	<map sceneid="9,12"  name="Silvermirror Fen" music="15" ambience="15" fogcolor="53,63,41" fogginess="1.5"></map>
+	<map sceneid="9,13" name="Forbidden Cave" music="4" ambience="5" indoors="1" fogcolor="50,0,0" fogginess="1" dontloadnearbyscenes="1" indoorsunlight="0.0" suncolor="0,0,0" noworldmap="1" borderleft="1" borderright="1" borderup="1" borderdown="1"></map>
+	<map sceneid="9,14" name="" music="27" ambience="1"></map>
+
+	<map sceneid="10,0" name="" music="27" ambience="1"></map>
+	<map sceneid="10,1" name="" music="27" ambience="1"></map>
+	<map sceneid="10,2" name="Spruce Shade Forest" music="27" ambience="1"></map>
+	<map sceneid="10,3" name="Spruce Shade's Rest" music="31"  ambience="3" viewdistance="70"   fogginess="1.25" fogcolor="50,50,50" ambientcolor="77,77,77" ></map>
+	<map sceneid="10,4" name="Mossneedle Pond" music="27" ambience="1" fogginess="0.8"></map>
+	<map sceneid="10,5" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="10,6" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="10,7" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="10,8" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="10,9" name="" music="27" ambience="1"></map>
+	<map sceneid="10,10"  name="Silvermirror Fen" music="15" ambience="15" fogcolor="28,30,27" sunlight="0.75" fogginess="1.2"></map>
+	<map sceneid="10,11"  name="Silvermirror Fen" music="15" ambience="15" fogcolor="28,30,27" sunlight="0.75" fogginess="1.2"></map>
+	<map sceneid="10,12"  name="Silvermirror Fen" music="15" ambience="15" fogcolor="28,30,27" sunlight="0.75" fogginess="1.2"></map>
+	<map sceneid="10,13" name="Sunken Tunnels" music="52" ambience="5" indoors="1" fogcolor="0,0,0" fogginess="1"  dontloadnearbyscenes="1" indoorsunlight="0" suncolor="0,0,0" nominimap="1" noworldmap="1" borderleft="1" borderup="1" borderdown="1" ambientcolor="0,0,0" connectedmaps="11-13" ></map>
+	<map sceneid="10,14" name="Dark Ravine" music="28" connectedmaps="7-0" dontloadnearbyscenes="1" indoorsunlight="0.3" suncolor="0,0,0" ambience="5" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1" ></map>
+	<map sceneid="10,15" name="The Blackhair's Nest" music="28" fogginess="1" borderleft="1" borderup="1" indoorsunlight="0" suncolor="255,205,125" dontloadnearbyscenes="1" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="101,101,101" indoors="1"></map>
+
+	<map sceneid="11,0" name="" music="27" ambience="1"></map>
+	<map sceneid="11,1" name="" music="27" ambience="1"></map>
+	<map sceneid="11,2" name="Spruce Shade's Rest" music="31"  ambience="3" viewdistance="70"   fogginess="1.25" fogcolor="50,50,50" ambientcolor="77,77,77" ></map>
+	<map sceneid="11,3" name="Spruce Shade's Rest" music="31"  ambience="3" viewdistance="70"   fogginess="1.25" fogcolor="50,50,50" ambientcolor="77,77,77" ></map>
+	<map sceneid="11,4" name="" music="27" ambience="1"></map>
+	<map sceneid="11,5" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="11,6" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="11,7" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="11,8" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="11,9" name="" music="27" ambience="1"></map>
+	<map sceneid="11,10"  name="Silvermirror Fen" music="15" ambience="15" fogcolor="28,30,27" sunlight="0.75" fogginess="1.2"></map>
+	<map sceneid="11,11"  name="Silvermirror Fen" music="15" ambience="15" fogcolor="28,30,27" sunlight="0.75" fogginess="1.2"></map>
+	<map sceneid="11,12"  name="Silvermirror Fen" music="15" ambience="15" fogcolor="28,30,27" sunlight="0.75" fogginess="1.2"></map>
+	<map sceneid="11,13" name="Crustacean Chamber" music="52" ambience="5" indoors="1" fogcolor="0,0,0" fogginess="1"  dontloadnearbyscenes="1" indoorsunlight="0" suncolor="0,0,0" nominimap="1" noworldmap="1" borderright="1" borderup="1" borderdown="1" ambientcolor="100,80,60" connectedmaps="10-13" ></map>
+	<map sceneid="11,14" name="" music="27" ambience="1"></map>
+	<map sceneid="11,15" name="Cave" music="28" fogginess="1" borderleft="1" borderup="1" indoorsunlight="0" suncolor="255,205,125" dontloadnearbyscenes="1" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="101,101,101" indoors="1"></map>
+
+	<map sceneid="12,0" name="" music="27" ambience="1"></map>
+	<map sceneid="12,1" name="" music="27" ambience="1"></map>
+	<map sceneid="12,2" name="" music="27" ambience="1"></map>
+	<map sceneid="12,3" name="" music="27" ambience="1"></map>
+	<map sceneid="12,4" name="" music="27" ambience="1"></map>
+	<map sceneid="12,5" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="12,6" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="12,7" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="12,8" name="The Mistywood" music="43" ambience="13" fogcolor="53,63,41" fogginess="1"></map>
+	<map sceneid="12,9" name="" music="27" ambience="1"></map>
+	<map sceneid="12,10" name="" music="27" ambience="1"></map>
+	<map sceneid="12,11" name="" music="27" ambience="1"></map>
+	<map sceneid="12,12" name="" music="27" ambience="1"></map>
+	<map sceneid="12,13" name="" music="27" ambience="1"></map>
+	<map sceneid="12,14"  name="Barnsmill's Basement" music="24"  indoorsunlight="0" viewdistance="45" suncolor="124,165,255" ambience="2"   fogcolor="48,44,32" ambientcolor="50,50,50" indoors="1"></map>
+
+
+	<map sceneid="13,0"  name="Spruce Shade Crypts" music="4"  connectedmaps="13-1" indoorsunlight="0" suncolor="124,165,255" ambience="5"   noworldmap="1" nominimap="1" fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="13,1"  name="Spruce Shade Crypts" music="4" connectedmaps="13-0,13-2,14-1" indoorsunlight="0" suncolor="124,165,255" ambience="5"  noworldmap="1" nominimap="1" fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="13,2"  name="Spruce Shade Crypts" music="16" connectedmaps="13-1"  indoorsunlight="0" suncolor="124,165,255" ambience="5"   noworldmap="1" nominimap="1" fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="13,3"  name="Tomb of the Elder Druid" music="16"  dontloadnearbyscenes="1" indoorsunlight="0" suncolor="124,165,255" ambience="5"   noworldmap="1" nominimap="1" fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="13,4"  name="Cave" music="28" dontloadnearbyscenes="1" indoorsunlight="0.3" suncolor="124,165,255" ambience="5" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="13,5"  name="Cave" music="28" dontloadnearbyscenes="1" indoorsunlight="0.3" suncolor="124,165,255" ambience="5" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="13,6"  name="Greywall Dungeons" music="16" dontloadnearbyscenes="1" indoorsunlight="0.3" suncolor="124,165,255" ambience="5"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="13,7"  name="Greywall Dungeons" music="16" dontloadnearbyscenes="1" indoorsunlight="0.3" suncolor="124,165,255" ambience="5"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="13,8"  name="The Hallowed Cave" respawnmap="13,9"  connectedmaps="13-8,13-9,14-8,14-9"  music="4" fogginess="1" borderleft="1" borderup="1" indoorsunlight="0.6" suncolor="255,205,125" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="101,101,101" indoors="1"></map>
+	<map sceneid="13,9"  name="The Hallowed Cave" respawnmap="13,9"  connectedmaps="13-8,13-9,14-8,14-9"  music="4" fogginess="1" borderleft="1" borderup="1" indoorsunlight="0.6" suncolor="255,205,125" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="101,101,101" indoors="1"></map>
+	<map sceneid="13,10" name="Ethereal Cave" music="49" connectedmaps="14-10" fogstart="1.25" indoorsunlight="0.1" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="95,30,80" ambientcolor="190,75,160" indoors="1" borderleft="1" borderup="1" borderdown="1"></map>
+	<map sceneid="13,11" name="Hidden Mistywood Grove" music="27" dontloadnearbyscenes="1" ambience="1"></map>
+	<map sceneid="13,12" name="" music="27" ambience="1"></map>
+	<map sceneid="13,13" name="" music="27" ambience="1"></map>
+	<map sceneid="13,14" name="" music="27" ambience="1"></map>
+	<map sceneid="13,15" name="Forest Troll Hideout" music="28" fogginess="1"  dontloadnearbyscenes="1" indoorsunlight="0" suncolor="255,205,125" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="101,101,101" indoors="1"></map>
+
+	<map sceneid="14,0"  name="Spruce Shade Crypts" music="4" connectedmaps="14-1"  indoorsunlight="0" suncolor="124,165,255" ambience="5" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="14,1"  name="Spruce Shade Crypts" music="4" connectedmaps="14-0,14-2,13-1"  indoorsunlight="0" suncolor="124,165,255" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="14,2"  name="Spruce Shade Crypts" music="16"  indoorsunlight="0" suncolor="124,165,255" ambience="5"   noworldmap="1" nominimap="1" fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="14,3"  name="Wolfbrother's Sanctum" music="28"  dontloadnearbyscenes="1"  indoorsunlight="0" suncolor="124,165,255" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="14,4"  name="Ratcliffe Mines" music="28"   dontloadnearbyscenes="1" connectedmaps="14-4,14-5" indoorsunlight="0.15" suncolor="124,165,255" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="14,5"  name="Ratcliffe Mines" music="28"  dontloadnearbyscenes="1" connectedmaps="14-4,14-5" indoorsunlight="0.15" suncolor="124,165,255" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="14,6"  name="Greywall Dungeons" music="16" dontloadnearbyscenes="1" indoorsunlight="0.3" suncolor="124,165,255" noworldmap="1" ambience="5"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="14,7"  name="Cave" music="28"  indoorsunlight="0.3" dontloadnearbyscenes="1" suncolor="124,165,255" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="14,8"  name="Cave" music="28"  indoorsunlight="0.3" dontloadnearbyscenes="1" suncolor="124,165,255" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="14,9"  name="The Hallowed Cave"  connectedmaps="13-8,13-9,14-8,14-9"  music="4" fogginess="1" borderleft="1" borderup="1" indoorsunlight="0.6" suncolor="255,205,125" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="101,101,101" indoors="1"></map>
+	<map sceneid="14,10" name="Ethereal Cave" music="49" connectedmaps="13-10" fogstart="1.25" indoorsunlight="0.1" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="95,30,80" ambientcolor="190,75,160" indoors="1" borderright="1" borderup="1" borderdown="1"></map>
+	<map sceneid="14,11" name="Crypt" music="16" fogstart="1.25" indoorsunlight="0" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="60,60,60" indoors="1"></map>
+	<map sceneid="14,12" name="Graveyard" music="4"  ambience="3"   fogcolor="20,35,50" ambientcolor="20,35,50" ></map>
+	<map sceneid="14,13" name="Ruins dungeon" music="4" ambience="5" fogcolor="20,20,40" ambientcolor="20,20,40" indoors="1"></map>
+	<map sceneid="14,14" name="The Incel Room" music="27" dontloadnearbyscenes="1" ambience="1"></map>
+
+	<map sceneid="15,0" name="Lordswood" music="35" ambience="1" noworldmap="1"></map>
+	<map sceneid="15,1" name="Lordswood" music="35" ambience="1" noworldmap="1"></map>
+	<map sceneid="15,2" name="Lordswood" music="35" ambience="1" borderleft="1" noworldmap="1"></map>
+	<map sceneid="15,3" name="Lordswood" music="35" ambience="1" borderleft="1" noworldmap="1" fogcolor="50,50,50" sunlight="0.8" fogginess="1.2"></map>
+	<map sceneid="15,4" name="Lordswood" music="35" ambience="1" borderleft="1" borderup="1" noworldmap="1"></map>
+	<map sceneid="15,5" name="" music="27" ambience="1" noworldmap="1"></map>
+	<map sceneid="15,6" name="" music="27" ambience="1" noworldmap="1"></map>
+	<map sceneid="15,7" name="" music="27" ambience="1" noworldmap="1"></map>
+	<map sceneid="15,10" name="Underground Tunnel" music="28" fogginess="1" borderleft="1" borderdown="1" indoorsunlight="0.6" suncolor="255,205,125" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="101,101,101" indoors="1"></map>
+	<map sceneid="15,11" name="Underground Tunnel" music="28" fogginess="1" borderleft="1" borderup="1" indoorsunlight="0.6" suncolor="255,205,125" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="101,101,101" indoors="1"></map>
+
+	<map sceneid="16,0" name="Lordswood" music="35" ambience="1" noworldmap="1"></map>
+	<map sceneid="16,1" name="Lordswood" music="35" ambience="1" noworldmap="1"></map>
+	<map sceneid="16,2" name="Aercrest Grounds" music="35" ambience="1" npcviewdistance="100" noworldmap="1"></map>
+	<map sceneid="16,3" name="Aercrest Grounds" music="35" ambience="1" npcviewdistance="100" noworldmap="1"></map>
+	<map sceneid="16,4" name="Lordswood" music="35" ambience="1" borderup="1" noworldmap="1"></map>
+	<map sceneid="16,6" name="Temple of Etherlight: Ruins" indoors="1" comment="inside ruins building" dontloadnearbyscenes="1" fogcolor="50,50,50" ambientcolor="73,73,73" sunlight="0" fogginess="1.2" music="30" ambience="13"></map>
+	<map sceneid="16,7" name="Temple of Etherlight: Portal Chambers"  music="30"  dontloadnearbyscenes="1" indoorsunlight="0.5" fogginess="0.3" suncolor="88,88,88" ambience="5" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="88,88,88" indoors="1"></map>
+	<map sceneid="16,8"  name="Temple of Etherlight: Guardian's Chamber" comment="bossfight" npcviewdistance="100" music="45"  dontloadnearbyscenes="1" indoorsunlight="0.5" fogginess="0.3" suncolor="88,88,88" ambience="5" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="88,88,88" indoors="1"></map>
+	<map sceneid="16,10" name="Cave" music="28" fogginess="1" borderdown="1" borderright="1" indoorsunlight="0.6" suncolor="255,205,125" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="101,101,101" indoors="1"></map>
+	<map sceneid="16,11" name="Cave" music="28" fogginess="1" borderup="1" borderright="1" indoorsunlight="0.6" suncolor="255,205,125" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="101,101,101" indoors="1"></map>
+	<map sceneid="16,12" name="Witch's Barrow" music="28" respawnmap="10,11" fogginess="1"  dontloadnearbyscenes="1" indoorsunlight="0" suncolor="255,205,125" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="101,101,101" indoors="1"></map>
+	<map sceneid="16,13" name="Dungeons of Greywall - The Upper Halls" dontloadnearbyscenes="1" noborder="1" borderleft="1" borderdown="1" music="65" ambience="5" respawnmap="9,1"  viewdistance="40" fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+	<map sceneid="16,14" name="Dungeons of Greywall - The Upper Halls" dontloadnearbyscenes="1" noborder="1" borderleft="1" borderup="1" connectedmaps="16-14,17-14" respawnmap="9,1"  music="65" ambience="5"  fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+	<map sceneid="16,15" name="Dungeons of Greywall - The Oubliette" dontloadnearbyscenes="1" noborder="1" borderdown="1" borderleft="1" connectedmaps="17-15,17-16,16-15,16-16" respawnmap="19,15" music="65" ambience="5"   fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+	<map sceneid="16,16" name="Dungeons of Greywall - The Oubliette" dontloadnearbyscenes="1" noborder="1" borderup="1" borderleft="1" connectedmaps="17-15,17-16,16-15,16-16" respawnmap="19,15" music="65" ambience="5"   fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+
+	<map sceneid="17,0" name="Lordswood" music="35" ambience="1" noworldmap="1"></map>
+	<map sceneid="17,1" name="Aercrest Grounds" music="35" ambience="1" noworldmap="1"></map>
+	<map sceneid="17,2" name="Aercrest Manor" music="35" ambience="1" npcviewdistance="100" noworldmap="1"></map>
+	<map sceneid="17,3" name="Aercrest Grounds" music="35" ambience="1" npcviewdistance="100" noworldmap="1"></map>
+	<map sceneid="17,4" name="Lordswood" music="27" ambience="1" noworldmap="1"></map>
+	<map sceneid="17,5" name="" music="27" ambience="1" noworldmap="1"></map>
+	<map sceneid="17,6" name="Thornhill Dungeons" npcviewdistance="100" music="28" dontloadnearbyscenes="1" indoorsunlight="0.3" suncolor="124,165,255" ambience="5" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="17,7" name="Temple of Etherlight: Ruins" music="30" dontloadnearbyscenes="1" indoorsunlight="0.3" suncolor="124,165,255" ambience="5" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="17,8"  name="Temple of Etherlight: Scrying Chamber" music="40"  dontloadnearbyscenes="1" indoorsunlight="0.5" suncolor="147,0,255" ambience="14" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="74,0,129" indoors="1"></map>
+	<map sceneid="17,10"  name="Cave" music="28"  indoorsunlight="0.3" dontloadnearbyscenes="1" suncolor="124,165,255" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="17,11"  name="Silvermirror Fen" music="15" ambience="5" dontloadnearbyscenes="1" indoorsunlight="0.3" suncolor="124,165,255" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="17,13" name="Dungeons of Greywall - The Upper Halls" dontloadnearbyscenes="1" noborder="1" borderdown="1" borderright="1" connectedmaps="17-14" music="65" ambience="5" respawnmap="9,1" viewdistance="40" fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+	<map sceneid="17,14" name="Dungeons of Greywall - The Upper Halls" dontloadnearbyscenes="1" noborder="1" borderup="1" borderright="1" connectedmaps="16-14,17-14,17-13" respawnmap="9,1" music="65" ambience="5" fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+	<map sceneid="17,15" name="Dungeons of Greywall - The Oubliette" dontloadnearbyscenes="1" noborder="1" borderdown="1" connectedmaps="17-15,17-16,16-15,16-16" respawnmap="19,15" music="65" ambience="5"  fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+	<map sceneid="17,16" name="Dungeons of Greywall - The Oubliette" dontloadnearbyscenes="1" noborder="1" borderright="1" connectedmaps="17-15,17-16,16-15,16-16" respawnmap="19,15" music="65" ambience="5" fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+
+
+
+	<map sceneid="18,0" name="" music="27" ambience="1" noworldmap="1"></map>
+	<map sceneid="18,1" name="Aercrest Grounds" music="27" ambience="1" noworldmap="1"></map>
+	<map sceneid="18,2" name="Aercrest Grounds" music="27" ambience="1" noworldmap="1"></map>
+	<map sceneid="18,3" name="Aercrest Grounds" music="27" ambience="1" noworldmap="1"></map>
+	<map sceneid="18,6" name="Thornhill Dungeons" npcviewdistance="100" music="46" dontloadnearbyscenes="1" indoorsunlight="0.15" suncolor="124,165,255" ambience="5" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="30,30,30" indoors="1"></map>
+	<map sceneid="18,7" name="Temple of Etherlight: Ruins"  music="30"  dontloadnearbyscenes="1" indoorsunlight="0.5" fogginess="0.3" suncolor="88,88,88" ambience="5" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="88,88,88" indoors="1"></map>
+	<map sceneid="18,10" name="Discrete Forest Cave" music="28" fogginess="1" dontloadnearbyscenes="1" indoorsunlight="0.4" suncolor="255,205,125" ambience="5"  noworldmap="1" nominimap="1"  fogcolor="0,0,0" ambientcolor="101,101,101" indoors="1"></map>
+	<map sceneid="18,11"  name="Discrete Forest Cave" music="28" dontloadnearbyscenes="1" indoorsunlight="0.3" suncolor="124,165,255" ambience="5" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="18,13" name="Dungeons of Greywall - Staff Quarters" dontloadnearbyscenes="1" noborder="1" borderleft="1" borderdown="1" respawnmap="18,14" connectedmaps="18-14,18-13,19-14,19-13" music="65" ambience="5"  fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+	<map sceneid="18,14" name="Dungeons of Greywall - Staff Quarters" dontloadnearbyscenes="1" noborder="1" borderup="1" borderleft="1" respawnmap="18,14" connectedmaps="18-14,18-13,19-14,19-13" music="65" ambience="5"  fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+	<map sceneid="18,15" name="Dungeons of Greywall - The Jails" dontloadnearbyscenes="1" noborder="1" borderup="1" borderleft="1" borderdown="1" respawnmap="19,15" connectedmaps="18-15,19-15" music="65" ambience="5"  fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+	<map sceneid="18,16" name="Dungeon" music="65" ambience="5" dontloadnearbyscenes="1" noborder="1"  fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+
+	<map sceneid="19,0" name="" music="27" ambience="1" noworldmap="1"></map>
+	<map sceneid="19,1" name="" music="27" ambience="1" noworldmap="1"></map>
+	<map sceneid="19,2" name="" music="27" ambience="1" noworldmap="1"></map>
+	<map sceneid="19,3" name="" music="27" ambience="1" noworldmap="1"></map>
+	<map sceneid="19,10"  name="Cave" music="28" dontloadnearbyscenes="1" indoorsunlight="0.3" suncolor="124,165,255" ambience="5" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="19,11"  name="Cave" music="28" dontloadnearbyscenes="1" indoorsunlight="0.3" suncolor="124,165,255" ambience="5" noworldmap="1" nominimap="1"   fogcolor="0,0,0" ambientcolor="50,50,50" indoors="1"></map>
+	<map sceneid="19,13" name="Dungeons of Greywall - Staff Quarters" dontloadnearbyscenes="1" noborder="1" borderright="1" borderdown="1" respawnmap="18,14" connectedmaps="18-14,18-13,19-14,19-13" music="65" ambience="5"  fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+	<map sceneid="19,14" name="Dungeons of Greywall - Staff Quarters" dontloadnearbyscenes="1" noborder="1" borderright="1" borderup="1" respawnmap="18,14" connectedmaps="18-14,18-13,19-14,19-13" music="65" ambience="5"  fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+	<map sceneid="19,15" name="Dungeons of Greywall - The Jails" dontloadnearbyscenes="1" noborder="1" borderright="1" borderup="1" borderdown="1"  respawnmap="19,15" connectedmaps="18-15,19-15"  music="65" ambience="5"  fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+	<map sceneid="19,16" name="Dungeon" music="65" ambience="5" dontloadnearbyscenes="1" noborder="1"  fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+
+	
+	
+	<map sceneid="20,6" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18" fogginess="1.5" fogcolor="70,70,70" sunlight="0.75" borderleft="1" borderdown="1"></map>
+	<map sceneid="20,7" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18" fogginess="1.5" fogcolor="70,70,70" sunlight="0.75" borderleft="1"></map>
+	<map sceneid="20,8" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18" fogginess="1.5" fogcolor="70,70,70" sunlight="0.75" borderleft="1"></map>
+	<map sceneid="20,9" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18" fogginess="1.5" fogcolor="47,63,75" suncolor="106,136,147" sunlight="0.75" borderleft="1"></map>
+	<map sceneid="20,10" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18" fogginess="1.5" fogcolor="47,63,75" suncolor="106,136,147" sunlight="0.75" borderleft="1" borderup="1"></map>
+	
+	<map sceneid="21,6" name="Amarien's Foothills" music="48" npcviewdistance="90" ambience="18" fogginess="1.5" fogcolor="70,70,70" sunlight="0.75" borderdown="1"></map>
+	<map sceneid="21,7" name="Amarien's Foothills" music="48" npcviewdistance="90" ambience="18" fogginess="1.5" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="21,8" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18" fogginess="1.5" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="21,9" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18"  fogginess="1.5" fogcolor="47,63,75" suncolor="106,136,147" sunlight="0.75"></map>
+	<map sceneid="21,10" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18"  fogginess="1.5" fogcolor="47,63,75" suncolor="106,136,147" sunlight="0.75" ></map>
+	<map sceneid="21,11" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18"  fogginess="1.5" fogcolor="47,63,75" suncolor="106,136,147" sunlight="0.75" borderleft="1"></map>
+	<map sceneid="21,12" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18"  fogginess="1.5" fogcolor="47,63,75" suncolor="106,136,147" sunlight="0.75" borderleft="1" borderup="1"></map>
+
+	<map sceneid="22,6" name="Amarien's Foothills" music="48" npcviewdistance="90"  ambience="18" fogginess="1"  fogcolor="70,70,70" sunlight="0.75" borderdown="1"></map>
+	<map sceneid="22,7" name="Amarien's Foothills" music="48" npcviewdistance="90"  ambience="18"  fogginess="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="22,8" name="Amarien's Foothills" music="48" npcviewdistance="90"  ambience="18" fogginess="1"  fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="22,9" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18" fogginess="1.5"  fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="22,10" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18"  fogginess="1.5" fogcolor="47,63,75" suncolor="106,136,147" sunlight="0.75" ></map>
+	<map sceneid="22,11" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18"  fogginess="1" fogcolor="47,63,75" suncolor="106,136,147" sunlight="0.75" ></map>
+	<map sceneid="22,12" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18"  fogginess="1" fogcolor="47,63,75" suncolor="106,136,147" sunlight="0.75" borderup="1"></map>
+
+	<map sceneid="21,14" name="Winterpine Forests" music="80" ambience="18" respawnmap="22,14" noworldmap="1" ambientcolor="68,91,120" fogginess="1.5" fogcolor="16,19,26" suncolor="106,136,147" sunlight="0.1"></map>
+	<map sceneid="21,15" name="Winterpine Forests" music="80" ambience="18" respawnmap="22,14"   noworldmap="1" ambientcolor="68,91,120" fogginess="1.5" fogcolor="16,19,26" suncolor="106,136,147" sunlight="0.1"></map>
+	<map sceneid="21,16" name="Winterpine Forests" music="80" ambience="18" respawnmap="22,14"   noworldmap="1" ambientcolor="68,91,120" fogginess="1.5" fogcolor="16,19,26" suncolor="106,136,147" sunlight="0.1"></map>
+	
+	<map sceneid="22,14" name="Winterpine Forests" music="80" ambience="18" respawnmap="22,14"   noworldmap="1" ambientcolor="68,91,120" fogginess="1.5" fogcolor="16,19,26" suncolor="106,136,147" sunlight="0.1"></map>
+	<map sceneid="22,15" name="Evergreen Hearth" music="80" ambience="18" respawnmap="22,14"   noworldmap="1" ambientcolor="68,91,120" fogginess="1.5" fogcolor="16,19,26" suncolor="106,136,147" sunlight="0.1"></map>
+	<map sceneid="22,16" name="Winterpine Forests" music="80" ambience="18" respawnmap="22,14"   noworldmap="1" ambientcolor="68,91,120" fogginess="1.5" fogcolor="16,19,26" suncolor="106,136,147" sunlight="0.1"></map>
+	
+	<map sceneid="23,14" name="Winterpine Forests" music="80" ambience="18" respawnmap="22,14"  noworldmap="1"  ambientcolor="68,91,120" fogginess="1.5" fogcolor="16,19,26" suncolor="106,136,147" sunlight="0.1"></map>
+	<map sceneid="23,15" name="Winterpine Forests" music="80" ambience="18" respawnmap="22,14"  noworldmap="1"  ambientcolor="68,91,120" fogginess="1.5" fogcolor="16,19,26" suncolor="106,136,147" sunlight="0.1"></map>
+	<map sceneid="23,16" name="Winterpine Forests" music="80" ambience="18" respawnmap="22,14"   noworldmap="1" ambientcolor="68,91,120" fogginess="1.5" fogcolor="16,19,26" suncolor="106,136,147" sunlight="0.1"></map>
+	
+	
+	<map sceneid="24,13" name="Lair of the Goblin Witch" music="28" dontloadnearbyscenes="1" ambience="5" respawnmap="22,14"  noworldmap="1" viewdistance="60" ambientcolor="30,35,43" fogginess="2" fogcolor="16,19,26" suncolor="106,136,147" sunlight="0.1"></map>
+	<map sceneid="24,14" name="Winterpine Forests" music="80" ambience="18" respawnmap="22,14"  noworldmap="1"  ambientcolor="68,91,120" fogginess="1.5" fogcolor="16,19,26" suncolor="106,136,147" sunlight="0.1"></map>
+	<map sceneid="24,15" name="Winterpine Forests" music="80" ambience="18" respawnmap="22,14"  noworldmap="1"  ambientcolor="68,91,120" fogginess="1.5" fogcolor="16,19,26" suncolor="106,136,147" sunlight="0.1"></map>
+	<map sceneid="24,16" name="Winterpine Forests" music="80" ambience="18" respawnmap="22,14"  noworldmap="1"  ambientcolor="68,91,120" fogginess="1.5" fogcolor="16,19,26" suncolor="106,136,147" sunlight="0.1"></map>
+
+
+	<map sceneid="23,6" name="Amarien's Foothills" music="48" npcviewdistance="90"  ambience="18"  fogginess="1" fogcolor="70,70,70" sunlight="0.75" borderdown="1"></map>
+	<map sceneid="23,7" name="Amarien's Foothills" music="48" npcviewdistance="90"  ambience="18"  fogginess="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="23,8" name="Amarien's Foothills" music="48" npcviewdistance="90" ambience="18"  fogginess="1" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="23,9" name="Amarien's Mountains" music="48" npcviewdistance="90" tpdisabled="1" ambience="18"  fogginess="1.5" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="23,10" name="Amarien's Mountains" music="48" npcviewdistance="90" tpdisabled="1" ambience="18" fogginess="1.5"  fogcolor="70,70,70" sunlight="0.75" ></map>
+	<map sceneid="23,11" name="Amarien's Mountains" music="48" npcviewdistance="90" tpdisabled="1" ambience="18" fogginess="1.5"  fogcolor="70,70,70" sunlight="0.75" borderright="1" ></map>
+	<map sceneid="23,12" name="Amarien's Mountains" music="48" npcviewdistance="90" tpdisabled="1" ambience="18" fogginess="1.5"  fogcolor="70,70,70" sunlight="0.75" borderright="1" borderup="1"></map>
+
+	<map sceneid="24,6" name="Amarien's Foothills" music="48" npcviewdistance="90" ambience="18"  fogginess="1" fogcolor="70,70,70" sunlight="0.75" borderdown="1"></map>
+	<map sceneid="24,7" name="Amarien's Foothills" music="48" npcviewdistance="90"  ambience="18" fogginess="1"  fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="24,8" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18" fogginess="1"  fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="24,9" name="Amarien's Mountains" music="48" npcviewdistance="90" tpdisabled="1" ambience="18"  fogginess="1.5" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="24,10" name="Amarien's Mountains" music="48" npcviewdistance="90" tpdisabled="1" ambience="18"  fogginess="1.5" fogcolor="70,70,70" sunlight="0.75" borderup="1"></map>
+	
+	<map sceneid="25,6" name="Amarien's Foothills" music="48" npcviewdistance="90"  ambience="18"  fogginess="1" fogcolor="70,70,70" sunlight="0.75" borderdown="1" borderright="1"></map>
+	<map sceneid="25,7" name="Amarien's Foothills" music="48" npcviewdistance="90"  ambience="18"  fogginess="1" fogcolor="70,70,70" sunlight="0.75" borderright="1"></map>
+	<map sceneid="25,8" name="Amarien's Foothills" music="48" npcviewdistance="90" tpdisabled="1" ambience="18"  fogginess="1" fogcolor="70,70,70" sunlight="0.75" borderright="1"></map>
+	<map sceneid="25,9" name="Ice Wall Peaks" music="48" npcviewdistance="90" tpdisabled="1" ambience="18"  fogginess="1.5" fogcolor="70,70,70" sunlight="0.75" borderright="1"></map>
+	<map sceneid="25,10" name="Ice Wall Peaks" music="48" npcviewdistance="90" tpdisabled="1" ambience="18"  fogginess="1.5" fogcolor="70,70,70" sunlight="0.75" borderright="1" borderup="1"></map>
+	
+	
+	<map sceneid="25,11" name="test scene" music="48" npcviewdistance="70" ambience="1"  fogginess="1.5" fogcolor="70,70,70" sunlight="0.75"></map>
+	<map sceneid="25,12" name="Graveyard Crypt" dontloadnearbyscenes="1" fogginess="1" viewdistance="60" noborder="1" borderleft="1" borderdown="1" music="65" ambience="5"  fogcolor="0,0,0" ambientcolor="35,75,125" indoors="1"></map>
+	
+	<map sceneid="26,6" name="Deep Mountain Lair" music="75" npcviewdistance="70" borderleft="1" indoors="1" tpdisabled="1" ambience="17"  fogginess="1.5" fogcolor="5,5,5" sunlight="0.15"></map>
+	<map sceneid="26,7" name="Deep Mountain Lair" music="75" npcviewdistance="70" borderleft="1 " indoors="1" tpdisabled="1" ambience="17" fogginess="2" ambientcolor="0,0,0" fogcolor="5,5,5" sunlight="0.15"></map>
+	<map sceneid="26,8" name="Ice Wall Caverns" music="74" npcviewdistance="70" borderleft="1" borderdown="1" indoors="1" tpdisabled="1" ambience="12" fogginess="1.5"  fogcolor="22,47,47" ambientcolor="52,89,81" sunlight="0.25"></map>
+	<map sceneid="26,9" name="Ice Wall Caverns" music="74" npcviewdistance="70" borderleft="1" indoors="1" tpdisabled="1" ambience="12"  fogginess="1.5" fogcolor="22,47,47" ambientcolor="52,89,81" sunlight="0.25"></map>
+	<map sceneid="26,10" name="Ice Wall Caverns" music="74" npcviewdistance="70" borderleft="1" borderup="1" indoors="1" tpdisabled="1" ambience="12"  fogginess="1.5" fogcolor="22,47,47" ambientcolor="52,89,81" sunlight="0.25"></map>
+	<map sceneid="27,6" name="Deep Mountain Lair" music="75" npcviewdistance="70" indoors="1" borderright="1" tpdisabled="1" ambience="17"  fogginess="1.5" fogcolor="5,5,5" sunlight="0.15"></map>
+	<map sceneid="27,7" name="Deep Mountain Lair" music="75" npcviewdistance="70" indoors="1" borderright="1" tpdisabled="1" ambience="17"  fogginess="2" viewdistance="45" fogcolor="5,5,5" ambientcolor="0,0,0" sunlight="0.15"></map>
+	<map sceneid="27,8" name="Ice Wall Caverns" music="74" npcviewdistance="70" indoors="1" borderright="1" borderdown="1" tpdisabled="1" ambience="12"  fogginess="1.5" fogcolor="22,47,47" ambientcolor="52,89,81" sunlight="0.25"></map>
+	<map sceneid="27,9" name="Ice Wall Caverns" music="74" npcviewdistance="70" indoors="1" borderright="1" tpdisabled="1" ambience="12"  fogginess="1.5" fogcolor="22,47,47" ambientcolor="52,89,81" sunlight="0.25"></map>
+	<map sceneid="27,10" name="Ice Wall Caverns" music="74" npcviewdistance="70" indoors="1" borderup="1" borderright="1" tpdisabled="1" ambience="12"  fogginess="1.5" fogcolor="22,47,47" ambientcolor="52,89,81" sunlight="0.25"></map>
+
+
+
+</maps>

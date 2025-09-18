@@ -1,0 +1,1010 @@
+<dialogue>
+	<node id="1" npcName="Fayle Aevin Aercrest" anim="1" text="Buenos días, cariño. ¿Has dormido bien?"
+ contextBefore="" contextAfter="" posx="25" posy="11">
+		<option optionid="1" optiontext="Sí... ¿Llevas mucho tiempo levantada?"
+ next="2"></option>
+		<option optionid="2" optiontext="Supongo, aunque tuve un sueño muy extraño..." next="4"></option>
+		<option optionid="3" optiontext="Suficientemente bien. ¿Han llegado nuestros invitados?"
+ next="6"></option>
+	</node>
+	<node id="2" npcName="Fayle Aevin Aercrest" anim="1" text="No mucho, vi que algunos de nuestros invitados ya llegaron para el banquete de esta noche. La Señora de la Casa intentó mantenerlos en habitaciones separadas, pero en poco tiempo se juntaron en el salón principal... Ahora se está gestando una situación, algo que requiere tu atención."
+ contextBefore="" contextAfter="" posx="482" posy="12">
+		<option optionid="1" optiontext="" next="3"></option>
+	</node>
+	<node id="3" npcName="Fayle Aevin Aercrest" anim="1" text="Como siempre, me complace dejarte la política a ti y ocuparme de los preparativos de la velada. ¿Prométeme que intentarás evitar que se maten entre ellos antes de que empiecen las festividades?"
+ contextBefore="" contextAfter="" posx="948" posy="15">
+		<option optionid="1" optiontext="No te preocupes por eso, yo me encargo de ellos." icon="Quest" next="7"></option>
+		<option optionid="2" optiontext="Repasemos nuestros invitados."
+ next="9"></option>
+	</node>
+	<node id="4" npcName="Fayle Aevin Aercrest" anim="1" text="¿Oh...?" contextBefore="" contextAfter="" posx="458" posy="311">
+		<option optionid="1" optiontext="Había una mujer... extraña, pero extrañamente familiar... creo que intentaba advertirme de algo..." next="5"></option>
+		<option optionid="2" optiontext="Eh... No importa, ¿han llegado nuestros invitados?"
+ next="6"></option>
+	</node>
+	<node id="5" npcName="Fayle Aevin Aercrest" anim="1" text="Rothar - cariño - solo fue un sueño, ¿vale? Normalmente no sería tan directa, pero no puedes permitirte estar distraído hoy. Olvídalo por ahora, ¿quieres?"
+ contextBefore="" contextAfter="" posx="919" posy="431">
+		<option optionid="1" optiontext="Tienes razón... ¿Han llegado ya nuestros invitados?"
+ next="6"></option>
+	</node>
+	<node id="6" npcName="Fayle Aevin Aercrest" anim="1" text="Así es, todos agrupados en el salón principal a pesar de los esfuerzos de la Señora de la Casa por mantenerlos separados. Ahora parece que se está gestando una situación, algo que requiere tu atención."
+ contextBefore="" contextAfter="" posx="158" posy="618">
+		<option optionid="1" optiontext="" next="3"></option>
+	</node>
+	<node id="7" npcName="Fayle Aevin Aercrest" anim="1" text="Siempre lo haces."
+ contextBefore="" contextAfter="" posx="1515" posy="11">
+		<option optionid="1" optiontext="" actions="UpdateQuest=56-1" next="0"></option>
+	</node>
+	<node id="8" npcName="Fayle Aevin Aercrest" anim="1" text="Ya sabes cómo son. Gadwin probablemente esté jugando a ser un pequeño guerrero con tu hermano en alguna parte, mientras que Shairi podría haberse escapado al bosque a explorar de nuevo. Esos bosques no son del todo seguros, ¿sabes? Se lo he dicho, pero ¿acaso me escucha alguna vez?"
+ contextBefore="" contextAfter="" posx="1961" posy="21">
+		<option optionid="1" optiontext="Los pondré en su sitio si me los encuentro."
+ actions="UpdateQuest=56-1" next="0"></option>
+	</node>
+
+	<node id="700" npcName="Fayle Aevin Aercrest" anim="1" text="Siempre lo haces. Ah, y si te encuentras con nuestros niños rebeldes, recuérdales que se preparen, ¿quieres?"
+ contextBefore="" contextAfter="" posx="1515" posy="11">
+		<option optionid="1" optiontext="Los pondré en su sitio si me los encuentro."
+ actions="UpdateQuest=56-1" next="0"></option>
+		<option optionid="2" optiontext="¿Por qué, se han escapado otra vez?" next="8"></option>
+	</node>
+	<node id="800" npcName="Fayle Aevin Aercrest" anim="1" text="Ya sabes cómo son. Gadwin probablemente esté jugando a ser un pequeño guerrero con tu hermano en alguna parte, mientras que Shairi podría haberse escapado al bosque a explorar de nuevo. Esos bosques no son del todo seguros, ¿sabes? Se lo he dicho, pero ¿acaso me escucha alguna vez?"
+ contextBefore="" contextAfter="" posx="1961" posy="21">
+		<option optionid="1" optiontext="Los pondré en su sitio si me los encuentro."
+ actions="UpdateQuest=56-1" next="0"></option>
+	</node>
+
+	<node id="9" npcName="Fayle Aevin Aercrest" anim="1" text="Los que importan son las casas de Armsteel, Rainn y Oldewood. Bueno, y Goldbridge también, por supuesto. También recibimos un invitado inesperado por la noche: un mago llamado Kelanthir."
+ contextBefore="" contextAfter="" posx="1445" posy="374">
+		<option optionid="1" optiontext="No te preocupes por eso, yo me encargo de ellos."
+ icon="Quest" next="7"></option>
+		<option optionid="2" optiontext="¿Qué sabemos de los Armsteel?" next="10"></option>
+		<option optionid="3" optiontext="¿Qué sabemos de los Rainn?"
+ next="11"></option>
+		<option optionid="4" optiontext="¿Qué sabemos de los Oldewood?" next="12"></option>
+		<option optionid="5" optiontext="¿Qué noticias hay de Goldbridge?"
+ next="13"></option>
+		<option optionid="6" optiontext="El mago... ¿Kelanthir? ¿He oído hablar de él antes?"
+ next="14"></option>
+	</node>
+	<node id="10" npcName="Fayle Aevin Aercrest" anim="1" text="Son los mismos de siempre, ya sabes; anclados en sus costumbres, solo capaces de hablar de la gran casa de guerreros que son, rápidos para resolver sus disputas en el campo de batalla."
+ contextBefore="" contextAfter="" posx="1998" posy="379">
+		<option optionid="1" optiontext="¿Y qué hay de Rainn?" next="11"></option>
+		<option optionid="2" optiontext="¿Y qué hay de Oldewood?" next="12"></option>
+		<option optionid="3" optiontext="¿Qué noticias hay de Goldbridge?"
+ next="13"></option>
+		<option optionid="4" optiontext="¿Y este mago, Kelanthir? ¿He oído hablar de él antes?"
+ next="14"></option>
+		<option optionid="5" optiontext="No te preocupes, yo me encargo de ellos." icon="Quest" next="7"></option>
+	</node>
+	<node id="11" npcName="Fayle Aevin Aercrest" anim="1" text="Mercaderes del Reino de Melloria con fama de tener bolsillos profundos. Eso es todo lo que sabemos, creo que se esfuerzan por mantener sus asuntos en privado."
+ contextBefore="" contextAfter="" posx="1455" posy="933">
+		<option optionid="1" optiontext="¿Y qué hay de Armsteel?" next="10"></option>
+		<option optionid="2" optiontext="¿Y qué hay de Oldewood?" next="12"></option>
+		<option optionid="3" optiontext="¿Qué noticias hay de Goldbridge?"
+ next="13"></option>
+		<option optionid="4" optiontext="¿Y este mago, Kelanthir? ¿He oído hablar de él antes?"
+ next="14"></option>
+		<option optionid="5" optiontext="No te preocupes, yo me encargo de ellos." icon="Quest" next="7"></option>
+	</node>
+	<node id="12" npcName="Fayle Aevin Aercrest" anim="1" text="Una de las casas más antiguas de todo Imberthale, el difunto maestro Oldewood tuvo la ''fortuna'' de engendrar solo hijas. Dahlia, la mayor, es la verdadera cabeza de familia ahora, lo que causa murmullos entre algunos... pero dudo que a ella le importe."
+ contextBefore="" contextAfter="" posx="2003" posy="908">
+		<option optionid="1" optiontext="¿Y qué hay de Armsteel?" next="10"></option>
+		<option optionid="2" optiontext="¿Y qué hay de Rainn?" next="11"></option>
+		<option optionid="3" optiontext="¿Qué noticias hay de Goldbridge?"
+ next="13"></option>
+		<option optionid="4" optiontext="¿Y este mago, Kelanthir? ¿He oído hablar de él antes?"
+ next="14"></option>
+		<option optionid="5" optiontext="No te preocupes, yo me encargo de ellos." icon="Quest" next="7"></option>
+	</node>
+	<node id="13" npcName="Fayle Aevin Aercrest" anim="1" text="Tyron Goldbridge, el barón de Thornhill, llegó aquí sin el resto de su familia, lo cual es inusual... Siempre ha sido ambicioso y últimamente esas ambiciones han molestado a todas las demás familias presentes, de ahí el alboroto que hay abajo."
+ contextBefore="" contextAfter="" posx="2520" posy="378">
+		<option optionid="1" optiontext="¿Y qué hay de Armsteel?" next="10"></option>
+		<option optionid="2" optiontext="¿Y qué hay de Rainn?" next="11"></option>
+		<option optionid="3" optiontext="¿Y qué hay de Oldewood?"
+ next="12"></option>
+		<option optionid="4" optiontext="¿Y este mago, Kelanthir? ¿He oído hablar de él antes?"
+ next="14"></option>
+		<option optionid="5" optiontext="No te preocupes, yo me encargo de ellos." icon="Quest" next="7"></option>
+	</node>
+	<node id="14" npcName="Fayle Aevin Aercrest" anim="1" text="Un mago viajero que aparentemente ahuyentó a un grupo de bandidos cerca del Bosque Nebuloso hace unas noches. Es un poco extraño, pero conocido por sus buenas acciones, así que habría sido desalmado rechazarlo."
+ contextBefore="" contextAfter="" posx="2535" posy="925">
+		<option optionid="1" optiontext="¿Y qué hay de Armsteel?" next="10"></option>
+		<option optionid="2" optiontext="¿Y qué hay de Rainn?" next="11"></option>
+		<option optionid="3" optiontext="¿Y qué hay de Oldewood?"
+ next="12"></option>
+		<option optionid="4" optiontext="¿Qué noticias hay de Goldbridge?" next="13"></option>
+		<option optionid="5" optiontext="No te preocupes, yo me encargo de ellos."
+ icon="Quest" next="7"></option>
+	</node>
+	
+	<node id="20" npcName="Fayle Aevin Aercrest" anim="1" text="¿Qué pasa, mi amor?"
+ contextBefore="" contextAfter="" posx="32" posy="32">
+		<option optionid="1" optiontext="Quería repasar a nuestros invitados una vez más." next="21"></option>
+		<option optionid="2" optiontext="No importa."
+ next="0"></option>
+	</node>
+	<node id="21" npcName="Fayle Aevin Aercrest" anim="1" text="Los que importan son las casas de Armsteel, Rainn y Oldewood. Bueno, y Goldbridge también, por supuesto. También recibimos un invitado inesperado por la noche: un mago llamado Kelanthir."
+ contextBefore="" contextAfter="" posx="1445" posy="374">
+		<option optionid="1" optiontext="¿Qué sabemos de los Armsteel?"
+ next="22"></option>
+		<option optionid="2" optiontext="¿Qué sabemos de los Rainn?" next="23"></option>
+		<option optionid="3" optiontext="¿Qué sabemos de los Oldewood?"
+ next="25"></option>
+		<option optionid="4" optiontext="¿Qué noticias hay de Goldbridge?" next="24"></option>
+		<option optionid="5" optiontext="El mago... ¿Kelanthir? ¿He oído hablar de él antes?"
+ next="26"></option>
+		<option optionid="6" optiontext="De acuerdo, hablamos luego." next="0"></option>
+	</node>
+	<node id="22" npcName="Fayle Aevin Aercrest" anim="1" text="Son los mismos de siempre, ya sabes; anclados en sus costumbres, solo capaces de hablar de la gran casa de guerreros que son, rápidos para resolver sus disputas en el campo de batalla."
+ contextBefore="" contextAfter="" posx="1998" posy="379">
+		<option optionid="1" optiontext="¿Y qué hay de Rainn?" next="23"></option>
+		<option optionid="2" optiontext="¿Y qué hay de Oldewood?" next="25"></option>
+		<option optionid="3" optiontext="¿Qué noticias hay de Goldbridge?"
+ next="24"></option>
+		<option optionid="4" optiontext="¿Y este mago, Kelanthir? ¿He oído hablar de él antes?"
+ next="26"></option>
+		<option optionid="5" optiontext="De acuerdo, hablamos luego." next="0"></option>
+	</node>
+	<node id="23" npcName="Fayle Aevin Aercrest" anim="1" text="Mercaderes del Reino de Melloria con fama de tener bolsillos profundos, por lo que sabemos. Eso es todo lo que sabemos, creo que se esfuerzan por mantener sus asuntos en privado."
+ contextBefore="" contextAfter="" posx="1455" posy="933">
+		<option optionid="1" optiontext="¿Y qué hay de Armsteel?" next="22"></option>
+		<option optionid="2" optiontext="¿Y qué hay de Oldewood?" next="25"></option>
+		<option optionid="3" optiontext="¿Qué noticias hay de Goldbridge?"
+ next="24"></option>
+		<option optionid="4" optiontext="¿Y este mago, Kelanthir? ¿He oído hablar de él antes?"
+ next="26"></option>
+		<option optionid="5" optiontext="De acuerdo, hablamos luego." next="0"></option>
+	</node>
+	<node id="25" npcName="Fayle Aevin Aercrest" anim="1" text="Una de las casas más antiguas de todo Imberthale, el difunto maestro Oldewood tuvo la ''fortuna'' de engendrar solo hijas. Dahlia, la mayor, es la verdadera cabeza de familia ahora, lo que causa murmullos entre algunos... pero dudo que a ella le importe."
+ contextBefore="" contextAfter="" posx="2003" posy="908">
+		<option optionid="1" optiontext="¿Y qué hay de Armsteel?" next="22"></option>
+		<option optionid="2" optiontext="¿Y qué hay de Rainn?" next="23"></option>
+		<option optionid="3" optiontext="¿Qué noticias hay de Goldbridge?"
+ next="24"></option>
+		<option optionid="4" optiontext="¿Y este mago, Kelanthir? ¿He oído hablar de él antes?"
+ next="26"></option>
+		<option optionid="5" optiontext="De acuerdo, hablamos luego." next="0"></option>
+	</node>
+	<node id="24" npcName="Fayle Aevin Aercrest" anim="1" text="Tyron Goldbridge, el barón de Thornhill, llegó sin el resto de su familia, lo cual es inusual... Siempre ha sido ambicioso y últimamente esas ambiciones han molestado a todas las demás familias presentes, de ahí el alboroto que hay abajo."
+ contextBefore="" contextAfter="" posx="2520" posy="378">
+		<option optionid="1" optiontext="¿Y qué hay de Armsteel?" next="22"></option>
+		<option optionid="2" optiontext="¿Y qué hay de Rainn?" next="23"></option>
+		<option optionid="3" optiontext="¿Y qué hay de Oldewood?"
+ next="25"></option>
+		<option optionid="4" optiontext="¿Y este mago, Kelanthir? ¿He oído hablar de él antes?"
+ next="26"></option>
+		<option optionid="5" optiontext="De acuerdo, hablamos luego." next="0"></option>
+	</node>
+	<node id="26" npcName="Fayle Aevin Aercrest" anim="1" text="Un mago viajero que aparentemente ahuyentó a un grupo de bandidos cerca del Bosque Nebuloso hace unas noches. Es un poco extraño, pero conocido por sus buenas acciones, así que habría sido desalmado rechazarlo."
+ contextBefore="" contextAfter="" posx="2535" posy="925">
+		<option optionid="1" optiontext="¿Y qué hay de Armsteel?" next="22"></option>
+		<option optionid="2" optiontext="¿Y qué hay de Rainn?" next="23"></option>
+		<option optionid="3" optiontext="¿Y qué hay de Oldewood?"
+ next="25"></option>
+		<option optionid="4" optiontext="¿Qué noticias hay de Goldbridge?" next="24"></option>
+		<option optionid="5" optiontext="De acuerdo, hablamos luego."
+ next="0"></option>
+	</node>
+
+	<node id="30" npcName="Fayle Aevin Aercrest" anim="1" text="Rothar, ¿qué está pasando?"
+ contextBefore="" contextAfter="" posx="107" posy="69">
+		<option optionid="1" optiontext="¡Tyron está atacando la propiedad! ¡Quédate dentro, yo me encargo de él!"
+ next="31"></option>
+	</node>
+	<node id="31" npcName="Fayle Aevin Aercrest" anim="1" actions="SetNpcVar=snaek-1" text="¡Esa serpiente! ¡Recuérdale lo afilado que muerde el acero de los Aercrest!"
+ contextBefore="" contextAfter="" posx="552" posy="67">
+		<option optionid="1" optiontext="Eso haré." next="0"></option>
+	</node>
+
+  <node id="40" npcName="Guests" anim="653" text="holaa, estamos aqui pa la fiestaa" contextBefore="" contextAfter="" switchtalker="550">
+    <option optionid="1" optiontext="" next="41"></option>
+  </node>
+  <node id="41" npcName="Guests" anim="653" text="si si" switchtalker="545">
+    <option optionid="1" optiontext="" next="42"></option>
+  </node>
+  <node id="42" npcName="Guests" anim="653" text="¡sí!"
+ switchtalker="548">
+    <option optionid="1" optiontext="" next="0"></option>
+  </node>
+  
+  
+	<node id="50" npcName="Tyron Goldbridge" anim="1" text="Esperaba algo de esta naturaleza mucho antes de mi llegada. ¡Deseo declarar en términos inequívocos, Lord Aercrest, que la familia Goldbridge no se dejará avasallar!"
+ contextBefore="" contextAfter="" posx="31" posy="22">
+		<option optionid="1" optiontext="He llegado a una decisión sobre este asunto."
+ checks="Quest=56-3-3" icon="Quest" next="51"></option>
+		<option optionid="2" optiontext="Las otras familias apenas pueden ponerse de acuerdo en algo, y sin embargo, todas piensan lo mismo de ti."
+ checks="NpcVar=argue-0-0" next="52"></option>
+		<option optionid="3" optiontext="Hablaré contigo más tarde." next="0"></option>
+	</node>
+	<node id="51" npcName="Tyron Goldbridge" anim="1" text="¿De verdad...?"
+ contextBefore="1 Armsteel - 2 Rainn - 3 Oldewood" contextAfter="" posx="574" posy="-15">
+		<option optionid="1" optiontext="" checks="Var=Q56Support-1-1" actions="Cinematic=62" icon="Quest" next="0"></option>
+		<option optionid="2" optiontext="" checks="Var=Q56Support-2-2" actions="Cinematic=62" icon="Quest" next="0"></option>
+		<option optionid="3" optiontext="" checks="Var=Q56Support-3-3" actions="Cinematic=62" icon="Quest" next="0"></option>
+	</node>
+	<node id="52" npcName="Tyron Goldbridge" anim="1" text="¡La envidia es la razón! ¿Y qué si me ha ido excepcionalmente bien? ¡Tengo todo el derecho a proteger los intereses de mi familia!"
+ contextBefore="" contextAfter="" posx="354" posy="468">
+		<option optionid="1" optiontext="No a expensas de las otras familias, no en mi reino."
+ next="53"></option>
+		<option optionid="2" optiontext="Cuando alteras el equilibrio de poder en mi reino, me alteras a mí. ¿Quieres alterarme, Barón Goldbridge?"
+ next="54"></option>
+		<option optionid="3" optiontext="En cualquier caso, he tomado una decisión." checks="Quest=56-3-3" icon="Quest" next="51"></option>
+		<option optionid="4" optiontext="Hablaremos más tarde."
+ next="0"></option>
+	</node>
+	<node id="53" npcName="Tyron Goldbridge" actions="SetNpcVar=argue-1" anim="1" text="... lo que usted diga, Lord Aercrest... lo que usted diga..." contextBefore="" contextAfter="" posx="877" posy="453">
+		<option optionid="1" optiontext="Basta de esto, he tomado mi decisión."
+ checks="Quest=56-3-3" icon="Quest" next="51"></option>
+		<option optionid="2" optiontext="Basta, hablaremos más tarde." next="0"></option>
+	</node>
+	<node id="54" npcName="Tyron Goldbridge" actions="SetNpcVar=argue-1" anim="1" text="Por supuesto que no... por supuesto que no... Pero recordemos, tampoco es sabio alterarme a mí, mi señor..." contextBefore="" contextAfter="" posx="883" posy="801">
+		<option optionid="1" optiontext="Basta de esto, he tomado mi decisión."
+ checks="Quest=56-3-3" icon="Quest" next="51"></option>
+		<option optionid="2" optiontext="Basta, hablaremos más tarde." next="0"></option>
+	</node>
+
+	<node id="60" npcName="Jon Armsteel" switchtalker="547" anim="1" text="Me alegra ver que sigues siendo el Señor de Imberthale, y no ese advenedizo de Goldbridge. ¡Ya era hora de que le pongan en su sitio!"
+ contextBefore="" contextAfter="" posx="52" posy="43">
+		<option optionid="1" optiontext="" next="61"></option>
+	</node>
+	<node id="61" npcName="Marie Armsteel" switchtalker="548" anim="1" text="Un placer como siempre, Lord Aercrest."
+ contextBefore="" contextAfter="" posx="77" posy="312">
+		<option optionid="1" optiontext="Jon, Marie." next="62" icon="Quest"></option>
+	</node>
+	<node id="62" npcName="Jon Armsteel" switchtalker="547" anim="1" text="¿Nos apoyarás entonces? No es que no podamos darle de comer al chico Goldbridge las joyas de su familia por nuestra cuenta, si a eso se llega."
+ contextBefore="" contextAfter="" posx="516" posy="55">
+		<option optionid="1" optiontext="" actions="SetVar=ArmsteelIntro-1" next="63"></option>
+	</node>
+	<node id="63" npcName="Marie Armsteel" switchtalker="548" anim="1" text="Ejem, mi marido quiere decir que su resolución diplomática a nuestro problema sería muy bienvenida, pero estamos bien preparados para defender nuestros intereses con la fuerza si es necesario."
+ contextBefore="" contextAfter="" posx="554" posy="316">
+		<option optionid="1" optiontext="¿Cuál es exactamente su disputa con Tyron Goldbridge?"
+ next="64"></option>
+		<option optionid="2" optiontext="¿Cómo le va a la familia Armsteel estos días?" next="67"></option>
+		<option optionid="3" optiontext="No se preocupen, la familia Armsteel puede contar con mi apoyo."
+ icon="Quest" next="68"></option>
+		<option optionid="4" optiontext="Lo consideraré, todavía necesito hablar con los demás."
+ next="0"></option>
+	</node>
+	<node id="64" npcName="Jon Armsteel" switchtalker="547" anim="1" text="Uno de mis necios arrendatarios se endeudó y decidió que la mejor manera de saldar su deuda era hacer negocios con Goldbridge."
+ contextBefore="" contextAfter="" posx="1002" posy="273">
+		<option optionid="1" optiontext="" next="65"></option>
+	</node>
+	<node id="65" npcName="Jon Armsteel" switchtalker="547" anim="1" text="¡Dejó que Goldbridge estableciera una cantera para extraer Acero de Imber de la ladera del acantilado, en mis tierras! ¿Puedes creerlo? A su familia se le dio el terreno para cultivar, ¡no para hacer lo que le placiera!"
+ contextBefore="" contextAfter="" posx="1159" posy="506">
+		<option optionid="1" optiontext="" next="66"></option>
+	</node>
+	<node id="66" npcName="Jon Armsteel" switchtalker="547" anim="1" text="Bueno, ya me encargué de ese canalla, actualmente se está pudriendo en mis mazmorras, ¡pero Goldbridge se niega a abandonar la cantera! ¡Afirma que está en su derecho, incluso tiene soldados estacionados allí!"
+ contextBefore="" contextAfter="" posx="1617" posy="305">
+		<option optionid="1" optiontext="¿Cómo le va a la familia Armsteel por lo demás?"
+ next="67"></option>
+		<option optionid="2" optiontext="No se preocupen, la familia Armsteel puede contar con mi apoyo."
+ icon="Quest" next="68"></option>
+		<option optionid="3" optiontext="Entiendo, pero todavía necesito escuchar a los demás."
+ next="0"></option>
+	</node>
+	<node id="67" npcName="Jon Armsteel" switchtalker="547" anim="1" text="¿Aparte de nuestra disputa con Goldbridge? Déjame decirte, mis herreros han estado forjando espadas que me enorgullecen. El tipo de calidad que no querría en manos de mis enemigos, pero tal vez sí en las de un querido amigo..." contextBefore="" contextAfter="" posx="1240" posy="795">
+		<option optionid="1" optiontext="¿Cuál fue exactamente su disputa con Tyron Goldbridge?"
+ next="64"></option>
+		<option optionid="2" optiontext="No se preocupen, la familia Armsteel puede contar con mi apoyo."
+ icon="Quest" next="68"></option>
+		<option optionid="3" optiontext="Todavía necesito escuchar a los demás."
+ next="0"></option>
+	</node>
+	<node id="68" npcName="Jon Armsteel" switchtalker="547" anim="1" text="¿De verdad, mi señor? No lo olvidaremos."
+ contextBefore="" contextAfter="" posx="1825" posy="780">
+		<option optionid="1" optiontext="Hablaré con Tyron de inmediato."
+ actions="UpdateQuest=56-3,SetVar=Q56Support-1" next="0"></option>
+		<option optionid="2" optiontext="Aunque, todavía me gustaría escuchar primero a los demás."
+ next="0"></option>
+	</node>
+	<node id="69" npcName="Jon Armsteel" switchtalker="547" anim="1" text="¿Nos apoyarás entonces, mi señor? No es que no podamos darle de comer al chico Goldbridge las joyas de su familia por nuestra cuenta, si a eso se llega."
+ contextBefore="" contextAfter="" posx="483" posy="839">
+		<option optionid="1" optiontext="¿Cuál es exactamente su disputa con Tyron Goldbridge?"
+ next="64"></option>
+		<option optionid="2" optiontext="¿Cómo le va a la familia Armsteel estos días?" next="67"></option>
+		<option optionid="3" optiontext="La familia Armsteel puede contar con mi apoyo."
+ icon="Quest" next="68"></option>
+		<option optionid="4" optiontext="Lo consideraré, todavía necesito hablar con los demás."
+ next="0"></option>
+	</node>
+	<node id="70" npcName="Marie Armsteel" switchtalker="548" anim="1" text="Su resolución diplomática a nuestro problema sería muy bienvenida, mi señor, aunque estamos bien preparados para defender nuestros intereses con la fuerza si es necesario."
+ contextBefore="" contextAfter="" posx="635" posy="1297">
+		<option optionid="1" optiontext="¿Cuál es exactamente su disputa con Tyron Goldbridge?"
+ next="64"></option>
+		<option optionid="2" optiontext="¿Cómo le va a la familia Armsteel estos días?" next="67"></option>
+		<option optionid="3" optiontext="La familia Armsteel puede contar con mi apoyo."
+ icon="Quest" next="68"></option>
+		<option optionid="4" optiontext="Lo consideraré, todavía necesito hablar con los demás."
+ next="0"></option>
+	</node>
+
+	<node id="75" npcName="Ellen Rainn" switchtalker="550" anim="1" text="¿Es este el gran señor? Esperaba a alguien más alto."
+ contextBefore="" contextAfter="" posx="70" posy="44">
+		<option optionid="1" optiontext="" next="76"></option>
+	</node>
+	<node id="76" npcName="Gailris Rainn" switchtalker="549" anim="1" text="¡Silencio, querida...! Ejem, Lord Aercrest, ¡Gailris Rainn a su disposición! ¿Debo entender que podría apoyarnos en nuestro aprieto con el Barón Goldbridge?"
+ contextBefore="" contextAfter="" posx="377" posy="312">
+		<option optionid="1" optiontext="Quizás, aunque las preocupaciones de la nobleza a menudo preceden a las de un mercader."
+ next="77"></option>
+		<option optionid="2" optiontext="Prometo sopesar sus necesidades frente a las de los demás, de manera justa."
+ next="77"></option>
+	</node>
+	<node id="77" npcName="Ellen Rainn" switchtalker="550" anim="1" text="¿Se trata de oro? ¿Cuánto?"
+ contextBefore="" contextAfter="" posx="544" posy="57">
+		<option optionid="1" optiontext="" actions="SetVar=RainnIntro-1" next="78"></option>
+	</node>
+	<node id="78" npcName="Gailris Rainn" switchtalker="549" anim="1" text="¡Ellen, silencio, te dije! Disculpas, mi esposa no quiso insinuar que su señoría pudiera ser comprada. Simplemente deseaba señalar que cuidar de humildes mercaderes, como nosotros, puede ser altamente beneficioso para todas las partes involucradas."
+ contextBefore="" contextAfter="" posx="893" posy="333">
+		<option optionid="1" optiontext="¿De qué trata exactamente su disputa con Tyron Goldbridge?"
+ next="79"></option>
+		<option optionid="2" optiontext="¿Cómo van los negocios estos días, Maestro Rainn?" next="82"></option>
+		<option optionid="3" optiontext="De hecho, la familia Rainn puede contar con mi apoyo."
+ icon="Quest" next="83"></option>
+		<option optionid="4" optiontext="Lo consideraré." next="0"></option>
+	</node>
+	<node id="79" npcName="Gailris Rainn" anim="1" text="No hace mucho, llené una caravana con la mejor cristalería y frutas de Melloria y partí hacia Thornhill. Los vidrieros de Mellor crean cristalería de mucha mayor calidad y la mayoría de las frutas no dan un buen rendimiento en estas tierras del norte, así que me sentía bastante optimista."
+ contextBefore="" contextAfter="" posx="1388" posy="141">
+		<option optionid="1" optiontext="" next="80"></option>
+	</node>
+	<node id="80" npcName="Gailris Rainn" anim="1" text="Pero al llegar a Thornhill, de repente nos informan de un nuevo impuesto sobre los productos extranjeros. ¡Nunca antes nos habíamos encontrado con algo así y es tan escandalosamente alto que apenas nadie podía permitirse comprarnos!"
+ contextBefore="" contextAfter="" posx="1492" posy="420">
+		<option optionid="1" optiontext="¿Qué tiene el barón en contra de su comercio?" next="81"></option>
+		<option optionid="2" optiontext="¿Cómo van los negocios por lo demás?"
+ next="82"></option>
+		<option optionid="3" optiontext="No se preocupen, la familia Rainn puede contar con mi apoyo."
+ icon="Quest" next="83"></option>
+		<option optionid="4" optiontext="Entiendo, pero todavía necesito escuchar a los demás."
+ next="0"></option>
+	</node>
+	<node id="81" npcName="Gailris Rainn" anim="1" text="Bueno, él es dueño del soplador de vidrio de Thornhill, igual que de sus granjas. La competencia lo obligaría a bajar sus precios, lo que pone menos oro en sus bolsillos. Creo que es bastante obvio cuáles son sus motivaciones."
+ contextBefore="" contextAfter="" posx="2047" posy="174">
+		<option optionid="1" optiontext="¿Cómo van los negocios por lo demás?" next="82"></option>
+		<option optionid="2" optiontext="No se preocupen, la familia Rainn puede contar con mi apoyo."
+ icon="Quest" next="83"></option>
+		<option optionid="3" optiontext="Entiendo, pero todavía necesito escuchar a los demás."
+ next="0"></option>
+	</node>
+	<node id="82" npcName="Gailris Rainn" anim="1" text="Aparte de la desgracia en Thornhill, el comercio ha sido bastante excepcional. De hecho, recientemente adquirí muchas joyas exquisitas, ciertamente suficientes para compartir con aquellos que considero amigos..." contextBefore="" contextAfter="" posx="2522" posy="460">
+		<option optionid="1" optiontext="Hábleme de su disputa con Tyron Goldbridge."
+ next="79"></option>
+		<option optionid="2" optiontext="Está decidido; la familia Rainn puede contar con mi apoyo."
+ icon="Quest" next="83"></option>
+		<option optionid="3" optiontext="Qué afortunado, pero aún así debería escuchar a los demás."
+ next="0"></option>
+	</node>
+	<node id="83" npcName="Gailris Rainn" anim="1" text="¿De verdad, mi señor? Estaríamos en deuda con usted."
+ contextBefore="" contextAfter="" posx="2028" posy="674">
+		<option optionid="1" optiontext="Hablaré con Tyron de inmediato."
+ actions="UpdateQuest=56-3,SetVar=Q56Support-2" next="0"></option>
+		<option optionid="2" optiontext="Aunque, todavía me gustaría escuchar primero a los demás."
+ next="0"></option>
+	</node>
+	<node id="84" npcName="Ellen Rainn" switchtalker="550" anim="1" text="Mira, cariño. Es ese señor otra vez."
+ contextBefore="" contextAfter="" posx="355" posy="861">
+		<option optionid="1" optiontext="" next="85"></option>
+	</node>
+	<node id="85" npcName="Gailris Rainn" switchtalker="549" anim="1" text="¡Ah, Lord Aercrest! ¿Debemos entender que podría apoyarnos en nuestro aprieto con el Barón Goldbridge?"
+ contextBefore="" contextAfter="" posx="890" posy="953">
+		<option optionid="1" optiontext="¿De qué trata exactamente su disputa con Tyron Goldbridge?"
+ next="79"></option>
+		<option optionid="2" optiontext="¿Cómo van los negocios estos días, Maestro Rainn?" next="82"></option>
+		<option optionid="3" optiontext="De hecho, la familia Rainn puede contar con mi apoyo."
+ icon="Quest" next="83"></option>
+		<option optionid="4" optiontext="Lo consideraré." next="0"></option>
+	</node>
+
+	<node id="90" npcName="Gerewin Oldewood" switchtalker="545" anim="1" text="¡E.. e.. ese hombre Goldbridge tiene m.. m.. m.. mucha cara, te lo digo! ¡Mi señor, e.. e.. esto necesita ser a.. abordado o yo... yo...!"
+ contextBefore="" contextAfter="" posx="49" posy="47">
+		<option optionid="1" optiontext="" next="91"></option>
+	</node>
+	<node id="91" npcName="Dahlia Oldewood" switchtalker="546" anim="1" text="Está bien, querido esposo. Cálmate ahora, siempre tartamudeas cuando estás molesto."
+ contextBefore="" contextAfter="" posx="130" posy="336">
+		<option optionid="1" optiontext="" next="92"></option>
+	</node>
+	<node id="92" npcName="Gerewin Oldewood" switchtalker="545" anim="1" text="S.. sí, querida."
+ contextBefore="" contextAfter="" posx="542" posy="52">
+		<option optionid="1" optiontext="" actions="SetVar=OldewoodIntro-1" next="93"></option>
+	</node>
+	<node id="93" npcName="Dahlia Oldewood" switchtalker="546" anim="1" text="He estado esperando desesperadamente una oportunidad para reunirme, Lord Aercrest, creo que eres el único que puede ayudarnos ahora. La ciudad de Thornhill, nuestro amado hogar por generaciones, se ha vuelto más insoportable cada día desde que Tyron Goldbridge heredó la tierra de su tío."
+ contextBefore="" contextAfter="" posx="755" posy="326">
+		<option optionid="1" optiontext="¿Cuál es exactamente su problema con el Barón Goldbridge?"
+ next="94"></option>
+		<option optionid="2" optiontext="¿Cómo le va a la casa de Oldewood estos días?" next="97"></option>
+		<option optionid="3" optiontext="Entiendo, la familia Oldewood puede contar con mi apoyo."
+ icon="Quest" next="98"></option>
+		<option optionid="4" optiontext="Lamento oír eso, pero necesito escuchar a los demás."
+ next="0"></option>
+	</node>
+	<node id="94" npcName="Dahlia Oldewood" anim="1" text="¡Está tratando la ciudad cada vez más como su propio reino personal, como si estuviera allí solo para servir a su propia riqueza, cuando se supone que debe actuar como su protector!"
+ contextBefore="" contextAfter="" posx="1190" posy="93">
+		<option optionid="1" optiontext="" next="95"></option>
+	</node>
+	<node id="95" npcName="Dahlia Oldewood" anim="1" text="La ciudad en sí debería ser gobernada por el alcalde y el consejo de la ciudad, pero con el tiempo ha comprado o intimidado a cada miembro del consejo. A los que se negaron a doblegarse, como mi esposo aquí, los ha destituido."
+ contextBefore="" contextAfter="" posx="1260" posy="341">
+		<option optionid="1" optiontext="" next="96"></option>
+	</node>
+	<node id="96" npcName="Dahlia Oldewood" anim="1" text="¡Ahora su hijo y heredero fue ''elegido'' alcalde y el consejo aprueba cada una de sus palabras! Algo debe hacerse, mi señor, o el futuro de la Ciudad de Thornhill se ve muy sombrío."
+ contextBefore="" contextAfter="" posx="1737" posy="122">
+		<option optionid="1" optiontext="¿Cómo le va a la casa de Oldewood?"
+ next="97"></option>
+		<option optionid="2" optiontext="Entiendo, la familia Oldewood puede contar con mi apoyo."
+ icon="Quest" next="98"></option>
+		<option optionid="3" optiontext="Lamento oír eso, pero todavía necesito escuchar a los demás."
+ next="0"></option>
+	</node>
+	<node id="97" npcName="Dahlia Oldewood" anim="1" text="Nuestro hogar todavía está en pie, a pesar de todo. Puede que no seamos la familia más rica, pero nuestros salones están llenos de artefactos encantados de esas antiguas ruinas que a mi padre siempre le gustaba tanto excavar. ¿Quizás haya suficientes para regalar a un buen amigo...?"
+ contextBefore="" contextAfter="" posx="1428" posy="628">
+		<option optionid="1" optiontext="¿Cuál era exactamente su problema con el Barón Goldbridge?"
+ next="94"></option>
+		<option optionid="2" optiontext="No se preocupen, la familia Oldewood puede contar con mi apoyo."
+ icon="Quest" next="98"></option>
+		<option optionid="3" optiontext="Todavía necesito escuchar a los demás."
+ next="0"></option>
+	</node>
+	<node id="98" npcName="Dahlia Oldewood" anim="1" text="¿De verdad, mi señor? ¡Estaríamos eternamente agradecidos!"
+ contextBefore="" contextAfter="" posx="2051" posy="621">
+		<option optionid="1" optiontext="Hablaré con Tyron de inmediato."
+ actions="UpdateQuest=56-3,SetVar=Q56Support-3" next="0"></option>
+		<option optionid="2" optiontext="Aunque, todavía me gustaría escuchar primero a los demás."
+ next="0"></option>
+	</node>
+	
+	<node id="99" npcName="Dahlia Oldewood" switchtalker="546" anim="1" text="Creo que es el único que puede ayudarnos, mi señor. La ciudad de Thornhill, nuestro amado hogar por generaciones, se ha vuelto más insoportable cada día desde que Tyron Goldbridge heredó la tierra de su tío."
+ contextBefore="" contextAfter="" posx="465" posy="782">
+		<option optionid="1" optiontext="¿Cuál es exactamente su problema con el Barón Goldbridge?"
+ next="94"></option>
+		<option optionid="2" optiontext="¿Cómo le va a la casa de Oldewood estos días?" next="97"></option>
+		<option optionid="3" optiontext="Entiendo, la familia Oldewood puede contar con mi apoyo."
+ icon="Quest" next="98"></option>
+		<option optionid="4" optiontext="Lamento oír eso, pero necesito escuchar a los demás."
+ next="0"></option>
+	</node>
+	<node id="100" npcName="Gerewin Oldewood" anim="1" text="M.. m.. m.. mi señor."
+ contextBefore="" contextAfter="" posx="37" posy="1222">
+		<option optionid="1" optiontext="" next="99"></option>
+	</node>
+
+	
+	<node id="105" npcName="Sira, Mistress of the House" anim="1" text="Se agradecería mucho si mi señor pudiera atender al Maestro Kelanthir, el peculiar hechicero que llegó por la noche. Se puso bastante quisquilloso con la bebida de bienvenida que le ofrecí. ¡Nunca un invitado había rechazado nuestro buen vino! Pero dijo que preferiría probar el mejor whisky de la casa."
+ contextBefore="" contextAfter="" posx="81" posy="73">
+		<option optionid="1" optiontext="No te preocupes, debería tener la botella adecuada guardada en mis reservas privadas."
+ next="107"></option>
+		<option optionid="2" optiontext="¿Dónde encontraría ahora al Maestro Kelanthir?" next="106"></option>
+		<option optionid="3" optiontext="Me encargaré de él."
+ next="0"></option>
+	</node>
+	<node id="106" npcName="Sira, Mistress of the House" anim="1" text="Lo guié a la colección de antiguos artefactos druídicos de su señoría, estaba muy concentrado admirando esas viejas piedras cuando lo dejé. En el ala sur de la mansión, aquí en la planta baja, como mi señor sabe."
+ contextBefore="" contextAfter="" posx="614" posy="125">
+		<option optionid="1" optiontext="No te preocupes, debería tener la botella adecuada guardada en mis reservas privadas."
+ next="107"></option>
+		<option optionid="2" optiontext="Espléndido, me encargaré de él." next="0"></option>
+	</node>
+	<node id="107" npcName="Sira, Mistress of the House" anim="1" text="¿Escondida al fondo de la biblioteca, junto a la sala de artefactos, supongo? Oh sí, no muchos de los secretos del señor se me han escapado por la mansión. Muy bien, entonces, mi señor."
+ contextBefore="" contextAfter="" posx="614" posy="125">
+		<option optionid="1" optiontext="¿Dónde encontraría ahora al Maestro Kelanthir?" next="106"></option>
+		<option optionid="2" optiontext="Espléndido, me encargaré de él."
+ next="0"></option>
+	</node>
+
+	
+	<node id="109" npcName="Aroch Kelanthir" anim="1" text="Veo que te mantienes bien abastecido. ¡Muy bien, joven señor! ¡Créeme cuando te digo que así es como se hace amigo de un mago para toda la vida!"
+ contextBefore="" contextAfter="" posx="27" posy="12">
+		<option optionid="1" optiontext="¡Esto debería funcionar!"
+ checks="HasItem=115-1" itemIcon="115" next="111"></option>
+		<option optionid="2" optiontext="Solo un momento..." next="0"></option>
+	</node>
+	<node id="110" npcName="Aroch Kelanthir" anim="1" text="Buen día tenga, mi señor. Después de mis largos viajes, anhelo solo una cosa: un poco del mejor whisky de la tierra para calentar mis viejos huesos. Del tipo que solo se puede encontrar en la propiedad de un señor poderoso, como usted."
+ contextBefore="" contextAfter="" posx="27" posy="12">
+		<option optionid="1" optiontext="No hace falta halagar, viejo mago, te traigo justo lo que necesitas."
+ checks="HasItem=115-1" itemIcon="115" next="111"></option>
+		<option optionid="2" optiontext="¡Sígueme, tengo la botella perfecta escondida!"
+ checks="!HasItem=115-1,Var=C263Played-0-0" actions="Cinematic=263" next="0" icon="Quest"></option>
+		<option optionid="3" optiontext="Vuelvo en un momento."
+ next="0"></option>
+	</node>
+	<node id="111" npcName="Aroch Kelanthir" anim="1" text="¿Una botella de Centeno de Glimmerfiel de diez años? ¡Sabes cómo tratar a un invitado, Lord Aercrest!"
+ contextBefore="" contextAfter="" posx="522" posy="66">
+		<option optionid="1" optiontext="" next="112"></option>
+	</node>
+	<node id="112" npcName="Aroch Kelanthir" anim="49" text="&lt;color=#9C8C77&gt;*El mago se bebe su whisky de un trago.*&lt;/color&gt;"
+ contextBefore="" contextAfter="" posx="507" posy="338">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Tomar un sorbo.*&lt;/color&gt;" anim="49" sfx="58" showitem="164" next="113"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*No tomar un sorbo.*&lt;/color&gt;"
+ next="113"></option>
+	</node>
+	<node id="113" npcName="Aroch Kelanthir" anim="1" text="¡Ah, eso sí que funciona! ¡Siento cómo la sabiduría desciende sobre mí!"
+ contextBefore="" contextAfter="" posx="1072" posy="197">
+		<option optionid="1" optiontext="De hecho, ¿hay algo que puedas contarle a un completo novato sobre la magia?"
+ checks="!HasTrait=17" next="114"></option>
+		<option optionid="2" optiontext="Sabes, yo mismo soy una especie de mago..." checks="HasTrait=17" showGreyedOutOption="1" next="116"></option>
+		<option optionid="3" optiontext="Entonces, un mago como tú debe tener algunas aventuras emocionantes que compartir."
+ next="115"></option>
+		<option optionid="4" optiontext="De acuerdo, hablamos más tarde." icon="Quest" actions="Cinematic=59,RemoveItems=115-1" next="0"></option>
+	</node>
+	<node id="114" npcName="Aroch Kelanthir" anim="1" text="Lo que la mayoría no se da cuenta es que la magia está al alcance de todos, uno simplemente debe aprender a escucharla. No dejes que la falta de familiaridad te impida aprovechar su poder, joven señor. Quizás más tarde pueda enseñarte una o dos cosas, si tenemos la oportunidad."
+ contextBefore="" contextAfter="magic no trait" posx="249" posy="133">
+		<option optionid="1" optiontext="¿Y qué hay de las aventuras? Debes tener bastantes que compartir."
+ next="115"></option>
+		<option optionid="2" optiontext="Hablaremos más tarde, mago." icon="Quest" actions="Cinematic=59,RemoveItems=115-1" next="0"></option>
+	</node>
+	<node id="115" npcName="Aroch Kelanthir" anim="1" text="Sí, bueno, he visto una o dos cosas en mis viajes. ¿Quizás ya le llegó a su señoría la noticia sobre los bandidos que ahuyenté cerca del Bosque Nebuloso? Pero entonces, quizás, el señor espera oír algo más emocionante, ¿hm?"
+ contextBefore="" contextAfter="adventures" posx="172" posy="844">
+		<option optionid="1" optiontext="" next="118"></option>
+	</node>
+	<node id="116" npcName="Aroch Kelanthir" anim="1" text="¿De verdad? Sabes, siempre he resentido a todos esos magos que se encierran en alguna academia polvorienta, tratando de acaparar la magia para sí mismos y pretendiendo ser algo especial mientras lo hacen. ¡La magia está al alcance de todos, que nos llamemos magos o no es irrelevante!"
+ contextBefore="magik has trait" contextAfter="" posx="232" posy="552">
+		<option optionid="1" optiontext="" next="117"></option>
+	</node>
+	<node id="117" npcName="Aroch Kelanthir" anim="1" text="¡Uno simplemente debe aprender a escuchar la magia! Eso es lo que siempre digo, pero ¿quién escucha al viejo Kelanthir, eh? Bueno, joven señor, quizás más tarde tengamos la oportunidad de ver lo que has aprendido..." contextBefore="" contextAfter="" posx="730" posy="526">
+		<option optionid="1" optiontext="De acuerdo, pero ¿qué hay de las aventuras? Debes tener bastantes que compartir."
+ next="115"></option>
+		<option optionid="2" optiontext="De acuerdo, hablamos más tarde." icon="Quest" actions="Cinematic=59,RemoveItems=115-1" next="0"></option>
+	</node>
+	<node id="118" npcName="Aroch Kelanthir" anim="1" text="Bien entonces, ¿ha oído hablar el joven señor de un Kreogu? ¡Es una oscura criatura subterránea con garras como guadañas! Una bestia verdaderamente temible y rara, descubrí que una había estado aterrorizando un pueblo al oeste de las Llanuras de Arnea no hace mucho."
+ contextBefore="" contextAfter="" posx="667" posy="924">
+		<option optionid="1" optiontext="" next="119"></option>
+	</node>
+	<node id="119" npcName="Aroch Kelanthir" anim="1" text="¡Fue una buena pelea! Incluso para alguien tan poderoso como yo... De hecho, esos monstruos tienen caparazones de quitina más gruesos que cualquier armadura de placas, ¡y son del tamaño de una granja! Pero no me desanimé; seguí desviando sus ataques y lanzándole bolas de fuego, el día se había convertido en noche, ¡pero finalmente el monstruo se detuvo!"
+ contextBefore="" contextAfter="" posx="1139" posy="851">
+		<option optionid="1" optiontext="¡Vaya! ¿Hay algo que puedas contarle a un novato como yo sobre la magia?"
+ checks="!HasTrait=17" next="114"></option>
+		<option optionid="2" optiontext="¡Vaya! Sabes, yo mismo soy una especie de mago..." showGreyedOutOption="1" checks="HasTrait=17" next="116"></option>
+		<option optionid="3" optiontext="¡Emocionante! Hablaremos más tarde, mago."
+ icon="Quest" actions="Cinematic=59,RemoveItems=115-1" next="0"></option>
+	</node>
+
+	<node id="160" npcName="Trev Mercoss" switchtalker="566" lookAtNpc="730" anim="1" text="... ¡dijo que sería un trabajo fácil! ¡En cambio, perdí a la mitad de mis hombres de inmediato y quién sabe cuántos más se dispersaron en estos bosques! ¡No me pagas lo suficiente por esto!"
+ contextBefore="" contextAfter="" posx="67" posy="51">
+		<option optionid="1" optiontext="" next="161"></option>
+	</node>
+	<node id="161" npcName="Tyron Goldbridge" anim="1" switchtalker="730" lookAtNpc="566" text="¡Tendrás tu oro, el doble de lo que acordamos, pero necesito que luches por mí ahora!"
+ contextBefore="" contextAfter="" posx="512" posy="54">
+		<option optionid="1" optiontext="¡Ríndete o muere!" next="162"></option>
+		<option optionid="2" optiontext="Lo que sea que te esté pagando, no vale tu vida."
+ next="163"></option>
+	</node>
+	<node id="162" npcName="Trev Mercoss" switchtalker="566" anim="1" text="¡Ah, mierda, pues no me rindo! ¡Muchachos, a las armas!"
+ contextBefore="" contextAfter="" posx="1032" posy="44">
+		<option optionid="1" optiontext="" icon="Fight" actions="UpdateQuest=56-7" next="0"></option>
+	</node>
+	<node id="163" npcName="Trev Mercoss" switchtalker="566" anim="1" text="Tal vez no, pero tampoco voy a ir a una mazmorra."
+ contextBefore="" contextAfter="" posx="927" posy="371">
+		<option optionid="1" optiontext="Te estoy dando esta única oportunidad de rendirte, no seas tonto."
+ next="164"></option>
+		<option optionid="2" optiontext="Estoy aquí por el barón, no por ti. Puedes marcharte de aquí."
+ next="165"></option>
+	</node>
+	<node id="164" npcName="Trev Mercoss" switchtalker="566" anim="1" text="Sí, gracias... ¡pero no, gracias! ¡Muchachos, a las armas!"
+ contextBefore="" contextAfter="" posx="1432" posy="372">
+		<option optionid="1" optiontext="" icon="Fight" actions="UpdateQuest=56-7" next="0"></option>
+	</node>
+	<node id="165" npcName="Tyron Goldbridge" switchtalker="730"  lookAtNpc="566" anim="1" text="¡No le escuches...!"
+ contextBefore="" contextAfter="" posx="930" posy="685">
+		<option optionid="1" optiontext="" next="166"></option>
+	</node>
+	<node id="166" npcName="Trev Mercoss" switchtalker="566" anim="1" text="¿Y por qué no debería? Este fue un trabajo de mierda desde el principio. ¡Muchachos, es hora de cortar por lo sano y largarnos!"
+ contextBefore="" contextAfter="" posx="1429" posy="681">
+		<option optionid="1" optiontext="" icon="Fight" actions="SetVar=Q56NoMercBoss-1,Cinematic=66" next="0"></option>
+	</node>
+
+	<node id="167" npcName="Trev Mercoss" anim="1" text="*los mercenarios huyen*" contextBefore="short cinematik" contextAfter="" posx="918" posy="1028">
+		<option optionid="1" optiontext="" next="168"></option>
+	</node>
+	<node id="168" npcName="Tyron Goldbridge" switchtalker="553" anim="1" text="¡No se puede confiar en nadie estos días!" contextBefore="" contextAfter="" posx="1383" posy="1015">
+		<option optionid="1" optiontext="" next="169"></option>
+	</node>
+	<node id="169" npcName="Tyron Goldbridge" switchtalker="553" anim="1" text="¡Como sea, unos pocos hombres leales valen más que una docena de mercenarios! ¡Acabad con él!"
+ contextBefore="" contextAfter="" posx="1844" posy="1014">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+
+	<node id="180" npcName="Tyron Goldbridge" anim="1" text="Sé cuándo he sido vencido, yo... me rindo."
+ contextBefore="" contextAfter="" posx="24" posy="12">
+		<option optionid="1" optiontext="Bien, no saldrás de mi custodia hasta que hayas cumplido todas mis demandas al pie de la letra."
+ next="181"></option>
+		<option optionid="2" optiontext="¿Atacar mi hogar, matar a mis hombres? Fuiste demasiado lejos, Tyron. No saldrás de aquí con vida."
+ next="182"></option>
+	</node>
+	<node id="181" npcName="Tyron Goldbridge" anim="1" text="Sí, sí, lo entiendo..." contextBefore="" contextAfter="" posx="756" posy="6">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="182" npcName="Tyron Goldbridge" anim="1" text="¡Espera! ¡No olvides que mis hijos están en casa con mis ejércitos, esperando mi regreso sano y salvo! ¡No hay necesidad de empezar una guerra por esto!"
+ contextBefore="" contextAfter="" posx="511" posy="312">
+		<option optionid="1" optiontext="Lo sé, pero ojalá pudiera matarte. Permanecerás bajo mi custodia hasta que hayas cumplido todas mis demandas al pie de la letra."
+ next="181"></option>
+		<option optionid="2" optiontext="Ya no me importa, Tyron. Tus ambiciones nos han estado llevando a la guerra desde hace tiempo. Mejor ahora que más tarde."
+ next="0"></option>
+	</node>
+
+	<node id="183" npcName="Tyron Goldbridge" anim="1" text="¡Maldito seas, tu nombre y toda tu familia, Rothar Aercrest!"
+ contextBefore="execute tyron cinematik" contextAfter="" posx="1015" posy="627">
+		<option optionid="1" optiontext="" next="184"></option>
+	</node>
+	<node id="184" npcName="Tyron Goldbridge" anim="1" text="¡Llegará el día en que te arrepientas de esto! ¡Un día desearás haber...!" contextBefore="" contextAfter="" posx="1506" posy="630">
+		<option optionid="1" optiontext="" next="185"></option>
+	</node>
+	<node id="185" npcName="Tyron Goldbridge" anim="1" text="¿le cortamos la cabeza? :D" contextBefore="" contextAfter="" posx="1990" posy="635">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+
+	<node id="200" npcName="Sira, Mistress of the House" anim="1" text="Por un momento las cosas parecieron bastante tensas, mi señor. Espero que el aire exterior refresque al maestro Goldbridge."
+ posx="54" posy="41">
+		<option optionid="1" optiontext="Estoy seguro de que estará bien, ¿cómo vamos con los preparativos de la velada?"
+ next="201" icon="Quest"></option>
+	</node>
+	<node id="201" npcName="Sira, Mistress of the House" anim="1" text="Oh, ya sabe cómo es, mi señor... Es todo un ajetreo antes de una gran noche de celebraciones como esta, como siempre. Casi todos tienen algún tipo de crisis, pero estoy segura de que pueden arreglárselas sin que su señor siempre les resuelva todos sus problemas."
+ posx="491" posy="41">
+		<option optionid="1" optiontext="" next="202"></option>
+	</node>
+	<node id="202" npcName="Sira, Mistress of the House" anim="1" text="Sin embargo, hay un invitado exigente que podría ser mejor atendido por su señoría. Es el Maestro Kelanthir, el peculiar hechicero que llegó por la noche. Se puso bastante quisquilloso con la bebida de bienvenida que le ofrecí. ¡Nunca un invitado había rechazado nuestro buen vino! Pero dijo que preferiría probar el mejor whisky de la casa."
+ posx="918" posy="43">
+		<option optionid="1" optiontext="No te preocupes, debería tener la botella adecuada guardada en mis reservas privadas."
+ next="203"></option>
+		<option optionid="2" optiontext="¿Dónde encontraría ahora al Maestro Kelanthir?" next="204"></option>
+		<option optionid="3" optiontext="No te preocupes, me encargaré de él."
+ next="0" actions="UpdateQuest=56-4"></option>
+	</node>
+	<node id="203" npcName="Sira, Mistress of the House" anim="1" text="¿Escondida al fondo de la biblioteca, junto a la sala de artefactos, supongo? Oh sí, no muchos de los secretos del señor se me han escapado por la mansión. Muy bien, entonces, mi señor."
+ posx="1412" posy="33">
+		<option optionid="1" optiontext="¿Dónde encontraría ahora al Maestro Kelanthir?" next="204"></option>
+		<option optionid="2" optiontext="No te preocupes, me encargaré del mago."
+ next="0" actions="UpdateQuest=56-4"></option>
+	</node>
+	<node id="204" npcName="Sira, Mistress of the House" anim="1" text="Lo guié a la colección de antiguos artefactos druídicos de su señoría, estaba muy concentrado admirando esas viejas piedras cuando lo dejé. En el ala sur de la mansión, aquí en la planta baja, como mi señor sabe."
+ posx="1787" posy="358">
+		<option optionid="1" optiontext="No te preocupes, debería tener la botella adecuada guardada en mis reservas privadas."
+ next="203"></option>
+		<option optionid="2" optiontext="No te preocupes, me encargaré de él." next="0" actions="UpdateQuest=56-4"></option>
+	</node>
+
+
+
+	<node id="220" npcName="Jon Armsteel" switchtalker="547" lookAtNpc="551" anim="904" text="¡Quizás cambies de tono cuando mi estandarte marche hacia la cantera que tan insolentemente colocaste en mis tierras, eh?!"
+ posx="334" posy="126">
+		<option optionid="1" optiontext="" next="221"></option>
+	</node>
+	<node id="221" npcName="Tyron Goldbridge" switchtalker="551" lookAtNpc="547" anim="1" text="Tu propio vasallo me vendió la escritura, ¿qué me importa si no puedes mantenerlo a raya?"
+ posx="805" posy="127">
+		<option optionid="1" optiontext="Seguir escuchando." next="222"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*¿Por qué no pueden simplemente llevarse bien?*&lt;/color&gt;" next="231"></option>
+		<option optionid="3" optiontext="¡Basta de esto!"
+ next="228" icon="Quest"></option>
+	</node>
+	<node id="222" npcName="Ellen Rainn" switchtalker="550" lookAtNpc="551" anim="1145" text="¡¿A quién le importa una cantera sin sentido en medio de la nada?!"
+ posx="1266" posy="125">
+		<option optionid="1" optiontext="Seguir escuchando." next="223"></option>
+		<option optionid="2" optiontext="¡Basta de esto!"
+ next="228" icon="Quest"></option>
+	</node>
+	<node id="223" npcName="Gailris Rainn" switchtalker="549" lookAtNpc="551" anim="1146" text="¡Ejem, muy cierto! El verdadero crimen aquí son los impuestos que has aplicado contra nosotros, los mercaderes extranjeros. ¡Obstaculizar el libre comercio, es simplemente indignante!"
+ posx="1721" posy="127">
+		<option optionid="1" optiontext="Seguir escuchando." next="224"></option>
+		<option optionid="2" optiontext="¡Basta de esto!"
+ next="228" icon="Quest"></option>
+	</node>
+	<node id="224" npcName="Tyron Goldbridge" switchtalker="551" lookAtNpc="549" anim="1" text="Pensaría todo lo contrario, maestro Gailris. Eres libre de llevar tu comercio a cualquier parte, siempre y cuando sea fuera de mi ciudad. ¡Tu competencia simplemente no es bienvenida allí!"
+ posx="2167" posy="128">
+		<option optionid="1" optiontext="Seguir escuchando." next="225"></option>
+		<option optionid="2" optiontext="¡Basta de esto!"
+ next="228" icon="Quest"></option>
+	</node>
+	<node id="225" npcName="Dahlia Oldewood" switchtalker="546" lookAtNpc="551" anim="904" text="¡Oh, es tu ciudad, ¿verdad?! Bueno, también es mi ciudad, ¡y las preocupaciones de estos otros no son nada comparadas con la corrupción que has traído a la preciosa Ciudad de Thornhill!"
+ posx="2615" posy="132">
+		<option optionid="1" optiontext="Seguir escuchando." next="226"></option>
+		<option optionid="2" optiontext="¡Basta de esto!"
+ next="228" icon="Quest"></option>
+	</node>
+	<node id="226" npcName="Dahlia Oldewood" switchtalker="546" lookAtNpc="551" anim="904" text="¡Impediste que mi esposo tuviera un asiento en el consejo de la ciudad! ¿Y por qué es eso? ¿Quizás tienes miedo de que alguien realmente hable en tu contra?"
+ posx="3063" posy="134">
+		<option optionid="1" optiontext="Seguir escuchando." next="227"></option>
+		<option optionid="2" optiontext="¡Basta de esto!"
+ next="228" icon="Quest"></option>
+	</node>
+	<node id="227" npcName="Tyron Goldbridge" switchtalker="551" lookAtNpc="546" anim="1" text="Oh Dahlia, no pretendamos que tu esposo es realmente capaz de, bueno, nada en realidad... aparte de servir como tu portavoz, quizás."
+ posx="3527" posy="129">
+		<option optionid="1" optiontext="¡Ya he oído suficiente de esto!" next="228" icon="Quest"></option>
+	</node>
+	<node id="228" npcName="Tyron Goldbridge" switchtalker="551" anim="1" text="¡Ah, Lord Aercrest! Ahora que estás aquí, ¿podrías aconsejar a estos amargados mentecatos..." posx="4128" posy="132">
+		<option optionid="1" optiontext="¡Tyron Goldbridge! ¡Me parece que has pisado muchos callos por aquí!"
+ next="229" icon="Quest"></option>
+	</node>
+	<node id="229" npcName="Tyron Goldbridge" switchtalker="551" anim="1" text="Bueno, Lord Aercrest... yo..." posx="4595" posy="134">
+		<option optionid="1" optiontext="¡Por la paz de nuestro reino, me aseguraré de que hagas las paces con al menos una de las familias aquí presentes hoy!"
+ next="230" icon="Quest"></option>
+	</node>
+	<node id="230" npcName="Rothar Aercrest" switchtalker="0" anim="0" text="&lt;color=#9C8C77&gt;*Siendo el señor del reino, a veces es esencial mantener a tus vasallos rebeldes a raya. Apoyar la petición de una de las familias presentes te ganará su favor y contrarrestará las crecientes ambiciones del Barón Goldbridge. La pregunta es, ¿a cuál apoyar?*&lt;/color&gt;"
+ posx="5067" posy="134">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*¿Acaso importa?*&lt;/color&gt;" next="232"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*¡Quizás simplemente elija una!*&lt;/color&gt;"
+ next="233"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Hablaré con las familias para determinarlo.*&lt;/color&gt;"
+ actions="UpdateQuest=56-2" next="0" icon="Quest"></option>
+	</node>
+	<node id="231" npcName="Rothar Aercrest" switchtalker="0" anim="0" text="&lt;color=#9C8C77&gt;*Ay, los vasallos en disputa son una ocurrencia constante para el señor del reino. Cada vez que has organizado un festín, alguien siempre ha insistido en montar una escena. Sin embargo, esta vez parece ser peor de lo habitual...*&lt;/color&gt;"
+ posx="1092" posy="649">
+		<option optionid="1" optiontext="Seguir escuchando." next="222"></option>
+		<option optionid="2" optiontext="¡Basta de esto!"
+ next="228"></option>
+	</node>
+	<node id="232" npcName="Rothar Aercrest" switchtalker="0" anim="0" text="&lt;color=#9C8C77&gt;*Quizás, quizás no... Cada una de las familias presentes es influyente a su manera y agradecerá tu apoyo.*&lt;/color&gt;"
+ posx="5543" posy="135">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Entonces simplemente elegiré una.*&lt;/color&gt;" next="233"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*En ese caso, debería hablar con las familias para determinar quién es más digno.*&lt;/color&gt;"
+ actions="UpdateQuest=56-2" next="0" icon="Quest"></option>
+	</node>
+	<node id="233" npcName="Rothar Aercrest" switchtalker="0" anim="0" text="&lt;color=#9C8C77&gt;*Ciertamente, discutir asuntos de estado puede ser terriblemente agotador. ¿A quién, entonces, le prestarás tu apoyo?*&lt;/color&gt;"
+ posx="6016" posy="136">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*A la familia guerrera, los Armsteel.*&lt;/color&gt;" actions="UpdateQuest=56-3,SetVar=Q56Support-1" next="0"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*A los mercaderes, la familia Rainn.*&lt;/color&gt;"
+ actions="UpdateQuest=56-3,SetVar=Q56Support-2" next="0"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*A la casa de la ciudad, los Oldewood.*&lt;/color&gt;" actions="UpdateQuest=56-3,SetVar=Q56Support-3" next="0"></option>
+		<option optionid="4" optiontext="&lt;color=#9C8C77&gt;*Quizás hable con las familias antes de tomar mi decisión.*&lt;/color&gt;"
+ actions="UpdateQuest=56-2" next="0"></option>
+	</node>
+
+
+	<node id="240" npcName="Stableboy" anim="1" text="¡Mi señor...! &lt;color=#9C8C77&gt;*jadeando*&lt;/color&gt; ¡Es el barón...! ¡Goldbridge...! ¡Está atacando la propiedad, mi señor...! ¡Corrí tan rápido como pude...!"
+ posx="19" posy="10">
+		<option optionid="1" optiontext="¡Más despacio, muchacho! Dime exactamente lo que viste." next="241"></option>
+		<option optionid="2" optiontext="¡Debería haberlo sabido, nunca confíes en una serpiente!"
+ next="243"></option>
+	</node>
+	<node id="241" npcName="Stableboy" anim="1" text="El Barón... dijo que iba a dar un paseo, a tomar un poco de aire, ¿sabe...? Se fue al bosque... ¡Luego, momentos después, regresa excepto... que tiene toda una hueste de mercenarios a su espalda...!"
+ posx="468" posy="12">
+		<option optionid="1" optiontext="¡Maldito sea! ¿Y los guardias?" next="242"></option>
+		<option optionid="2" optiontext="¡Debo unirme a la defensa de inmediato!"
+ next="245"></option>
+	</node>
+	<node id="242" npcName="Stableboy" anim="1" text="Lo siento, mi señor, los de las puertas fueron superados de inmediato... Más guardias corrían a defender cuando llegué, pero el Barón... tenía muchísimos hombres con él..." posx="906" posy="15">
+		<option optionid="1" optiontext="Maestro Kelanthir, entiendo que esta no es su lucha, pero..." next="244"></option>
+		<option optionid="2" optiontext="¡Debo unirme a la defensa de inmediato!"
+ next="245"></option>
+	</node>
+	<node id="243" npcName="Stableboy" anim="1" text="Los guardias corrían a defender cuando llegué pero el Barón... tenía muchísimos hombres... lo siento, mi señor..." posx="361" posy="424">
+		<option optionid="1" optiontext="Maestro Kelanthir, entiendo que esta no es su lucha, pero..." next="244"></option>
+		<option optionid="2" optiontext="¡Debo unirme a la defensa de inmediato!"
+ next="245"></option>
+	</node>
+	<node id="244" npcName="Aroch Kelanthir" switchtalker="544" anim="1" text="No digas más, joven señor. ¡Que el barón arruine un día de celebraciones como este es verdaderamente vergonzoso! Necesitaré un momento para reunir mis fuerzas primero, pero estaré justo detrás de ti."
+ posx="1534" posy="38">
+		<option optionid="1" optiontext="Tiene mi gratitud, mago." icon="Quest" actions="Cinematic=120" next="0"></option>
+	</node>
+	<node id="245" npcName="Aroch Kelanthir" switchtalker="544" anim="1" text="¡Que el barón arruine un día de celebraciones como este es verdaderamente vergonzoso! No puedo quedarme al margen y ver cómo sucede esto. Puedes contar con mi ayuda, joven señor, aunque necesitaré un momento para reunir mis fuerzas primero."
+ posx="1120" posy="486">
+		<option optionid="1" optiontext="Tiene mi gratitud, mago." icon="Quest" actions="Cinematic=120" next="0"></option>
+	</node>
+
+
+	<node id="250" npcName="Aroch Kelanthir" anim="1" text="¿Qué harás ahora, Lord Aercrest?"
+ posx="112" posy="38">
+		<option optionid="1" optiontext="Excelente momento, mago, un poco más y las cosas podrían haberse puesto feas."
+ next="253"></option>
+		<option optionid="2" optiontext="No puedo dejar que se escape, voy tras él."
+ next="251" icon="Quest"></option>
+	</node>
+	<node id="251" npcName="Aroch Kelanthir" anim="1" text="¿Estás seguro, joven señor? Perdóname por señalarlo, pero todos tus hombres parecen estar indispuestos en este momento."
+ posx="639" posy="429">
+		<option optionid="1" optiontext="Si se escapa, volverá corriendo a Thornhill para reclutar más hombres. ¡Necesito detenerlo aquí, hoy!"
+ next="252" icon="Quest"></option>
+	</node>
+	<node id="252" npcName="Aroch Kelanthir" anim="1" text="Veo que tu reputación es bien merecida, joven señor. Bueno, no estoy tan agotado como para no poder lanzar algunos hechizos más, y odiaría dejarte enfrentar a estos bandidos solo. Puedes contar con mi magia, Lord Aercrest."
+ posx="1129" posy="428">
+		<option optionid="1" optiontext="Gracias, maestro Kelanthir, tu ayuda es muy bienvenida."
+ next="254" icon="Follower"></option>
+		<option optionid="2" optiontext="Ya has hecho mucho, deberías quedarte y descansar, yo puedo encargarme de lo que queda de los hombres del Barón."
+ next="255" icon="LeadingExit"></option>
+	</node>
+	<node id="253" npcName="Aroch Kelanthir" anim="1" text="No estabas preocupado de que llegara tarde, ¿verdad? Un mago llega precisamente cuando se lo propone, Lord Aercrest."
+ posx="796" posy="34">
+		<option optionid="1" optiontext="Bueno, no puedo dejar que el Barón se escape, voy tras él."
+ next="251" icon="Quest"></option>
+	</node>
+	<node id="254" npcName="Aroch Kelanthir" anim="1" text="No te preocupes, tu hospitalidad es recompensa suficiente. Además, disfrutaré mi parte en humillar a esta excusa intrigante de barón."
+ posx="1681" posy="315">
+		<option optionid="1" optiontext="" next="0" icon="Quest" actions="Cinematic=122"></option>
+	</node>
+	<node id="255" npcName="Aroch Kelanthir" anim="1" text="Como digas, joven señor. Repeler a los hombres del Barón me agotó bastante, pero todavía me queda un poco de magia, si la requieres. Solo tienes que decirlo."
+ posx="1684" posy="630">
+		<option optionid="1" optiontext="Muy agradecido." icon="Quest" actions="SetVar=Q56P6Kelanthir-1" next="0"></option>
+	</node>
+
+	<node id="260" npcName="Aroch Kelanthir" anim="1" text="Repeler a los hombres del barón me agotó bastante, pero todavía me queda un poco de magia, si requieres ayuda, joven señor. Solo tienes que decirlo."
+ posx="112" posy="41">
+		<option optionid="1" optiontext="Quizás ir solo no es la idea más brillante, tu ayuda es bienvenida."
+ icon="Follower" actions="Cinematic=122" next="0"></option>
+		<option optionid="2" optiontext="Ya has hecho mucho, deberías quedarte aquí y descansar."
+ next="0"></option>
+	</node>
+
+
+	<node id="300" npcName="Doctor Joe" anim="1" text="¡Ah, buenos días, mi señor! Espero que haya dormido bien, ya sabe lo que siempre le digo sobre la importancia del sueño, ¿eh? ¡Es un gran día después de todo! Y como tal, debo mantenerme ocupado."
+ posx="10" posy="10">
+		<option optionid="1" optiontext="¿Qué te mantiene ocupado, si no te importa mi indiscreción?"
+ next="301" icon="Task"></option>
+		<option optionid="2" optiontext="Te dejaré con tus asuntos." next="0"></option>
+	</node>
+	<node id="301" npcName="Doctor Joe" anim="1" text="Ah, bueno, verá, de sus banquetes anteriores he aprendido que los invitados pueden volverse bastante ruidosos hacia la noche. Y... por la mañana, todos acuden a mi estudio, con un aspecto muy pálido, sintiéndose muy mal. Buscando una cura, ¿sí? Bueno, no soy un hacedor de milagros, pero hago lo que puedo."
+ posx="421" posy="10">
+		<option optionid="1" optiontext="" next="302"></option>
+	</node>
+	<node id="302" npcName="Doctor Joe" anim="1" text="Un tónico analgésico suave es lo que puedo ofrecerles, pero necesito un buen suministro para una reunión de este tamaño. Su señoría está, por supuesto, muy ocupado atendiendo asuntos más importantes, lo entiendo, pero en el improbable caso de que encontrara pociones analgésicas, serían muy bienvenidas aquí."
+ posx="832" posy="12">
+		<option optionid="1" optiontext="Resulta que he conseguido un montón. &lt;color=teal&gt;(3)&lt;/color&gt;"
+ next="303" checks="HasItem=806-3" actions="RemoveItems=806-3" itemIcon="806" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Lo tendré en cuenta."
+ next="0"></option>
+	</node>
+	<node id="303" npcName="Doctor Joe" anim="1" text="¡Simplemente maravilloso, mi señor! ¡Realmente me ha ahorrado un dolor de cabeza, jeje! Oh, y aquí, eche un vistazo a este interesante libro que he querido compartir con usted."
+ posx="1240" posy="12">
+		<option optionid="1" optiontext="Continúe, doctor." next="0" actions="AddItems=9097-1-true,SetVar=PrologeTasksDrJoe-1" icon="Task"></option>
+	</node>
+
+
+	<node id="310" npcName="Lady Cedarbrook" anim="1" text="Oh, eres tú... Quiero decir, saludos, Lord Aercrest. Perdona mi amargura, llevo un rato intentando encontrar un abrecartas, uno pensaría que un estudio como este tendría al menos uno. Me ha llegado una misiva importante de casa, pero me cuesta abrirla."
+ posx="7" posy="11">
+		<option optionid="1" optiontext="No sé qué ha pasado con mis abrecartas, pero esto podría ayudar."
+ next="311" checks="HasItem=238-1" actions="RemoveItems=238-1" itemIcon="238" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Lamento oír eso, te dejaré con tus asuntos."
+ next="0"></option>
+	</node>
+	<node id="311" npcName="Lady Cedarbrook" anim="1" text="¡Oh! Bueno, bueno, ¡Lord Aercrest salva el día de nuevo! Pero de verdad, tienes mi gratitud. Hm, ¿qué tal si dono uno de mis libros a tu biblioteca como gesto de agradecimiento?"
+ posx="422" posy="11">
+		<option optionid="1" optiontext="Gracias, Lady Cedarbrook." next="0" actions="AddItems=9097-1-true,SetVar=PrologeTasksLadyMartha-1" icon="Task"></option>
+	</node>
+
+
+	<node id="320" npcName="Chef Ramadin" anim="1" text="Mi Señor, su inspección aquí en las cocinas era esperada. Sin embargo, le aseguro que todos los preparativos van perfectamente. La calidad de la comida será impecable, como siempre."
+ posx="12" posy="9">
+		<option optionid="1" optiontext="¿Ningún problema, entonces?" next="321" icon="Task"></option>
+		<option optionid="2" optiontext="Muy bien, continúe."
+ next="0"></option>
+	</node>
+	<node id="321" npcName="Chef Ramadin" anim="1" text="No, mi Señor, por supuesto que no, nunca. Ejem, bueno, no en lo que respecta a la calidad, de todos modos, sin embargo..." posx="421" posy="8">
+		<option optionid="1" optiontext="¿Bueno? Suéltalo."
+ next="322" icon="Task"></option>
+		<option optionid="2" optiontext="¡Bueno, bien! En ese caso, continúe."
+ next="0"></option>
+	</node>
+	<node id="322" npcName="Chef Ramadin" anim="1" text="Bueno, mi Señor, resulta que podría haber un ligero problema con la cantidad... Verá, una de las sirvientas que era responsable de preparar el pescado fue distraída por la inoportuna visita de uno de los apuestos mozos de establo..." posx="828" posy="7">
+		<option optionid="1" optiontext="" next="323"></option>
+	</node>
+	<node id="323" npcName="Chef Ramadin" anim="1" text="Lamentablemente, este evento llevó a un lapso momentáneo en la atención de la sirvienta, por lo que el pescado del que estaba a cargo fue... bueno... quemado. Ahora, la sirvienta en cuestión ha sido severamente reprendida, pero eso todavía deja el problema con respecto al pescado."
+ posx="1235" posy="7">
+		<option optionid="1" optiontext="¡Entonces es bueno que sepa cómo preparar pescado! &lt;color=teal&gt;(5)&lt;/color&gt;"
+ next="324" checks="HasItem=142-5" actions="RemoveItems=142-5" itemIcon="142" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Desafortunado, ciertamente, veré si se puede hacer algo al respecto."
+ next="0"></option>
+	</node>
+	<node id="324" npcName="Chef Ramadin" anim="1" text="¡Mi Señor, era mi responsabilidad arreglar este desastre, pero usted se desvió de su camino para salvarme el pellejo! ¡Estoy orgulloso de servir a su casa! Tengo poco de valor que ofrecer en agradecimiento, excepto mi conocimiento y habilidades... lo que me recuerda, llevo un libro que me enseñó a cocinar por primera vez, ¡quizás también le resulte útil!"
+ posx="1646" posy="7">
+		<option optionid="1" optiontext="Gracias, Chef, se lo agradezco." next="0" actions="AddItems=9097-1-true,SetVar=PrologeTasksRamadin-1" icon="Task"></option>
+	</node>
+
+
+	<node id="330" npcName="Lady Tomoken" anim="1" text="¡No puedo creer que esté aquí en este castillo! ¿Lo has visto, al gran mago Kelanthir? ¡Cuando sea mayor, quiero ser como él! ¿Crees que es posible, Lord Aercrest? ¿Crees que podría ser una pequeña dama-maga?"
+ posx="6" posy="9">
+		<option optionid="1" optiontext="Quizás, podría requerir arduas décadas de estudio..." next="331" icon="Task"></option>
+		<option optionid="2" optiontext="" next="0"></option>
+	</node>
+	<node id="331" npcName="Lady Tomoken" anim="1" text="¡¿Estudios?! ¡A quién le importa eso! Hmm, ¡lo que realmente necesito es un sombrero puntiagudo! ¡Los magos siempre los llevan, así es como la gente los reconoce como magos! Oh por favor, Lord Aercrest, ¿podría tener un sombrero de mago?"
+ posx="417" posy="8">
+		<option optionid="1" optiontext="Sí, supongo, ¿por qué no?" next="332" checks="HasItem=158-1" actions="RemoveItems=158-1" itemIcon="158" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Lo pensaré."
+ next="0"></option>
+	</node>
+	<node id="332" npcName="Lady Tomoken" anim="1" text="¡Sí, eres el mejor, Lord-tío! Como recompensa por tu misión bien completada, ¡te concedo un libro que contiene el conocimiento secreto de los magos! Bueno, técnicamente es tu libro, lo encontré aquí en la biblioteca, ¡pero es una buena recompensa de todos modos!"
+ posx="828" posy="9">
+		<option optionid="1" optiontext="Gracias, Tomoken." next="0" actions="AddItems=9097-1-true,SetVar=PrologeTasksTomoken-1" icon="Task"></option>
+	</node>
+
+
+	<node id="340" npcName="Captain Arnold" anim="1" text="¡Todo bien aquí en la armería, mi Señor! Me aseguraré de que los hombres se mantengan alerta. Nunca se sabe qué feo problema surge cuando tanta gente se reúne para un banquete como este."
+ posx="12" posy="9">
+		<option optionid="1" optiontext="¿Tiene todo lo que necesita?" next="341" icon="Task"></option>
+		<option optionid="2" optiontext="Ciertamente, continúe."
+ next="0"></option>
+	</node>
+	<node id="341" npcName="Captain Arnold" anim="1" text="Bueno, en su mayor parte, señor... Aunque siempre nos vendrían bien más armas sencillas para entrenar y cosas así. Se siguen rompiendo, ya ve. Espadas para entrenar, arcos para practicar tiro con arco..." posx="425" posy="10">
+		<option optionid="1" optiontext="Tengo arcos para usted &lt;color=teal&gt;(5)&lt;/color&gt;."
+ next="342" checks="HasItem=154-5" itemIcon="154" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Tengo algunas espadas para usted. &lt;color=teal&gt;(2)&lt;/color&gt;"
+ next="344" checks="HasItem=150-2" itemIcon="150" showGreyedOutOption="1"></option>
+		<option optionid="3" optiontext="Lo tendré en mente."
+ next="0"></option>
+	</node>
+	<node id="342" npcName="Captain Arnold" anim="1" text="¿De veras, señor? ¿Y qué tal algunas espadas?"
+ posx="835" posy="12">
+		<option optionid="1" optiontext="También tengo algunas espadas. &lt;color=teal&gt;(2)&lt;/color&gt;"
+ next="343" checks="HasItem=150-2" actions="RemoveItems=150-2|154-5" itemIcon="150" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Veré qué puedo hacer."
+ next="0"></option>
+	</node>
+	<node id="343" npcName="Captain Arnold" anim="1" text="¡Muy bien, señor! Estos deberían durarnos un tiempo. Oh, y ya que está aquí, señor... Tengo algunos libros para usted, algunos de los hombres deben haberlos tomado de la biblioteca, supongo." posx="1245" posy="13">
+		<option optionid="1" optiontext="Gracias, Capitán."
+ next="0" actions="AddItems=9097-2-true,SetVar=PrologeTasksArnold-1" icon="Task"></option>
+	</node>
+	<node id="344" npcName="Captain Arnold" anim="1" text="¿De veras, señor? ¿Y qué tal algunos arcos?"
+ posx="833" posy="347">
+		<option optionid="1" optiontext="También tengo arcos. &lt;color=teal&gt;(5)&lt;/color&gt;" next="343" checks="HasItem=154-5" actions="RemoveItems=150-2|154-5" itemIcon="154" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Veré qué puedo hacer."
+ next="0"></option>
+	</node>
+
+	
+	<node id="350" npcName="Maid Vivienne" anim="1" text="¡Buenos días, mi señor! Día ajetreado, ¿verdad? No se preocupe, ¡todos estamos trabajando muy duro para asegurarnos de que los invitados disfruten del día!"
+ posx="14" posy="10">
+		<option optionid="1" optiontext="¿Tienen los sirvientes todo lo que necesitan?" next="351" icon="Task"></option>
+		<option optionid="2" optiontext="Excelente, continúe."
+ next="0"></option>
+	</node>
+	<node id="351" npcName="Maid Vivienne" anim="1" text="En su mayoría, señor... aunque, si me permite, las noches se han vuelto frías últimamente, y nos ha costado encontrar suficiente ropa de abrigo para todos... capuchas de piel de oveja y cosas así... ¡pero mi Señor no debe preocuparse, nos las arreglaremos, por supuesto!"
+ posx="427" posy="12">
+		<option optionid="1" optiontext="Tengo algunas capuchas de piel de oveja para ustedes. &lt;color=teal&gt;(3)&lt;/color&gt;"
+ next="352" checks="HasItem=315-3" actions="RemoveItems=315-3" itemIcon="315" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Veré si puedo encontrar algo para ustedes."
+ next="0"></option>
+	</node>
+	<node id="352" npcName="Maid Vivienne" anim="1" text="¡Oh, mi Señor, siempre es usted tan considerado y atento! Me aseguraré de que estas lleguen a quienes las necesitan. ¿Por qué no se queda con este libro, mi señor? Uno de los invitados me lo dio como regalo, pero erm... en realidad no sé leer."
+ posx="840" posy="13">
+		<option optionid="1" optiontext="Gracias, Vivienne." next="0" actions="AddItems=9097-1-true,SetVar=PrologeTasksVivienne-1" icon="Task"></option>
+	</node>
+
+
+	<node id="360" npcName="Groundskeeper Darron" anim="1" text="¿Todo bien, mi señor? ¿Viene a revisar los terrenos entonces? Ha sido un buen año, sí señor... Los árboles han crecido grandes y hay muchos ciervos en los bosques. Demasiados ciervos, para ser honesto, algunos necesitan ser sacrificados."
+ posx="8" posy="8">
+		<option optionid="1" optiontext="" next="361"></option>
+	</node>
+	<node id="361" npcName="Groundskeeper Darron" anim="1" text="Pero no hay tiempo para eso ahora, estoy aquí buscando buenos árboles para talar. Debemos mantener todos los fuegos encendidos en el castillo esta noche, y eso requiere mucha madera."
+ posx="416" posy="8">
+		<option optionid="1" optiontext="Podría aliviar tu carga, te he traído algunos troncos. &lt;color=teal&gt;(10)&lt;/color&gt;"
+ next="362" checks="HasItem=61-10" actions="RemoveItems=61-10" itemIcon="61" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="He sacrificado algunos ciervos, tengo algunas astas para ti. &lt;color=teal&gt;(2)&lt;/color&gt;"
+ next="363" checks="HasItem=1034-2" actions="RemoveItems=1034-2" itemIcon="1034" showGreyedOutOption="1"></option>
+		<option optionid="3" optiontext="Te dejaré con tus asuntos entonces."
+ next="0"></option>
+	</node>
+	<node id="362" npcName="Groundskeeper Darron" anim="1" text="¡Ciertamente lo ha hecho, mi Señor! ¡Ja, podría haber esperado que disfrutara del aire libre incluso en un día como este, cuando sus salones están llenos de invitados! Bueno, no oirá quejas de mi parte. Oh, tengo algo que también podría encontrar interesante..." posx="826" posy="8">
+		<option optionid="1" optiontext="Gracias, Darron."
+ next="0" actions="AddItems=9097-1-true,SetVar=PrologeDarronLumber-1,IncreaseVar=PrologeTasksDarron-1" icon="Task"></option>
+	</node>
+	<node id="363" npcName="Groundskeeper Darron" anim="1" text="¡Muy bien hecho, mi señor! Estas son unas astas magníficas, podría ser capaz de hacer algo bonito con ellas. Oh, y también tengo algo que podría encontrar interesante..." posx="1233" posy="9">
+		<option optionid="1" optiontext="Gracias, Darron."
+ next="0" actions="AddItems=9097-1-true,SetVar=PrologeDarronAntlers-1,IncreaseVar=PrologeTasksDarron-1" icon="Task"></option>
+	</node>
+
+
+	<node id="370" npcName="Groundskeeper Darron" anim="1" text="¿Todo bien, mi señor? ¿Viene a revisar los terrenos entonces? Ha sido un buen año, sí señor... Los árboles han crecido grandes y hay muchos ciervos en los bosques. Demasiados ciervos, para ser honesto, algunos necesitan ser sacrificados."
+ posx="8" posy="8">
+		<option optionid="1" optiontext="" next="371"></option>
+	</node>
+	<node id="371" npcName="Groundskeeper Darron" anim="1" text="Pero no hay tiempo para eso ahora, estoy aquí buscando buenos árboles para talar. Debemos mantener todos los fuegos encendidos en el castillo esta noche, y eso requiere mucha madera."
+ posx="416" posy="8">
+		<option optionid="1" optiontext="Podría aliviar tu carga, te he traído algunos troncos. &lt;color=teal&gt;(10)&lt;/color&gt;"
+ next="372" checks="HasItem=61-10" actions="RemoveItems=61-10" itemIcon="61" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Te dejaré con tus asuntos entonces."
+ next="0"></option>
+	</node>
+	<node id="372" npcName="Groundskeeper Darron" anim="1" text="¡Ciertamente lo ha hecho, mi Señor! ¡Ja, podría haber esperado que disfrutara del aire libre incluso en un día como este, cuando sus salones están llenos de invitados! Bueno, no oirá quejas de mi parte. Oh, tengo algo que también podría encontrar interesante..." posx="826" posy="8">
+		<option optionid="1" optiontext="Gracias, Darron."
+ next="0" actions="AddItems=9097-1-true,SetVar=PrologeDarronLumber-1,IncreaseVar=PrologeTasksDarron-1" icon="Task"></option>
+	</node>
+
+
+	<node id="380" npcName="Groundskeeper Darron" anim="1" text="¿Todo bien, mi señor? ¿Viene a revisar los terrenos entonces? Ha sido un buen año, sí señor... Los árboles han crecido grandes y hay muchos ciervos en los bosques. Demasiados ciervos, para ser honesto, algunos necesitan ser sacrificados."
+ posx="8" posy="8">
+		<option optionid="1" optiontext="" next="381"></option>
+	</node>
+	<node id="381" npcName="Groundskeeper Darron" anim="1" text="Pero no hay tiempo para eso ahora, estoy aquí buscando buenos árboles para talar. Debemos mantener todos los fuegos encendidos en el castillo esta noche, y eso requiere mucha madera."
+ posx="416" posy="8">
+		<option optionid="1" optiontext="He sacrificado algunos ciervos, tengo algunas astas para ti. &lt;color=teal&gt;(2)&lt;/color&gt;"
+ next="382" checks="HasItem=1034-2" actions="RemoveItems=1034-2" itemIcon="1034" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Te dejaré con tus asuntos entonces."
+ next="0"></option>
+	</node>
+	<node id="382" npcName="Groundskeeper Darron" anim="1" text="¡Muy bien hecho, mi señor! Estas son unas astas magníficas, podría ser capaz de hacer algo bonito con ellas. Oh, y también tengo algo que podría encontrar interesante..." posx="1233" posy="9">
+		<option optionid="1" optiontext="Gracias, Darron."
+ next="0" actions="AddItems=9097-1-true,SetVar=PrologeDarronAntlers-1,IncreaseVar=PrologeTasksDarron-1" icon="Task"></option>
+	</node>
+
+
+</dialogue>

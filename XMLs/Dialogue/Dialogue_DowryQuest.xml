@@ -1,0 +1,205 @@
+<dialogue>
+	<node id="1" npcName="Silvia Summervale" anim="1" text="Welcome to our home, stranger! I'm Silvia and that grumpy man by the fireplace is my husband Herman. What brings you to our humble house?" contextBefore="" contextAfter="" posx="85" posy="54">
+		<option optionid="1" optiontext="Don't mind me, I'm just an adventurer." icon="Quest" next="2"></option>
+		<option optionid="2" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="2" npcName="Silvia Summervale" anim="1" text="Seeking adventure? In our home? Oh dear, I'm afraid we have very little of that to offer around here. How about some tea instead?" contextBefore="" contextAfter="" posx="517" posy="58">
+		<option optionid="1" optiontext="Um, okay." icon="Quest" next="3"></option>
+		<option optionid="2" optiontext="No time for tea, I must be going." next="0"></option>
+	</node>
+	<node id="3" npcName="Silvia Summervale" anim="1" text="Oh splendid! Herman is a fine husband but he's not much of a talker so it can get pretty quiet around here, which is why I love having guests around." contextBefore="" contextAfter="" posx="953" posy="60">
+		<option optionid="1" optiontext="I'm always up for a chat." next="4"></option>
+		<option optionid="2" optiontext="To be fair, I'm more of a listener myself." next="17"></option>
+		<option optionid="3" optiontext="*Remain silent.*" next="18"></option>
+	</node>
+	<node id="4" npcName="Silvia Summervale" anim="1" text="Perfect! So what did you want to talk about?" contextBefore="" contextAfter="" posx="1414" posy="57">
+		<option optionid="1" optiontext="The young man outside by the forge, he's one of yours?" icon="Quest" next="5"></option>
+		<option optionid="2" optiontext="How's life here in Timberwell?" next="15"></option>
+		<option optionid="3" optiontext="Is it normal for Herman to seem a bit agitated?" next="16"></option>
+	</node>
+	<node id="5" npcName="Silvia Summervale" anim="1" text="Aaron? Oh yes, he's a sweet boy, very handy around the forge. Not so much in other areas..." contextBefore="" contextAfter="" posx="1886" posy="55">
+		<option optionid="1" optiontext="How do you mean?" next="6"></option>
+	</node>
+	<node id="6" npcName="Silvia Summervale" anim="1" text="Oh, it's just a mother's concern, you know. It's time he found himself a decent woman, maybe built his own house and started his own family. But he's always been a shy, sensitive boy." contextBefore="" contextAfter="" posx="1998" posy="312">
+		<option optionid="1" optiontext="Understandable, maybe he just needs time." next="7"></option>
+		<option optionid="2" optiontext="Indeed, the boy should learn how to be a real man!" next="8"></option>
+	</node>
+	<node id="7" npcName="Silvia Summervale" anim="1" text="Perhaps, but maybe he could be nudged a little? I've heard rumors that Grainwater has an abundance of dashing young maidens. Say, if you were traveling that way, could you make inquiries on Aaron's behalf - see if there was a suitable purehearted young lady available?" contextBefore="" contextAfter="" posx="2476" posy="46">
+		<option optionid="1" optiontext="Sure, I could do that." icon="Quest" next="9"></option>
+		<option optionid="2" optiontext="What's wrong with the local women in Timberwell?" next="10"></option>
+		<option optionid="3" optiontext="Where's Grainwater again?" next="11"></option>
+		<option optionid="4" optiontext="I don't know if I feel comfortable with that." next="12"></option>
+	</node>
+	<node id="8" npcName="Silvia Summervale" anim="1" text="That's what Herman always says... But maybe he could be nudged a little? I've heard rumors that Grainwater has an abundance of dashing young maidens. Say, if you were traveling that way, could you make inquiries on Aaron's behalf - see if there was a suitable purehearted young lady available?" contextBefore="" contextAfter="" posx="1899" posy="647">
+		<option optionid="1" optiontext="Sure, I could do that." icon="Quest" next="9"></option>
+		<option optionid="2" optiontext="What's wrong with the local women in Timberwell?" next="10"></option>
+		<option optionid="3" optiontext="Where's Grainwater again?" next="11"></option>
+		<option optionid="4" optiontext="Aaron should man up and go there himself!" next="13"></option>
+	</node>
+	<node id="9" npcName="Silvia Summervale" anim="1" text="Oh, that would be wonderful! I'll be sure to offer you some sort of a finder's fee if you're able to send a suitable lady our way." contextBefore="" contextAfter="" posx="2974" posy="44">
+		<option optionid="1" optiontext="Then I'll be going." actions="UpdateQuest=55-1" next="0"></option>
+	</node>
+	<node id="10" npcName="Silvia Summervale" anim="1" text="Have you spoken to any of them? Terrible hags the whole lot! Except for maybe Helga across the river, but I believe she prefers the company of other ladies if you catch my meaning." contextBefore="" contextAfter="" posx="2991" posy="286">
+		<option optionid="1" optiontext="Sure, I could ask around in Grainwater." icon="Quest" next="9"></option>
+		<option optionid="2" optiontext="Where's Grainwater again?" next="11"></option>
+		<option optionid="3" optiontext="I don't know if I'm comfortable with this." next="12"></option>
+	</node>
+	<node id="11" npcName="Silvia Summervale" anim="1" text="It's a quaint village southwest from here, by the waters of Aure near Haywind city. You can find it by following the road west toward Haywind from here, then continuing south where it forks." contextBefore="" contextAfter="" posx="2488" posy="503">
+		<option optionid="1" optiontext="Sure, I could ask around in Grainwater." icon="Quest" next="9"></option>
+		<option optionid="2" optiontext="What's wrong with the local women in Timberwell?" next="10"></option>
+		<option optionid="3" optiontext="I don't know if I'm comfortable with this." next="12"></option>
+	</node>
+	<node id="12" npcName="Silvia Summervale" anim="1" text="I understand but I'm desperate for my sensitive boy! Please won't you consider it? I'd be sure to offer you some sort of a finder's fee if you're able to send someone suitable our way." contextBefore="" contextAfter="" posx="3037" posy="677">
+		<option optionid="1" optiontext="Fine, I'll ask around Grainwater if I end up going that way." actions="UpdateQuest=55-1" next="0"></option>
+		<option optionid="2" optiontext="Wait, which way is Grainwater again?" next="14"></option>
+		<option optionid="3" optiontext="Think this is something Aaron needs to figure out for himself. Good day to you." actions="SetVar=SilviaIntroduction-1" next="0"></option>
+	</node>
+	<node id="13" npcName="Silvia Summervale" anim="1" text="Ugh... You sound just like Herman! Look, I'd be willing to offer you some sort of a finder's fee if you're able to send someone suitable our way." contextBefore="" contextAfter="" posx="2435" posy="947">
+		<option optionid="1" optiontext="Well in that case! I'll ask around Grainwater if I end up going that way." actions="UpdateQuest=55-1" next="0"></option>
+		<option optionid="2" optiontext="Wait, which way is Grainwater again?" next="14"></option>
+		<option optionid="3" optiontext="No, I think this is something Aaron needs to figure out for himself." actions="SetVar=SilviaIntroduction-1" next="0"></option>
+	</node>
+	<node id="14" npcName="Silvia Summervale" anim="1" text="It's a quaint village southwest from here, by the waters of Aure near Haywind city. You can find it by following the road west toward Haywind from here, then continuing south where it forks. Please, would you do this for my Aaron?" contextBefore="" contextAfter="" posx="3037" posy="1106">
+		<option optionid="1" optiontext="Fine, I'll ask around Grainwater if I end up going that way." actions="UpdateQuest=55-1" next="0"></option>
+		<option optionid="2" optiontext="No, I think this is something Aaron needs to figure out for himself. Good day to you." actions="SetVar=SilviaIntroduction-1" next="0"></option>
+	</node>
+	<node id="15" npcName="Silvia Summervale" anim="1" text="Oh we love it! We were the first to settle here, you know. Away from the hustle and bustle of Haywind. Then all these other people decided to follow us here and now we're a whole village." contextBefore="" contextAfter="" posx="1316" posy="470">
+		<option optionid="1" optiontext="The young man outside by the forge, he's one of yours?" icon="Quest" next="5"></option>
+		<option optionid="2" optiontext="Is it normal for Herman to seem a bit agitated?" next="16"></option>
+	</node>
+	<node id="16" npcName="Silvia Summervale" anim="1" text="Pff, don't mind him. He just gets cranky without his whiskey and it seems Master Barnsmill has had problems recently with supplying it." contextBefore="" contextAfter="" posx="1337" posy="788">
+		<option optionid="1" optiontext="The young man outside by the forge, he's one of yours?" icon="Quest" next="5"></option>
+		<option optionid="2" optiontext="How's life here in Timberwell?" next="15"></option>
+	</node>
+	<node id="17" npcName="Silvia Summervale" anim="1" text="Oh that's fine, I could talk your ear off if you let me. Be it about my boy, or Herman, or just about regular olde Timberwell." contextBefore="" contextAfter="" posx="715" posy="515">
+		<option optionid="1" optiontext="The young man outside by the forge, he's one of yours?" icon="Quest" next="5"></option>
+		<option optionid="2" optiontext="How's life here in Timberwell?" next="15"></option>
+		<option optionid="3" optiontext="Is it normal for Herman to seem a bit agitated?" next="16"></option>
+	</node>
+	<node id="18" npcName="Silvia Summervale" anim="1" text="Hm, perhaps you and Herman are something alike. But that's fine, usually I just complain to him about his grumbling, or our boy, or just about regular olde Timberwell." contextBefore="" contextAfter="" posx="737" posy="972">
+		<option optionid="1" optiontext="The young man outside by the forge, he's one of yours?" icon="Quest" next="5"></option>
+		<option optionid="2" optiontext="How's life here in Timberwell?" next="15"></option>
+		<option optionid="3" optiontext="Is it normal for Herman to seem a bit agitated?" next="16"></option>
+	</node>
+
+	<node id="20" npcName="Silvia Summervale" anim="1" text="Oh, hello! I wasn't expecting to see you again. Do you think you could help my sensitive boy Aaron after all?" contextBefore="" contextAfter="" posx="63" posy="38">
+		<option optionid="1" optiontext="Oh fine, I'll ask for potential brides around Grainwater for him." icon="Quest" next="21"></option>
+		<option optionid="2" optiontext="Remind me, what was Aaron struggling with?" next="23"></option>
+		<option optionid="3" optiontext="Just passing." next="0"></option>
+	</node>
+	<node id="21" npcName="Silvia Summervale" anim="1" text="Oh that would be wonderful! I'll be sure to offer you some sort of a finder's fee if you're able to send someone suitable our way." contextBefore="" contextAfter="" posx="554" posy="32">
+		<option optionid="1" optiontext="I'll be going then." actions="UpdateQuest=55-1" next="0"></option>
+		<option optionid="2" optiontext="Just which way is Grainwater again?" next="22"></option>
+	</node>
+	<node id="22" npcName="Silvia Summervale" anim="1" text="It's a quaint village southwest from here, by the waters of Aure near Haywind city. You can find it by following the road west toward Haywind from here, then continuing south where it forks." contextBefore="" contextAfter="" posx="1028" posy="29">
+		<option optionid="1" optiontext="I'll be going then." actions="UpdateQuest=55-1" next="0"></option>
+	</node>
+	<node id="23" npcName="Silvia Summervale" anim="1" text="He's a good boy but Herman and I agree; it's time he found himself a decent woman, maybe built his own house and started his own family." contextBefore="" contextAfter="" posx="539" posy="364">
+		<option optionid="1" optiontext="" next="24"></option>
+	</node>
+	<node id="24" npcName="Silvia Summervale" anim="1" text="I've heard rumors that Grainwater has an abundance of dashing young maidens. Could you make inquiries on Aaron's behalf - see if there was a suitable purehearted young lady available?" contextBefore="" contextAfter="" posx="1024" posy="360">
+		<option optionid="1" optiontext="Fine, I could ask around." icon="Quest" next="9"></option>
+		<option optionid="2" optiontext="What's wrong with the local women in Timberwell?" next="10"></option>
+		<option optionid="3" optiontext="Where's Grainwater again?" next="11"></option>
+		<option optionid="4" optiontext="No, I think this is something Aaron needs to figure out for himself." next="0"></option>
+	</node>
+
+	<node id="25" npcName="Silvia Summervale" anim="1" text="Hello again! Have you been to Grainwater yet? Have you found potential brides for my special boy?" contextBefore="" contextAfter="" posx="91" posy="54">
+		<option optionid="1" optiontext="Which way is Grainwater again?" next="26"></option>
+		<option optionid="2" optiontext="Why aren't the local women of Timberwell good enough for him?" next="27"></option>
+		<option optionid="3" optiontext="Not yet." next="0"></option>
+	</node>
+	<node id="26" npcName="Silvia Summervale" anim="1" text="It's a quaint village southwest from here, by the waters of Aure near Haywind city. You can find it by following the road west toward Haywind from here, then continuing south where it forks." contextBefore="" contextAfter="" posx="556" posy="51">
+		<option optionid="1" optiontext="Why aren't the local women of Timberwell good enough for him?" next="27"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+	<node id="27" npcName="Silvia Summervale" anim="1" text="Have you spoken to any of them? Terrible hags the whole lot! Except for maybe Helga across the river, but I believe she prefers the company of other ladies if you catch my meaning." contextBefore="" contextAfter="" posx="545" posy="396">
+		<option optionid="1" optiontext="Which way is Grainwater again?" next="26"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+
+	<node id="28" npcName="Silvia Summervale" anim="1" text="There you are! And what a beautiful lady you found for my boy, oh this makes me so happy!" contextBefore="" contextAfter="" posx="81" posy="51">
+		<option optionid="1" optiontext="How does Aaron feel about all this?" checks="Var=GrainwaterBride-1-1" next="29"></option>
+		<option optionid="2" optiontext="How does Aaron feel about all this?" checks="!Var=GrainwaterBride-1-1" next="30"></option>
+		<option optionid="3" optiontext="How endearing. I believe I was promised payment?" next="32"></option>
+	</node>
+	<node id="29" npcName="Silvia Summervale" anim="1" text="Even he is completely enchanted by the woman you found! In fact, I believe he wanted to offer you something special as his thanks. But first, my payment to you as promised." contextBefore="" contextAfter="" posx="552" posy="27">
+		<option optionid="1" optiontext="My pleasure." actions="UpdateQuest=55-999" next="0"></option>
+	</node>
+	<node id="30" npcName="Silvia Summervale" anim="1" text="Oh, well, he's such a picky boy. He hasn't exactly been thrilled but I think he'll come around. Poor boy believes in some romantic notions of 'love' and such. Once he lets go of them, I'm sure he'll be happy." contextBefore="" contextAfter="" posx="636" posy="262">
+		<option optionid="1" optiontext="" next="31"></option>
+	</node>
+	<node id="31" npcName="Silvia Summervale" anim="1" text="Now, I believe you are due a reward for your troubles?" contextBefore="" contextAfter="" posx="1092" posy="270">
+		<option optionid="1" optiontext="It's been my pleasure." actions="UpdateQuest=55-999" next="0"></option>
+	</node>
+	<node id="32" npcName="Silvia Summervale" anim="1" text="Ahem, yes of course. A purse of gold coins for your efforts." contextBefore="" contextAfter="" posx="517" posy="540">
+		<option optionid="1" optiontext="My pleasure." actions="UpdateQuest=55-999" next="0"></option>
+	</node>
+
+	<node id="33" npcName="Silvia Summervale" anim="1" text="Oh, it's you... There's clearly been a terrible misunderstanding. Perhaps I should not have asked for your assistance in such a delicate matter, but this woman is not suitable, not suitable at all! Please, just go." contextBefore="" contextAfter="" posx="22" posy="13">
+		<option optionid="1" optiontext="You promised me a reward!" next="34"></option>
+		<option optionid="2" optiontext="Consider it a lesson and let the man make his own decisions." next="35"></option>
+		<option optionid="3" optiontext="Leave." icon="Quest" actions="FailQuest=55" next="0"></option>
+	</node>
+	<node id="34" npcName="Silvia Summervale" anim="1" text="Yes, but for a suitable woman! How could you possible think of her as suitable!? Please just leave." contextBefore="" contextAfter="" posx="489" posy="19">
+		<option optionid="1" optiontext="Well, consider it a lesson and let the man make his own decisions." next="35"></option>
+		<option optionid="2" optiontext="Leave." icon="Quest" actions="FailQuest=55" next="0"></option>
+	</node>
+	<node id="35" npcName="Silvia Summervale" anim="1" text="How dare you?! Who do you think you are?! Get out!! Out of my home, I say!!" contextBefore="" contextAfter="" posx="528" posy="355">
+		<option optionid="1" optiontext="Leave." icon="Quest" actions="FailQuest=55" next="0"></option>
+	</node>
+
+	<node id="40" npcName="Ellen" anim="1" text="Hey... *hic* ...handsome... Wanna get married, hehe...? *hic*" contextBefore="" contextAfter="" posx="83" posy="38">
+		<option optionid="1" optiontext="Actually, I do know of a man who's looking to get married." icon="Quest" next="41"></option>
+		<option optionid="2" optiontext="Not today." next="0"></option>
+	</node>
+	<node id="41" npcName="Ellen" anim="1" text="Oh... *hic* ...oh really? That sounds fun... You're... funny!" contextBefore="" contextAfter="" posx="551" posy="57">
+		<option optionid="1" optiontext="Absolutely! Aaron in Timberwell is without a spouse. Maybe you should go introduce yourself." icon="Quest" next="42"></option>
+		<option optionid="2" optiontext="Maybe this isn't a good idea..." next="0"></option>
+	</node>
+	<node id="42" npcName="Ellen" anim="1" text="You know... *hic* ...maybe I will! Woo, yeah! This girl is getting herself a husband! *hic*!" contextBefore="" contextAfter="" posx="1028" posy="60">
+		<option optionid="1" optiontext="Well alright then, that was easy." icon="Quest" actions="Cinematic=67" next="0"></option>
+	</node>
+
+	<node id="45" npcName="Alice" anim="1" text="Oh, how I'm sick of living in this cramped little house with my papa. I'm old enough to marry, you know. I deserve a husband who will build a mansion for me." contextBefore="" contextAfter="" posx="65" posy="34">
+		<option optionid="1" optiontext="Aaron in Timberwell is in need of a spouse. I'm sure he could build you a house." icon="Quest" next="46"></option>
+		<option optionid="2" optiontext="Good luck with that." next="0"></option>
+	</node>
+	<node id="46" npcName="Alice" anim="1" text="Timberwell? But... Oh, but... Well, that's even more backwatery than Grainwater! I'm a city girl at heart, you know. I hate it when I get mud on my skirts. Tell me, is he handsome at least?" contextBefore="" contextAfter="" posx="522" posy="33">
+		<option optionid="1" optiontext="Works the forge all day from what I hear, strong arms and all that." icon="Quest" next="47"></option>
+		<option optionid="2" optiontext="Maybe it's not going to work out then." next="0"></option>
+	</node>
+	<node id="47" npcName="Alice" anim="1" text="I see, well... Forges are terribly dirty, I'd have to make sure he bathes every day. But maybe I could tolerate it. Oh, do you think I should?" contextBefore="" contextAfter="" posx="969" posy="35">
+		<option optionid="1" optiontext="Absolutely, go for it!" icon="Quest" next="48"></option>
+		<option optionid="2" optiontext="Maybe it's not a good idea." next="0"></option>
+	</node>
+	<node id="48" npcName="Alice" anim="1" text="Then I shall travel to meet this Aaron immediately! Thank you for your advice, stranger." contextBefore="" contextAfter="" posx="1414" posy="35">
+		<option optionid="1" optiontext="" icon="Quest" actions="Cinematic=68" next="0"></option>
+	</node>
+
+	<node id="50" npcName="Sarah" anim="1" text="Look at all these crabs - they're so cute with their little claws and everything! Isn't nature just wonderful?" contextBefore="" contextAfter="" posx="53" posy="42">
+		<option optionid="1" optiontext="Indeed, I believe a young man in Timberwell is also very fond of nature." icon="Quest" next="51"></option>
+		<option optionid="2" optiontext="I don't really care." next="0"></option>
+	</node>
+	<node id="51" npcName="Sarah" anim="1" text="Oh, truly? I would very much like to meet this man! Sometimes I feel like the only thing men in Grainwater are fond of is beer." contextBefore="" contextAfter="" posx="505" posy="41">
+		<option optionid="1" optiontext="You know, I think he'd very much like to meet you. His name is Aaron, you'll find him by the forge." icon="Quest" next="52"></option>
+		<option optionid="2" optiontext="He's a solitary man, maybe he doesn't want to meet you." next="53"></option>
+	</node>
+	<node id="52" npcName="Sarah" anim="1" text="I shall go at once!" contextBefore="" contextAfter="" posx="968" posy="38">
+		<option optionid="1" optiontext="" icon="Quest" actions="Cinematic=69" next="0"></option>
+	</node>
+	<node id="53" npcName="Sarah" anim="1" text="Oh... Well that's a shame." contextBefore="" contextAfter="" posx="969" posy="307">
+		<option optionid="1" optiontext="Leave." next="0"></option>
+	</node>
+
+	<node id="55" npcName="Aaron Summervale" anim="1" text="Wait, stranger! I hear you had something to do with finding this wonderful woman and bringing us together." contextBefore="" contextAfter="" posx="109" posy="49">
+		<option optionid="1" optiontext="" next="56"></option>
+	</node>
+	<node id="56" npcName="Aaron Summervale" anim="1" itemIcon="417" text="I wanted to thank you, but... well, I don't have much to offer, but maybe you can make use of this book. It taught me everything I know about working the forge." contextBefore="" contextAfter="" posx="549" posy="50">
+		<option optionid="1" optiontext="Alright, thanks I guess." icon="Loot" actions="AddItems=417-1,SetVar=AaronsBook-1" next="0"></option>
+	</node>
+</dialogue>
+
+
+
+

@@ -1,0 +1,501 @@
+<dialogue>
+	<node id="1" npcName="Eloria Mirvren" anim="904" text="You reek of foul magic, monster!" comment="cinematic" posx="56" posy="30">
+		<option optionid="1" optiontext="" next="2"></option>
+	</node>
+	<node id="2" npcName="Eloria Mirvren" anim="1" text="Let me guess, you think you're here to hunt me down? Well you've got it wrong." comment="cinematic" posx="493" posy="25">
+		<option optionid="1" optiontext="" next="3"></option>
+	</node>
+	<node id="3" npcName="Eloria Mirvren" anim="1" text="You've come here to die. I only have one question before I burn you out of existence." comment="cinematic" posx="919" posy="24">
+		<option optionid="1" optiontext="" next="4"></option>
+	</node>
+
+	<node id="4" npcName="Eloria Mirvren" anim="1" text="Why...? Why did you kill Arren? Why come here? I don't even know your pale face." posx="1261" posy="325">
+		<option optionid="1" optiontext="I'm not here out of choice - I'm cursed, Lady Eloria." next="5"></option>
+		<option optionid="2" optiontext="Technically, that's more than one question." next="10"></option>
+		<option optionid="3" optiontext="I've come to cordially extend an invitation from my dark master to join him in some dark, damp cave." next="11"></option>
+	</node>
+	<node id="5" npcName="Eloria Mirvren" anim="1" text="That's tough, but I'll still kill you. Cursed by whom?" posx="1726" posy="40">
+		<option optionid="1" optiontext="His name is Gabrius, an old acquintance of yours I believe?" next="6"></option>
+	</node>
+	<node id="6" npcName="Eloria Mirvren" anim="1" text="Who...? You mean to say...\n\n&lt;color=#9C8C77&gt;*The woman's eyes widen, she appears to visibly shiver.*&lt;/color&gt;" posx="2166" posy="39">
+		<option optionid="1" optiontext="" next="7"></option>
+	</node>
+	<node id="7" npcName="Eloria Mirvren" anim="1" text="I know of a man who would fit that name. It is not his real name, of course, not quite... But it should not be possible that he has found me." posx="2603" posy="38">
+		<option optionid="1" optiontext="He used an artifact of the ancient folk - the Grimoire of Truesight?" next="8"></option>
+		<option optionid="2" optiontext="Oh he has, and he's looking to have a chat with you. You're to come with me." next="9"></option>
+	</node>
+	<node id="8" npcName="Eloria Mirvren" anim="1" text="Should've known, there's be no hiding from him... not really. But he made a mistake sending a mere pawn, instead of having the courage to face me himself! \n\n&lt;color=#9C8C77&gt;*Eloria begins to channel magic.*&lt;/color&gt;" posx="3043" posy="-37">
+		<option optionid="1" optiontext="Wait...!" icon="Fight" next="0" actions="UpdateQuest=70-3"></option>
+		<option optionid="2" optiontext="" next="0" icon="Fight" actions="UpdateQuest=70-3"></option>
+	</node>
+	<node id="9" npcName="Eloria Mirvren" anim="1" text="Well he made a mistake sending a mere pawn, instead of having the courage to face me himself. I'll burn you to cinders!" posx="3052" posy="312">
+		<option optionid="1" optiontext="" icon="Fight" next="0" actions="UpdateQuest=70-3"></option>
+	</node>
+	<node id="10" npcName="Eloria Mirvren" anim="1" text="Answer me, monster! I want an answer, before I turn you to ash!" posx="1730" posy="457">
+		<option optionid="1" optiontext="I'm not here out of choice - I'm cursed, Lady Eloria." next="5"></option>
+		<option optionid="2" optiontext="I've come to cordially extend an invitation from my dark master to join him in some dark, damp cave." next="11"></option>
+	</node>
+	<node id="11" npcName="Eloria Mirvren" anim="1" text="Isn't that lovely? And who might your master be? Perhaps I shall pay him a visit after I've dealt with you." posx="2189" posy="461">
+		<option optionid="1" optiontext="His name is Gabrius, an old acquintance of yours I believe?" next="6"></option>
+	</node>
+
+	
+	
+	<node id="15" npcName="Eloria Mirvren" anim="1" text="What, how...? " comment="cinematic" posx="133" posy="50">
+		<option optionid="1" optiontext="" next="16"></option>
+	</node>
+	<node id="16" npcName="Eloria Mirvren" anim="1" text="But I destroyed you...?!" posx="573" posy="51">
+		<option optionid="1" optiontext="Perhaps you underestimated a 'mere pawn' of Gabrius?" next="17"></option>
+		<option optionid="2" optiontext="Part of me wishes you had. Alas, I can't be stopped." next="18"></option>
+		<option optionid="3" optiontext="Shocking, I know - let's get on with it." icon="Fight" next="0"></option>
+	</node>
+	<node id="17" npcName="Eloria Mirvren" anim="1" text="I'll just have to kill you again, however many times it takes!" posx="1027" posy="53">
+		<option optionid="1" optiontext="" icon="Fight" next="0"></option>
+	</node>
+	<node id="18" npcName="Eloria Mirvren" anim="1" text="We'll just have to see about that!" posx="1476" posy="56">
+		<option optionid="1" optiontext="" icon="Fight" next="0"></option>
+	</node>
+
+
+
+	<node id="25" npcName="Eloria Mirvren" anim="1" text="Wait... wait... wait!" comment="cinematic" contextBefore="animation for eloria lying on the ground in defeat with one hand raised up?" posx="26" posy="23">
+		<option optionid="1" optiontext="" next="26"></option>
+	</node>
+	<node id="26" npcName="Eloria Mirvren" anim="1" text="You don't have to do this...!" comment="cinematic" posx="466" posy="27">
+		<option optionid="1" optiontext="" next="27"></option>
+	</node>
+	<node id="27" npcName="Rothar" anim="1" text="I'm afraid I do." comment="cinematic" posx="908" posy="26">
+		<option optionid="1" optiontext="" next="28"></option>
+	</node>
+
+	<node id="28" npcName="Eloria Mirvren" anim="912" text="Just... listen... whoever you are, he's controlling you, isn't he? You're under curse, but there's a way to fend him off... your mind can be your own again!" posx="1368" posy="319">
+		<option optionid="1" optiontext="You claim you can free me?" next="29"></option>
+		<option optionid="2" optiontext="Gabrius will free me, once I deliver you to him." next="44" actions="SetNpcVar=Node28OptionTriggered-1"></option>
+	</node>
+	<node id="29" npcName="Eloria Mirvren" anim="913" text="Not directly, no... I can try to alleviate it, sure, but remove it...? But there's a way... old magic left buried here... really old... really powerful..." posx="1833" posy="313">
+		<option optionid="1" optiontext="I'm listening." next="30"></option>
+		<option optionid="2" optiontext="I rathert think Gabrius will free me, once I deliver you to him." next="45" checks="NpcVar=Node28OptionTriggered-0-0"></option>
+	</node>
+	<node id="30" npcName="Eloria Mirvren" anim="913" text="The first magi of Imberthale, Rhiona Elmm, who birthed this place, became the Silvermirror Witch... and Lazar Vesteris... their quarrels left behind an amulet..." contextBefore="animation, eloria could rise up here?" posx="2415" posy="310">
+		<option optionid="1" optiontext="" next="31"></option>
+	</node>
+	<node id="31" npcName="Eloria Mirvren" anim="913" text="One that will shield the wearer against all forms of possession or mind control. Lazar needed it to defeat the first witch, or so the story goes. The magical gem central to the amulet remains left here on the witch's throne." posx="2943" posy="315">
+		<option optionid="1" optiontext="What about the amulet itself?" next="32"></option>
+		<option optionid="2" checks="HasItem=868-1" optiontext="Wait, you're not talking about this amulet I found, are you...?" icon="Quest" next="49"></option>
+	</node>
+	<node id="32" npcName="Eloria Mirvren" anim="913" text="Went with Lazar to his grave, I believe. Arren and I were in fact trying to locate it, before... well, before all this happened." posx="3498" posy="171">
+		<option optionid="1" optiontext="Why, what's your interest in it?" next="33"></option>
+		<option optionid="2" optiontext="The grave, where would that be?" next="35"></option>
+		<option optionid="3" optiontext="If I were to combine the amulet and its gem..." icon="Quest" next="37"></option>
+	</node>
+	<node id="33" npcName="Eloria Mirvren" anim="913" text="Purely archeological. Uncovering magical artifacts of times past used to be a bit of a speciality of mine. Both mine and Gaberion's, actually." posx="4032" posy="14">
+		<option optionid="1" optiontext="You mean Gabrius?" next="34"></option>
+		<option optionid="2" optiontext="Lazar's grave, where would that be?" next="35"></option>
+		<option optionid="3" optiontext="If I were to combine the amulet and its gem..." icon="Quest" next="37"></option>
+	</node>
+	<node id="34" npcName="Eloria Mirvren" anim="913" text="If that's what he chooses to call himself now. Gaberion Theraliss is the man I once knew. The most powerful and respected mage in the Vhosphoran Circle of Nine." posx="4504" posy="14">
+		<option optionid="1" optiontext="Dying to hear that story." next="38"></option>
+		<option optionid="2" optiontext="Lazar's grave, where would that be?" next="35"></option>
+		<option optionid="3" optiontext="If I were to combine the amulet and its gem..." icon="Quest" next="37"></option>
+	</node>
+	<node id="35" npcName="Eloria Mirvren" anim="913" text="Buried in this swamp, of that I am certain. Based on the legends, my guess would be somewhere near the pond that's known as the Lovers' Rest. " posx="4022" posy="502">
+		<option optionid="1" optiontext="What a quaint name." next="36"></option>
+		<option optionid="2" optiontext="You said you were looking for the amulet, what's your interest in it?" next="33"></option>
+		<option optionid="3" optiontext="If I were to combine the amulet and its gem..." icon="Quest" next="37"></option>
+	</node>
+	<node id="36" npcName="Eloria Mirvren" anim="913" text="There's nothing quaint about it, trust me. It's supposedly where the mage Lazar was forced to drown his lover, and where he later drowned himself." posx="4544" posy="511">
+		<option optionid="1" optiontext="You said you were looking for the amulet, what's your interest in it?" next="33"></option>
+		<option optionid="2" optiontext="If I were to combine the amulet and its gem..." icon="Quest" next="37"></option>
+	</node>
+	<node id="37" npcName="Eloria Mirvren" anim="913" text="You'd be free from his control, I am certain of it. The gem you need is right here, on the throne. And the amulet..." posx="3933" posy="991">
+		<option optionid="1" optiontext="" next="39"></option>
+	</node>
+	<node id="38" npcName="Eloria Mirvren" anim="913" text="Another time, maybe. It's quite long, sad and... there are more pressing matters at hand." posx="5053" posy="23">
+		<option optionid="1" optiontext="Lazar's grave, where would that be?" next="35"></option>
+		<option optionid="2" optiontext="If I were to combine the amulet and its gem..." icon="Quest" next="37"></option>
+	</node>
+	<node id="39" npcName="Eloria Mirvren" anim="913" text="I can try to ward off his influence as much as I can. It might still be possible for you to look for it." contextBefore="animation: Eloria casts some magic on Rotherino?" posx="4391" posy="997">
+		<option optionid="1" optiontext="You said the amulet went to the grave with this Lazar, where do I look for that?" checks="!HasItem=868-1" next="42"></option>
+		<option optionid="2" optiontext="Unite the amulet and the gem - I'm on it." next="0" checks="!HasItem=868-1" actions="UpdateQuest=70-5"></option>
+		<option optionid="3" optiontext="Actually, I think I may already have found it..." checks="HasItem=868-1" next="49"></option>
+	</node>
+	<node id="40" npcName="Eloria Mirvren" anim="913" text="You mean to say... \n\n &lt;color=#9C8C77&gt;*Eloria's face turns white.*&lt;/color&gt;" contextBefore="edited out for now, have this discussion later" posx="4950" posy="912">
+		<option optionid="1" optiontext="" next="41"></option>
+	</node>
+	<node id="41" npcName="Eloria Mirvren" anim="913" text="You're undead... I sensed something was wrong with you, but I couldn't imagine... But first you should regain your freedom, we can talk more about this afterwards." posx="5406" posy="880">
+		<option optionid="1" optiontext="You said the amulet went to the grave with this Lazar, where do I look for that?" next="42"></option>
+		<option optionid="2" optiontext="Unite the amulet and the gem - I'm on it." next="0" actions="UpdateQuest=70-5"></option>
+	</node>
+	<node id="42" npcName="Eloria Mirvren" anim="913" text="Buried in this swamp, of that I am certain. Based on the legends, my guess would be somewhere near the pond that's known as the Lovers' Rest." posx="4949" posy="1252">
+		<option optionid="1" optiontext="Quaint name." next="43"></option>
+		<option optionid="2" optiontext="Unite the amulet and the gem - I'm on it." next="0" actions="UpdateQuest=70-5"></option>
+	</node>
+	<node id="43" npcName="Eloria Mirvren" anim="913" text="There's nothing quaint about it, trust me. It's supposedly where the mage Lazar was forced to drown his lover, and where he later drowned himself." posx="5456" posy="1257">
+		<option optionid="1" optiontext="Unite the amulet and the gem - I'm on it." next="0" actions="UpdateQuest=70-5"></option>
+	</node>
+	<node id="44" npcName="Eloria Mirvren" anim="913" text="No...! You cannot possibly believe that...! Would you really trust the word of the man who cursed you...? Think...!" posx="1354" posy="897">
+		<option optionid="1" optiontext="You haven't really given me a reason to trust you either." next="46"></option>
+		<option optionid="2" optiontext="If not him, who? Can you claim to be able to free me?" next="29"></option>
+		<option optionid="3" optiontext="I will betray you to Gabro!" next="47" checks="Var=Q70UltimateAnimeBetrayals-1-1"></option>
+	</node>
+	<node id="45" npcName="Eloria Mirvren" anim="913" text="No...! You cannot possibly believe that...! Would you really trust the word of the man who cursed you...? Think...!" posx="1835" posy="899">
+		<option optionid="1" optiontext="You haven't really given me a reason to trust you either." next="46"></option>
+		<option optionid="2" optiontext="Ah, well... you may be right. What about this old magic you mentioned?" next="30"></option>
+		<option optionid="3" optiontext="I will betray you to Gabro!" next="47" checks="Var=Q70UltimateAnimeBetrayals-1-1"></option>
+	</node>
+	<node id="46" npcName="Eloria Mirvren" anim="913" text="I've done nothing but defend myself! Helping you now is my last option left to survive - I'm exactly who you should be trusting!" posx="2428" posy="915">
+		<option optionid="1" optiontext="Ah, well... you may be right. What about this old magic you mentioned?" next="30" checks="NpcVar=Node28OptionTriggered-0-0"></option>
+		<option optionid="2" optiontext="Then can you claim to be able to free me?" next="29" checks="NpcVar=Node28OptionTriggered-1-1"></option>
+		<option optionid="3" optiontext="I will betray you to Gabro!" next="47" checks="Var=Q70UltimateAnimeBetrayals-1-1"></option>
+	</node>
+	<node id="47" npcName="Eloria Mirvren" anim="913" text="No, no, you can't! Are you absolutely sure? " posx="1976" posy="1462">
+		<option optionid="1" optiontext="Yes." next="48"></option>
+		<option optionid="2" optiontext="Ah, well... you may be right. What about this old magic you mentioned?" next="30" checks="NpcVar=Node28OptionTriggered-0-0"></option>
+		<option optionid="3" optiontext="Then can you claim to be able to free me?" next="29" checks="NpcVar=Node28OptionTriggered-1-1"></option>
+	</node>
+	<node id="48" npcName="Eloria Mirvren" anim="913" text="&lt;color=#9C8C77&gt;*Okey, but this isn't developed yet so you can't.*&lt;/color&gt;" posx="2466" posy="1464">
+		<option optionid="1" optiontext="Ah, well... you may be right. What about this old magic you mentioned?" next="30" checks="NpcVar=Node28OptionTriggered-0-0"></option>
+		<option optionid="2" optiontext="Then can you claim to be able to free me?" next="29" checks="NpcVar=Node28OptionTriggered-1-1"></option>
+	</node>
+	<node id="49" npcName="Eloria Mirvren" anim="913" text="Wait, what...? Show me that!\n\n&lt;color=#9C8C77&gt; *You offer the runed amulet you discovered in a tomb for Eloria to study.* &lt;/color&gt;" posx="3157" posy="1378">
+		<option optionid="1" optiontext="" next="50"></option>
+	</node>
+	<node id="50" npcName="Eloria Mirvren" anim="913" text="Yes, this is it - the Amulet of Vesteris! But how...?" posx="3677" posy="1508">
+		<option optionid="1" optiontext="Took a detour on my way here, happened to stumble on it." next="51"></option>
+		<option optionid="2" optiontext="Read your letter to Arren, thought the amulet might be worth finding." checks="Var=LetterFromEloria-1-1" next="52"></option>
+	</node>
+	<node id="51" npcName="Eloria Mirvren" anim="913" text="Are you being serious? That's a lucky detour... The amulet's missing its central piece - the gem that's nested in the throne. Combine them and your mind will be free!" posx="4136" posy="1518">
+		<option optionid="1" optiontext="This amulet, I want to hear more about it first." next="53"></option>
+		<option optionid="2" optiontext="Sounds like its worth a shot." next="0" actions="UpdateQuest=70-5"></option>
+	</node>
+	<node id="52" npcName="Eloria Mirvren" anim="913" text="I see... well you were smart to take note of that; with the amulet in your possession, all you need is its central piece - the gem that's nested in the throne. Combine them and your mind will be free!" posx="4559" posy="1597">
+		<option optionid="1" optiontext="This amulet, I want to hear more about it first." next="53"></option>
+		<option optionid="2" optiontext="Sounds like its worth a shot." next="0" actions="UpdateQuest=70-5"></option>
+	</node>
+	<node id="53" npcName="Eloria Mirvren" anim="913" text="According to the legends it came to being out of the quarrels of the first magi of Imberthale, Lazar Vesteris and Rhiona Elmm. The latter of the two birthed this place, became the Silvermirror Witch." posx="5853" posy="323">
+		<option optionid="1" optiontext="" next="54"></option>
+	</node>
+	<node id="54" npcName="Eloria Mirvren" anim="913" text="Lazar fell under her possession and the amulet was what ultimately freed him, allowing him to defeat the witch, or so the story goes." posx="6312" posy="323">
+		<option optionid="1" optiontext="" next="55"></option>
+	</node>
+	<node id="55" npcName="Eloria Mirvren" anim="913" text="The magical gem central to the amulet remains left here on the witch's throne, while the amulet itself followed Lazar to his grave. Arren and I were in fact trying to locate it, before... well, before all this happened." posx="6760" posy="320">
+		<option optionid="1" optiontext="Why, what was your interest in it?" next="56"></option>
+		<option optionid="2" optiontext="Uniting the amulet with its gem, sounds like its worth a shot." icon="Quest" next="59"></option>
+	</node>
+	<node id="56" npcName="Eloria Mirvren" anim="913" text="Purely archeological. Uncovering magical artifacts of times past used to be a bit of a speciality of mine. Both mine and Gaberion's, actually." posx="5991" posy="722">
+		<option optionid="1" optiontext="You mean Gabrius?" next="57"></option>
+	</node>
+	<node id="57" npcName="Eloria Mirvren" anim="913" text="If that's what he chooses to call himself now. Gaberion Theraliss is the man I once knew. The most powerful and respected mage in the Vhosphoran Circle of Nine." posx="6478" posy="716">
+		<option optionid="1" optiontext="Dying to hear that story." next="58"></option>
+		<option optionid="2" optiontext="Uniting the amulet with its gem, sounds like its worth a shot." icon="Quest" next="59"></option>
+	</node>
+	<node id="58" npcName="Eloria Mirvren" anim="913" text="Another time, maybe. It's quite long, sad and... there are more pressing matters at hand." posx="6930" posy="719">
+		<option optionid="1" optiontext="Uniting the amulet with its gem, sounds like its worth a shot." icon="Quest" next="59"></option>
+	</node>
+	<node id="59" npcName="Eloria Mirvren" anim="913" text="I certainly believe so, your only shot in fact, if you wish to recover your freedom now." posx="6500" posy="1110">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=70-5"></option>
+	</node>
+
+
+	<node id="70" npcName="Eloria Mirvren" anim="1" text="...what do you need?" posx="99" posy="67">
+		<option optionid="1" optiontext="Wondering why you're helping me." next="71"></option>
+		<option optionid="2" optiontext="The amulet, I wanted to hear more about it." next="75"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="71" npcName="Eloria Mirvren" anim="1" text="Let's be clear, I'm helping myself. Don't think I'll forgive you for Arren. I would much rather have torched you to death, but then... as we found out, you proved surprisingly resistant to that strategy." posx="718" posy="45">
+		<option optionid="1" optiontext="" next="72"></option>
+	</node>
+	<node id="72" npcName="Eloria Mirvren" anim="1" text="Let's not repeat that, by the way. I think you may have dislodged my arm and broken a rib or two. Nothing for you to worry about, I have it mostly healed already." posx="1141" posy="47">
+		<option optionid="1" optiontext="You know I had no choice when it came to Arren, right?" next="73" checks="!Var=Q16PoisonedTea-2-2"></option>
+		<option optionid="2" optiontext="You know I had no choice when it came to Arren, right?" next="74" checks="Var=Q16PoisonedTea-2-2"></option>
+		<option optionid="3" optiontext="The amulet, I wanted to hear more about it" next="75"></option>
+		<option optionid="4" optiontext="As you say." next="0"></option>
+	</node>
+	<node id="73" npcName="Eloria Mirvren" anim="1" text="I know... just... let's not talk about that right now." posx="1581" posy="51">
+		<option optionid="1" optiontext="The amulet, I wanted to hear more about it" next="75"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="74" npcName="Eloria Mirvren" anim="1" text="But what you did to him, I can't unsee it... How could you?! I just can't... forget it, let's just not talk about that right now." posx="2016" posy="51">
+		<option optionid="1" optiontext="The amulet, I wanted to hear more about it" next="75"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="75" npcName="Eloria Mirvren" anim="1" text="Long ago it was used by a mage named Lazar Vesteris to defeat Rhiona Elmm - the first Silvermirror Witch, who birthed this place." posx="627" posy="560">
+		<option optionid="1" optiontext="I'm still not sure where to look for it." next="76"></option>
+		<option optionid="2" optiontext="What do you know about it, is it really going to free me?" next="79"></option>
+		<option optionid="3" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="76" npcName="Eloria Mirvren" anim="1" text="Went with Lazar to his grave, I believe. Buried in this swamp, of that I am certain. Based on the legends, I would guess somewhere near the pond that's known as the Lovers' Rest." posx="1139" posy="557">
+		<option optionid="1" optiontext="" next="77"></option>
+	</node>
+	<node id="77" npcName="Eloria Mirvren" anim="1" text="But there's also a learned man - a professor - residing at the Thornhill Library, who might have more specific knowledge. Arren was meant to visit him, before... well, before all this happened." posx="1580" posy="560">
+		<option optionid="1" optiontext="What was your interest in it?" next="78"></option>
+		<option optionid="2" optiontext="What do you know about the amulet, is it really going to free me?" next="79"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="78" npcName="Eloria Mirvren" anim="1" text="Purely archeological. Uncovering magical artifacts of times past used to be a bit of a speciality of mine." posx="2017" posy="558">
+		<option optionid="1" optiontext="What do you know about the amulet, is it really going to free me?" next="79"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+	<node id="79" npcName="Eloria Mirvren" anim="1" text="Lazar had fallen under the witch's possession and the amulet was what ultimately freed him, allowing him to defeat the witch, or so the story goes. The magical gem central to the amulet was left here lodged onto the witch's throne, so I believe there must be something to the stories." posx="2140" posy="964">
+		<option optionid="1" optiontext="I'm still not sure where to look for it though." next="76"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+
+
+	<node id="80" npcName="cinematic" anim="1" text="elory: Any trouble with the amulet?" posx="157" posy="55">
+		<option optionid="1" optiontext="" next="81"></option>
+	</node>
+	<node id="81" npcName="cinematic" anim="1" text="rothery: No, I haven't felt Gabrius crackling his whip on my mind yet." posx="634" posy="52">
+		<option optionid="1" optiontext="" next="82"></option>
+	</node>
+	<node id="82" npcName="cinematic" anim="1" text="rothery: Hopefully that means he's still unaware of my detours." posx="1094" posy="48">
+		<option optionid="1" optiontext="" next="83"></option>
+	</node>
+	<node id="83" npcName="cinematic" anim="1" text="elory: Quickly then, place it around your neck." posx="1553" posy="48">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>	
+	
+	<node id="85" npcName="cinematic" anim="1" text="*rothery takes amulet in hand and ceremonially places around his nekk*" posx="81" posy="43">
+		<option optionid="1" optiontext="" next="86"></option>
+	</node>
+	<node id="86" npcName="cinematic" anim="1" text="as notify message: The medallion's amber gem appears to almost glow as you place the amulet around your neck." posx="536" posy="42">
+		<option optionid="1" optiontext="" next="87"></option>
+	</node>
+	<node id="87" npcName="cinematic" anim="1" text="as notify message: An infernal buzzing that has been Gabrius' voice in your mind slowly recedes away. (86-87 maybe together if fits)" posx="993" posy="39">
+		<option optionid="1" optiontext="" next="88"></option>
+	</node>
+	<node id="88" npcName="cinematic" anim="1" text="as notify message: For the first time since you've risen, you feel a sense of calm - your will is your own again." posx="1438" posy="37">
+		<option optionid="1" optiontext="" next="89"></option>
+	</node>
+	<node id="89" npcName="cinematic" anim="1" text="elory: Well...? Feel any different? -> dialoge" posx="1874" posy="35">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+
+	<node id="90" npcName="Eloria Mirvren" anim="1" text="The amulet - did it work? Please tell me it works." posx="50" posy="41">
+		<option optionid="1" optiontext="Free at last, I believe so." next="91"></option>
+		<option optionid="2" optiontext="Wait, mean to say you didn't know if it would?" next="92"></option>
+	</node>
+	<node id="91" npcName="Eloria Mirvren" anim="1" text="Then it has bought us a moment's relief, master... well, you have me at a disadvantage here, I still don't know who you are." posx="541" posy="40">
+		<option optionid="1" optiontext="Lord Rothar Aercrest at your service, m'lady." next="94" checks="Var=Q16EloriaChat-1-1"></option>
+		<option optionid="2" optiontext="Have I not told you? Lord Rothar Aercrest at your service, m'lady." next="107" checks="Var=Q16EloriaChat-0-0"></option>
+	</node>
+	<node id="92" npcName="Eloria Mirvren" anim="1" text="Let me remind you, that amulet is a centuries old legend; I would have doubted whether it even existed, let alone functioned, if not for discovering its gem on the throne here." posx="59" posy="422">
+		<option optionid="1" optiontext="" next="93"></option>
+	</node>
+	<node id="93" npcName="Eloria Mirvren" anim="1" text="But it seems it's bought us a moment's relief, master... well, you have me at a disadvantage here, I still don't even know who you are." posx="550" posy="423">
+		<option optionid="1" optiontext="Lord Rothar Aercrest at your service, m'lady." next="94" checks="Var=Q16EloriaChat-1-1"></option>
+		<option optionid="2" optiontext="Have I not told you? Lord Rothar Aercrest at your service, m'lady." next="107" checks="Var=Q16EloriaChat-0-0"></option>
+	</node>
+	<node id="94" npcName="Eloria Mirvren" anim="1" text="Lord Rothar Aercrest...? But that can't possibly be, he's been dead for centuries, unless..." posx="1052" posy="40">
+		<option optionid="1" optiontext="Indeed, my curse runs far deeper than mere enslavement - it is undeath." next="95"></option>
+		<option optionid="2" optiontext="Is it really shocking to think Gabrius would resort to necromancy?" next="96"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Say nothing.*&lt;/color&gt;" next="95"></option>
+	</node>
+	<node id="95" npcName="Eloria Mirvren" anim="1" text="It should be impossible... but I sense it now, you really are from beyond the grave, aren't you? I won't lie, this has me greatly worried." posx="1609" posy="139">
+		<option optionid="1" optiontext="Is it really shocking to think Gabrius would resort to necromancy?" next="96"></option>
+		<option optionid="2" optiontext="Nevermind that, all that matters now is what happens next." icon="Quest" next="120"></option>
+	</node>
+	<node id="96" npcName="Eloria Mirvren" anim="1" text="It is true, puppeteering bodies of the unliving has always been a fixation for the spellcaster with a... certain lack of dignity. But such raised dead are never more than empty, mindless husks." posx="2121" posy="23">
+		<option optionid="1" optiontext="" next="97"></option>
+	</node>
+	<node id="97" npcName="Eloria Mirvren" anim="1" text="The souls of the dead always remain safe within the Dream - their final harbor and an impenetrable resting place. Believe me, throughout history it has been the fantasy of many to breach it, but none have ever succeeded, as it should be." posx="2559" posy="22">
+		<option optionid="1" optiontext="Then how is it he brought me here?" next="98"></option>
+		<option optionid="2" optiontext="Nevermind that, all that matters now is what happens next." icon="Quest" next="120"></option>
+	</node>
+	<node id="98" npcName="Eloria Mirvren" anim="1" text="That's exactly the part that has me worried. I wonder, how much you were made aware of the past Gaberion and I shared? It's true I betrayed him, tried to murder him. Do you know why?" posx="3010" posy="23">
+		<option optionid="1" optiontext="'Fundamental philosophical disagreements'?" next="99"></option>
+		<option optionid="2" optiontext="Enlighten me." next="103"></option>
+		<option optionid="3" optiontext="I've spent time with the man, don't think you needed more of a reason." next="104"></option>
+	</node>
+	<node id="99" npcName="Eloria Mirvren" anim="1" text="That's funny. Wait, did he actually tell you that? In truth, he was becoming increasingly obsessed with control over life and death, no doubt fuelled by traumas the suffered during the Sorcerers' Uprising back in Vhosphoran Kingdom. " posx="3494" posy="28">
+		<option optionid="1" optiontext="" next="100"></option>
+	</node>
+	<node id="100" npcName="Eloria Mirvren" anim="1" text="I was too naive to see it at the time, his interest in old Qaeshtari relics. Our research into them was meant to be about 'creating new life' in the wake of death. In reality, he was more interested in the power to bring dead souls back to life." posx="3938" posy="30">
+		<option optionid="1" optiontext="" next="101"></option>
+	</node>
+	<node id="101" npcName="Eloria Mirvren" anim="1" text="So yeah, when I found out, you bet we had 'fundamental philosophical disagreements'. In the fight that ensued, I thought I had killed him too... thought I'd made sure, but... somehow he returned. Then he started hunting us, his old associates, picking us off one by one." posx="4375" posy="29">
+		<option optionid="1" optiontext="" next="102"></option>
+	</node>
+	<node id="102" npcName="Eloria Mirvren" anim="1" text="And now that you're here, it can only mean that he progressed his nefarious work on necromancy since we parted ways." posx="4813" posy="30">
+		<option optionid="1" optiontext="So, what do you propose we do next?" next="108"></option>
+		<option optionid="2" optiontext="There can only be one way to make this right - Gabrius must die." next="116"></option>
+		<option optionid="3" optiontext="Perhaps we should try to take this opportunity to disappear?" next="117"></option>
+	</node>
+	<node id="103" npcName="Eloria Mirvren" anim="1" text="He was becoming increasingly obsessed with control over life and death, no doubt fuelled by the traumas he suffered during the Sorcerers' Uprising back in Vhosphoran Kingdom. " posx="3493" posy="285">
+		<option optionid="1" optiontext="" next="105"></option>
+	</node>
+	<node id="104" npcName="Eloria Mirvren" anim="1" text="Hah, well I'm pleased you still retain a sense of humor, but no. The real reason's more to do with how he was becoming increasingly obsessed with control over life and death, no doubt fuelled by the traumas he suffered during the Sorcerers' Uprising back in Vhosphoran Kingdom. " posx="3498" posy="554">
+		<option optionid="1" optiontext="" next="105"></option>
+	</node>
+	<node id="105" npcName="Eloria Mirvren" anim="1" text="I was too naive to see it at the time, his interest in old Qaeshtari relics. Our research into them was meant to be about 'creating new life' in the wake of death. In reality, he was more interested in the power to bring dead souls back to life." posx="3950" posy="338">
+		<option optionid="1" optiontext="" next="106"></option>
+	</node>
+	<node id="106" npcName="Eloria Mirvren" anim="1" text="When I finally found out - when it was undeniable and he didn't even care to pretend otherwise - I became furious. In the fight that ensued, I thought I had killed him too... thought I'd made sure, but... somehow he returned. Then he started hunting us, his old associates, picking us off one by one." posx="4392" posy="336">
+		<option optionid="1" optiontext="" next="102"></option>
+	</node>
+	<node id="107" npcName="Eloria Mirvren" anim="1" text="Truly...? I remember you said as much through Arren's mirror... but it can't possibly be! Lord Rothar's been dead for centuries, unless..." posx="1057" posy="457">
+		<option optionid="1" optiontext="Indeed, my curse runs far deeper than mere enslavement - it is undeath." next="95"></option>
+		<option optionid="2" optiontext="Is it really so shocking to think Gabrius resorts to necromancy?" next="96"></option>
+		<option optionid="3" optiontext="&lt;color=#9C8C77&gt;*Say nothing.*&lt;/color&gt;" next="95"></option>
+	</node>
+	<node id="108" npcName="Eloria Mirvren" anim="1" text="Looking to work through this together, asking for my opinion? Well, I'm glad you aren't trying to run away instead, now that your mind is freed. It's not like there'd be anywhere to run to anyway..." posx="2138" posy="482">
+		<option optionid="1" optiontext="I believe I was asking for ideas." next="114"></option>
+		<option optionid="2" optiontext="I'm still undead - I need a way to return to where I belong, within the Dream." next="109"></option>
+	</node>
+	<node id="109" npcName="Eloria Mirvren" anim="1" text="I have a feeling that may require a confrontation with Gaberion. After all, it's his magic that brought you here. As for myself..." posx="2579" posy="522">
+		<option optionid="1" optiontext="" next="110"></option>
+	</node>
+	<node id="110" npcName="Eloria Mirvren" anim="1" text="Even if I was to continue running, it's become clear there's no more hiding from him. I have to turn around and face him, fight him, no matter the outcome. So, Lord Rothar, it seems our paths are intertwined." posx="3010" posy="529">
+		<option optionid="1" optiontext="To face him, what are our chances?" next="111"></option>
+		<option optionid="2" optiontext="He didn't seem much like a fighter anyway - only ever had me do the heavy lifting." next="113"></option>
+	</node>
+	<node id="111" npcName="Eloria Mirvren" anim="1" text="He's already cheated death once before, after I made sure he no longer drew breath nor did his heart beat. I say this time we ought to fashion a weapon, the kind which leaves no room for avoiding the death it delivers." posx="4103" posy="673">
+		<option optionid="1" optiontext="" next="112"></option>
+	</node>
+	<node id="112" npcName="Eloria Mirvren" anim="1" text="When I felled the previous Silvermirror Witch, I took from her a cursed dagger. It saps all strength from its victims, both physical and in spirit. If we were to further imbue it with venom from the most lethal and monstrous plant in the witch's garden..." comment="animation to display weapon?" posx="4558" posy="678">
+		<option optionid="1" optiontext="This venom - do we really need it, is the blade not enough?" next="123"></option>
+		<option optionid="2" optiontext="A lot of strange plants down there, which one's the 'most lethal and monstrous'?" next="121"></option>
+		<option optionid="3" optiontext="Say no more, I'll wrestle the deadly plant for its venom." icon="Quest" next="118"></option>
+	</node>
+
+	<node id="113" npcName="Eloria Mirvren" anim="1" text="He may prefer not getting his hands dirty if he can avoid it, but trust me, he's not to be underestimated. He was revered as the most powerful mage in the Vhosphoran Kingdom, already long before he became... whoever he is today. Not to mention..." posx="3502" posy="824">
+		<option optionid="1" optiontext="" next="111"></option>
+	</node>
+	<node id="114" npcName="Eloria Mirvren" anim="1" text="Well... it's become clear hiding from Gaberion is no longer an option. How he found me here, he will always be able to find us no matter where we'd go. I believe it's time to turn around and face him, fight him, no matter the outcome." posx="2584" posy="770">
+		<option optionid="1" optiontext="" next="115"></option>
+	</node>
+	<node id="115" npcName="Eloria Mirvren" anim="1" text="Besides, you're still undead. It's his magic that has brought you here, he must also hold the keys to returning you to where you belong. And if not...? At the very least you stand to gain revenge." posx="3009" posy="839">
+		<option optionid="1" optiontext="To face him, what are our chances?" next="111"></option>
+		<option optionid="2" optiontext="He didn't seem much like a fighter anyway - only ever had me do the heavy lifting." next="113"></option>
+	</node>
+	<node id="116" npcName="Eloria Mirvren" anim="1" text="I'm not surprised you'd be itching for revenge. For myself this is merely a question of survival, but I agree. In fact, I came to that very same conclusion long ago. But the problem is that Gaberion does not seem to be an easy man to kill." posx="1650" posy="862">
+		<option optionid="1" optiontext="Why is that?" next="111"></option>
+		<option optionid="2" optiontext="Really? He didn't seem much like a fighter to me - only ever had me do the heavy lifting." next="113"></option>
+	</node>
+	<node id="117" npcName="Eloria Mirvren" anim="1" text="Hm... I don't think there's hiding from Gaberion any longer. How he found me here, he will always be able to find us no matter where we'd go. No, I believe it's time to turn around and face him, fight him, no matter the outcome." posx="2281" posy="1091">
+		<option optionid="1" optiontext="" next="115"></option>
+	</node>
+	<node id="118" npcName="Eloria Mirvren" anim="1" text="I was hoping you'd say that, considering the risk of death is not quite so final to you as it is to me. I'll be waiting for you here, good luck." posx="5548" posy="620">
+		<option optionid="1" optiontext="" actions="UpdateQuest=70-999|71-1,RemoveItems=869-1,AddTrait=1200,RemoveTrait=26" next="0"></option>
+	</node>
+
+	<node id="120" npcName="Eloria Mirvren" anim="1" text="You may be right. What are you thinking, Lord Rothar - how do you see our situation?" posx="39" posy="26">
+		<option optionid="1" optiontext="I'm interested in hearing what you'd propose." next="108"></option>
+		<option optionid="2" optiontext="There can only be one way forward - Gabrius must die." next="116"></option>
+		<option optionid="3" optiontext="Shouldn't we try to take this opportunity to disappear?" next="117"></option>
+	</node>
+
+	<node id="121" npcName="Eloria Mirvren" anim="1" text="It's an overgrown Foulvenom Lasher on the far side to the east. Its roots extend far underneath the ground and swiftly rise up to lash any being that dares tread on them." posx="636" posy="329">
+		<option optionid="1" optiontext="How dangerous is it?" next="122"></option>
+		<option optionid="2" optiontext="This venom - do we really need it, is the blade not enough?" next="123"></option>
+		<option optionid="3" optiontext="Then I'll wrestle the deadly plant for its venom." icon="Quest" next="118"></option>
+	</node>
+	<node id="122" npcName="Eloria Mirvren" anim="1" text="Very; its roots are barbed and coated with the plant's venom, normally a death sentence to anyone who falls victim to their sting. It almost got me one time, even as I thought I was gazing at it from a safe distance." posx="1113" posy="324">
+		<option optionid="1" optiontext="This venom - do we really need it, is the blade not enough?" next="123"></option>
+		<option optionid="2" optiontext="Then I'll wrestle the deadly plant for its venom." icon="Quest" next="118"></option>
+	</node>
+	<node id="123" npcName="Eloria Mirvren" anim="1" text="I don't know how, but Gaberion's already proven his talents for avoiding death. Killing him won't be like killing any other man. I'd say the venom is necessary." posx="521" posy="337">
+		<option optionid="1" optiontext="A lot of strange plants down there, which one's the 'most lethal and monstrous'?" next="121"></option>
+		<option optionid="2" optiontext="Then I'll wrestle the deadly plant for its venom." icon="Quest" next="118"></option>
+	</node>
+
+	<node id="130" npcName="Eloria Mirvren" anim="1" text="This place, this ''garden...'' it makes me nauseous. No wonder it's attracted the worst kind of spellcasters." posx="48" posy="37">
+		<option optionid="1" optiontext="The foul venom - I have it." next="140" icon="Quest" checks="Quest=71-2-2,HasItem=871-1"></option>
+		<option optionid="2" optiontext="About the venom..." next="131" checks="Quest=71-1-1"></option>
+		<option optionid="3" optiontext="I need to know you're not having doubts about working with me." next="135"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="131" npcName="Eloria Mirvren" anim="1" text="I want to imbue with it a cursed dagger I took from the previous Silvermirror Witch. Together with venom from the most lethal and monstrous plant in the witch's garden, the dagger ought to deliver certain death." posx="622" posy="34">
+		<option optionid="1" optiontext="A lot of strange plants down there, which one's the 'most lethal and monstrous'?" next="132"></option>
+		<option optionid="2" optiontext="This venom - do we really need it, is the blade not enough?" next="134"></option>
+		<option optionid="3" optiontext="On another note..." next="139"></option>
+		<option optionid="4" optiontext="As you say." next="0"></option>
+	</node>
+	<node id="132" npcName="Eloria Mirvren" anim="1" text="It's an overgrown Foulvenom Lasher on the far side to the east. Its roots extend far underneath the ground and swiftly rise up to lash any being that dares tread on them." posx="1098" posy="35">
+		<option optionid="1" optiontext="How dangerous is it?" next="133"></option>
+		<option optionid="2" optiontext="This venom - do we really need it, is the blade not enough?" next="134"></option>
+		<option optionid="3" optiontext="On another note..." next="139"></option>
+		<option optionid="4" optiontext="As you say." next="0"></option>
+	</node>
+	<node id="133" npcName="Eloria Mirvren" anim="1" text="Very; its roots are barbed and coated with the plant's venom, normally a death sentence to anyone who falls victim to their sting. It almost got me one time, even as I thought I was gazing at it from a safe distance." posx="1567" posy="29">
+		<option optionid="1" optiontext="This venom - do we really need it, is the blade not enough?" next="134"></option>
+		<option optionid="2" optiontext="On another note..." next="139"></option>
+		<option optionid="3" optiontext="As you say." next="0"></option>
+	</node>
+	<node id="134" npcName="Eloria Mirvren" anim="1" text="I don't know how, but Gaberion's already proven his talents for avoiding death. Killing him won't be like killing any other man. I'd say the venom is necessary." posx="1583" posy="402">
+		<option optionid="1" optiontext="A lot of strange plants down there, which one's the 'most lethal and monstrous'?" next="132"></option>
+		<option optionid="2" optiontext="On another note..." next="139"></option>
+		<option optionid="3" optiontext="As you say." next="0"></option>
+	</node>
+	<node id="135" npcName="Eloria Mirvren" anim="1" text="I'm not. I feel conflicted, true - don't think I'll forgive you for Arren - but I'm committed to us now. Sure, I would have much rather torched you to death, but... as we found out, you proved surprisingly resistant to that strategy. " posx="564" posy="729">
+		<option optionid="1" optiontext="" next="136"></option>
+	</node>
+	<node id="136" npcName="Eloria Mirvren" anim="1" text="Let's not repeat that, by the way. I think you may have dislodged my arm and broken a rib or two. Nothing for you to worry about, mind you, I have it mostly healed already." posx="1027" posy="825">
+		<option optionid="1" optiontext="You know I had no choice when it came to Arren, right?" next="137" checks="!Var=Q16PoisonedTea-2-2"></option>
+		<option optionid="2" optiontext="You know I had no choice when it came to Arren, right?" next="138" checks="Var=Q16PoisonedTea-2-2"></option>
+		<option optionid="3" optiontext="About the venom..." next="131" checks="Quest=71-1-1"></option>
+		<option optionid="4" optiontext="The foul venom - I have it." next="140" icon="Quest" checks="Quest=71-2-2,HasItem=871-1"></option>
+		<option optionid="5" optiontext="As you say." next="0"></option>
+	</node>
+	<node id="137" npcName="Eloria Mirvren" anim="1" text="I know... just... let's not talk about that right now." posx="1508" posy="829">
+		<option optionid="1" optiontext="About the venom..." next="131" checks="Quest=71-1-1"></option>
+		<option optionid="2" optiontext="The foul venom - I have it." next="140" icon="Quest" checks="Quest=71-2-2,HasItem=871-1"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="138" npcName="Eloria Mirvren" anim="1" text="But what you did to him, I can't unsee it... How could you?! I just can't... forget it, let's just not talk about that right now." posx="1955" posy="939">
+		<option optionid="1" optiontext="About the venom..." next="131" checks="Quest=71-1-1"></option>
+		<option optionid="2" optiontext="The foul venom - I have it." next="140" icon="Quest" checks="Quest=71-2-2,HasItem=871-1"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="139" npcName="Eloria Mirvren" anim="1" text="Yes...?" posx="2197" posy="165">
+		<option optionid="1" optiontext="I need to know you're not having doubts about working with me." next="135"></option>
+		<option optionid="2" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="140" npcName="Eloria Mirvren" anim="1" text="Then we have what we need. Thank you... Lord Aercrest." posx="2740" posy="640">
+		<option optionid="1" optiontext=""  icon="Quest" actions="Cinematic=130" next="0"></option>
+	</node>
+
+
+	<node id="1400" npcName="cinematic" anim="1" text="rotherino and elory walk out of witchy ''garden''" posx="184" posy="181">
+		<option optionid="1" optiontext="" next="1401"></option>
+	</node>
+	<node id="1401" npcName="cinematic" anim="1" text="rother: Gabrius instructed me to meet at a hallowed stone circle, within a remote cave..." posx="635" posy="177">
+		<option optionid="1" optiontext="" next="1402"></option>
+	</node>
+	<node id="1402" npcName="cinematic" anim="1" text="rother: ...somewhere far south from here." posx="1081" posy="177">
+		<option optionid="1" optiontext="" next="1403"></option>
+	</node>
+	<node id="1403" npcName="cinematic" anim="1" text="elory: Then meet him we shall, but we will be coming prepared." posx="1538" posy="180">
+		<option optionid="1" optiontext="extra sequence for possibly optional elory reward (from arren poisoning) -> 1407" next="0"></option>
+	</node>
+
+	<node id="1404" npcName="cinematic" anim="1" text="elory: I will be traveling by magic, so it's best I meet you by the cave." posx="2345" posy="186">
+		<option optionid="1" optiontext="" next="1405"></option>
+	</node>
+	<node id="1405" npcName="cinematic" anim="1" text="elory: Traversing the waterways is best for you I think, if you can acquire a boat." posx="2587" posy="448">
+		<option optionid="1" optiontext="" next="1406"></option>
+	</node>
+	<node id="1406" npcName="cinematic" anim="1" text="Elory says 'See you soon.' and teleports away, Rother turns to look at nearby broken boat?" posx="3078" posy="446">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+
+	<node id="1407" npcName="cinematic" anim="1" text="elory: Listen, I..." posx="1531" posy="642">
+		<option optionid="1" optiontext="" next="1408"></option>
+	</node>
+	<node id="1408" npcName="cinematic" anim="1" text="elory: I can't forgive you for killing Arren, but... you granted him a clean, peaceful death." posx="1841" posy="910">
+		<option optionid="1" optiontext="" next="1409"></option>
+	</node>
+	<node id="1409" npcName="cinematic" anim="1" text="elory: For that, I wanted to thank you. Take this stone (or whatever)." posx="2300" posy="909">
+		<option optionid="1" optiontext="" next="1410"></option>
+	</node>
+	<node id="1410" npcName="cinematic" anim="1" text="elory: It carries a part of my strength within it - may it keep you safe. *maby rothur bows his head, like japaneesy, very respektful*" posx="2754" posy="913">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>	
+	
+	
+
+</dialogue>
+
+
+
+

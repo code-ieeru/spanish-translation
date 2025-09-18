@@ -1,0 +1,3 @@
+// test
+NpcInteract NpcTypeId=10001 actions=NpcChat=":) !!!!!!!"
+

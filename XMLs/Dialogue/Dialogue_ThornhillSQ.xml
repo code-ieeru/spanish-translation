@@ -1,0 +1,1021 @@
+<dialogue>
+
+	<node id="1" npcName="Apprentice Fiona Shark" anim="1" text="The Apothecary's inside, but he isn't seeing anyone right now. If you're sick, I heard there's a druid man around who's been helping people. I'd advise staying away from the traditional 'healer' though - trust me, her remedies will only put you in a worse state." posx="51" posy="35">
+		<option optionid="1" optiontext="And who might you be?" next="2" icon="Quest"></option>
+		<option optionid="2" optiontext="As you say." next="0"></option>
+	</node>
+	<node id="2" npcName="Apprentice Fiona Shark" anim="1" text="Name's Fiona, been apprenticing for the apothecary. 'Course I hate to say it, but I've not been too much of help here. Master's been studying the plague that passed through the city, the Blistering Plight they call it." posx="495" posy="35">
+		<option optionid="1" optiontext="You said you've not been of much help, why?" next="3" icon="Quest"></option>
+		<option optionid="2" optiontext="I'm new to the city, what can you tell me about this Blistering Plight?" next="5"></option>
+		<option optionid="3" optiontext="Your master, who is he?" next="7"></option>
+	</node>
+	<node id="3" npcName="Apprentice Fiona Shark" anim="1" text="Requires the kind of work that goes beyond my abilities. For starters, my master says I'd need a protective suit - a plague doctor's outfit. The ancestors know, I'm good with a bonesaw but I always hated the thread and needle..." posx="930" posy="35">
+		<option optionid="1" optiontext="" next="4"></option>
+	</node>
+	<node id="4" npcName="Apprentice Fiona Shark" anim="1" text="Though he won't admit it, I think my master could really use an extra pair of hands right now. If you're more capable, I suggest you talk to tailor Francis down near Beggar's Gate - he can tell you how to craft the outfit." posx="1714" posy="-62">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=87-1"></option>
+	</node>
+
+	<node id="5" npcName="Apprentice Fiona Shark" anim="1" text="It started some months ago, I guess. First folk started shivering, sweating, a fever broke... Then they start coughing, like real bad, and this nasty yellowish pus starts coming out as they do... their skin goes red like a lobster's, and then starts getting covered in blisters..." posx="960" posy="314">
+		<option optionid="1" optiontext="" next="6"></option>
+	</node>
+	<node id="6" npcName="Apprentice Fiona Shark" anim="1" text="Luckily it's receded now, but it's been a real nightmare for those who caught it - a lot of folk died. And a lot who survived carry scars from those blisters. My master's still hoping to learn something, maybe so it could be prevented from happening again, you know?" posx="1410" posy="319">
+		<option optionid="1" optiontext="And your master, who is he?" next="7"></option>
+		<option optionid="2" optiontext="You said you've not been of much help, why?" next="3" icon="Quest"></option>
+	</node>
+	<node id="7" npcName="Apprentice Fiona Shark" anim="1" text="The great apothecary Sven Drogge from the Bronswind Academy of Learning and Excellence. He's, umm... kind of eccentric, has a repution for not being liked by his peers, I guess. But don't hold that against him, he's really good at what he does." posx="562" posy="616">
+		<option optionid="1" optiontext="The Bronswind Academy?" next="8"></option>
+		<option optionid="2" optiontext="I'm new to the city, what can you tell me about this Blistering Plight?" next="5"></option>
+		<option optionid="3" optiontext="You said you've not been of much help, why?" next="3" icon="Quest"></option>
+	</node>
+	<node id="8" npcName="Apprentice Fiona Shark" anim="1" text="Yeah, don't you know? It's in the Kingdom of Melloria, it is like the most prestigious place of learning ever; for real skills and knowledge mind you, not like one of those schools where you learn magic tricks." posx="1030" posy="652">
+		<option optionid="1" optiontext="" next="9"></option>
+	</node>
+	<node id="9" npcName="Apprentice Fiona Shark" anim="1" text="But my master doesn't spend much time there, he prefers to be out in the field, like here. He always said there's only so much one can learn stuck inside stone walls while breathing moldy air. Yeah, I guess that's one reason why his collegues dislike him..." posx="1475" posy="651">
+		<option optionid="1" optiontext="I'm new to the city, what can you tell me about this Blistering Plight?" next="5"></option>
+		<option optionid="2" optiontext="You said you've not been of much help, why?" next="3" icon="Quest"></option>
+	</node>
+
+
+	<node id="11" npcName="Apprentice Fiona Shark" anim="1" text="You're really doing it, aren't you? You're helping my master with his plague puzzles? I'm glad you're able to, he seemed very concerned to me." posx="61" posy="27">
+		<option optionid="1" optiontext="What can you tell me about this Blistering Plight?" next="16"></option>
+		<option optionid="2" optiontext="Your master, who is he exactly?" next="18"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+
+	<node id="12" npcName="Apprentice Fiona Shark" anim="1" text="I hear you did it! You helped my master thwart a potential second wave of the plague? That makes you a real plague doctor in my books!" posx="683" posy="29">
+		<option optionid="1" optiontext="What can you tell me about this Blistering Plight?" next="16"></option>
+		<option optionid="2" optiontext="Your master, who is he exactly?" next="18"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+
+
+	<node id="15" npcName="Apprentice Fiona Shark" anim="1" text="Though he won't admit it, I think my master could really use an extra pair of hands right now. If you're more capable than I, you could talk to tailor Francis down near Beggar's Gate - he can tell you how to craft a plague doctor's outfit." posx="57" posy="28">
+		<option optionid="1" optiontext="What can you tell me about this Blistering Plight?" next="16"></option>
+		<option optionid="2" optiontext="Your master, who is he exactly?" next="18"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="16" npcName="Apprentice Fiona Shark" anim="1" text="It started some months ago, I guess. First folk started shivering, sweating, a fever broke... Then they start coughing, like real bad, and this nasty yellowish pus starts coming out as they do... their skin goes red like a lobster's, and then starts getting covered in blisters..." posx="520" posy="28">
+		<option optionid="1" optiontext="" next="17"></option>
+	</node>
+	<node id="17" npcName="Apprentice Fiona Shark" anim="1" text="Luckily it's receded now, but it's been a real nightmare for those who caught it - a lot of folk died. And a lot who survived carry scars from those blisters. My master's still hoping to learn something, maybe so it could be prevented from happening again, you know?" posx="970" posy="26">
+		<option optionid="1" optiontext="And your master, who is he?" next="18"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+	<node id="18" npcName="Apprentice Fiona Shark" anim="1" text="The great apothecary Sven Drogge from the Bronswind Academy of Learning and Excellence. He's, umm... kind of eccentric, has a repution for not being liked by his peers, I guess. But don't hold that against him, he's really good at what he does." posx="570" posy="377">
+		<option optionid="1" optiontext="The Bronswind Academy?" next="19"></option>
+		<option optionid="2" optiontext="What can you tell me about this Blistering Plight?" next="16"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="19" npcName="Apprentice Fiona Shark" anim="1" text="Yeah, don't you know? It's in the Kingdom of Melloria, it is like the most prestigious place of learning ever; for real skills and knowledge mind you, not like one of those schools where you learn magic tricks." posx="1031" posy="378">
+		<option optionid="1" optiontext="" next="20"></option>
+	</node>
+	<node id="20" npcName="Apprentice Fiona Shark" anim="1" text="But my master doesn't spend much time there, he prefers to be out in the field, like here. He always said there's only so much one can learn stuck inside stone walls while breathing moldy air. Yeah, I guess that's one reason why his collegues dislike him..." posx="1480" posy="379">
+		<option optionid="1" optiontext="What can you tell me about this Blistering Plight?" next="16"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+
+	<node id="21" npcName="Apprentice Fiona Shark" anim="1" text="Though he won't admit it, I think my master could really use an extra pair of hands right now." posx="57" posy="28">
+		<option optionid="1" optiontext="What can you tell me about this Blistering Plight?" next="16"></option>
+		<option optionid="2" optiontext="Your master, who is he exactly?" next="18"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+
+	<node id="25" npcName="Francis Dragoon" anim="1" text="A plague doctor's outfit, eh? Now there's a challenge. It's not something I really make, but if you insist, I have a few ideas I could draw up for you. The execution will be entirely on you, however." posx="237" posy="346">
+		<option optionid="1" optiontext="I'm eager to learn. &lt;color=yellow&gt; Requires tailoring: 20 &lt;/color&gt; " next="26" showGreyedOutOption="1" checks="HasSkillLevel=Tailoring-20"></option>
+		<option optionid="2" optiontext="Sounds daunting, I'll have to think about it." next="0"></option>
+	</node>
+	<node id="26" npcName="Francis Dragoon" anim="1" text="&lt;color=#9C8C77&gt;*Francis quickly draws patterns for you to study. You think you should be able to follow the instructions. The patterns describe the mask to be lined with a medicinal grass.*&lt;/color&gt;" icon="Pattern" posx="701" posy="346">
+		<option optionid="1" optiontext="The medicinal grass - where would I find such a thing?" next="27"></option>
+		<option optionid="2" optiontext="Now all I need is the materials and a workbench." next="0" actions="UnlockCrafting=901|902,SetNpcVar=PlagueDocUnlock-1" icon="Quest"></option>
+	</node>
+	<node id="27" npcName="Francis Dragoon" anim="1" text="Sweetgrass, you mean? Let me think... I suppose people have found it growing at the base of the city wall, outside the gates. Near undisturbed land, you know? " posx="66" posy="27">
+		<option optionid="1" optiontext="Thanks for the advice." next="0" checks="NpcVar=874-PlagueDocUnlock-0-0" actions="UnlockCrafting=901|902,SetNpcVar=PlagueDocUnlock-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Thanks for the advice." next="0" checks="NpcVar=874-PlagueDocUnlock-1-1"></option>
+	</node>
+
+
+	<node id="30" npcName="Apothecary Sven Drogge" anim="1" text="&lt;color=#9C8C77&gt;*The man in the plague doctor outfit greets you in a thick, foreign accent.*&lt;/color&gt;\n\nWho arrives? I am in ze middle of extracting a dead gentleman's spleen, disruptions are not welcome! At least you have ze appropriate protective attire, this is good." posx="72" posy="32">
+		<option optionid="1" optiontext="" next="31"></option>
+	</node>
+	<node id="31" npcName="Apothecary Sven Drogge" anim="1" text="I am apothecary, Sven. And who is ze gentleman I have ze pleasure to be conversing with? He is also interested in studies of ze plague, yes?" posx="512" posy="34">
+		<option optionid="1" optiontext="It's a pleasure, I'm Lord Aercrest." next="32"></option>
+		<option optionid="2" optiontext="You may call me Rothar." next="33"></option>
+		<option optionid="3" optiontext="Your apprentice sent me - the one outside?" next="34"></option>
+	</node>
+	<node id="32" npcName="Apothecary Sven Drogge" anim="1" text="Ach, Mister Lorde, it is pleasure indeed. So, shall we discuss ze work at hand?" posx="986" posy="-52">
+		<option optionid="1" optiontext="No, Lord as in..." next="35"></option>
+	</node>
+	<node id="33" npcName="Apothecary Sven Drogge" anim="1" text="Ach okaaay, well I forget name soon so it does not really matter anyway. So, shall we discuss ze work at hand?" posx="990" posy="189">
+		<option optionid="1" optiontext="Okay?" next="35"></option>
+	</node>
+	<node id="34" npcName="Apothecary Sven Drogge" anim="1" text="Who? Ach, he means ze girl. She is, how does one say... not imbecile? This is good, however, I have not ze desire to subject her to terrible sickness, and she does not have ze correct apparel such as you wear." posx="990" posy="433">
+		<option optionid="1" optiontext="You're studying the plague?" next="35"></option>
+	</node>
+	<node id="35" npcName="Apothecary Sven Drogge" anim="1" text="Blistering Plight, gentleman has heard of this? Fever, blisters, choking on yellow pus... ze full service, yes? No new cases for days, people think plague is gone, thus they rejoice. But no! I discover this plague is, ehm... insidious, perhaps?" posx="1520" posy="196">
+		<option optionid="1" optiontext="How so?" next="36"></option>
+	</node>
+	<node id="36" npcName="Apothecary Sven Drogge" anim="1" text="Sometimes plague kills, yes? But when body dies, plague stays still, dormant for a while. It grows, mutates, then... eruption, spores! New infection! People burn bodies, this is good practice. But some still remain, spores already developed, suit will be necessary!" posx="1954" posy="198">
+		<option optionid="1" optiontext="Where did this plague come from?" next="39"></option>
+		<option optionid="2" optiontext="I take it you're not from around here?" next="42"></option>
+		<option optionid="3" optiontext="You want me to burn corpses?" next="37" icon="Quest"></option>
+	</node>
+	<node id="37" npcName="Apothecary Sven Drogge" anim="1" text="Gentleman is exactly correct. Southeast of here near ze city wall, it is where plagued bodies are piled on funeral pyres - ze plague corner one might call it. Have advised citizens to stay away, yet one must do ze dirty work still, with a torch in hand." posx="2289" posy="642">
+		<option optionid="1" optiontext="" next="38"></option>
+	</node>
+	<node id="38" npcName="Apothecary Sven Drogge" anim="1" text="However! An opportunity for study is also presented. Perhaps gentleman takes my tissue sample jar. He may gather some plague pus from ze bodies, before burning them? He may then bring ze sample back to me for examine." itemIcon="910" posx="2723" posy="642">
+		<option optionid="1" optiontext="Understood." next="0" actions="UpdateQuest=87-3,AddItems=910-1"></option>
+	</node>
+
+	<node id="39" npcName="Apothecary Sven Drogge" anim="1" text="Hmm, there ze gentleman asks a very valid question. I have studied plagues for three decades. Pests usually spread them, then merchants also, once infected. Yes, however in this case... how does one say, ze city is ground zero?" posx="2493" posy="-35">
+		<option optionid="1" optiontext="" next="40"></option>
+	</node>
+	<node id="40" npcName="Apothecary Sven Drogge" anim="1" text="No prior outbreaks reported elsewhere. I came here at once, believe I located patient zero, house is boarded up. But I asked around, nobody knew ze man. He was foreigner, but not a merchant. Arrives in ze city, rents a house, talks to no one - soon, ze plague spreads." posx="2943" posy="-40">
+		<option optionid="1" optiontext="Wait, you don't think this was deliberate?" next="41"></option>
+		<option optionid="2" optiontext="You're not from around here, are you?" next="42"></option>
+		<option optionid="3" optiontext="So, you want me to burn corpses?" next="37" icon="Quest"></option>
+	</node>
+	<node id="41" npcName="Apothecary Sven Drogge" anim="1" text="It is mystery, but I have no evidence to draw conclusions from, yes? Ze plagued house, it presents a problem. Plague may spread still, I think - another wave? But let's deal with one step at a time, as one might say." posx="3391" posy="-37">
+		<option optionid="1" optiontext="You're not from around here, are you?" next="42"></option>
+		<option optionid="2" optiontext="So, you want me to burn corpses?" next="37" icon="Quest"></option>
+	</node>
+	<node id="42" npcName="Apothecary Sven Drogge" anim="1" text="I arrive here from Bronswind Academy of Melloria. But perhaps gentleman recognizes, Melloria is not where I grew up. That would be ze lands of Glimmerfiel; beautiful lands, everyone knows this. Also, not ze place for an academic mind, one might say." posx="2460" posy="217">
+		<option optionid="1" optiontext="Where do you think the plague came from?" next="39"></option>
+		<option optionid="2" optiontext="So, you want me to burn corpses?" next="37" icon="Quest"></option>
+	</node>
+
+
+	<node id="50" npcName="Apothecary Sven Drogge" anim="1" text="Ze gentleman understands what's at stake? Ze plague may not yet be fully over, I must conduct further study." posx="31" posy="19">
+		<option optionid="1" optiontext="I'm in need of another tissue sample jar." next="0" checks="Quest=87-3-3,!ItemExistsGlobal=910" actions="AddItems=910-1" icon="Loot"></option>
+		<option optionid="2" optiontext="What did you need from me again?" next="56"></option>
+		<option optionid="3" optiontext="Mind if I ask a few questions?" next="51"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+
+	<node id="51" npcName="Apothecary Sven Drogge" anim="1" text="Ze gentleman may, although I must remind him that my test subject still awaits my attention. Spleen, kidney, stomach, heart and ze lungs of course... all must be carefully examined." posx="555" posy="415">
+		<option optionid="1" optiontext="I was curious to hear where you're from, Sven?" next="52"></option>
+		<option optionid="2" optiontext="How did this plague get started in the first place?" next="53"></option>
+		<option optionid="3" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="52" npcName="Apothecary Sven Drogge" anim="1" text="I arrive here from Bronswind Academy of Melloria. But perhaps gentleman recognizes, Melloria is not where I grew up. That would be ze lands of Glimmerfiel; beautiful lands, everyone knows this. Also, not ze place for an academic mind, one might say." posx="1156" posy="527">
+		<option optionid="1" optiontext="How do you think this plague got started?" next="53"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+	<node id="53" npcName="Apothecary Sven Drogge" anim="1" text="Hmm, there ze gentleman asks a very valid question. I have studied plagues for three decades. Pests usually spread them, then merchants also, once infected. Yes, however in this case... how does one say, ze city is ground zero?" posx="711" posy="960">
+		<option optionid="1" optiontext="" next="54"></option>
+	</node>
+	<node id="54" npcName="Apothecary Sven Drogge" anim="1" text="No prior outbreaks reported elsewhere. I came here at once, believe I located patient zero, house is boarded up. But I asked around, nobody knew ze man. He was foreigner, but not a merchant. Arrives in ze city, rents a house, talks to no one - soon, ze plague spreads." posx="1192" posy="960">
+		<option optionid="1" optiontext="Wait, you don't think this was deliberate?" next="55"></option>
+		<option optionid="2" optiontext="I was curious to hear where you're from, Sven?" next="52"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="55" npcName="Apothecary Sven Drogge" anim="1" text="It is mystery, but I have no evidence to draw conclusions from, yes? Ze plagued house, it presents a problem. Plague may spread still, I think - another wave? But let's deal with one step at a time, as one might say." posx="1677" posy="952">
+		<option optionid="1" optiontext="I was curious to hear where you're from, Sven?" next="52"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+	<node id="56" npcName="Apothecary Sven Drogge" anim="1" text="Southeast of here, near ze city walls, plague bodies still remain piled on funeral pyres. I have discovered ze plague continues to fester in dead bodies, creates infectious spores. Ze gentleman has protective gear, takes a torch to ze bodies, yes?" posx="620" posy="-58">
+		<option optionid="1" optiontext="" next="57"></option>
+	</node>
+	<node id="57" npcName="Apothecary Sven Drogge" anim="1" text="However, before destruction, if ze gentleman would be as kind as to collect a sample of plague pus from ze corpses. Once he has put ze bodies under ze torch so to say, he brings the sample back to me? It may be necessary to progress my studies." posx="1109" posy="-55">
+		<option optionid="1" optiontext="I'm in need of another tissue sample jar." next="0" checks="Quest=87-3-3,!ItemExistsGlobal=910" actions="AddItems=910-1" icon="Loot"></option>
+		<option optionid="2" optiontext="Mind if I ask a few questions?" next="51"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+
+
+	<node id="65" npcName="Apothecary Sven Drogge" anim="1" text="Ach, ze gentleman returns, and he has ze sample of plague pus I requested? It is most excellent. Perhaps ze gentleman noticed ze house while burning bodies?" posx="56" posy="24">
+		<option optionid="1" optiontext="" actions="RemoveItems=908-1" next="66"></option>
+	</node>
+	<node id="66" npcName="Apothecary Sven Drogge" anim="1" text="Ze one boarded up, X painted on windows and such, yes? First house to become infected, origin point for ze plague. Like ze corpses on ze street, highly problematic still - must be cleansed." posx="512" posy="22">
+		<option optionid="1" optiontext="Ah, so you want me to torch the house as well?" next="67"></option>
+		<option optionid="2" optiontext="What do you propose we do?" next="71"></option>
+	</node>
+	<node id="67" npcName="Apothecary Sven Drogge" anim="1" text="I hope ze gentleman jests? Plague is no laughing matter, and where I come from, it is considered poor form to make jokes. In any case, burn ze house and you risk burning half ze city, yes? I have more elegant solution in mind." posx="996" posy="32">
+		<option optionid="1" optiontext="" next="68"></option>
+	</node>
+	<node id="68" npcName="Apothecary Sven Drogge" anim="1" text="While I study ze plague pus, perhaps gentleman could acquire another sample? I wish to examine an air sample from ze plagued house. However, since it is boarded up, he may have to be creative to gain entry." posx="1460" posy="37">
+		<option optionid="1" optiontext="Where was this plagued house again?" next="69"></option>
+		<option optionid="2" optiontext="How do I get an air sample?" next="70" icon="Quest"></option>
+	</node>
+	<node id="69" npcName="Apothecary Sven Drogge" anim="1" text="So called plague corner, where he burned ze bodies, yes? House is boarded up, is difficult to mistake." posx="1952" posy="22">
+		<option optionid="1" optiontext="How do I get an air sample?" next="70" icon="Quest"></option>
+	</node>
+	<node id="70" npcName="Apothecary Sven Drogge" anim="1" text="He puts ze sample in ze jar, like last time, yes? He waves jar in ze air, thus air and plague spores go in ze jar. It is quite simple, yes?" itemIcon="909" posx="1883" posy="648">
+		<option optionid="1" optiontext="If you say so." next="0" actions="UpdateQuest=87-6,AddItems=909-1"></option>
+	</node>
+
+	<node id="71" npcName="Apothecary Sven Drogge" anim="1" text="Yes, well burning corpses is one thing, but burning houses? Fire spreads, engulfs ze city - it is not appropriate. I must prepare a cleansing agent to save ze city, but I'm not yet sure what is effective." posx="973" posy="310">
+		<option optionid="1" optiontext="" next="68"></option>
+	</node>
+
+
+	<node id="80" npcName="Apothecary Sven Drogge" anim="1" text="Ze plague pus sample you brought me has advanced my understanding significantly, but I shall need ze air sample from ze infected house to confirm my beliefs. I am sure - with aid from ze gentleman - I will be able to cleanse ze house." posx="46" posy="24">
+		<option optionid="1" optiontext="I seem to have lost ze sample jar." next="0" checks="Quest=87-6-6,!ItemExistsGlobal=909" actions="AddItems=909-1" icon="Loot"></option>
+		<option optionid="2" optiontext="How should I go about acquiring ze air sample?" next="81"></option>
+		<option optionid="3" optiontext="Mind if I ask a few questions?" next="51"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="81" npcName="Apothecary Sven Drogge" anim="1" text="Gentleman noticed ze house in plague corner, while burning bodies, yes? Boarded up, marked with X. In fact first house to become infected. Like ze corpses on ze street, highly problematic still - must be cleansed." posx="548" posy="30">
+		<option optionid="1" optiontext="" next="82"></option>
+	</node>
+	<node id="82" npcName="Apothecary Sven Drogge" anim="1" text="I must prepare ze appropriate cleansing agent, but cannot yet sure what is effective. Plague pus sample gentleman brought is helpful, but an air sample from ze infected house is also needed. " posx="997" posy="33">
+		<option optionid="1" optiontext="But how do I get the correct sample though?" next="83"></option>
+		<option optionid="2" optiontext="Mind if I ask a few questions?" next="51"></option>
+		<option optionid="3" optiontext="If you say so." next="0"></option>
+	</node>
+	<node id="83" npcName="Apothecary Sven Drogge" anim="1" text="He puts ze sample in ze jar, like last time, yes? He waves jar in ze air, thus air and plague spores go in ze jar. It is quite simple, yes?" posx="1461" posy="39">
+		<option optionid="1" optiontext="I seem to have lost ze sample jar." next="0" checks="Quest=87-6-6,!ItemExistsGlobal=909" actions="AddItems=909-1" icon="Loot"></option>
+		<option optionid="2" optiontext="Mind if I ask a few questions?" next="51"></option>
+		<option optionid="3" optiontext="If you say so." next="0"></option>
+	</node>
+
+
+	<node id="90" npcName="Apothecary Sven Drogge" anim="1" text="&lt;color=#9C8C77&gt;*As you arrive, the plague doctor looks up at you from midst his vials.*&lt;/color&gt;\n\nI take it gentleman has acquired sample of infectious air?" posx="48" posy="19">
+		<option optionid="1" optiontext="He has indeed." next="91" actions="RemoveItems=904-1" icon="Quest"></option>
+	</node>
+	<node id="91" npcName="Apothecary Sven Drogge" anim="1" itemIcon="904" text="&lt;color=#9C8C77&gt;*You hand over the jar and Sven immediately begins to analyze it through strangely curved lenses, all the while muttering to himself. After some time has passed, he finally speaks up.*&lt;/color&gt;" posx="480" posy="19">
+		<option optionid="1" optiontext="" next="92"></option>
+	</node>
+	<node id="92" npcName="Apothecary Sven Drogge" anim="1" text="Hmm, yes... I have seen something like this before, in Melloria. Similar, but different. Ze solution then was to burn an old medicinal plant as incense, I believe similar treatment will be effective here." posx="918" posy="23">
+		<option optionid="1" optiontext="An old medicinal plant?" next="93"></option>
+		<option optionid="2" optiontext="Where should I look for it?" next="94" icon="Quest"></option>
+	</node>
+	<node id="93" npcName="Apothecary Sven Drogge" anim="1" text="A folk remedy, one might say? Flower of ze Soothing Mallow. Traditionally people grew them everywhere - in gardens and homes - yet such wisdom is since forgotten. Ze plant offers potent medicine, make no mistake. Ancestors were not incorrect, one might say." posx="1441" posy="12">
+		<option optionid="1" optiontext="Where should I look for it?" next="94" icon="Quest"></option>
+	</node>
+	<node id="94" npcName="Apothecary Sven Drogge" anim="1" text="These days it is a rare find. There was a druidic gentleman in ze city, I briefly spoke with him before. Talk of ze flower came up, he said he has found it on ze cliffs by ze river, southeast of ze city, between here and ze Fenwater Village." posx="1420" posy="346">
+		<option optionid="1" optiontext="" next="95"></option>
+	</node>
+	<node id="95" npcName="Apothecary Sven Drogge" anim="1" text="If ze gentleman would be so kind, bring back a bushel of five?" posx="1864" posy="347">
+		<option optionid="1" optiontext="Okay, ze gentleman is on it." next="0" actions="UpdateQuest=87-8"></option>
+	</node>
+
+
+	<node id="100" npcName="Apothecary Sven Drogge" anim="1" text="Once ze gentleman brings me Soothing Mallow, I may prepare it into an incense. I expect ze fumes will purify ze infected house. Only time will tell." posx="26" posy="18">
+		<option optionid="1" optiontext="Where should I look for this Soothing Mallow?" next="101"></option>
+		<option optionid="2" optiontext="Mind if I ask a few questions?" next="51"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="101" npcName="Apothecary Sven Drogge" anim="1" text="These days it is a rare find. There was a druidic gentleman in ze city, I briefly spoke with him before. Talk of ze flower came up, he said he has found it on ze cliffs by ze river, southeast of ze city, between here and ze Fenwater Village. I hope this knowledge is of help." posx="524" posy="19">
+		<option optionid="1" optiontext="Mind if I ask a few questions?" next="51"></option>
+		<option optionid="2" optiontext="We shall see." next="0"></option>
+	</node>
+
+
+	<node id="105" npcName="Apothecary Sven Drogge" anim="1" text="Ze plague house must be purified. If gentleman does not succeed, ze city could be facing a second wave. Much is at stake, yes?" posx="33" posy="25">
+		<option optionid="1" optiontext="I've lit the incense in the house." next="107" checks="Quest=87-11-11"></option>
+		<option optionid="2" optiontext="Do you have any more of that incense?" next="0" checks="Quest=87-10-10,!ItemExistsGlobal=906" actions="AddItems=906-1" icon="Loot"></option>
+		<option optionid="3" optiontext="Still, I was hoping to ask a few questions." next="106"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="106" npcName="Apothecary Sven Drogge" anim="1" text="Ze fate of ze city lies at stake, yet gentleman wishes to talk. Very well, he may ask." posx="687" posy="224">
+		<option optionid="1" optiontext="I was curious to hear where you're from, Sven?" next="52"></option>
+		<option optionid="2" optiontext="How did this plague get started in the first place?" next="53"></option>
+		<option optionid="3" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="107" npcName="Apothecary Sven Drogge" anim="1" text="Yes, but has he resealed ze entrance? Incense will take time to do its work. Townsfolk may still be in danger, if one chooses to enter, yes?" posx="1276" posy="330">
+		<option optionid="1" optiontext="Can you be sure they haven't already?" next="108"></option>
+		<option optionid="2" optiontext="I was hoping to ask a few questions." next="106"></option>
+		<option optionid="3" optiontext="Yes..." next="0"></option>
+	</node>
+	<node id="108" npcName="Apothecary Sven Drogge" anim="1" text="I cannot, yet we must do ze best we can. Then, we can only wait and see, and hope for ze best." posx="1756" posy="334">
+		<option optionid="1" optiontext="I was hoping to ask a few questions." next="106"></option>
+		<option optionid="2" optiontext="Indeed." next="0"></option>
+	</node>
+
+
+	<node id="110" npcName="Apothecary Sven Drogge" anim="1" text="Ach, ze gentleman returns! I have come to expect good news whenever he does. I assume he has ze herbs? They will provide us with a purifying incense." posx="25" posy="18">
+		<option optionid="1" optiontext="There was an odd... encounter." next="111"></option>
+		<option optionid="2" optiontext="Indeed, I have the Soothing Mallow." next="113" icon="Quest"></option>
+	</node>
+	<node id="111" npcName="Apothecary Sven Drogge" anim="1" text="Odd encounter, how does he mean? I am unable to draw conclusions from such a vague statement." posx="560" posy="-94">
+		<option optionid="1" optiontext="I was attacked by some rabid adventurer - Kyler Plair?" next="112"></option>
+		<option optionid="2" optiontext="Nevermind, I got you your herbs." next="113" icon="Quest"></option>
+	</node>
+	<node id="112" npcName="Apothecary Sven Drogge" anim="1" text="Ach, I see... Yes, such things are known to happen unfortunately. Some men just want to watch ze world burn, yes? But you have ze herbs? It is most important, I suggest gentleman puts ze rest behind him." posx="1064" posy="-98">
+		<option optionid="1" optiontext="Anyway, I have your Soothing Mallow." next="113" icon="Quest"></option>
+	</node>
+	<node id="113" npcName="Apothecary Sven Drogge" anim="1" text="Then I have but one task remaining for ze gentleman, yet it is ze one with utmost gravity. Ze plague corner house, ground zero for Blistering Plight - it must be properly cleansed." posx="552" posy="275">
+		<option optionid="1" optiontext="" next="114"></option>
+	</node>
+	<node id="114" npcName="Apothecary Sven Drogge" anim="1" itemIcon="914" text="&lt;color=#9C8C77&gt;*Sven rubs the Soothing Mallow with a greyish powder, which seems to instantly drain all moisture out of the plants.*&lt;/color&gt;" posx="1002" posy="324">
+		<option optionid="1" optiontext="" next="115"></option>
+	</node>
+	<node id="115" npcName="Apothecary Sven Drogge" anim="1" itemIcon="906" text="Ze plague house remains a critical threat, especially after gentleman entered to acquire ze air sample. Fools often do not stay away. Gentleman may now take ze incense." posx="1461" posy="330">
+		<option optionid="1" optiontext="" next="116"></option>
+	</node>
+	<node id="116" npcName="Apothecary Sven Drogge" anim="1" itemIcon="906" text="I ask that gentleman properly lights ze incense once he returns to ze plague house. Then, gentleman should board up ze house again. If ze incense is to work, it will take time. Townsfolk must be kept away, yes?" posx="1905" posy="327">
+		<option optionid="1" optiontext="It has been a pleasure to work with you, Sven." next="117"></option>
+		<option optionid="2" optiontext="I shall go at once!" next="0" actions="UpdateQuest=87-10,AddItems=906-1,RemoveItems=914-5"></option>
+	</node>
+	<node id="117" npcName="Apothecary Sven Drogge" anim="1" text="Ze honor is mine, gentleman. He makes an apprentice most excellent and capable. Now he must make haste!" posx="2475" posy="234">
+		<option optionid="1" optiontext="I'm on my way." next="0" actions="UpdateQuest=87-10,AddItems=906-1,RemoveItems=914-5"></option>
+	</node>
+
+
+	<node id="120" npcName="Apothecary Sven Drogge" anim="1" text="Incense is burning, house is boarded, yes? I wonder, is ze gentleman aware of how great his service to this city? Sadly I hear its ruler is tyrant, no rewards to be expected from him. But many lives were possibly saved." posx="51" posy="28">
+		<option optionid="1" optiontext="Do you think the incense is going to cut it?" next="121"></option>
+		<option optionid="2" optiontext="Then our work here is done." next="122" icon="Quest"></option>
+	</node>
+	<node id="121" npcName="Apothecary Sven Drogge" anim="1" text="Confident, but cannot be certain. There was not enough time for study and experimentation, had to work fast to cleanse ze house, yes? But without our actions, situation would have no hope." posx="551" posy="15">
+		<option optionid="1" optiontext="Then our work here is done." next="122" icon="Quest"></option>
+	</node>
+	<node id="122" npcName="Apothecary Sven Drogge" anim="1" text="For now, I must thank ze gentleman for being an excellent substitute apprentice. If he wishes to conduct his own experiments, he may check my supply of corpses in ze backyard. Also, I have an alchemical solution for ze gentleman he may find most useful." posx="565" posy="363">
+		<option optionid="1" optiontext="Um, I can just... borrow your corpses?" next="123"></option>
+		<option optionid="2" optiontext="Alchemical solution?" next="124"></option>
+		<option optionid="3" optiontext="Thank you Sven, it's most appreciated." next="125" icon="Quest"></option>
+	</node>
+	<node id="123" npcName="Apothecary Sven Drogge" anim="1" text="Oh yes, there has been steady supply of them. I trust gentleman would not have gotten this far if he was shy of corpses, yes?" posx="1070" posy="295">
+		<option optionid="1" optiontext="And the alchemical solution?" next="124"></option>
+		<option optionid="2" optiontext="Thank you Sven, it's most appreciated." next="125" icon="Quest"></option>
+	</node>
+	<node id="124" npcName="Apothecary Sven Drogge" anim="1" text="Yes, I expect gentleman may find use for it when out in ze dangerous world, being ambushed by nefarious characters when picking herbs and such." posx="1073" posy="613">
+		<option optionid="1" optiontext="Um, and I can just... borrow your corpses?" next="123"></option>
+		<option optionid="2" optiontext="Thank you Sven, it's most appreciated." next="125" icon="Quest"></option>
+	</node>
+	<node id="125" npcName="Apothecary Sven Drogge" anim="1" text="Gentleman is always welcome, I look forward to working with him again, should a case arise. It has been a pleasure." posx="1606" posy="523">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=87-999,RemoveItems=906-1"></option>
+	</node>
+
+
+	<node id="130" npcName="Apothecary Sven Drogge" anim="1" text="&lt;color=#9C8C77&gt;*Sven looks up at you from his studies, his features ever hidden by his plague mask. You wonder, does he ever take it off?*&lt;/color&gt;" posx="44" posy="28">
+		<option optionid="1" optiontext="" next="131"></option>
+	</node>
+	<node id="131" npcName="Apothecary Sven Drogge" anim="1" text="Ach, it is ze gentleman! What can be done for him?" posx="548" posy="32">
+		<option optionid="1" optiontext="Can't help but wonder, do you ever take that mask off?" next="132"></option>
+		<option optionid="2" optiontext="Wanted to ask about the plague..." next="133"></option>
+		<option optionid="3" optiontext="There's something random I wanted to ask you." next="134"></option>
+		<option optionid="4" optiontext="I'll see you later, Sven." next="0"></option>
+	</node>
+	<node id="132" npcName="Apothecary Sven Drogge" anim="1" text="Hah, gentleman is not ze first to wonder, nor will he be ze last I imagine. Of course mask must come off sometimes, somehow I have to eat, yes? In fairness, I suppose not many people have seen my face, or remember it." posx="1076" posy="12">
+		<option optionid="1" optiontext="Wanted to ask about the plague..." next="133"></option>
+		<option optionid="2" optiontext="There's something random I wanted to ask you." next="134"></option>
+		<option optionid="3" optiontext="That's all I really wanted to know." next="0"></option>
+	</node>
+	<node id="133" npcName="Apothecary Sven Drogge" anim="1" text="Ach yes, ze plague..." posx="1118" posy="450">
+		<option optionid="1" optiontext="Think we really stopped it?" next="135"></option>
+		<option optionid="2" optiontext="How do you think it got started in the first place?" next="136"></option>
+		<option optionid="3" optiontext="What are the symptoms?" next="139"></option>
+		<option optionid="4" optiontext="Actually, had another question..." next="134"></option>
+		<option optionid="5" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="134" npcName="Apothecary Sven Drogge" anim="1" text="Of course, I have time for ze gentleman." posx="-247" posy="496">
+		<option optionid="1" optiontext="I was curious to hear where you're from, Sven?" next="141"></option>
+		<option optionid="2" optiontext="How do you feel about your apprentice outside?" next="143"></option>
+		<option optionid="3" optiontext="Actually, wanted to ask about the plague..." next="133"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="135" npcName="Apothecary Sven Drogge" anim="1" text="Confident, but cannot be certain. There was not enough time for study and experimentation, had to work fast to cleanse ze house, yes? But without our actions, situation would have no hope." posx="1671" posy="430">
+		<option optionid="1" optiontext="How do you think it got started in the first place?" next="136"></option>
+		<option optionid="2" optiontext="What are the symptoms?" next="139"></option>
+		<option optionid="3" optiontext="Actually, had another question..." next="134"></option>
+		<option optionid="4" optiontext="Indeed." next="0"></option>
+	</node>
+	<node id="136" npcName="Apothecary Sven Drogge" anim="1" text="Hmm, there ze gentleman asks a very valid question. I have studied plagues for three decades. Pests usually spread them, then merchants also, once infected. Yes, however in this case... how does one say, ze city is ground zero?" posx="2121" posy="435">
+		<option optionid="1" optiontext="" next="137"></option>
+	</node>
+	<node id="137" npcName="Apothecary Sven Drogge" anim="1" text="No prior outbreaks reported elsewhere. I came here at once, believe I located patient zero, house is boarded up. But I asked around, nobody knew ze man. He was foreigner, but not a merchant. Arrives in ze city, rents a house, talks to no one - soon, ze plague spreads." posx="2121" posy="684">
+		<option optionid="1" optiontext="You don't think it was spread deliberately?" next="138"></option>
+		<option optionid="2" optiontext="Think we really stopped it?" next="135"></option>
+		<option optionid="3" optiontext="What are the symptoms?" next="139"></option>
+		<option optionid="4" optiontext="Actually, had another question..." next="134"></option>
+		<option optionid="5" optiontext="I see." next="0"></option>
+	</node>
+	<node id="138" npcName="Apothecary Sven Drogge" anim="1" text="It is mystery, but I have no evidence to draw conclusions from. Perhaps such evidence will yet surface? I do not enjoy unsolved mysteries." posx="2616" posy="681">
+		<option optionid="1" optiontext="Think we really stopped it?" next="135"></option>
+		<option optionid="2" optiontext="What are the symptoms?" next="139"></option>
+		<option optionid="3" optiontext="Actually, had another question..." next="134"></option>
+		<option optionid="4" optiontext="Indeed." next="0"></option>
+	</node>
+	<node id="139" npcName="Apothecary Sven Drogge" anim="1" text="Approximately 3 or 4 days upon coming into contact with ze infection, patient develops heavy shivers and sweating, they begin coughing, fever breaks soon after..." posx="1564" posy="1133">
+		<option optionid="1" optiontext="" next="140"></option>
+	</node>
+	<node id="140" npcName="Apothecary Sven Drogge" anim="1" text="Fever rises, cough worsens, skin reddens... Yellow pus begins to come out of lungs. Skin, it breaks into red blisters. Perhaps one in five infected loses life, for elderly and weak perhaps every three in four." posx="2049" posy="1227">
+		<option optionid="1" optiontext="How do you think it got started in the first place?" next="136"></option>
+		<option optionid="2" optiontext="Think we really stopped it?" next="135"></option>
+		<option optionid="3" optiontext="Actually, had another question..." next="134"></option>
+		<option optionid="4" optiontext="Indeed, grim." next="0"></option>
+	</node>
+	<node id="141" npcName="Apothecary Sven Drogge" anim="1" text="I arrive here from Bronswind Academy of Melloria. But perhaps gentleman recognizes, Melloria is not where I grew up. That would be ze lands of Glimmerfiel; beautiful lands, everyone knows this. Also, not ze place for an academic mind, one might say." posx="224" posy="515">
+		<option optionid="1" optiontext="How so?" next="142"></option>
+		<option optionid="2" optiontext="How do you feel about your apprentice outside?" next="143"></option>
+		<option optionid="3" optiontext="Wanted to ask about the plague..." next="133"></option>
+		<option optionid="4" optiontext="I see." next="0"></option>
+	</node>
+	<node id="142" npcName="Apothecary Sven Drogge" anim="1" text="Glimmerfiel, people are very... agrarian? Very traditional and religious, yes? One might say my mind was not best liked, I was considered misfit. I often miss ze land, but also I have not been back in over three decades." posx="664" posy="518">
+		<option optionid="1" optiontext="How do you feel about your apprentice outside?" next="143"></option>
+		<option optionid="2" optiontext="Wanted to ask about the plague..." next="133"></option>
+		<option optionid="3" optiontext="I understand.." next="0"></option>
+	</node>
+	<node id="143" npcName="Apothecary Sven Drogge" anim="1" text="Ze girl has a sharp enough mind, but alas, she was too inexperienced in ze face of this plague. This is understandable, I do not blame her. She has far to go yet and I wish to see she gets there, yes?" posx="216" posy="1073">
+		<option optionid="1" optiontext="I was curious to hear where you're from, Sven?" next="141"></option>
+		<option optionid="2" optiontext="Wanted to ask about the plague..." next="133"></option>
+		<option optionid="3" optiontext="Yes, indeed." next="0"></option>
+	</node>
+
+
+	<node id="150" npcName="Merchant James Baynes" anim="1" text="&lt;color=#9C8C77&gt;*The merchant eyes you as you approach, while quietly enjoying his drink in the corner.*&lt;/color&gt;\n\nYou don't look like any other peasant who walks into this tavern. Makes a man wonder, you good at solving problems?" posx="32" posy="24">
+		<option optionid="1" optiontext="Depends on what you want." next="151" icon="Quest"></option>
+		<option optionid="2" optiontext="Just here for a drink..." next="0"></option>
+	</node>
+	<node id="151" npcName="Merchant James Baynes" anim="1" text="Heard about the lawlessness down south, in Haywind? Forest roads crawling with marauders, an entire village razed... Merchant caravans don't like their chances traveling to the city. Just as well, most who try end up robbed." posx="478" posy="22">
+		<option optionid="1" optiontext="They razed a village?" next="152"></option>
+		<option optionid="2" optiontext="Traders are avoiding Haywind right now?" next="153"></option>
+		<option optionid="3" optiontext="What's your interest in it?" next="154" icon="Quest"></option>
+	</node>
+	<node id="152" npcName="Merchant James Baynes" anim="1" text="They sure did, pity the folk of Baronsgreene. Those who did get away, well... they lost their homes and everything. Marked the beginning of Haywind's troubles." posx="940" posy="16">
+		<option optionid="1" optiontext="Traders are avoiding Haywind right now?" next="153"></option>
+		<option optionid="2" optiontext="So what's your interest in it?" next="154" icon="Quest"></option>
+	</node>
+	<node id="153" npcName="Merchant James Baynes" anim="1" text="Can you blame them? Some risk it sure, but most traders have dissipated. Not only can you lose your goods on the road, can just as easily lose your life too." posx="933" posy="345">
+		<option optionid="1" optiontext="The bandits razed a village?" next="152"></option>
+		<option optionid="2" optiontext="So what's your interest in it?" next="154" icon="Quest"></option>
+	</node>
+	<node id="154" npcName="Merchant James Baynes" anim="1" text="The city's starving for goods, and that provides an opportunity. Anyone capable of procuring said goods can reap great profits. I'm a man who likes the sound of great profits, but I'm not so silly as to risk the road - the river offers a much safer route." posx="1453" posy="151">
+		<option optionid="1" optiontext="" next="155"></option>
+	</node>
+	<node id="155" npcName="Merchant James Baynes" anim="1" text="Thus I've invested a small sum into a boat. There's just one slight problem. Er... see, I'm an aspiring investor, but not a man of great funds just yet, so I had to choose the boat accordingly. How about we meet out in the harbor? It'll be easier to show than explain." posx="1899" posy="155">
+		<option optionid="1" optiontext="Fair enough." next="0" actions="Cinematic=140" icon="Quest"></option>
+	</node>
+
+
+	<node id="160" npcName="Merchant James Baynes" anim="1" text="Ah, you made it. May I present to you my great pride and joy, the river barge James Baynes, named after myself of course." posx="23" posy="16">
+		<option optionid="1" optiontext="I don't understand, where's the boat?" next="161" icon="Quest"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="161" npcName="Merchant James Baynes" anim="1" text="Ahem, you're looking at it right now. As I said, it's the best I could do, but it'll serve perfectly I'm sure. After slight repairs of course." posx="462" posy="25">
+		<option optionid="1" optiontext="Slight repairs? It won't get out of the harbor without sinking!" next="162" icon="Quest"></option>
+	</node>
+	<node id="162" npcName="Merchant James Baynes" anim="1" text="Ah, well yes. Which is why I'm hiring you as the man to oversee the logistics of this operation. You see, I tend to be more of the 'big picture' guy. You already seem to understand boats better than I do." posx="906" posy="29">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Examine the barge.*&lt;/color&gt;" checks="HasSkillLevel=Carpentry-15" next="165"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Examine the barge.*&lt;/color&gt;" next="166" checks="!HasSkillLevel=Carpentry-15"></option>
+		<option optionid="3" optiontext="I'll see what I can do..." next="164" icon="Quest"></option>
+	</node>
+	<node id="163" npcName="Merchant James Baynes" anim="1" text="Indeed, simple tools may be bought across many general stores in the city. Not to worry, I'll be sure to compensate any and all expenses once the job is complete." posx="1836" posy="28">
+		<option optionid="1" optiontext="How generous..." next="164" icon="Quest"></option>
+	</node>
+	<node id="164" npcName="Merchant James Baynes" anim="1" text="Perfect! Knew I had you pegged as the right man for the job. I'll be right here in case you happen to need any, erm... strategic advice?" posx="1882" posy="337">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=90-2"></option>
+	</node>
+	<node id="165" npcName="Merchant James Baynes" anim="1" text="&lt;color=#9C8C77&gt;*It's in a fairly bad shape, but if I had two planks, a hammer and some rope, I suppose I could get the boat serviceable again.*&lt;/color&gt;" posx="1349" posy="19">
+		<option optionid="1" optiontext="Guess I'll need some planks and tools..." next="163"></option>
+		<option optionid="2" optiontext="Think I know what to do." next="164" icon="Quest"></option>
+	</node>
+	<node id="166" npcName="Merchant James Baynes" anim="1" text="&lt;color=red&gt;*Requires at least level 15 in Crafting.*&lt;/color&gt;\n\n&lt;color=#9C8C77&gt;*The boat looks like a mess. I'd probably need a bit more practice in Crafting to be able to fix her up.*&lt;/color&gt;" posx="1350" posy="328">
+		<option optionid="1" optiontext="I'll have to see what I can do..." next="164" icon="Quest"></option>
+	</node>
+
+
+	<node id="170" npcName="Merchant James Baynes" anim="1" text="Sure it's seen better days, but I think with a bit of care and slight repairs the boat will be running up and down the river like a beauty!" posx="21" posy="17">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Examine the barge.*&lt;/color&gt;" next="172" checks="HasSkillLevel=Carpentry-15"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Examine the barge.*&lt;/color&gt;" next="173" checks="!HasSkillLevel=Carpentry-15"></option>
+		<option optionid="3" optiontext="To me it looks ready to sink the moment it's pushed off the jetty..." next="171"></option>
+		<option optionid="4" optiontext="If you say so." next="0"></option>
+	</node>
+	<node id="171" npcName="Merchant James Baynes" anim="1" text="Know what I see when I look at you? I see a practical man of many talents. That's right, I'm someone who sees talents in other people. And you my friend... well I'm sure you have it in you to make the boat look like new again!" posx="452" posy="16">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Examine the barge.*&lt;/color&gt;" next="172" checks="HasSkillLevel=Carpentry-15"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Examine the barge.*&lt;/color&gt;" next="173" checks="!HasSkillLevel=Carpentry-15"></option>
+		<option optionid="3" optiontext="If you say so." next="0"></option>
+	</node>
+	<node id="172" npcName="Merchant James Baynes" anim="1" text="&lt;color=#9C8C77&gt;*It's in a fairly bad shape, but if I had two planks, a hammer and some rope, I suppose I could get the boat serviceable again.*&lt;/color&gt;" posx="523" posy="467">
+		<option optionid="1" optiontext="Guess I'll need some planks and tools..." next="174"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="173" npcName="Merchant James Baynes" anim="1" text="&lt;color=red&gt;*Requires at least level 15 in Crafting.*&lt;/color&gt;\n\n&lt;color=#9C8C77&gt;*The boat looks like a mess. I'd probably need a bit more practice in Crafting to be able to fix her up.*&lt;/color&gt;" posx="964" posy="466">
+		<option optionid="1" optiontext="Honestly it looks ready to sink the moment it's pushed off the jetty..." next="171"></option>
+		<option optionid="2" optiontext="Oh dear..." next="0"></option>
+	</node>
+
+	<node id="174" npcName="Merchant James Baynes" anim="1" text="Indeed, simple tools may be bought across many general stores in the city. Not to worry, I'll be sure to compensate any and all expenses once the job is complete." posx="1836" posy="28">
+		<option optionid="1" optiontext="Honestly it looks ready to sink the moment it's pushed off the jetty..." next="171"></option>
+		<option optionid="2" optiontext="How generous..." next="0"></option>
+	</node>
+
+
+	<node id="180" npcName="Merchant James Baynes" anim="1" text="Hah, just look at her! Isn't she a beauty? I never doubted you for a moment!" posx="30" posy="36">
+		<option optionid="1" optiontext="So what now?" next="181" icon="Quest"></option>
+	</node>
+	<node id="181" npcName="Merchant James Baynes" anim="1" text="Now we load her up and set our sights on Haywind. I want you to oversee the trip, but we should first hire someone who knows the waterways. Someone who can steer clear of the bandits preying on the river banks." posx="454" posy="41">
+		<option optionid="1" optiontext="" next="182"></option>
+	</node>
+	<node id="182" npcName="Merchant James Baynes" anim="1" text="Perhaps you could head back to the tavern and persuade one of the men there to take on the challenge? I won't lie, the're usually not the most trustworthy of sorts, but they're skilled on water. Besides, I have you to make sure they toe the line, don't I?" posx="874" posy="40">
+		<option optionid="1" optiontext="I suppose..." next="0" actions="UpdateQuest=90-3"></option>
+	</node>
+
+
+	<node id="185" npcName="Merchant James Baynes" anim="1" text="Just look at it! My very own boat, perfectly sea... erm, river-worthy!" posx="22" posy="21">
+		<option optionid="1" optiontext="When do we take off?" next="186"></option>
+		<option optionid="2" optiontext="Quite." next="0"></option>
+	</node>
+	<node id="186" npcName="Merchant James Baynes" anim="1" text="I want you to oversee the trip, but we should first hire someone who knows the waterways. Someone who can steer clear of the bandits preying on the river banks. Perhaps you could head back to the tavern and persuade one of the men there to take on the challenge?" posx="490" posy="24">
+		<option optionid="1" optiontext="" next="187"></option>
+	</node>
+	<node id="187" npcName="Merchant James Baynes" anim="1" text="I won't lie, the're usually not the most trustworthy of sorts, but they're skilled on water. Besides, I have you to make sure they toe the line, don't I?" posx="941" posy="27">
+		<option optionid="1" optiontext="I suppose..." next="0"></option>
+	</node>
+
+
+	<node id="195" npcName="Sailor William Aley" anim="1" text="What're you lookin' at, eh?!" posx="33" posy="17">
+		<option optionid="1" optiontext="Need an experienced sailor for a daring trip down the river." next="196" checks="Quest=90-3-3" icon="Quest"></option>
+		<option optionid="2" optiontext="I'm looking for a secret passage into Thornhill Dungeons." next="197" checks="Quest=16-3-3"></option>
+		<option optionid="3" optiontext="Will you stop screaming at everyone?" next="198"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="196" npcName="Sailor William Aley" anim="1" text="Oh yeah?! Well I need beer, lots of it. I want five mugs, but the lady here won't sell it to me. Says she don't like me when I drink, says I turn mean. I say you get me beer, and maybe we can talk business." posx="503" posy="12">
+		<option optionid="1" optiontext="I have a job for you and you're seriously bartering about beer?" next="199"></option>
+		<option optionid="2" optiontext="Right..." next="0" actions="UpdateQuest=90-4"></option>
+	</node>
+	<node id="197" npcName="Sailor William Aley" anim="1" text="Well you can go look elsewhere! I'm not in the mood for your questions!" posx="491" posy="375">
+		<option optionid="1" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="198" npcName="Sailor William Aley" anim="1" text="How about you mind your own business?! I do what I want! People really oughta respect me more! I'm not someone to trifle with!" posx="970" posy="332">
+		<option optionid="1" optiontext="Whatever, I need an experienced sailor for a daring trip down the river." next="196" checks="Quest=90-3-3" icon="Quest"></option>
+		<option optionid="2" optiontext="Whatever." next="0"></option>
+	</node>
+	<node id="199" npcName="Sailor William Aley" anim="1" text="I want what I want! I never do jobs sober anyway, is bad luck! 5 mugs of beer, no less. Otherwise you can forget about this job of yours." posx="965" posy="29">
+		<option optionid="1" optiontext="Right..." next="0" actions="UpdateQuest=90-4"></option>
+	</node>
+
+
+	<node id="205" npcName="Sailor William Aley" anim="1" text="You want to hire me? Fine, but first I want 5 mugs of beer. The lady here won't sell it to me. Says she don't like me when I drink..." posx="50" posy="25">
+		<option optionid="1" optiontext="Fine, you can have your beer..." next="208" checks="HasItem=296-5" icon="Quest" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="How can I even expect you to be fit for this job?" next="207"></option>
+		<option optionid="3" optiontext="Will you stop screaming at everyone?" next="206"></option>
+		<option optionid="4" optiontext="" next="0"></option>
+	</node>
+	<node id="206" npcName="Sailor William Aley" anim="1" text="You don't tell me what to do! Not you, not anyone! I do what I want, and I want what I want. And what I want is beer." posx="557" posy="235">
+		<option optionid="1" optiontext="How can I even expect you to be fit for this job?" next="207"></option>
+		<option optionid="2" optiontext="Fine, have your beer..." next="208" checks="HasItem=296-5" icon="Quest" showGreyedOutOption="1"></option>
+		<option optionid="3" optiontext="Whatever." next="0"></option>
+	</node>
+	<node id="207" npcName="Sailor William Aley" anim="1" text="See any other sailors in here right now? I know what I can do, and what I do is handle boats. I know my stuff, and I know it even better boozed up. I ain't doing any jobs unless I get my beer!" posx="1007" posy="235">
+		<option optionid="1" optiontext="But will you just stop screaming at everyone?" next="206"></option>
+		<option optionid="2" optiontext="Fine, have your beer..." next="208" checks="HasItem=296-5" icon="Quest" showGreyedOutOption="1"></option>
+		<option optionid="3" optiontext="Whatever." next="0"></option>
+	</node>
+	<node id="208" npcName="Sailor William Aley" anim="1" text="Alright, this should get me going. So why don't you tell me about this job..." posx="1534" posy="18">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=141,RemoveItems=296-5" icon="Quest"></option>
+	</node>
+
+
+	<node id="215" npcName="Merchant James Baynes" anim="1" text="With an experienced sailor in hand, the James Baynes is finally ready to begin its voyage! Are you ready, my friend?" posx="40" posy="29">
+		<option optionid="1" optiontext="I'm ready to embark." next="218" icon="Quest"></option>
+		<option optionid="2" optiontext="Should I be expecting trouble on the river?" next="217"></option>
+		<option optionid="3" optiontext="I don't trust our sailor..." next="216"></option>
+		<option optionid="4" optiontext="Not quite." next="0"></option>
+	</node>
+	<node id="216" npcName="Merchant James Baynes" anim="1" text="Good, because I wouldn't either - not as far as I could throw him. Sadly, we don't have much choice in the quality of manpower in Thornhill harbor these days. But that's why I'll be relying on you to oversee the trip." posx="535" posy="357">
+		<option optionid="1" optiontext="Should I be expecting trouble on the river?" next="217"></option>
+		<option optionid="2" optiontext="I'm ready to embark." next="218" icon="Quest"></option>
+		<option optionid="3" optiontext="There are still preparations I wish to make." next="0"></option>
+	</node>
+	<node id="217" npcName="Merchant James Baynes" anim="1" text="I have heard of boats getting attacked, so yeah. But that's why we need a good sailor. It'll be his job to find a route through that steers clear of the worst sites of ambush." posx="970" posy="359">
+		<option optionid="1" optiontext="Our sailor, I don't trust that man..." next="216"></option>
+		<option optionid="2" optiontext="I'm ready to embark." next="218" icon="Quest"></option>
+		<option optionid="3" optiontext="There are still preparations I wish to make." next="0"></option>
+	</node>
+	<node id="218" npcName="Merchant James Baynes" anim="1" text="Well good, hop on the boat! I'll sneak across on land and greet you on the other side, at Haywind harbor. Best of luck, my friend - I'm counting on you!" posx="667" posy="25">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=90-6"></option>
+	</node>
+
+	<node id="220" npcName="Merchant James Baynes" anim="1" text="Hop on the boat whenever you're ready. I'll sneak across on land and greet you on the other side, at Haywind harbor. Best of luck, my friend - I'm counting on you!" posx="1523" posy="27">
+		<option optionid="1" optiontext="Should I be expecting trouble on the river?" next="221"></option>
+		<option optionid="2" optiontext="I don't trust our sailor..." next="222"></option>
+		<option optionid="3" optiontext="Alright." next="0"></option>
+	</node>
+	<node id="221" npcName="Merchant James Baynes" anim="1" text="I have heard of boats getting attacked, so yeah. But that's why we need a good sailor. It'll be his job to find a route through that steers clear of the worst sites of ambush." posx="1985" posy="28">
+		<option optionid="1" optiontext="I don't trust our sailor..." next="222"></option>
+		<option optionid="2" optiontext="Alright." next="0"></option>
+	</node>
+	<node id="222" npcName="Merchant James Baynes" anim="1" text="Good, because I wouldn't either - not as far as I could throw him. Sadly, we don't have much choice in the quality of manpower in Thornhill harbor these days. But that's why I'll be relying on you to oversee the trip." posx="1986" posy="347">
+		<option optionid="1" optiontext="Should I be expecting trouble on the river?" next="221"></option>
+		<option optionid="2" optiontext="Alright." next="0"></option>
+	</node>
+
+
+	<node id="230" npcName="Merchant James Baynes" anim="1" text="Glad to see you made it in one piece, along with my cargo! I don't see our sailor though..." posx="53" posy="39">
+		<option optionid="1" optiontext="Must've fallen overboard..." next="231" icon="Quest"></option>
+	</node>
+	<node id="231" npcName="Merchant James Baynes" anim="1" text="&lt;color=#9C8C77&gt;*Chuckles.*&lt;/color&gt;\nI see... Turned out to be an unreliable man, then. But that's fine by me, means you earn his share. Besides, seems to me I can hire more trustworthy sailors in this city anyway." posx="482" posy="42">
+		<option optionid="1" optiontext="" next="232"></option>
+	</node>
+	<node id="232" npcName="Merchant James Baynes" anim="1" text="Tell you what, I'll throw in a little bonus for a job well done; feel free to hop on my trade boat any time you're looking to hitch a ride between these two cities. I reckon it ought to be safer than taking the road anyway." posx="908" posy="42">
+		<option optionid="1" optiontext="Thanks, good luck!" next="0" actions="UpdateQuest=90-999,NpcChat=Be seeing you> friend!"></option>
+	</node>
+
+
+	<node id="250" npcName="Thug Thomas" anim="1" text="Yo ho boi! , where ya think ya going without gifting me some pennies?" posx="908" posy="42">
+		<option optionid="1" optiontext="Show me what you got bitchu" next="0" actions="SetVar=ThornhillThugAmbush-1"></option>
+	</node>
+
+
+
+	<node id="280" npcName="Headmaster J.E. Trevelyan" anim="1" text="Hmm... Regretfully, some of my instructors are of the mind that you are not yet fully formed in all aspects expected in a member of our Academy.\n\n&lt;color=#9C8C77&gt;*You need a minimum of level 25 across all skills to truly impress the Thornhill Masters.*&lt;/color&gt;" posx="0" posy="6">
+		<option optionid="1" optiontext="Feels bad..." next="281"></option>
+	</node>
+	<node id="281" npcName="Headmaster J.E. Trevelyan" anim="1" text="I sense, however, that within you reside the qualities of persistence and perseverance! Those are highly valued qualities by us here at the Academy of Masters. Continue to work on yourself and you may yet pass our strict standards for excellence!" posx="406" posy="6">
+		<option optionid="1" optiontext="Right." actions="SetVar=Q108StartSkillCheck-0" next="0"></option>
+	</node>
+
+
+	<node id="290" npcName="Headmaster J.E. Trevelyan" anim="1" text="My instructors say you show promise, very good, very good... very well..." posx="0" posy="6">
+		<option optionid="1" optiontext="I knew I was worthy to be recognized as a member!" next="291" icon="Quest"></option>
+	</node>
+	<node id="291" npcName="Headmaster J.E. Trevelyan" anim="1" text="Hm? No, no, let's not get ahead of ourselves... However, what you have done is earn yourself the right to prove yourself worthy. Each member of our Academy has demonstrated commitment by carrying out an extraordinary service to our institution." posx="408" posy="5">
+		<option optionid="1" optiontext="Oh..." next="292" icon="Quest"></option>
+	</node>
+	<node id="292" npcName="Headmaster J.E. Trevelyan" anim="1" text="There is one pressing matter, in fact, with which you might prove most helpful. Our Academy has traditionally received its funding from the city, which under recent rulership has only been cut ever smaller. Now the Lord Mayor has decreed we shall not see a single copper coin unless we show our value to him." posx="816" posy="4">
+		<option optionid="1" optiontext="" next="293"></option>
+	</node>
+	<node id="293" npcName="Headmaster J.E. Trevelyan" anim="1" text="He's heard of cannons built in distant lands and demands we make one for him. Most brutish and uncivilized, if you ask me, but there it is. I sent a fellow, a genius of engineering, Norman Osborrow to manage the project. But he's an old man, he will require someone to do the heavy lifting for him, which is where you can help." posx="1227" posy="3">
+		<option optionid="1" optiontext="Cannons... aren't they some sort of myth and legend?" next="294"></option>
+		<option optionid="2" optiontext="So where should I meet Norman?" next="295" icon="Quest"></option>
+	</node>
+	<node id="294" npcName="Headmaster J.E. Trevelyan" anim="1" text="Oh no, I assure you such inventions are quite real, and have been produced to varying degrees of quality in foreign realms. All it takes is a bit of skill, knowledge and ingenuity. Norman has seen the contraptions with his own eyes and knows them in principle, but he'll need your help with the execution." posx="1645" posy="5">
+		<option optionid="1" optiontext="So where should I meet Norman?" next="295" icon="Quest"></option>
+	</node>
+	<node id="295" npcName="Headmaster J.E. Trevelyan" anim="1" text="The Lord Mayor established a secret site overlooking the bay for the cannon's development, Norman's already there waiting for you. You'll need to ask one of the guards at the Lord Mayor's castle to escort you there - good luck!" posx="1642" posy="259">
+		<option optionid="1" optiontext="Very well." next="0" actions="UpdateQuest=108-1,SetVar=Q108StartSkillCheck-0"></option>
+	</node>
+
+
+	<node id="300" npcName="Headmaster J.E. Trevelyan" anim="1" text="Ah, you must be a newcomer here? Allow me to welcome you to Thornhill's Academy of Masters! Let's get the formalities out of the way, I am Headmaster Trevelyan and I presume you come seeking knowledge?" posx="0" posy="10">
+		<option optionid="1" optiontext="I wish to join your society." next="301" icon="Quest"></option>
+		<option optionid="2" optiontext="The Academy of Masters?" next="303"></option>
+		<option optionid="3" optiontext="Makes sense." next="0"></option>
+	</node>
+	<node id="301" npcName="Headmaster J.E. Trevelyan" anim="1" text="So you say, so you say... but here, in these prestigious halls, full membership demands proof of excellence! I must first hear a recommendation from each of the Academy Masters to establish a baseline. Do you submit yourself to their examination?" posx="407" posy="11">
+		<option optionid="1" optiontext="Sure, why not." next="302" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me more about the Academy first." next="303"></option>
+		<option optionid="3" optiontext="I don't need to prove anything to anyone." next="0"></option>
+	</node>
+	<node id="302" npcName="Headmaster J.E. Trevelyan" anim="1" text="Very good! This will only take a moment, as I summon Thornhill's Masters to assess you in the Academy gardens..." posx="816" posy="11">
+		<option optionid="1" optiontext="" next="0" icon="Quest" actions="Cinematic=206"></option>
+	</node>
+
+	<node id="303" npcName="Headmaster J.E. Trevelyan" anim="1" text="You must ask? But surely you would not be here, had our reputation not preceded us! This is only the most esteemed, the most prestigious, the most venerated and revered center of learning in all the northern woodlands of Imberthale!" posx="915" posy="315">
+		<option optionid="1" optiontext="" next="304"></option>
+	</node>
+	<node id="304" npcName="Headmaster J.E. Trevelyan" anim="1" text="I must warn you, we do not let just anyone study here - there are certain standards that must be upheld! I'm well aware the upstarts in the city of Haywind have set up their own ''college'', if one can call it such, in service of all manner of inept commoners. But here in Thornhill, at least, we're aware tradition in learning counts for something." posx="1509" posy="1206">
+		<option optionid="1" optiontext="And what standards do you uphold exactly?" next="305"></option>
+		<option optionid="2" optiontext="I believe myself worthy to join your society." next="301" icon="Quest"></option>
+		<option optionid="3" optiontext="Interesting." next="0"></option>
+	</node>
+	<node id="305" npcName="Headmaster J.E. Trevelyan" anim="1" text="You must demonstrate a sufficient level of knowledge in any one skill before our Masters will even consider providing you with advanced training. In addition, if you wish to be recognized as a full fledged member of our great Academy, you must prove your talents in a wide variety of fields." posx="1928" posy="1204">
+		<option optionid="1" optiontext="" next="306"></option>
+	</node>
+	<node id="306" npcName="Headmaster J.E. Trevelyan" anim="1" text="&lt;color=#9C8C77&gt;*To unlock training from a Thornhill Master, you must possess at least 20 levels in their respective skill.*&lt;/color&gt;" posx="1928" posy="1204">
+		<option optionid="1" optiontext="I believe myself worthy to join your society." next="301" icon="Quest"></option>
+		<option optionid="2" optiontext="Interesting." next="0"></option>
+	</node>
+
+	
+	<node id="310" npcName="Headmaster J.E. Trevelyan" anim="1" text="How goes your work on the cannon research project? It is not my intent to pile pressure, but the future of our great Academy may depend on your success..." posx="0" posy="8">
+		<option optionid="1" optiontext="Remind me, how do I get to the cannon build site?" next="311"></option>
+		<option optionid="2" optiontext="So why do you need my help in building a cannon?" next="312"></option>
+		<option optionid="3" optiontext="What can you tell me about your Academy?" next="314"></option>
+		<option optionid="4" optiontext="I'm working on it." next="0"></option>
+	</node>
+	<node id="311" npcName="Headmaster J.E. Trevelyan" anim="1" text="Ah yes, the Lord Mayor is very protective about that. You'll have to meet up with one of his sergeants by Thornhill Castle gates, who'll escort you there. A chap named Almsworth, as I recall." posx="407" posy="8">
+		<option optionid="1" optiontext="So why do you need my help in building a cannon?" next="312"></option>
+		<option optionid="2" optiontext="What can you tell me about your Academy?" next="314"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="312" npcName="Headmaster J.E. Trevelyan" anim="1" text="Why, it's quite simple. The Lord Mayor has threatened not to lend a single copper coin in funding to the Academy anymore unless we find a way to demonstrate our usefulness to him. He's heard of cannons built in distant lands and demands we make one for him." posx="818" posy="10">
+		<option optionid="1" optiontext="" next="313"></option>
+	</node>
+	<node id="313" npcName="Headmaster J.E. Trevelyan" anim="1" text="I sent a fellow, a genius of engineering, Norman Osborrow to manage the project. He'll have come up with blueprints for a cannon for certain, but... he's an old man, he will require someone skilled and reliable to do the heavy lifting for him." posx="1225" posy="12">
+		<option optionid="1" optiontext="Remind me, how do I get to the cannon build site?" next="311"></option>
+		<option optionid="2" optiontext="What can you tell me about your Academy?" next="314"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="314" npcName="Headmaster J.E. Trevelyan" anim="1" text="You must ask? But surely you would not be here, had our reputation not preceded us! This is only the most esteemed, the most prestigious, the most venerated and revered center of learning in all the northern woodlands of Imberthale!" posx="817" posy="230">
+		<option optionid="1" optiontext="" next="315"></option>
+	</node>
+	<node id="315" npcName="Headmaster J.E. Trevelyan" anim="1" text="I must warn you, we do not let just anyone study here - there are certain standards that must be upheld! I'm well aware the upstarts in the city of Haywind have set up their own ''college'', if one can call it such, in service of all manner of inept commoners. But here in Thornhill, at least, we're aware tradition in learning counts for something." posx="817" posy="230">
+		<option optionid="1" optiontext="And what standards do you uphold exactly?" next="316"></option>
+		<option optionid="2" optiontext="Remind me, how do I get to the cannon build site?" next="311"></option>
+		<option optionid="3" optiontext="So why do you need my help in building a cannon?" next="312"></option>
+		<option optionid="4" optiontext="I see." next="0"></option>
+	</node>
+	<node id="316" npcName="Headmaster J.E. Trevelyan" anim="1" text="You have already demonstrated a sufficient level of knowledge to qualify for advanced training from our Masters, but if you truly wish to be recognized as a full fledged member of our great Academy, you must provide us with an extraordinary service." posx="817" posy="230">
+		<option optionid="1" optiontext="Remind me, how do I get to the cannon build site?" next="311"></option>
+		<option optionid="2" optiontext="So why do you need my help in building a cannon?" next="312"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	
+	
+	<node id="320" npcName="Headmaster J.E. Trevelyan" anim="1" text="I received word your work on the cannon was a great success! The Lord Mayor was very pleased with the results and he's agreed to extend our funding for now. The Academy of Masters thanks you for your service!" posx="0" posy="15">
+		<option optionid="1" optiontext="Have I finally earned recognition in your academy then?" next="321" icon="Quest"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="321" npcName="Headmaster J.E. Trevelyan" anim="1" text="Most certainly! I've let our staff around the city know you are to be treated as an honorary member of the Academy, which I'll have you know, entitles you to certain slight privileges." posx="406" posy="14">
+		<option optionid="1" optiontext="" next="322"></option>
+	</node>
+	<node id="322" npcName="Headmaster J.E. Trevelyan" anim="1" text="As an additional token of appreciation for the great service you performed for us, I had the Master of Alchemy draft a recipe you might find most... explosive! I must warn you, it's not the easiest concoction to brew, and may require some additional experience to create yourself." posx="406" posy="14">
+		<option optionid="1" optiontext="You said an honorary member is entitled to privileges?" next="323"></option>
+		<option optionid="2" optiontext="Very good!" next="0" actions="UpdateQuest=108-999,NpcChat=Know that our doors remain always open for you!"></option>
+	</node>
+	<node id="323" npcName="Headmaster J.E. Trevelyan" anim="1" text="Quite so! The Thornhill Academy employs a number of busybodies around the city, who acquire and transport materials for Academy inventions. By your request, they will also cart an honorary member to various locations in the city, speeding your way." posx="406" posy="14">
+		<option optionid="1" optiontext="" next="324"></option>
+	</node>
+	<node id="324" npcName="Headmaster J.E. Trevelyan" anim="1" text="You may recognize our Academy servants by the blue flags they've raised at their stations. In fact, there's a man stationed just outside the Academy entrance, should you wish to meet him." posx="406" posy="14">
+		<option optionid="1" optiontext="Very good!" next="0" actions="UpdateQuest=108-999,NpcChat=Know that our doors remain always open for you!"></option>
+	</node>
+	
+
+	<node id="330" npcName="Headmaster J.E. Trevelyan" anim="1" text="You are welcomed as a member of our most prestigious academy! As always, the great knowledge we offer is yours, should you wish to learn." posx="0" posy="10">
+		<option optionid="1" optiontext="So, the Lord Mayor threatened to cut off the Academy's funding?" next="331"></option>
+		<option optionid="2" optiontext="You said an honorary member of the Academy is entitled to privileges?" next="332"></option>
+		<option optionid="3" optiontext="Thanks." next="0"></option>
+	</node>
+	<node id="331" npcName="Headmaster J.E. Trevelyan" anim="1" text="Yes, but thanks to you that matter is now resolved... for now - he got his cannon and we get our upkeep. However, I dread to think of the next time he decides to blackmail us for some brutish innovation." posx="412" posy="10">
+		<option optionid="1" optiontext="You said an honorary member of the Academy is entitled to privileges?" next="332"></option>
+		<option optionid="2" optiontext="Good luck..." next="0"></option>
+	</node>
+	<node id="332" npcName="Headmaster J.E. Trevelyan" anim="1" text="Quite so! The Thornhill Academy employs a number of busybodies around the city, who acquire and transport materials for Academy inventions. By your request, they will also cart an honorary member to various locations in the city, speeding your way." posx="412" posy="10">
+		<option optionid="1" optiontext="" next="333"></option>
+	</node>
+	<node id="333" npcName="Headmaster J.E. Trevelyan" anim="1" text="You may recognize our Academy servants by the blue flags they've raised at their stations. In fact, there's a man stationed just outside the Academy entrance, should you wish to meet him." posx="412" posy="10">
+		<option optionid="1" optiontext="So, the Lord Mayor threatened to cut off the Academy's funding?" next="331"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+	
+	
+	<node id="340" npcName="Cannon Build Site" text="&lt;color=#9C8C77&gt;*Here's the site where you're expected to put the cannon together.*&lt;/color&gt;" posx="12" posy="7">
+		<option optionid="1" itemIcon="9049" optiontext="&lt;color=#9C8C77&gt;*Install the cannon frame.*&lt;/color&gt;" next="341" checks="HasItem=9049-1,Var=Q108CannonFrameInstalled-0-0"></option>
+		<option optionid="2" itemIcon="9050" optiontext="&lt;color=#9C8C77&gt;*Install the barrel of the cannon.*&lt;/color&gt;" next="342" checks="HasItem=9050-1,Var=Q108CannonBarrelInstalled-0-0"></option>
+		<option optionid="3" itemIcon="9051" optiontext="&lt;color=#9C8C77&gt;*Install the cannonballs.*&lt;/color&gt;" next="343" checks="HasItem=9051-5,Var=Q108CannonBallsInstalled-0-0"></option>
+		<option optionid="4" itemIcon="9053" optiontext="&lt;color=#9C8C77&gt;*Install the pouch of black powder.*&lt;/color&gt;" checks="HasItem=9053-1,Var=Q108CannonPowderPouchInstalled-0-0" next="344"></option>
+		<option optionid="5" itemIcon="9049" optiontext="I'm still missing the cannon frame..." next="345" checks="!HasItem=9049-1,Var=Q108CannonFrameInstalled-0-0"></option>
+		<option optionid="6" itemIcon="9050" optiontext="I'm still missing the cannon barrel..." next="345" checks="!HasItem=9050-1,Var=Q108CannonBarrelInstalled-0-0"></option>
+		<option optionid="7" itemIcon="9051" optiontext="I'm still missing five cannonballs..." next="345" checks="!HasItem=9051-5,Var=Q108CannonBallsInstalled-0-0"></option>
+		<option optionid="8" itemIcon="9053" optiontext="I'm still missing the black powder pouch..." checks="!HasItem=9053-1,Var=Q108CannonPowderPouchInstalled-0-0" next="345"></option>
+		<option optionid="9" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="341" npcName="Cannon Build Site"  text="&lt;color=#9C8C77&gt;*You set the wooden frame on the ground, eagerly awaiting to receive the barrel of the cannon...*&lt;/color&gt;" posx="439" posy="9">
+		<option optionid="1" optiontext="" next="0" icon="Quest" actions="RemoveItems=9049-1"></option>
+	</node>
+	<node id="342" npcName="Cannon Build Site"  text="&lt;color=#9C8C77&gt;*You bring out the mighty barrel ready to be installed...*&lt;/color&gt;" posx="847" posy="9">
+		<option optionid="1" optiontext="" next="0" icon="Quest" actions="RemoveItems=9050-1"></option>
+	</node>
+	<node id="343" npcName="Cannon Build Site"  text="&lt;color=#9C8C77&gt;*You neatly stack the cannonballs to an appropriate spot to await being loaded into the cannon once it's complete...*&lt;/color&gt;" posx="443" posy="245">
+		<option optionid="1" optiontext="" next="0" icon="Quest" actions="RemoveItems=9051-5"></option>
+	</node>
+	<node id="344" npcName="Cannon Build Site"  text="&lt;color=#9C8C77&gt;*You place the powder pouch in a safe spot to avoid having it explode by accident...*&lt;/color&gt;" posx="850" posy="244">
+		<option optionid="1" optiontext="" next="0" icon="Quest" actions="RemoveItems=9053-1"></option>
+	</node>
+	<node id="345" npcName="Cannon Build Site" anim="1" text="&lt;color=#9C8C77&gt;*I could always ask the Master Engineer to remind me about how to craft one.*&lt;/color&gt;" posx="16" posy="8">
+		<option optionid="1" optiontext="Leave." next="0"></option>
+	</node>
+	
+
+	<node id="350" npcName="Master Norman Osborrow" anim="1" text="Heh, the fuse on our good captain here is beginning to run short. I've been instructing the workers I've been provided as best I can, but they simply lack the finesse and attention to detail that is required in demanding works such as this. I do hope you're the good man the Academy sent to aid me?" posx="8" posy="6">
+		<option optionid="1" optiontext="Indeed." next="351" icon="Quest"></option>
+	</node>
+	<node id="351" npcName="Master Norman Osborrow" anim="1" text="Ah yes, I had received word from the Academy Headmaster that he'd be sending someone with talents to assist me. I may have a fine head for blueprints on the contruction of a cannon, but execution itself is still half the work, and must be performed with precision!" posx="369" posy="253">
+		<option optionid="1" optiontext="" next="352"></option>
+	</node>
+	<node id="352" npcName="Master Norman Osborrow" anim="1" text="Alas, this is poorly understood by my impatient taskmaster here. The good captain threatened to apply my head as a hammer if I don't start delivering results soon. I believe you arrive in good time to prevent my highly unfortunate, yet pending demise." posx="426" posy="4">
+		<option optionid="1" optiontext="Let's get to the cannon itself - how can I help?" next="353" icon="Quest"></option>
+	</node>
+	<node id="353" npcName="Master Norman Osborrow" anim="1" icon="Pattern" text="&lt;color=#9C8C77&gt;*Master Osborrow presents to you his designs for the cannon.*&lt;/color&gt;\n\nAs you can see, I need you to deliver four major components to the build site for the cannon's completion. Namely, its wooden frame, the barrel of the cannon,  a stack of cannonballs of course, and finally a pouch of black powder - the magic of the whole thing." posx="837" posy="3">
+		<option optionid="1" optiontext="How do I go about building the cannon frame?" next="355" itemIcon="9049"></option>
+		<option optionid="2" optiontext="How do I go about building the cannon's barrel?" next="354" itemIcon="9050"></option>
+		<option optionid="3" optiontext="How do I go about making the cannonballs?" next="356" itemIcon="9051"></option>
+		<option optionid="4" optiontext="How do I go about making a pouch of black powder exactly?" next="357" itemIcon="9053"></option>
+		<option optionid="5" optiontext="Alright, anything else I should know?" next="359" icon="Quest"></option>
+	</node>
+	<node id="354" npcName="Master Norman Osborrow" anim="1" itemIcon="9050" text="For that thing, you'll have to hammer a lot of good iron into shape. Take 8 iron ingots to an anvil, that should be roughly enough to shape them according to my specifications. Remember to drop the completed barrel off at the cannon's build site." posx="1248" posy="1">
+		<option optionid="1" optiontext="How do I go about building the cannon frame?" next="355" itemIcon="9049"></option>
+		<option optionid="2" optiontext="How do I go about making the cannonballs?" next="356" itemIcon="9051"></option>
+		<option optionid="3" optiontext="How do I go about making a pouch of black powder exactly?" next="357" itemIcon="9053"></option>
+		<option optionid="4" optiontext="Alright, anything else I should know?" next="359" icon="Quest"></option>
+	</node>
+	<node id="355" npcName="Master Norman Osborrow" anim="1" itemIcon="9049" text="The key to a good frame to support the cannon is the choice of wood, and I have just the thing in mind. Have you ever visited Prowler's Thicket south of the city? If you get 8 logs of the Wildsfir trees that grow there, it should be enough for a sturdy frame. You'll be needing a bunch of nails &lt;color=#9C8C77&gt;(5)&lt;/color&gt; to hold it together also. You can drop the completed frame off at the cannon's build site." posx="1659" posy="1">
+		<option optionid="1" optiontext="How do I go about building the cannon's barrel?" next="354" itemIcon="9050"></option>
+		<option optionid="2" optiontext="How do I go about making the cannonballs?" next="356" itemIcon="9051"></option>
+		<option optionid="3" optiontext="How do I go about making a pouch of black powder exactly?" next="357" itemIcon="9053"></option>
+		<option optionid="4" optiontext="Alright, anything else I should know?" next="359" icon="Quest"></option>
+	</node>
+	<node id="356" npcName="Master Norman Osborrow" anim="1" itemIcon="9051" text="You'll need to shape iron at the forge into tightly packed ammunition. For each cannonball you'll require an iron ingot, and a log of oak to get the fires burning nice and hot. Once you've completed a sufficient stack of 5, you're ready to drop them off at the cannon's build site." posx="1248" posy="433">
+		<option optionid="1" optiontext="How do I go about making a pouch of black powder exactly?" next="357" itemIcon="9053"></option>
+		<option optionid="2" optiontext="How do I go about building the cannon frame?" next="355" itemIcon="9049"></option>
+		<option optionid="3" optiontext="How do I go about building the cannon's barrel?" next="354" itemIcon="9050"></option>
+		<option optionid="4" optiontext="Alright, anything else I should know?" next="359" icon="Quest"></option>
+	</node>
+	<node id="357" npcName="Master Norman Osborrow" anim="1" itemIcon="9054" text="Ah yes, that will be the most demanding component. For the explosive material itself, you should mine Black Stone at the cliffs in southern Prowler's Thicket, I believe it's found directly south of Harshwind Village. Do try to bring back sufficient quantities of that stuff &lt;color=#9C8C77&gt;(a full stack of 5 is required)&lt;/color&gt;." posx="1658" posy="435">
+		<option optionid="1" optiontext="" next="358"></option>
+	</node>
+	<node id="358" npcName="Master Norman Osborrow" anim="1" itemIcon="9052" text="You'll also need a strong pouch to hold the material safely, I advise to use 10 cotton at the tailor's workbench to sow into a container. Once you have the material, and the pouch, the final step remaining is to refine Black Stone sand into functional black powder at the alchemist's workbench. As ever, the full black powder pouch you ought to drop off at the cannon's build site." posx="2066" posy="437">
+		<option optionid="1" optiontext="How do I go about building the cannon frame?" next="355" itemIcon="9049"></option>
+		<option optionid="2" optiontext="How do I go about building the cannon's barrel?" next="354" itemIcon="9050"></option>
+		<option optionid="3" optiontext="How do I go about making the cannonballs?" next="356" itemIcon="9051"></option>
+		<option optionid="4" optiontext="Alright, anything else I should know?" next="359" icon="Quest"></option>
+	</node>
+	<node id="359" npcName="Master Norman Osborrow" anim="1" text="Remember to install all the cannon parts you complete at the construction site, so I'll be ready to inspect the cannon once it's complete. I've had the Lord Mayor's men set up all the crafting stations you should need here at this site - a request they thankfully fulfilled, seeing as they have proven of little use in anything else. Feel free to utilize them as much as you wish." posx="306" posy="904">
+		<option optionid="1" optiontext="I'll see what I can do..." next="0" actions="UpdateQuest=108-2"></option>
+	</node>
+
+
+	<node id="365" npcName="Master Norman Osborrow" anim="1" text="I really do appreciate your help here. The good captain threatened to apply my head as a hammer if I don't start delivering results soon. I believe in delivering to him the cannon he desperately wants, you may also be saving my life." posx="0" posy="6">
+		<option optionid="1" optiontext="I've completed all the work on the cannon..." next="372" checks="Quest=108-3-3" icon="Quest"></option>
+		<option optionid="2" optiontext="Let's go over the cannon's specs one more time." next="366" checks="Quest=108-2-2"></option>
+		<option optionid="3" optiontext="Remind me, how should I go about creating the cannon's frame?" next="367" itemIcon="9049" checks="Var=Q108CannonFrameInstalled-0-0"></option>
+		<option optionid="4" optiontext="Remind me, how do I make the barrel?" next="368" itemIcon="9050" checks="Var=Q108CannonBarrelInstalled-0-0"></option>
+		<option optionid="5" optiontext="Remind me, how will I make cannonballs?" next="369" itemIcon="9051" checks="Var=Q108CannonBallsInstalled-0-0"></option>
+		<option optionid="6" optiontext="Remind me, what's required for the black powder pouch?" next="370" itemIcon="9053" checks="Var=Q108CannonPowderPouchInstalled-0-0"></option>
+		<option optionid="7" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="366" npcName="Master Norman Osborrow" anim="1" text="Four major components will have to be installed at the build site dedicated for the cannon; the frame, the barrel, cannonballs and a pouch of blackpowder. You can use the crafting stations here to create the required components." posx="408" posy="6">
+		<option optionid="1" optiontext="Well, I've completed all the work on the cannon..." next="372" checks="Quest=108-3-3" icon="Quest"></option>
+		<option optionid="2" optiontext="Remind me, how should I go about creating the cannon's frame?" next="367" itemIcon="9049" checks="Var=Q108CannonFrameInstalled-0-0"></option>
+		<option optionid="3" optiontext="Remind me, how do I make the barrel?" next="368" itemIcon="9050" checks="Var=Q108CannonBarrelInstalled-0-0"></option>
+		<option optionid="4" optiontext="Remind me, how will I make cannonballs?" next="369" itemIcon="9051" checks="Var=Q108CannonBallsInstalled-0-0"></option>
+		<option optionid="5" optiontext="Remind me, what's required for the black powder pouch?" next="370" itemIcon="9053" checks="Var=Q108CannonPowderPouchInstalled-0-0"></option>
+		<option optionid="6" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="367" npcName="Master Norman Osborrow" anim="1" itemIcon="9049" text="The key to a good frame to support the cannon is the choice of wood, and I have just the thing in mind. Have you ever visited Prowler's Thicket south of the city? If you get 8 logs of the Wildsfir trees that grow there, it should be enough for a sturdy frame. You'll be needing a bunch of nails &lt;color=#9C8C77&gt;(5)&lt;/color&gt; to hold it together also. You can drop the completed frame off at the cannon's build site." posx="817" posy="7">
+		<option optionid="1" optiontext="What about the barrel then?" next="368" itemIcon="9050" checks="Var=Q108CannonBarrelInstalled-0-0"></option>
+		<option optionid="2" optiontext="What about cannonballs then?" next="369" itemIcon="9051" checks="Var=Q108CannonBallsInstalled-0-0"></option>
+		<option optionid="3" optiontext="What about the black powder pouch?" next="370" itemIcon="9053" checks="Var=Q108CannonPowderPouchInstalled-0-0"></option>
+		<option optionid="4" optiontext="Alright, thanks." next="0"></option>
+	</node>
+	<node id="368" npcName="Master Norman Osborrow" anim="1" itemIcon="9050" text="For that thing, you'll have to hammer a lot of good iron into shape. Take 8 iron ingots to an anvil, that should be roughly enough to shape them according to my specifications. Remember to drop the completed barrel off at the cannon's build site." posx="1225" posy="8">
+		<option optionid="1" optiontext="What about cannonballs then?" next="369" itemIcon="9051" checks="Var=Q108CannonBallsInstalled-0-0"></option>
+		<option optionid="2" optiontext="What about the black powder pouch?" next="370" itemIcon="9053" checks="Var=Q108CannonPowderPouchInstalled-0-0"></option>
+		<option optionid="3" optiontext="What about the frame then?" next="367" itemIcon="9049" checks="Var=Q108CannonFrameInstalled-0-0"></option>
+		<option optionid="4" optiontext="Alright, thanks." next="0"></option>
+	</node>
+	<node id="369" npcName="Master Norman Osborrow" anim="1" itemIcon="9051" text="You'll need to shape iron at the forge into tightly packed ammunition. For each cannonball you'll require an iron ingot, and a log of oak to get the fires burning nice and hot. Once you've completed a sufficient stack of 5, you're ready to drop them off at the cannon's build site." posx="817" posy="482">
+		<option optionid="1" optiontext="What about the black powder pouch?" next="370" itemIcon="9053" checks="Var=Q108CannonPowderPouchInstalled-0-0"></option>
+		<option optionid="2" optiontext="What about the frame then?" next="367" itemIcon="9049" checks="Var=Q108CannonFrameInstalled-0-0"></option>
+		<option optionid="3" optiontext="What about the barrel then?" next="368" itemIcon="9050" checks="Var=Q108CannonBarrelInstalled-0-0"></option>
+		<option optionid="4" optiontext="Alright, thanks." next="0"></option>
+	</node>
+	<node id="370" npcName="Master Norman Osborrow" anim="1" itemIcon="9054" text="Ah yes, that will be the most demanding component. For the explosive material itself, you should mine Black Stone at the cliffs in southern Prowler's Thicket, I believe it's found directly south of Harshwind Village. Do try to bring back sufficient quantities of that stuff &lt;color=#9C8C77&gt;(a full stack of 5 is required)&lt;/color&gt;." posx="1222" posy="482">
+		<option optionid="1" optiontext="" next="371"></option>
+	</node>
+	<node id="371" npcName="Master Norman Osborrow" anim="1" itemIcon="9052" text="You'll also need a strong pouch to hold the material safely, I advise to use 10 cotton at the tailor's workbench to sow into a container. Once you have the material, and the pouch, the final step remaining is to refine Black Stone sand into functional black powder at the alchemist's workbench. As ever, the full black powder pouch you ought to drop off at the cannon's build site." posx="1629" posy="482">
+		<option optionid="1" optiontext="What about the frame then?" next="367" itemIcon="9049" checks="Var=Q108CannonFrameInstalled-0-0"></option>
+		<option optionid="2" optiontext="What about the barrel then?" next="368" itemIcon="9050" checks="Var=Q108CannonBarrelInstalled-0-0"></option>
+		<option optionid="3" optiontext="What about cannonballs then?" next="369" itemIcon="9051" checks="Var=Q108CannonBallsInstalled-0-0"></option>
+		<option optionid="4" optiontext="Alright, thanks." next="0"></option>
+	</node>
+	<node id="372" npcName="Master Norman Osborrow" anim="1" text="Ah, how fine! I was beginning to fear the captain would lose whatever's left of his short patience before you had the chance to finish the work. Now let's see, I believe a demonstration is in order..." posx="2412" posy="306">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=203" icon="Quest"></option>
+	</node>
+
+
+	<node id="380" npcName="Master Norman Osborrow" anim="1" text="Ah, hahaha! Magnificent! The sound, nay the roar of the thing, I had almost forgotten...! Last time I heard cannonfire was decades ago, traveling and studying in the lands of Melloria - oh, to witness the Great Mortar of Eisendread once more... Today I was reminded what it was like to be a younger man again!" posx="0" posy="6">
+		<option optionid="1" optiontext="" next="381"></option>
+	</node>
+	<node id="381" npcName="Master Norman Osborrow" anim="1" text="I do believe the Captain was quite satisfied with your work here, and you have my thanks for quite possibly saving my life. I'm sure the Headmaster back at the Academy of Masters would also like to extend his gratitude towards you." posx="408" posy="6">
+		<option optionid="1" optiontext="Then I shouldn't keep him waiting." next="0" actions="UpdateQuest=108-4,NpcChat=I bid you good luck in your endeavors> friend!"></option>
+	</node>
+
+
+	<node id="395" npcName="Sergeant Almsworth" anim="1" text="Say the word when you need to leave. I'll have to personally escort you out, otherwise Lord Mayor will have my hide. Can't risk stragglers in his castle grounds." posx="8" posy="6">
+		<option optionid="1" optiontext="I wish to return to the city..." next="396" icon="Travel"></option>
+		<option optionid="2" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="396" npcName="Sergeant Almsworth" anim="1" text="Fair enough, stick closeby then and I'll see you out." posx="607" posy="607">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=201" icon="Travel"></option>
+	</node>
+
+
+	<node id="400" npcName="Sergeant Almsworth" anim="1" text="The Castle is off limits! The Lord Mayor's secluded himself from common rabble like yourself, so you best move along, if you know what's good for you." posx="0" posy="7">
+		<option optionid="1" optiontext="I'm working on behalf of the Academy for the Lord Mayor's cannon project." next="401" checks="Quest=108-1-999" icon="Quest"></option>
+		<option optionid="2" optiontext="The Lord Mayor's locked himself in?" next="402"></option>
+		<option optionid="3" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="401" npcName="Sergeant Almsworth" anim="1" text="Ah right, they sent a messenger about you... Alright then, but I'm to escort you there. Stick close to me, no one's to walk near the Castle grounds unsupervised!" posx="609" posy="611">
+		<option optionid="1" optiontext="" next="0" checks="Var=C200Played-0-0" actions="Cinematic=200" icon="Travel"></option>
+		<option optionid="2" optiontext="" next="0" checks="Var=C200Played-1-1" actions="Cinematic=202" icon="Travel"></option>
+	</node>
+	<node id="402" npcName="Sergeant Almsworth" anim="1" text="Tempers in the city running real high these days, peasants haven't been as appreciative of their rightful liege as is their duty. Times like these, it's in the Lord Mayor's best interest to keep himself protected within castle walls." posx="412" posy="6">
+		<option optionid="1" optiontext="I'd like you to escort me to the cannon site now." next="0" checks="Quest=108-2-999" actions="Cinematic=202" icon="Travel"></option>
+		<option optionid="2" optiontext="I'm working on behalf of the Academy for the Lord Mayor's cannon project." next="401" checks="Quest=108-1-1" icon="Quest"></option>
+		<option optionid="3" optiontext="Interesting news..." next="0"></option>
+	</node>
+
+
+	<node id="405" npcName="Sergeant Almsworth" anim="1" text="I know you? Ah yeah that's right, you're one of them from the cannon site. Gotta escort you there though, if that's the way you're headed. Lord Mayor's got the castle on lockdown and can't have anyone frolicking around here unsupervised." posx="9" posy="6">
+		<option optionid="1" optiontext="Escort away..." next="0" actions="Cinematic=202" icon="Travel"></option>
+		<option optionid="2" optiontext="The Lord Mayor's locked himself in?" next="402"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+
+
+	<node id="500" npcName="Master Solfurius, Academy Servant" anim="1" text="Master Solfurius at your service, sir! Headmaster Trevelyan gave your description for the newest member of the Academy. As such, I will freely transport you around the city, should you require it." posx="0" posy="10">
+		<option optionid="1" optiontext="I wish to travel." next="502" icon="Travel"></option>
+		<option optionid="2" optiontext="What can you tell me about this area?" next="501"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="501" npcName="Master Solfurius, Academy Servant" anim="1" text="My station's called Castle and Cemetery, sir. That's because it's nestled between the Castle to the west, and the Cemetery to the east, sir." posx="292" posy="605">
+		<option optionid="1" optiontext="I wish to travel." next="502" icon="Travel"></option>
+		<option optionid="2" optiontext="Goodbye." next="0"></option>
+	</node>
+	<node id="502" npcName="Master Solfurius, Academy Servant" anim="1" text="Very well, sir. I can cart you to any of our other stations in no time; Scholar's by the Academy, Beggar's Households by the eastern side of the city, or Wharfside at the docks north. Where would you like to go?" posx="594" posy="8">
+		<option optionid="1" optiontext="Take me to the Scholar's." next="503" icon="Travel"></option>
+		<option optionid="2" optiontext="Take me to Beggar's Households." next="504" icon="Travel"></option>
+		<option optionid="3" optiontext="Take me to Wharfside." next="505" icon="Travel"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="503" npcName="Master Solfurius, Academy Servant" anim="1" text="Very good, sir." posx="1196" posy="6">
+		<option optionid="1" optiontext="" next="0" actions="TeleportFadeToNpc=1861" icon="Travel"></option>
+	</node>
+	<node id="504" npcName="Master Solfurius, Academy Servant" anim="1" text="Very good, sir." posx="1605" posy="7">
+		<option optionid="1" optiontext="" next="0" actions="TeleportFadeToNpc=1862" icon="Travel"></option>
+	</node>
+	<node id="505" npcName="Master Solfurius, Academy Servant" anim="1" text="Very good, sir." posx="2017" posy="6">
+		<option optionid="1" optiontext="" next="0" actions="TeleportFadeToNpc=1863" icon="Travel"></option>
+	</node>
+
+
+	<node id="510" npcName="Master Arthurius, Academy Servant" anim="1" text="Master Arthurius at your service, sir! Headmaster Trevelyan gave your description for the newest member of the Academy. As such, I will freely transport you around the city, should you require it." posx="0" posy="10">
+		<option optionid="1" optiontext="I wish to travel." next="512" icon="Travel"></option>
+		<option optionid="2" optiontext="What can you tell me about this area?" next="511"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="511" npcName="Master Arthurius, Academy Servant" anim="1" text="Sir...? This is the Academy, sir, as I'm sure you're aware. It is neatly positioned between the marketsquare towards north and the city gate towards south." posx="292" posy="605">
+		<option optionid="1" optiontext="I wish to travel." next="512" icon="Travel"></option>
+		<option optionid="2" optiontext="Goodbye." next="0"></option>
+	</node>
+	<node id="512" npcName="Master Arthurius, Academy Servant" anim="1" text="Very well, sir. I can cart you to any of our other stations in no time; Cemetery and Castle to the northwest, Beggar's Households by the eastern side of the city, or Wharfside at the docks north. Where would you like to go?" posx="594" posy="8">
+		<option optionid="1" optiontext="Take me to Cemetery and Castle." next="513" icon="Travel"></option>
+		<option optionid="2" optiontext="Take me to Beggar's Households." next="514" icon="Travel"></option>
+		<option optionid="3" optiontext="Take me to Wharfside." next="515" icon="Travel"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="513" npcName="Master Arthurius, Academy Servant" anim="1" text="Very good, sir." posx="1196" posy="6">
+		<option optionid="1" optiontext="" next="0" actions="TeleportFadeToNpc=1860" icon="Travel"></option>
+	</node>
+	<node id="514" npcName="Master Arthurius, Academy Servant" anim="1" text="Very good, sir." posx="1605" posy="7">
+		<option optionid="1" optiontext="" next="0" actions="TeleportFadeToNpc=1862" icon="Travel"></option>
+	</node>
+	<node id="515" npcName="Master Arthurius, Academy Servant" anim="1" text="Very good, sir." posx="2017" posy="6">
+		<option optionid="1" optiontext="" next="0" actions="TeleportFadeToNpc=1863" icon="Travel"></option>
+	</node>
+
+
+	<node id="520" npcName="Master Mercurius, Academy Servant" anim="1" text="Master Mercurius at your service, sir! Headmaster Trevelyan gave your description for the newest member of the Academy. As such, I will freely transport you around the city, should you require it." posx="0" posy="10">
+		<option optionid="1" optiontext="I wish to travel." next="522" icon="Travel"></option>
+		<option optionid="2" optiontext="What can you tell me about this area?" next="521"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="521" npcName="Master Mercurius, Academy Servant" anim="1" text="These households may not look like much now, sir, but at the Academy we know this is a primary point of connection within the city - off to one side we have the Brinebridge leading across the river, while on the other side lies the infamous Beggar's Market, City Gates and the way to the docks." posx="292" posy="605">
+		<option optionid="1" optiontext="" next="526"></option>
+	</node>
+	<node id="522" npcName="Master Mercurius, Academy Servant" anim="1" text="Very well, sir. I can cart you to any of our other stations in no time; Cemetery and Castle to the west, Scholar's by the Academy, or Wharfside at the docks north. Where would you like to go?" posx="594" posy="8">
+		<option optionid="1" optiontext="Take me to Cemetery and Castle." next="523" icon="Travel"></option>
+		<option optionid="2" optiontext="Take me to the Scholar's." next="524" icon="Travel"></option>
+		<option optionid="3" optiontext="Take me to Wharfside." next="525" icon="Travel"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="523" npcName="Master Mercurius, Academy Servant" anim="1" text="Very good, sir." posx="1196" posy="6">
+		<option optionid="1" optiontext="" next="0" actions="TeleportFadeToNpc=1860" icon="Travel"></option>
+	</node>
+	<node id="524" npcName="Master Mercurius, Academy Servant" anim="1" text="Very good, sir." posx="1605" posy="7">
+		<option optionid="1" optiontext="" next="0" actions="TeleportFadeToNpc=1861" icon="Travel"></option>
+	</node>
+	<node id="525" npcName="Master Mercurius, Academy Servant" anim="1" text="Very good, sir." posx="2017" posy="6">
+		<option optionid="1" optiontext="" next="0" actions="TeleportFadeToNpc=1863" icon="Travel"></option>
+	</node>
+	<node id="526" npcName="Master Mercurius, Academy Servant" anim="1" text="Mark my words, sir, in a few centuries property values in this area will be sky high, once the rest of the city catches on." posx="701" posy="606">
+		<option optionid="1" optiontext="I wish to travel." next="522" icon="Travel"></option>
+		<option optionid="2" optiontext="Sage investment advice..." next="0"></option>
+	</node>
+
+
+	<node id="530" npcName="Master Victurius, Academy Servant" anim="1" text="Master Victurius at your service, sir! Headmaster Trevelyan gave your description for the newest member of the Academy. As such, I will freely transport you around the city, should you require it." posx="0" posy="10">
+		<option optionid="1" optiontext="I wish to travel." next="532" icon="Travel"></option>
+		<option optionid="2" optiontext="What can you tell me about this area?" next="531"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="531" npcName="Master Victurius, Academy Servant" anim="1" text="This is the docks, sir - it's where boats are docked. Sometimes boats leave, then at times other boats arrive to take their place. Such is the depth of my understanding anyway." posx="292" posy="605">
+		<option optionid="1" optiontext="I wish to travel." next="532" icon="Travel"></option>
+		<option optionid="2" optiontext="Goodbye." next="0"></option>
+	</node>
+	<node id="532" npcName="Master Victurius, Academy Servant" anim="1" text="Very well, sir. I can cart you to any of our other stations in no time; Cemetery and Castle to the southwest, Scholar's by the Academy, or Beggar's Households by the eastern side of the city. Where would you like to go?" posx="594" posy="8">
+		<option optionid="1" optiontext="Take me to Cemetery and Castle." next="533" icon="Travel"></option>
+		<option optionid="2" optiontext="Take me to the Scholar's." next="534" icon="Travel"></option>
+		<option optionid="3" optiontext="Take me to Beggar's Households." next="535" icon="Travel"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="533" npcName="Master Victurius, Academy Servant" anim="1" text="Very good, sir." posx="1196" posy="6">
+		<option optionid="1" optiontext="" next="0" actions="TeleportFadeToNpc=1860" icon="Travel"></option>
+	</node>
+	<node id="534" npcName="Master Victurius, Academy Servant" anim="1" text="Very good, sir." posx="1605" posy="7">
+		<option optionid="1" optiontext="" next="0" actions="TeleportFadeToNpc=1861" icon="Travel"></option>
+	</node>
+	<node id="535" npcName="Master Victurius, Academy Servant" anim="1" text="Very good, sir." posx="2017" posy="6">
+		<option optionid="1" optiontext="" next="0" actions="TeleportFadeToNpc=1862" icon="Travel"></option>
+	</node>
+
+
+</dialogue>
+
+
+
+

@@ -1,0 +1,964 @@
+<dialogue>
+	<node id="1" npcName="Master Matthews" anim="1" text="Welcome to my Great Harvest Melee, where I've invited great fighters from all across the realms to pit their talents against each other in daring fights! Could always use new blood to spice things up and you look combat ready. How about it, care to participate?" posx="39" posy="27">
+		<option optionid="1" optiontext="Sure, why not - who am I fighting?" next="9" icon="Quest"></option>
+		<option optionid="2" optiontext="The Great Harvest Melee? Do tell me more." next="2"></option>
+		<option optionid="3" optiontext="What can you tell me about the other fighters?" next="3"></option>
+		<option optionid="4" optiontext="Later." next="0"></option>
+	</node>
+	<node id="2" npcName="Master Matthews" anim="1" text="Well, once the mayor had told us of his plans for a harvest festival, I just knew we had to have an epic tournament of some kind. Now it's true - we're not the most well known yet - but I think I've managed alright in scraping together a cadre of duellists. Even got a fellow from the venerated city of Traire to join in!" posx="498" posy="27">
+		<option optionid="1" optiontext="Any rules to the fight?" next="15"></option>
+		<option optionid="2" optiontext="What can you tell me about the other fighters?" next="3"></option>
+		<option optionid="3" optiontext="So who am I fighting?" next="9" icon="Quest"></option>
+		<option optionid="4" optiontext="I see." next="0"></option>
+	</node>
+	<node id="3" npcName="Master Matthews" anim="1" text="There's a total of four of them, lined up on the side there waiting for the next fight to begin. I can only speak superficially though, which one d'ya wanna hear about?" posx="914" posy="911">
+		<option optionid="1" optiontext="Lad with the pitchfork?" next="5"></option>
+		<option optionid="2" optiontext="Who's the mage?" next="6"></option>
+		<option optionid="3" optiontext="How about the knight?" next="7"></option>
+		<option optionid="4" optiontext="The fancy swordsman?" next="8"></option>
+		<option optionid="5" optiontext="Nevermind." next="4" icon="LeadingExit"></option>
+	</node>
+	<node id="4" npcName="Master Matthews" anim="1" text="If you're looking to participate in a fight, I could set you up." posx="30" posy="625">
+		<option optionid="1" optiontext="So then, who am I fighting?" next="9" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me more about this Harvest Melee of yours." next="2"></option>
+		<option optionid="3" optiontext="What can you tell me about the other fighters?" next="3"></option>
+		<option optionid="4" optiontext="Talk to you later." next="0"></option>
+	</node>
+	<node id="5" npcName="Master Matthews" anim="1" text="Our local boy, we call him Rowdy Addams, hah! Won't lie to you, he ain't exactly a talented warrior, but well... It's not like we could get anyone better for now. B'sides, if nothing else, he's built like a battering ram from hauling all the haybales around. And what he lacks in skill, he makes up for with pure ram headedness, hehe..." posx="1355" posy="625">
+		<option optionid="1" optiontext="Who's the mage?" next="6"></option>
+		<option optionid="2" optiontext="How about the knight?" next="7"></option>
+		<option optionid="3" optiontext="What about the fancy swordsman?" next="8"></option>
+		<option optionid="4" optiontext="Back to the event at hand..." next="4" icon="LeadingExit"></option>
+	</node>
+	<node id="6" npcName="Master Matthews" anim="1" text="Ah yes, her... Rovina? She's one of them people of Hydrobor... the magic folk, the ones who help with the weather? I ain't ever seen one in person before, truth be told, and I don't know much about this one either. Thought at first 'magicking your opponent doesn't seem all too fair', but the others have seemed to hold up alright against it." posx="1810" posy="624">
+		<option optionid="1" optiontext="How about the knight?" next="7"></option>
+		<option optionid="2" optiontext="What about the fancy swordsman?" next="8"></option>
+		<option optionid="3" optiontext="Lad with the pitchfork?" next="5"></option>
+		<option optionid="4" optiontext="Back to the event at hand..." next="4" icon="LeadingExit"></option>
+	</node>
+	<node id="7" npcName="Master Matthews" anim="1" text="Now, I was delighted when I sent word of our event to the city of Thornhill and Ser William Briskwater took up the challenge. His family is one of the aristocratic estates of the city and he spends his days honing his martial skills - fights like these are just his thing! A true knight óf the realm, that one." posx="1370" posy="1061">
+		<option optionid="1" optiontext="What about the fancy swordsman?" next="8"></option>
+		<option optionid="2" optiontext="Lad with the pitchfork?" next="5"></option>
+		<option optionid="3" optiontext="Who's the mage?" next="6"></option>
+		<option optionid="4" optiontext="Back to the event at hand..." next="4" icon="LeadingExit"></option>
+	</node>
+	<node id="8" npcName="Master Matthews" anim="1" text="Our foreign man, Aramis Artagne... Top of the pack, no doubt about it. He's a member of the Trairian House of Blades, a real famous place apparently, but the man was curious about participating here - said this was 'quaintly unconventional', whatever that means. Anyhow, never seen a man as swift on his feet and quick with his blade as him." posx="1831" posy="1060">
+		<option optionid="1" optiontext="Lad with the pitchfork?" next="5"></option>
+		<option optionid="2" optiontext="Who's the mage?" next="6"></option>
+		<option optionid="3" optiontext="How about the knight?" next="7"></option>
+		<option optionid="4" optiontext="Back to the event at hand..." next="4" icon="LeadingExit"></option>
+	</node>
+	<node id="9" npcName="Master Matthews" anim="1" text="Right, of course, let me remind myself of the current rankings... right, yes... yes yes, okay..." posx="1213" posy="19">
+		<option optionid="1" optiontext="" next="10" checks="Var=Q104RowdyAddamsDefeated-0-0|Q104MageRaventalonDefeated-0-0|Q104KnightBriskwaterDefeated-0-0|Q104DuellistArtagneDefeated-0-0"></option>
+		<option optionid="2" optiontext="" next="11" checks="Var=Q104RowdyAddamsDefeated-1-1|Q104MageRaventalonDefeated-0-0|Q104KnightBriskwaterDefeated-0-0|Q104DuellistArtagneDefeated-0-0 "></option>
+		<option optionid="3" optiontext="" next="12" checks="Var=Q104RowdyAddamsDefeated-1-1|Q104MageRaventalonDefeated-1-1|Q104KnightBriskwaterDefeated-0-0|Q104DuellistArtagneDefeated-0-0 "></option>
+		<option optionid="4" optiontext="" next="13" checks="Var=Q104RowdyAddamsDefeated-1-1|Q104MageRaventalonDefeated-1-1|Q104KnightBriskwaterDefeated-1-1|Q104DuellistArtagneDefeated-0-0 "></option>
+		<option optionid="5" optiontext="" next="14" checks="Var=Q104RowdyAddamsDefeated-1-1|Q104MageRaventalonDefeated-1-1|Q104KnightBriskwaterDefeated-1-1|Q104DuellistArtagneDefeated-1-1"></option>
+	</node>
+	<node id="10" npcName="Master Matthews" anim="1" text="Matching you up with Rowdy Addams, our very own village beast! Prepare yourself now..." posx="1812" posy="12">
+		<option optionid="1" optiontext="Right..." next="0" actions="Cinematic=163" icon="Quest"></option>
+	</node>
+	<node id="11" npcName="Master Matthews" anim="1" text="Looks like you'll be fighting Mage Raventalon next, the enigmatic Hydrobor spellslinger! Prepare yourself now..." posx="1814" posy="312">
+		<option optionid="1" optiontext="Right..." next="0" actions="Cinematic=164" icon="Quest"></option>
+	</node>
+	<node id="12" npcName="Master Matthews" anim="1" text="You've been making progress, only two contestants remaining. Let's put you up against Knight Briskwater, see if you can match a true hero of the realm, eh? Prepare yourself now..." posx="2274" posy="8">
+		<option optionid="1" optiontext="Right..." next="0" actions="Cinematic=165" icon="Quest"></option>
+	</node>
+	<node id="13" npcName="Master Matthews" anim="1" text="Saving the best for the last, you've defeated all but the Master Duellist himself! Would you become the champion of our Harvest Melee? We shall see, prepare yourself now..." posx="2277" posy="311">
+		<option optionid="1" optiontext="Right..." next="0" actions="Cinematic=166" icon="Quest"></option>
+	</node>
+	<node id="14" npcName="Master Matthews" anim="1" text="Mkey, no you see this is all wrong, you need to reset the quest and try again. Consult the wiki or use clearvars." posx="2433" posy="628">
+		<option optionid="1" optiontext="Oh, okey...?" next="0"></option>
+	</node>
+	<node id="15" npcName="Master Matthews" anim="1" text="Rules...? Nah, what would be the fun in that? Use whatever you want to your advantage, it's how you really pick out the best fighters I say. Just one thing to all of it; if you leave the ring, you forfeit the fight, plain and simple." posx="752" posy="479">
+		<option optionid="1" optiontext="What can you tell me about the other fighters?" next="3"></option>
+		<option optionid="2" optiontext="Fair enough - who am I fighting?" next="9" icon="Quest"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+
+
+	<node id="20" npcName="Master Matthews" anim="1" text="Hah! He's tough meat our Addams, ain't he? Not so easy to knock out after all!" posx="25" posy="27">
+		<option optionid="1" optiontext="Let's go again." next="21" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me more about this Harvest Melee of yours." next="2"></option>
+		<option optionid="3" optiontext="What can you tell me about the other fighters?" next="3"></option>
+		<option optionid="4" optiontext="Need some time to recover..." next="0"></option>
+	</node>
+	<node id="21" npcName="Master Matthews" anim="1" text="Yeah alright, but you sure you recovered enough after your previous round?" posx="451" posy="24">
+		<option optionid="1" optiontext="Again, I said." next="0" icon="Quest" actions="Cinematic=163"></option>
+		<option optionid="2" optiontext="On a second thought, I'll need a moment..." next="0"></option>
+	</node>
+
+
+	<node id="25" npcName="Master Matthews" anim="1" itemIcon="1145" text="Congratulations, you've knocked out Rowdy Addams! He may not be the strongest of fighters, but it's a great start. And there's a reward for you, of course, for moving up a tier." posx="25" posy="22">
+		<option optionid="1" optiontext="Fantastic." next="26" actions="SetVar=Q104TournamentPrizes-1,AddItems=1145-1-true" icon="Loot"></option>
+	</node>
+	<node id="26" npcName="Master Matthews" anim="1" text="It goes without saying, as you move up the ladder your opponents get tougher, but so will the rewards get better! Next you'll be pitted against Mage Raventalon of the Hydrobor Circle. Are you ready to fight or do you maybe want to take a moment to recover?" posx="447" posy="21">
+		<option optionid="1" optiontext="It's no sweat, I'm ready." next="27" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me more about this Harvest Melee of yours." next="2"></option>
+		<option optionid="3" optiontext="What can you tell me about the other fighters?" next="3"></option>
+		<option optionid="4" optiontext="Need some time to recover..." next="0"></option>
+	</node>
+	<node id="27" npcName="Master Matthews" anim="1" text="Alright! Now bear in mind, she's an enigmatic mage, so watch out for those spells! Prepare yourself now..." posx="868" posy="23">
+		<option optionid="1" optiontext="" next="0" icon="Quest" actions="Cinematic=164"></option>
+	</node>
+
+
+	<node id="30" npcName="Master Matthews" anim="1" text="Ah, there you are, newblood! Are you well rested? I have your next fighting opponent lined up." posx="21" posy="26">
+		<option optionid="1" optiontext="I'm ready, let's do this." next="31" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me more about this Harvest Melee of yours." next="2"></option>
+		<option optionid="3" optiontext="What can you tell me about the other fighters?" next="3"></option>
+		<option optionid="4" optiontext="Not yet." next="0"></option>
+	</node>
+	<node id="31" npcName="Master Matthews" anim="1" text="Of course, let's see now... having defeated Rowdy Addams, you'll be facing Mage Raventalon next; she's an enigmatic caster so watch out for those spells! Prepare yourself now..." posx="446" posy="27">
+		<option optionid="1" optiontext="" next="0" icon="Quest" actions="Cinematic=164"></option>
+	</node>
+
+
+	<node id="35" npcName="Master Matthews" anim="1" text="Oof, magical attacks just hit something different, don't they? No worries, fights are still ongoing, just let me know when you're ready to participate in a match again." posx="27" posy="22">
+		<option optionid="1" optiontext="Let's go again." next="36"></option>
+		<option optionid="2" optiontext="Tell me more about this Harvest Melee of yours." next="2"></option>
+		<option optionid="3" optiontext="What can you tell me about the other fighters?" next="3"></option>
+		<option optionid="4" optiontext="Need some time to recover..." next="0"></option>
+	</node>
+	<node id="36" npcName="Master Matthews" anim="1" text="Yeah alright, but you sure you recovered enough after your previous round?" posx="459" posy="19">
+		<option optionid="1" optiontext="Again, I said." next="0" icon="Quest" actions="Cinematic=164"></option>
+		<option optionid="2" optiontext="On a second thought, I'll need a moment..." next="0"></option>
+	</node>
+
+
+	<node id="40" npcName="Master Matthews" anim="1" itemIcon="1144" text="Now that's what I'm talking about! Not just anyone could take on that spellcaster, but other opponents still remain... anyway, here's your reward for moving up the ladder!" posx="788" posy="308">
+		<option optionid="1" optiontext="Fantastic." next="41" actions="SetVar=Q104TournamentPrizes-2,AddItems=1144-1-true" icon="Loot"></option>
+	</node>
+	<node id="41" npcName="Master Matthews" anim="1" text="Next up you'll be facing Ser Briskwater, a true knight of the realm! Are you ready to fight or do you maybe want to take a moment to recover?" posx="1229" posy="306">
+		<option optionid="1" optiontext="It's no sweat, I'm ready." next="42" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me more about this Harvest Melee of yours." next="2"></option>
+		<option optionid="3" optiontext="What can you tell me about the other fighters?" next="3"></option>
+		<option optionid="4" optiontext="Need some time to recover..." next="0"></option>
+	</node>
+	<node id="42" npcName="Master Matthews" anim="1" text="Well alright, then! Now, the man is literally made from steel and he sure knows how to use that sword. Try to find some vulnerability, I guess? Good luck out there!" posx="1663" posy="310">
+		<option optionid="1" optiontext="" next="0" icon="Quest" actions="Cinematic=165"></option>
+	</node>
+
+
+	<node id="45" npcName="Master Matthews" anim="1" text="Ah, there you are, newblood! Are you well rested? I have your next fighting opponent lined up." posx="44" posy="40">
+		<option optionid="1" optiontext="I'm ready, let's do this." next="46" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me more about this Harvest Melee of yours." next="2"></option>
+		<option optionid="3" optiontext="What can you tell me about the other fighters?" next="3"></option>
+		<option optionid="4" optiontext="Not yet." next="0"></option>
+	</node>
+	<node id="46" npcName="Master Matthews" anim="1" text="Of course, let's see now... with Mage Raventalon bested, you'll be facing Ser Briskwater - a true knight of the realm! The man is literally made from steel and he sure knows how to use that sword. Try to find some vulnerability, I guess? Good luck out there!" posx="479" posy="39">
+		<option optionid="1" optiontext="" next="0" icon="Quest" actions="Cinematic=165"></option>
+	</node>
+
+
+	<node id="50" npcName="Master Matthews" anim="1" text="Looks like Ser William gave you quite the thrashing there. Nothing to feel badly about, he must be one of the finest warriors in the whole wide realm! Still, there is time to arrange a rematch...?" posx="35" posy="36">
+		<option optionid="1" optiontext="Let's go again." next="51" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me more about this Harvest Melee of yours." next="2"></option>
+		<option optionid="3" optiontext="What can you tell me about the other fighters?" next="3"></option>
+		<option optionid="4" optiontext="Need some time to recover..." next="0"></option>
+	</node>
+	<node id="51" npcName="Master Matthews" anim="1" text="Fair enough, but are you sure you've recovered enough from your last round?" posx="472" posy="35">
+		<option optionid="1" optiontext="Again, I said." next="0" icon="Quest" actions="Cinematic=165"></option>
+		<option optionid="2" optiontext="On a second thought, I'll need a moment..." next="0"></option>
+	</node>
+
+
+	<node id="55" npcName="Master Matthews" anim="1" itemIcon="1143" text="I can scarcely believe it, Ser William Briskwater is down! That would make you one of the finest warriors in these lands! And of course, a little something for securing another step up the ladder." posx="40" posy="22">
+		<option optionid="1" optiontext="Fantastic." next="56" actions="SetVar=Q104TournamentPrizes-3,AddItems=1143-1-true" icon="Loot"></option>
+	</node>
+	<node id="56" npcName="Master Matthews" anim="1" text="Now I said Ser William was one of the finest warriors of these lands, but there is still one opponent not from around here - the Trairian Blademaster Aramis Artagne! Are you ready to face him now, or perhaps a moment to recover?" posx="470" posy="23">
+		<option optionid="1" optiontext="I'm ready, let's do this!" next="57" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me more about this Harvest Melee of yours." next="2"></option>
+		<option optionid="3" optiontext="What can you tell me about the other fighters?" next="3"></option>
+		<option optionid="4" optiontext="Need some time to recover..." next="0"></option>
+	</node>
+	<node id="57" npcName="Master Matthews" anim="1" text="This is it, the championship fight! I'd give you advice, but frankly I have none. I've not seen a tiniest fault in the man's form! We'll just have to see how you fare, prepare yourself now..." posx="915" posy="27">
+		<option optionid="1" optiontext="" next="0" icon="Quest" actions="Cinematic=166"></option>
+	</node>
+
+
+	<node id="60" npcName="Master Matthews" anim="1" text="Ah, there you are, newblood! Are you well rested? You final opponent and the championship fight awaits you!" posx="31" posy="25">
+		<option optionid="1" optiontext="I'm ready, let's do this." next="61" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me more about this Harvest Melee of yours." next="2"></option>
+		<option optionid="3" optiontext="What can you tell me about the other fighters?" next="3"></option>
+		<option optionid="4" optiontext="Not yet." next="0"></option>
+	</node>
+	<node id="61" npcName="Master Matthews" anim="1" text="You've bested all but one to get this far - the Master Duellist Artagne! I'd give you advice, but frankly I have none. I've not seen a tiniest fault in the man's form! We'll just have to see how you fare, prepare yourself now..." posx="471" posy="24">
+		<option optionid="1" optiontext="" next="0" icon="Quest" actions="Cinematic=166"></option>
+	</node>
+
+
+	<node id="65" npcName="Master Matthews" anim="1" text="What a fight, what a fight! To see the two of you out there on the field...! Alas, the Trairian Blademaster had the upper hand there. But the event is not yet over! There is still time for a rematch, though you may require a moment to catch your breath...?" posx="38" posy="20">
+		<option optionid="1" optiontext="I'll be fine, let's just go again." next="66" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me more about this Harvest Melee of yours." next="2"></option>
+		<option optionid="3" optiontext="What can you tell me about the other fighters?" next="3"></option>
+		<option optionid="4" optiontext="Need some time to recover..." next="0"></option>
+	</node>
+	<node id="66" npcName="Master Matthews" anim="1" text="As you wish! Now, usually I'd give you a bit of advice, but frankly I have none. I've not seen a tiniest fault in the man's form! We'll just have to see how you fare, prepare yourself now..." posx="475" posy="22">
+		<option optionid="1" optiontext="" next="0" icon="Quest" actions="Cinematic=166"></option>
+	</node>
+
+
+	<node id="70" npcName="Master Matthews" anim="1" text="Incredible! You've done it! In all my life I've not seen such a display of talent! You, sir, are to be crowned the first ever Harvest Champion! Congratulations!" posx="29" posy="23">
+		<option optionid="1" optiontext="Fantastic!" next="0" icon="Quest" actions="Cinematic=167"></option>
+	</node>
+
+
+	<node id="80" npcName="Rowdy Addams" anim="1" text="Ah gosh darn it! Well that's it, I'm firmly at the bottom rankings now! Hope you're happy with yourself!" posx="27" posy="16">
+		<option optionid="1" optiontext="I am indeed." next="81"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="87" icon="Fight"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="81" npcName="Rowdy Addams" anim="1" text="Yeah, well... S'long as you didn't come here to rub it in my face. Thought for once there'd be something I'm good at, something the village would be proud of! Instead of always nagging about how that 'Rowdy' Addams fellow got into a scuffle again." posx="446" posy="25">
+		<option optionid="1" optiontext="" next="82"></option>
+	</node>
+	<node id="82" npcName="Rowdy Addams" anim="1" text="And what's it that happens instead? Every darn knight, mage and blademaster feels the need to crawl out from under whatever rock and attend our little festival in our little village! Dagnabbit it with y'all!" posx="864" posy="24">
+		<option optionid="1" optiontext="Don't forget about a terrifying death knight!" next="83"></option>
+		<option optionid="2" optiontext="For what it's worth, I thought you fought well out there." next="84"></option>
+		<option optionid="3" optiontext="You were hoping to bring fame to your village?" next="85"></option>
+		<option optionid="4" optiontext="How about a friendly rematch?" next="87" icon="Fight"></option>
+		<option optionid="5" optiontext="Take care now." next="0"></option>
+	</node>
+	<node id="83" npcName="Rowdy Addams" anim="1" text="What in the twaddley claptrap are you going around calling yourself? Had enough of that talk from Ser What's His Name over there, spouting high and mighty nonsense left and right. Could be said for all of ya, as a matter of fact - I'm the only honest peasant left around here!" posx="1285" posy="25">
+		<option optionid="1" optiontext="For what it's worth, I thought you fought well out there." next="84"></option>
+		<option optionid="2" optiontext="You were hoping to bring fame to your village?" next="85"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="87" icon="Fight"></option>
+		<option optionid="4" optiontext="Take care now." next="0"></option>
+	</node>
+	<node id="84" npcName="Rowdy Addams" anim="1" text="Yeah? But not well enough for any of you folks. Feels like I let my village down." posx="1330" posy="419">
+		<option optionid="1" optiontext="You were hoping to bring fame to your village?" next="85"></option>
+		<option optionid="2" optiontext="You forgot to mention facing a terrifying death knight, hehe..." next="83"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="87" icon="Fight"></option>
+		<option optionid="4" optiontext="Take care now." next="0"></option>
+	</node>
+	<node id="85" npcName="Rowdy Addams" anim="1" text="Everyone's always underestimating us peasants, I'm sick of it! And Little Grainwater upon Aure's always been sort of overlooked. We're not really part of Grainwater, but neither are we considered part of the Haywind City. I mean just look how they cut us out when they built their city walls!" posx="375" posy="374">
+		<option optionid="1" optiontext="" next="86"></option>
+	</node>
+	<node id="86" npcName="Rowdy Addams" anim="1" text="This festival's putting our village on the map, letting folk know we too exist! I wanted to play my part in that." posx="826" posy="495">
+		<option optionid="1" optiontext="For what it's worth, I thought you fought well out there." next="84"></option>
+		<option optionid="2" optiontext="You forgot to mention facing a terrifying death knight, hehe..." next="83"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="87" icon="Fight"></option>
+		<option optionid="4" optiontext="Well you did! Take care now." next="0"></option>
+	</node>
+	<node id="87" npcName="Rowdy Addams" anim="1" text="Oh you wanna fight? I ain't ever backed down from a fight!" posx="459" posy="1350">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=145,SetVar=Q104FightAfterQuest-1" icon="Fight"></option>
+	</node>
+
+
+	<node id="90" npcName="Rovina Raventalon of the Hydrobor Circle" anim="1" text="I can't believe you bested my magic! Ugh, I wonder if I'll ever make a decent battlemage. Wasn't even close to running for the top spots in this competition." posx="23" posy="17">
+		<option optionid="1" optiontext="Why are you so concerned about becoming a battlemage?" next="91"></option>
+		<option optionid="2" optiontext="The competition's just tough, you were more formidable than the average spellcaster I've encountered out there." next="95"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="98" icon="Fight"></option>
+		<option optionid="4" optiontext="Take care now." next="0"></option>
+	</node>
+	<node id="91" npcName="Rovina Raventalon of the Hydrobor Circle" anim="1" text="You may not be aware, but the Hydrobor Circle of Magi aren't known for their skills in battle. I aim to change that, to start a new school of magic within our academy. It's why I've begun to take every opportunity to hone my own skills in combat magic." posx="454" posy="18">
+		<option optionid="1" optiontext="So Hydrobor Magi are normally pacifists?" next="92"></option>
+		<option optionid="2" optiontext="Why the need to study battle magic though?" next="96"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="98" icon="Fight"></option>
+		<option optionid="4" optiontext="Take care now." next="0"></option>
+	</node>
+	<node id="92" npcName="Rovina Raventalon of the Hydrobor Circle" anim="1" text="Well, I wouldn't say that either. It's just been up to individual magi whether they've taken upon themselves to learn to protect themselves. Usually the senior members of the circle pick up all sorts of tricks over the decades." posx="880" posy="19">
+		<option optionid="1" optiontext="" next="93"></option>
+	</node>
+	<node id="93" npcName="Rovina Raventalon of the Hydrobor Circle" anim="1" text="But it's never been a particular focus within the Academy, that honor has fallen to the study and control of natural magics. Decades ago, before our Academy was exiled from the Vhosphoran Kingdom, we were sometimes called the 'water seers' of the Vhosphoran deserts. It was only natural to work on controlling the weather once we had migrated here." posx="1297" posy="20">
+		<option optionid="1" optiontext="You were driven from your homeland?" next="94"></option>
+		<option optionid="2" optiontext="Why the need to study battle magic though?" next="96"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="98" icon="Fight"></option>
+		<option optionid="4" optiontext="Take care now." next="0"></option>
+	</node>
+	<node id="94" npcName="Rovina Raventalon of the Hydrobor Circle" anim="1" text="This was many decades ago, mind you, I wasn't even born then, so you'd do better discussing the matter with senior members of our circle. But yes, in the aftermath of a magi civil war within the kingdom, anti-magic sentiment took hold in the land. Though we'd been in the right side of the conflict, we were no logner welcome." posx="1719" posy="20">
+		<option optionid="1" optiontext="Why the need to study battle magic though?" next="96"></option>
+		<option optionid="2" optiontext="How about a friendly rematch?" next="98" icon="Fight"></option>
+		<option optionid="3" optiontext="Take care now." next="0"></option>
+	</node>
+	<node id="95" npcName="Rovina Raventalon of the Hydrobor Circle" anim="1" text="Thanks for the kind words, I guess. Well, I won't stop training, nor duelling. One day it must all amount to something." posx="510" posy="418">
+		<option optionid="1" optiontext="Why are you so concerned about becoming a battlemage anyway?" next="91"></option>
+		<option optionid="2" optiontext="How about a friendly rematch?" next="98" icon="Fight"></option>
+		<option optionid="3" optiontext="Take care now." next="0"></option>
+	</node>
+	<node id="96" npcName="Rovina Raventalon of the Hydrobor Circle" anim="1" text="In ages past our Academy could confidently rely on protection from the Vhosphoran Crown. But look around you, who can we rely on here? The Lord of Imberthale has fortified himself in the city of Thornhill, Haywind acts independently and remains besieged by marauders... " posx="947" posy="409">
+		<option optionid="1" optiontext="" next="97"></option>
+	</node>
+	<node id="97" npcName="Rovina Raventalon of the Hydrobor Circle" anim="1" text="There's anarchy and restlessness everywhere, and it's only a matter of time before somebody feels emboldened to raid our remote holdings to the west. We need to be ready and able to protect ourselves." posx="1367" posy="408">
+		<option optionid="1" optiontext="Hydrobor Magi are normally pacifists?" next="92"></option>
+		<option optionid="2" optiontext="How about a friendly rematch?" next="98" icon="Fight"></option>
+		<option optionid="3" optiontext="Take care now." next="0"></option>
+	</node>
+	<node id="98" npcName="Rovina Raventalon of the Hydrobor Circle" anim="1" text="Would do me good to practice my spells some more. Sure, why not?" posx="459" posy="1350">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=145,SetVar=Q104FightAfterQuest-2" icon="Fight"></option>
+	</node>
+
+
+	<node id="100" npcName="Mayor Albert Foxford" anim="1" text="Never, ever, so long as I draw breath, will I ever hire the services of a witch again! She was supposed to wow and entertain the crowd and the children with her magic! Instead, well... have you seen that abomination out there on the field?!" posx="20" posy="14">
+		<option optionid="1" optiontext="The pumpkin head, what's the harm?" next="101" icon="Quest"></option>
+		<option optionid="2" optiontext="Don't mind me, I'm just here for the food and drink." next="0"></option>
+	</node>
+	<node id="101" npcName="Mayor Albert Foxford" anim="1" text="The harm? I'll tell you what the harm is! All year we prepared the ground on that pumpkin patch specifically to grow the best festival pumpkins possible, so we could make delicious pumpkin juice for our festival." posx="452" posy="18">
+		<option optionid="1" optiontext="" next="102"></option>
+	</node>
+	<node id="102" npcName="Mayor Albert Foxford" anim="1" text="Not only is the monstrosity scaring the children, it's not allowing us to collect our festival pumpkins! Every time we try, it threatens to rip us to pieces! And that damned witch just cackles, seemingly enjoying herself, without lifting a finger to help!" posx="477" posy="260">
+		<option optionid="1" optiontext="Suppose I could see if I can get rid of the monster for you." next="103" icon="Quest"></option>
+		<option optionid="2" optiontext="Meant to ask, what is this festival you've got going here?" next="104"></option>
+		<option optionid="3" optiontext="Well, good luck with that - I'll check on the festival games." next="0"></option>
+	</node>
+	<node id="103" npcName="Mayor Albert Foxford" anim="1" text="Thank you, fellow, it would mean a great deal to us. Been preparing this festival all year, it wouldn't be right for some crazy old bat and her pumpkin monster to ruin it for us now." posx="948" posy="13">
+		<option optionid="1" optiontext="I'll see what I can do." next="0" actions="UpdateQuest=103-1"></option>
+	</node>
+
+	<node id="104" npcName="Mayor Albert Foxford" anim="1" text="Why, the Harvest Festival of course! All around the world folk are known to celebrate their harvests, yet did anyone seem keen for a festival in our lands? Well I'll tell you, Little Grainwater will be known for its Harvest Festivals for years to come!" posx="914" posy="305">
+		<option optionid="1" optiontext="How's it going for you?" next="105"></option>
+		<option optionid="2" optiontext="Suppose I could see if I can get rid of that monster for you." next="103" icon="Quest"></option>
+		<option optionid="3" optiontext="Well, good luck with that - I'll check on the festival games." next="0"></option>
+	</node>
+	<node id="105" npcName="Mayor Albert Foxford" anim="1" text="Please, I've not been able to think about anything other than that abomination on our pumpkin patch! I fear any moment now it's going to decide to rip the head off one of our festival goers!" posx="1332" posy="307">
+		<option optionid="1" optiontext="Suppose I could see if I can get rid of that monster for you." next="103" icon="Quest"></option>
+		<option optionid="2" optiontext="Well, good luck with that - I'll check on the festival games." next="0"></option>
+	</node>
+
+
+	<node id="110" npcName="Mayor Albert Foxford" anim="1" text="No luck getting the pumpkin monstrosity out of our pumpkin patch, eh?" posx="34" posy="20">
+		<option optionid="1" optiontext="Oh sorry, forgot about that - what was the problem again?" next="111"></option>
+		<option optionid="2" optiontext="Meant to ask, what is this festival you've got going here?" next="113"></option>
+		<option optionid="3" optiontext="Not yet." next="0"></option>
+	</node>
+	<node id="111" npcName="Mayor Albert Foxford" anim="1" text="Haven't you seen that abomination out there on the field?! Not only is the monstrosity scaring the children, it's not allowing us to collect our festival pumpkins! Every time we try, it threatens to rip us to pieces! And that damned witch just cackles, seemingly enjoying herself, without lifting a finger to help!" posx="492" posy="1">
+		<option optionid="1" optiontext="" next="112"></option>
+	</node>
+	<node id="112" npcName="Mayor Albert Foxford" anim="1" text="You said you'd try to get rid of it? It'd be greatly appreciated by all of us folk around here, as we're not able to turn those pumpkins into our delicious pumpkin juice so long as the monster's guarding them." posx="931" posy="-1">
+		<option optionid="1" optiontext="Meant to ask, what is this festival you've got going here?" next="113"></option>
+		<option optionid="2" optiontext="I'll see what I can do." next="0"></option>
+	</node>
+	<node id="113" npcName="Mayor Albert Foxford" anim="1" text="Why, the Harvest Festival of course! All around the world folk are known to celebrate their harvests, yet did anyone seem keen for a festival in our lands? Well I'll tell you, Little Grainwater will be known for its Harvest Festivals for years to come!" posx="530" posy="341">
+		<option optionid="1" optiontext="How's it going for you?" next="114"></option>
+		<option optionid="2" optiontext="Well, good luck with that - I'll check on the festival games." next="0"></option>
+	</node>
+	<node id="114" npcName="Mayor Albert Foxford" anim="1" text="Please, I've not been able to think about anything other than that abomination on our pumpkin patch! I fear any moment now it's going to decide to rip the head off one of our festival goers!" posx="947" posy="341">
+		<option optionid="1" optiontext="Oh sorry, forgot about that - what was the problem again?" next="111"></option>
+		<option optionid="2" optiontext="Ah yes, I guess I was meant to do something about that..." next="0"></option>
+	</node>
+
+	
+	<node id="120" npcName="Harvy o'Drear the Harvest Golem" anim="986" switchtalker="1191" text="THE PUMPKINS... BELONG TO MEEE...!" posx="25" posy="23">
+		<option optionid="1" optiontext="" next="121"></option>
+	</node>
+	<node id="121" npcName="Lady Morrigane D.A. Pompookin" anim="1" switchtalker="1190" text="Hey, get away from Harvy! He's a bit sensitive, he shouldn't be disturbed!" posx="453" posy="23">
+		<option optionid="1" optiontext="You're the one who summoned this creature?" next="122"></option>
+		<option optionid="2" optiontext="It's time for him to go back to where ever he came from." next="123" icon="Quest"></option>
+	</node>
+	<node id="122" npcName="Lady Morrigane D.A. Pompookin" anim="1" switchtalker="1190" text="Yeah, what of it? Can't you see he's 'entertaining' the children, hahahaaa!" posx="893" posy="25">
+		<option optionid="1" optiontext="You don't think you've overdone it just a bit?" next="125"></option>
+		<option optionid="2" optiontext="What in the world even is that thing?" next="126"></option>
+		<option optionid="3" optiontext="Alright fun's over, it's time you unsummon this thing - make it go away." next="123" icon="Quest"></option>
+	</node>
+	<node id="123" npcName="Harvy o'Drear the Harvest Golem" anim="986" switchtalker="1191" text="IT WANTS TO DESTROY ME...? GRRRAAAWR...!" posx="316" posy="613">
+		<option optionid="1" optiontext="" next="124"></option>
+	</node>
+	<node id="124" npcName="Lady Morrigane D.A. Pompookin" anim="1" switchtalker="1190" text="See, now you've just made him upset..." posx="732" posy="612">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=103-2,NpcAggro=1191" icon="Fight"></option>
+	</node>
+
+	<node id="125" npcName="Lady Morrigane D.A. Pompookin" anim="1" switchtalker="1190" text="Oh, psssht! He hasn't even hurt anyone... erm, yet. Besides, I'm quite enjoying myself, watching him prowl around the pumpkin field. Just look at him go, hahaha!" posx="1355" posy="15">
+		<option optionid="1" optiontext="What in the world even is that thing?" next="126"></option>
+		<option optionid="2" optiontext="Alright fun's over, it's time you unsummon this thing - make it go away." next="123" icon="Quest"></option>
+	</node>
+	<node id="126" npcName="Lady Morrigane D.A. Pompookin" anim="1" switchtalker="1190" text="Oh, I have no idea, I don't know what my magic does half the time. I just vaguely thought of a spell and directed it at one of these festival pumpkins, and well... Harvy popped out! Heheee!" posx="1330" posy="321">
+		<option optionid="1" optiontext="You don't think you've overdone it just a bit?" next="125"></option>
+		<option optionid="2" optiontext="Alright fun's over, it's time you unsummon this thing - make it go away." next="123" icon="Quest"></option>
+	</node>
+
+
+	<node id="130" npcName="Lady Morrigane D.A. Pompookin" anim="1" text="See now what you've done, that was wholly unnecessary! Guess you'd better finish what you started, no good can come from letting an enraged pumpkin monster roam around. S'ppose I'll try to summon something a little more tame next..." posx="20" posy="14">
+		<option optionid="1" optiontext="Hold on, Harvy's your responsibility - you're the one who ought to undo him!" next="132"></option>
+		<option optionid="2" optiontext="Who are you, anyway?" next="133"></option>
+		<option optionid="3" optiontext="Tell me, what manner of pumpkin monster is Harvy exactly?" next="136"></option>
+		<option optionid="4" optiontext="If you say so." next="131" icon="LeadingExit"></option>
+	</node>
+	<node id="131" npcName="Lady Morrigane D.A. Pompookin" anim="1" text="Well, no point waffling about it. I'll just pick another pumpkin and... do something, I guess... hold on..." posx="21" posy="621">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=171" icon="Quest"></option>
+	</node>
+
+	<node id="132" npcName="Lady Morrigane D.A. Pompookin" anim="1" text="What do you expect me to do? I just do magic, I wouldn't know how to reverse it even if I wanted to! You seemed to handle yourself just fine against him once already, best you take care of him." posx="440" posy="15">
+		<option optionid="1" optiontext="Who are you, anyway?" next="133"></option>
+		<option optionid="2" optiontext="Tell me, what manner of pumpkin monster is Harvy exactly?" next="136"></option>
+		<option optionid="3" optiontext="Somehow I'm not shocked you'd say that." next="131" icon="LeadingExit"></option>
+	</node>
+	<node id="133" npcName="Lady Morrigane D.A. Pompookin" anim="1" text="Lady Morrigane Deirdre Ailbhere Pompookin at your service, Mistress of the Thatch Roof House by the Lone Dead Tree in the Morie Hills!\n\n&lt;color=#9C8C77&gt;*She let's out a slightly unhinged cackle.*&lt;/color&gt;" posx="487" posy="395">
+		<option optionid="1" optiontext="Um, okay... so you're a witch...?" next="134"></option>
+		<option optionid="2" optiontext="Tell me, what manner of pumpkin monster is Harvy exactly?" next="136"></option>
+		<option optionid="3" optiontext="Harvy's your responsibility - you're the one who ought to undo him!" next="132"></option>
+		<option optionid="4" optiontext="Right, whatever." next="131" icon="LeadingExit"></option>
+	</node>
+	<node id="134" npcName="Lady Morrigane D.A. Pompookin" anim="1" text="&lt;color=#9C8C77&gt;*Gasps*&lt;/color&gt;! That's a terribly rude thing to say to someone! I'll have you know I'm a talented woman of magic and I traveled to these lands for a friendly exchange of knowledge with the Hydrobor Magi; professionals like us have a lot to offer to each other you know." posx="901" posy="395">
+		<option optionid="1" optiontext="" next="135"></option>
+	</node>
+	<node id="135" npcName="Lady Morrigane D.A. Pompookin" anim="1" text="Only they were being infuriatingly narrow-minded when I showed up! Called me a 'Wild Caster', said I don't have knowledge to offer because I supposedly cast my magic without the use of any - such insults! At least the good people here had the sense to appreciate and employ my talents as I was passing through." posx="1312" posy="394">
+		<option optionid="1" optiontext="Tell me, what manner of pumpkin monster is Harvy exactly?" next="136"></option>
+		<option optionid="2" optiontext="Harvy's your responsibility - you're the one who ought to undo him!" next="132"></option>
+		<option optionid="3" optiontext="Mhm, I'm sure they've learnt their lesson though..." next="131" icon="LeadingExit"></option>
+	</node>
+	<node id="136" npcName="Lady Morrigane D.A. Pompookin" anim="1" text="Oh, I have no idea, I don't know what my magic does half the time. I just vaguely thought of a spell and directed it at one of these festival pumpkins, and well... Harvy popped out!" posx="939" posy="6">
+		<option optionid="1" optiontext="Harvy's your responsibility - you're the one who ought to undo him!" next="132"></option>
+		<option optionid="2" optiontext="Who are you, anyway?" next="133"></option>
+		<option optionid="3" optiontext="And now I have him to deal with." next="131" icon="LeadingExit"></option>
+	</node>
+
+
+	<node id="140" npcName="Lady Morrigane D.A. Pompookin" anim="1" text="Curious little thing this Tiny Harvy. Not very scary, but cute I suppose. Pumpkin magic is a little understood science, you know, but one day I may be the one to discover all there is to know about it..." posx="20" posy="12">
+		<option optionid="1" optiontext="Really, Harvy's your responsibility - you're the one who ought to undo him." next="141" checks="Quest=103-3-3"></option>
+		<option optionid="2" optiontext="Remind me, who are you again?" next="142"></option>
+		<option optionid="3" optiontext="Tell me, what manner of pumpkin monster is mad Harvy exactly?" next="145"></option>
+		<option optionid="4" optiontext="Right, good luck with that." next="0"></option>
+	</node>
+	<node id="141" npcName="Lady Morrigane D.A. Pompookin" anim="1" text="What do you expect me to do? I just do magic, I wouldn't know how to reverse it even if I wanted to! You seemed to handle yourself just fine against him once already, best you take care of him." posx="459" posy="13">
+		<option optionid="1" optiontext="Tell me, what manner of pumpkin monster is mad Harvy exactly?" next="145"></option>
+		<option optionid="2" optiontext="Remind me, who are you again?" next="142"></option>
+		<option optionid="3" optiontext="Somehow I'm not shocked you'd say that." next="0"></option>
+	</node>
+	<node id="142" npcName="Lady Morrigane D.A. Pompookin" anim="1" text="Lady Morrigane Deirdre Ailbhere Pompookin at your service, Mistress of the Thatch Roof House by the Lone Dead Tree in the Morie Hills!\n\n&lt;color=#9C8C77&gt;*She let's out a slightly unhinged cackle.*&lt;/color&gt;" posx="878" posy="14">
+		<option optionid="1" optiontext="Um, okay... so you're a witch...?" next="143"></option>
+		<option optionid="2" optiontext="Tell me, what manner of pumpkin monster is mad Harvy exactly?" next="145"></option>
+		<option optionid="3" optiontext="Really, Harvy's your responsibility - you're the one who ought to undo him." next="141" checks="Quest=103-3-3"></option>
+		<option optionid="4" optiontext="Right, whatever." next="0"></option>
+	</node>
+	<node id="143" npcName="Lady Morrigane D.A. Pompookin" anim="1" text="&lt;color=#9C8C77&gt;*Gasps*&lt;/color&gt;! That's a terribly rude thing to say to someone! I'll have you know I'm a talented woman of magic and I traveled to these lands for a friendly exchange of knowledge with the Hydrobor Magi; professionals like us have a lot to offer to each other you know." posx="1296" posy="16">
+		<option optionid="1" optiontext="" next="144"></option>
+	</node>
+	<node id="144" npcName="Lady Morrigane D.A. Pompookin" anim="1" text="Only they were being infuriatingly narrow-minded when I showed up! Called me a 'Wild Caster', said I don't have knowledge to offer because I supposedly cast my magic without the use of any - such insults! At least the good people here had the sense to appreciate and employ my talents as I was passing through." posx="1299" posy="260">
+		<option optionid="1" optiontext="Tell me, what manner of pumpkin monster is Harvy exactly?" next="145"></option>
+		<option optionid="2" optiontext="Really, Harvy's your responsibility - you're the one who ought to undo him." next="141" checks="Quest=103-3-3"></option>
+		<option optionid="3" optiontext="Mhm, I'm sure they've learnt their lesson though..." next="0"></option>
+	</node>
+	<node id="145" npcName="Lady Morrigane D.A. Pompookin" anim="1" text="Oh, I have no idea, I don't know what my magic does half the time. I just vaguely thought of a spell and directed it at one of these festival pumpkins, and well... Harvy popped out!" posx="454" posy="378">
+		<option optionid="1" optiontext="Really, Harvy's your responsibility - you're the one who ought to undo him." next="141" checks="Quest=103-3-3"></option>
+		<option optionid="2" optiontext="Remind me, who are you again?" next="142"></option>
+		<option optionid="3" optiontext="And now I have him to deal with..." next="0"></option>
+	</node>
+	
+
+	<node id="150" npcName="Ser William Briskwater of Thornhill" anim="1" text="My goodness, sir! Against all expectations, you have bested me! A traveling man with no name, no reputation... You have earned my respect nonetheless!" posx="16" posy="12">
+		<option optionid="1" optiontext="You take great pride in your swordsmanship?" next="151"></option>
+		<option optionid="2" optiontext="How fare the Estates of Thornhill?" next="153"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="157" icon="Fight"></option>
+		<option optionid="4" optiontext="Take care now." next="0"></option>
+	</node>
+	<node id="151" npcName="Ser William Briskwater of Thornhill" anim="1" text="Just as a farmer puts all his concerns into the success of his crops, I too must maintain an unwavering focus on the handling of my sword. For if the farmer is threatened, is it not I who must step forward to protect him? I believe we all have our purpose in this world." posx="450" posy="11">
+		<option optionid="1" optiontext="Heard Haywind's countryside actually is troubled by bandits..." next="152"></option>
+		<option optionid="2" optiontext="How fare the Estates of Thornhill?" next="153"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="157" icon="Fight"></option>
+		<option optionid="4" optiontext="Alright, take care." next="0"></option>
+	</node>
+	<node id="152" npcName="Ser William Briskwater of Thornhill" anim="1" text="And a most vexing situation it is indeed! I offered my assistance immediately, but the Lord-Mayor in Thornhill forbid my involvement! I was told the city of Thornhill needs me, though I see not how. Alas, it is not for me to question my superiors." posx="872" posy="13">
+		<option optionid="1" optiontext="How fare the Estates of Thornhill?" next="153"></option>
+		<option optionid="2" optiontext="How about a friendly rematch?" next="157" icon="Fight"></option>
+		<option optionid="3" optiontext="Alright, take care." next="0"></option>
+	</node>
+	<node id="153" npcName="Ser William Briskwater of Thornhill" anim="1" text="Ahem... they manage. I must confess I am not one with a sharp political mind, those talents are rather possessed by my father - the Head of House Briskwater. But there is certainly a tension in Thornhill, a dark cloud that hangs over the city." posx="456" posy="394">
+		<option optionid="1" optiontext="" next="154"></option>
+	</node>
+	<node id="154" npcName="Ser William Briskwater of Thornhill" anim="1" text="I do not only mean the pestilence that recently ravaged our city, perhaps you've heard of it? Deep down, Thornhill has been troubled for a long while now. But these are not matters I ought to discuss openly, please ask no more!" posx="873" posy="397">
+		<option optionid="1" optiontext="Is the Oldewood Estate still hanging in there?" next="155"></option>
+		<option optionid="2" optiontext="So, you take great pride in your swordsmanship?" next="151"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="157" icon="Fight"></option>
+		<option optionid="4" optiontext="Interesting, take care now." next="0"></option>
+	</node>
+	<node id="155" npcName="Ser William Briskwater of Thornhill" anim="1" text="Ah yes! The oldest remaining great house in Thornhill, I am told. They've become very reclusive though, more so than they ever were. Roughly a decade ago a disaster struck, the Master and Lady Oldewoods perished in a mysterious accident, the details of which were all rather hushed up." posx="1334" posy="268">
+		<option optionid="1" optiontext="" next="156"></option>
+	</node>
+	<node id="156" npcName="Ser William Briskwater of Thornhill" anim="1" text="They left behind a  newborn boy, the only heir to the estate, and his grandmother who now manages the affairs. I hear rumors she protects the boy fiercely, never letting him out of her sights - understandable, perhaps - and she's wary of letting strangers in the grounds." posx="1328" posy="504">
+		<option optionid="1" optiontext="So, you take great pride in your swordsmanship?" next="151"></option>
+		<option optionid="2" optiontext="How about a friendly rematch?" next="157" icon="Fight"></option>
+		<option optionid="3" optiontext="Interesting, take care now." next="0"></option>
+	</node>
+	<node id="157" npcName="Ser William Briskwater of Thornhill" anim="1" text="Why, sir, friendly rematches are all I desire!" posx="459" posy="1350">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=145,SetVar=Q104FightAfterQuest-3" icon="Fight"></option>
+	</node>
+
+
+	<node id="160" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="&lt;color=#9C8C77&gt;*The master duellist looks at you appraisingly.*&lt;/color&gt;\n\nYou are aware I arrive from the House of Blades in Traire, yes? My fellows asked: why do you go? They believe it's a waste, you see. 'Oh where are the nobles, the great kings and queens, the wealthy merchant families to see you fight', they ask." posx="28" posy="14">
+		<option optionid="1" optiontext="" next="161"></option>
+	</node>
+	<node id="161" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="And I answer, they forget why we do this, perfecting the blade. We do this for the show and the fame? Or we do this for it has greater meaning, for it is art. Here in competition like this the fame is small, yet the fight is somehow more true. Unexpected, but so it is." posx="448" posy="11">
+		<option optionid="1" optiontext="" next="162"></option>
+	</node>
+	<node id="162" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="So it transpire I come here, and I find interesting opponents. And then I find something even more unexpected - I find I am beaten. You must understand this is highly irregular. I make questions, but am told you are a stranger, unknown. So I must now ask you, who it is that has bested the Aramis Artagne in a duel?" posx="870" posy="13">
+		<option optionid="1" optiontext="Lord... ahem, Aercrest... just Aercrest." next="163" actions="SetNpcVar=MysteriousStranger-1"></option>
+		<option optionid="2" optiontext="A veteran of times past, that's what I am." next="164" actions="SetNpcVar=MysteriousStranger-2"></option>
+		<option optionid="3" optiontext="I emerge from the shadows with no history, no past and no name - I am the Mysterious Stranger!" next="165" actions="SetNpcVar=MysteriousStranger-3"></option>
+	</node>
+	<node id="163" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="Hm, how odd to be bested by a person who is 'just' Aercrest... The man is no knight? Is he no agent of a great king or queen, or secretly a wizard of a prominent Circle even? No, he says he is just Aercrest. Curious I say..." posx="1297" posy="11">
+		<option optionid="1" optiontext="" next="166"></option>
+	</node>
+	<node id="164" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="Is that so? But he does not look so old, nor does he fight like an old man... But he does fight with experience. Very well, let's say I have been bested by veteran of old wars, it sounds fair." posx="1298" posy="253">
+		<option optionid="1" optiontext="" next="166"></option>
+	</node>
+	<node id="165" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="He wishes to remain cloaked in secrecy? In Traire there are those who wish to fight as Nameless Men, they are also known as assassins, yes? But I shall indulge you this time, it has a nice ring to be bested by the 'Mysterious Stranger', no?" posx="1300" posy="490">
+		<option optionid="1" optiontext="" next="166"></option>
+	</node>
+	<node id="166" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="But enough about such things. There is something he would ask of the Aramis Artagne?" posx="1864" posy="237">
+		<option optionid="1" optiontext="You said you belong to the Trairian House of Blades?" next="167"></option>
+		<option optionid="2" optiontext="What is the city of Traire like?" next="169"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="186" icon="Fight"></option>
+		<option optionid="4" optiontext="Not right now, no." next="0"></option>
+	</node>
+	<node id="167" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="Yes, do you not know of it? We are well known in the city of Traire, of course, understandably less so here. Every member must be certified Blademaster in their own right, there are no exceptions." posx="2303" posy="15">
+		<option optionid="1" optiontext="What does it take to become a Blademaster?" next="168"></option>
+		<option optionid="2" optiontext="What is the city of Traire like?" next="169"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="186" icon="Fight"></option>
+		<option optionid="4" optiontext="Interesting, take care now." next="0"></option>
+	</node>
+	<node id="168" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="That title is widely used across many lands, but customs differ. In Traire one must gain references from two existing Blademasters. Then they enter a ceremonial duel with another Blademaster, where at least a draw must be achieved to gain the recognition." posx="2718" posy="16">
+		<option optionid="1" optiontext="What is the city of Traire like?" next="169"></option>
+		<option optionid="2" optiontext="How about a friendly rematch?" next="186" icon="Fight"></option>
+		<option optionid="3" optiontext="Interesting, take care now." next="0"></option>
+	</node>
+	<node id="169" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="Ah, imagine a great river delta spreading across green lands... from the heart of it a large hill rises, where great white stone walls shoot upwards, like a beacon of light..." posx="2306" posy="415">
+		<option optionid="1" optiontext="" next="170"></option>
+	</node>
+	<node id="170" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="Its cobbled streets are made of smooth round pebbles, so shaped by the surrounding river waters. There deep within,, artificially elevated, the inner city rises, surrounded by another set of white walls, all its buildings within made of white stone..." posx="2717" posy="416">
+		<option optionid="1" optiontext="" next="171"></option>
+	</node>
+	<node id="171" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="It is where my home, the House of Blades is also found. And the heart of the inner city? A great white spire rises, where the Great Council of the city gathers to overlook their lands. I tell you now, Traire is not only a city - it is an ideal! " posx="3133" posy="418">
+		<option optionid="1" optiontext="Sounds like I place I'd sure hope to see one day." next="172"></option>
+		<option optionid="2" optiontext="So you belong to this House of Blades?" next="167"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="186" icon="Fight"></option>
+		<option optionid="4" optiontext="Impressive, take care now." next="0"></option>
+	</node>
+	<node id="172" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="Quite so, my friend. Then I shall hope one day you will get the chance to, yes?" posx="3562" posy="420">
+		<option optionid="1" optiontext="So you belong to this House of Blades?" next="167"></option>
+		<option optionid="2" optiontext="How about a friendly rematch?" next="186" icon="Fight"></option>
+		<option optionid="3" optiontext="Thanks, take care now." next="0"></option>
+	</node>
+
+
+	<node id="180" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="You are aware I arrive from the House of Blades in Traire, yes? My fellows asked: why do you go? They believe it's a waste, you see. 'Oh where are the nobles, the great kings and queens, the wealthy merchant families to see you fight', they ask." posx="23" posy="930">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Continue listening.*&lt;/color&gt;" next="181"></option>
+		<option optionid="2" optiontext="Wanted to ask you something myself, in fact." next="185"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="186" icon="Fight"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="181" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="And I answer, they forget why we do this, perfecting the blade. We do this for the show and the fame? Or we do this for it has greater meaning, for it is art. Here in competition like this the fame is small, yet the fight is somehow more true. Unexpected, but so it is." posx="441" posy="930">
+		<option optionid="1" optiontext="" next="182" checks="NpcVar=MysteriousStranger-1-1"></option>
+		<option optionid="2" optiontext="" next="183" checks="NpcVar=MysteriousStranger-2-2"></option>
+		<option optionid="3" optiontext="" next="184" checks="NpcVar=MysteriousStranger-3-3"></option>
+	</node>
+	<node id="182" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="So it transpire I come here, and I find interesting opponents. And then I find something even more unexpected - I find I am beaten. By man who says nothing of himself, except only that his name is Aercrest. Curious, I say..." posx="859" posy="1013">
+		<option optionid="1" optiontext="You said you belong to the Trairian House of Blades?" next="167"></option>
+		<option optionid="2" optiontext="What is the city of Traire like?" next="169"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="186" icon="Fight"></option>
+		<option optionid="4" optiontext="I'll leave you to it." next="0"></option>	
+	</node>
+	<node id="183" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="So it transpire I come here, and I find interesting opponents. And then I find something even more unexpected - I find I am beaten. By a modest man, claiming to be veteran of wars past. Curious, I say..." posx="1278" posy="1017">
+		<option optionid="1" optiontext="You said you belong to the Trairian House of Blades?" next="167"></option>
+		<option optionid="2" optiontext="What is the city of Traire like?" next="169"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="186" icon="Fight"></option>
+		<option optionid="4" optiontext="I'll leave you to it." next="0"></option>
+	</node>
+	<node id="184" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="So it transpire I come here, and I find interesting opponents. And then I find something even more unexpected - I find I am beaten. By man who prefers to maintain his identity shrouded in secrets, calling himself 'the Mysterious Stranger'. Curious, I say." posx="1694" posy="1020">
+		<option optionid="1" optiontext="You said you belong to the Trairian House of Blades?" next="167"></option>
+		<option optionid="2" optiontext="What is the city of Traire like?" next="169"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="186" icon="Fight"></option>
+		<option optionid="4" optiontext="I'll leave you to it." next="0"></option>
+	</node>
+	<node id="185" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="Very well?" posx="459" posy="1350">
+		<option optionid="1" optiontext="You said you belong to the Trairian House of Blades?" next="167"></option>
+		<option optionid="2" optiontext="What is the city of Traire like?" next="169"></option>
+		<option optionid="3" optiontext="How about a friendly rematch?" next="186" icon="Fight"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="186" npcName="Aramis Artagne the Trairian Blademaster" anim="1" text="Indeed, matching blades with you is a pleasure. Let us dance!" posx="459" posy="1350">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=145,SetVar=Q104FightAfterQuest-4" icon="Fight"></option>
+	</node>
+
+
+	<node id="190" npcName="Mayor Albert Foxford" anim="1" text="I watched your valiant efforts from back here, but I must say things may be worse than before. Not only do we have a pumpkin monster out and about, it also appears to have gone quite mad. Please, I beg you, finish the creature off." posx="20" posy="26">
+		<option optionid="1" optiontext="Meant to ask, what is this festival you've got going here?" next="191"></option>
+		<option optionid="2" optiontext="I'll try." next="0"></option>
+	</node>
+	<node id="191" npcName="Mayor Albert Foxford" anim="1" text="Why, the Harvest Festival of course! All around the world folk are known to celebrate their harvests, yet did anyone seem keen for a festival in our lands? Well I'll tell you, Little Grainwater will be known for its Harvest Festivals for years to come!" posx="456" posy="30">
+		<option optionid="1" optiontext="How's it going for you?" next="192"></option>
+		<option optionid="2" optiontext="Sure." next="0"></option>
+	</node>
+	<node id="192" npcName="Mayor Albert Foxford" anim="1" text="Please, I'm not able to think of anything other than that crazy pumpkin abomination prowling about! I fear any moment now it's going to decide to rip the head off one of our festival goers! I beg of you, finish the creature off." posx="874" posy="30">
+		<option optionid="1" optiontext="I'll try." next="0"></option>
+	</node>
+
+
+	<node id="200" npcName="Mayor Albert Foxford" anim="1" text="Please tell me you've brought a resolution to the ruckus at the pumpkin patch." posx="28" posy="19">
+		<option optionid="1" optiontext="The mad pumpkin head has been dealt with." next="201" icon="Quest"></option>
+		<option optionid="2" optiontext="Not sure." next="0"></option>
+	</node>
+	<node id="201" npcName="Mayor Albert Foxford" anim="1" text="Well that's the weight of a huge pumpkin off my shoulders. For a moment there I feared the festival was going to turn into a disaster. On behalf of our little village I thank you." posx="461" posy="18">
+		<option optionid="1" optiontext="" next="202"></option>
+	</node>
+	<node id="202" npcName="Mayor Albert Foxford" anim="1" text="Speaking of pumpkins, have you tried the refreshing festival pumpkin juice? Now that the horrible monster is no longer guarding them, we are finally free to use our hefty festival pumpkins to make the juice." posx="892" posy="21">
+		<option optionid="1" optiontext="Pumpkin juice?" next="203"></option>
+		<option optionid="2" optiontext="How come you landed on hiring a crazy witch anyway?" next="208"></option>
+		<option optionid="3" optiontext="Quite the festival for a small village like this." next="205"></option>
+		<option optionid="4" optiontext="I better see what that's about then." next="209" icon="LeadingExit"></option>
+	</node>
+	<node id="203" npcName="Mayor Albert Foxford" anim="1" text="A little speciality of our village cook Gerda Huxlow. We've grown our festival pumpkins specifically with her juice making in mind. Those pumpkins are quite heavy though, so we like to gather them communally. You'll need both hands to haul those pumpkins around, that's for sure." posx="1318" posy="21">
+		<option optionid="1" optiontext="" next="204"></option>
+	</node>
+	<node id="204" npcName="Mayor Albert Foxford" anim="1" text="Now you can't just go plopping a pumpkin whole into Gerda's cauldron! That's what the village ''executioner'' is for, hehe... Bring the pumpkins to him, he'll know how to take care of them. Gerda will then reward you for your efforts." posx="1738" posy="19">
+		<option optionid="1" optiontext="Quite the festival for a small village like this." next="205"></option>
+		<option optionid="2" optiontext="How come you landed on hiring a crazy witch anyway?" next="208"></option>
+		<option optionid="3" optiontext="Right, maybe I'll check it out." next="209" icon="LeadingExit"></option>
+	</node>
+	<node id="205" npcName="Mayor Albert Foxford" anim="1" text="Yes, well I got sick of people looking down on us. Nobody ever hears of Little Grainwater upon Aure. Folk don't even realize we're our own village sometimes, thinking we're either that remote corner of Grainwater, or an outgrowth of Haywind City!" posx="1553" posy="516">
+		<option optionid="1" optiontext="" next="206"></option>
+	</node>
+	<node id="206" npcName="Mayor Albert Foxford" anim="1" text="It's more like Haywind City grew into us! And look how those city folk chose to build their stupid walls when we proudly proclaimed we're our own independent village! It's ridiculous!" posx="1967" posy="515">
+		<option optionid="1" optiontext="" next="207"></option>
+	</node>
+	<node id="207" npcName="Mayor Albert Foxford" anim="1" text="Well I'm tired of it all, so I decided this isn't going to be some place people just walk through on their way to somewhere else - it'll be a place where people come to gather!" posx="2381" posy="520">
+		<option optionid="1" optiontext="So what's this about the pumpkin juice again?" next="203"></option>
+		<option optionid="2" optiontext="How come you landed on hiring a crazy witch anyway?" next="208"></option>
+		<option optionid="3" optiontext="How very ambitious of you... but I should get going." next="209" icon="LeadingExit"></option>
+	</node>
+	<node id="208" npcName="Mayor Albert Foxford" anim="1" text="She didn't seem that crazy on the surface! She took interest while we were setting up the festival grounds and said it'd be no trouble for her to entertain the children. What's the harm, I thought!" posx="2423" posy="14">
+		<option optionid="1" optiontext="Quite the festival for a small village like this." next="205"></option>
+		<option optionid="2" optiontext="So what's this about the pumpkin juice again?" next="203"></option>
+		<option optionid="3" optiontext="What's the harm indeed... I should get going." next="209" icon="LeadingExit"></option>
+	</node>
+	<node id="209" npcName="Mayor Albert Foxford" anim="1" text="Thanks again for the help! Don't forget to enjoy the festival now." posx="2910" posy="424">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=103-999"></option>
+	</node>
+
+
+	<node id="215" npcName="Mayor Albert Foxford" anim="1" text="Hope you're enjoying the festival, friend!" posx="19" posy="11">
+		<option optionid="1" optiontext="Tell me about this pumpkin juice of yours again." next="216"></option>
+		<option optionid="2" optiontext="Quite the festival for a small village like this." next="218"></option>
+		<option optionid="3" optiontext="Remind me, how come you landed on hiring a crazy witch anyway?" next="221"></option>
+		<option optionid="4" optiontext="Quite." next="0"></option>
+	</node>
+	<node id="216" npcName="Mayor Albert Foxford" anim="1" text="A little speciality of our village cook Gerda Huxlow. We've grown our festival pumpkins specifically with her juice making in mind. Those pumpkins are quite heavy though, so we like to gather them communally. You'll need both hands to haul those pumpkins around, that's for sure." posx="450" posy="12">
+		<option optionid="1" optiontext="" next="217"></option>
+	</node>
+	<node id="217" npcName="Mayor Albert Foxford" anim="1" text="Now you can't just go plopping a pumpkin whole into Gerda's cauldron! That's what the village ''executioner'' is for, hehe... Bring the pumpkins to him, he'll know how to take care of them. Gerda will then reward you for your efforts." posx="883" posy="18">
+		<option optionid="1" optiontext="Quite the festival for a small village like this." next="218"></option>
+		<option optionid="2" optiontext="Remind me, how come you landed on hiring a crazy witch anyway?" next="221"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="218" npcName="Mayor Albert Foxford" anim="1" text="Yes, well I got sick of people looking down on us. Nobody ever hears of Little Grainwater upon Aure. Folk don't even realize we're our own village sometimes, thinking we're either that remote corner of Grainwater, or an outgrowth of Haywind City!" posx="872" posy="388">
+		<option optionid="1" optiontext="" next="219"></option>
+	</node>
+	<node id="219" npcName="Mayor Albert Foxford" anim="1" text="It's more like Haywind City grew into us! And look how those city folk chose to build their stupid walls when we proudly proclaimed we're our own independent village! It's ridiculous!" posx="1301" posy="394">
+		<option optionid="1" optiontext="" next="220"></option>
+	</node>
+	<node id="220" npcName="Mayor Albert Foxford" anim="1" text="Well I'm tired of it all, so I decided this isn't going to be some place people just walk through on their way to somewhere else - it'll be a place where people come to gather!" posx="1720" posy="394">
+		<option optionid="1" optiontext="Remind me, how come you landed on hiring a crazy witch anyway?" next="221"></option>
+		<option optionid="2" optiontext="Tell me about this pumpkin juice of yours again." next="216"></option>
+		<option optionid="3" optiontext="How very ambitious." next="0"></option>
+	</node>
+	<node id="221" npcName="Mayor Albert Foxford" anim="1" text="She didn't seem that crazy on the surface! She took interest while we were setting up the festival grounds and said it'd be no trouble for her to entertain the children. What's the harm, I thought!" posx="445" posy="249">
+		<option optionid="1" optiontext="Tell me about this pumpkin juice of yours again." next="216"></option>
+		<option optionid="2" optiontext="Quite the festival for a small village like this." next="218"></option>
+		<option optionid="3" optiontext="What's the harm indeed..." next="0"></option>
+	</node>
+
+
+	<node id="230" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" text="Ah, you've come to enjoy the festival too, yes? Here to partake in the fun and games? Perhaps you've also tried Gerda's lovely pumpkin juice? I'm something of a juice maker myself.\n\n&lt;color=#9C8C77&gt;*The man lets out a short laugh in a gruff tone.*&lt;/color&gt;" posx="26" posy="22">
+		<option optionid="1" optiontext="And pray tell, what kind of juice are you making?" next="231" icon="Quest"></option>
+		<option optionid="2" optiontext="I'll leave you to it." next="0"></option>
+	</node>
+	<node id="231" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" text="Ooh, the dangerous kind. Matter of fact is I've been waiting to persuade one of you thrill seeking festival goers to lend me a hand with my... 'juice'. You like danger, mister?" posx="445" posy="22">
+		<option optionid="1" optiontext=" Oh yes, what do you need?" next="232" icon="Quest"></option>
+		<option optionid="2" optiontext="I don't like danger, no." next="0"></option>
+	</node>
+	<node id="232" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" text="Need some ingredients from the cobwebbed thicket off to the side of the road, due east. Place is crawling with venomous little blackhair spiders and I need their legs. Only the really hairy ones though - it's important they got lots of hairs on them." posx="861" posy="21">
+		<option optionid="1" optiontext="" next="233"></option>
+	</node>
+	<node id="233" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" text="And I need their eggs, those are important too. Look for a sheltered cave, they like to nest in those. Gotta find where they nest to get to their eggs, you see?" posx="864" posy="253">
+		<option optionid="1" optiontext="And why would I do this again?" next="234"></option>
+		<option optionid="2" optiontext="Sure, why not." next="235" icon="Quest"></option>
+		<option optionid="3" optiontext="Not about to put myself in danger for some silliness." next="0"></option>
+	</node>
+	<node id="234" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" text="Thrill seeking? Thirst for an exciting adventure in a dark thicket? Morbid curiosity for what juice I'm about to brew out of what you bring me? How could you resist?" posx="1299" posy="20">
+		<option optionid="1" optiontext="Sure, why not." next="235" icon="Quest"></option>
+		<option optionid="2" optiontext="Not about to put myself in danger for some silliness." next="0"></option>
+	</node>
+	<node id="235" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" text="Excellent! I knew one of you aspiring intellectuals would find in you the curiosity to support my work here! Now, I'll be needing 6 of those legs and 3 eggs, that's all. I'll see you when you get back with them, yes? If you get back..." posx="1368" posy="376">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=105-1"></option>
+	</node>
+
+	
+	<node id="240" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" text="Ah, you've come to enjoy the festival too, yes? Here to partake in the fun and games...? Wait, I've spoken to you already, haven't I? Ahem, you agreed to go in search of spider eggs and their hairy legs?" posx="19" posy="12">
+		<option optionid="1" optiontext="I have the spider parts you asked for." next="243" checks="Quest=105-1-1,HasItem=1134-6|1135-3" icon="Quest"></option>
+		<option optionid="2" optiontext="Remind me, where was I supposed to look for them again?" next="241" checks="Quest=105-1-1,!HasItem=1134-6|1135-3"></option>
+		<option optionid="3" optiontext="What's it you want these spider parts so badly for?" next="242"></option>
+		<option optionid="4" optiontext="I've got nothing." next="0"></option>
+	</node>
+	<node id="241" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" text="Just delve into that cobwebbed thicket off to the side there. It's filled with venomous spiders, remember? It's precisely from them that I want 6 especially hairy legs. And I'll need 3 of their spider eggs too, so look for a sheltered cave where they might've made their nest." posx="906" posy="334">
+		<option optionid="1" optiontext="What's it you want these spider parts so badly for?" next="242"></option>
+		<option optionid="2" optiontext="Right." next="0"></option>
+	</node>
+	<node id="242" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" text="I'm making a brew here, remember? Not quite like Gerda's pumpkin brew at the festival site, though - nothing like it at all. A dangerous brew, but then you like danger, don't you mister? Perhaps it's why you signed up to help me in the first place?" posx="468" posy="477">
+		<option optionid="1" optiontext="Remind me, where was I supposed to look for the spider parts again?" next="241" checks="Quest=105-1-1"></option>
+		<option optionid="2" optiontext="I have the spider parts you asked for." next="243" checks="Quest=105-2-2,HasItem=1134-6|1135-3" icon="Quest"></option>
+		<option optionid="3" optiontext="Right." next="0"></option>
+	</node>
+	<node id="243" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" text="&lt;color=#9C8C77&gt;*Melvin dumps the spider parts into his cauldron, muttering while he stirs the pot.*&lt;/color&gt;\n\nWonderful, just wonderful... I knew one of you would eventually come through... It's simple statistics..." posx="474" posy="13">
+		<option optionid="1" optiontext="Hrm?" next="244" icon="Quest"></option>
+	</node>
+	<node id="244" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" text="&lt;color=#9C8C77&gt;*Melvin pours his 'juice' into vials and packs them into a box carefully.*&lt;/color&gt;\n\nThere's a lady staying at the Singing Sparrow Tavern when you enter the city, not far from here." posx="466" posy="242">
+		<option optionid="1" optiontext="" next="245"></option>
+	</node>
+	<node id="245" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" text="Ask for Iris Raven. She'll be waiting on the package, she knows what's in it. You'll get your share of the goods when the delivery's done, agreed?" posx="911" posy="14">
+		<option optionid="1" optiontext="Doesn't this just reek of mystery and skulduggery?" next="246"></option>
+		<option optionid="2" optiontext="Sure, no questions asked." next="247" icon="Quest"></option>
+	</node>
+	<node id="246" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" text="Oooh, but isn't that just why you got into this job in the first place? Thrill seeking, morbid curiosity, something like that? Surely you can do nothing but see this through to the end." posx="1333" posy="14">
+		<option optionid="1" optiontext="I guess so..." next="247" icon="Quest"></option>
+	</node>
+	<node id="247" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" text="Excellent, just remember; South Haywind, Singing Sparrow Tavern, ask for Iris Raven - deliver the package to her." posx="1411" posy="311">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=105-3,RemoveItems=1134-6|1135-3,AddItems=1139-1"></option>
+	</node>
+
+	
+	<node id="250" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" text="Ah, if it isn't my thrill seeking mystery enjoyer. I hear word from 'Iris' you delivered my package, I wonder if you enjoyed my brew? I certainly hope you didn't try drinking any, you do look quite pale come to think of it..." posx="20" posy="13">
+		<option optionid="1" itemIcon="1136" optiontext="I could use some more, actually... &lt;color=#9C8C77&gt;*3 spider legs, 1 egg*&lt;/color&gt;" next="251" checks="HasItem=1134-3|1135-1" showGreyedOutOption="1"></option>
+		<option optionid="2" itemIcon="1136" optiontext="I could use a lot more, actually... &lt;color=#9C8C77&gt;*15 spider legs, 5 eggs*&lt;/color&gt;" next="252" checks="HasItem=1134-15|1135-5" showGreyedOutOption="1"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="251" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" itemIcon="1136" text="As the doctor ordered...\n\n&lt;color=#9C8C77&gt;*You receive 1 x Venomous Blackhair Extract*&lt;/color&gt;" posx="443" posy="14">
+		<option optionid="1" optiontext="" next="0" icon="Loot" actions="AddItems=1136-1-true,RemoveItems=1134-3|1135-1"></option>
+	</node>
+	<node id="252" npcName="Melvin Greyr the Dubious Brewmaker" anim="1" itemIcon="1136" text="Why, have as much as you need - I'm here to serve.\n\n&lt;color=#9C8C77&gt;*You receive 5 x Venomous Blackhair Extract*&lt;/color&gt;" posx="442" posy="255">
+		<option optionid="1" optiontext="" next="0" icon="Loot" actions="AddItems=1136-5-true,RemoveItems=1134-15|1135-5"></option>
+	</node>
+
+
+	<node id="260" npcName="Iris Raven" anim="1" text="Unless I have business with you, you better back away slowly down that ladder if you know what's best for you." posx="18" posy="17">
+		<option optionid="1" optiontext="The alchemist from the Harvest Fair sent me." next="261" checks="Quest=105-3-3,HasItem=1139-1" icon="Quest"></option>
+		<option optionid="2" optiontext="The alchemist from the Harvest Fair sent me." next="262" checks="Quest=105-3-3,!HasItem=1139-1" icon="Quest"></option>
+		<option optionid="3" optiontext="Rude." next="0"></option>
+	</node>
+	<node id="261" npcName="Iris Raven" anim="1" itemIcon="1139" text="&lt;color=#9C8C77&gt;*Ms. Raven takes the package from you without saying a word, inspects the contents and removes her share of the vials within. She then hands the rest back over to you.*&lt;/color&gt;" posx="447" posy="17">
+		<option optionid="1" optiontext="" next="263"></option>
+	</node>
+	<node id="262" npcName="Iris Raven" anim="1" text="You have a package for me?" posx="441" posy="265">
+		<option optionid="1" optiontext="Um, hold on... what's happened to it...?" next="0"></option>
+	</node>
+	<node id="263" npcName="Iris Raven" anim="1" text="The rest is for your payment. I assume you know what to do with it?" posx="868" posy="19">
+		<option optionid="1" optiontext="Truth be told, I have no idea what's going on." next="264"></option>
+		<option optionid="2" optiontext="Yes, yes of course, what do you take me for..." next="265"></option>
+	</node>
+	<node id="264" npcName="Iris Raven" anim="1" itemIcon="1138" text="Right, of course you don't. It's better that way. Here, take this too. It'll help you figure things out.\n\n&lt;color=#9C8C77&gt;*She pulls out a tattered book from her bags and hands it to you.*&lt;/color&gt;" posx="1290" posy="16">
+		<option optionid="1" optiontext="Iris Raven, that really your name?" next="266"></option>
+		<option optionid="2" optiontext="So, err... how are you planning to use those vials?" next="268"></option>
+		<option optionid="3" optiontext="Um, okay, thanks." next="269" icon="Quest"></option>
+	</node>
+	<node id="265" npcName="Iris Raven" anim="1" itemIcon="1138" text="&lt;color=#9C8C77&gt;*For a moment she eyes at you sceptically, she then pulls out a tattered book from her bags and hands it to you.*&lt;/color&gt;\n\nThat'll help you figure things out." posx="878" posy="322">
+		<option optionid="1" optiontext="Iris Raven, that really your name?" next="266"></option>
+		<option optionid="2" optiontext="So, err... how are you planning to use those vials?" next="268"></option>
+		<option optionid="3" optiontext="I see, thanks..." next="269" icon="Quest"></option>
+	</node>
+	<node id="266" npcName="Iris Raven" anim="1" text="What do you think...?" posx="1714" posy="20">
+		<option optionid="1" optiontext="Um... no?" next="267"></option>
+		<option optionid="2" optiontext="So, err... how are you planning to use those vials?" next="268"></option>
+		<option optionid="3" optiontext="Right, well thanks I guess..." next="269" icon="Quest"></option>
+	</node>
+	<node id="267" npcName="Iris Raven" anim="1" text="&lt;color=#9C8C77&gt;*She rolls her eyes in exasperation.*&lt;/color&gt;\n\nIt was a rhetorical question, genius." posx="2133" posy="22">
+		<option optionid="1" optiontext="So, err... how are you planning to use those vials?" next="268"></option>
+		<option optionid="2" optiontext="Right, well thanks I guess..." next="269" icon="Quest"></option>
+	</node>
+	<node id="268" npcName="Iris Raven" anim="1" text="Like I'm going to tell you? I won't ask what you'll do with yours either, so let's leave it at that." posx="1297" posy="382">
+		<option optionid="1" optiontext="Iris Raven, that really your name?" next="266"></option>
+		<option optionid="2" optiontext="Right, well thanks I guess..." next="269" icon="Quest"></option>
+	</node>
+	<node id="269" npcName="Iris Raven" anim="1" text="A piece of friendly advice before you go; should you need more of those vials, Melvin might fix you up with more of the stuff. But maybe you've already discerned how to brew it yourself, hm?" posx="1948" posy="545">
+		<option optionid="1" optiontext="Right." next="0" actions="UpdateQuest=105-999,RemoveItems=1139-1"></option>
+	</node>
+
+
+	<node id="275" npcName="Iris Raven" anim="1" text="Aren't we done with our business?" posx="36" posy="22">
+		<option optionid="1" itemIcon="1138" optiontext="Could I get another copy of that book you gave me?" next="276" checks="!ItemExistsGlobal=1138"></option>
+		<option optionid="2" optiontext="Mhm..." next="0"></option>
+	</node>
+	<node id="276" npcName="Iris Raven" anim="1" itemIcon="1138" text="&lt;color=#9C8C77&gt;*You gain another copy of the book, just in case.*&lt;/color&gt;" posx="452" posy="24">
+		<option optionid="1" optiontext="" next="0" actions="AddItems=1138-1"></option>
+	</node>
+
+
+	<node id="280" npcName="Highstriker Herald" anim="1" text="How about you, sir? Have you got the strength of arm, the determination of will? Go on, show us what you're made of - make that bell ring!" posx="14" posy="13">
+		<option optionid="1" optiontext="What do I have to do?" next="281"></option>
+		<option optionid="2" optiontext="What's this festival about?" next="284"></option>
+		<option optionid="3" optiontext="Maybe later." next="0"></option>
+	</node>
+	<node id="281" npcName="Highstriker Herald" anim="1" text="Just step right up to the highstriker, I'll give you a hammer, and off you go! I'll give you prize tickets if you manage to hit high! Reckon you have what it takes?" posx="436" posy="14">
+		<option optionid="1" optiontext="I'm quite experienced at hitting things hard, to be fair." next="282" checks="HasSkillLevel=Swordsmanship-25" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Can't say I'm most adept with a mallet..." next="283" checks="!HasSkillLevel=Swordsmanship-20"></option>
+		<option optionid="3" optiontext="Yeah, maybe..." next="0"></option>
+	</node>
+	<node id="282" npcName="Highstriker Herald" anim="1" text="Oooh, that will serve you well here then won't it, sir? But all the more pressure to hit it all the way to the top, am I right? Go on, step right up and have a go." posx="855" posy="14">
+		<option optionid="1" optiontext="What's this festival about, anyway?" next="284"></option>
+		<option optionid="2" optiontext="Right..." next="0"></option>
+	</node>
+	<node id="283" npcName="Highstriker Herald" anim="1" text="Oh but then most folk aren't necessarily. Not to worry sir, it might make things a little harder, but I've seen plenty a folk who looked scrawny on the outside, but when they slammed their hammer down I swear it made lightning crackle!" posx="855" posy="316">
+		<option optionid="1" optiontext="What's this festival about, anyway?" next="284"></option>
+		<option optionid="2" optiontext="Right..." next="0"></option>
+	</node>
+	<node id="284" npcName="Highstriker Herald" anim="1" text="Why, it is the festival of harvest, my friend - welcome! Ain't any place else in Imberthale where it's celebrated these days as far as I know, so why don't you find yourself some pumpkin juice and come show us all your might at the highstriker, eh?" posx="439" posy="378">
+		<option optionid="1" optiontext="What do I have to do?" next="281"></option>
+		<option optionid="2" optiontext="Yeah, maybe..." next="0"></option>
+	</node>
+
+	
+	<node id="290" npcName="Festival Targetmaster" anim="1" text="Right this way to the archery targets, sir. I trust you're into the noble sport of archery and not that distasteful highstriker stuff? No need to worry about your own bow, I'll provide you with a festival bow to keep things fair. Oh, and do try to aim your hits as close to the center of the board, only those really count around here." posx="18" posy="14">
+		<option optionid="1" optiontext="Got a fair share of practice shooting at moving targets, shouldn't be too hard." next="291" checks="HasSkillLevel=Archery-25" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Wouldn't say I'm the best shot..." next="292" checks="!HasSkillLevel=Archery-25"></option>
+		<option optionid="3" optiontext="What's this festival about?" next="293"></option>
+		<option optionid="4" optiontext="I see." next="0"></option>
+	</node>
+	<node id="291" npcName="Festival Targetmaster" anim="1" text="Quite right, sir. This is of course why I've set up a rather small target, but alas there's only so much one can do. It's been challenging enough for the peasantry in any case." posx="436" posy="12">
+		<option optionid="1" optiontext="What's this festival about, anyway?" next="293"></option>
+		<option optionid="2" optiontext="Fair enough." next="0"></option>
+	</node>
+	<node id="292" npcName="Festival Targetmaster" anim="1" text="No matter, sir, we don't discriminate around here. But do try to take your miss swiftly, so that others may have a go." posx="850" posy="12">
+		<option optionid="1" optiontext="What's this festival about, anyway?" next="293"></option>
+		<option optionid="2" optiontext="Fair enough." next="0"></option>
+	</node>
+	<node id="293" npcName="Festival Targetmaster" anim="1" text="But sir...? This is, of course, the harvest festival. Now, I understand it's not been celebrated much in Imberthale in recent years, but surely it's why you along with all these other people have chosen to come here?" posx="436" posy="309">
+		<option optionid="1" optiontext="What am I meant to do again?" next="294"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+	<node id="294" npcName="Festival Targetmaster" anim="1" text="Really now, sir, it's an archery target. Heavens, these peasants are so thick, I'm going to lose my mind... Step right up to the fence, we'll give you a bow, and you'll make the arrow thing fly, okay? If you're lucky you might even hit the target and win a few prize tickets, isn't that just wonderful?" posx="856" posy="311">
+		<option optionid="1" optiontext="Got a fair share of practice shooting at moving targets, shouldn't be too hard." next="291" checks="HasSkillLevel=Archery-25" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Wouldn't say I'm the best shot..." next="292" checks="!HasSkillLevel=Archery-25"></option>
+		<option optionid="3" optiontext="Sure." next="0"></option>
+	</node>
+
+
+	<node id="300" npcName="Sirka the Fortune Teller" anim="1" text="Ah yes, I SEE you, wanderer of fates, seeker of truths. No need to be timid now, come closer... I can sense your aura tingling, the threads on the tapestry of your fate are weaving towards something... but what?" posx="24" posy="25">
+		<option optionid="1" optiontext="" next="301"></option>
+	</node>
+	<node id="301" npcName="Sirka the Fortune Teller" anim="1" text="Ah, I see it now... only the rattle of fresh bones can whisper the truths of your destiny. Bones, mysterious stranger - I must hear the bones!" posx="439" posy="25">
+		<option optionid="1" itemIcon="206" optiontext="&lt;color=#9C8C77&gt;*Offer 6 bones.*&lt;/color&gt;" next="306" checks="HasItem=206-6" actions="RemoveItems=206-6" showGreyedOutOption="1"></option>
+		<option optionid="2" itemIcon="206" optiontext="&lt;color=#9C8C77&gt;*Offer 3 bones.*&lt;/color&gt;" next="303" checks="HasItem=206-3" actions="RemoveItems=206-3" showGreyedOutOption="1"></option>
+		<option optionid="3" optiontext="What's this festival about?" next="302"></option>
+		<option optionid="4" optiontext="I don't have bones for you." next="0"></option>
+	</node>
+	<node id="302" npcName="Sirka the Fortune Teller" anim="1" text="Your destiny has brought you to the harvest festival, traveler... Intensely celebrated in ages past... So it will be again... Such are the fickle ways of time. But the bones, stranger - I must hear the bones!" posx="874" posy="26">
+		<option optionid="1" itemIcon="206" optiontext="&lt;color=#9C8C77&gt;*Offer 6 bones.*&lt;/color&gt;" next="306" checks="HasItem=206-6" actions="RemoveItems=206-6" showGreyedOutOption="1"></option>
+		<option optionid="2" itemIcon="206" optiontext="&lt;color=#9C8C77&gt;*Offer 3 bones.*&lt;/color&gt;" next="303" checks="HasItem=206-3" actions="RemoveItems=206-3" showGreyedOutOption="1"></option>
+		<option optionid="3" optiontext="I don't have bones for you." next="0"></option>
+	</node>
+	<node id="303" npcName="Sirka the Fortune Teller" anim="1" text="So few, oh so few...! Yet still they rattle! Oooh, let old Sirka hear them rattle!\n\n&lt;color=#9C8C77&gt;*The deranged old lady ties the bones you gave her to a string and rattles them around while listening to them intently.*&lt;/color&gt;" posx="885" posy="649">
+		<option optionid="1" optiontext="" next="304"></option>
+	</node>
+	<node id="304" npcName="Sirka the Fortune Teller" anim="1" text="So quiet, so quiet, for the bones are few... yet I hear them... they whisper but one word, over and over... it is DEATH..." posx="1305" posy="648">
+		<option optionid="1" optiontext="" next="305"></option>
+	</node>
+	<node id="305" npcName="Sirka the Fortune Teller" anim="1" text="&lt;color=#9C8C77&gt;*You suppose that makes sense, you've been cursed by undeath after all. Then again the bones alone represent death. Either way, you feel a modicum of enlightenment.*&lt;/color&gt;" posx="1724" posy="651">
+		<option optionid="1" optiontext="&lt;color=green&gt;You've gained 100 base experience in Sorcery, +1 festival prize ticket.&lt;/color&gt;" next="0" icon="Skills/magic" actions="AddXp=magic-100,AddItems=1130-1"></option>
+	</node>
+	<node id="306" npcName="Sirka the Fortune Teller" anim="1" text="Yes, yes, bonesss! Oooooh, let old Sirka hear them SING!\n\n&lt;color=#9C8C77&gt;*The deranged old lady ties the bones you gave her to a string and rattles them around while listening to them intently.*&lt;/color&gt;" posx="886" posy="415">
+		<option optionid="1" optiontext="" next="307"></option>
+	</node>
+	<node id="307" npcName="Sirka the Fortune Teller" anim="1" text="So loud, so loud the bones sing! Oh it's such bliss, their truth is pure bliss I tell you! And the word they scream at me, louder and louder, there is but one word... and it is DEATH!" posx="1307" posy="415">
+		<option optionid="1" optiontext="" next="308"></option>
+	</node>
+	<node id="308" npcName="Sirka the Fortune Teller" anim="1" text="&lt;color=#9C8C77&gt;*You suppose that makes sense, you've been cursed by undeath after all. Then again the bones alone represent death. Either way, you feel a modicum of enlightenment.*&lt;/color&gt;" posx="1724" posy="415">
+		<option optionid="1" optiontext="&lt;color=green&gt;You've gained 225 base experience in Sorcery, + 2 festival prize tickets.&lt;/color&gt;" next="0" icon="Skills/magic" actions="AddXp=magic-225,AddItems=1130-2"></option>
+	</node>
+
+
+	<node id="315" npcName="Festival Prizes Master" anim="1" text="Fortune favor you in our festival games, good sir? Come to trade prize tickets for rewards of incredible fashion and power, perchance?" posx="18" posy="15">
+		<option optionid="1" optiontext="Let's see what you've got." next="0" actions="OpenShop=99"></option>
+		<option optionid="2" optiontext="How do I gain prize tickets?" next="316"></option>
+		<option optionid="3" optiontext="What's this festival about?" next="317"></option>
+		<option optionid="4" optiontext="Later." next="0"></option>
+	</node>
+	<node id="316" npcName="Festival Prizes Master" anim="1" text="The festival site is bustling with exciting games and events. You need but participate, do well, and our event organizers are prepared to reward you with tickets." posx="442" posy="15">
+		<option optionid="1" optiontext="What's this festival about, anyway?" next="317"></option>
+		<option optionid="2" optiontext="Let's see your store." next="0" actions="OpenShop=99"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="317" npcName="Festival Prizes Master" anim="1" text="Sir, you've arrived at the Harvest Fair! The first of its kind here in Little Grainwater, set up by our proud mayor Albert Foxford. And I do believe it is the only one currently celebrated in all of Imberthale. Too much unrest elsewhere, I fear." posx="859" posy="14">
+		<option optionid="1" optiontext="So, how do I gain prize tickets?" next="316"></option>
+		<option optionid="2" optiontext="Let's see your store." next="0" actions="OpenShop=99"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+
+
+	<node id="320" npcName="The ''Executioner''" anim="1" text="No, there's no pumpkin juice available! Not unless the mayor can undo whatever the mess is going on at the pumpkin patch!" posx="17" posy="15">
+		<option optionid="1" optiontext="What's the mess at the pumpkin patch?" next="321"></option>
+		<option optionid="2" optiontext="You're an executioner...?" next="322"></option>
+		<option optionid="3" optiontext="What's this festival about?" next="323"></option>
+		<option optionid="4" optiontext="I'll leave you to it." next="0"></option>
+	</node>
+	<node id="321" npcName="The ''Executioner''" anim="1" text="Haven't you just looked at it?! Some bewitched monster is now guarding our festival pumpkins - the ones we're meant to be turning into pumpkin juice! Gah, talk to the mayor, I've no idea what to do about it." posx="441" posy="16">
+		<option optionid="1" optiontext="You're an executioner...?" next="322"></option>
+		<option optionid="2" optiontext="What's this festival about?" next="323"></option>
+		<option optionid="3" optiontext="I'll leave you to it." next="0"></option>
+	</node>
+	<node id="322" npcName="The ''Executioner''" anim="1" text="Yeh for the pumpkins of course, silly. It's a festival, we're not actually going to start choppin' off heads here. Though I wouldn't put it past them folk at the fighting ring, come to think of it..." posx="860" posy="12">
+		<option optionid="1" optiontext="What's this festival about?" next="323"></option>
+		<option optionid="2" optiontext="What's the mess at the pumpkin patch?" next="321"></option>
+		<option optionid="3" optiontext="I'll leave you to it." next="0"></option>
+	</node>
+	<node id="323" npcName="The ''Executioner''" anim="1" text="Why, you stumble here by accident? We've got the Harvest Festival going on, first time in Little Grainwater and we're quite proud of it actually. Lots of games, entertainment and stuff." posx="438" posy="386">
+		<option optionid="1" optiontext="What's the mess at the pumpkin patch?" next="321"></option>
+		<option optionid="2" optiontext="You're an executioner...?" next="322"></option>
+		<option optionid="3" optiontext="I'll leave you to it." next="0"></option>
+	</node>
+
+
+	<node id="325" npcName="The ''Executioner''" anim="1" text="Ready to put some pumpkins on the block and make 'em bleed? &lt;color=#9C8C77&gt;*Guffaw*&lt;/color&gt;!" posx="25" posy="12">
+		<option optionid="1" itemIcon="1046" optiontext="Got one right here." next="326" checks="HasItemEquipped=1046" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="You want to make pumpkins bleed...?" next="327"></option>
+		<option optionid="3" optiontext="What's this festival about?" next="328"></option>
+		<option optionid="4" optiontext="Nope." next="0"></option>
+	</node>
+	<node id="326" npcName="The ''Executioner''" anim="1" text="&lt;color=#9C8C77&gt;*The executioner readies his axe while chuckling to himself.*&lt;/color&gt;" posx="454" posy="12">
+		<option optionid="1" optiontext="" next="0"  itemIcon="1046" actions="Cinematic=170,UnequipSlot=weapon"></option>
+	</node>
+	<node id="327" npcName="The ''Executioner''" anim="1" text="Aye, we've got a right way of turning those delicious pumpkins into juice. I chop 'em up, Gerda over there turns the pieces into her speciality juice. Pumpkins are pretty large though, so we ask folk to carry them over if they expect to get the juice." posx="462" posy="314">
+		<option optionid="1" itemIcon="1046" optiontext="Got one right here." next="326" checks="HasItemEquipped=1046" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="What's this festival about?" next="328"></option>
+		<option optionid="3" optiontext="Alright." next="0"></option>
+	</node>
+	<node id="328" npcName="The ''Executioner''" anim="1" text="Why, you stumble here by accident? We've got the Harvest Festival going on, first time in Little Grainwater and we're quite proud of it actually. Lots of games, entertainment and stuff. You'll get pumpkin juice from us too, s'long as you haul the pumpkins over to us." posx="880" posy="313">
+		<option optionid="1" itemIcon="1046" optiontext="Got one right here." next="326" checks="HasItemEquipped=1046" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="You want to make pumpkins bleed...?" next="327"></option>
+		<option optionid="3" optiontext="Alright." next="0"></option>
+	</node>
+
+
+	<node id="330" npcName="Gerda Huxlow the Cauldron Mistress" anim="1" text="Aww, hun... I'm sorry but we've got no pumpkin juice to give you at the moment. There's been a bit of a hiccough at our festival pumpkin patch." posx="20" posy="15">
+		<option optionid="1" optiontext="What's the problem?" next="331"></option>
+		<option optionid="2" optiontext="What's this festival about?" next="332"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="331" npcName="Gerda Huxlow the Cauldron Mistress" anim="1" text="It's that... thing, haven't you seen? Honestly, I'm not sure what the mayor was thinking. Best you talk to him about it, but in short it looks like we can't collect our pumpkins because there's a monster guarding them." posx="446" posy="11">
+		<option optionid="1" optiontext="What's this festival about?" next="332"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+	<node id="332" npcName="Gerda Huxlow the Cauldron Mistress" anim="1" text="You don't know, hun? It's the Harvest Festival! Quite the sight, eh? Never dreamed it'd get so busy, guess folk really want a party at times like these." posx="867" posy="12">
+		<option optionid="1" optiontext="What's the problem at the pumpkin patch?" next="331"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+
+
+	<node id="335" npcName="Gerda Huxlow the Cauldron Mistress" anim="1" text="Go on, hun! The pumpkin patch is finally free, haul some pumpkins over to our Joffrey... ahem, I mean the 'Executioner', and I'll fix you up with my spicy pumpkin juice, alright?" posx="17" posy="14">
+		<option optionid="1" optiontext="What's this festival about?" next="336"></option>
+		<option optionid="2" optiontext="Alright." next="0"></option>
+	</node>
+	<node id="336" npcName="Gerda Huxlow the Cauldron Mistress" anim="1" text="You don't know, hun? It's the Harvest Festival! Quite the sight, eh? Never dreamed it'd get so busy, guess folk really want a party at times like these." posx="441" posy="14">
+		<option optionid="1" optiontext="I see." next="0"></option>
+	</node>
+
+	
+	<node id="340" npcName="Village Elder" anim="1" text="Ah, I'm too old for all this hustle and bustle. You young folk go ahead, enjoy yourselves now." posx="17" posy="16">
+		<option optionid="1" optiontext="What's all this commotion?" next="341"></option>
+		<option optionid="2" optiontext="Sure." next="0"></option>
+	</node>
+	<node id="341" npcName="Village Elder" anim="1" text="A passing traveller, are you? You've come at a historic moment, if I dare say so. The village of Little Grainwater here is stepping out of obscurity, hosting a wonderful festival celebrating the harvest. The one and only in all of Imberthale." posx="434" posy="15">
+		<option optionid="1" optiontext="I see..." next="0"></option>
+	</node>	
+
+</dialogue>
+
+
+
+

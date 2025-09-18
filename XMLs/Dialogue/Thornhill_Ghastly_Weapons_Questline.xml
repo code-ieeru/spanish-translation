@@ -1,0 +1,12 @@
+	<node id="1" npcName="Curator" anim="1" text="HELLO. WELCOME TO THE THORNHILL PRESERVATION SOCIETY, WHERE WE CATEGORIZE, RESEARCH, AND SELL ARTIFACTS TO TRADERS. WE CURRENTLY ARE NOT ACCEPTNING NEW CLIENTELE, BUT WE DO HAVE "LEGAL" WORK AVAILABLE IF YOU ARE INTERESTED." posx="106" posy="541">
+		<option optionid="1" optiontext="WHAT SORT OF "LEGAL" WORK? " next="2"></option>
+		<option optionid="2" optiontext="I AM INTERESTED IN THE WORK." next="3"></option>
+		<option optionid="3" optiontext="NO THANK YOU." next="0"></option>
+	</node>
+	<node id="3" npcName="Curator" anim="1" text="" posx="690" posy="561">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="2" npcName="Curator" anim="1" text="YES, THE ACQUISITION OF ARTIFACTS CAN BE CONSIDERED A LEGAL GRAY AREA THAT NOT EVERYONE AGREES WITH. GENERALLY SUPERSTITIOUS LOCALS OPPOSE THE REMOVAL OF ARTIFACTS THEY DEEM AS CURSED." posx="665" posy="133">
+		<option optionid="1" optiontext="" next="0"></option>
+		<option optionid="2" optiontext="" next="0"></option>
+	</node>

@@ -1,0 +1,126 @@
+<dialogue>
+	<node id="1" npcName="Sleeping Souls Initiate" anim="1" text="Oh, um... greetings traveling soul. You don't look like the average peasant. I pray, might you be the Dreamguard Champion I called for?" contextBefore="" contextAfter="" posx="78" posy="53">
+		<option optionid="1" optiontext="Dreamguard Champion? I don't think so..." icon="Quest" next="2"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="2" npcName="Sleeping Souls Initiate" anim="1" text="I see, my apologies. Several nights back I sent word to the High Visioners of our monastic order requesting aid from the Dreamguard. Champion Jorune Drey, said to be in the region, answered the call." contextBefore="" contextAfter="" posx="524" posy="63">
+		<option optionid="1" optiontext="" next="3"></option>
+	</node>
+	<node id="3" npcName="Sleeping Souls Initiate" anim="1" text="But weeks have passed and he's been neither seen nor heard from. My predicament remains unresolved and I don't know what to do." contextBefore="" contextAfter="" posx="959" posy="68">
+		<option optionid="1" optiontext="What predicament, exactly?" icon="Quest" next="4"></option>
+		<option optionid="2" optiontext="I'm sorry to hear that. Good luck." next="0"></option>
+	</node>
+	<node id="4" npcName="Sleeping Souls Initiate" anim="1" text="It's the Tomb of the Elder Druid - it's become haunted. Disturbed by the magics of Hydrobor, I believe, the skeleton of the Elder Druid Stratificas himself awoke in fury. How could I possibly appease the tomb without the Dreamguard to aid me?" contextBefore="" contextAfter="" posx="1389" posy="66">
+		<option optionid="1" optiontext="You don't need them. I can take care of this for you." icon="Quest" next="5"></option>
+		<option optionid="2" optiontext="Why are these Dreamguard important?" next="7"></option>
+		<option optionid="3" optiontext="Elder Druid Stratificas?" next="8"></option>
+		<option optionid="4" optiontext="Difficult indeed. Good luck." next="0"></option>
+	</node>
+	<node id="5" npcName="Sleeping Souls Initiate" anim="1" text="You could? I would be ever so grateful, but adventurer, I must warn you; although the Elder Druid's remains represent a mere echo of his power in life, confronting him is still a perilous task indeed!" contextBefore="" contextAfter="" posx="1870" posy="47">
+		<option optionid="1" optiontext="The fear of death no longer quite disturbs me the same as it once did - I trust I'll be fine." actions="UpdateQuest=60-1" next="0"></option>
+		<option optionid="2" optiontext="Then I would appreciate any advice you could offer." next="6"></option>
+	</node>
+	<node id="6" npcName="Sleeping Souls Initiate" anim="1" text="Hmm, yes... The master priest himself resides by the old shrine outside the city to the north. I recall he keeps incantations against the undead by the altar there; they might be of use to you if you can learn them." contextBefore="" contextAfter="" posx="2328" posy="45">
+		<option optionid="1" optiontext="Very well, I trust I can return the Elder Druid to rest." actions="UpdateQuest=60-1" next="0"></option>
+	</node>
+	<node id="7" npcName="Sleeping Souls Initiate" anim="1" text="Why, they are the esteemed warrior monks of our order, specialized in the ways of calming and vanquishing raging undead. In these turbulent times, their services are sadly often needed." contextBefore="" contextAfter="" posx="1891" posy="395">
+		<option optionid="1" optiontext="The Dreamguard you mentioned - Jorune - why would he not show up?" next="9"></option>
+		<option optionid="2" optiontext="Who's Elder Druid Stratificas?" next="8"></option>
+		<option optionid="3" optiontext="You don't need them. I can take care of this for you." icon="Quest" next="5"></option>
+		<option optionid="4" optiontext="A difficult situation indeed. Good luck." next="0"></option>
+	</node>
+	<node id="8" npcName="Sleeping Souls Initiate" anim="1" text="Oh, Stratificas was a renowned Elder Druid of the Ebon Green Circle many centuries ago, whose connection with the nature and healing magics is told to be the stuff of legends. He still holds a special place in the local memory and many would visit his grave, if it was not... well, you understand." contextBefore="" contextAfter="" posx="1556" posy="846">
+		<option optionid="1" optiontext="Why are these Dreamguard important?" next="7"></option>
+		<option optionid="2" optiontext="I can take care of this for you." icon="Quest" next="5"></option>
+		<option optionid="3" optiontext="A difficult situation indeed. Good luck." next="0"></option>
+	</node>
+	<node id="9" npcName="Sleeping Souls Initiate" anim="1" text="That is most troubling indeed. The Dreamguard do not shy away from their duties; it's possible he's been drastically delayed, but I do fear the worst might have happened. Confronting undead monsters is a necessary task, but also one that is most hazardous." contextBefore="" contextAfter="" posx="2313" posy="410">
+		<option optionid="1" optiontext="" next="10"></option>
+	</node>
+	<node id="10" npcName="Sleeping Souls Initiate" anim="1" text="I only know he was investigating the ruins of Greywall southeast before contact with him was lost. If your travels take you in that direction, perhaps you might discover his fate. I shiver to think, the Greywall dungeons have a dark reputation..." contextBefore="" contextAfter="" posx="2359" posy="634">
+		<option optionid="1" optiontext="Back to the issue at hand, who's Elder Druid Stratificas?" next="8"></option>
+		<option optionid="2" optiontext="Perhaps in his absence I can take care of this undead problem." icon="Quest" next="5"></option>
+		<option optionid="3" optiontext="Indeed, good luck." next="0"></option>
+	</node>
+
+	<node id="15" npcName="Sleeping Souls Initiate" anim="1" text="When you're ready, you'll find Stratificas down in his tomb by the corner of our cemetery. I may not be of much help in cleansing the tomb, but I'll do my best to provide answers to any questions you have." contextBefore="" contextAfter="" posx="37" posy="23">
+		<option optionid="1" optiontext="I put down the undead druid. What do you make of these writings I found on him?" checks="Quest=60-2-2,HasItem=750-1" icon="Quest" next="16"></option>
+		<option optionid="2" optiontext="Wait, I found something but I don't have it on me..." checks="Quest=60-2-2,!HasItem=750-1" icon="Quest" next="0"></option>
+		<option optionid="3" optiontext="Tell me about the Elder Druid." next="22"></option>
+		<option optionid="4" optiontext="Tell me about the Dreamguard." next="23"></option>
+		<option optionid="5" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="16" npcName="Sleeping Souls Initiate" anim="1" text="Hmm, let's see. \n\n &lt;color=cyan&gt; *The priest initiate studies the writings you brought intently.* &lt;/color&gt;" contextBefore="" contextAfter="" posx="482" posy="25">
+		<option optionid="1" optiontext="" next="17"></option>
+	</node>
+	<node id="17" npcName="Sleeping Souls Initiate" anim="1" text="Hmm... Hmmm... Hmm, yes... I see... Hmmmmm..." contextBefore="" contextAfter="" posx="910" posy="25">
+		<option optionid="1" optiontext="Well...?" next="18"></option>
+	</node>
+	<node id="18" npcName="Sleeping Souls Initiate" anim="1" text="Yes, these are written in an old druidic cipher, unintelligible to the common folk but familiar to any who studied the old cultures of Imberthale, including myself. There is a spell detailed within, which I could transcribe to you, if you're interested...?" contextBefore="" contextAfter="" posx="1344" posy="27">
+		<option optionid="1" optiontext="Yes, please! One can never know too many spells." next="19"></option>
+		<option optionid="2" optiontext="Is there anything else?" next="21"></option>
+	</node>
+	<node id="19" npcName="Sleeping Souls Initiate" anim="1" text="Indeed, just a moment... \n\n &lt;color=cyan&gt; *The priest initiate swiftly transcribes the spell into a book for you.* &lt;/color&gt;" contextBefore="" contextAfter="" posx="1811" posy="8">
+		<option optionid="1" optiontext="" next="20"></option>
+	</node>
+	<node id="20" npcName="Sleeping Souls Initiate" anim="1" itemIcon="748" text="Here you go, champion. Sadly there isn't much else I can reward your altruistic efforts with, but I hope this druidic secret can serve as a form of compensation. Ahem... 'May the wisdom of our ancestors light your path, traveler.'" contextBefore="" contextAfter="" posx="2262" posy="11">
+		<option optionid="1" optiontext="As yours, initiate." actions="RemoveItems=750-1,UpdateQuest=60-999" next="0"></option>
+	</node>
+	<node id="21" npcName="Sleeping Souls Initiate" anim="1" text="Oh, yes! There is plenty of interesting philosophy here, much that will intrigue historians, thinkers and students I believe. It also supports my suspicions about druidic beliefs being at odds with Hydrobor magics. I assure you, this is a most valuable find and..." contextBefore="" contextAfter="" posx="1601" posy="359">
+		<option optionid="1" optiontext="In that case I'll just take the spell, please." next="19"></option>
+	</node>
+	<node id="22" npcName="Sleeping Souls Initiate" anim="1" text="Well, Stratificas was a renowned Elder Druid of the Ebon Green Circle many centuries ago, whose connection with the nature and healing magics is told to be the stuff of legends. He still holds a special place in the local memory and many would visit his grave, if it was not... well, you understand." contextBefore="" contextAfter="" posx="481" posy="239">
+		<option optionid="1" optiontext="I see. Tell me about the Dreamguard." next="23"></option>
+		<option optionid="2" optiontext="I put down the undead druid. What do you make of these writings I found on him?" checks="Quest=60-2-2,HasItem=750-1" icon="Quest" next="16"></option>
+		<option optionid="3" optiontext="Wait, I found something but I don't have it on me..." checks="Quest=60-2-2,!HasItem=750-1" icon="Quest" next="0"></option>
+		<option optionid="4" optiontext="Indeed, goodbye." next="0"></option>
+	</node>
+	<node id="23" npcName="Sleeping Souls Initiate" anim="1" text="They are the esteemed warrior monks of our order, specialized in the ways of calming and vanquishing raging undead. In these turbulent times, their services are sadly often needed. " contextBefore="" contextAfter="" posx="932" posy="365">
+		<option optionid="1" optiontext="Why haven't they cleared your tomb?" next="24"></option>
+		<option optionid="2" optiontext="I see. Tell me about the Elder Druid." next="22"></option>
+		<option optionid="3" optiontext="I put down the undead druid. What do you make of these writings I found on him?" checks="Quest=60-2-2,HasItem=750-1" icon="Quest" next="16"></option>
+		<option optionid="4" optiontext="Wait, I found something but I don't have it on me..." checks="Quest=60-2-2,!HasItem=750-1" icon="Quest" next="0"></option>
+		<option optionid="5" optiontext="Indeed, goodbye." next="0"></option>
+	</node>
+	<node id="24" npcName="Sleeping Souls Initiate" anim="1" text="Champion Jorune Drey answered the call, but soon after he was neither seen nor heard from. The Dreamguard are not known to shy away from their duties; it's possible he's been drastically delayed, but I do fear the worst might have happened. Confronting undead monsters is a necessary task, but also one that is most hazardous." contextBefore="" contextAfter="" posx="1380" posy="592">
+		<option optionid="1" optiontext="" next="25"></option>
+	</node>
+	<node id="25" npcName="Sleeping Souls Initiate" anim="1" text="I only know he was investigating the ruins of Greywall southeast before contact with him was lost. If your travels take you in that direction, perhaps you might discover his fate. I shiver to think, the Greywall dungeons have a dark reputation..." contextBefore="" contextAfter="" posx="1823" posy="592">
+		<option optionid="1" optiontext="I see. Tell me about the Elder Druid." next="22"></option>
+		<option optionid="2" optiontext="I put down the undead druid. What do you make of these writings I found on him?" checks="Quest=60-2-2,HasItem=750-1" icon="Quest" next="16"></option>
+		<option optionid="3" optiontext="Wait, I found something but I don't have it on me..." checks="Quest=60-2-2,!HasItem=750-1" icon="Quest" next="0"></option>
+		<option optionid="4" optiontext="Indeed, goodbye." next="0"></option>
+	</node>
+	
+	<node id="30" npcName="Sleeping Souls Initiate" anim="1" text="Ancestor's greetings, friend. Thank you for quitening down the Elder Druid's tomb." contextBefore="" contextAfter="" posx="54" posy="39">
+		<option optionid="1" optiontext="How are things at the Haywind cemetery now?" next="31"></option>
+		<option optionid="2" optiontext="Any word from your missing Dreamguard champion?" next="32"></option>
+		<option optionid="3" optiontext="What do you know about Elder Druid Stratificas?" next="34"></option>
+		<option optionid="4" optiontext="Happy to help." next="0"></option>
+	</node>
+	<node id="31" npcName="Sleeping Souls Initiate" anim="1" text="Everything is well, thank you." contextBefore="" contextAfter="" posx="540" posy="32">
+		<option optionid="1" optiontext="Any word from your missing Dreamguard champion?" next="32"></option>
+		<option optionid="2" optiontext="What do you know about Elder Druid Stratificas?" next="34"></option>
+		<option optionid="3" optiontext="I see, goodbye for now." next="0"></option>
+	</node>
+	<node id="32" npcName="Sleeping Souls Initiate" anim="1" text="Sadly, no... The Dreamguard are not known to shy away from their duties; it's possible he's been drastically delayed, but I do fear the worst might have happened. Confronting undead monsters is a necessary task, but also one that is most hazardous." contextBefore="" contextAfter="" posx="962" posy="28">
+		<option optionid="1" optiontext="" next="33"></option>
+	</node>
+	<node id="33" npcName="Sleeping Souls Initiate" anim="1" text="I only know Jorune was investigating the ruins of Greywall southeast before contact with him was lost. If your travels take you in that direction, perhaps you might discover his fate. I shiver to think, the Greywall dungeons have a dark reputation.." contextBefore="" contextAfter="" posx="1381" posy="27">
+		<option optionid="1" optiontext="How are things at the Haywind cemetery now?" next="31"></option>
+		<option optionid="2" optiontext="What do you know about Elder Druid Stratificas?" next="34"></option>
+		<option optionid="3" optiontext="I see, goodbye for now." next="0"></option>
+	</node>
+	<node id="34" npcName="Sleeping Souls Initiate" anim="1" text="Well, Stratificas was a renowned Elder Druid of the Ebon Green Circle many centuries ago, whose connection with the nature and healing magics is told to be the stuff of legends." contextBefore="" contextAfter="" posx="521" posy="436">
+		<option optionid="1" optiontext="" next="35"></option>
+	</node>
+	<node id="35" npcName="Sleeping Souls Initiate" anim="1" text="He still holds a special place in the local memory and many like to visit his grave. Especially to pray for guidance in times of sickness, either for themselves or for a loved one." contextBefore="" contextAfter="" posx="956" posy="434">
+		<option optionid="1" optiontext="How are things at the Haywind cemetery now?" next="31"></option>
+		<option optionid="2" optiontext="Any word from your missing Dreamguard champion?" next="32"></option>
+		<option optionid="3" optiontext="I see, goodbye for now." next="0"></option>
+	</node>	
+</dialogue>
+
+
+
+

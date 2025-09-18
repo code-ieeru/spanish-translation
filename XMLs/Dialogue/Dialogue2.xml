@@ -1,0 +1,13 @@
+<dialogue>
+	<node id="10001" text="dialogue2test">
+		<option optionid="1" next="10002" optiontext="it works!"></option>
+		<option optionid="2" next="0" optiontext="bye"></option>
+	</node>
+	<node id="10002" text="yes">
+		<option optionid="1" next="0" optiontext="ok"></option>
+	</node>
+</dialogue>
+
+
+
+

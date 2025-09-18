@@ -1,0 +1,22 @@
+<playerhouses>
+	<playerhouse id="1" name="Isolated Cabin (Timberwell)" description="A peaceful lumberjack's cabin near Timberwell. Perfect for when you want to get away from civilization." pos="1005.52,30.8861,407.98" price="1000"></playerhouse>
+	<playerhouse id="2" name="Quaint Village House (Grainwater)" description="A simple but quaint home overlooking the river Aure near the village of Grainwater." pos="749.9,27.82457,329.75" price="1000"></playerhouse>
+	<playerhouse id="3" name="Humble City Home (South Haywind)" description="A humble home situated in southern Haywind, familiarly named Southwind by the locals. Though it has a reputation for being the poorer part of the city, there is nothing wrong with this house." pos="544.75,33.76531,317.66" price="1000"></playerhouse>
+	<playerhouse id="4" name="Fisherman's Shack (Little Grainwater)" description="A riverside fishing shack located in the middle of Little Grainwater's festivities, like a fish out of water." pos="688.45,29.50738,297.73" price="1000"></playerhouse>
+	<playerhouse id="5" name="Dilapidated Shack (Spruce Shade Rest)" description="An abandoned, run-down shack near Spruce Shade's Rest. There's no sign of its previous owner, but whoever they were, you have a feeling they're long gone." pos="1055.68,32.05849,374.01" price="1000"></playerhouse>
+	<playerhouse id="6" name="Harbormaster's House (North Haywind)" description="A comfortable house in the Haywind Harbor that used to belong to its harbormaster." pos="617.27,28.21348,539.66" price="3500"></playerhouse>
+	<playerhouse id="7" name="Smuggler's Hideout (Smuggler's Hideout)" description="It certainly offers no luxury comforts, but some would prefer a location far out of sight from authorities of any kind." pos="895.83,28.04126,1176.45" price="4500"></playerhouse>
+	<playerhouse id="8" name="Brinebridge Mansion (Thornhill Central)" description="A majestic house presiding over Thornhill's Brinebridge at the heart of the city, its previous occupants sadly perished in a recent plague that swept the streets." pos="467.96,37.64687,990.9" price="6000"></playerhouse>
+	<playerhouse id="9" name="Windswept Shorehouse (Harshwind Village)" description="A lonely fisherman's hut beaten by the hard winds coming from the open sea." pos="128.34,28.28381,998.56" price="3000"></playerhouse>
+	<playerhouse id="10" name="Riverside Warehouse (North Haywind Outskirts)" description="It must've been abandoned in the wake of increased lawlessness outside Haywind's city walls. Only vagrants would choose to live here, but it offers a convenient location for storing items." pos="661.28,28.06873,592.22" price="2500"></playerhouse>
+	<playerhouse id="11" name="Greywall Overseer's Quarters" description="Comfortable quarters to spy on the going-ons of the dungeons, but the neighbors are a nightmare." pos="1853.02,32.05468,1406.64" price="99000"></playerhouse>
+	<playerhouse id="12" name="Mountain Townhouse (Bulwark Cliff)" description="A cozy home nestled in the high peaks, perfect for enduring the chilling mountain winds." pos="2357.21,56.20376,744.69" price="25000"></playerhouse>
+	<playerhouse id="13" name="Mountain Miner's Hut (Ironsilt Overlook)" description="A rugged, weather-beaten hut, but the view is worth it." pos="2455.02,50.89422,773.26" price="12000"></playerhouse>
+	<playerhouse id="14" name="Mountain Hermit's Hut (Verdant Shelter)" description="Nestled in isolation, it offers peace and solitude to those seeking refuge from the world." pos="2557.04,38.17679,907.68" price="12000"></playerhouse>
+	<playerhouse id="15" name="Lakeside Sauna Hut" description="It sits abandoned, its old owner having fled from repeated goblin attacks. The leader of Evergreen Hearth may allow you to purchase it, provided you earn her trust." pos="2339.07,15.30245,1554.98" price="7000"></playerhouse>
+
+	<playerhouse id="16" name="The Squallstone Keep" description="Centuries back the Rimeholt family carved great blocks of stone from the mountain walls of Amarien Peaks and constructed a sturdy fortress to guard against hostile barbarians - The Squallstone Keep!" pos="2246.448,55.935,1140.55" price="0"></playerhouse>
+	<playerhouse id="17" name="The Squallstone Keep" description="" pos="2246.448,55.935,1140.55" hidden="1" price="0"></playerhouse>
+	<playerhouse id="18" name="The Squallstone Keep" description="" pos="2246.448,55.935,1140.55" hidden="1" price="0"></playerhouse>
+
+</playerhouses>

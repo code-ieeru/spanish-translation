@@ -1,0 +1,636 @@
+<dialogue>
+	<node id="1" npcName="Eirah Vinter" anim="1" text="Yours is not a face I'm familiar with, so let me welcome you to our village! I am Madam Vinter, the matron of the village some might say. Have you come to join the festivities then?" posx="0" posy="7">
+		<option optionid="1" optiontext="Anything disturbing the peace here?" next="2" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me something about your village." next="3"></option>
+		<option optionid="3" optiontext="I was hoping to learn a bit about these lands." next="5"></option>
+		<option optionid="4" optiontext="Actually, I wasn't aware of any festivities, what's the celebration?" next="7"></option>
+		<option optionid="5" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="2" npcName="Eirah Vinter" anim="1" text="Our village is peaceful, yes, but out in the wilds it's a different matter. As my friend Gordon has been telling me, goblin attacks on our lumberjacks has become unbearable. The Frostfang Goblins have even been stealing their village festival tokens - the spite on those creatures!" posx="422" posy="8">
+		<option optionid="1" optiontext="Maybe I could teach the goblins a lesson for you." next="9" icon="Quest"></option>
+		<option optionid="2" optiontext="Tell me something about your village." next="3"></option>
+		<option optionid="3" optiontext="I was hoping to learn a bit about these lands." next="5"></option>
+		<option optionid="4" optiontext="I wasn't aware of any festivities, what's the celebration?" next="7"></option>
+		<option optionid="5" optiontext="Indeed." next="0"></option>
+	</node>
+	<node id="3" npcName="Eirah Vinter" anim="1" text="But you must've made quite the journey to reach here, the Village of Evergreen Hearth! We're about the most remote settlement in the wilderness that is northern Imberthale, not many choose to live in such unforgiving land..." posx="185" posy="609">
+		<option optionid="1" optiontext="" next="4"></option>
+	</node>
+	<node id="4" npcName="Eirah Vinter" anim="1" text="The folk who do come are usually here for one of two reasons - as lumberjacks to gather the exceptional Winterpine Wood, or as traders. Sometimes druid-folk come and go, and of course someone also has to look after all of these fools - that job lands on my shoulders." posx="599" posy="606">
+		<option optionid="1" optiontext="Tell me more about the land itself." next="5"></option>
+		<option optionid="2" optiontext="I wasn't aware of any festivities, what's the celebration?" next="7"></option>
+		<option optionid="3" optiontext="Anything disturbing the peace?" next="2" icon="Quest"></option>
+		<option optionid="4" optiontext="I see." next="0"></option>
+	</node>
+	<node id="5" npcName="Eirah Vinter" anim="1" text="Outside of the safe haven that is our village? Winterpine Forests are a wild, untamed land full of beasts; noble ones for sure, like the Frost Wolf and the Elk, but nasty pests too that are the Goblin-kind." posx="185" posy="838">
+		<option optionid="1" optiontext="" next="6"></option>
+	</node>
+	<node id="6" npcName="Eirah Vinter" anim="1" text="Stronghearted lumberjacks brave the wilds for the Winterpine Wood though, which is well renowned for its properties. But it can get dangerous out there, maybe more so now than ever. The spiteful goblins have been quite active, you see. May that act as a word of warning also, if you mean to venture out there." posx="1012" posy="608">
+		<option optionid="1" optiontext="I wasn't aware of any festivities, what's the celebration?" next="7"></option>
+		<option optionid="2" optiontext="Tell me something about your village." next="3"></option>
+		<option optionid="3" optiontext="Anything disturbing the peace?" next="2" icon="Quest"></option>
+		<option optionid="4" optiontext="Very well." next="0"></option>
+	</node>
+	<node id="7" npcName="Eirah Vinter" anim="1" text="Why, it is the season for the Hearthlight Festival! Do you southeners not know of it? Out here it is tradition, to drive the cold and dark away, to warm our bodies and minds. We also exchange gifts for special tokens we share among each other - you too might find ways to earn, or even find some." posx="1423" posy="608">
+		<option optionid="1" optiontext="" next="8" checks="!Var=WinterVillageWelcomeToken-1-1"></option>
+		<option optionid="2" optiontext="Tell me something about your village." next="3" checks="Var=WinterVillageWelcomeToken-1-1"></option>
+		<option optionid="3" optiontext="I was hoping to learn a bit about these lands." next="5" checks="Var=WinterVillageWelcomeToken-1-1"></option>
+		<option optionid="4" optiontext="Anything disturbing the peace?" next="2" checks="Var=WinterVillageWelcomeToken-1-1" icon="Quest"></option>
+		<option optionid="5" optiontext="Very well." next="0" checks="Var=WinterVillageWelcomeToken-1-1"></option>
+	</node>
+	<node id="8" npcName="Eirah Vinter" anim="1" actions="AddItems=9116-5-true,SetVar=WinterVillageWelcomeToken-1" text="In fact... why don't I give you a few...?\n\n&lt;color=#9C8C77&gt;*The lady pulls simple, decorated, wooden tokens out of her pockets and hands them to you.*&lt;/color&gt;\n\nThere you go, happy Hearthlight Festival!" itemIcon="9116" posx="1834" posy="610">
+		<option optionid="1" optiontext="Tell me something about your village." next="3"></option>
+		<option optionid="2" optiontext="I was hoping to learn a bit about these lands." next="5"></option>
+		<option optionid="3" optiontext="Anything disturbing the peace?" next="2" icon="Quest"></option>
+		<option optionid="4" optiontext="Thanks!" next="0"></option>
+	</node>
+	<node id="9" npcName="Eirah Vinter" anim="1" text="Oh, we would be most appreciative if you could! If you venture out into the woods, you'll find they've spread their camps all around, to the north, south and middle. Violence is the only language those vile creatures understand - please, we'll reward you, if you lay waste to their camps!\n\n&lt;color=#9C8C77&gt;*Put the fear of death into the Frostfang Tribe by slaying 6 goblins at each of their three camps in the Winterpine Forests.*&lt;/color&gt;" posx="834" posy="8">
+		<option optionid="1" optiontext="Very well." next="0" actions="UpdateQuest=119-1"></option>
+	</node>
+
+
+	<node id="15" npcName="Eirah Vinter" anim="1" text="Greetings once again, stranger, I hope you'll take a moment to enjoy the village festivities. You said you might be able to help us with our goblin problem, dare I hope you bring news on that front?" posx="0" posy="7">
+		<option optionid="1" optiontext="I've brought punishment to the goblins for their transgressions!" next="25" checks="Quest=119-2-2" icon="Quest"></option>
+		<option optionid="2" optiontext="Remind me, what's the trouble with the goblins?" next="23" checks="Quest=119-1-1" icon="Quest"></option>
+		<option optionid="3" optiontext="You're the leader of the village?" next="22"></option>
+		<option optionid="4" optiontext="Tell me something about your village." next="21"></option>
+		<option optionid="5" optiontext="I was hoping to learn a bit about these lands." next="17"></option>
+		<option optionid="6" optiontext="I wasn't aware of any festivities, what's the celebration?" next="19"></option>
+		<option optionid="7" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="16" npcName="Eirah Vinter" anim="1" text="The folk who do come are usually here for one of two reasons - as lumberjacks to gather the exceptional Winterpine Wood, or as traders. Sometimes druid-folk come and go, and of course someone also has to look after all of these fools - that job lands on my shoulders." posx="1019" posy="608">
+		<option optionid="1" optiontext="I've brought punishment to the goblins for their transgressions!" next="25" checks="Quest=119-2-2" icon="Quest"></option>
+		<option optionid="2" optiontext="Remind me, what's the trouble with the goblins?" next="23" checks="Quest=119-1-1" icon="Quest"></option>
+		<option optionid="3" optiontext="You're the leader of the village?" next="22"></option>
+		<option optionid="4" optiontext="I was hoping to learn a bit about these lands." next="17"></option>
+		<option optionid="5" optiontext="I wasn't aware of any festivities, what's the celebration?" next="19"></option>
+		<option optionid="6" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="17" npcName="Eirah Vinter" anim="1" text="Outside of the safe haven that is our village? Winterpine Forests are a wild, untamed land full of beasts; noble ones for sure, like the Frost Wolf and the Elk, but nasty pests too that are the Goblin-kind." posx="611" posy="843">
+		<option optionid="1" optiontext="" next="18"></option>
+	</node>
+	<node id="18" npcName="Eirah Vinter" anim="1" text="Stronghearted lumberjacks brave the wilds for the Winterpine Wood though, which is well renowned for its properties. But it can get dangerous out there, maybe more so now than ever. The spiteful goblins have been quite active, you see. May that act as a word of warning also, if you mean to venture out there." posx="1432" posy="605">
+		<option optionid="1" optiontext="I've brought punishment to the goblins for their transgressions!" next="25" checks="Quest=119-2-2" icon="Quest"></option>
+		<option optionid="2" optiontext="Remind me, what's the trouble with the goblins?" next="23" checks="Quest=119-1-1" icon="Quest"></option>
+		<option optionid="3" optiontext="You're the leader of the village?" next="22"></option>
+		<option optionid="4" optiontext="Tell me something about your village." next="21"></option>
+		<option optionid="5" optiontext="I wasn't aware of any festivities, what's the celebration?" next="19"></option>
+		<option optionid="6" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="19" npcName="Eirah Vinter" anim="1" text="Why, it is the season for the Hearthlight Festival! Do you southeners not know of it? Out here it is tradition, to drive the cold and dark away, to warm our bodies and minds. We also exchange gifts for special tokens we share among each other - you too might find ways to earn, or even find some." posx="1849" posy="605">
+		<option optionid="1" optiontext="" next="20" checks="!Var=WinterVillageWelcomeToken-1-1"></option>
+		<option optionid="2" optiontext="I've brought punishment to the goblins for their transgressions!" next="25" checks="Quest=119-2-2,Var=WinterVillageWelcomeToken-1-1" icon="Quest"></option>
+		<option optionid="3" optiontext="Remind me, what's the trouble with the goblins?" next="23" checks="Quest=119-1-1,Var=WinterVillageWelcomeToken-1-1" icon="Quest"></option>
+		<option optionid="4" optiontext="You're the leader of the village?" next="22" checks="Var=WinterVillageWelcomeToken-1-1"></option>
+		<option optionid="5" optiontext="Tell me something about your village." next="21" checks="Var=WinterVillageWelcomeToken-1-1"></option>
+		<option optionid="6" optiontext="I was hoping to learn a bit about these lands." next="17" checks="Var=WinterVillageWelcomeToken-1-1"></option>
+		<option optionid="7" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="20" npcName="Eirah Vinter" anim="1" text="In fact... why don't I give you a few...?\n\n&lt;color=#9C8C77&gt;*The lady pulls simple, decorated, wooden tokens out of her pockets and hands them to you.*&lt;/color&gt;\n\nThere you go, happy Hearthlight Festival!" actions="AddItems=9116-5-true,SetVar=WinterVillageWelcomeToken-1" posx="2254" posy="607">
+		<option optionid="1" optiontext="I've brought punishment to the goblins for their transgressions!" next="25" checks="Quest=119-2-2" icon="Quest"></option>
+		<option optionid="2" optiontext="Remind me, what's the trouble with the goblins?" next="23" checks="Quest=119-1-1" icon="Quest"></option>
+		<option optionid="3" optiontext="You're the leader of the village?" next="22"></option>
+		<option optionid="4" optiontext="Tell me something about your village." next="21"></option>
+		<option optionid="5" optiontext="I was hoping to learn a bit about these lands." next="17"></option>
+		<option optionid="6" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="21" npcName="Eirah Vinter" anim="1" text="But you must've made quite the journey to reach here, the Village of Evergreen Hearth! We're about the most remote settlement in the wilderness that is northern Imberthale, not many choose to live in such unforgiving land..." posx="608" posy="609">
+		<option optionid="1" optiontext="" next="16"></option>
+	</node>
+	<node id="22" npcName="Eirah Vinter" anim="1" text="The village matron I'm sometimes called. Well, someone has to be, these men would be lost without me! Most of them are enthusiastic about swinging the hatchet, but when it comes to keeping a village in order, it's another matter." posx="0" posy="914">
+		<option optionid="1" optiontext="I've brought punishment to the goblins for their transgressions!" next="25" checks="Quest=119-2-2" icon="Quest"></option>
+		<option optionid="2" optiontext="Remind me, what's the trouble with the goblins?" next="23" checks="Quest=119-1-1" icon="Quest"></option>
+		<option optionid="3" optiontext="Tell me something about your village." next="21"></option>
+		<option optionid="4" optiontext="I was hoping to learn a bit about these lands." next="17"></option>
+		<option optionid="5" optiontext="I wasn't aware of any festivities, what's the celebration?" next="19"></option>
+		<option optionid="6" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="23" npcName="Eirah Vinter" anim="1" text="We're safe here in the village, but out in the wilds it's a different matter. As my friend Gordon has been telling me, goblin attacks on our lumberjacks has become unbearable. The Frostfang Goblins have even been stealing their village festival tokens - the spite on those creatures!" posx="596" posy="5">
+		<option optionid="1" optiontext="" next="24"></option>
+	</node>
+	<node id="24" npcName="Eirah Vinter" anim="1" text="Violence is the only language those vile creatures understand, we would be most appreciative if you'd teach them a lesson! If you venture out into the woods, you'll find they've spread their camps all around, to the north, south and middle.\n\n&lt;color=#9C8C77&gt;*Put the fear of death into the Frostfang Tribe by slaying 6 goblins at each of their three camps in the Winterpine Forests.*&lt;/color&gt;" posx="1006" posy="6">
+		<option optionid="1" optiontext="You're the leader of the village?" next="22"></option>
+		<option optionid="2" optiontext="Tell me something about your village." next="21"></option>
+		<option optionid="3" optiontext="I was hoping to learn a bit about these lands." next="17"></option>
+		<option optionid="4" optiontext="I wasn't aware of any festivities, what's the celebration?" next="19"></option>
+		<option optionid="5" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="25" npcName="Eirah Vinter" anim="1" lookAtNpc="1781" text="Is it true? Oh, but I knew he had the look of fierce warrior about him! Didn't I just say so, Gordon? Did I not say the fierce outlander will drive the goblins back for us and restore peace to the Hearthlight Festival?" posx="1685" posy="7">
+		<option optionid="1" optiontext="" next="26"></option>
+	</node>
+	<node id="26" npcName="Gordon Hatchet" anim="1" switchtalker="1781" lookAtNpc="1780" text="Yes, ma'am, you did say so, though I did express great reservations myself..." posx="2104" posy="6">
+		<option optionid="1" optiontext="" next="27"></option>
+	</node>
+	<node id="27" npcName="Eirah Vinter" anim="1" switchtalker="1780" text="Oh, Gordon, ever the sceptic! But truly, thank you, outlander -  you've done a great service to our people! Now we can get on with...\n\n&lt;color=#9C8C77&gt;*A villager's scream in the distance cuts the Madam's sentence short!*&lt;/color&gt;" posx="2515" posy="6">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=270" icon="Quest"></option>
+	</node>
+
+
+	<node id="30" npcName="Eirah Vinter" anim="1" text="How awful! What were those hissing monstrosities made of wind?! Thank you for protecting our village, outlander, twice now you've saved us from a bind! Dare I ask that you help us once more?" posx="0" posy="7">
+		<option optionid="1" optiontext="What would you ask of me?" next="31" icon="Quest"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="31" npcName="Eirah Vinter" anim="1" text="Whatever those wind monstrosities were, it's obvious that cackling goblin witch was behind it all! Oh, I'm afraid we underestimated the goblins, it may be the attacks we sent you to carry out may only have fueled their hatred..." posx="407" posy="7">
+		<option optionid="1" optiontext="" next="32"></option>
+	</node>
+	<node id="32" npcName="Gordon Hatchet" anim="1" switchtalker="1781" text="Yeah...! We let an outsider meddle in our affairs, now things are worse than ever!" posx="488" posy="222">
+		<option optionid="1" optiontext="" next="33"></option>
+	</node>
+	<node id="33" npcName="Eirah Vinter" anim="1" switchtalker="1780" lookAtNpc="1781" text="Oh, shush, Gordon - you're being silly! The outsider has done well, we simply didn't take into account that his cleansing of the forest may not have been thorough enough." posx="819" posy="5">
+		<option optionid="1" optiontext="" next="34"></option>
+	</node>
+	<node id="34" npcName="Eirah Vinter" anim="1" text="Whoever this goblin witch, I ask that you venture out into the woods on our behalf once more, track her down and put an end to her evil schemes for good!" posx="1230" posy="6">
+		<option optionid="1" optiontext="What do you know of the witch?" next="37"></option>
+		<option optionid="2" optiontext="But how do you suggest I track her?" next="35" icon="Quest"></option>
+	</node>
+	<node id="35" npcName="Eirah Vinter" anim="1" text="Hmm, that's a good question... the lumberjacks may know the woods the best, but all of them are too scared to venture out there now. As it happens though, we have a druid in the village." posx="1642" posy="6">
+		<option optionid="1" optiontext="" next="36"></option>
+	</node>
+	<node id="36" npcName="Eirah Vinter" anim="1" text="I do not know much about him, but he has been very cordial with us and his kind are known for being close to the wilds. Perhaps if you ask him, he might have some way to reveal the witch's lair to you?" posx="2050" posy="5">
+		<option optionid="1" optiontext="I'll talk to him then." next="0" actions="UpdateQuest=119-5,NpcChat=Thank you> outlander. The druid often hangs around outside this building> with his pet wolf."></option>
+	</node>
+	<node id="37" npcName="Eirah Vinter" anim="1" text="Nothing, to speak the truth. We've not encountered her before, but she might be the leader of the Frostfang Goblins, or at least a very important figure among them. We steer clear of the goblins when we can, so we know little about them, beyond the nature of their vile hearts." posx="1686" posy="476">
+		<option optionid="1" optiontext="So how do you suggest I track her?" next="35" icon="Quest"></option>
+	</node>
+
+
+	<node id="50" npcName="Hermes the Druid" anim="1" text="May nature watch over you, friend. Even in a place such as this, where nature may seem cruel, it still has its purpose. But I will admit, even for one such as I, faced with the unrelenting cold, the warm village hearths do offer their temptation." posx="0" posy="7">
+		<option optionid="1" optiontext="A goblin witch hides in the woods, do you know of a way to track her?" next="51" checks="Quest=119-5-5,Var=Q119WoofyRecruitInfo-0-1" icon="Quest"></option>
+		<option optionid="2" optiontext="I bring some elk meat for Woofy..." next="76" checks="Var=Q119WoofyRecruitInfo-1-1,HasItem=9153-1" itemIcon="9153"></option>
+		<option optionid="3" optiontext="What's a druid doing all the way out here?" next="58"></option>
+		<option optionid="4" optiontext="The wolf, is he your pet?" next="59"></option>
+		<option optionid="5" optiontext="As you say." next="0"></option>
+	</node>
+	<node id="51" npcName="Hermes the Druid" anim="1" text="Hmm, I may know of a way indeed... I take it she has been marked for death after her attack on the village.  Are you to be the bane of Skrella Chillbone?" posx="411" posy="9">
+		<option optionid="1" optiontext="You know of her?" next="52"></option>
+		<option optionid="2" optiontext="Certainly, if that is her name." next="54" icon="Quest"></option>
+	</node>
+	<node id="52" npcName="Hermes the Druid" anim="1" text="I am familiar with most creatures of the forest. The goblins are hateful of all other living beings, they wish to dominate the wilds, and none so more than the witch Skrella. She knows tricks and treachery, and many old secrets of magic that are no doubt beyond me - she is not to be underestimated." posx="822" posy="9">
+		<option optionid="1" optiontext="What does she want with the villagers?" next="53"></option>
+		<option optionid="2" optiontext="Let's get to the part where I track down her hideout." next="54" icon="Quest"></option>
+	</node>
+	<node id="53" npcName="Hermes the Druid" anim="1" text="Simply their destruction, of that I'm fairly certain. If humans did not drive back the goblin-kind from time to time, I expect they'd have free dominion over these woodlands." posx="1232" posy="9">
+		<option optionid="1" optiontext="Tell me again, what do you know of her?" next="52"></option>
+		<option optionid="2" optiontext="Let's get to the part where I track down her hideout." next="54" icon="Quest"></option>
+	</node>
+	<node id="54" npcName="Hermes the Druid" anim="1" text="Then meet my friend Woofy, the Snow Wolf. I did offer him many other, more flattering names, such as 'Stalker of the Tundra', or 'Ice Claw', but he much prefered 'Woofy'..." posx="1808" posy="309">
+		<option optionid="1" optiontext="" next="55"></option>
+	</node>
+	<node id="55" npcName="Woofy the Snow Wolf" anim="1" switchtalker="1785" text="&lt;color=#9C8C77&gt;*Woofy looks at you with friendly eyes, though also with a healthy dose of suspicion.*&lt;/color&gt;\n\nWoof!" posx="2215" posy="309">
+		<option optionid="1" optiontext="" next="56"></option>
+	</node>
+	<node id="56" npcName="Hermes the Druid" anim="1" switchtalker="1782" text="Woofy has a very keen nose. If you take him out to the woods, I have no doubt he'll reveal the Goblin Witch to you in no time. But Woofy can be initially a little distrusting, hmm..." posx="2623" posy="308">
+		<option optionid="1" optiontext="" next="57"></option>
+	</node>
+	<node id="57" npcName="Hermes the Druid" anim="1" text="You could try offering him raw meat from the local elk, I believe it's his favorite.\n\n&lt;color=#9C8C77&gt;*Offer 1 Raw Elk Meat to Woofy in order to befriend him and gain him as a follower.*&lt;/color&gt;" actions="SetVar=Q119WoofyRecruitInfo-1" posx="3034" posy="309">
+		<option optionid="1" optiontext="Here, boy... &lt;color=#9C8C77&gt;*Offer Raw Elk Meat to Woofy.*&lt;/color&gt;" next="76" checks="HasItem=9153-1" itemIcon="9153" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="I see, I'll have to acquire some first." next="0"></option>
+	</node>
+	<node id="58" npcName="Hermes the Druid" anim="1" text="Ah, but why would a druid not be here? The elements in these lands are arguably more raw, more pure. It is places such as these where a druid may discover a deeper connection with nature. Well, not exactly within this very village, perhaps, but out there in the wild." posx="487" posy="608">
+		<option optionid="1" optiontext="A goblin witch hides in the woods, do you know of a way to track her?" next="51" checks="Quest=119-5-5" icon="Quest"></option>
+		<option optionid="2" optiontext="I bring some elk meat for Woofy..." next="0" checks="Var=Q119WoofyRecruitInfo-1-1,HasItem=9153-1" itemIcon="9153"></option>
+		<option optionid="3" optiontext="The wolf, is he your pet?" next="59"></option>
+		<option optionid="4" optiontext="As you say." next="0"></option>
+	</node>
+	<node id="59" npcName="Hermes the Druid" anim="1" text="My kind do not believe in having 'pets'. No, I would rather call Woofy my friend. He's offered excellent companionship, especially in times I've been isolated from other humans. Woofy can be quite talkative, you see, if you have the ear to understand him." posx="905" posy="609">
+		<option optionid="1" optiontext="A goblin witch hides in the woods, do you know of a way to track her?" next="51" checks="Quest=119-5-5" icon="Quest"></option>
+		<option optionid="2" optiontext="I bring some elk meat for Woofy..." next="76" checks="Var=Q119WoofyRecruitInfo-1-1,HasItem=9153-1" itemIcon="9153"></option>
+		<option optionid="3" optiontext="What's a druid doing all the way out here?" next="58"></option>
+		<option optionid="4" optiontext="As you say." next="0"></option>		
+	</node>
+
+
+	<node id="75" npcName="Woofy the Snow Wolf" anim="1" text="Woof...?" posx="0" posy="8">
+		<option optionid="1" optiontext="I hear you like elk meat, boy..." next="76" checks="HasItem=9153-1" itemIcon="9153" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="76" npcName="Woofy the Snow Wolf" anim="1" switchtalker="1785" text="&lt;color=#9C8C77&gt;*Woofy eyes you warily and takes good care to sniff the meat you've offered him... but then he relaxes and chomps through the meat with great enthusiasm!*&lt;/color&gt;" posx="411" posy="9">
+		<option optionid="1" optiontext="" next="77" actions="RemoveItems=9153-1"></option>
+	</node>
+	<node id="77" npcName="Woofy the Snow Wolf" anim="1" text="&lt;color=#9C8C77&gt;*Woofy's eyes light up, he now considers you a friend!*&lt;/color&gt;\n\nWoof!" posx="822" posy="10">
+		<option optionid="1" optiontext="Follow me, boy!" next="0" actions="SetVar=Q119WoofyRecruitInfo-2,AddFollower=9084" icon="Quest"></option>
+	</node>
+	<node id="78" npcName="Woofy the Snow Wolf" anim="1" text="&lt;color=#9C8C77&gt;*Woofy whines and looks at you pleadingly. Woofy's appetite for elk meat has risen again...*&lt;/color&gt;" posx="485" posy="307">
+		<option optionid="1" optiontext="Here you go, boy..." next="79" checks="HasItem=9153-1" itemIcon="9153" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Again, Woofy? Aww, I don't have meat for you right now..." next="0"></option>
+	</node>
+	<node id="79" npcName="Woofy the Snow Wolf" anim="1" text="&lt;color=#9C8C77&gt;*Woofy happily chomps through your meat! He then joins you as your companion once again.*&lt;/color&gt;\n\nWoof!" posx="906" posy="305">
+		<option optionid="1" optiontext="Follow me, boy!" next="0" actions="AddFollower=9084" icon="Follower"></option>
+	</node>
+	<node id="80" npcName="Woofy the Snow Wolf" anim="1" text="Woof...?" posx="1" posy="907">
+		<option optionid="1" optiontext="Join me, boy!" next="78" checks="!Quest=119-999-999" icon="Follower"></option>
+		<option optionid="2" optiontext="Join me, boy!" next="81" checks="Quest=119-999-999" icon="Follower"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="81" npcName="Woofy the Snow Wolf" anim="1" text="&lt;color=#9C8C77&gt;*Woofy's happy to join your company, as ever!*&lt;/color&gt;\n\nWoof!" posx="430" posy="905">
+		<option optionid="1" optiontext="Follow me, boy!" next="0" actions="AddFollower=9084" icon="Follower"></option>
+	</node>
+
+
+	<node id="100" npcName="Eirah Vinter" anim="1" text="I'm afraid we may have underestimated the goblins... Whatever the wind monstrosities that attacked our village, I have no doubt they were the work of that cackling goblin witch!" posx="0" posy="10">
+		<option optionid="1" optiontext="You asked me to track her?" next="101"></option>
+		<option optionid="2" optiontext="What do you know of her?" next="104"></option>
+		<option optionid="3" optiontext="There's something I wanted to ask..." next="130"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="101" npcName="Eirah Vinter" anim="1" text="You've displayed exceptional heroism in defending our village already, I can think of no one better suited! Although the Witch may be making herself difficult to find... But as it happens, we have a druid in the village." posx="406" posy="10">
+		<option optionid="1" optiontext="" next="102"></option>
+	</node>
+	<node id="102" npcName="Eirah Vinter" anim="1" text="I do not know much about him, but he has been very cordial with us and his kind are known for being close to the wilds. Perhaps if you ask him, he might have some way to reveal the witch's lair to us?" posx="815" posy="8">
+		<option optionid="1" optiontext="Where does the druid reside?" next="103"></option>
+		<option optionid="2" optiontext="What do you know of the Goblin Witch?" next="104"></option>
+		<option optionid="3" optiontext="There's something I wanted to ask..." next="130"></option>
+		<option optionid="4" optiontext="I'll talk to him then." next="0"></option>
+	</node>
+	<node id="103" npcName="Eirah Vinter" anim="1" text="I saw him only moments ago idling outside this very house, talking to his strange wolf friend..." posx="1225" posy="11">
+		<option optionid="1" optiontext="What do you know of the Goblin Witch?" next="104"></option>
+		<option optionid="2" optiontext="There's something I wanted to ask..." next="130"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="104" npcName="Eirah Vinter" anim="1" text="Nothing, to speak the truth. We've not encountered her before, but she might be the leader of the Frostfang Goblins, or at least a very important figure among them. We steer clear of the goblins when we can, so we know little about them, beyond the nature of their vile hearts." posx="484" posy="607">
+		<option optionid="1" optiontext="" next="105"></option>
+	</node>
+	<node id="105" npcName="Eirah Vinter" anim="1" text="What we do know is that we cannot have her disturbing the peace of our village! Thus we ask that you find her and put an end to her schemes. Beyond that, maybe the druid outside is more familiar with her character." posx="906" posy="608">
+		<option optionid="1" optiontext="I'm not quite sure how to track her though...?" next="101"></option>
+		<option optionid="2" optiontext="There's something I wanted to ask..." next="130"></option>
+		<option optionid="3" optiontext="As you say." next="0"></option>
+	</node>
+
+
+	<node id="120" npcName="Eirah Vinter" anim="1" text="What news, brave outlander? Have you had any luck in putting an end to the vicious schemes of the nasty goblin witch? I fear she seeks to ruin our festival entirely!" posx="0" posy="10">
+		<option optionid="1" optiontext="She created many mirror images of herself, now I'm hunting for them..." next="122" checks="Quest=119-7-7"></option>
+		<option optionid="2" optiontext="I have defeated the Witch, but the power with which she attacked the village still lingers..." next="123" checks="Quest=119-8-9"></option>
+		<option optionid="3" optiontext="I have defeated the Witch, but the power with which she attacked the village still lingers..." next="126" checks="Quest=119-10-10"></option>
+		<option optionid="4" optiontext="I've discovered her hideout and I'm preparing to fight her..." next="121" checks="Quest=119-6-6"></option>
+		<option optionid="5" optiontext="There's something I wanted to ask..." next="130"></option>
+		<option optionid="6" optiontext="Not yet." next="0"></option>
+	</node>
+	<node id="121" npcName="Eirah Vinter" anim="1" text="Excellent work! I take it the druid and his wolf proved helpful then? Take care with the witch, outlander - who knows what vile tricks of magic she can perform!" posx="412" posy="10">
+		<option optionid="1" optiontext="There's something I wanted to ask..." next="130"></option>
+		<option optionid="2" optiontext="Thanks for the warning." next="0"></option>
+	</node>
+	<node id="122" npcName="Eirah Vinter" anim="1" text="I suspected the witch would prove tricksy! Hmm... Come to think of it, I heard shouting from the western side of the village just a while ago. Maybe one of her mirror images was causing trouble there?" posx="826" posy="11">
+		<option optionid="1" optiontext="There's something I wanted to ask..." next="130"></option>
+		<option optionid="2" optiontext="Thanks, I might take a look." next="0"></option>
+	</node>
+	<node id="123" npcName="Eirah Vinter" anim="1" text="Those monsters made of wind? Our village may never be safe if we can't get rid of them... Do you know of a way to stop it?" posx="493" posy="443">
+		<option optionid="1" optiontext="When I hunted the mirror images of the witch, they dropped parts of a goblin effigy..." next="124" checks="Quest=119-8-8"></option>
+		<option optionid="2" optiontext="I have recovered this effigy from the witch..." next="125" checks="Quest=119-9-9"></option>
+		<option optionid="3" optiontext="There's something I wanted to ask..." next="130"></option>
+		<option optionid="4" optiontext="Possibly, I'm working on it..." next="0"></option>
+	</node>
+	<node id="124" npcName="Eirah Vinter" anim="1" text="Hmm, perhaps the effigy is somehow linked to the monster of wind. Do you think you have all the parts? Maybe you'd be able to put it all together." posx="902" posy="442">
+		<option optionid="1" optiontext="There's something I wanted to ask..." next="130"></option>
+		<option optionid="2" optiontext="Yes, let's see..." next="0"></option>
+	</node>
+	<node id="125" npcName="Eirah Vinter" anim="1" text="&lt;color=#9C8C77&gt;*Madam Vinter examines the effigy you have presented.*&lt;/color&gt;\n\nHmm, perhaps it's indeed linked somehow to the monster of wind... Maybe you should see if it needs to be placed somewhere around the witch's lair?" posx="1311" posy="445">
+		<option optionid="1" optiontext="There's something I wanted to ask..." next="130"></option>
+		<option optionid="2" optiontext="That may be good advice, I'll see about it." next="0"></option>
+	</node>
+	<node id="126" npcName="Eirah Vinter" anim="1" text="&lt;color=#9C8C77&gt;*You tell Madam Vinter about the elemental spirit, Zephirix, the Cruel Wind of the North, and how you must defeat this foe in order to banish it once more.*&lt;/color&gt;\n\nThat sounds horrifying! Now more than ever am I grateful that we have a brave hero such as yourself to aid us, for if you cannot banish it, I doubt none of us can!" posx="1510" posy="7">
+		<option optionid="1" optiontext="There's something I wanted to ask..." next="130"></option>
+		<option optionid="2" optiontext="Not to worry, I'll do my best." next="0"></option>
+	</node>
+
+
+	<node id="130" npcName="Eirah Vinter" anim="1" text="What is it you wish to know, outlander?" posx="11" posy="12">
+		<option optionid="1" optiontext="Tell me something about your village." next="131"></option>
+		<option optionid="2" optiontext="I was hoping to learn a bit about these lands." next="133"></option>
+		<option optionid="3" optiontext="Remind me, what's the celebration?" next="135"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="131" npcName="Eirah Vinter" anim="1" text="But you must've made quite the journey to reach here, the Village of Evergreen Hearth! We're about the most remote settlement in the wilderness that is northern Imberthale, not many choose to live in such unforgiving land..." posx="432" posy="15">
+		<option optionid="1" optiontext="" next="132"></option>
+	</node>
+	<node id="132" npcName="Eirah Vinter" anim="1" text="The folk who do come are usually here for one of two reasons - as lumberjacks to gather the exceptional Winterpine Wood, or as traders. Sometimes druid-folk come and go, and of course someone also has to look after all of these fools - that job lands on my shoulders." posx="843" posy="18">
+		<option optionid="1" optiontext="I was hoping to learn a bit about these lands." next="133"></option>
+		<option optionid="2" optiontext="Remind me, what's the celebration?" next="135"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="133" npcName="Eirah Vinter" anim="1" text="Outside of the safe haven that is our village? Winterpine Forests are a wild, untamed land full of beasts; noble ones for sure, like the Frost Wolf and the Elk, but nasty pests too that are the Goblin-kind." posx="304" posy="604">
+		<option optionid="1" optiontext="" next="134"></option>
+	</node>
+	<node id="134" npcName="Eirah Vinter" anim="1" text="Stronghearted lumberjacks brave the wilds for the Winterpine Wood though, which is well renowned for its properties. But it can get dangerous out there, maybe more so now than ever. The spiteful goblins have been quite active, you see. May that act as a word of warning also, if you mean to venture out there." posx="711" posy="606">
+		<option optionid="1" optiontext="Remind me, what's the celebration?" next="135"></option>
+		<option optionid="2" optiontext="Tell me something about your village." next="131"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="135" npcName="Eirah Vinter" anim="1" text="Why, it is the season for the Hearthlight Festival! Do you southeners not know of it? Out here it is tradition, to drive the cold and dark away, to warm our bodies and minds. We also exchange gifts for special tokens we share among each other - you too might find ways to earn, or even find some." posx="1211" posy="605">
+		<option optionid="1" optiontext="" next="136" checks="!Var=WinterVillageWelcomeToken-1-1"></option>
+		<option optionid="2" optiontext="Tell me something about your village." next="131" checks="Var=WinterVillageWelcomeToken-1-1"></option>
+		<option optionid="3" optiontext="I was hoping to learn a bit about these lands." next="133" checks="Var=WinterVillageWelcomeToken-1-1"></option>
+		<option optionid="4" optiontext="I see." next="0" checks="Var=WinterVillageWelcomeToken-1-1"></option>
+	</node>
+	<node id="136" npcName="Eirah Vinter" anim="1" text="In fact... why don't I give you a few...?\n\n&lt;color=#9C8C77&gt;*The lady pulls simple, decorated, wooden tokens out of her pockets and hands them to you.*&lt;/color&gt;\n\nThere you go, happy Hearthlight Festival!" actions="AddItems=9116-5-true,SetVar=WinterVillageWelcomeToken-1" itemIcon="9116" posx="1623" posy="607">
+		<option optionid="1" optiontext="Tell me something about your village." next="131"></option>
+		<option optionid="2" optiontext="I was hoping to learn a bit about these lands." next="133"></option>
+		<option optionid="3" optiontext="Thanks!" next="0"></option>
+	</node>
+
+
+	<node id="150" npcName="Skrella Chillbone" anim="1" text="O'ho, a nasty, meddling human makes its way to my cave? And he reeks of death, hah! Yesss, come closer, human... come and join my campfire..." posx="12" posy="7">
+		<option optionid="1" optiontext="You are the Goblin Witch, Skrella, are you not?" next="151"></option>
+		<option optionid="2" optiontext="You were the one who attacked the village - why?" next="152"></option>
+		<option optionid="3" optiontext="Death has come to greet you, Witch." next="154" icon="Quest"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="151" npcName="Skrella Chillbone" anim="1" text="Hah, nasssty human has heard of Skrella? Her reputation is greater than she knows... But Skrella knows of you too, meddling human. Oooh, yessss..." posx="486" posy="5">
+		<option optionid="1" optiontext="" next="160"></option>
+	</node>
+	<node id="152" npcName="Skrella Chillbone" anim="1" text="Why?! You ask why the wolf hunts the rabbit! Oh, I have sent many attacks against humans many times before, I have let them know they are not welcome here. Bah, still the stupid humans keep coming!" posx="1509" posy="7">
+		<option optionid="1" optiontext="" next="153"></option>
+	</node>
+	<node id="153" npcName="Skrella Chillbone" anim="1" text="This land belongs to the Frostfang Tribe, and the tribe belongs to me, human! Now I have summoned a tide to wash your kind away from these lands for good! Hah!" posx="1920" posy="5">
+		<option optionid="1" optiontext="You are the Goblin Witch, Skrella, are you not?" next="151"></option>
+		<option optionid="2" optiontext="Death has come to greet you, Witch." next="154" icon="Quest"></option>
+		<option optionid="3" optiontext="We'll see about that..." next="0"></option>
+	</node>
+	<node id="154" npcName="Skrella Chillbone" anim="1" text="Hahahaha! I think not, human! I am the oldest, most vicious of all goblins! You think you are first to try to take old Skrella's life? I have cheated death many times before!" posx="610" posy="606">
+		<option optionid="1" optiontext="" next="155"></option>
+	</node>
+	<node id="155" npcName="Skrella Chillbone" anim="1" text="And even my death will matter not! It will not end the wrath I have summoned! The Cruel Wind shall turn these forests into a frozen wasteland and wash from them the stench of humans! Hahahaha!" posx="1025" posy="607">
+		<option optionid="1" optiontext="What in the world is the Cruel Wind?" next="156"></option>
+		<option optionid="2" optiontext="Are you talking about the creatures that attacked the village?" next="157"></option>
+		<option optionid="3" optiontext="I can put an end to it, the same way I can put an end to you." next="158" icon="Quest"></option>
+		<option optionid="4" optiontext="We'll see about that..." next="0"></option>
+	</node>
+	<node id="156" npcName="Skrella Chillbone" anim="1" text="Once banished by druids, long since forgotten... but old Skrella rediscovered him, in her visions she found him... The great, merciless, heartless elemental spirit...! Zephirix the Cruel Wind is the perfect god for goblin-kind, and I have manifested his power!" posx="1433" posy="607">
+		<option optionid="1" optiontext="Is that what attacked the village?" next="157"></option>
+		<option optionid="2" optiontext="I can put an end to it, the same way I can put an end to you." next="158" icon="Quest"></option>
+		<option optionid="3" optiontext="It won't save you..." next="0"></option>
+	</node>
+	<node id="157" npcName="Skrella Chillbone" anim="1" text="The human village suffered but a small taste of his power! The Cruel Wind is much more than that... I feed its fury and it grows. Soon the time will come and it will consume this land! Nothing will remain of your village then, hahaha!" posx="1842" posy="607">
+		<option optionid="1" optiontext="The Cruel Wind... but what is it?" next="156"></option>
+		<option optionid="2" optiontext="I can put an end to it, the same way I can put an end to you." next="158" icon="Quest"></option>
+		<option optionid="3" optiontext="We'll see about that..." next="0"></option>
+	</node>
+	<node id="158" npcName="Skrella Chillbone" anim="1" itemIcon="2130" text="Hah, you cannot! You will not see it, you cannot touch it! Only I have trapped its power into an effigy I crafted, and only through the effigy can the great elemental spirit be made manifest!" posx="2407" posy="608">
+		<option optionid="1" optiontext="" next="159"></option>
+	</node>
+	<node id="159" npcName="Skrella Chillbone" anim="1" text="But good luck taking the effigy from me, meddling human! Hahaha! You will see, old Skrella has many tricks up her sleeve...\n\n&lt;color=#9C8C77&gt;*Without further warning, the Goblin Witch begins to chant a magical ritual!*&lt;/color&gt;" posx="2818" posy="607">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=271" icon="Quest"></option>
+	</node>
+	<node id="160" npcName="Skrella Chillbone" anim="1" text="You are the human I watched from the shadows, as you ran rampant through *my* lands, slaughtering *my* kin...  And now you have the gall to come to my lair? Hah, suffering will be coming your way before long, human!" posx="904" posy="3">
+		<option optionid="1" optiontext="You were the one who attacked the village - why?" next="152"></option>
+		<option optionid="2" optiontext="Death has come to greet you, Witch." next="154" icon="Quest"></option>
+		<option optionid="3" optiontext="We'll see about that..." next="0"></option>
+	</node>
+
+
+	<node id="180" npcName="Eirah Vinter" anim="1" text="What news, brave outlander? We heard quite the commotion coming from the woods. Is our village safe?" posx="0" posy="10">
+		<option optionid="1" optiontext="Yes, I've thwarted the Goblin Witch and destroyed the elemental spirit she'd summoned." next="181" icon="Quest"></option>
+		<option optionid="2" optiontext="Not yet." next="0"></option>
+	</node>
+	<node id="181" npcName="Eirah Vinter" anim="1" text="Incredible! When I first asked for your aid, I did not imagine you would end up saving our village so thoroughly! Didn't I tell you, Gordon, that I had a great feeling about the outlander?" posx="411" posy="10">
+		<option optionid="1" optiontext="" next="182"></option>
+	</node>
+	<node id="182" npcName="Gordon Hatchet" anim="1" switchtalker="1781" lookAtNpc="1780" text="Hrmph... Yes, though I think our village should handle its problems without the need of outsiders. Really, I would have dealt with the witch myself! But I don't have powerful items, or any skills..." posx="822" posy="10">
+		<option optionid="1" optiontext="" next="183"></option>
+	</node>
+	<node id="183" npcName="Eirah Vinter" anim="1" switchtalker="1780" text="Oh, stop being such a sourpuss, Gordon! Anyway, thanks to you, outlander, we can finally celebrate the Hearthlight Festival in peace! I name you an honorary friend of Evergreen Hearth!" posx="1231" posy="11">
+		<option optionid="1" optiontext="" next="184"></option>
+	</node>
+	<node id="184" npcName="Eirah Vinter" anim="1" text="As such, I bestow upon you some of our festival tokens! Take them to our village peddlers and they'll give you a proper gift in return. Also, you have my blessing to purchase the cabin by the lake - its previous owner ran away and I don't think he's coming back." posx="1638" posy="11">
+		<option optionid="1" optiontext="Thank you, Madam - enjoy your festival!" next="0" actions="UpdateQuest=119-999"></option>
+	</node>
+
+
+	<node id="200" npcName="Eirah Vinter" anim="1" text="Happy Hearthlight Festival, honorary friend of Evergreen Hearth! May you find warmth and light beside our village fires! I hope you have been most successful in hunting our village festival tokens." posx="0" posy="10">
+		<option optionid="1" optiontext="There's something I wanted to ask..." next="130"></option>
+		<option optionid="2" optiontext="Merry festival to you too, Madam." next="0"></option>
+	</node>
+
+
+
+
+
+	<node id="1000" npcName="Jans the Blacksmith" anim="1" text="Hello there! The festival is buzzing with excitement. What can I do for you?" contextBefore="first dialogue" posx="0" posy="84">
+		<option optionid="1" optiontext="Who are you?" next="1001"></option>
+		<option optionid="2" optiontext="Goodbye." next="0"></option>
+	</node>
+	<node id="1001" npcName="Jans the Blacksmith" anim="1" text="I’m Jans, a blacksmith with a passion for crafting masterpieces. And Coldstone Iron is my muse, I can never get enough of it. Tell you what, I'd be happy to trade some festival tokens for it." posx="493" posy="82">
+		<option optionid="1" optiontext="" next="1002" actions="SetVar=BlacksmithJansDialogueSwitch-1"></option>
+	</node>
+	<node id="1002" npcName="Jans the Blacksmith" anim="1" text="If you happen to amass Coldstone Iron out there, why don't you consider trading it in for me?" posx="967" posy="58">
+		<option optionid="1" optiontext="I do have Coldstone Iron I could trade." next="1004" checks="HasItem=9108-1" itemIcon="9108" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Maybe later." next="0"></option>
+	</node>
+	<node id="1003" npcName="Jans the Blacksmith" anim="1" text="Hey, outlander, you’re back! Don't suppose you've got any Coldstone Iron for me to work my magic?" posx="22" posy="412">
+		<option optionid="1" optiontext="I do have some I could trade." next="1004" checks="HasItem=9108-1" itemIcon="9108" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Who are you again?" next="1005"></option>
+		<option optionid="3" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="1004" npcName="Jans the Blacksmith" anim="1" text="Ah, that's music to my ears! Let’s see what kind of haul you’re talking about." posx="1008" posy="371">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Trade 10 ore for 30 tokens.*&lt;/color&gt;" next="1006" checks="HasItem=9108-10" itemIcon="9108" actions="RemoveItems=9108-10,AddItems=9116-30-true" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Trade 1 ore for 2 tokens.*&lt;/color&gt;" next="1006" checks="HasItem=9108-1" itemIcon="9108" actions="RemoveItems=9108-1,AddItems=9116-2-true" showGreyedOutOption="1"></option>
+		<option optionid="3" optiontext="I changed my mind." next="0"></option>
+	</node>
+	<node id="1005" npcName="Jans the Blacksmith" anim="1" text="I’m Jans, a blacksmith with a passion for crafting masterpieces. And Coldstone Iron is my muse, I can never get enough of it. Tell you what, I'd be happy to trade some festival tokens for it." posx="516" posy="626">
+		<option optionid="1" optiontext="As it happens, I have Coldstone Iron." next="1004" checks="HasItem=9108-1" itemIcon="9108" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="1006" npcName="Jans the Blacksmith" anim="1" text="Fantastic, and here are your tokens! This will fuel my work for some time. Though the appetite of my forge is never sated!" posx="1492" posy="378">
+		<option optionid="1" optiontext="That's not all..." next="1004" checks="HasItem=9108-1" itemIcon="9108"></option>
+		<option optionid="2" optiontext="Goodbye." next="0"></option>
+	</node>
+
+
+	<node id="1050" npcName="Jeffe the Lumberjack" anim="1" text="What do we have here, then? Another outlander looking to trade wood for festival tokens?" contextBefore="first dialogue" posx="0" posy="84">
+		<option optionid="1" optiontext="Who are you?" next="1051"></option>
+		<option optionid="2" optiontext="Goodbye." next="0"></option>
+	</node>
+	<node id="1051" npcName="Jeffe the Lumberjack" anim="1" text="Just another, friendly village lumberjack. Toiling out here for the precious Winterpine wood same as you, I'm sure. It's all anyone ever wants, except for when they need festival tokens. I can help you with that." posx="493" posy="82">
+		<option optionid="1" optiontext="How so?" next="1052" actions="SetVar=LumberjackJeffeDialogueSwitch-1"></option>
+	</node>
+	<node id="1052" npcName="Jeffe the Lumberjack" anim="1" text="Simple stuff, help me lighten my load. Bring me logs of Winterpine and I'll share with you some of my festival tokens." posx="967" posy="58">
+		<option optionid="1" optiontext="I have Winterpine for you." next="1054" checks="HasItem=9107-1" itemIcon="9107" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Not right now." next="0"></option>
+	</node>
+	<node id="1053" npcName="Jeffe the Lumberjack" anim="1" text="Back already, outlander? Have you come to trade Winterpine wood for tokens? I'm always up for it." posx="22" posy="412">
+		<option optionid="1" optiontext="I have Winterpine for you." next="1054" checks="HasItem=9107-1" itemIcon="9107" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Who are you again?" next="1055"></option>
+		<option optionid="3" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="1054" npcName="Jeffe the Lumberjack" anim="1" text="That's always a pleasure. Come on then, let's see the goods." posx="1008" posy="371">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Trade 10 logs for 30 tokens.*&lt;/color&gt;" next="1056" checks="HasItem=9107-10" itemIcon="9107" actions="RemoveItems=9107-10,AddItems=9116-30-true" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Trade 1 log for 2 tokens.*&lt;/color&gt;" next="1056" checks="HasItem=9107-1" itemIcon="9107" actions="RemoveItems=9107-1,AddItems=9116-2-true" showGreyedOutOption="1"></option>
+		<option optionid="3" optiontext="I changed my mind." next="0"></option>
+	</node>
+	<node id="1055" npcName="Jeffe the Lumberjack" anim="1" text="Just another, friendly village lumberjack. Toiling out here for the precious Winterpine wood same as you, I'm sure. It's all anyone ever wants, except for when they need festival tokens. I can help you with that." posx="516" posy="626">
+		<option optionid="1" optiontext="I have Winterpine for you." next="1054" checks="HasItem=9107-1" itemIcon="9107" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="1056" npcName="Jeffe the Lumberjack" anim="1" text="Oh nice, good haul - here’s your tokens. Now let me get back to work. Unless, of course, you have more to offer...?" posx="1492" posy="378">
+		<option optionid="1" optiontext="That's not all..." next="1054" itemIcon="9107" checks="HasItem=9107-1"></option>
+		<option optionid="2" optiontext="Goodbye." next="0"></option>
+	</node>
+
+
+	<node id="1100" npcName="Jones the Fisherman" anim="1" text="Hey! Got any fish to trade? I'd be happy to take them off your hands." contextBefore="first dialogue" posx="0" posy="84">
+		<option optionid="1" optiontext="Who are you?" next="1101"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="1101" npcName="Jones the Fisherman" anim="1" text="Just a friendly village fisherman. I’m here to provide fish for the village festivities, though I prefer others do the catching for me." posx="493" posy="82">
+		<option optionid="1" optiontext="How does that work?" next="1102" actions="SetVar=FishermanJonesDialogueSwitch-1"></option>
+	</node>
+	<node id="1102" npcName="Jones the Fisherman" anim="1" text="Simple - you bring me clearwater salmon from the lake, and I pay you with village festival tokens." posx="967" posy="58">
+		<option optionid="1" optiontext="I do have fish to trade." next="1104" checks="HasItem=9109-1" itemIcon="9109" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Not right now." next="0"></option>
+	</node>
+	<node id="1103" npcName="Jones the Fisherman" anim="1" text="Ah, you’re back! Got clearwater salmon for me? I'd be happy to take them off your hands, in exchange for festival tokens of course." posx="22" posy="412">
+		<option optionid="1" optiontext="I do have fish to trade." next="1104" checks="HasItem=9109-1" itemIcon="9109" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Who are you again?" next="1105"></option>
+		<option optionid="3" optiontext="Never mind." next="0"></option>
+	</node>
+	<node id="1104" npcName="Jones the Fisherman" anim="1" text="Brilliant! Let’s see what you’ve caught!" posx="1008" posy="371">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Trade 10 fish for 30 tokens.*&lt;/color&gt;" next="1106" checks="HasItem=9109-10" itemIcon="9109" actions="RemoveItems=9109-10,AddItems=9116-30-true" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="&lt;color=#9C8C77&gt;*Trade 1 fish for 2 tokens.*&lt;/color&gt;" next="1106" checks="HasItem=9109-1" itemIcon="9109" actions="RemoveItems=9109-1,AddItems=9116-2-true" showGreyedOutOption="1"></option>
+		<option optionid="3" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="1105" npcName="Jones the Fisherman" anim="1" text="Just a friendly village fisherman. I’m here to provide fish for the village festivities, though I prefer others do the catching for me." posx="516" posy="626">
+		<option optionid="1" optiontext="I do have fish to trade." next="1104" checks="HasItem=9109-1" itemIcon="9109" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Never mind." next="0"></option>
+	</node>
+	<node id="1106" npcName="Jones the Fisherman" anim="1" text="Nice catch! I'll make sure these get to the village. And here’s your tokens." posx="1492" posy="378">
+		<option optionid="1" optiontext="That's not all..." next="1104" checks="HasItem=9109-1" itemIcon="9109"></option>
+		<option optionid="2" optiontext="Goodbye." next="0"></option>
+	</node>
+
+
+
+
+	<node id="1199" npcName="Bewitched Snowman" anim="9075" switchtalker="9141" text="*Hohohoho!*" contextBefore="first dialogue" posx="29" posy="370">
+		<option optionid="1" optiontext="It seems to be... alive?" next="1201"></option>
+		<option optionid="2" optiontext="Goodbye." next="0"></option>
+	</node>
+	<node id="1200" npcName="Snowboy Jake" anim="1" text="Hey, sir! Check out my snowman! Isn’t it awesome? It’s the master of causing chaos!" contextBefore="first dialogue" posx="10" posy="57">
+		<option optionid="1" optiontext="" next="1199"></option>
+	</node>
+	<node id="1201" npcName="Snowboy Jake" anim="1" switchtalker="9081" text="This isn’t just any old snowman - it’s bewitched! And I've seen it throws snowballs at people when they’re not looking. It’s so funny!" posx="493" posy="82">
+		<option optionid="1" optiontext="I could make use of the troublemaker, I'll give you festival tokens for it." itemIcon="9116" next="1202"></option>
+		<option optionid="2" optiontext="How did you manage to come by such a thing?" next="1205"></option>
+		<option optionid="3" optiontext="That's certainly something..." next="0"></option>
+	</node>
+	<node id="1202" npcName="Snowboy Jake" anim="1" text="What? No way, this snowman is pure chaos, it's incredibly valuable! Although, tokens could buy me a ton of candy, hmm... Very well then, sir: one thousand tokens, no less, and it's a deal!" posx="967" posy="58">
+		<option optionid="1" optiontext="How about I give you 500 festival tokens?" next="1203" itemIcon="9116" checks="HasItem=9116-500" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="How did you manage to come by such a thing?" next="1205"></option>
+		<option optionid="3" optiontext="Nevermind then." next="0"></option>
+	</node>
+	<node id="1203" npcName="Snowboy Jake" anim="1" text="500 tokens?! Alright, sir, sweet! You can take this master of chaos off my hands. Have fun dodging snowballs!" posx="1374" posy="58">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Make the trade.*&lt;/color&gt;" next="1204" itemIcon="9116" actions="RemoveItems=9116-500,AddItems=9128-1-true"></option>
+		<option optionid="2" optiontext="Actually, I changed my mind..." next="0"></option>
+	</node>
+	<node id="1204" npcName="Snowboy Jake" anim="1" text="Ha, this is the best trade ever! Now I can get so many candy cones, I can't believe it! Good luck with your new snowball-hurling buddy, sir!" posx="1786" posy="58">
+		<option optionid="1" optiontext="" next="0" itemIcon="9128" actions="Cinematic=282"></option>
+	</node>
+	<node id="1205" npcName="Snowboy Jake" anim="1" text="I made it myself! Well, first I was sneaking in the woods, spying on a goblin witch! I saw it cast spells, animating the snow... I sneaked in after she was gone and collected that enchanted snow!" posx="480" posy="606">
+		<option optionid="1" optiontext="I could make use of the troublemaker, I'll give you festival tokens for it." next="1202"></option>
+		<option optionid="2" optiontext="Mighty brave of you." next="0"></option>
+	</node>
+
+
+	<node id="1300" npcName="Hearthside Lenny" anim="1" text="Welcome to the Hearthside Lodge, outlander! Rest you bones by our warm fires, why don't you? This is a place of peace and contemplation." posx="6" posy="5">
+		<option optionid="1" optiontext="Is there anything you need help with?" next="1301"></option>
+		<option optionid="2" optiontext="Sure." next="0"></option>
+	</node>
+	<node id="1301" npcName="Hearthside Lenny" anim="1" text="Well, don't you just have the festival spirit in you, offering your help freely like that! Hmm, I might have a task for you, and I'll reward you with our festival tokens for it." posx="416" posy="4">
+		<option optionid="1" optiontext="" next="1302"></option>
+	</node>
+	<node id="1302" npcName="Hearthside Lenny" anim="1" text="I'm struggling to keep the fires roaring in our Great Hearth, while also serving drinks and food to the village guests. Please, feel free to use my fancy runic axe to split some logs and keep the fires burning. I have stacked logs just outside for that very purpose." posx="826" posy="5">
+		<option optionid="1" optiontext="A runic axe, you say?" next="1303"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+	<node id="1303" npcName="Hearthside Lenny" anim="1" text="Quite so! I once found it buried beneath some rocks while foraging out in the woods. I thought it might've been the axe of a great warrior once, but the only thing it turned out to excel at was splitting firewood. Go and figure." posx="1236" posy="5">
+		<option optionid="1" optiontext="Curious indeed." next="0"></option>
+	</node>
+
+
+	<node id="1400" npcName="Master Loyds" anim="1" text="So many fantastic wares to purchase at the village market, but where to store them safely while you go on about your business? Worry not, and welcome to Master Loyd's marvellous banking wagon! May I assist you in the safe storage of possessions?" posx="9" posy="6">
+		<option optionid="1" optiontext="Yes please, I'd like to bank some items." next="0" actions="OpenBank=1" icon="Bank" iconTooltip="Open bank"></option>
+		<option optionid="2" optiontext="Nevermind." next="0"></option>
+	</node>
+
+	<node id="1500" npcName="Master Hemmings" anim="1" text="Come one, come all, don't be shy! The finest, quirkiest objects of festive cheer may be found here at my stall! How about you, my friend? Can I interest you in some of my wondrous curios?" posx="8" posy="5">
+		<option optionid="1" optiontext="Yes, why not." next="0" actions="OpenShop=139"></option>
+		<option optionid="2" optiontext="Exactly what are you peddling?" next="1501"></option>
+		<option optionid="3" optiontext="To be honest, no." next="0"></option>
+	</node>
+	<node id="1501" npcName="Master Hemmings" anim="1" text="Why, I have in my travels collected fine objects that tickle the mind, both from afar and local, and I have brought them here to be shared with all during this great Hearthlight Festival!" posx="416" posy="5">
+		<option optionid="1" optiontext="" next="1502"></option>
+	</node>
+	<node id="1502" npcName="Master Hemmings" anim="1" text="Of course, there aren't enough to go around for all, so they're for the most part on display only, however...! For the dedicated few, it is possible to win some of my prized objects in exchange for village festival tokens, which are awarded to those who do service to the village in this time!" posx="824" posy="6">
+		<option optionid="1" optiontext="Right, let's see these marvels of yours then." next="0" actions="OpenShop=139"></option>
+		<option optionid="2" optiontext="Nevermind." next="0"></option>
+	</node>
+
+
+
+	<node id="1600" npcName="Master Glint" anim="1" text="Welcome to our village, traveler! Have you come to admire our festive wares? As is tradition, we've spent all year gathering wonderful treasures to bring on display during the Hearthlight Festival." posx="5" posy="2">
+		<option optionid="1" optiontext="I'd like to take a look." next="0" actions="OpenShop=141"></option>
+		<option optionid="2" optiontext="What treasures have you found?" next="1601"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="1601" npcName="Master Glint" anim="1" text="Some interesting books, I believe one even contains a measure of magical power! And a fine ring of incredible rarity... I could not part with it, except for the greatest measure of our festival tokens." posx="414" posy="3">
+		<option optionid="1" optiontext="I'd like to take a look." next="0" actions="OpenShop=141"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+
+
+	<node id="1700" npcName="Molly, Lady of Winter Fabrics" anim="1" text="Please keep the door shut, it's freezing outside! I only want to wear the most beautiful dresses in the realm, but this weather scarcely allows for it. Sometimes I feel like I was born in the wrong part of the world!" posx="8" posy="5">
+		<option optionid="1" optiontext="What do you have?" next="0" actions="OpenShop=140"></option>
+		<option optionid="2" optiontext="You're a seamstress?" next="1701"></option>
+		<option optionid="3" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="1701" npcName="Molly, Lady of Winter Fabrics" anim="1" text="Yes, of course! But all the clothing's already reserved, I only have the local fabric left. Mind you, I only hand it out in exchange for festival tokens." posx="415" posy="6">
+		<option optionid="1" optiontext="What's the fabric good for?" next="1702"></option>
+		<option optionid="2" optiontext="Very well, let's take a look." next="0" actions="OpenShop=140"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="1702" npcName="Molly, Lady of Winter Fabrics" anim="1" text="Well... The brutish locals often make bandages out of it, to help survive out in the wilds. Spirits forbid anyone around here would actually make anything fancy out of it." posx="822" posy="7">
+		<option optionid="1" optiontext="Very well, let's take a look." next="0" actions="OpenShop=140"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+
+
+	<node id="1750" npcName="Shopkeeper Inga" anim="1" text="Everyone's so obsessed with the Hearthlight Festival... Quirky artifacts aren't what folk need in their everyday lives! That's what I provide, even if my shop may not be as exciting as some of the market stalls out there." posx="7" posy="6">
+		<option optionid="1" optiontext="I'd like to see your wares." next="0" actions="OpenShop=138"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	
+
+	<node id="1800" npcName="Village Guard" anim="1" text="Welcome to Evergreen Hearth! Our village festivities have already started, but it's not too late to join the fun! Please, attend the village hall when you have the time; the leader of our village, Madam Vinter, will wish to welcome you personally." posx="0" posy="8">
+		<option optionid="1" optiontext="Where do I find your village hall?" next="1801"></option>
+		<option optionid="2" optiontext="What can you tell me about your village?" next="1802"></option>
+		<option optionid="3" optiontext="What are the festivities?" next="1803"></option>
+		<option optionid="4" optiontext="Very well, thank you." next="0"></option>
+	</node>
+	<node id="1801" npcName="Village Guard" anim="1" text="You'll find the village hall just down the street on the left. It's the grandest building in the village, and there's a druid lingering nearby - you really can't miss it!" posx="408" posy="8">
+		<option optionid="1" optiontext="What can you tell me about your village?" next="1802"></option>
+		<option optionid="2" optiontext="What are the festivities?" next="1803"></option>
+		<option optionid="3" optiontext="Very well, thank you." next="0"></option>
+	</node>
+	<node id="1802" npcName="Village Guard" anim="1" text="Ours is a peaceful village surrounded by dense forests. Most folks here are lumberjacks or traders, and we're well known for our warm hospitality and quality timber!" posx="815" posy="7">
+		<option optionid="1" optiontext="What are the festivities?" next="1803"></option>
+		<option optionid="2" optiontext="Where do I find your village hall?" next="1801"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="1803" npcName="Village Guard" anim="1" text="The Hearthlight Festival is the time we set aside our worries and light fires to drive away the cold and the dark. Delicious food and games will be enjoyed by all, and every craftsman puts up their finest wares on display!" posx="1225" posy="8">
+		<option optionid="1" optiontext="Where do I find your village hall?" next="1801"></option>
+		<option optionid="2" optiontext="What can you tell me about your village?" next="1802"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+
+	
+	<node id="1810" npcName="Village Guard" anim="1" text="Welcome to our village, traveler! I hope you're enjoying the festivities. " posx="13" posy="605">
+		<option optionid="1" optiontext="Where do I find your village hall?" next="1801"></option>
+		<option optionid="2" optiontext="What can you tell me about your village?" next="1802"></option>
+		<option optionid="3" optiontext="What are the festivities?" next="1803"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+
+
+</dialogue>
+
+
+
+

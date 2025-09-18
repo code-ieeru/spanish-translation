@@ -1,0 +1,1197 @@
+<behaviours>
+	<behaviour id="0" name="Basic melee">
+		<cycle type="idle">
+			<action type="Wander" time="10000"/>
+			<action type="IdleSound" vars="rate=10" time="250"/>
+			<action type="Idle" time="3000"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="3000"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="RunToRandomLocationAroundTargetIfStacked" time="1000" vars="rate=50"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="1" name="Basic melee that eats food">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="IdleSound" vars="rate=10" time="250"/>
+			<action type="Idle" time="3000"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="3000"/>
+			<action type="UseAbility" time="3000" vars="abilityid=1,hplessthanpercentage=50,rate=50"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="RunToRandomLocationAroundTargetIfStacked" time="1000" vars="rate=50"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="2" name="Patrolling npc">
+		<cycle type="idle">
+			<action type="Idle" time="3000"/>
+			<action type="ChangeCycleType" cycletype="patrolling" time="1000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="Chase" time="3000"/>
+			<action type="MoveBackToAttack" time="5000"/>
+			<action type="AttackSlow" time="3000"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="patrolling">
+			<action type="Patrol" time="3000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="3" name="wizard">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" time="1000" vars="abilityid=16"/>
+			<action type="MeleeAttack" time="3000" vars="manalessthan=5"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="4" name="StaticNpc">
+		<cycle type="idle">
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="Idle" time="3000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="5" name="Golem boss">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="Chase" time="3000"/>
+			<action type="MoveBackToAttack" time="5000"/>
+			<action type="MeleeAttack" time="3000"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+
+			<action type="Chase" time="3000"/>
+			<action type="MoveBackToAttack" time="5000"/>
+			<action type="GolemSmash" time="3000" vars="rate=50"/>
+			<action type="GolemSmashFallingRocks" time="3000" vars="rate=50"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="6" name="PKer">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="MeleeAttack" time="3000"/>
+			<action type="UseAbility" time="2000" vars="abilityid=12,animation=50,rate=70,hplessthanpercentage=50"/>
+			<action type="UseAbility" time="2000" vars="abilityid=23,distancetotargetmorethan=5,rate=50"/>
+			<action type="RunToRandomLocationAroundTarget" time="1000" vars="rate=50"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="ChangeCycleType" cycletype="pkerheal" time="1000" vars="rate=20,distancetotargetlessthan=20,manamorethan=10"/>
+		</cycle>
+		<cycle type="pkerheal">
+			<action type="MoveBackToAttack" time="5000"/>
+			<action type="UseAbility" time="2000" vars="abilityid=23,distancetotargetlessthan=5"/>
+
+			<action type="MoveBack" time="1000" vars="distancetotargetlessthan=15"/>
+			<action type="UseAbility" time="2000" vars="abilityid=16,distancetotargetlessthan=20"/>
+			<action type="MeleeAttack" time="3000" vars="distancetotargetlessthan=10"/>
+
+			<action type="Wander" time="1000" vars="rate=30"/>
+
+			<action type="MoveBack" time="1000" vars="distancetotargetlessthan=15"/>
+			<action type="UseAbility" time="2000" vars="abilityid=16,distancetotargetlessthan=20"/>
+			<action type="MeleeAttack" time="3000" vars="distancetotargetlessthan=10"/>
+
+			<action type="Wander" time="1000" vars="rate=30"/>
+
+			<action type="MoveBack" time="1000" vars="distancetotargetlessthan=15"/>
+			<action type="UseAbility" time="2000" vars="abilityid=16,distancetotargetlessthan=20"/>
+			<action type="MeleeAttack" time="3000" vars="distancetotargetlessthan=10"/>
+
+			<action type="ChangeCycleType" cycletype="combat" time="1000" vars="distancetotargetlessthan=10"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="7" name="Stun wizard">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="Chase" time="3000"/>
+			<action type="ProjectileAttack" time="3000" vars="projectileid=1,projectileendgfx=5,projectilespeed=10,animation=52"/>
+			<action type="MoveBack" time="1000" vars="distancetotargetlessthan=10"/>
+			<action type="UseAbility" comment="stun" time="2000" vars="abilityid=23,distancetotargetmorethan=5,rate=50"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+
+
+
+	<behaviour id="8" name="Fairy">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="MoveBackToAttack" time="5000"/>
+			<action type="UseAbility" time="1500" vars="animation=466"/>
+			<action type="UseAbility" time="1500" vars="abilityid=12,animation=466,rate=50,hplessthanpercentage=50"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+
+
+	<behaviour id="9" name="Angry flower">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" time="1500" vars="abilityid=62,animation=467"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="10" name="Treant">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" time="3000"/>
+			<action type="UseAbility" time="1500" vars="abilityid=12,animation=476,rate=20,hplessthanpercentage=75" comment="regrowth"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="11" name="Etherlight healer">
+		<cycle type="idle">
+			<action type="EtherlightHealerMove" time="2000"/>
+			<action type="EtherlightHealerHeal" time="4000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="EtherlightHealerMove" time="2000"/>
+			<action type="EtherlightHealerHeal" time="4000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="EtherlightHealerMove" time="2000"/>
+			<action type="EtherlightHealerHeal" time="4000"/>
+		</cycle>
+	</behaviour>
+
+
+
+	<behaviour id="12" name="Etherlight ranged insect">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="1000"/>
+			<action type="Wander" time="2000"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+
+	<behaviour id="13" name="Archer">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" time="1000" vars="abilityid=6"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="14" name="ManaDrainerWizard">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="MeleeAttack" time="3000"/>
+			<action type="UseAbility" time="0" vars="abilityid=17"/>
+			<action type="UseAbility" time="0" vars="abilityid=41" rate="30"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="15" name="Nothing">
+		<cycle type="idle">
+			<action type="Skip" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="Skip" time="3000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="Skip" time="3000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="16" name="Nothing">
+		<cycle type="idle">
+			<action type="RuinsOfEtherlightGabriusMonster" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="RuinsOfEtherlightGabriusMonster" time="3000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="RuinsOfEtherlightGabriusMonster" time="3000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="17" name="Cleaner">
+		<cycle type="idle">
+			<action type="CleanerFindDirt" time="3000"/>
+			<action type="CleanerClean" time="3000"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="CleanerFindDirt" time="3000"/>
+			<action type="CleanerClean" time="3000"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="CleanerFindDirt" time="3000"/>
+			<action type="CleanerClean" time="3000"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="18" name="Fisherman">
+		<cycle type="idle">
+			<action type="FishermanFindSpot" time="3000"/>
+			<action type="FishermanFish" time="6000"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+			<action type="Wander" vars="rate=20" time="2000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="FishermanFindSpot" time="3000"/>
+			<action type="FishermanFish" time="6000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="FishermanFindSpot" time="3000"/>
+			<action type="FishermanFish" time="6000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="19" name="Woodcutter">
+		<cycle type="idle">
+			<action type="WoodcutterFindSpot" time="3000"/>
+			<action type="WoodcutterCut" time="1500"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="WoodcutterFindSpot" time="3000"/>
+			<action type="WoodcutterCut" time="1500"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="WoodcutterFindSpot" time="3000"/>
+			<action type="WoodcutterCut" time="1500"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="20" name="simple follower">
+		<cycle type="idle">
+			<action type="FollowPlayer" time="2000"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="FollowPlayer" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="FollowPlayer" time="2000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="21" name="crossbow Archer">
+		<cycle type="idle">
+			<action type="InteractWithOtherNpc" time="3000"/>
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" time="1000" vars="abilityid=46"/>
+			<action type="MoveBack" time="1000" vars="distancetotargetlessthan=10"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="22" name="goose">
+		<cycle type="idle">
+			<action type="IdleSound" vars="rate=50,distancetoplayerlessthan=15" time="2000"/>
+			<action type="Wander" time="2000"/>
+			<action type="IdleSound" vars="rate=50,distancetoplayerlessthan=15" time="250"/>
+			<action type="Idle" time="3000"/>
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+			<action type="ChangeCycleType" cycletype="goosefollowplayer" time="250"/>
+		</cycle>
+		<cycle type="goosefollowplayer">
+			<action type="FollowPlayer" vars="distancetoplayerlessthan=15" time="1000"/>
+			<action type="IdleSound" vars="rate=50,distancetoplayerlessthan=15" time="250"/>
+			<action type="ChangeCycleType" vars="rate=10" cycletype="idle" time="250"/>
+			<action type="ChangeCycleType" vars="distancetoplayermorethan=10" cycletype="idle" time="250"/>
+		</cycle>
+	</behaviour>
+
+
+
+	<behaviour id="23" name="Battlefield melee">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="MeleeAttack" time="2000"/>
+			<action type="IdleIfNoTarget" time="500"/>
+			<action type="RunToRandomLocationAroundTargetIfStacked" time="500" vars="rate=50"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="24" name="Battlefield Archer crossbow">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" time="1000" vars="abilityid=46"/>
+			<action type="IdleIfNoTarget" time="500"/>
+			<action type="RunToRandomLocationAroundTargetIfStacked" time="500" vars="rate=50"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="25" name="battlefieldArcher">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" time="1000" vars="abilityid=6"/>
+			<action type="IdleIfNoTarget" time="500"/>
+			<action type="RunToRandomLocationAroundTargetIfStacked" time="500" vars="rate=50"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="26" name="Battlefield wizard">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" time="1000" vars="abilityid=16,manamorethan=15"/>
+			<action type="UseAbility" time="1000" vars="abilityid=8,manalessthan=5"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="27" name="Battlefield catapult">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" time="2000" vars="abilityid=48"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="28" name="Knockback melee(troll)">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="IdleSound" vars="rate=10" time="250"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" time="3000"/>
+			<action type="UseAbility" time="3000" vars="rate=20,abilityid=104,animation=541"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="RunToRandomLocationAroundTargetIfStacked" time="1000" vars="rate=50"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="29" name="Gadawin">
+		<cycle type="idle">
+			<action type="Gadawin" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="Gadawin" time="3000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="30" name="UncleBordevar">
+		<cycle type="idle">
+			<action type="UncleBordevar" time="1000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UncleBordevar" time="1000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="31" name="Barleypicker">
+		<cycle type="idle">
+			<action type="BarleyPickerFindSpot" time="3000"/>
+			<action type="BarleyPickerPick" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="BarleyPickerFindSpot" time="3000"/>
+			<action type="BarleyPickerPick" time="3000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="BarleyPickerFindSpot" time="3000"/>
+			<action type="BarleyPickerPick" time="3000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="32" name="crossbow Troll">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" time="1000" vars="abilityid=50,animation=554"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="33" name="Troll arena boss">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="IdleSound" vars="rate=10" time="250"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" time="5000" vars="abilityid=28,animation=541"/>
+			<action type="UseAbility" time="5000" vars="abilityid=49,animation=555"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="RunToRandomLocationAroundTargetIfStacked" time="1000" vars="rate=50"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+
+	<behaviour id="34" name="STun spider">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" comment="root" time="2000" vars="abilityid=51,rate=25,animation=330"/>
+			<action type="UseAbility" comment="poison" time="2000" vars="abilityid=52,animation=330"/>
+			<action type="MeleeAttack" time="2000"/>
+			<action type="MoveBack" time="1000" vars="distancetotargetlessthan=10"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="35" name="Thornhill spider boss">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" comment="aoe poison" time="2000" vars="abilityid=53,rate=25,animation=330"/>
+			<action type="MeleeAttack" time="2000"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="36" name="basic spider">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" comment="poison" time="2000" vars="abilityid=52,animation=330"/>
+			<action type="UseAbility" time="2000"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="37" name="hydrobor duel wand wizard">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" time="1000" vars="abilityid=63"/>
+			<action type="MeleeAttack" time="3000" vars="manalessthan=5"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+
+	<behaviour id="38" name="companion follower melee">
+		<cycle type="idle">
+			<action type="PlayerCompanion" time="500"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+			<action type="MoveRandomIfStacked" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="PlayerCompanionCombat" time="250"></action>
+			<action type="UseAbility" time="3000"/>
+			<action type="UseAbility" time="3000"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="FollowPlayer" time="2000"/>
+			<action type="ChangeCycleType" cycletype="idle" time="250"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="39" name="companion healer">
+		<cycle type="idle">
+			<action type="PlayerCompanion" time="500"/>
+			<action type="SelectLowestHealthAlly" time="100"/>
+			<action type="ChangeCycleType" cycletype="healcycle" time="250" vars="targethplessthanpercentage=100"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="PlayerCompanionCombat" time="250"></action>
+			<action type="UseAbility" time="1000"/>
+			<action type="MoveBack" time="1000"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="SelectLowestHealthAlly" time="100"/>
+			<action type="ChangeCycleType" cycletype="healcycle" time="250" vars="targethplessthanpercentage=100"/>
+		</cycle>
+		<cycle type="healcycle">
+			<action type="SelectLowestHealthAlly" time="100"/>
+			<action type="UseAbility" time="1000" vars="abilityid=67"/>
+			<action type="ChangeCycleType" cycletype="idle" time="250"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="FollowPlayer" time="2000"/>
+			<action type="ChangeCycleType" cycletype="idle" time="250"/>
+		</cycle>
+	</behaviour>
+
+
+	<behaviour id="40" name="deer">
+		<cycle type="idle">
+			<action type="Deer" time="1000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="Deer" time="1000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+
+	<behaviour id="41" name="Treant aggressive">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+
+			<action type="UseAbility" time="3000"/>
+			<action type="UseAbility" time="1500" vars="abilityid=12,animation=476,rate=20,hplessthanpercentage=75" comment="regrowth"/>
+			<action type="UseAbility" time="1500" vars="abilityid=76,animation=476,rate=50" comment="spell"/>
+			<action type="UseAbility" time="1500" vars="abilityid=76,animation=476,distancetotargetmorethan=4" comment="spell"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+
+	<behaviour id="42" name="Demon stage 1">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="3000" />
+			<action type="UseAbility" time="3000" vars="rate=50,abilityid=77,animation=599" comment="fire spell"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="demoncombat">
+			<action type="MoveBack" time="500" vars="distancetotargetlessthan=15"/>
+			<action type="UseAbility" time="3000" vars="abilityid=77,animation=599" comment="fire spell"/>
+			<action type="MoveBack" time="500" vars="distancetotargetlessthan=15"/>
+			<action type="UseAbility" time="3000" vars="abilityid=77,animation=599" comment="fire spell"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="ChangeCycleType" cycletype="combat" time="250"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="43" name="Demon stage 2">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="3000" vars="abilityid=77,animation=599" comment="fire spell"/>
+			<action type="UseAbility" time="3000" vars="rate=50,abilityid=78,animation=599" comment="spawn ads/gain mana"/>
+			<action type="UseAbility" time="3000" vars="rate=33,abilityid=79,animation=610" comment="kill ads"/>
+			<action type="DemonJump" vars="rate=50" time="2000"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="44" name="Ember wizard">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="1000" vars="abilityid=20"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="45" name="Airstrike stun wizard">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="1000" vars="abilityid=16" comment="airstrike"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="UseAbility" time="1000" vars="abilityid=82,rate=10,manalessthanpercentage=50" comment="restore mana from dmg"/>
+			<action type="ChangeCycleType" cycletype="combat2" time="250" vars="rate=25,manamorethanpercentage=20"/>
+		</cycle>
+		<cycle type="combat2">
+			<action type="MoveBack" time="1000" vars="distancetotargetlessthan=10"/>
+			<action type="UseAbility" comment="stun" time="2000" vars="abilityid=23"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="ChangeCycleType" cycletype="combat" time="250"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+
+	<behaviour id="46" name="Basic melee that eats food and drinks potions">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="IdleSound" vars="rate=10" time="250"/>
+			<action type="Idle" time="3000"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="3000"/>
+			<action type="UseAbility" time="3000" vars="abilityid=1,hplessthanpercentage=40,rate=20" comment="food"/>
+			<action type="UseAbility" time="3000" vars="abilityid=19,hplessthanpercentage=20,rate=50" comment="potion"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="RunToRandomLocationAroundTargetIfStacked" time="1000" vars="rate=50"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="47" name="Skeleton sorcerer boss">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="1000" vars="abilityid=16" comment="airstrike"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="UseAbility" time="1000" vars="abilityid=82,rate=25,manalessthanpercentage=50" comment="restore mana from dmg"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="48" name="Tyroghar">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="IdleSound" vars="rate=10" time="250"/>
+			<action type="Idle" time="3000"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="3000"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="UseAbility" time="1000" vars="abilityid=14,rate=20,hplessthanpercentage=50" comment="lightning"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="49" name="Miner">
+		<cycle type="idle">
+			<action type="MinerFindSpot" time="3000"/>
+			<action type="MinerMine" time="1500"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="MinerFindSpot" time="3000"/>
+			<action type="MinerMine" time="1500"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="MinerFindSpot" time="3000"/>
+			<action type="MinerMine" time="1500"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="50" name="Ent">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="IdleSound" vars="rate=10" time="250"/>
+			<action type="Idle" time="3000"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="3000"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="UseAbility" time="1000" vars="abilityid=105,rate=80" comment="spell"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="52" name="HW Militia construction worker">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="IdleSound" vars="rate=10" time="250"/>
+			<action type="Idle" time="3000"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="3000"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="UseAbility" time="1000" vars="abilityid=89,rate=20" comment="throw rock"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+
+	<behaviour id="53" name="Skeleton sorcerer boss haywind cemetery">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="1000" vars="abilityid=16" comment="gale"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="UseAbility" time="1000" vars="abilityid=82,rate=25,manalessthanpercentage=50" comment="restore mana from dmg"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="54" name="skeleton healer">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+			<action type="SelectLowestHealthAlly" time="100"/>
+			<action type="ChangeCycleType" cycletype="healcycle" time="250" vars="targethplessthanpercentage=100"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="SelectClosestTarget" time="250"/>
+			<action type="UseAbility" time="1000"/>
+			<action type="MoveBack" time="1000"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="SelectLowestHealthAlly" time="100"/>
+			<action type="ChangeCycleType" cycletype="healcycle" time="250" vars="targethplessthanpercentage=100"/>
+		</cycle>
+		<cycle type="healcycle">
+			<action type="SelectLowestHealthAlly" time="100"/>
+			<action type="UseAbility" time="1000" vars="abilityid=67"/>
+			<action type="ChangeCycleType" cycletype="idle" time="250"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="55" name="Skeleton sorcerer boss haywind cemetery phase 2">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="1000" vars="abilityid=101" comment="staff melee"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="UseAbility" time="1000" checks="!HasBuff=20" vars="abilityid=68,rate=20" comment="shield"/>
+			<action type="UseAbility" time="1000" vars="abilityid=82,manalessthanpercentage=50" comment="restore mana from dmg"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="56" name="Guardian of etherlyte">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="IdleSound" vars="rate=10" time="250"/>
+			<action type="Idle" time="3000"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="3000"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="UseAbility" time="1000" vars="abilityid=108,rate=80" comment="spell"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="57" name="Snail">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="IdleSound" vars="rate=10" time="250"/>
+			<action type="Idle" time="3000"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="3000"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="UseAbility" time="1000" vars="abilityid=110,rate=20" comment="spell"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="58" name="Nature golem">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="IdleSound" vars="rate=10" time="250"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="3000"/>
+			<action type="UseAbility" time="3000" vars="rate=20,abilityid=89,animation=848"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="RunToRandomLocationAroundTargetIfStacked" time="1000" vars="rate=50"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+
+
+	<behaviour id="59" name="Eloria">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="3000" vars="abilityid=109,distancetotargetlessthan=10"/>
+			<action type="UseAbility" time="3000"/>
+			<action type="UseAbility" time="3000" vars="abilityid=129,rate=50"/>
+			<action type="Idle" time="500"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="60" name="Ember/Gale wizard">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="1000" vars="abilityid=20" comment="ember"/>
+			<action type="UseAbility" time="1000" vars="abilityid=16,rate=75,manamorethanpercentage=80" comment="gale"/>
+			<action type="UseAbility" time="1000" vars="abilityid=16,rate=25" comment="gale"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="UseAbility" time="1000" vars="abilityid=82,rate=10,manalessthanpercentage=50" comment="restore mana from dmg"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+
+	<behaviour id="61" name="Gabrius final battle">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="3000" vars="abilityid=76,distancetotargetlessthan=10"/>
+			<action type="UseAbility" time="3000"/>
+			<action type="UseAbility" time="3000" vars="abilityid=101"/>
+			<action type="Idle" time="500"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="62" name="Eloria at Gabrius final battle">
+		<cycle type="idle">
+			<action type="FollowPlayer" time="2000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="FollowPlayer" time="2000"/>
+			<action type="SelectClosestTarget" time="250"/>
+			<action type="UseAbility" time="3000" vars="targethplessthanpercentage=10,abilityid=126"/>
+			<action type="MoveBack" time="2000" vars="distancetotargetlessthan=15"/>
+			<action type="UseAbility" time="3000"/>
+			<action type="UseAbility" time="3000" vars="rate=40,abilityid=126"/>
+			<action type="Idle" time="500"/>
+			<action type="UseAbility" time="3000" vars="targethplessthanpercentage=10,abilityid=126"/>
+			<action type="SelectLowestHealthAlly" time="100"/>
+			<action type="ChangeCycleType" cycletype="healcycle" time="250" vars="targethplessthanpercentage=100"/>
+		</cycle>
+		<cycle type="healcycle">
+			<action type="MoveBack" time="2000" vars="distancetotargetlessthan=15"/>
+			<action type="SelectLowestHealthAlly" time="100"/>
+			<action type="UseAbility" time="1000" vars="abilityid=67"/>
+			<action type="ChangeCycleType" cycletype="idle" time="250"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="FollowPlayer" time="2000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="63" name="Kyler Plair">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="3000"/>
+			<action type="UseAbility" time="3000" vars="abilityid=142,targetismoving=1" comment="root"/>
+			<action type="UseAbility" time="3000" vars="abilityid=141" comment="bleed"/>
+			<action type="ChangeCycleType" cycletype="combat2" time="1000" vars="targethasbuff=9"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="combat2">
+			<action type="MoveBack" time="1000" vars="distancetotargetlessthan=3"/>
+			<action type="UseAbility" comment="gale" time="2000" vars="abilityid=20"/>
+			<action type="MoveBack" time="1000" vars="distancetotargetlessthan=6"/>
+			<action type="UseAbility" comment="shield" time="2000" vars="abilityid=68"/>
+			<action type="UseAbility" comment="gale" time="2000" vars="abilityid=20"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+			<action type="ChangeCycleType" cycletype="combat" time="250"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	<behaviour id="64" name="Q88 TH Crypt guard mage">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="1000" vars="abilityid=94"/>
+			<action type="UseAbility" time="3000" vars="abilityid=142,targetismoving=1" comment="root"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+
+
+
+
+	<behaviour id="65" name="Ghost of Greywall ranged">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="InteractWithOtherNpc" time="3000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" comment="" time="2000" vars="abilityid=222"/>
+			<action type="UseAbility" comment="" time="2000" vars="abilityid=223,rate=33"/>
+			<action type="IdleIfNoTarget" time="250"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+
+
+	<behaviour id="66" name="Ghost of Greywall magic">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" comment="basic" time="2000" vars="abilityid=224"/>
+			<action type="UseAbility" comment="shout" time="2000" vars="abilityid=221,rate=33"/>
+			<action type="UseAbility" comment="reflect" time="2000" checks="!HasBuff=83" vars="abilityid=225"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="67" name="Ghost of Greywall fasrt ranged">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" comment="" time="2000" vars="abilityid=220"/>
+			<action type="IdleIfNoTarget" time="250"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+
+	<behaviour id="68" name="PKTest">
+		<cycle type="idle">
+			<action type="MinerFindSpot" time="3000"/>
+			<action type="MinerMine" time="1500"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="RunAwayFromAttacker" time="3000"/>
+			<action type="IdleIfNoTarget" time="250"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+	</behaviour>
+	
+	<behaviour id="69" name="Azzar2">
+		<cycle type="idle">
+			<action type="Wander" time="2000"/>
+			<action type="Idle" time="3000"/>
+		</cycle>
+		<cycle type="combat">
+			<action type="UseAbility" time="1000" vars="abilityid=94" comment="lightning"/>
+			<action type="UseAbility" time="1000" vars="abilityid=292,rate=50" comment="ice aoe"/>
+			<action type="UseAbility" time="1000" vars="abilityid=10" comment="shield"/>
+			<action type="IdleIfNoTarget" time="2000"/>
+		</cycle>
+		<cycle type="returning">
+			<action type="ReturnToStart" time="1000"/>
+		</cycle>
+		<prioritycycle type="block stuns" checks="TargetAttacking,TargetTargetingMe,TargetUsingAbility=142">
+			<action type="UseAbility" time="250" vars="abilityid=85,rate=50" comment="stability" />
+			<action type="ChangeCycleType" cycletype="combat" time="250" />
+		</prioritycycle>
+		<prioritycycle type="revive heal" checks="HealthLessThanPercentage=15,CanUseAbility=33">
+			<action type="UseAbility" time="3000" vars="abilityid=33" />
+			<action type="ChangeCycleType" cycletype="combat" time="250" />
+		</prioritycycle>
+	</behaviour>
+
+
+
+</behaviours>
+

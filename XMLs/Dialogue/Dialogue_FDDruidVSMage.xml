@@ -1,0 +1,246 @@
+<dialogue>
+
+	<node id="1" npcName="Druid Alwaron" anim="1" switchtalker="373" lookAtNpc="372" text="No, no, no! Nature is not your servant!" posx="-44" posy="16">
+		<option optionid="1" optiontext="Listen." next="2"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="2" npcName="Druid Alwaron" anim="1" switchtalker="373" lookAtNpc="372" text="We must strive to coexist within it, in harmony - not to control it!" posx="-41" posy="397">
+		<option optionid="1" optiontext="Continue listening." next="3"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="3" npcName="Mage Rahingar" anim="1" switchtalker="372" lookAtNpc="373" text="You argue out of emotion, bearded man. Simply, magic is control, of all things, even nature. Why should we then not use it? " posx="424" posy="19">
+		<option optionid="1" optiontext="Continue listening." next="4"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="4" npcName="Mage Rahingar" anim="1" switchtalker="372" lookAtNpc="373" text="You yourself employ magic, do you not? It seems to me we are merely arguing semantics here, about what kind of magic is appropriate." posx="419" posy="395">
+		<option optionid="1" optiontext="Continue listening." next="6"></option>
+		<option optionid="2" optiontext="Enough, this going nowhere!" next="12"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="6" npcName="Druid Alwaron" anim="1" switchtalker="373" lookAtNpc="372" text="It is astonishing how you devote your entire life to its study, yet you misunderstand magic entirely." posx="863" posy="393">
+		<option optionid="1" optiontext="Continue listening." next="7"></option>
+		<option optionid="2" optiontext="Enough, this going nowhere!" next="12"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="7" npcName="Druid Alwaron" anim="1" switchtalker="373" lookAtNpc="372" text="Magic is a language, a form of communication! My magic asks of nature, whereas yours demands from it. It will not tolerate such an insult for long and it's already showing signs of anguish!" posx="1300" posy="17">
+		<option optionid="1" optiontext="Continue listening." next="8"></option>
+		<option optionid="2" optiontext="Enough, this going nowhere!" next="12"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="8" npcName="Mage Rahingar" anim="1" switchtalker="372" lookAtNpc="373" text="So you say... You know, you druids do not reside everywhere, but I daresay wizardry almost does. Yet somehow in all the other lands magic hasn't brought about the end of the world. I think we'll be just fine here too." posx="1300" posy="392">
+		<option optionid="1" optiontext="" next="9"></option>
+	</node>
+	<node id="9" npcName="Druid Alwaron" anim="1" switchtalker="373" text="And perhaps nature is not the same everywhere? Perhaps there is a reason we druids prefer certain places over others? Hm, what do you say, traveler? You seem awfully quiet." posx="1733" posy="21">
+		<option optionid="1" optiontext="The world shouldn't revolve around the sensitivites of tired old tree beards. Magic solves far more problems than it creates." next="10"></option>
+		<option optionid="2" optiontext="Magic's useful, but we shouldn't rely on it to the point of disrupting nature. There is always another way." next="11"></option>
+		<option optionid="3" optiontext="I'm not really the right person to take sides in this, I'll leave you to it." next="0"></option>
+	</node>
+	<node id="10" npcName="Druid Alwaron" anim="1" switchtalker="373" text="Another fool impressed by the shiny baubles the magi have to offer? How typical! One day you will regret those words, one day... but by then it will be too late." posx="2201" posy="11">
+		<option optionid="1" optiontext="" actions="Cinematic=113" icon="Quest" next="0"></option>
+	</node>
+	<node id="11" npcName="Mage Rahingar" anim="1" switchtalker="372" text="Disappointing how you should be swayed by the scaremongering of this bearded man. Understand that he's a dated old creature, only afraid of his own dwindling relevance in the world - and that of his kind." posx="2201" posy="273">
+		<option optionid="1" optiontext="" actions="Cinematic=112" icon="Quest" next="0"></option>
+	</node>
+	<node id="12" npcName="Mage Rahingar" anim="1" switchtalker="372" text="I take it you have an opinion on this matter, stranger?" posx="1743" posy="685">
+		<option optionid="1" optiontext="The world shouldn't revolve around the sensitivites of tired old tree beards. Magic solves far more problems than it creates." next="10"></option>
+		<option optionid="2" optiontext="Magic's useful, but we shouldn't rely on it to the point of disrupting nature. There is always another way." next="11"></option>
+		<option optionid="3" optiontext="I don't care one way or the other, just take your shouting elsewhere." next="0"></option>
+	</node>
+
+	<node id="15" npcName="Kael Alwaron" anim="1" text="I am pleased to see not everyone has fallen victim to the arrogance of the Hydrobor Magi." posx="21" posy="11">
+		<option optionid="1" optiontext="I seek the Forest's Heart. Surely a mighty druid is the right person to ask?" checks="Quest=61-1-1" icon="Quest" next="16"></option>
+		<option optionid="2" optiontext="How fares the forest?" checks="!Quest=61-1-1" icon="Quest" next="21"></option>
+		<option optionid="3" optiontext="Why is the presence of the magi so distressing?" next="23"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="16" npcName="Kael Alwaron" anim="1" text="A mighty druid, eh? Might is not among the things we seek, but peace and harmony. Well, it's not every day one is asked for an audience with the Forest's Heart." posx="459" posy="15">
+		<option optionid="1" optiontext="" next="17"></option>
+	</node>
+	<node id="17" npcName="Kael Alwaron" anim="1" text="I don't mean to doubt your intentions, but we druids prefer to exercise caution when it comes to the nature's artifacts. Perhaps an act of friendship towards the forest might pave your way to its heart, hm?" posx="879" posy="17">
+		<option optionid="1" optiontext="How would I become a friend of the forest?" icon="Quest" next="18"></option>
+		<option optionid="2" optiontext="Hm... perhaps another time." next="0"></option>
+	</node>
+	<node id="18" npcName="Kael Alwaron" anim="1" text="See this tree here? It is a young Imret Silver Oak. Remarkable, intelligent trees, though most are unaware of the fact. Its ancestor grows southeast of here. An older specimen that one, its bark has finally turned silver." posx="1306" posy="17">
+		<option optionid="1" optiontext="" next="19"></option>
+	</node>
+	<node id="19" npcName="Kael Alwaron" anim="1" text="Take an offering to the old tree; bring with you ten unusual acorns and a handful of mistypine needles. Use the acorns to form a ring and spread the needles in its center, then bury the symbol by the old Silverbark's roots." posx="1734" posy="16">
+		<option optionid="1" optiontext="" next="20"></option>
+	</node>
+	<node id="20" npcName="Kael Alwaron" anim="1" text="Should the tree accept your offering, it will give you a token in return - a silvery cone. Bring the cone to me and I shall then consecrate it." posx="2155" posy="15">
+		<option optionid="1" optiontext="I see..." actions="UpdateQuest=79-1" next="0"></option>
+	</node>
+	<node id="21" npcName="Kael Alwaron" anim="1" text="The Mistywood has always been nature's prime sanctuaries in these lands, but even here the disease men call ''civilization'' has begun to creep in." posx="473" posy="354">
+		<option optionid="1" optiontext="" next="22"></option>
+	</node>
+	<node id="22" npcName="Kael Alwaron" anim="1" text="Hydrobor magics, industrialists from the city of Haywind... loggers. Nature does not welcome them. But I wonder, would nature find a friend in you?" posx="907" posy="352">
+		<option optionid="1" optiontext="What would nature ask of me?" icon="Quest" next="18"></option>
+		<option optionid="2" optiontext="Hm... perhaps another time." next="0"></option>
+	</node>
+	<node id="23" npcName="Kael Alwaron" anim="1" text="The arrogant fools! They believe they can use their magics to twist nature's hand, to force it into their service! They've already altered the weather around Haywind to favor the farmers' crops, so the ignorant peasants rejoice. Meanwhile, nature groans in pain..." posx="1438" posy="337">
+		<option optionid="1" optiontext="I seek the Forest's Heart. Surely a mighty druid is the right person to ask?" checks="Quest=61-1-1" icon="Quest" next="16"></option>
+		<option optionid="2" optiontext="How fares the forest here?" checks="!Quest=61-1-1" icon="Quest" next="21"></option>
+		<option optionid="3" optiontext="Indeed." next="0"></option>
+	</node>
+
+	<node id="25" npcName="Kael Alwaron" anim="1" text="I wonder... would nature find a friend in you, traveler?" posx="82" posy="53">
+		<option optionid="1" optiontext="I've done as you asked, and bring a cone of the old silverbark." next="30" icon="Quest" showGreyedOutOption="1" checks="Quest=79-2-2,HasItem=850-1"></option>
+		<option optionid="2" optiontext="I feel unsure of the task you gave me." next="27" checks="Quest=79-1-1"></option>
+		<option optionid="3" optiontext="Why is the presence of the magi so distressing?" next="33"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+
+	<node id="26" npcName="Kael Alwaron" anim="1" text="Look to the northwestern parts of the forest, friend. Near where living trees roam, a path may be found. The Talisman will open the way." posx="28" posy="25">
+		<option optionid="1" optiontext="Thank you, master druid..." next="0" actions="UpdateQuest=79-999,RemoveItems=850-1"></option>
+	</node>	
+	
+	<node id="27" npcName="Kael Alwaron" anim="1" text="See this tree here? It is a young Imret Silver Oak. Remarkable, intelligent trees, though most are unaware of the fact. Its ancestor grows southeast of here. An older specimen that one, its bark has finally turned silver." posx="392" posy="640">
+		<option optionid="1" optiontext="" next="28"></option>
+	</node>
+	<node id="28" npcName="Kael Alwaron" anim="1" text="Take an offering to the old tree; bring with you ten unusual acorns and a handful of mistypine needles. Use the acorns to form a ring and spread the needles in its center, then bury the symbol by the old Silverbark's roots." posx="838" posy="642">
+		<option optionid="1" optiontext="" next="29"></option>
+	</node>
+	<node id="29" npcName="Kael Alwaron" anim="1" text="Should the tree accept your offering, it will give you a token in return - one of its old cones. Bring the cone to me and I shall then consecrate it." posx="1278" posy="642">
+		<option optionid="1" optiontext="Why is the presence of the magi so distressing?" next="33"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+	<node id="30" npcName="Kael Alwaron" anim="1" text="I knew I had a good feeling about you, friend. The magi seem to think you have to force nature. All you really need is to know how to ask, and nature often gives." posx="587" posy="-64">
+		<option optionid="1" optiontext="" next="31"></option>
+	</node>
+	<node id="31" npcName="Kael Alwaron" anim="1" text="&lt;color=#9C8C77&gt;*Carefully, Alwaron performs a ritual spell on the silvercone, before slipping it into his bag. He then pulls out some sort of a wooden token.*&lt;/color&gt;" posx="1032" posy="-61">
+		<option optionid="1" optiontext="" next="32"></option>
+	</node>
+	<node id="32" npcName="Kael Alwaron" anim="1" itemIcon="851" text="Thank you for your respect, traveler. Take this talisman as a sign of friendship to the forest. Among other things, this token will open your way to the Forest's Heart." posx="1494" posy="-61">
+		<option optionid="1" optiontext="The Forest's Heart, where would I find it?" next="26"></option>
+		<option optionid="2" optiontext="Thank you, master druid..." next="0" actions="UpdateQuest=79-999,RemoveItems=850-1"></option>
+	</node>
+	<node id="33" npcName="Kael Alwaron" anim="1" text="Those arrogant fools! They believe they can use their magics to twist nature's hand, to force it into their service!" posx="576" posy="244">
+		<option optionid="1" optiontext="" next="34"></option>
+	</node>
+	<node id="34" npcName="Kael Alwaron" anim="1" text="They've already altered the weather around Haywind to favor the farmers' crops, so the ignorant peasants rejoice. Meanwhile, nature groans in pain..." posx="1067" posy="244">
+		<option optionid="1" optiontext="I've done as you asked - got a silvery cone." next="30" icon="Quest" showGreyedOutOption="1" checks="Quest=79-2-2,HasItem=850-1"></option>
+		<option optionid="2" optiontext="I feel unsure of the task you gave me." next="27" checks="Quest=79-1-1"></option>
+		<option optionid="3" optiontext="Indeed." next="0"></option>
+	</node>
+
+	<node id="35" npcName="Kael Alwaron" anim="1" text="All one really needs is to know how to ask, and nature often provides." posx="38" posy="29">
+		<option optionid="1" optiontext="&lt;color=green&gt;Recover Mistywood Talisman.&lt;/color&gt;" checks="!ItemExistsGlobal=851" itemIcon="851" next="39"></option>
+		<option optionid="2" optiontext="Where would I find the Forest's Heart again?" next="36"></option>
+		<option optionid="3" optiontext="Why is the presence of the magi here so distressing?" next="37"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="36" npcName="Kael Alwaron" anim="1" text="Looking for an audience with the Forest's Heart, my friend? Look to the northwestern parts of the forest. Near where living trees roam, a path may be found. The Talisman will open the way." posx="496" posy="26">
+		<option optionid="1" optiontext="Why is the presence of the magi here so distressing?" next="37"></option>
+		<option optionid="2" optiontext="Thank you, wise druid." next="0"></option>
+	</node>
+	<node id="37" npcName="Kael Alwaron" anim="1" text="Those arrogant fools! They believe they can use their magics to twist nature's hand, to force it into their service!" posx="544" posy="404">
+		<option optionid="1" optiontext="" next="38"></option>
+	</node>
+	<node id="38" npcName="Kael Alwaron" anim="1" text="They've already altered the weather around Haywind to favor the farmers' crops, so the ignorant peasants rejoice. Meanwhile, nature groans in pain..." posx="982" posy="403">
+		<option optionid="1" optiontext="Where would I find the Forest's Heart again?" next="36"></option>
+		<option optionid="2" optiontext="Indeed." next="0"></option>
+	</node>
+	<node id="39" npcName="Kael Alwaron" text="&lt;color=#9C8C77&gt;*Recover the talisman for 100 gold?*&lt;/color&gt;" itemIcon="851" posx="982" posy="403">
+		<option optionid="1" optiontext="Yes." next="0" actions="AddItems=851-1-true,RemoveItems=131-100" itemIcon="131" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Nevermind." next="0"></option>
+	</node>
+	
+	<node id="60" npcName="Old Imret Silverbark" anim="1" text="You approach the mighty silver oak. Its leafs slowly flutter in the wind above you." posx="52" posy="36">
+		<option optionid="1" optiontext="Make a ritual offering." next="62" checks="Quest=79-1-999,HasItem=145-10|747-1"></option>
+		<option optionid="2" optiontext="Make a ritual offering." next="61" checks="Quest=79-1-999,!HasItem=145-10|747-1"></option>
+		<option optionid="3" optiontext="Leave it be." next="0"></option>
+	</node>
+	<node id="61" npcName="Old Imret Silverbark" anim="1" text="You have nothing of relevance to offer to the old tree." posx="58" posy="643">
+		<option optionid="1" optiontext="Leave it be." next="0"></option>
+	</node>
+	<node id="62" npcName="Old Imret Silverbark" anim="1" text="You dig through your bags for 10 unusual acorns and some mistypine needles." posx="540" posy="39">
+		<option optionid="1" optiontext="Take the mistypine needles." next="63"></option>
+		<option optionid="2" optiontext="Take the acorns." next="64"></option>
+	</node>
+	<node id="63" npcName="Old Imret Silverbark" anim="1" text="You take the mistypine needles into your palm, now what?" posx="993" posy="23">
+		<option optionid="1" optiontext="Sprinkle them around the tree." actions="RemoveItems=747-1" next="65"></option>
+		<option optionid="2" optiontext="Blow them into the wind." actions="RemoveItems=747-1" next="65"></option>
+		<option optionid="3" optiontext="Take the acorns instead." checks="HasItem=145-10" next="64"></option>
+		<option optionid="4" optiontext="Take your leave instead." next="0"></option>
+	</node>
+	<node id="64" npcName="Old Imret Silverbark" anim="1" text="You take the unusual acorns into your palm, now what?" posx="991" posy="471">
+		<option optionid="1" optiontext="Place them onto the ground, forming a ring." next="67"></option>
+		<option optionid="2" optiontext="Chuck them at the tree." actions="RemoveItems=145-10" next="66"></option>
+		<option optionid="3" optiontext="Take the mistypine needles instead." checks="HasItem=747-1" next="63"></option>
+		<option optionid="4" optiontext="Take your leave instead." next="0"></option>
+	</node>
+	<node id="65" npcName="Old Imret Silverbark" anim="1" text="You imagine this is the kind of stuff druids spend their time doing, but nothing interesting happens. You lose sight of the scattered needles." posx="1448" posy="22">
+		<option optionid="1" optiontext="Take more mistypine needles from your bag." checks="HasItem=747-1" showGreyedOutOption="1" next="63"></option>
+		<option optionid="2" optiontext="Now search your bag for some acorns." checks="HasItem=145-10" showGreyedOutOption="1" next="64"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="66" npcName="Old Imret Silverbark" anim="1" text="The tree's leafs flutter at you angrily. You feel a slight juvenile joy, but seem to have lost your acorns in the process." posx="1876" posy="22">
+		<option optionid="1" optiontext="Look for more acorns in your bag." checks="HasItem=145-10" showGreyedOutOption="1" next="64"></option>
+		<option optionid="2" optiontext="Now search your bag for some mistypine needles." checks="HasItem=747-1" showGreyedOutOption="1" next="63"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="67" npcName="Old Imret Silverbark" anim="1" text="You carefully form a ring of acorns by the tree's roots, now what?" posx="1461" posy="470">
+		<option optionid="1" optiontext="Do a little dance." actions="RemoveItems=145-5" next="68"></option>
+		<option optionid="2" optiontext="Place mistypine needles at its centre and bury the offering." checks="HasItem=747-1" next="69"></option>
+		<option optionid="3" optiontext="Just pack them up and leave." next="0"></option>
+	</node>
+	<node id="68" npcName="Old Imret Silverbark" anim="1" text="You imagine this is the kind of stuff druids spend their time doing, but nothing interesting happens. In the process you kick some of the acorns away and lose half of them." posx="1942" posy="471">
+		<option optionid="1" optiontext="Look for more acorns in your bag." checks="HasItem=145-10" showGreyedOutOption="1" next="64"></option>
+		<option optionid="2" optiontext="Now search your bag for some mistypine needles." checks="HasItem=747-1" showGreyedOutOption="1" next="63"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="69" npcName="Old Imret Silverbark" anim="1" text="You feel a slight whoosh of the wind. Somewhere, one of the tree's branches shakes and a silvery old cone drops onto the ground. You pick it up in gratitude." posx="2475" posy="27">
+		<option optionid="1" optiontext="Leave." next="0" checks="Quest=79-1-1" actions="UpdateQuest=79-2,RemoveItems=145-10|747-1,AddItems=850-1"></option>
+		<option optionid="2" optiontext="Leave." next="0" checks="!Quest=79-1-1" actions="RemoveItems=145-10|747-1,AddItems=850-1" icon="Quest"></option>
+	</node>
+
+
+
+	<node id="115" npcName="Meara Rahingar" anim="1" text="Oh good, the tree beard's finally gone. There are always those who'd fear and hate the magi. Usually it's superstitious peasants carrying torches and pitchforks, but why not bearded men living in treehouses also?" posx="34" posy="17">
+		<option optionid="1" optiontext="Happen to know anything about this gem I found?" next="117" showGreyedOutOption="1" checks="HasItem=498-1" icon="StrangeGem"></option>
+		<option optionid="2" optiontext="What are you doing all the way out here?" next="116"></option>
+		<option optionid="3" optiontext="Indeed." next="0"></option>
+	</node>
+	<node id="116" npcName="Meara Rahingar" anim="1" text="Studying magic. The druid was right about one thing, magic is different in these woods. Manipulating weather is relatively easy around Haywind, but here the air is far more resistant somehow." posx="480" posy="15">
+		<option optionid="1" optiontext="Happen to know anything about this gem I found?" next="117" showGreyedOutOption="1" checks="HasItem=498-1" icon="StrangeGem"></option>
+		<option optionid="2" optiontext="Interesting." next="0"></option>
+	</node>
+	<node id="117" npcName="Meara Rahingar" anim="1" text="Where did you find this? This is no ordinary gem - it's not a gem at all - it's a lightning stone! Incredibly rare, they only form in magical storms." posx="601" posy="406">
+		<option optionid="1" optiontext="That would make sense, is it worth anything?" next="118"></option>
+		<option optionid="2" optiontext="Interesting." next="0"></option>
+	</node>
+	<node id="118" npcName="Meara Rahingar" anim="1" text="To some, yes I'd say it's quite valuable. The lightning stone is highly in tune with the magic of the skies. If you bring me oak, I might be able to fashion it into a wand capable of manipulating its power." posx="1082" posy="330">
+		<option optionid="1" optiontext="Very well, please craft this wand for me. &lt;color=orange&gt; (Strange Gem + 5 Oak) &lt;/color&gt;" next="119" showGreyedOutOption="1" checks="HasItem=498-1|62-5"></option>
+		<option optionid="2" optiontext="Interesting." next="0"></option>
+	</node>
+	<node id="119" npcName="Meara Rahingar" anim="1" itemIcon="895" text="As you wish, traveler.\n\n&lt;color=#9C8C77&gt; *Using magic, it does not take long for Meara to bend the wood ornately into shape around the gem.* &lt;/color&gt;" posx="1606" posy="36">
+		<option optionid="1" optiontext="" next="120" actions="RemoveItems=498-1|62-5"></option>
+	</node>
+	<node id="120" npcName="Meara Rahingar" anim="1" itemIcon="895" text="Your wand, traveler - may it grant the fury of the skies to your service. And I personally wouldn't mind if you fried a druid or two with it." posx="2061" posy="37">
+		<option optionid="1" optiontext="I'm sure it will come in handy, thank you." next="0" icon="Loot" actions="SetVar=SGLightningWand-1,AddItems=895-1"></option>
+	</node>
+
+	<node id="121" npcName="Meara Rahingar" anim="1" text="Oh good, the tree beard's finally gone. There are always those who'd fear and hate the magi. Usually it's superstitious peasants carrying torches and pitchforks, but why not bearded men living in treehouses also?" posx="87" posy="943">
+		<option optionid="1" optiontext="I wish to dismantle the wand you made and recover its gem." next="122"></option>
+		<option optionid="2" optiontext="What are you doing all the way out here?" next="124"></option>
+		<option optionid="3" optiontext="Indeed." next="0"></option>
+	</node>
+	<node id="122" npcName="Meara Rahingar" anim="1" text="You would find another use for the lightning stone? Very well, if so wish, though I can think of none better than the wand I made. But are you sure?" posx="632" posy="895">
+		<option optionid="1" optiontext="I am sure." checks="HasItem=895-1" showGreyedOutOption="1" next="123"></option>
+		<option optionid="2" optiontext="Actually, I'm not." next="0"></option>
+	</node>
+	<node id="123" npcName="Meara Rahingar" anim="1" text="As you wish.\n\n&lt;color=#9C8C77&gt; *Meara dismantles the wand and returns its gem to you.* &lt;/color&gt;" posx="1132" posy="826">
+		<option optionid="1" optiontext="" next="0" icon="Loot" actions="SetVar=SGLightningWand-0,RemoveItems=895-1,AddItems=498-1"></option>
+	</node>
+
+	<node id="124" npcName="Meara Rahingar" anim="1" text="Studying magic. The druid was right about one thing, magic is different in these woods. Manipulating weather is relatively easy around Haywind, but here the air is far more resistant somehow." posx="711" posy="1243">
+		<option optionid="1" optiontext="I wish to recover the gem and dismantle the wand you made for me." next="122"></option>
+		<option optionid="2" optiontext="Interesting." next="0"></option>
+	</node>
+
+
+
+</dialogue>
+
+
+
+

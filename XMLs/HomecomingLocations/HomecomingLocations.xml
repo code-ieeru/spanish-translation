@@ -1,0 +1,21 @@
+<locations>
+	<location name="The Thirsty Lumberjack Tavern (Timberwell)"  pos="897.5127,30.12272,442.5723" ></location>
+	<location name="The Singing Sparrow Tavern (Haywind South)" pos="604.57,32.41,353.49"></location>
+	<location name="The Flailing Pickaxe Tavern (Ratcliffe)" pos="775.5,29.8,137.4"></location>
+	<location name="The Fat Pony's Tavern (Haywind North)" pos="503.4,28.08,568.5"></location>
+	<location name="The Baron's Mug Tavern (Thornhill South)" pos="408.542,37.92468,913.4172"></location>
+	<location name="The Cloudy Swig Tavern (Fog's Dwindling)" pos="978.4338,40.49207,659.5648" checks="Quest=1-999-999"></location>
+	<location name="The Sunflower Inn (Grainwater)" pos="767.5818,29.17385,359.5073"></location>
+	<location name="The Sordid Affair Tavern (Silvermirror Fen)" pos="890.4378,27.9099,1177.577" checks="Quest=81-999-999"></location>
+	<location name="The Beggar's Hovel Tavern (Thornhill East)" pos="530.5063,37.37815,1036.594" checks="Quest=16-2-999"></location>
+	<location name="The Castle Rise Inn (Thornhill West)" pos="383.5512,42.53791,1050.574" checks="Quest=16-2-999"></location>
+	<location name="The Waterways Rest House (Thornhill North)" pos="441.4305,30.91977,1127.525" checks="Quest=16-2-999"></location>
+	<location name="Arren's House (Thornhill)" pos="492.553,28.54112,1155.42" checks="Quest=16-999-999"></location>
+	<location name="The Bogside Tavern (Fenwater Village)" pos="771.591,29.92889,930.5206" checks="Quest=16-2-999"></location>
+	<location name="The Lumpy Log Tavern (Prowler's Thicket)" pos="236.35,37.943,817.391"></location>
+	<location name="The Salty Sea Foam Tavern (Harshwind Village)" pos="99.59419,28.43639,1014.498"></location>
+	<location name="Golden Trash Tavern (Scavenger's Yard)" pos="308.47,32.31396,326.97"></location>
+	<location name="North Barracks (Amarien's Foothills)" pos="2376,62.732,876.2996"></location>
+	<location name="Western Watchtower (Amarien's Foothills)" pos="2194.50,36.22,795.58"></location>
+	<location name="Hearthside Lodge (Winterpine Forest)" pos="2240.43,23.091,1531.523" checks="PlayerMapPosition=21-14-24-16"></location>
+</locations>

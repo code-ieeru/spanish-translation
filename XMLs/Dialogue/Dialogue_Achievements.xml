@@ -1,0 +1,2425 @@
+<dialogue>
+	<node id="1" npcName="Cartseller Freya" anim="1" text="Value carts only, no refunds, ever. You want a proper cart, then go to a... oh, I don't know, some proper cart maker! My carts are good enough and when they break, you come here and buy another." posx="11" posy="10">
+		<option optionid="1" optiontext="I don't need a cart, could use a few coins for honest work though." next="2" icon="Task"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="2" npcName="Cartseller Freya" anim="1" text="Hmm, I don't like the sound of losing coin... but I could use some more wood for my carts. Alright then, you want work? Chop some five logs of spruce for me and I'll pay you - minimum rates only!" posx="422" posy="10">
+		<option optionid="1" optiontext="Fine, I can do that." next="3" icon="Task"></option>
+		<option optionid="2" optiontext="Oh, forget it." next="0"></option>
+	</node>
+	<node id="3" npcName="Cartseller Freya" anim="1" text="Well good, there's spruce in the woods aplenty. You'll need a hatchet though and I ain't got one for you to spare, so you need to get your own. I'll need five logs minimum!" posx="830" posy="11">
+		<option optionid="1" optiontext="Fair enough." next="0" icon="Task" actions="SetVar=Grainwatercart-1,NpcChat=I don't like losing coin> but could really use more spruce for my carts."></option>
+	</node>
+
+
+	<node id="10" npcName="Cartseller Freya" anim="1" text="You looking for a cart? Value carts, no refunds, don't wanna hear complaints either... wait, you're the fellow I sent to work, aren't you?" posx="8" posy="7">
+		<option optionid="1" optiontext="You asked me for logs of spruce, and I bring you some." next="15" icon="Task" checks="HasItem=61-5"></option>
+		<option optionid="2" optiontext="I forget, what did you ask of me?" next="11" icon="Task" checks="!HasItem=61-5"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="11" npcName="Cartseller Freya" anim="1" text="You been hit in the head or something? I asked you to bring me more spruce for my carts, five logs. And I ain't paying anything other than minimum rates for the wood either." posx="417" posy="6">
+		<option optionid="1" optiontext="" next="12"></option>
+	</node>
+	<node id="12" npcName="Cartseller Freya" anim="1" text="Woods are full of spruce. You'll need your own hatchet, ain't got one for you. If the work's not to your liking, then tough - won't be any pay either!" posx="825" posy="5">
+		<option optionid="1" optiontext="Right." next="0" icon="Task"></option>
+	</node>
+
+
+	<node id="15" npcName="Cartseller Freya" anim="1" text="These logs aren't of very high quality... but whatever, I'll set my lazy husband to work on these when I find him. Thank you, you can go now." posx="7" posy="8">
+		<option optionid="1" optiontext="Aren't you forgetting something?" next="16" icon="Task"></option>
+	</node>
+	<node id="16" npcName="Cartseller Freya" anim="1" text="Suppose you want some coin then, do you? Honestly, your logs are barely worth anything... But fine, guess we agreed on some payment. And don't be asking for more now, because this is all you'll get!" posx="418" posy="8">
+		<option optionid="1" optiontext="Thanks, I guess..." next="0" icon="Task" actions="AddItems=131-25-true,SetVar=Grainwatercart-3,RemoveItems=61-5,NpcChat=You can see yourself out now> I have customers waiting..."></option>
+	</node>
+
+
+  <node id="25" npcName="Barnsmill Barley Farmer" anim="1" text="Greetings, traveler! What brings you to Barnsmill Estate?" posx="0" posy="157">
+    <option optionid="1" optiontext="I’m looking for work. Do you have anything I can help with?" next="26" checks="Var=HaywindFriendAchGardner-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve brought the barley you asked for." next="28" checks="Var=HaywindFriendAchGardner-1-1,HasItem=220-5" icon="task">
+    </option>
+    <option optionid="3" optiontext="How’s the barley harvest going?" next="29" checks="Var=HaywindFriendAchGardner-2">
+    </option>
+    <option optionid="4" optiontext="Can you remind me what I need to do?" next="26" checks="Var=HaywindFriendAchGardner-1-1,!HasItem=220-5" icon="task">
+    </option>
+    <option optionid="5" optiontext="I’m well, hope you are too!" next="0">
+    </option>
+  </node>
+  <node id="26" npcName="Barnsmill Barley Farmer" anim="1" text="Well, I could use some help gathering barley. I should probably ask Barney if it’s alright to get outside help, but... I don’t see why not. Could you fetch some for me?" posx="482" posy="155">
+    <option optionid="1" optiontext="Sure, how many?" next="27" icon="task">
+    </option>
+    <option optionid="2" optiontext="Best of luck to you!" next="0">
+    </option>
+  </node>
+  <node id="27" npcName="Barnsmill Barley Farmer" anim="1" text="You should be able to gather five bundles of barley from the fields there." posx="896" posy="154">
+    <option optionid="1" optiontext="I’ll bring it back for you." next="0" actions="SetVar=HaywindFriendAchGardner-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ll return later." next="0">
+    </option>
+  </node>
+  <node id="28" npcName="Barnsmill Barley Farmer" anim="1" text="Thank you, traveler. This will help a lot!" posx="481" posy="437">
+    <option optionid="1" optiontext="You’re welcome." next="0" actions="SetVar=HaywindFriendAchGardner-2,RemoveItems=220-5" icon="task">
+    </option>
+  </node>
+  <node id="29" npcName="Barnsmill Barley Farmer" anim="1" text="The harvest is going well, thanks to the extra hands." posx="481" posy="437">
+    <option optionid="1" optiontext="Glad to hear it!" next="0">
+    </option>
+  </node>
+  <node id="36" npcName="Lumberjack" anim="1" text="Greetings! If yer lookin' to chop some wood, grab yerself a hatchet!" posx="675" posy="298">
+    <option optionid="2" optiontext="Thanks, I’ll keep that in mind." next="0">
+    </option>
+  </node>
+  <node id="50" npcName="Librarian" anim="1" text="Welcome, traveler. How may I assist you today at the Haywind College library?" posx="0" posy="157">
+    <option optionid="1" optiontext="I’m a traveler looking for work. Do you need anything?" next="51" checks="Var=HaywindFriendAchLibrarian-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve brought the two books you requested." next="52" checks="Var=HaywindFriendAchLibrarian-1-1,HasItem=2114-1" icon="task">
+    </option>
+    <option optionid="3" optiontext="Your bookshelf looks splendid!" next="52" checks="Var=HaywindFriendAchLibrarian-2">
+    </option>
+    <option optionid="4" optiontext="I’m just visiting." next="0">
+    </option>
+    <option optionid="5" optiontext="Remind me, what did you need again?" next="51" checks="Var=HaywindFriendAchLibrarian-1-1,!HasItem=2114-1" icon="task">
+    </option>
+  </node>
+  <node id="51" npcName="Librarian" anim="1" text="I need two rare books for the college’s collection. They’ve arrived from a distant land and are with Marissa at the general store. These books are vital to our studies, so are you sure you can handle this task?" posx="482" posy="155">
+    <option optionid="1" optiontext="I’ll bring them back safely." next="0" actions="SetVar=HaywindFriendAchLibrarian-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Maybe this isn’t for me." next="0">
+    </option>
+  </node>
+  <node id="52" npcName="Librarian" anim="1" text="Thank you for retrieving the books, traveler. They’ll be a great addition to our collection." posx="481" posy="437">
+    <option optionid="1" optiontext="You’re welcome." next="0" actions="SetVar=HaywindFriendAchLibrarian-2,RemoveItems=2114-1" icon="task">
+    </option>
+  </node>
+  <node id="75" npcName="Merchant" anim="1" text="Greetings, traveler! You must be the mayor's errand boy, right? Here to run some more tasks, I assume?" posx="0" posy="157">
+    <option optionid="1" optiontext="Uhh... What do you need?" next="76" checks="Var=HaywindFriendAchMerchant-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="How’s business going?" next="77" checks="Var=HaywindFriendAchMerchant-2-2">
+    </option>
+    <option optionid="4" optiontext="Who am I delivering this letter to again?" next="76" checks="Var=HaywindFriendAchMerchant-1-1" icon="task">
+    </option>
+    <option optionid="5" optiontext="I lost your letter..." next="0" checks="Var=HaywindFriendAchMerchant-1-1,!HasItem=9046-1" actions="AddItems=9046-1-true" icon="task">
+    </option>
+    <option optionid="3" optiontext="Just passing through." next="0">
+    </option>
+  </node>
+  <node id="76" npcName="Merchant" anim="1" text="I’m trying to get an audience with the mayor to start my business, but apparently, he's is ‘too busy’. Take this letter to the market square vegetable vendor for me?" posx="572" posy="-11">
+    <option optionid="1" optiontext="Certainly, I’ll take care of it." next="0" actions="SetVar=HaywindFriendAchMerchant-1,AddItems=9046-1-true" icon="task">
+    </option>
+    <option optionid="2" optiontext="Maybe later." next="0">
+    </option>
+  </node>
+  <node id="77" npcName="Merchant" anim="1" text="Business? Of course, it’ll flourish once I finally get things going. The mayor should be grateful someone as capable as me is bringing prosperity to Haywind." posx="593" posy="425">
+    <option optionid="1" optiontext="That’s... great!" next="0">
+    </option>
+  </node>
+  <node id="100" npcName="Haywind Sergeant" anim="1" text="Ah, there you are! Took you long enough. The militia said they were sending someone to assist me. You’re here for the scouting mission, right?" posx="0" posy="210">
+    <option optionid="1" optiontext="Actually, no, but I can help if you need it." next="101" checks="Var=HaywindFriendAchMilitiaScout-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="What was it you needed again?" next="101" checks="Var=HaywindFriendAchMilitiaScout-1-1" icon="task">
+    </option>
+    <option optionid="3" optiontext="I've scouted the mercenary camp." next="102" checks="Var=HaywindFriendAchMilitiaScout-2-2" icon="task">
+    </option>
+    <option optionid="4" optiontext="Anything new with the mercenary camp?" next="103" checks="Var=HaywindFriendAchMilitiaScout-3-3">
+    </option>
+    <option optionid="5" optiontext="Just passing through, sergeant." next="0">
+    </option>
+  </node>
+  <node id="101" npcName="Haywind Sergeant" anim="1" text="Not the one they sent, huh? Well, if you're offering, I won't turn down help. Scout the mercenary camp to the south and see what they’re up to. I’d go myself, but they know me too well." posx="502" posy="134">
+    <option optionid="1" optiontext="I’ll take care of it." next="0" actions="SetVar=HaywindFriendAchMilitiaScout-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Maybe later." next="0">
+    </option>
+  </node>
+  <node id="102" npcName="Haywind Sergeant" anim="1" text="So, what did you see?" posx="549" posy="484">
+    <option optionid="1" optiontext="They seem to be preparing for something big." next="104" icon="task">
+    </option>
+    <option optionid="2" optiontext="Nothing out of the ordinary, just their usual business." next="106" icon="task">
+    </option>
+  </node>
+  <node id="106" npcName="Haywind Sergeant" anim="1" text="Nothing suspicious, huh? Well, keep an eye on them. If anything changes, let me know." posx="518" posy="822">
+    <option optionid="1" optiontext="Got it." next="0" actions="SetVar=HaywindFriendAchMilitiaScout-3" icon="task">
+    </option>
+  </node>
+  <node id="104" npcName="Haywind Sergeant" anim="1" text="Good work. If they’re gearing up for something, we’ll need to be prepared. Thanks for the intel." posx="1001" posy="568">
+    <option optionid="1" optiontext="You're welcome." next="0" actions="SetVar=HaywindFriendAchMilitiaScout-3" icon="task">
+    </option>
+  </node>
+  <node id="103" npcName="Haywind Sergeant" anim="1" text="No updates from the mercenary camp yet. Stay sharp." posx="518" posy="822">
+    <option optionid="1" optiontext="Will do." next="0">
+    </option>
+  </node>
+  <node id="125" npcName="Haywind Sergeant" anim="1" text="Oi, you! Another one of these slackers, eh? Where do you think you're going?" posx="0" posy="210">
+    <option optionid="1" optiontext="I’m here to help, if you need it." next="126" checks="Var=HaywindFriendAchMilitiaCraft-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="What was it you needed again?" next="126" checks="Var=HaywindFriendAchMilitiaCraft-1-1,!HasItem=161-5" icon="task">
+    </option>
+    <option optionid="3" optiontext="I've brought the 5 copper ingots you asked for." next="127" checks="Var=HaywindFriendAchMilitiaCraft-1-1,HasItem=161-5" icon="task">
+    </option>
+    <option optionid="4" optiontext="Hope the soldiers are equipped well!" next="128" checks="Var=HaywindFriendAchMilitiaCraft-2-2">
+    </option>
+    <option optionid="5" optiontext="Just visiting..." next="0">
+    </option>
+  </node>
+  <node id="126" npcName="Haywind Sergeant" anim="1" text="Ha! You? Help? Fine, prove me wrong. Bring me 5 copper ingots so the militia can forge new swords. Think you can handle that?" posx="519" posy="198">
+    <option optionid="1" optiontext="Sure, I’ll get it done." next="0" actions="SetVar=HaywindFriendAchMilitiaCraft-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Maybe later!" next="0">
+    </option>
+  </node>
+  <node id="127" npcName="Haywind Sergeant" anim="1" text="Well, well, looks like you can handle something simple after all. Your contribution to Haywind will be remembered!" posx="515" posy="501">
+    <option optionid="1" optiontext="Awesome!" next="0" actions="SetVar=HaywindFriendAchMilitiaCraft-2,RemoveItems=161-5" icon="task">
+    </option>
+  </node>
+  <node id="128" npcName="Haywind Sergeant" anim="1" text="Thanks to your help, yeah. Don’t think it means you’re special." posx="515" posy="735">
+    <option optionid="1" optiontext="You’re welcome." next="0">
+    </option>
+  </node>
+  <node id="150" npcName="Haywind Sergeant" anim="1" text="Oi, another one of you freeloaders? What do you want?" posx="0" posy="210">
+    <option optionid="1" optiontext="I’m here to help, if you need anything." next="151" checks="Var=HaywindFriendAchMilitiaMedkit-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="What did you need again?" next="151" checks="Var=HaywindFriendAchMilitiaMedkit-1-1,!HasItem=125-5" icon="task">
+    </option>
+    <option optionid="3" optiontext="I’ve brought 5 wool." next="152" checks="Var=HaywindFriendAchMilitiaMedkit-1-1,HasItem=125-5" icon="task">
+    </option>
+    <option optionid="4" optiontext="Hope the soldiers are recovering." next="153" checks="Var=HaywindFriendAchMilitiaMedkit-2-2">
+    </option>
+    <option optionid="5" optiontext="Just visiting..." next="0">
+    </option>
+  </node>
+  <node id="151" npcName="Haywind Sergeant" anim="1" text="You think you can help? Fine, prove it. We need 5 wool to make bandages for our wounded soldiers. You sure you're not going to mess this up?" itemIcon="125" posx="519" posy="198">
+    <option optionid="1" optiontext="I'll bring it." next="0" actions="SetVar=HaywindFriendAchMilitiaMedkit-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Maybe later!" next="0">
+    </option>
+  </node>
+  <node id="152" npcName="Haywind Sergeant" anim="1" text="Huh, you actually came through. The soldiers will appreciate it, even if I don’t." posx="515" posy="501">
+    <option optionid="1" optiontext="Glad to help!" next="0" actions="SetVar=HaywindFriendAchMilitiaMedkit-2,RemoveItems=125-5" icon="task">
+    </option>
+  </node>
+  <node id="153" npcName="Haywind Sergeant" anim="1" text="Thanks to you, they’re healing up. Guess you’re not totally useless." posx="513" posy="736">
+    <option optionid="1" optiontext="You're welcome." next="0">
+    </option>
+  </node>
+  <node id="175" npcName="Sergeant Miller" anim="1" text="Oi, where do you think you're going, soldier? Don’t waste my time!" posx="0" posy="210">
+    <option optionid="1" optiontext="I’m here to help." next="176" checks="Var=HaywindFriendAchMilitiaBandit-0-0" icon="Task">
+    </option>
+    <option optionid="2" optiontext="What did you need again?" next="176" checks="Var=HaywindFriendAchMilitiaBandit-1-1" icon="Task">
+    </option>
+    <option optionid="3" optiontext="I took care of the problem at the docks." next="177" checks="Var=HaywindFriendAchMilitiaBandit-2-2" icon="Task">
+    </option>
+    <option optionid="5" optiontext="Just visiting..." next="0">
+    </option>
+  </node>
+  <node id="176" npcName="Sergeant Miller" anim="1" text="There’s some lunatic at the docks causing trouble. Think you can handle showing him the way out? Better you than one of us, just in case he’s dangerous." posx="519" posy="198">
+    <option optionid="1" optiontext="Consider it done." next="0" actions="SetVar=HaywindFriendAchMilitiaBandit-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Maybe later!" next="0">
+    </option>
+  </node>
+  <node id="177" npcName="Sergeant Miller" anim="1" text="Oh... well. Guess that’s handled then." posx="520" posy="501">
+    <option optionid="1" optiontext="Yeah." next="0" actions="SetVar=HaywindFriendAchMilitiaBandit-3" icon="Task">
+    </option>
+  </node>
+  <node id="178" npcName="Sergeant Miller" anim="1" text="Haywind’s a bit safer thanks to you, I suppose." posx="520" posy="738">
+    <option optionid="1" optiontext="You're welcome." next="0">
+    </option>
+  </node>
+  <node id="200" npcName="Harshwind Soldier" anim="1" text="Hail, traveler! What brings you to me today?" posx="5" posy="237">
+    <option optionid="1" optiontext="I've heard you need recruits to guard the outpost from trolls. I'm willing to help." next="210" checks="Var=HarshwindHeroAchRecruit-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Where is your outpost?" next="220" checks="Var=HarshwindHeroAchRecruit-2-2">
+    </option>
+    <option optionid="4" optiontext="I crafted weapons and armor for you." next="250" checks="HasItem=331-5" icon="task">
+    </option>
+    <option optionid="5" optiontext="How many weapons did you ask for?" next="240" checks="Var=HarshwindHeroAchRecruit-1-1,!HasItem=331-5" icon="task">
+    </option>
+    <option optionid="6" optiontext="Nothing!" next="0">
+    </option>
+  </node>
+  <node id="210" npcName="Harshwind Soldier" anim="1" text="To recruit, I need some weapons and armor first!" posx="589" posy="70">
+    <option optionid="1" optiontext="What do you need? I can craft them for you." next="240" icon="task">
+    </option>
+    <option optionid="2" optiontext="Best of luck." next="0">
+    </option>
+  </node>
+  <node id="220" npcName="Harshwind Soldier" anim="1" text="We haven’t built an outpost yet." posx="590" posy="410">
+    <option optionid="1" optiontext="Okay!" next="0">
+    </option>
+  </node>
+  <node id="230" npcName="Harshwind Soldier" anim="1" text="You can buy a spearman for 50 coins." posx="642" posy="659">
+    <option optionid="1" optiontext="1 spearman = 50 coins." next="0" actions="AddFollower=1182,RemoveItems=131-50" icon="coins">
+    </option>
+    <option optionid="2" optiontext="Pfff... you are expensive." next="0">
+    </option>
+  </node>
+  <node id="240" npcName="Harshwind Soldier" anim="1" text="I need 5 copper spears!" posx="1135" posy="129">
+    <option optionid="1" optiontext="I'll craft these!" next="0" actions="SetVar=HarshwindHeroAchRecruit-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Umm... Maybe later." next="0">
+    </option>
+  </node>
+  <node id="250" npcName="Harshwind Soldier" anim="1" text="Thank you, traveler!" posx="635" posy="1015">
+    <option optionid="1" optiontext="My pleasure." next="0" actions="SetVar=HarshwindHeroAchRecruit-2,RemoveItems=248-5,RemoveItems=331-5" icon="task">
+    </option>
+  </node>
+  <node id="275" npcName="Harshwind Fisherman" anim="1" text="Greetings, stranger." posx="0" posy="1071">
+    <option optionid="1" optiontext="You seem poorer than the others. Need help?" next="285" checks="Var=HarshwindHeroAchFisherman-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="What did you need exactly?" next="285" checks="Var=HarshwindHeroAchFisherman-1-1,!HasItem=167-1" icon="task">
+    </option>
+    <option optionid="3" optiontext="I got a fishing rod for you." next="305" checks="HasItem=167-1,Var=HarshwindHeroAchFisherman-1-1" icon="task">
+    </option>
+    <option optionid="4" optiontext="How's the fishing going?" next="315" checks="Var=HarshwindHeroAchFisherman-2-2">
+    </option>
+    <option optionid="5" optiontext="I am busy, talk later." next="0">
+    </option>
+  </node>
+  <node id="285" npcName="Harshwind Fisherman" anim="1" text="I was a fisherman, but a storm destroyed my boat and tools. I need a fishing rod to rebuild my life." posx="463" posy="1063">
+    <option optionid="1" optiontext="Sure, I'll get you one!" next="0" actions="SetVar=HarshwindHeroAchFisherman-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Maybe later." next="0">
+    </option>
+  </node>
+  <node id="305" npcName="Harshwind Fisherman" anim="1" text="Thank you, stranger! You've given me my life back." posx="463" posy="1364">
+    <option optionid="1" optiontext="My pleasure." next="0" actions="SetVar=HarshwindHeroAchFisherman-2,RemoveItems=167-1" icon="task">
+    </option>
+  </node>
+  <node id="315" npcName="Harshwind Fisherman" anim="1" text="I recently discovered a rare type of fish, and I’m thinking of opening a marketplace for them. Can you help me?" posx="456" posy="1603">
+    <option optionid="1" optiontext="Umm... I don’t think I can help with something that big." next="0">
+    </option>
+  </node>
+  <node id="316" npcName="Harshwind Fisherman" anim="1" text="I'll give you 25 coins a day for your investment." posx="907" posy="1814">
+    <option optionid="1" optiontext="Alright, I’m in!" next="0">
+    </option>
+  </node>
+  <node id="350" npcName="Harshwind Water Fetcher" anim="1" text="The well stinks! Why?!" posx="0" posy="156">
+    <option optionid="1" optiontext="I think something’s stuck down there." next="360" checks="Var=HarshwindHeroAchWaterWell-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Maybe later!" next="0">
+    </option>
+  </node>
+  <node id="360" npcName="Harshwind Water Fetcher" anim="1" text="Can you check it out? You’ll need a rope to get it out." posx="439" posy="45">
+    <option optionid="1" optiontext="I’ll get a rope." next="370" icon="task">
+    </option>
+    <option optionid="2" optiontext="I can’t help right now." next="0">
+    </option>
+  </node>
+  <node id="370" npcName="Harshwind Water Fetcher" anim="1" text="The general store probably has some." posx="927" posy="175">
+    <option optionid="1" optiontext="Okay, will do." next="0" actions="SetVar=HarshwindHeroAchWaterWell-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Maybe later!" next="0">
+    </option>
+  </node>
+  <node id="400" npcName="Harshwind Possessed Villager" anim="1" text="Aaaahhhh, help!" posx="0" posy="87">
+    <option optionid="1" optiontext="What happened to you? Why do you seem... possessed?" next="410" checks="Var=HarshwindHeroAchWitchcraft-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="What was the task again?" next="410" checks="Var=HarshwindHeroAchWitchcraft-1-1,!Var=HarshwindHeroAchWitchcraft-2" icon="task">
+    </option>
+    <option optionid="3" optiontext="Are you living normally now?" next="430" checks="Var=HarshwindHeroAchWitchcraft-2-2">
+    </option>
+    <option optionid="4" optiontext="Nothing, just passing through. Bye." next="0">
+    </option>
+  </node>
+  <node id="410" npcName="Harshwind Possessed Villager" anim="1" text="A witch possessed me! I barely escaped. Please, go kill her so I can be free!" posx="456" posy="84">
+    <option optionid="1" optiontext="Sure!" next="0" actions="SetVar=HarshwindHeroAchWitchcraft-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve got more important things to do." next="0">
+    </option>
+  </node>
+  <node id="430" npcName="Harshwind Possessed Villager" anim="1" text="Yes, thank you, stranger." posx="455" posy="596">
+    <option optionid="1" optiontext="My pleasure." next="0">
+    </option>
+  </node>
+  <node id="450" npcName="Harshwind Winter Villager" anim="1" text="Hi there, Uncle! How are you?" posx="0" posy="87">
+    <option optionid="1" optiontext="Hi, kid! What are you doing out here in the forest?" next="460" checks="Var=HarshwindHeroAchWinterWood-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Hope your people are proud of you now!" next="470" checks="Var=HarshwindHeroAchWinterWood-2-2" icon="task">
+    </option>
+    <option optionid="3" optiontext="What was the task again?" next="460" checks="Var=HarshwindHeroAchWinterWood-1-1" icon="task">
+    </option>
+    <option optionid="4" optiontext="Nothing, just passing through. Bye." next="0">
+    </option>
+  </node>
+  <node id="460" npcName="Harshwind Winter Villager" anim="1" text="Winter is coming, and no one’s listening to me about gathering wood. They’re scared of the trolls, so I’m gathering it myself. Can you help?" posx="484" posy="88">
+    <option optionid="1" optiontext="Brave of you! I’ll help." next="0" actions="SetVar=HarshwindHeroAchWinterWood-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Eh... good luck." next="0">
+    </option>
+  </node>
+  <node id="470" npcName="Harshwind Winter Villager" anim="1" text="Yes, thanks to your help, Uncle!" posx="483" posy="387">
+    <option optionid="1" optiontext="My pleasure." next="0" actions="SetVar=HarshwindHeroAchWinterWood-3" icon="task">
+    </option>
+  </node>
+  <node id="500" npcName="Harshwind Gardner" anim="1" text="Hi there, traveler! How are you?" posx="0" posy="87">
+    <option optionid="1" optiontext="Hi! What do you do?" next="510" checks="Var=HarshwindHeroAchGardner-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Could I have more flowers?" next="520" checks="Var=HarshwindHeroAchGardner-3-3" icon="task">
+    </option>
+    <option optionid="3" optiontext="Where did I need to deliver the flowers?" next="530" checks="Var=HarshwindHeroAchGardner-1-1" icon="task">
+    </option>
+    <option optionid="5" optiontext="I delivered the flowers." next="534" checks="Var=HarshwindHeroAchGardner-2-2" icon="task">
+    </option>
+    <option optionid="4" optiontext="Nothing, just passing through. Bye." next="0">
+    </option>
+  </node>
+  <node id="510" npcName="Harshwind Gardner" anim="1" text="I’m a gardener. Can you take these flowers to the general store lady and tell her they’re from me? I’m a bit shy." itemIcon="9058" posx="479" posy="-125">
+    <option optionid="1" optiontext="Sure." next="0" actions="SetVar=HarshwindHeroAchGardner-1,AddItems=9058-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’m busy right now." next="0">
+    </option>
+  </node>
+  <node id="520" npcName="Harshwind Gardner" anim="1" text="Absolutely, friend." itemIcon="9058" posx="433" posy="305">
+    <option optionid="1" optiontext="Yes!" actions="AddItems=9058-1-true" next="0">
+    </option>
+  </node>
+  <node id="530" npcName="Harshwind Gardner" anim="1" text="The flowers, to the general store shopkeeper!" posx="571" posy="548">
+    <option optionid="1" optiontext="Alright." next="0">
+    </option>
+  </node>
+  <node id="531" npcName="Shopkeeper" anim="1" text="Welcome!" posx="967" posy="180">
+    <option optionid="1" optiontext="Flowers for you :3" checks="Var=HarshwindHeroAchGardner-1-1,HasItem=9058-1" next="532" icon="task">
+    </option>
+    <option optionid="2" optiontext="Hi!" next="0">
+    </option>
+  </node>
+  <node id="532" npcName="Shopkeeper" anim="1" text="Ooh! Who sent them?" itemIcon="9058" posx="1406" posy="321">
+    <option optionid="1" optiontext="The flower guy." next="533" icon="task">
+    </option>
+  </node>
+  <node id="533" npcName="Shopkeeper" anim="1" text="Oh... okay." posx="1386" posy="570">
+    <option optionid="1" optiontext="" next="0" actions="SetVar=HarshwindHeroAchGardner-2,RemoveItems=9058-1" icon="task">
+    </option>
+  </node>
+  <node id="534" npcName="Gardner" anim="1" text="Yeah? How did she like them?" posx="543" posy="832">
+    <option optionid="1" optiontext="She loved them." next="535" icon="task">
+    </option>
+  </node>
+  <node id="535" npcName="Gardner" anim="1" text="Nice." posx="1055" posy="902">
+    <option optionid="1" optiontext="" next="0" actions="SetVar=HarshwindHeroAchGardner-3" icon="task">
+    </option>
+  </node>
+  <node id="550" npcName="Harshwind Cowboy" anim="1" text="Hi there, stranger. Welcome to our town." posx="0" posy="87">
+    <option optionid="1" optiontext="Your stable looks good, but you only have two horses. Why not get more?" next="551" checks="Var=HarshwindHeroAchCowboy-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="What was the task again?" next="551" checks="Var=HarshwindHeroAchCowboy-1-1" icon="task">
+    </option>
+    <option optionid="3" optiontext="Is your stable at peace now?" next="553" checks="Var=HarshwindHeroAchCowboy-4-4">
+    </option>
+    <option optionid="4" optiontext="I've killed two trolls!" next="553" checks="Var=HarshwindHeroAchCowboy-3-3" icon="task">
+    </option>
+    <option optionid="5" optiontext="Nothing, just passing through. Bye." next="0">
+    </option>
+  </node>
+  <node id="551" npcName="Harshwind Cowboy" anim="1" text="Trolls eat everything, including my horses. If you could kill a few, I’d be thankful. Two should do." posx="456" posy="84">
+    <option optionid="1" optiontext="Sure." next="0" actions="SetVar=HarshwindHeroAchCowboy-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I've got more important things to do." next="0">
+    </option>
+  </node>
+  <node id="553" npcName="Harshwind Cowboy" anim="1" text="Yes, thank you, stranger." posx="455" posy="596">
+    <option optionid="1" optiontext="My pleasure." next="0" actions="SetVar=HarshwindHeroAchCowboy-4" icon="task">
+    </option>
+  </node>
+  <node id="575" npcName="Aspiring Shepherd" anim="1" text="Ah, hello there, traveler! Don't mind me, I'm just about to put up a pen here for my lovely sheep - very important, you know, so they don't run off and get eaten by the wolves! - just as soon as I could make any sense of these pen building instructions..." posx="8" posy="6">
+    <option optionid="1" optiontext="You don't know how to build a sheep pen?" next="576" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Leave." next="0">
+    </option>
+  </node>
+  <node id="576" npcName="Aspiring Shepherd" anim="1" text="I'm from the big city, you see! But I picked up a book on how to become a shepherd and thought to myself, well... how hard can it be? I've never held a hammer before in my life though, I think it's needed here... say, traveler, are you any handy with tools?" posx="418" posy="8">
+    <option optionid="1" optiontext="Fine, I'll set the pen up for you." next="577" icon="Task">
+    </option>
+    <option optionid="2" optiontext="You're on your own, I'm afraid." next="0">
+    </option>
+  </node>
+  <node id="577" npcName="Aspiring Shepherd" anim="1" text="You would? Oh, you're a real hero! My sheep and I will thank you. Now, I don't know much, but I think you'll need a hammer. I've got one lying on the ground here somewhere." posx="826" posy="10">
+    <option optionid="1" optiontext="Right." next="0" actions="SetVar=TimberwellSheepsPen-1" icon="Task">
+    </option>
+  </node>
+  <node id="575" npcName="Timberwell Shepherd" anim="1" text="Ah, traveler! You look like someone who's seen their share of hard work. My sheep have been wandering off, and wolves have been attacking them. I've been trying to build a pen to keep them safe, but I’m no builder—the instructions are a mess!" posx="0" posy="30">
+    <option optionid="1" optiontext="I'm handy with tools, maybe I can help." next="576" checks="Var=TimberwellSheepsPen-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="What exactly do you need me to do?" next="577" checks="Var=TimberwellSheepsPen-1-1" icon="task">
+    </option>
+    <option optionid="3" optiontext="The pen is ready." next="578" checks="Var=TimberwellSheepsPenOne-1-1|TimberwellSheepsPenTwo-1-1|TimberwellSheepsPenThree-1-1">
+    </option>
+    <option optionid="4" optiontext="I’m just passing through. Farewell." next="0">
+    </option>
+  </node>
+  <node id="576" npcName="Timberwell Shepherd" anim="1" text="I’ve got all the parts laid out, but I just can’t figure out how to put them together. You’ll need a hammer to finish the job—I have one there on the ground. If you can get this done, I’d be in your debt." posx="687" posy="15">
+    <option optionid="1" optiontext="Leave it to me, I’ll have it sorted in no time." next="0" actions="SetVar=TimberwellSheepsPen-1" icon="task">
+    </option>
+    <option optionid="3" optiontext="Actually, I’m not sure I’m up for it." next="0">
+    </option>
+  </node>
+  <node id="577" npcName="Timberwell Shepherd" anim="1" text="I’ve got all the parts laid out, but I just can’t figure out how to put them together. You’ll need a hammer to finish the job—I have one there on the ground. If you can get this done, I’d be in your debt." posx="687" posy="15">
+    <option optionid="1" optiontext="Leave it to me, I’ll have it sorted in no time." next="0" icon="task">
+    </option>
+    <option optionid="3" optiontext="Actually, I’m not sure I’m up for it." next="0">
+    </option>
+  </node>
+  <node id="578" npcName="Timberwell Shepherd" anim="1" text="You’ve done it! My sheep are safe, all thanks to you, traveler. I can’t thank you enough for your help." posx="647" posy="579">
+    <option optionid="1" optiontext="Glad I could help. Safe travels to you and your flock." next="0" actions="SetVar=TimberwellSheepsPen-2" icon="task">
+    </option>
+  </node>
+  <node id="600" npcName="Fearless Child" anim="1" text="Hello there, sir! I wonder, could you please help?" posx="10" posy="7">
+    <option optionid="1" optiontext="What are you doing here, child? There are wolves about!" next="601" icon="Task">
+    </option>
+  </node>
+  <node id="601" npcName="Fearless Child" anim="1" text="I'm not afraid of the wolves! I'm here to protect my friends against them! The bunnies, you've seen them, haven't you? They're fluffy and and always comfort me when times are hard, but the mean wolves keep hunting them!" posx="421" posy="8">
+    <option optionid="1" optiontext="" next="602">
+    </option>
+  </node>
+  <node id="602" npcName="Fearless Child" anim="1" text="You look like a strong knight, sir, strong enough to match the wolves! Please, won't you help me and my bunnies...? Take down a nasty pack of five wolves for us." posx="831" posy="9">
+    <option optionid="1" optiontext="Fine, I'll thin some of the wolf population for you..." next="603" icon="Task">
+    </option>
+    <option optionid="2" optiontext="It's just the way nature is, kid - I can't help you." next="0">
+    </option>
+  </node>
+  <node id="603" npcName="Fearless Child" anim="1" text="You're a brave knight, sir, I knew I could count on you! My bunnies and I thank you!" posx="1243" posy="10">
+    <option optionid="1" optiontext="Yes, alright then..." next="0" actions="SetVar=TimberwellRabbitsSaviour-1" icon="Task">
+    </option>
+  </node>
+  <node id="605" npcName="Fearless Child" anim="1" text="Please sir, won't you protect my bunnies? You look strong, I know you can do it!" posx="6" posy="8">
+    <option optionid="1" optiontext="You wanted me to thin out some of the wolves?" next="606">
+    </option>
+    <option optionid="2" optiontext="Yes, have a little patience..." next="0">
+    </option>
+  </node>
+  <node id="606" npcName="Fearless Child" anim="1" text="Yes please, take out a pack of five. I know you're strong enough to do it!" posx="416" posy="9">
+    <option optionid="1" optiontext="Right." next="0">
+    </option>
+  </node>
+  <node id="610" npcName="Fearless Child" anim="1" text="You've done it! I mean, there seem to be an endless amount of wolves in these forests... but at least you took out some of them! " posx="10" posy="7">
+    <option optionid="1" optiontext="" next="611">
+    </option>
+  </node>
+  <node id="611" npcName="Fearless Child" anim="1" text="On behalf of the bunnies, I thank you. Um... I don't really have anything to reward you with, but here - why don't you take this wolf pelt my papa gifted me! Maybe you're someone crafty, who can make some good use of it." itemIcon="91" posx="416" posy="7">
+    <option optionid="1" optiontext="Take care now, child." next="0" actions="AddItems=91-1-true,SetVar=TimberwellRabbitsSaviour-5,NpcChat=If you really want to protect the rabbits&gt; feel free to hunt down more wolves!" icon="Task">
+    </option>
+  </node>
+  <node id="625" npcName="Villager" anim="1" text="That stubborn man refuses to talk to me..." posx="0" posy="-22">
+    <option optionid="1" optiontext="Why, what's wrong?" next="626" checks="Var=TimberwellAchWoodcutter-0-0" icon="Task">
+    </option>
+    <option optionid="2" optiontext="I gave your husband a beer, like you asked." next="627" checks="Var=TimberwellAchWoodcutter-2-2" icon="Task">
+    </option>
+    <option optionid="3" optiontext="Leave." next="0">
+    </option>
+  </node>
+  <node id="626" npcName="Villager" anim="1" text="Ugh, well... we’ve just had a slight misunderstanding between us that’s all! I’m sure we could sort it out, if he’d just stop for a second and talk to me!" posx="543" posy="-66">
+    <option optionid="1" optiontext="Well, have you tried offering him beer?" next="628" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Sounds like a you problem." next="0">
+    </option>
+  </node>
+  <node id="627" npcName="Villager" anim="1" text="Yes! And...? What did he say?! Don't keep me waiting!" posx="485" posy="310">
+    <option optionid="1" optiontext="Didn't say much at all, just enjoyed his beer." next="629" icon="Task">
+    </option>
+  </node>
+  <node id="628" npcName="Villager" anim="1" text="No... do you think it would help? But I don't have any beer... Oh please, could you do it?" posx="1215" posy="12">
+    <option optionid="1" optiontext="Suppose I can try, if you want." next="0" actions="NpcChat=Thank you&gt; kind stranger!,SetVar=TimberwellAchWoodcutter-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="You have to solve your own problems, I'm afraid." next="0">
+    </option>
+  </node>
+  <node id="629" npcName="Villager" anim="1" text="Ugh! What was even the point?! Thank you for trying, I guess..." posx="914" posy="462">
+    <option optionid="1" optiontext="Leave." next="0" actions="SetVar=TimberwellAchWoodcutter-3,NpcChat=Thank you for trying&gt; I guess..." icon="Task">
+    </option>
+  </node>
+  <node id="630" npcName="Lumberjack" anim="1" text="Hrm...?" posx="10" posy="6">
+    <option optionid="1" optiontext="Your wife asked me to deliver a beer..." next="631" checks="HasItem=296-1" itemIcon="296" showGreyedOutOption="1">
+    </option>
+    <option optionid="2" optiontext="" next="0">
+    </option>
+  </node>
+  <node id="631" npcName="Lumberjack" anim="1" text="Hrm, cheers!\n\n&lt;color=#9C8C77&gt;*The lumberjack gulps down the beer you offer him, then resumes work as before.*&lt;/color&gt;" posx="418" posy="9">
+    <option optionid="1" optiontext="Well then, suppose I let the wife know I've done as she asked..." next="0" actions="RemoveItems=296-1,SetVar=TimberwellAchWoodcutter-2" icon="Task">
+    </option>
+  </node>
+  <node id="650" npcName="Gardening Enthusiast" anim="538" text="Greetings there, traveler! Ain't it just wonderful, all these flowers? I've put in a lot of work to have them grow tall and pretty! Of course, they demand lots of care and watering... don't suppose that's something I might ask your help in?" posx="10" posy="8">
+    <option optionid="1" optiontext="Why, what do you need?" next="651" icon="Task">
+    </option>
+    <option optionid="2" optiontext="I don't have time for this." next="0">
+    </option>
+  </node>
+  <node id="651" npcName="Gardening Enthusiast" anim="1" text="Simply watering, friend. You see, water is quite heavy and I happened to sprain my arm carrying buckets full just the other day. Alas, my beautiful flowers can be a cruel mistress, and they demand their watering on a hot day like this, injured arm or no." posx="417" posy="8">
+    <option optionid="1" optiontext="Fine, I'll water your garden beds for you." next="652" icon="Task">
+    </option>
+    <option optionid="2" optiontext="I really don't have time for this right now." next="0">
+    </option>
+  </node>
+  <node id="652" npcName="Gardening Enthusiast" anim="1" text="Thank you, kind friend! Usually hauling three buckets from the village well is enough to do the trick." posx="825" posy="8">
+    <option optionid="1" optiontext="Very well." next="0" actions="SetVar=TimberwellAchGardener-1" icon="Task">
+    </option>
+  </node>
+  <node id="655" npcName="Gardening Enthusiast" anim="1" text="I've dedicated my life to perfecting my garden beds. Still, the plants can be a cruel mistress, as they require their watering even when I'm unable to carry it for them with an injured arm..." posx="7" posy="8">
+    <option optionid="1" optiontext="You wanted me to water the plants for you?" next="656" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Leave." next="0">
+    </option>
+  </node>
+  <node id="656" npcName="Gardening Enthusiast" anim="1" text="If you would be so kind. Three buckets from our village well is usually enough to get the job done. I would be ever so grateful." posx="419" posy="9">
+    <option optionid="1" optiontext="I'll see to it." next="0">
+    </option>
+  </node>
+  <node id="660" npcName="Gardening Enthusiast" anim="1" text="Thank you, stranger! Hopefully my arm will heal soon so my garden won't have to rely on the kindness of others for long." posx="8" posy="8">
+    <option optionid="1" optiontext="" next="661">
+    </option>
+  </node>
+  <node id="661" npcName="Gardening Enthusiast" anim="1" text="I don't have much to give as payment, but I have this sack of wool I got from some of the farmers, maybe you'll find some use for it." itemIcon="999" posx="417" posy="9">
+    <option optionid="1" optiontext="Thanks." next="0" actions="SetVar=TimberwellAchGardener-5,AddItems=999-1-true" icon="Task">
+    </option>
+  </node>
+  <node id="675" npcName="Frustrated Villager" anim="1" text="Ugh, these rats are driving me crazy!" posx="0" posy="87">
+    <option optionid="1" optiontext="What’s going on?" next="676" checks="Var=RatcliffeAchNoisyHouse-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="What was the task again?" next="679" checks="Var=RatcliffeAchNoisyHouse-1-4" icon="task">
+    </option>
+    <option optionid="3" optiontext="That should be all of them." next="678" checks="Var=RatcliffeAchNoisyHouse-5-5" icon="task">
+    </option>
+    <option optionid="4" optiontext="Just passing through. Bye." next="0">
+    </option>
+  </node>
+  <node id="676" npcName="Frustrated Villager" anim="1" text="These rats just keep coming! Please, help me get rid of them!" posx="480" posy="-8">
+    <option optionid="1" optiontext="Sure, I'll handle it." next="0" actions="SetVar=RatcliffeAchNoisyHouse-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’m busy right now." next="0">
+    </option>
+  </node>
+  <node id="678" npcName="Frustrated Villager" anim="1" text="Thank you, traveler!" posx="550" posy="452">
+    <option optionid="1" optiontext="My pleasure." next="0" actions="SetVar=RatcliffeAchNoisyHouse-6" icon="task">
+    </option>
+  </node>
+  <node id="679" npcName="Frustrated Villager" anim="1" text="Whack those rats!" posx="969" posy="283">
+    <option optionid="1" optiontext="On it." next="0">
+    </option>
+  </node>
+  <node id="700" npcName="Worried Villager" text="Huh?" posx="0" posy="87">
+    <option optionid="1" optiontext="What's going on?" next="701" checks="Var=RatcliffeAchJinxedHill-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="What was the task again?" next="705" checks="Var=RatcliffeAchJinxedHill-1-1" icon="task">
+    </option>
+    <option optionid="3" optiontext="I’ve destroyed the statue." next="703" checks="Var=RatcliffeAchJinxedHill-2-2" icon="task">
+    </option>
+    <option optionid="6" optiontext="Just passing through. Bye." next="0">
+    </option>
+  </node>
+  <node id="701" npcName="Worried Villager" text="Someone placed a strange statue on the hill, and now we’re all having nightmares! Can you destroy it? It’s up there on the hill." posx="456" posy="-21">
+    <option optionid="1" optiontext="Sure, I’ll help." next="704" actions="SetVar=RatcliffeAchJinxedHill-1" icon="task">
+    </option>
+    <option optionid="4" optiontext="What do you know about this statue?" next="706">
+    </option>
+    <option optionid="5" optiontext="Who would place this statue?" next="707">
+    </option>
+    <option optionid="2" optiontext="I’ve got other things to do." next="0">
+    </option>
+  </node>
+  <node id="703" npcName="Worried Villager" text="Thank you, traveler!" posx="493" posy="579">
+    <option optionid="1" optiontext="Glad to help." next="0" actions="SetVar=RatcliffeAchJinxedHill-3" icon="task">
+    </option>
+  </node>
+  <node id="704" npcName="Worried Villager" text="The statue is on the hill over there. Use a pickaxe and make sure it’s completely destroyed!" posx="946" posy="92">
+    <option optionid="1" optiontext="Got it." next="0">
+    </option>
+  </node>
+  <node id="705" npcName="Worried Villager" text="Destroy the statue on the hill! Use a pickaxe and make sure it’s done properly!" posx="807" posy="344">
+    <option optionid="1" optiontext="I’m on it." next="0">
+    </option>
+  </node>
+  <node id="706" npcName="Worried Villager" text="The statue gives off a strange, dark energy. Some believe it’s tied to dark magic, cursing anyone who comes near. That’s why we’re all having nightmares..." posx="1000" posy="200">
+    <option optionid="1" optiontext="Sure, I’ll help." next="704" actions="SetVar=RatcliffeAchJinxedHill-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Dark magic, huh? I’ll be careful." next="0">
+    </option>
+  </node>
+  <node id="707" npcName="Worried Villager" text="I don’t know for sure, but it must have been someone familiar with dark magic. This kind of thing has never happened here before. It’s terrifying to think someone did this on purpose." posx="1050" posy="300">
+    <option optionid="1" optiontext="Sure, I’ll help." next="704" actions="SetVar=RatcliffeAchJinxedHill-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Dark magic, huh? I’ll be careful." next="0">
+    </option>
+  </node>
+  <node id="725" npcName="Traveler" anim="1" text="Oh, hello there, traveler." posx="0" posy="87">
+    <option optionid="1" optiontext="Do you need any help around here?" next="726" checks="Var=RatcliffeAchStolenHay-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="What exactly do you need me to do?" next="726" checks="Var=RatcliffeAchStolenHay-1-4" icon="task">
+    </option>
+    <option optionid="4" optiontext="I’ve collected the three haybales. Hope that’s enough." next="728" checks="Var=RatcliffeAchStolenHayOne-1|RatcliffeAchStolenHayTwo-1|RatcliffeAchStolenHayFive-1" icon="task">
+    </option>
+    <option optionid="5" optiontext="Sorry, I’m busy." next="0">
+    </option>
+  </node>
+  <node id="726" npcName="Traveler" anim="1" text="Well, my horse has been real stubborn today, and I’m trying to get him moving. If you could fetch three haybales for me, I’d appreciate it." posx="456" posy="84">
+    <option optionid="1" optiontext="Sure thing, I’ll get them." next="0" actions="SetVar=RatcliffeAchStolenHay-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Not right now." next="0">
+    </option>
+  </node>
+  <node id="728" npcName="Traveler" anim="1" text="Thanks, friend! Alright, let’s get moving, horsey!" posx="455" posy="612">
+    <option optionid="1" optiontext="Glad I could help." next="0" actions="SetVar=RatcliffeAchStolenHay-5,RemoveItems=9048-3" icon="task">
+    </option>
+  </node>
+  <node id="750" npcName="Traveling Merchant" anim="1" text="Greetings, stranger! Care to lend a hand to a wandering merchant?" posx="0" posy="87">
+    <option optionid="1" optiontext="Hello. Do you need any help?" next="751" checks="Var=RatcliffeAchSaddle-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="What was it you needed again?" next="751" checks="Var=RatcliffeAchSaddle-1-1,!HasItem=92-2" icon="task">
+    </option>
+    <option optionid="3" optiontext="How’s your traveling going?" next="753" checks="Var=RatcliffeAchSaddle-2-2">
+    </option>
+    <option optionid="4" optiontext="I brought the items you asked for." next="753" checks="Var=RatcliffeAchSaddle-1-1,HasItem=92-2" icon="task">
+    </option>
+    <option optionid="5" optiontext="Just passing through. Goodbye." next="0">
+    </option>
+  </node>
+  <node id="751" npcName="Traveling Merchant" anim="1" text="I’m having trouble keeping my horse steady without a proper saddle. I’ve got most of what I need, but could you fetch me 2 cowhides to finish the job? Once I have them, I can make a saddle and continue my journey safely." posx="456" posy="84">
+    <option optionid="1" optiontext="I’ll help with that." next="0" actions="SetVar=RatcliffeAchSaddle-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Sorry, I’ve got other tasks." next="0">
+    </option>
+  </node>
+  <node id="753" npcName="Traveling Merchant" anim="1" text="You’ve saved my journey, friend! With this saddle, I’ll be able to travel safely again. Thank you!" posx="455" posy="612">
+    <option optionid="1" optiontext="Happy to help." next="0" actions="SetVar=RatcliffeAchSaddle-2,RemoveItems=92-2" icon="task">
+    </option>
+  </node>
+  <node id="775" npcName="Frightened Miner" anim="1" text="Stranger! Be careful if you're heading near the cave... there’s a huge bear in there!" posx="0" posy="87">
+    <option optionid="1" optiontext="What's going on?" next="776" checks="Var=RatcliffeAchCaveGhost-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="What was it you needed again?" next="781" checks="Var=RatcliffeAchCaveGhost-1-1,!HasItem=9056-1" icon="task">
+    </option>
+    <option optionid="3" optiontext="I found your gear." next="778" checks="HasItem=9056-1" icon="task">
+    </option>
+    <option optionid="4" optiontext="Just passing through. Stay safe." next="0">
+    </option>
+  </node>
+  <node id="776" npcName="Frightened Miner" anim="1" text="I’m a miner, but that giant bear in the cave scared the life out of me! I dropped all my gear when I ran out. Could you go in and retrieve it for me?" posx="546" posy="-54">
+    <option optionid="1" optiontext="Sure, I’ll help." next="0" actions="SetVar=RatcliffeAchCaveGhost-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Not right now." next="0">
+    </option>
+  </node>
+  <node id="778" npcName="Frightened Miner" anim="1" text="You found my gear! Thank you so much, I don’t know what I’d have done without it." posx="556" posy="545">
+    <option optionid="1" optiontext="Glad to help." next="780" icon="task">
+    </option>
+  </node>
+  <node id="780" npcName="Frightened Miner" anim="1" text="Here, take this pickaxe as thanks. I’m done with mining for now, so I won’t need it." itemIcon="9057" posx="1098" posy="506">
+    <option optionid="1" optiontext="Thanks!" next="0" actions="SetVar=RatcliffeAchCaveGhost-2,RemoveItems=9056-1,AddItems=9057-1" icon="task">
+    </option>
+  </node>
+  <node id="781" npcName="Frightened Miner" anim="1" text="I dropped my gear when that giant bear startled me! Could you go in and retrieve it for me?" posx="556" posy="545">
+    <option optionid="1" optiontext="I’m on it." next="0" icon="task">
+    </option>
+  </node>
+  <node id="825" npcName="Elderly Villager" anim="1" text="Hello there, young one." posx="0" posy="87">
+    <option optionid="1" optiontext="I'm a traveler looking for work, do you need anything?" next="826" checks="Var=RatcliffeAchAloneVillager-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="What did you need?" next="826" checks="Var=RatcliffeAchAloneVillager-1-1,!HasItem=283-2|273-2" icon="task">
+    </option>
+    <option optionid="3" optiontext="I brought the groceries you asked for!" next="828" checks="Var=RatcliffeAchAloneVillager-1-1,HasItem=283-2|273-2" icon="task">
+    </option>
+    <option optionid="4" optiontext="Everything all set now?" next="828" checks="Var=RatcliffeAchAloneVillager-2-2">
+    </option>
+    <option optionid="5" optiontext="Just passing through, take care." next="0">
+    </option>
+  </node>
+  <node id="826" npcName="Elderly Villager" anim="1" text="Well, since you’re offering, I could use some help. I’m not as spry as I used to be, and getting around the market is tough. Could you fetch me 2 potatoes and 2 carrots?" posx="456" posy="84">
+    <option optionid="1" optiontext="Sure, I’ll get them for you." next="0" actions="SetVar=RatcliffeAchAloneVillager-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’m a bit busy at the moment." next="0">
+    </option>
+  </node>
+  <node id="828" npcName="Elderly Villager" anim="1" text="Thank you so much, young one! I really appreciate it." posx="455" posy="612">
+    <option optionid="1" optiontext="Happy to help!" next="0" actions="SetVar=RatcliffeAchAloneVillager-2,RemoveItems=283-2|273-2" icon="task">
+    </option>
+  </node>
+  <node id="850" npcName="Nervous Kid" anim="1" text="H-H-Hello..." posx="0" posy="87">
+    <option optionid="1" optiontext="Hey there, what's wrong?" next="851" checks="Var=RatcliffeAchMagicalKid-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Where are the skeletons?" next="852" checks="Var=RatcliffeAchMagicalKid-1-3" icon="task">
+    </option>
+    <option optionid="3" optiontext="I’ve already taken care of the skeletons." next="853" checks="Var=RatcliffeAchMagicalKid-4-4" icon="task">
+    </option>
+    <option optionid="5" optiontext="Just passing through. Take care!" next="0">
+    </option>
+  </node>
+  <node id="851" npcName="Nervous Kid" anim="1" text="Mr. Eddie sold me this weird talisman, and when I used it, skeletons appeared inside my house! I-I didn’t mean for this to happen. Please help me!" posx="483" posy="-18">
+    <option optionid="1" optiontext="Really? I’ll check it out." next="854">
+    </option>
+    <option optionid="2" optiontext="I’ve got other things to do right now." next="0">
+    </option>
+  </node>
+  <node id="852" npcName="Nervous Kid" anim="1" text="They’re in the house! Please, you have to get rid of them all before they cause more trouble!" posx="508" posy="344">
+    <option optionid="1" optiontext="I’m on it." next="0" icon="task">
+    </option>
+  </node>
+  <node id="853" npcName="Nervous Kid" anim="1" text="Thank you, thank you! You’ve saved me!" posx="579" posy="635">
+    <option optionid="1" optiontext="Glad I could help." next="0" actions="SetVar=RatcliffeAchMagicalKid-5" icon="task">
+    </option>
+  </node>
+  <node id="854" npcName="Nervous Kid" anim="1" text="It’s been a nightmare! Here, take this staff too—I don’t want anything to do with magic anymore. I just want to go back to normal." itemIcon="336" posx="945" posy="21">
+    <option optionid="1" optiontext="Alright, I’ll take it off your hands." next="0" actions="SetVar=RatcliffeAchMagicalKid-1,AddItems=336-1-true" icon="task">
+    </option>
+  </node>
+  <node id="875" npcName="Traveler" anim="1" text="Hey, have you seen a horse around here?" posx="0" posy="87">
+    <option optionid="1" optiontext="No, what happened?" next="876" checks="Var=RatcliffeAchRacingHorse-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Do you have any idea where it might be?" next="877" checks="Var=RatcliffeAchRacingHorse-1-1" icon="task">
+    </option>
+    <option optionid="3" optiontext="I’ve found your horse!" next="878" checks="Var=RatcliffeAchRacingHorse-2-2" icon="task">
+    </option>
+    <option optionid="5" optiontext="Just passing through. Take care." next="0">
+    </option>
+  </node>
+  <node id="876" npcName="Traveler" anim="1" text="My horse ran off to the east, and I’m really worried. Those woods are said to be haunted! I don’t know what to do!" posx="456" posy="84">
+    <option optionid="1" optiontext="I’ll help you find it." next="877" actions="SetVar=RatcliffeAchRacingHorse-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve got other things to take care of." next="0">
+    </option>
+  </node>
+  <node id="877" npcName="Traveler" anim="1" text="He’s nearby, but he won’t come to me! Maybe if you give him something to eat from the market, he’ll follow you?" posx="456" posy="382">
+    <option optionid="1" optiontext="Sounds like a plan." next="0" icon="task">
+    </option>
+  </node>
+  <node id="878" npcName="Traveler" anim="1" text="Thank you! I can’t believe you found him!" posx="455" posy="612">
+    <option optionid="1" optiontext="Happy to help." next="0" actions="SetVar=RatcliffeAchRacingHorse-3" icon="task">
+    </option>
+  </node>
+  <node id="879" npcName="Traveler" anim="1" text="Everything’s fine now, thanks to you." posx="455" posy="612">
+    <option optionid="1" optiontext="Glad to hear it." next="0">
+    </option>
+  </node>
+  <node id="900" npcName="Horse" anim="1" text="*The horse neighs*" posx="41" posy="74">
+    <option optionid="1" optiontext="Here, eat this apple." next="901" checks="Var=RatcliffeAchRacingHorse-1-1,HasItem=136-1" showGreyedOutOption="1" itemIcon="136">
+    </option>
+    <option optionid="2" optiontext="Leave." next="0">
+    </option>
+  </node>
+  <node id="901" npcName="Horse" anim="1" text="The horse happily eats the apple and starts following you." posx="530" posy="100">
+    <option optionid="1" optiontext="Great." next="0" actions="SetVar=RatcliffeAchRacingHorse-2,RemoveItems=136-1" icon="task">
+    </option>
+  </node>
+  <node id="925" npcName="Farmer" anim="1" text="Hello, stranger." posx="0" posy="87">
+    <option optionid="1" optiontext="I’m a traveler looking to earn some coin. Need any help with your garden?" next="926" checks="Var=MistywoodAchCornCollect-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="What was the task again?" next="930" checks="Var=MistywoodAchCornCollect-1-1,!HasItem=274-20" icon="task">
+    </option>
+    <option optionid="3" optiontext="I’ve got the 20 corn you needed." next="928" checks="Var=MistywoodAchCornCollect-1-1,HasItem=274-20" icon="task">
+    </option>
+    <option optionid="4" optiontext="How’s the farming going?" next="929" checks="Var=MistywoodAchCornCollect-2-2">
+    </option>
+    <option optionid="5" optiontext="Just passing through. Goodbye." next="0">
+    </option>
+  </node>
+  <node id="926" npcName="Farmer" anim="1" text="I could definitely use a hand. If you can collect 20 corn for me, I’ll pay you for your trouble." posx="498" posy="-104">
+    <option optionid="1" optiontext="Sure, I’ll get that for you." next="0" actions="SetVar=MistywoodAchCornCollect-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’m busy at the moment." next="0">
+    </option>
+  </node>
+  <node id="928" npcName="Farmer" anim="1" text="Thank you so much!" posx="571" posy="391">
+    <option optionid="1" optiontext="My pleasure." next="0" actions="SetVar=MistywoodAchCornCollect-2,RemoveItems=274-20" icon="task">
+    </option>
+  </node>
+  <node id="929" npcName="Farmer" anim="1" text="Yes, everything’s going well, thanks to you." posx="464" posy="765">
+    <option optionid="1" optiontext="Good to hear." next="0">
+    </option>
+  </node>
+  <node id="930" npcName="Farmer" anim="1" text="I needed 20 corn to keep the harvest on track." posx="941" posy="186">
+    <option optionid="1" optiontext="I’m on it." next="0">
+    </option>
+  </node>
+  <node id="950" npcName="Fisherman" anim="1" text="Ah, stranger! What brings you to the pier on this fine day?" posx="0" posy="87">
+    <option optionid="1" optiontext="Hello! You look busy. Need any help?" next="951" checks="Var=MistywoodAchBerryCollect-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Can you remind me what you needed again?" next="951" checks="Var=MistywoodAchBerryCollect-1-1,!HasItem=168-6|233-6" icon="task">
+    </option>
+    <option optionid="3" optiontext="I’ve brought the berries you asked for." next="953" checks="Var=MistywoodAchBerryCollect-1-1,HasItem=168-6|233-6" icon="task">
+    </option>
+    <option optionid="4" optiontext="How’s the fishing going?" next="954" checks="Var=MistywoodAchBerryCollect-2-2">
+    </option>
+    <option optionid="5" optiontext="Just passing through. Farewell." next="0">
+    </option>
+  </node>
+  <node id="951" npcName="Fisherman" anim="1" text="Ah, you’ve caught me daydreaming about something sweet. I’ve been craving berries, but I’m tied up with work here. If you’re heading to town, could you bring me 6 red berries and 6 blue berries? It’ll make my day!" posx="456" posy="84">
+    <option optionid="1" optiontext="Sure, I’ll get those for you." next="0" actions="SetVar=MistywoodAchBerryCollect-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve got other things to take care of right now." next="0">
+    </option>
+  </node>
+  <node id="953" npcName="Fisherman" anim="1" text="Thank you! These berries are exactly what I needed to brighten the day!" posx="455" posy="381">
+    <option optionid="1" optiontext="Glad to be of service." next="0" actions="SetVar=MistywoodAchBerryCollect-2,RemoveItems=168-6|233-6" icon="task">
+    </option>
+  </node>
+  <node id="954" npcName="Fisherman" anim="1" text="Fishing’s going well, and now I’ve got something sweet to keep me company, thanks to you." posx="458" posy="615">
+    <option optionid="1" optiontext="Good to hear. Take care!" next="0">
+    </option>
+  </node>
+  <node id="975" npcName="Eccentric Villager" anim="1" text="Yoo-hoo, traveler! Come here!" posx="0" posy="87">
+    <option optionid="1" optiontext="Yes? What seems to be the problem?" next="976" checks="Var=MistywoodAchCarrotCollect-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Could you remind me what you needed again?" next="976" checks="Var=MistywoodAchCarrotCollect-1-1,!HasItem=273-4" icon="task">
+    </option>
+    <option optionid="3" optiontext="I’ve brought your carrots!" next="978" checks="Var=MistywoodAchCarrotCollect-1-1,HasItem=273-4" icon="task">
+    </option>
+    <option optionid="4" optiontext="You’re still hanging in there?" next="979" checks="Var=MistywoodAchCarrotCollect-2-2">
+    </option>
+    <option optionid="5" optiontext="I’ll be on my way now." next="0">
+    </option>
+  </node>
+  <node id="976" npcName="Eccentric Villager" anim="1" text="I need carrots for my meal! Four should be enough, don’t you think?" posx="456" posy="84">
+    <option optionid="1" optiontext="I’ll fetch them for you." next="0" actions="SetVar=MistywoodAchCarrotCollect-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve got other things to do for now." next="0">
+    </option>
+  </node>
+  <node id="978" npcName="Eccentric Villager" anim="1" text="Thank you! You’ve saved my meal!" posx="450" posy="389">
+    <option optionid="1" optiontext="Glad to help." next="0" actions="SetVar=MistywoodAchCarrotCollect-2,RemoveItems=273-4" icon="task">
+    </option>
+  </node>
+  <node id="979" npcName="Eccentric Villager" anim="1" text="I don’t die that easily!" posx="453" posy="625">
+    <option optionid="1" optiontext="Right... Good to know." next="0">
+    </option>
+  </node>
+  <node id="1000" npcName="Warrior" anim="1" text="You’ve got the look of someone who’s been around. What brings you out here in the wilds?" posx="0" posy="87">
+    <option optionid="1" optiontext="Hello! What are you up to out here?" next="1001" checks="Var=MistywoodAchBearPaw-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Could you remind me of the task again?" next="1001" checks="Var=MistywoodAchBearPaw-1-1,!HasItem=208-1" icon="task">
+    </option>
+    <option optionid="3" optiontext="I’ve brought the bear paw you needed." next="1003" checks="Var=MistywoodAchBearPaw-1-1,HasItem=208-1" icon="task">
+    </option>
+    <option optionid="4" optiontext="Nothing for now, just passing through. Farewell." next="0">
+    </option>
+  </node>
+  <node id="1001" npcName="Warrior" anim="1" text="I’m off to meet an old friend in Haywind. We have a bit of a tradition — we exchange rare gifts, and I’m missing mine this time. I could use a bear paw to uphold my end of the deal. Could you help me out?" posx="456" posy="84">
+    <option optionid="1" optiontext="Consider it done. I’ll bring you the paw." next="0" actions="SetVar=MistywoodAchBearPaw-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve got other things to handle for now." next="0">
+    </option>
+  </node>
+  <node id="1003" npcName="Warrior" anim="1" text="That’s exactly what I needed! My friend will be impressed, thanks to you. I owe you one!" posx="453" posy="383">
+    <option optionid="1" optiontext="Happy to help." next="0" actions="SetVar=MistywoodAchBearPaw-2,RemoveItems=208-1,Cinematic=199" icon="task">
+    </option>
+  </node>
+  <node id="1025" npcName="Hunter" anim="1" text="Greetings, traveler. You look like you can handle yourself. What brings you out here?" posx="0" posy="87">
+    <option optionid="1" optiontext="Hello! What are you up to all the way out here?" next="1026" checks="Var=MistywoodAchGoblinAttack-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Can you remind me of the task again?" next="1031" checks="Var=MistywoodAchGoblinAttack-1-9" icon="task">
+    </option>
+    <option optionid="3" optiontext="I’ve taken care of the ten goblins you needed." next="1028" checks="Var=MistywoodAchGoblinAttack-10-10" icon="task">
+    </option>
+    <option optionid="4" optiontext="How’s the goblin hunt going?" next="1030" checks="Var=MistywoodAchGoblinAttack-11-11">
+    </option>
+    <option optionid="5" optiontext="Nothing for now, just passing through. Farewell." next="0">
+    </option>
+  </node>
+  <node id="1026" npcName="Hunter" anim="1" text="We’re planning to attack the goblin camp over there, but those goblins look tougher than we expected. Since you look like you know your way around a fight, maybe you could weaken them a bit for us by taking out a few of them? Ten should do." posx="468" posy="-17">
+    <option optionid="1" optiontext="I’ll take care of the goblins and weaken their camp." actions="SetVar=MistywoodAchGoblinAttack-1" next="0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve got other matters to attend to for now." next="0">
+    </option>
+  </node>
+  <node id="1028" npcName="Hunter" anim="1" text="Thank you, you’ve really helped us prepare for the attack!" posx="492" posy="321">
+    <option optionid="1" optiontext="Glad to be of service." next="0" actions="SetVar=MistywoodAchGoblinAttack-11" icon="task">
+    </option>
+  </node>
+  <node id="1030" npcName="Hunter" anim="1" text="Thanks to your help, the goblin camp is weaker, and we’re ready for the attack." posx="460" posy="596">
+    <option optionid="1" optiontext="Glad to hear it. Farewell." next="0">
+    </option>
+  </node>
+  <node id="1031" npcName="Hunter" anim="1" text="We’re still preparing to attack the goblin camp, but they’re strong. We need someone to take down 10 of them before we make our move." posx="997" posy="353">
+    <option optionid="1" optiontext="I’ll get on that." next="0">
+    </option>
+  </node>
+  <node id="1050" npcName="Shaman" anim="1" text="Ah, traveler. What brings you to these parts of the forest?" posx="0" posy="87">
+    <option optionid="1" optiontext="Hello! What are you doing out here in the forest?" next="1051" checks="Var=MistywoodAchSnakeSkin-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Could you remind me what ingredients you needed again?" next="1051" checks="Var=MistywoodAchSnakeSkin-1-1,!HasItem=325-3" icon="task">
+    </option>
+    <option optionid="3" optiontext="I've brought the forest snake skins you asked for." next="1053" checks="Var=MistywoodAchSnakeSkin-1-1,HasItem=325-3" icon="task">
+    </option>
+    <option optionid="4" optiontext="How’s the spellcasting going?" next="1054" checks="Var=MistywoodAchSnakeSkin-2-2">
+    </option>
+    <option optionid="5" optiontext="Nothing for now, just passing through. Farewell." next="0">
+    </option>
+  </node>
+  <node id="1051" npcName="Shaman" anim="1" text="I am gathering rare ingredients for my spells and potions, but I require the skins of forest snakes to complete my rituals. Can you help me by retrieving three snake skins?" posx="456" posy="84">
+    <option optionid="1" optiontext="I’ll gather the snake skins for you." next="0" actions="SetVar=MistywoodAchSnakeSkin-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve got other things to attend to right now." next="0">
+    </option>
+  </node>
+  <node id="1053" npcName="Shaman" anim="1" text="Thank you! These skins will be perfect for my rituals." posx="453" posy="387">
+    <option optionid="1" optiontext="Glad to be of service." next="0" actions="SetVar=MistywoodAchSnakeSkin-2,RemoveItems=325-3" icon="task">
+    </option>
+  </node>
+  <node id="1054" npcName="Shaman" anim="1" text="Everything is going smoothly now, thanks to your help. My spells will be much stronger." posx="453" posy="621">
+    <option optionid="1" optiontext="Good to hear. Take care." next="0">
+    </option>
+  </node>
+  <node id="1075" npcName="Priestess" anim="1" text="Ah, traveler. Welcome to our humble place." posx="0" posy="87">
+    <option optionid="1" optiontext="Greetings, Priestess. Do you have any work that needs doing?" next="1076" checks="Var=MistywoodAchHomelessGroceries-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Could you remind me what you needed for the meal?" next="1076" checks="Var=MistywoodAchHomelessGroceries-1-1,!HasItem=274-5|273-5|168-3" icon="task">
+    </option>
+    <option optionid="3" optiontext="I've gathered the groceries you asked for, madam." next="1078" checks="Var=MistywoodAchHomelessGroceries-1-1,HasItem=274-5|273-5|168-3" icon="task">
+    </option>
+    <option optionid="4" optiontext="Is everything going well now?" next="1079" checks="Var=MistywoodAchHomelessGroceries-2-2">
+    </option>
+    <option optionid="5" optiontext="Nothing for now, just passing through. Farewell." next="0">
+    </option>
+  </node>
+  <node id="1076" npcName="Priestess" anim="1" text="I am preparing a meal for the people, but I could use some help gathering ingredients. If you're willing, I need 5 Corn, 5 Carrots and 3 Redberries." posx="456" posy="84">
+    <option optionid="1" optiontext="Consider it done. I’ll return with what you need." next="0" actions="SetVar=MistywoodAchHomelessGroceries-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I have other matters to attend to at the moment." next="0">
+    </option>
+  </node>
+  <node id="1078" npcName="Priestess" anim="1" text="Thank you, this will help greatly!" posx="452" posy="382">
+    <option optionid="1" optiontext="Glad I could be of service." next="0" actions="SetVar=MistywoodAchHomelessGroceries-2,RemoveItems=274-5|273-5|168-3" icon="task">
+    </option>
+  </node>
+  <node id="1079" npcName="Priestess" anim="1" text="Yes, everything is in order now, thanks to you." posx="457" posy="616">
+    <option optionid="1" optiontext="Happy to hear it. Farewell." next="0">
+    </option>
+  </node>
+  <node id="1100" npcName="Woodcutter" anim="1" text="Ah, traveler. What brings you this far?" posx="0" posy="87">
+    <option optionid="1" optiontext="Hello there. What are you doing out here on the far side of Mistywood?" next="1101" checks="Var=MistywoodAchNewAxe-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Could you remind me what you needed again?" next="1101" checks="Var=MistywoodAchNewAxe-1-1,!HasItem=139-1" icon="task">
+    </option>
+    <option optionid="3" optiontext="I've got the axe you requested." next="1103" checks="Var=MistywoodAchNewAxe-1-1,HasItem=139-1" icon="task">
+    </option>
+    <option optionid="4" optiontext="How's the woodcutting going now?" next="1104" checks="Var=MistywoodAchNewAxe-2-2">
+    </option>
+    <option optionid="5" optiontext="Nothing for now, just passing through. Farewell." next="0">
+    </option>
+  </node>
+  <node id="1101" npcName="Woodcutter" anim="1" text="I’m a woodcutter, as you can see. Came here for wood, but my axe broke, and the wild animals have me stuck. Could you bring me a new axe? A copper one will do." posx="456" posy="84">
+    <option optionid="1" optiontext="I’ll fetch the axe for you, no problem." next="0" actions="SetVar=MistywoodAchNewAxe-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve got other matters to attend to." next="0">
+    </option>
+  </node>
+  <node id="1103" npcName="Woodcutter" anim="1" text="Thank you! This will make my work much easier." posx="455" posy="383">
+    <option optionid="1" optiontext="Glad I could help." next="0" actions="SetVar=MistywoodAchNewAxe-2,RemoveItems=139-1" icon="task">
+    </option>
+  </node>
+  <node id="1104" npcName="Woodcutter" anim="1" text="Aye, going smooth now, thanks to you." posx="456" posy="615">
+    <option optionid="1" optiontext="Great to hear. Farewell!" next="0">
+    </option>
+  </node>
+  <node id="1125" npcName="Gardner" anim="1" text="Ah, greetings traveler. Have you come seeking the alchemist?" posx="0" posy="87">
+    <option optionid="1" optiontext="You've a beautiful garden here. Could you use a hand with anything?" next="1126" checks="Var=MistywoodAchWaterTree-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Remind me again, what task did you need help with?" next="1130" checks="Var=MistywoodAchWaterTree-1-1,!HasItem=334-2" icon="task">
+    </option>
+    <option optionid="3" optiontext="I’ve brought the water buckets you needed." next="1128" checks="Var=MistywoodAchWaterTree-1-1,HasItem=334-2" icon="task">
+    </option>
+    <option optionid="4" optiontext="Has everything settled now?" next="1129" checks="Var=MistywoodAchWaterTree-2-2">
+    </option>
+    <option optionid="5" optiontext="Nothing for now, just passing through. Farewell." next="0">
+    </option>
+  </node>
+  <node id="1126" npcName="Gardner" anim="1" text="Ah, thank you for asking. I’m growing rare herbs for the master alchemist. If you’re willing, I could use two buckets of water from the village well, near the large tree." posx="514" posy="-38">
+    <option optionid="1" optiontext="Consider it done. I'll return shortly." next="0" actions="SetVar=MistywoodAchWaterTree-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I have other matters to attend to at the moment." next="0">
+    </option>
+  </node>
+  <node id="1128" npcName="Gardner" anim="1" text="You’ve my thanks, traveler." posx="874" posy="497">
+    <option optionid="1" optiontext="Happy to help." next="0" actions="SetVar=MistywoodAchWaterTree-2,RemoveItems=334-2" icon="task">
+    </option>
+  </node>
+  <node id="1129" npcName="Gardner" anim="1" text="Yes, all is well now thanks to you." posx="423" posy="668">
+    <option optionid="1" optiontext="Glad to hear it. Farewell." next="0">
+    </option>
+  </node>
+  <node id="1130" npcName="Gardner" anim="1" text="I need help watering the garden. Could you fetch two buckets of water from the village? The well is near the big tree." posx="978" posy="242">
+    <option optionid="1" optiontext="I’ll get right on that." next="0" actions="SetVar=MistywoodAchWaterTree-1" icon="task">
+    </option>
+  </node>
+  <node id="1150" npcName="Shopkeeper Rainer" anim="1" text="I don't need to know the details of your job, so when asked, I can honestly say I have no idea. Just know that you'll find all the tools you need here. But stay clear of Dusteny's store—he’s nothing but trouble!" posx="-48" posy="-84">
+    <option optionid="1" optiontext="Let's see what you’ve got." next="0" actions="OpenShop=39">
+    </option>
+    <option optionid="2" optiontext="I'm a traveler looking for work. Can I work here?" next="1152" checks="Var=ErrandForRainer-0-0" icon="Task">
+    </option>
+    <option optionid="3" optiontext="I’ve got the package you asked for." next="1154" checks="Var=ErrandForRainer-1-1,HasItem=9098-1">
+    </option>
+    <option optionid="3" optiontext="Where is the package again?" next="1155" checks="Var=ErrandForRainer-1-1,!HasItem=9098-1">
+    </option>
+    <option optionid="4" optiontext="I’ll be on my way." next="0">
+    </option>
+  </node>
+  <node id="1152" npcName="Shopkeeper Rainer" anim="1" text="Actually, if you're looking for work, I could use some help. I need someone to pick up a package from the bank. Would you be interested?" posx="-48" posy="-100">
+    <option optionid="1" optiontext="Sure, I can do that." next="1153" actions="SetVar=ErrandForRainer-1">
+    </option>
+    <option optionid="2" optiontext="Sorry, not interested." next="0">
+    </option>
+  </node>
+  <node id="1153" npcName="Shopkeeper Rainer" anim="1" text="Great! The package is waiting for you at the bank. Just tell them it's for me, and they'll hand it over. Come back here when you've got it." posx="-48" posy="-120">
+    <option optionid="1" optiontext="I'll head to the bank now." next="0">
+    </option>
+  </node>
+  <node id="1154" npcName="Shopkeeper Rainer" anim="1" text="Ah, you got the package! Thanks a lot." posx="-48" posy="-140">
+    <option optionid="1" optiontext="Thanks!" next="0" actions="SetVar=ErrandForRainer-2,RemoveItems=9098-1">
+    </option>
+  </node>
+  <node id="1155" npcName="Shopkeeper Rainer" anim="1" text="The package is waiting for you at the bank. Just tell them it's for me, and they'll hand it over. Come back here when you've got it." posx="-48" posy="-120">
+    <option optionid="1" optiontext="I'll head to the bank now." next="0">
+    </option>
+  </node>
+  <node id="1200" npcName="Warren Mangler" anim="1" text="The streets of Thornhill can be dangerous, mate. Are you sure you’re armed well enough? I’ve got a good variety here, but I always recommend the heaviest hammer. Just bonk ‘em good, unga bunga style, y’know? Works for me." posx="0" posy="179">
+    <option optionid="1" optiontext="Let’s take a look." next="0" actions="OpenShop=60">
+    </option>
+    <option optionid="2" optiontext="Can I work here?" next="1201" checks="Var=ThornhillTidingAchMerchantCraft-0-0" icon="Task">
+    </option>
+    <option optionid="3" optiontext="What was the task again?" next="1202" checks="Var=ThornhillTidingAchMerchantCraft-1-1,!HasItem=227-5" icon="Task">
+    </option>
+    <option optionid="4" optiontext="I’ve got the items you asked for." next="1203" checks="Var=ThornhillTidingAchMerchantCraft-1-1,HasItem=227-5" icon="Task">
+    </option>
+    <option optionid="5" optiontext="I’ll be on my way." next="0">
+    </option>
+  </node>
+  <node id="1201" npcName="Warren Mangler" anim="1" text="Work, huh? Well, I don’t usually hire people, but my equipment is in bad shape. I’ve got a lot of weapons here that need repairs, but I’m out of materials. If you could bring me 5 Iron Ingots, I could fix them up and maybe even give you a cut of the profits." posx="413" posy="181">
+    <option optionid="1" optiontext="I’ll get those Iron Ingots for you." next="0" actions="SetVar=ThornhillTidingAchMerchantCraft-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Maybe another time." next="0">
+    </option>
+  </node>
+  <node id="1202" npcName="Warren Mangler" anim="1" text="I need 5 Iron Ingots to repair my stock. With those, I can get these weapons back in fighting shape. Bring them to me when you’ve got them." posx="823" posy="182">
+    <option optionid="1" optiontext="I’ll bring them for you." next="0" actions="SetVar=ThornhillTidingAchMerchantCraft-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Maybe another time, I’ve got to go." next="0">
+    </option>
+  </node>
+  <node id="1203" npcName="Warren Mangler" anim="1" text="Thanks a lot! I can finally repair my weapons and get back to business." posx="433" posy="478">
+    <option optionid="1" optiontext="Best of luck with that!" next="0" actions="SetVar=ThornhillTidingAchMerchantCraft-2,RemoveItems=227-5" icon="Task">
+    </option>
+  </node>
+  <node id="1225" npcName="Panicked Merchant" anim="1" text="Aaahhh, help! That thief just ran off with my goods! I’ll be ruined!" posx="0" posy="179">
+    <option optionid="1" optiontext="What’s going on?" next="1226" checks="Var=ThornhillTidingAchBanditMerchant-0-0" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Where did the thief go?" next="1226" checks="Var=ThornhillTidingAchBanditMerchant-1-1" icon="Task">
+    </option>
+    <option optionid="3" optiontext="I’ve dealt with the thief." next="1229" checks="Var=ThornhillTidingAchBanditMerchant-2-2" icon="Task">
+    </option>
+    <option optionid="5" optiontext="I’ll be leaving now." next="0">
+    </option>
+  </node>
+  <node id="1226" npcName="Panicked Merchant" anim="1" text="That thief stole from me and bolted behind that building! Please, you’ve got to stop him before he gets away!" posx="514" posy="173">
+    <option optionid="1" optiontext="That’s awful, I’ll help you!" next="0" actions="SetVar=ThornhillTidingAchBanditMerchant-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="This is not for me." next="0">
+    </option>
+  </node>
+  <node id="1229" npcName="Relieved Merchant" anim="1" text="You caught him? Thank you so much! I don’t know what I’d have done if I lost those goods." posx="515" posy="472">
+    <option optionid="1" optiontext="You’re welcome." next="0" actions="SetVar=ThornhillTidingAchBanditMerchant-3">
+    </option>
+  </node>
+  <node id="1250" npcName="Thornhill Guard" anim="1" text="Yes? State your business." posx="0" posy="179">
+    <option optionid="1" optiontext="Got any work?" next="1251" checks="Var=ThornhillTidingAchGuardianFight-0-0" icon="Task">
+    </option>
+    <option optionid="3" optiontext="What just happened?" next="1256" checks="Var=ThornhillTidingAchGuardianFight-2-2" icon="Task">
+    </option>
+    <option optionid="4" optiontext="I’ll be going now." next="0">
+    </option>
+  </node>
+  <node id="1251" npcName="Thornhill Guard" anim="1" text="Work for you? Hah! We only do serious work here!" posx="556" posy="96">
+    <option optionid="1" optiontext="Come on, I can handle it!" next="1255" icon="Task">
+    </option>
+    <option optionid="2" optiontext="What do you mean by 'serious' work?" next="0">
+    </option>
+  </node>
+  <node id="1255" npcName="Thornhill Guard" anim="1" text="Alright, maybe. How about a sparring match? Let’s see if you can back up that confidence. Think you’re ready?" posx="1109" posy="154">
+    <option optionid="1" optiontext="Yeah, I’m tough enough!" next="0" icon="Task" actions="SetVar=ThornhillTidingAchGuardianFight-1">
+    </option>
+    <option optionid="2" optiontext="Uh, never mind..." next="0">
+    </option>
+  </node>
+  <node id="1256" npcName="Thornhill Guard" anim="1" text="Bwahahaha! You thought you could handle it? You barely stood a chance! That was hilarious!" posx="561" posy="403">
+    <option optionid="1" optiontext="..." next="1257" icon="Task">
+    </option>
+  </node>
+  <node id="1257" npcName="Thornhill Guard" anim="1" text="Not bad at all! You’ve done a great job, and our guys needed a bit of fun for a change. We’ll keep an eye on you." posx="561" posy="403">
+    <option optionid="1" optiontext="Glad I could help..." next="0" actions="SetVar=ThornhillTidingAchGuardianFight-3" icon="Task">
+    </option>
+  </node>
+  <node id="1275" npcName="Thornhill Guard" anim="1" text="Hey, you! Heading east?" posx="0" posy="179">
+    <option optionid="1" optiontext="Just wandering around. Need something?" next="1276" checks="Var=ThornhillTidingAchGuardianEscort-0-0" icon="Task">
+    </option>
+    <option optionid="2" optiontext="What was the task again?" next="1277" checks="Var=ThornhillTidingAchGuardianEscort-1-1" icon="Task">
+    </option>
+    <option optionid="3" optiontext="I’ll be on my way." next="0">
+    </option>
+  </node>
+  <node id="1276" npcName="Thornhill Guard" anim="1" text="Good. Escort this man to the east gate. I don’t have time for this. Get him there, a colleague of mine will meet you outside the gate." posx="413" posy="181">
+    <option optionid="1" optiontext="Fine, this way." next="0" actions="SetVar=ThornhillTidingAchGuardianEscort-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Not interested." next="0">
+    </option>
+  </node>
+  <node id="1277" npcName="Thornhill Guard" anim="1" text="You’re supposed to escort that man to the east gate. Don’t make me repeat myself." posx="823" posy="182">
+    <option optionid="1" optiontext="Got it. I’ll take care of it." next="0" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Maybe later." next="0">
+    </option>
+  </node>
+  <node id="1300" npcName="Thornhill Guard" anim="1" text="Is this the man?" posx="0" posy="179">
+    <option optionid="1" optiontext="Yes." next="1301" checks="Var=ThornhillTidingAchGuardianEscort-1-2" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Leave." next="0">
+    </option>
+  </node>
+  <node id="1301" npcName="Thornhill Guard" anim="1" text="Good. I’ll take it from here. You’re done." posx="413" posy="181">
+    <option optionid="1" optiontext="Alright." next="0" actions="SetVar=ThornhillTidingAchGuardianEscort-2,Cinematic=208" icon="Task">
+    </option>
+  </node>
+  <node id="1325" npcName="Thornhill Guard" anim="1" text="Hey, traveler. What do you want?" posx="0" posy="179">
+    <option optionid="1" optiontext="Just looking for some work. Need a hand?" next="1326" checks="Var=ThornhillTidingAchGuardianBear-0-0" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Can you remind me of the task?" next="1329" checks="Var=ThornhillTidingAchGuardianBear-1-5" icon="Task">
+    </option>
+    <option optionid="3" optiontext="I’ve killed the bears." next="1328" checks="Var=ThornhillTidingAchGuardianBear-6-6" icon="Task">
+    </option>
+    <option optionid="4" optiontext="I’ll be on my way." next="0">
+    </option>
+  </node>
+  <node id="1326" npcName="Thornhill Guard" anim="1" text="Work? Hmph. You don't look like you can handle yourself against much. But, if you're serious, I’ve got a pack of bears causing trouble to the east. Think you can handle killing six of them? Don’t go getting yourself mauled." posx="538" posy="-17">
+    <option optionid="1" optiontext="I can handle it. I’ll take care of them." next="1330" actions="SetVar=ThornhillTidingAchGuardianBear-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Maybe not. I’ll be on my way." next="0">
+    </option>
+  </node>
+  <node id="1328" npcName="Thornhill Guard" anim="1" text="You actually did it? I have to admit, I didn’t think you could. Alright, now I can report back without looking like an idiot. Good work." posx="690" posy="529">
+    <option optionid="1" optiontext="Glad I could help." next="0" actions="SetVar=ThornhillTidingAchGuardianBear-8" icon="Task">
+    </option>
+  </node>
+  <node id="1329" npcName="Thornhill Guard" anim="1" text="You’re supposed to kill six bears. That’s if you think you can handle it, of course." posx="1056" posy="296">
+    <option optionid="1" optiontext="I’ll handle it." next="0" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Maybe later." next="0">
+    </option>
+  </node>
+  <node id="1330" npcName="Thornhill Guard" anim="1" text="Alright, if you’re sure. Here, take this crossbow. It’ll help you bring those bears down. Don’t say I didn’t warn you." itemIcon="361" posx="1105" posy="-55">
+    <option optionid="1" optiontext="Thanks." next="0" actions="AddItems=361-1-true" icon="Task">
+    </option>
+  </node>
+  <node id="1350" npcName="Alchemy Apprentice" anim="1" text="Hey there, traveler! Got a second?" posx="0" posy="179">
+    <option optionid="1" optiontext="Hi, just walking around. Need something?" next="1351" checks="Var=ThornhillTidingAchSkillfulMed-0-0" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Can you remind me of the task?" next="1351" checks="Var=ThornhillTidingAchSkillfulMed-1-1,!HasItem=438-10" icon="Task">
+    </option>
+    <option optionid="3" optiontext="I’ve brought the items you asked for." next="1355" checks="Var=ThornhillTidingAchSkillfulMed-1-1,HasItem=438-10" icon="Task">
+    </option>
+    <option optionid="4" optiontext="How are your alchemy lessons going?" next="1356" checks="Var=ThornhillTidingAchSkillfulMed-2-2">
+    </option>
+    <option optionid="5" optiontext="I’ll be leaving now." next="0">
+    </option>
+  </node>
+  <node id="1351" npcName="Alchemy Apprentice" anim="1" text="Yeah, I’m trying to practice medicine making, but I’m short on ingredients. Have you come across any dandelions? I need about 10 of them." posx="413" posy="181">
+    <option optionid="1" optiontext="Sure, I’ll keep an eye out." next="0" actions="SetVar=ThornhillTidingAchSkillfulMed-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Sorry, not right now." next="0">
+    </option>
+  </node>
+  <node id="1355" npcName="Alchemy Apprentice" anim="1" text="Oh great, you found the dandelions! Thanks a bunch, this will really help with my studies." posx="411" posy="691">
+    <option optionid="1" optiontext="You’re welcome." next="0" actions="SetVar=ThornhillTidingAchSkillfulMed-2,RemoveItems=438-10">
+    </option>
+  </node>
+  <node id="1356" npcName="Alchemy Apprentice" anim="1" text="The lessons are going fine. Thanks again for the dandelions, they’ve been a big help!" posx="411" posy="691">
+    <option optionid="1" optiontext="Glad to hear it!" next="0">
+    </option>
+  </node>
+  <node id="1375" npcName="Sailor" anim="1" text="Hey traveler, do you work around here?" posx="0" posy="179">
+    <option optionid="1" optiontext="Not really, but I can help. What do you need?" next="1376" checks="Var=ThornhillTidingAchSkillfulEgravment-0-0" icon="Task">
+    </option>
+    <option optionid="2" optiontext="What was it you needed again?" next="1382" checks="Var=ThornhillTidingAchSkillfulEgravment-1-1,!HasItem=485-3" icon="Task">
+    </option>
+    <option optionid="3" optiontext="I’ve brought the items you asked for." next="1380" checks="Var=ThornhillTidingAchSkillfulEgravment-1-1,HasItem=485-3" icon="Task">
+    </option>
+    <option optionid="5" optiontext="I’ll be off now." next="0">
+    </option>
+  </node>
+  <node id="1376" npcName="Sailor" anim="1" text="I need 3 ropes to secure the cargo before we set sail, but the crew’s all over the place. Could you grab them from the loading area?" itemIcon="485" posx="475" posy="100">
+    <option optionid="1" optiontext="Alright, I’ll grab them." next="0" actions="SetVar=ThornhillTidingAchSkillfulEgravment-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Sorry, I’m busy right now." next="0">
+    </option>
+  </node>
+  <node id="1380" npcName="Sailor" anim="1" text="Thanks a lot! That’ll make things much easier for us." posx="457" posy="656">
+    <option optionid="1" optiontext="You're welcome." next="0" actions="SetVar=ThornhillTidingAchSkillfulEgravment-2,RemoveItems=485-3" icon="Task">
+    </option>
+  </node>
+  <node id="1382" npcName="Sailor" anim="1" text="I still need those 3 ropes. You’ll find them in the loading area with the rest of the cargo." posx="467" posy="430">
+    <option optionid="1" optiontext="Got it." next="0">
+    </option>
+  </node>
+  <node id="1400" npcName="Handyman" anim="1" text="Hey traveler, are you part of the Preservation Society too? Could you give me a hand?" posx="0" posy="179">
+    <option optionid="1" optiontext="What do you need?" next="1401" checks="Var=ThornhillTidingAchSkillfulCrown-0-0" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Remind me, what did you need again?" next="1401" checks="Var=ThornhillTidingAchSkillfulCrown-1-1,!HasItem=490-1" icon="Task">
+    </option>
+    <option optionid="3" optiontext="I’ve got the hammer you asked for." next="1405" checks="Var=ThornhillTidingAchSkillfulCrown-1-1,HasItem=490-1" icon="Task">
+    </option>
+    <option optionid="4" optiontext="How’s the work going?" next="1406" checks="Var=ThornhillTidingAchSkillfulCrown-2-2">
+    </option>
+    <option optionid="5" optiontext="I'll be going now." next="0">
+    </option>
+  </node>
+  <node id="1401" npcName="Handyman" anim="1" text="I’m working on fixing up this old sign, but I need a hammer to finish the job. Could you grab one for me from the general store?" posx="488" posy="167">
+    <option optionid="1" optiontext="Sure, I’ll get it for you." next="0" actions="SetVar=ThornhillTidingAchSkillfulCrown-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="I’m a bit busy." next="0">
+    </option>
+  </node>
+  <node id="1405" npcName="Handyman" anim="1" text="Ah, perfect! Thanks, I really appreciate it." posx="488" posy="469">
+    <option optionid="1" optiontext="You're welcome." next="0" actions="SetVar=ThornhillTidingAchSkillfulCrown-2,RemoveItems=490-1" icon="Task">
+    </option>
+  </node>
+  <node id="1406" npcName="Handyman" anim="1" text="Everything’s going smoothly now, thanks to your help!." posx="489" posy="714">
+    <option optionid="1" optiontext="Glad I could help." next="0">
+    </option>
+  </node>
+  <node id="1425" npcName="Farmer" anim="1" text="Rats!! Can you see them? They're everywhere, tearing up my fields! We need to get rid of them before they ruin everything!" posx="0" posy="179">
+    <option optionid="1" optiontext="I see them! Let me help you out." next="1426" checks="Var=AshensideAcresRatKill-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve already taken care of the rats." next="1430" checks="Var=AshensideAcresRatKill-5-5" icon="task">
+    </option>
+    <option optionid="3" optiontext="How’s the field looking now?" next="1431" checks="Var=AshensideAcresRatKill-12-12">
+    </option>
+    <option optionid="4" optiontext="What was the task again?" next="1432" checks="Var=AshensideAcresRatKill-1-4" icon="task">
+    </option>
+    <option optionid="5" optiontext="Goodbye." next="0">
+    </option>
+  </node>
+  <node id="1426" npcName="Farmer" anim="1" text="That’d be great! We’ve got to get rid of these rats before they eat everything. They’re everywhere in the field!" posx="601" posy="47">
+    <option optionid="1" optiontext="I’m on it, I’ll take care of the rats." next="0" actions="SetVar=AshensideAcresRatKill-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Sorry, I’m a bit busy." next="0">
+    </option>
+  </node>
+  <node id="1430" npcName="Farmer" anim="1" text="Thanks a lot! You’ve done a huge favor by getting rid of those rats!" posx="1051" posy="217">
+    <option optionid="1" optiontext="You're welcome." next="0" actions="SetVar=AshensideAcresRatKill-6" icon="task">
+    </option>
+  </node>
+  <node id="1431" npcName="Farmer" anim="1" text="The fields are looking so much better now, thanks to your help!" posx="552" posy="479">
+    <option optionid="1" optiontext="Glad I could help." next="0">
+    </option>
+  </node>
+  <node id="1432" npcName="Farmer" anim="1" text="Rats are tearing up our fields! We’ve got to get rid of them before it’s too late!" posx="885" posy="700">
+    <option optionid="1" optiontext="Don’t worry, I’ll handle it." next="0" icon="task">
+    </option>
+  </node>
+  <node id="1450" npcName="Farmer" anim="1" text="Shoo! Shoo! Get out of here, you pesky crows!" posx="0" posy="179">
+    <option optionid="1" optiontext="How about building a scarecrow?" next="1451" checks="Var=AshensideAcresCrowHelp-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve got the materials for the scarecrows." next="1455" checks="Var=AshensideAcresCrowHelp-1-1,HasItem=9048-3" icon="task">
+    </option>
+    <option optionid="3" optiontext="Are the scarecrows working now?" next="1456" checks="Var=AshensideAcresCrowHelp-2-2">
+    </option>
+    <option optionid="4" optiontext="What do you need for the scarecrows again?" next="1457" checks="Var=AshensideAcresCrowHelp-1-1,!HasItem=9048-3" icon="task">
+    </option>
+    <option optionid="5" optiontext="Careful with that!" next="0">
+    </option>
+  </node>
+  <node id="1451" npcName="Farmer" anim="1" text="That's an excellent idea! Can you find some haybales? Three should do it, I have the rest of the materials." posx="413" posy="181">
+    <option optionid="1" optiontext="On it." actions="SetVar=AshensideAcresCrowHelp-1" next="0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Actually, I’m not sure." next="0">
+    </option>
+  </node>
+  <node id="1455" npcName="Farmer" anim="1" text="Thanks! That’s a big help. These scarecrows will keep those crows away!" posx="428" posy="455">
+    <option optionid="1" optiontext="You're welcome." next="0" actions="SetVar=AshensideAcresCrowHelp-2,RemoveItems=9048-3,Cinematic=244" icon="task">
+    </option>
+  </node>
+  <node id="1456" npcName="Farmer" anim="1" text="The scarecrows are working perfectly now, thanks to you!" posx="415" posy="924">
+    <option optionid="1" optiontext="Glad I could help." next="0">
+    </option>
+  </node>
+  <node id="1457" npcName="Farmer" anim="1" text="I just need the materials, three haybales should do it. Can you help me collect them? I’ll build it myself after." posx="824" posy="182">
+    <option optionid="1" optiontext="Sure, I’ll help." next="0" actions="SetVar=AshensideAcresCrowHelp-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Maybe later." next="0">
+    </option>
+  </node>
+  <node id="1475" npcName="Shepherd" anim="1" text="Traveler, can you see those people lurking over there? Are they dangerous?" posx="0" posy="179">
+    <option optionid="1" optiontext="Who are you talking about?" next="1476" checks="Var=AshensideAcresSheepOutlaws-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve dealt with the outlaws." next="1480" checks="Var=AshensideAcresSheepOutlaws-4-4" icon="task">
+    </option>
+    <option optionid="3" optiontext="Are your sheep safe now?" next="1481" checks="Var=AshensideAcresSheepOutlaws-5-5">
+    </option>
+    <option optionid="4" optiontext="What did you need me to do again?" next="1476" checks="Var=AshensideAcresSheepOutlaws-1-3" icon="task">
+    </option>
+    <option optionid="5" optiontext="Goodbye." next="0">
+    </option>
+  </node>
+  <node id="1476" npcName="Shepherd" anim="1" text="The outlaws! They’re hiding in the woods and sneaking into the fields at night to steal my sheep. I’m afraid they’ll be back." posx="552" posy="171">
+    <option optionid="1" optiontext="I’ll take care of them for you." next="0" actions="SetVar=AshensideAcresSheepOutlaws-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="This isn’t my fight..." next="0">
+    </option>
+  </node>
+  <node id="1480" npcName="Shepherd" anim="1" text="Thank you so much! You’ve really saved me and my flock." posx="552" posy="468">
+    <option optionid="1" optiontext="You're welcome." next="0" actions="SetVar=AshensideAcresSheepOutlaws-5,SetCounterVar=AshensideAcresSheepOutlawsResetVar-7200" icon="task">
+    </option>
+  </node>
+  <node id="1481" npcName="Shepherd" anim="1" text="For now, yes, but they always seem to return after a while." posx="549" posy="920">
+    <option optionid="1" optiontext="Let me know if they come back." next="0">
+    </option>
+  </node>
+  <node id="1500" npcName="Scout" anim="1" text="Hello traveler, what brings you out this way?" posx="0" posy="179">
+    <option optionid="1" optiontext="I’m just a traveler looking for work. Need a hand?" next="1501" checks="Var=AshensideAcresScout-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Here’s your beer." next="1505" itemIcon="296" checks="Var=AshensideAcresScout-1-1,HasItem=296-1" icon="task">
+    </option>
+    <option optionid="3" optiontext="You needed something?" next="1501" checks="Var=AshensideAcresScout-1-1,!HasItem=296-1" icon="task">
+    </option>
+    <option optionid="5" optiontext="Goodbye." next="0">
+    </option>
+  </node>
+  <node id="1501" npcName="Scout" anim="1" text="Actually, I could use some help. I’m stuck on duty and can’t leave the post, but I could really use a beer from the tavern near the scrap yard to the south. Could you fetch one for me?" itemIcon="296" posx="552" posy="171">
+    <option optionid="1" optiontext="Sure, I’ll get it for you." next="0" actions="SetVar=AshensideAcresScout-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Sorry, not my job." next="0">
+    </option>
+  </node>
+  <node id="1505" npcName="Scout" anim="1" text="Ah, thanks a lot! I really needed that." posx="550" posy="469">
+    <option optionid="1" optiontext="You're welcome." next="0" actions="SetVar=AshensideAcresScout-3,RemoveItems=296-1" icon="task">
+    </option>
+  </node>
+  <node id="1506" npcName="Scout" anim="1" text="Yes, everything’s secure now, thanks to you." posx="549" posy="920">
+    <option optionid="1" optiontext="Glad to hear it." next="0">
+    </option>
+  </node>
+  <node id="1525" npcName="Traveler" anim="1" text="Ugh, these blasted mosquitoes! How do you manage to deal with them? They're driving me mad, and I can't even get to Fenwater!" posx="0" posy="179">
+    <option optionid="1" optiontext="I just fight them off." next="1526" checks="Var=SilvermirrorShadowsMosquito-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve killed the mosquitoes." next="1530" checks="Var=SilvermirrorShadowsMosquito-6-6" icon="task">
+    </option>
+    <option optionid="3" optiontext="Remind me, what was the task again?" next="1526" checks="Var=SilvermirrorShadowsMosquito-1-5" icon="task">
+    </option>
+    <option optionid="4" optiontext="Is it safe from the mosquitoes now?" next="1531" checks="Var=SilvermirrorShadowsMosquito-7-7">
+    </option>
+    <option optionid="5" optiontext="Goodbye." next="0">
+    </option>
+  </node>
+  <node id="1526" npcName="Traveler" anim="1" text="Fight them off? You make it sound easy! I can't take it anymore. Could you kill five of those pests for me? It would help me a lot." posx="552" posy="171">
+    <option optionid="1" optiontext="Alright, I’ll take care of them." next="0" actions="SetVar=SilvermirrorShadowsMosquito-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve had enough of mosquitoes too." next="0">
+    </option>
+  </node>
+  <node id="1530" npcName="Traveler" anim="1" text="Thank you! Finally, I can get to Fenwater without getting eaten alive by mosquitoes." posx="550" posy="471">
+    <option optionid="1" optiontext="You're welcome." next="0" actions="SetVar=SilvermirrorShadowsMosquito-7" icon="task">
+    </option>
+  </node>
+  <node id="1531" npcName="Traveler" anim="1" text="No more mosquitoes, thanks to you! I can finally head to Fenwater in peace." posx="550" posy="471">
+    <option optionid="1" optiontext="Glad to hear it." next="0">
+    </option>
+  </node>
+  <node id="1550" npcName="Hunter" anim="1" text="Did you bring a weapon? Those tentacles… they got me good." posx="0" posy="179">
+    <option optionid="1" optiontext="Yeah, I’ve got it." next="1551" checks="Var=SilvermirrorShadowsTentacle-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve killed the tentacles." next="1555" checks="Var=SilvermirrorShadowsTentacle-6-6" icon="task">
+    </option>
+    <option optionid="3" optiontext="Remind me, what was the task?" next="1551" checks="Var=SilvermirrorShadowsTentacle-1-5" icon="task">
+    </option>
+    <option optionid="5" optiontext="Goodbye." next="0">
+    </option>
+  </node>
+  <node id="1551" npcName="Hunter" anim="1" text="I tried to fight them off, but they got the better of me. I can’t get past them in this state. Can you take care of them for me?" posx="552" posy="171">
+    <option optionid="1" optiontext="Alright, I’ll handle it." next="0" actions="SetVar=SilvermirrorShadowsTentacle-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Not yet." next="0">
+    </option>
+  </node>
+  <node id="1555" npcName="Hunter" anim="1" text="Thanks a lot! I wouldn’t have made it without your help." posx="554" posy="468">
+    <option optionid="1" optiontext="You're welcome." next="0" actions="SetVar=SilvermirrorShadowsTentacle-7" icon="task">
+    </option>
+  </node>
+  <node id="1575" npcName="Hunter" anim="1" text="You there, traveler! These lizards have been getting more aggressive lately. Could use some help scaring them off." posx="0" posy="179">
+    <option optionid="1" optiontext="I’m looking for work. What do you need?" next="1576" checks="Var=SilvermirrorShadowsLizard-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve taken care of the lizards." next="1580" checks="Var=SilvermirrorShadowsLizard-6-6" icon="task">
+    </option>
+    <option optionid="3" optiontext="Can you remind me what you needed again?" next="1576" checks="Var=SilvermirrorShadowsLizard-1-5" icon="task">
+    </option>
+    <option optionid="4" optiontext="How’s the lizard situation now?" next="1581" checks="Var=SilvermirrorShadowsLizard-7-7">
+    </option>
+    <option optionid="5" optiontext="Goodbye." next="0">
+    </option>
+  </node>
+  <node id="1576" npcName="Hunter" anim="1" text="The swamp’s full of them, acting more aggressive than usual. If you could head over and kill five of the lizards, it might scare the rest away." posx="552" posy="171">
+    <option optionid="1" optiontext="Alright, I’ll handle it." next="0" actions="SetVar=SilvermirrorShadowsLizard-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Maybe another time." next="0">
+    </option>
+  </node>
+  <node id="1580" npcName="Hunter" anim="1" text="Thanks! That should calm them down a bit." posx="554" posy="472">
+    <option optionid="1" optiontext="You're welcome." next="0" actions="SetVar=SilvermirrorShadowsLizard-7" icon="task">
+    </option>
+  </node>
+  <node id="1581" npcName="Hunter" anim="1" text="The lizards have calmed down, thanks to you. I appreciate it." posx="554" posy="468">
+    <option optionid="1" optiontext="Glad I could help." next="0">
+    </option>
+  </node>
+  <node id="1600" npcName="Miner" anim="1" text="Hey traveler, got a moment? I could really use some help..." posx="0" posy="179">
+    <option optionid="1" optiontext="What happened? Are you mining here?" next="1601" checks="Var=SilvermirrorShadowsOreCluster-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve got your potion." next="1605" checks="Var=SilvermirrorShadowsOreCluster-1-1,HasItem=533-1" icon="task">
+    </option>
+    <option optionid="3" optiontext="What was the task again?" next="1601" checks="Var=SilvermirrorShadowsOreCluster-1-1,!HasItem=533-1" icon="task">
+    </option>
+    <option optionid="4" optiontext="Heading back soon?" next="1606" checks="Var=SilvermirrorShadowsOreCluster-2-2">
+    </option>
+    <option optionid="5" optiontext="Goodbye." next="0">
+    </option>
+  </node>
+  <node id="1601" npcName="Miner" anim="1" itemIcon="533" text="I... I fell into a cave while mining. Barely got out, but I dropped my health potion down there. It’s dangerous, and I’m not going back without it. Can you grab it for me so I can make my way back to town?" posx="604" posy="44">
+    <option optionid="1" optiontext="Sure, I’ll get it for you." next="0" actions="SetVar=SilvermirrorShadowsOreCluster-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Not right now." next="0">
+    </option>
+  </node>
+  <node id="1605" npcName="Miner" anim="1" text="Thanks, you’re a lifesaver! I don’t think I could have made it back without you." posx="782" posy="405">
+    <option optionid="1" optiontext="You're welcome." next="0" actions="SetVar=SilvermirrorShadowsOreCluster-2,RemoveItems=533-1,Cinematic=210" icon="task">
+    </option>
+  </node>
+  <node id="1606" npcName="Miner" anim="1" text="Yes, thanks to you, I can finally get out of here." posx="633" posy="679">
+    <option optionid="1" optiontext="Glad I could help." next="0">
+    </option>
+  </node>
+  <node id="1625" npcName="Fisherman" anim="1" text="Hey, you look like someone who knows their way around a fishing rod. Care to help a fellow out?" posx="0" posy="179">
+    <option optionid="1" optiontext="Yeah, I can fish. What do you need?" next="1626" checks="Var=SilvermirrorShadowsReedBass-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve caught the fish you wanted." next="1630" checks="Var=SilvermirrorShadowsReedBass-1-1,HasItem=188-2" icon="task">
+    </option>
+    <option optionid="3" optiontext="Catching anything good these days?" next="1631" checks="Var=SilvermirrorShadowsReedBass-2-2">
+    </option>
+    <option optionid="4" optiontext="Can you remind me what you needed again?" next="1626" checks="Var=SilvermirrorShadowsReedBass-1-1,!HasItem=188-2" icon="task">
+    </option>
+    <option optionid="5" optiontext="I’ll be on my way." next="0">
+    </option>
+  </node>
+  <node id="1626" npcName="Fisherman" anim="1" text="It’s been tough out here lately. The reed bass aren’t biting, and I need to feed my family. Could you catch 2 for me?" posx="552" posy="171">
+    <option optionid="1" optiontext="I’ll get those fish for you." next="0" actions="SetVar=SilvermirrorShadowsReedBass-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Sorry, I’m not interested." next="0">
+    </option>
+  </node>
+  <node id="1630" npcName="Fisherman" anim="1" text="You did it! This is going to make a huge difference for me and my family. Thank you!" posx="544" posy="473">
+    <option optionid="1" optiontext="Glad I could help." next="0" actions="SetVar=SilvermirrorShadowsReedBass-2,RemoveItems=188-2,Cinematic=211" icon="task">
+    </option>
+  </node>
+  <node id="1631" npcName="Fisherman" anim="1" text="Thanks to you, I’m finally catching something decent again." posx="544" posy="473">
+    <option optionid="1" optiontext="Good to hear." next="0">
+    </option>
+  </node>
+  <node id="1650" npcName="Sick Boy" anim="1" text="Hey, are you heading inside? Please, could you help me?" posx="0" posy="179">
+    <option optionid="1" optiontext="What’s wrong? You don’t look well." next="1651" checks="Var=SilvermirrorShadowsSilverIris-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve got the salve you needed." next="1655" checks="Var=SilvermirrorShadowsSilverIris-1-1,HasItem=9059-1" icon="task">
+    </option>
+    <option optionid="3" optiontext="Remind me, what was the task again?" next="1657" checks="Var=SilvermirrorShadowsSilverIris-1-1,!HasItem=9059-1" icon="task">
+    </option>
+    <option optionid="4" optiontext="Feeling any better now?" next="1656" checks="Var=SilvermirrorShadowsSilverIris-2-2">
+    </option>
+    <option optionid="5" optiontext="I’ll be leaving now." next="0">
+    </option>
+  </node>
+  <node id="1651" npcName="Sick Boy" anim="1" text="I was bitten by mosquitoes, and I feel terrible. I made it here, but I need medicine. The witch has a salve that could help, but I’m too scared to go myself. Can you get it for me?" itemIcon="9059" posx="492" posy="8">
+    <option optionid="1" optiontext="Sure, I’ll get it for you." next="0" actions="SetVar=SilvermirrorShadowsSilverIris-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Sorry, I can’t." next="0">
+    </option>
+  </node>
+  <node id="1655" npcName="Sick Boy" anim="1" text="Thank you so much! I really appreciate it." posx="691" posy="563">
+    <option optionid="1" optiontext="You’re welcome." next="0" actions="SetVar=SilvermirrorShadowsSilverIris-2,RemoveItems=9059-1,Cinematic=212" icon="task">
+    </option>
+  </node>
+  <node id="1656" npcName="Sick Boy" anim="1" text="Yes, I’m feeling much better now, thanks to you!" posx="516" posy="815">
+    <option optionid="1" optiontext="I’m glad I could help." next="0">
+    </option>
+  </node>
+  <node id="1657" npcName="Sick Boy" anim="1" text="I got bitten by mosquitoes and made it here, but I need medicine. I’m too scared to visit the witch myself. Could you get some salve from her for me?" itemIcon="9059" posx="659" posy="333">
+    <option optionid="1" optiontext="Got it. I’ll get it for you." next="0">
+    </option>
+  </node>
+  <node id="1675" npcName="Guard" anim="1" text="Hey traveler, you look like you can handle yourself." posx="0" posy="179">
+    <option optionid="1" optiontext="Why do you say that?" next="1676" checks="Var=AurfieldAchvThiccThief-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Do you know where the thief is?" next="1679" checks="Var=AurfieldAchvThiccThief-1-1">
+    </option>
+    <option optionid="3" optiontext="I’ll be off then." next="0">
+    </option>
+  </node>
+  <node id="1676" npcName="Guard" anim="1" text="I’m a guard from Haywind, and I was sent to catch a thief, but he’s way too strong for me. If you find him and take him out, the people of Aurfield will be safe. Just remember, you’ll need to fight him in melee." posx="552" posy="171">
+    <option optionid="1" optiontext="Alright, I’ll handle it." next="0" actions="SetVar=AurfieldAchvThiccThief-1">
+    </option>
+    <option optionid="2" optiontext="No, I can’t fight." next="0">
+    </option>
+  </node>
+  <node id="1679" npcName="Guard" anim="1" text="He’s been breaking into houses, so you should be able to find him in one of them. Take him out, and I’ll head back to Haywind." posx="552" posy="468">
+    <option optionid="1" optiontext="Got it." next="0">
+    </option>
+  </node>
+  <node id="1700" npcName="Merchant" anim="1" text="Hello traveler, what brings you here?" posx="0" posy="179">
+    <option optionid="1" optiontext="What are you doing out here?" next="1701" checks="Var=AmarienAbyssCarvan-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="Your caravan was looted by bandits, but I found 15 iron ingots. Do you still want them?" next="1705" checks="Var=AmarienAbyssCarvan-2-2,HasItem=227-15" icon="task">
+    </option>
+    <option optionid="3" optiontext="What was the task again?" next="1701" checks="Var=AmarienAbyssCarvan-1-1,!HasItem=227-15" icon="task">
+    </option>
+    <option optionid="4" optiontext="I hope your master is okay with what’s left of the caravan." next="1706" checks="Var=AmarienAbyssCarvan-2-2">
+    </option>
+    <option optionid="5" optiontext="Just visiting." next="0">
+    </option>
+  </node>
+  <node id="1701" npcName="Merchant" anim="1" text="I’m a merchant’s assistant, waiting for my master’s caravan to arrive. It’s full of iron ingots and very important, but it’s late. Could you check if it’s lost out in the wilderness?" posx="552" posy="171">
+    <option optionid="1" optiontext="Alright, I’ll take a look." next="0" actions="SetVar=AmarienAbyssCarvan-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="That’s not my problem." next="0">
+    </option>
+  </node>
+  <node id="1705" npcName="Merchant" anim="1" text="Please hand over whatever you managed to find." posx="554" posy="488">
+    <option optionid="1" optiontext="Here you go." next="0" actions="SetVar=AmarienAbyssCarvan-2,RemoveItems=227-15" icon="task">
+    </option>
+  </node>
+  <node id="1706" npcName="Merchant" anim="1" text="Yes, thank you. At least someone’s helping." posx="554" posy="741">
+    <option optionid="1" optiontext="Glad to help." next="0">
+    </option>
+  </node>
+  <node id="1725" npcName="Villager" anim="1" text="Hello traveler, what brings you here?" posx="0" posy="179">
+    <option optionid="1" optiontext="Do you need anything?" next="1726" checks="Var=AmarienAbyssRenovate-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I brought the materials you asked for." next="1730" checks="Var=AmarienAbyssRenovate-2-2,HasItem=322-5|492-5" icon="task">
+    </option>
+    <option optionid="3" optiontext="Remind me, what was the task again?" next="1726" checks="Var=AmarienAbyssRenovate-1-1,!HasItem=322-5|492-5" icon="task">
+    </option>
+    <option optionid="4" optiontext="How’s the renovation going?" next="1731" checks="Var=AmarienAbyssRenovate-2-2">
+    </option>
+    <option optionid="5" optiontext="Just passing through." next="0">
+    </option>
+  </node>
+  <node id="1726" npcName="Villager" anim="1" text="I’m trying to renovate my house and need some materials—5 planks and 5 nails." posx="552" posy="171">
+    <option optionid="1" optiontext="I’ll get them for you." next="0" actions="SetVar=AmarienAbyssRenovate-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="That’s not my concern." next="0">
+    </option>
+  </node>
+  <node id="1730" npcName="Villager" anim="1" text="Great, please hand over the materials." posx="554" posy="488">
+    <option optionid="1" optiontext="Here you go." next="0" actions="SetVar=AmarienAbyssRenovate-2,RemoveItems=322-5|492-5" icon="task">
+    </option>
+  </node>
+  <node id="1731" npcName="Villager" anim="1" text="Yes, thank you. At least someone’s helping." posx="554" posy="741">
+    <option optionid="1" optiontext="Glad to help." next="0">
+    </option>
+  </node>
+  <node id="2567" npcName="Thom the Furniture Merchant" anim="1" text="Oh, perfact! I’m completely swamped with orders and, would you believe it, I’ve run out of wood! A furniture merchant without wood—how embarrassing, right? I don’t have time to go fetch more. Could you bring me 5 spruce logs so I can keep working?" posx="483" posy="306">
+    <option optionid="1" optiontext="Sure, I can help with that!" next="0" actions="SetVar=HaywindFriendAchFurnitureVendor-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="That is kind of funny..." next="0">
+    </option>
+  </node>
+  <node id="2568" npcName="Thom the Furniture Merchant" anim="1" text="Thank you so much! Guess I won’t be the woodless furniture merchant anymore!" posx="482" posy="609">
+    <option optionid="1" optiontext="You’re welcome." next="0" actions="SetVar=HaywindFriendAchFurnitureVendor-2,RemoveItems=61-5" icon="Task">
+    </option>
+  </node>
+  <node id="6000" npcName="Fenwater Fisherman" anim="1" text="Ahoy there, stranger! What brings you to the water today?" posx="0" posy="203">
+    <option optionid="1" optiontext="I’m looking to buy some fish for a meal. Got anything?" next="0" actions="OpenShop=97">
+    </option>
+    <option optionid="2" optiontext="I’m heading back to town, need anything?" next="6010" checks="Var=FriendOfFenwaterProHelpFisherman-0-0" icon="task">
+    </option>
+    <option optionid="3" optiontext="Here’s the chicken you wanted." next="6030" checks="Var=FriendOfFenwaterProHelpFisherman-1-1,HasItem=214-1" icon="task">
+    </option>
+    <option optionid="4" optiontext="Remind me what you needed again?" next="6010" checks="Var=FriendOfFenwaterProHelpFisherman-1-1,!HasItem=214-1" icon="task">
+    </option>
+    <option optionid="5" optiontext="Just passing by." next="0">
+    </option>
+  </node>
+  <node id="6010" npcName="Fenwater Fisherman" anim="1" text="I’m starving! Could you grab me something to eat from the market?" posx="504" posy="95">
+    <option optionid="1" optiontext="Sure, I’ll get it." next="6031" icon="task">
+    </option>
+    <option optionid="2" optiontext="I can’t do that right now." next="0">
+    </option>
+  </node>
+  <node id="6030" npcName="Fenwater Fisherman" anim="1" text="Wonderful, thank you!" posx="514" posy="550">
+    <option optionid="1" optiontext="Glad to help." next="6032" actions="RemoveItems=214-1,SetVar=FriendOfFenwaterProHelpFisherman-2" icon="task">
+    </option>
+  </node>
+  <node id="6031" npcName="Fenwater Fisherman" anim="1" text="Some chicken legs would be perfect. There’s a meat stand at the market." itemIcon="214" posx="1012" posy="221">
+    <option optionid="1" optiontext="Alright, I’ll get some." next="0" actions="SetVar=FriendOfFenwaterProHelpFisherman-1" icon="task">
+    </option>
+  </node>
+  <node id="6032" npcName="Fenwater Fisherman" anim="1" text="I don’t have any coin, but please take this book. It’s a good read!" itemIcon="411" posx="1022" posy="516">
+    <option optionid="1" optiontext="Thanks!" next="0" actions="AddItems=411-1-true">
+    </option>
+  </node>
+  <node id="6100" npcName="Master Elowen" anim="1" text="Please... please don't hurt me!" posx="9" posy="7">
+    <option optionid="1" optiontext="What are you talking about?" next="6101" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Leave." next="0">
+    </option>
+  </node>
+  <node id="6101" npcName="Master Elowen" anim="1" text="Oh... thank heavens, you're not him! My name is Elowen and I'm a wealthy merchant. On my way here from the north, I picked up a nasty looking man tailing me." posx="420" posy="8">
+    <option optionid="1" optiontext="" next="6102">
+    </option>
+  </node>
+  <node id="6102" npcName="Master Elowen" anim="1" text="I rushed the rest of the way here as fast as I could, but that nasty man kept up with me! Now he's waiting outside the bank for me to come out! I've been trying to get someone to take me seriously - to help me - but so far everyone's laughed and called me paranoid! Please, there's a few coins in it for you..." posx="831" posy="8">
+    <option optionid="1" optiontext="Fine, I'll confront the man for you." next="6103" icon="Task">
+    </option>
+    <option optionid="2" optiontext="I can't help you, I'm sorry." next="0">
+    </option>
+  </node>
+  <node id="6103" npcName="Master Elowen" anim="1" text="Thank you, oh thank you! He's waiting just outside the bank, with a nasty scar on his face, and a nasty dagger in hand..." posx="1239" posy="9">
+    <option optionid="1" optiontext="Very well." next="0" actions="SetVar=FriendOfFenwaterTownWelfareBandit-1" icon="Task">
+    </option>
+  </node>
+  <node id="6105" npcName="Master Elowen" anim="1" text="Well...? Did you confront him, ask him what he wanted? Please, I'm at my wit's end here..." posx="9" posy="7">
+    <option optionid="1" optiontext="The ruffian will trouble you no more." next="6107" icon="Task" checks="Var=FriendOfFenwaterTownWelfareBandit-2-2">
+    </option>
+    <option optionid="2" optiontext="Sorry, who are you talking about again?" next="6106" icon="Task" checks="Var=FriendOfFenwaterTownWelfareBandit-1-1">
+    </option>
+    <option optionid="3" optiontext="Leave." next="0">
+    </option>
+  </node>
+  <node id="6106" npcName="Master Elowen" anim="1" text="Why, the ruffian outside this very bank! He tailed me here for a good length of the road, despite that I tried to keep up good pace! Now I'm afraid of leaving the bank with him standing out there, waiting..." posx="424" posy="5">
+    <option optionid="1" optiontext="I'll see what it's about." next="0">
+    </option>
+  </node>
+  <node id="6107" npcName="Master Elowen" anim="1" text="You've saved me, hero! I did not lie when I said I'm a wealthy merchant - traveling these backwater lands, I know - hah! But it's true, and I'm more than happy to compensate those who come to my aid." posx="1206" posy="608">
+    <option optionid="1" optiontext="" next="6108">
+    </option>
+  </node>
+  <node id="6108" npcName="Master Elowen" anim="1" text="Please accept this gift of 500 coins! I'm sure that bandit would've extorted much more out of me, given the chance. As far as I'm concerned, you're worth every penny!" itemIcon="131" posx="1616" posy="610">
+    <option optionid="1" optiontext="My pleasure, thanks." next="0" actions="AddItems=131-500-true,SetVar=FriendOfFenwaterTownWelfareBandit-3,NpcChat=Thank you for keeping me safe&gt; stranger!" icon="Task">
+    </option>
+  </node>
+  <node id="60110" npcName="Shady Ruffian" anim="1" text="I've got no business with you, bugger off!" posx="8" posy="5">
+    <option optionid="1" optiontext="A man in the bank says you're bothering him." next="60111" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Leave." next="0">
+    </option>
+  </node>
+  <node id="60111" npcName="Shady Ruffian" anim="1" text="Nonsense! And so what if I am, what's it to you?" posx="419" posy="6">
+    <option optionid="1" optiontext="He's paying me gold to make you leave, so time to clear off." next="60112" icon="Task">
+    </option>
+  </node>
+  <node id="60112" npcName="Shady Ruffian" anim="1" text="Ah, hells! Always some do-gooder's gotta come along and try to ruin everything! Well I mean to take that soft, plump merchant's gold for myself, and you ain't gonna stand in the way of that!\n\n&lt;color=#9C8C77&gt;*The ruffian charges at you with his knife drawn!*&lt;/color&gt;" posx="827" posy="6">
+    <option optionid="1" optiontext="Whoa!" next="0" actions="NpcAggro=1177" icon="Fight">
+    </option>
+  </node>
+  <node id="6110" npcName="Old Lumberjack" anim="1" text="Well, hello there, young one. What brings you to Fenwater today?" posx="25" posy="250">
+    <option optionid="1" optiontext="I’m looking for some quality lumber for a project. Can you help?" next="0" actions="OpenShop=91">
+    </option>
+    <option optionid="2" optiontext="Do you need any help around here?" next="6131" checks="Var=FriendOfFenwaterOutJobLostBoy-0-0" icon="Task">
+    </option>
+    <option optionid="3" optiontext="Can you remind me of the task?" next="6131" checks="Var=FriendOfFenwaterOutJobLostBoy-1-1" icon="Task">
+    </option>
+    <option optionid="4" optiontext="I found your son!" next="6130" checks="Var=FriendOfFenwaterOutJobLostBoy-2-2" icon="Task">
+    </option>
+    <option optionid="5" optiontext="Just passing through." next="0">
+    </option>
+  </node>
+  <node id="6131" npcName="Old Lumberjack" anim="1" text="I was teaching my boy to chop wood, but he ran off toward the west. I'm getting worried. Could you check on him for me?" posx="548" posy="137">
+    <option optionid="1" optiontext="I’ll go find him." next="0" actions="SetVar=FriendOfFenwaterOutJobLostBoy-1" icon="Task">
+    </option>
+  </node>
+  <node id="6130" npcName="Old Lumberjack" anim="1" text="Oh, good! So, is he coming back home?" posx="518" posy="769">
+    <option optionid="1" optiontext="Actually, he wants to become a miner." next="6134" actions="SetVar=FriendOfFenwaterOutJobLostBoy-3" icon="Task">
+    </option>
+  </node>
+  <node id="6120" npcName="Villager" anim="1" text="Oh, hello there!" posx="578" posy="413">
+    <option optionid="1" optiontext="Your father’s worried. You should go home." next="6132" checks="Var=FriendOfFenwaterOutJobLostBoy-1-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Hey there!" next="0">
+    </option>
+  </node>
+  <node id="6132" npcName="Villager" anim="1" text="I’m fine, really. I don’t want to chop wood. I want to be a miner!" posx="1078" posy="293">
+    <option optionid="1" optiontext="Oh, okay..." next="6133">
+    </option>
+  </node>
+  <node id="6133" npcName="Villager" anim="1" text="This book on rocks is fascinating. You should check it out!" itemIcon="413" posx="1221" posy="578">
+    <option optionid="1" optiontext="Rocks! Cool!" next="0" actions="AddItems=413-1-true,SetVar=FriendOfFenwaterOutJobLostBoy-2">
+    </option>
+  </node>
+  <node id="6134" npcName="Old Lumberjack" anim="1" text="Nooooooo!! He wants to leave the family trade?!" posx="1041" posy="852">
+    <option optionid="1" optiontext="I’m really sorry..." next="0">
+    </option>
+  </node>
+  <node id="6140" npcName="Town Sweeper" anim="1" text="Hey there, stranger!" posx="0" posy="199">
+    <option optionid="1" optiontext="Hi! It's filthy here, need a hand?" next="6141" checks="Var=FriendOfFenwaterTownWelfareTrash-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I've cleaned the streets!" next="6142" checks="Var=FriendOfFenwaterTownWelfareTrash-4-4" icon="task">
+    </option>
+    <option optionid="3" optiontext="What was the task again?" next="6145" checks="Var=FriendOfFenwaterTownWelfareTrash-1-3" icon="task">
+    </option>
+    <option optionid="5" optiontext="I’ll come back later." next="0">
+    </option>
+  </node>
+  <node id="6141" npcName="Town Sweeper" anim="1" text="Yes! Trash is everywhere, and it stinks if you walk past it! Could you help me pick up some of it?" posx="467" posy="16">
+    <option optionid="1" optiontext="Happy to help!" next="0" actions="SetVar=FriendOfFenwaterTownWelfareTrash-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Maybe I’ll come back later." next="0">
+    </option>
+  </node>
+  <node id="6142" npcName="Town Sweeper" anim="1" text="Thank you so much!" posx="629" posy="389">
+    <option optionid="1" optiontext="My pleasure to help." next="0" actions="SetVar=FriendOfFenwaterTownWelfareTrash-5" icon="task">
+    </option>
+  </node>
+  <node id="6145" npcName="Town Sweeper" anim="1" text="Please help me clean up this trash!" posx="1006" posy="136">
+    <option optionid="1" optiontext="I’ll do it!" next="0">
+    </option>
+  </node>
+  <node id="6160" npcName="Farmer" anim="1" text="Greetings, stranger! What brings you to my farm today?" posx="0" posy="252">
+    <option optionid="1" optiontext="I’m looking for fresh produce. Do you have any for sale?" next="0" actions="OpenShop=92">
+    </option>
+    <option optionid="2" optiontext="I heard the village needs help distributing food!" next="6165" checks="Var=FriendOfFenwaterProHelpFarm-0-0" icon="task">
+    </option>
+    <option optionid="3" optiontext="What was the task again?" next="6169" checks="Var=FriendOfFenwaterProHelpFarm-1-1,!HasItem=283-5" icon="task">
+    </option>
+    <option optionid="4" optiontext="I’ve got the potatoes!" next="6167" checks="Var=FriendOfFenwaterProHelpFarm-1-1,HasItem=283-5" icon="task">
+    </option>
+    <option optionid="5" optiontext="How’s the potato farming going?" next="6168" checks="Var=FriendOfFenwaterProHelpFarm-2-2">
+    </option>
+    <option optionid="6" optiontext="Just visiting!" next="0">
+    </option>
+  </node>
+  <node id="6165" npcName="Farmer" anim="1" text="Yes, we need someone to harvest ten potatoes this season before they spoil." itemIcon="283" posx="546" posy="15">
+    <option optionid="1" optiontext="I’ll help you." next="0" actions="SetVar=FriendOfFenwaterProHelpFarm-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Maybe later." next="0">
+    </option>
+  </node>
+  <node id="6167" npcName="Farmer" anim="1" text="Thanks, stranger! Now the villagers will have enough food!" posx="527" posy="672">
+    <option optionid="1" optiontext="My pleasure!" next="0" actions="SetVar=FriendOfFenwaterProHelpFarm-2,RemoveItems=283-5">
+    </option>
+  </node>
+  <node id="6168" npcName="Farmer" anim="1" text="Yes, thanks to your help!" posx="530" posy="909">
+    <option optionid="1" optiontext="Great!" next="0">
+    </option>
+  </node>
+  <node id="6169" npcName="Farmer" anim="1" text="Potatoes, innit? Five potatoes!" posx="600" posy="405">
+    <option optionid="1" optiontext="Got it!" next="0">
+    </option>
+  </node>
+  <node id="6180" npcName="Blacksmith" anim="1" text="Greetings, traveler! What can I forge for you today?" posx="0" posy="485">
+    <option optionid="1" optiontext="I need a new weapon. Do you have something for me?" next="0" actions="OpenShop=93">
+    </option>
+    <option optionid="2" optiontext="Do you need help? I’m looking for work." next="6211" checks="Var=FriendOfFenwaterProHelpBlacksmith-0-0" icon="Task">
+    </option>
+    <option optionid="3" optiontext="Remind me, what was the task again?" next="6212" checks="Var=FriendOfFenwaterProHelpBlacksmith-1-1,!HasItem=349-5" icon="Task">
+    </option>
+    <option optionid="4" optiontext="I’ve got the coal!" next="6210" checks="Var=FriendOfFenwaterProHelpBlacksmith-1-1,HasItem=349-5" icon="Task">
+    </option>
+    <option optionid="5" optiontext="I was just visiting." next="0">
+    </option>
+  </node>
+  <node id="6210" npcName="Blacksmith" anim="1" text="Thank you! This coal will really help the village." posx="582" posy="939">
+    <option optionid="1" optiontext="It’s my pleasure." next="0" actions="SetVar=FriendOfFenwaterProHelpBlacksmith-2,RemoveItems=349-5" icon="Task">
+    </option>
+  </node>
+  <node id="6211" npcName="Blacksmith" anim="1" text="Yes, I could use some help gathering coal. It’s essential for crafting the tools the village needs." posx="580" posy="288">
+    <option optionid="1" optiontext="I’ll get some coal for you." next="6190">
+    </option>
+  </node>
+  <node id="6190" npcName="Blacksmith" anim="1" text="You’ll find coal in the quarry to the south. It’s a bit of a trek, but that’s where we get the best coal. Please bring me five pieces of coal." posx="1150" posy="247">
+    <option optionid="1" optiontext="Alright, I’ll mine some coal for you." next="0" actions="SetVar=FriendOfFenwaterProHelpBlacksmith-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="I’ll come back later..." next="0">
+    </option>
+  </node>
+  <node id="6212" npcName="Blacksmith" anim="1" text="I asked you to gather five pieces of coal. The quarry to the south is where you can find them." posx="580" posy="450">
+    <option optionid="1" optiontext="Got it, I’ll get on it." next="0">
+    </option>
+  </node>
+  <node id="6220" npcName="Farmer" anim="1" text="Greetings, traveler! What brings you to my farm today?" posx="0" posy="252">
+    <option optionid="1" optiontext="I’m looking for fresh produce. Do you have any for sale?" next="0" actions="OpenShop=94">
+    </option>
+    <option optionid="2" optiontext="Your farm seems to have a pest problem. Need my help?" next="6230" checks="Var=FriendOfFenwaterTownWelfarePest-0-0" icon="Task">
+    </option>
+    <option optionid="3" optiontext="I’ve dealt with the pests." next="6240" checks="Var=FriendOfFenwaterTownWelfarePest-6-6" icon="Task">
+    </option>
+    <option optionid="4" optiontext="Can you remind me what you needed again?" next="6242" checks="Var=FriendOfFenwaterTownWelfarePest-1-1" icon="Task">
+    </option>
+    <option optionid="5" optiontext="Is your farm finally pest-free?" next="6241" checks="Var=FriendOfFenwaterTownWelfarePest-7-7">
+    </option>
+    <option optionid="6" optiontext="Just passing through!" next="0">
+    </option>
+  </node>
+  <node id="6230" npcName="Farmer" anim="1" text="You any good at dealing with 'em? They’re all over the fields, ruining everything!" posx="537" posy="40">
+    <option optionid="1" optiontext="I’ll handle it." next="0" actions="SetVar=FriendOfFenwaterTownWelfarePest-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Maybe later." next="0">
+    </option>
+  </node>
+  <node id="6240" npcName="Farmer" anim="1" text="Well done! Thanks, stranger. My chickens will have quite the feast with those dead frogs." posx="903" posy="462">
+    <option optionid="1" optiontext="Glad I could help!" next="0" actions="SetVar=FriendOfFenwaterTownWelfarePest-7" icon="Task">
+    </option>
+  </node>
+  <node id="6241" npcName="Farmer" anim="1" text="Yes, thank you!" posx="571" posy="730">
+    <option optionid="1" optiontext="Glad to hear it!" next="0">
+    </option>
+  </node>
+  <node id="6242" npcName="Farmer" anim="1" text="I need someone to get rid of the frogs in my fields. They’re causing all sorts of trouble!" posx="987" posy="236">
+    <option optionid="1" optiontext="Got it!" next="0">
+    </option>
+  </node>
+  <node id="6250" npcName="Carpenter" anim="1" text="Hey, what do you need?" posx="0" posy="252">
+    <option optionid="1" optiontext="I need some sturdy furniture. Can you make something for me?" next="0" actions="OpenShop=95">
+    </option>
+    <option optionid="2" optiontext="What's going on with that pile of wood?" next="6260" checks="Var=FriendOfFenwaterOutJobCart-0-0" icon="task">
+    </option>
+    <option optionid="3" optiontext="Hey, I brought the nails!" next="6280" checks="Var=FriendOfFenwaterOutJobCart-1-1,HasItem=322-1" icon="task">
+    </option>
+    <option optionid="4" optiontext="Wait, what was the task again?" next="6260" checks="Var=FriendOfFenwaterOutJobCart-1-1,!HasItem=322-1" icon="task">
+    </option>
+    <option optionid="5" optiontext="Is the cart holding up now?" next="6281" checks="Var=FriendOfFenwaterOutJobCart-2-2">
+    </option>
+    <option optionid="6" optiontext="Nothing much, just saying hi." next="0">
+    </option>
+  </node>
+  <node id="6260" npcName="Carpenter" anim="1" text="I’m trying to build a cart, but it keeps falling apart!" posx="484" posy="143">
+    <option optionid="1" optiontext="Do you have any nails?" next="6270" icon="task">
+    </option>
+    <option optionid="2" optiontext="Good luck with the building!" next="0">
+    </option>
+  </node>
+  <node id="6270" npcName="Carpenter" anim="1" text="Nah, I’m using glue from the apothecary. It’s supposed to be good stuff!" posx="996" posy="116">
+    <option optionid="1" optiontext="Maybe you should try using nails instead?" next="6282" icon="task">
+    </option>
+  </node>
+  <node id="6280" npcName="Carpenter" anim="1" text="Awesome! You got the nails! Let’s get building!" posx="519" posy="553">
+    <option optionid="1" optiontext="Alright, let’s do this!" next="0">
+    </option>
+  </node>
+  <node id="6281" npcName="Carpenter" anim="1" text="Wow, it’s looking great!" posx="514" posy="817">
+    <option optionid="1" optiontext="Nice!" next="0">
+    </option>
+  </node>
+  <node id="6282" npcName="Carpenter" anim="1" text="Maybe... It’s worth a shot. There’s a general store down the hill. Could you grab some nails?" itemIcon="322" posx="1215" posy="434">
+    <option optionid="1" optiontext="I’ll be right back. And no more glue!" next="0" actions="SetVar=FriendOfFenwaterOutJobCart-1" icon="task">
+    </option>
+  </node>
+  <node id="6330" npcName="Apothecary" anim="1" text="Greetings, weary traveler! How can I assist you today?" posx="0" posy="252">
+    <option optionid="1" optiontext="I’m in need of some potions. Do you have any for sale?" next="0" actions="OpenShop=96">
+    </option>
+    <option optionid="2" optiontext="I’m looking for work. Do you need any help around here?" next="6340" checks="Var=FriendOfFenwaterOutJobApothecary-0-0" icon="Task">
+    </option>
+    <option optionid="3" optiontext="I brought the herbs you asked for!" next="6350" checks="Var=FriendOfFenwaterOutJobApothecary-1-1,HasItem=907-3" icon="Task">
+    </option>
+    <option optionid="4" optiontext="Can you remind me of the task again?" next="6351" checks="Var=FriendOfFenwaterOutJobApothecary-1-1,!HasItem=907-3" icon="Task">
+    </option>
+    <option optionid="5" optiontext="Just saying hi." next="0">
+    </option>
+  </node>
+  <node id="6340" npcName="Apothecary" anim="1" text="Actually, I could use a hand! I need 3 sweetgrass for my potions, and they grow on the east side of Fenwater. Could you gather some for me?" posx="486" posy="154">
+    <option optionid="1" optiontext="I’ll gather them and bring them to you." next="0" actions="SetVar=FriendOfFenwaterOutJobApothecary-1" icon="Task">
+    </option>
+  </node>
+  <node id="6350" npcName="Apothecary" anim="1" text="Wonderful! These will do perfectly. Thank you so much." posx="553" posy="676">
+    <option optionid="1" optiontext="Happy to help!" next="0" actions="SetVar=FriendOfFenwaterOutJobApothecary-2,RemoveItems=907-3" icon="Task">
+    </option>
+  </node>
+  <node id="6351" npcName="Apothecary" anim="1" text="I still need those 3 sweetgrass herbs. You can find them on the east side of Fenwater village." posx="657" posy="434">
+    <option optionid="1" optiontext="Got it! I’ll get them." next="0">
+    </option>
+  </node>
+
+	
+	<node id="6500" npcName="Bartender Micko" anim="1" text="I studied to become a doctor at the Haywind college, but found it too demanding, so I chose bartending here instead. Now I find my bartending duties aren't quite as relaxed as I had thought either..." posx="3" posy="7">
+		<option optionid="1" optiontext="Why, what's stressing you?" next="6501" icon="Task"></option>
+		<option optionid="2" optiontext="I'll leave you to it." next="0"></option>
+	</node>
+	<node id="6501" npcName="Bartender Micko" anim="1" text="You wouldn't believe it, our village simply has the thirstiest folks in all the realm - the ale flows non-stop!" posx="413" posy="8">
+		<option optionid="1" optiontext="Isn't that a good thing, for you I mean?" next="6502" icon="Task"></option>
+	</node>
+	<node id="6502" npcName="Bartender Micko" anim="1" text="Sure that's good for business, but I find us constantly running out of beer! I was expecting a shipment right now, as a matter of fact, but I just got word some ruffians up the road north seized it for themselves..." posx="823" posy="9">
+		<option optionid="1" optiontext="Suppose I could help." next="6503" icon="Task"></option>
+		<option optionid="2" optiontext="Unfortunate, but I must go." next="0"></option>
+	</node>
+	<node id="6503" npcName="Bartender Micko" anim="1" text="You would? I'd be most appreciative! Like I said, the ruffians are camping just up the road north. I just hope they haven't drunk the whole shipment yet..." posx="1232" posy="10">
+		<option optionid="1" optiontext="We'll see..." next="0" actions="SetVar=GrainwaterBeerA-1,NpcChat=Thank you> stranger." icon="Task"></option>
+	</node>
+
+
+	<node id="6510" npcName="Bartender Micko" anim="1" text="Hey there, again! Say, wouldn't be the case you had any luck finding my misplaced beer shipment? If I don't get it soon, we'll be getting in slight bit of trouble with the customers upstairs." posx="13" posy="7">
+		<option optionid="1" optiontext="Where did you say your shipment went missing?" next="6511" icon="Task"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="6511" npcName="Bartender Micko" anim="1" text="I got word there are ruffians camping just up the road towards north, who grabbed the beer for themselves. I only hope they didn't manage to drink through all of it yet..." posx="422" posy="7">
+		<option optionid="1" optiontext="I'll see what I can do." next="0"></option>
+	</node>
+
+
+	<node id="6520" npcName="Bartender Micko" anim="1" text="Hey there, friend! Say, do my eyes betray me, or is that my misplaced beer shipment you're hauling back to me?" posx="6" posy="5">
+		<option optionid="1" optiontext="Indeed, it is." next="6521" checks="HasItem=1892-1" itemIcon="1892" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Leave." next="0" checks="HasItem=1892-1"></option>
+		<option optionid="3" optiontext="I *was* hauling it, but where did I leave it...?" next="0" checks="!HasItem=1892-1"></option>
+	</node>
+	<node id="6521" npcName="Bartender Micko" anim="1" text="It may not seem like it, but you've saved my life here! Well, at least for now. Knowing these folk, I'll be needing a fresh shipment of beer soon enough." posx="416" posy="6">
+		<option optionid="1" optiontext="" next="6522"></option>
+	</node>
+	<node id="6522" npcName="Bartender Micko" anim="1" text="But nevermind that! Here's a few coins for your aid, friend, oh and... not much stuck from my doctor's studies in the city, but I do have a special pain numbing brew for you - may it ease the way on your journeys!" posx="823" posy="5">
+		<option optionid="1" optiontext="Thanks, good luck!" next="0" actions="SetVar=GrainwaterBeerA-3,RemoveItems=1892-1,AddItems=131-25-true|806-1-true,NpcChat=Wonder how long this beer will last with the folk upstairs..." icon="Task"></option>
+	</node>
+
+
+  <node id="7600" npcName="Barkeep Herr" anim="1" text="Greetings, traveler! How can I assist you today?" posx="0" posy="157">
+    <option optionid="1" optiontext="I’m a traveler looking for work. Need any help?" next="7601" checks="Var=HaywindFriendAchBartender-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve brought you the barley you requested." next="7602" checks="Var=HaywindFriendAchBartender-1-1,HasItem=220-5" icon="task">
+    </option>
+    <option optionid="3" optiontext="I hope business is doing well!" next="0" checks="Var=HaywindFriendAchBartender-2-2">
+    </option>
+    <option optionid="4" optiontext="Just stopping by to say hello." next="0">
+    </option>
+    <option optionid="5" optiontext="Remind me, what was it you needed again?" next="7601" checks="Var=HaywindFriendAchBartender-1-1,!HasItem=220-5" icon="task">
+    </option>
+  </node>
+  <node id="7601" npcName="Barkeep Herr" anim="1" text="Actually, yes! I need five fresh barley to brew a special batch of beer. If you could gather that for me, it’d be a great help." posx="482" posy="155">
+    <option optionid="1" optiontext="I’ll get it for you." next="0" actions="SetVar=HaywindFriendAchBartender-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Best of luck with the brewing!" next="0">
+    </option>
+  </node>
+  <node id="7602" npcName="Barkeep Herr" anim="1" text="You’ve done me a great favor, traveler! Thank you for bringing the barley." posx="481" posy="437">
+    <option optionid="1" optiontext="You’re welcome. Happy to help." next="0" actions="SetVar=HaywindFriendAchBartender-2,RemoveItems=220-5" icon="task">
+    </option>
+  </node>
+  <node id="7625" npcName="Lumberyard Worker" anim="1" text="Hey there, traveler! Looking for some lumber or help?" posx="0" posy="157">
+    <option optionid="1" optiontext="I’m a traveler searching for work. Do you need any assistance?" next="7626" checks="Var=HaywindFriendAchLumberWork-0-0" icon="task">
+    </option>
+    <option optionid="2" optiontext="I’ve brought the spruce logs you requested." next="7627" checks="Var=HaywindFriendAchLumberWork-1-1,HasItem=61-10" icon="task">
+    </option>
+    <option optionid="3" optiontext="How’s the lumber work going?" next="7627" checks="Var=HaywindFriendAchLumberWork-2-2">
+    </option>
+    <option optionid="4" optiontext="Just passing through!" next="0">
+    </option>
+    <option optionid="5" optiontext="What did you need again?" next="7626" checks="Var=HaywindFriendAchLumberWork-1-1,!HasItem=61-10" icon="task">
+    </option>
+  </node>
+  <node id="7626" npcName="Lumberyard Worker" anim="1" text="I could really use help gathering ten spruce logs. Think you’re up for the task?" posx="482" posy="155">
+    <option optionid="1" optiontext="Sure, I’ll gather them for you!" next="0" actions="SetVar=HaywindFriendAchLumberWork-1" icon="task">
+    </option>
+    <option optionid="2" optiontext="Best of luck!" next="0">
+    </option>
+  </node>
+  <node id="7627" npcName="Lumberyard Worker" anim="1" text="Thanks a lot for the logs, traveler! This will really help with the workload." posx="481" posy="437">
+    <option optionid="1" optiontext="You’re welcome!" next="0" actions="SetVar=HaywindFriendAchLumberWork-2,RemoveItems=61-10" icon="task">
+    </option>
+  </node>
+  <node id="7700" npcName="Bea's Vegetables" anim="1" text="Would you like to buy some fresh, homegrown vegetables?" posx="0" posy="182">
+    <option optionid="1" optiontext="Yes, I would!" next="0" actions="OpenShop=14">
+    </option>
+    <option optionid="2" optiontext="Nice weather today, isn’t it?" next="7701">
+    </option>
+    <option optionid="3" optiontext="I’ve got some mail for you!" next="7702" checks="Var=HaywindFriendAchMerchant-1-1" icon="Task">
+    </option>
+    <option optionid="4" optiontext="Not right now, thanks." next="0">
+    </option>
+  </node>
+  <node id="7701" npcName="Bea's Vegetables" anim="1" text="Around here, we say 'innit'! But yes, it is. Can I interest you in some vegetables?" posx="555" posy="54">
+    <option optionid="1" optiontext="Sure, I’ll buy some." next="0" actions="OpenShop=14">
+    </option>
+    <option optionid="2" optiontext="Not today, thanks." next="0">
+    </option>
+  </node>
+  <node id="7702" npcName="Bea's Vegetables" anim="1" text="Oh! A letter? That’s great! Thanks a lot, traveler!" posx="556" posy="361">
+    <option optionid="1" optiontext="You're welcome!" next="0" actions="SetVar=HaywindFriendAchMerchant-2,RemoveItems=9046-1">
+    </option>
+  </node>
+  <node id="7725" npcName="Ansel's Meats" anim="1" text="Fresh meats for sale, traveler! What can I get for you?" posx="0" posy="210">
+    <option optionid="1" optiontext="Yes, I’d like to buy some!" next="0" actions="OpenShop=13">
+    </option>
+    <option optionid="3" optiontext="Your shop looks a little empty. Need any help stocking up?" next="7727" checks="Var=HaywindFriendAchFoodVendor-0-0" icon="Task">
+    </option>
+    <option optionid="4" optiontext="Remind me, what did you need again?" next="7729" checks="Var=HaywindFriendAchFoodVendor-1-1,!HasItem=213-3" icon="Task">
+    </option>
+    <option optionid="5" optiontext="I’ve brought the chickens you asked for." next="7728" checks="Var=HaywindFriendAchFoodVendor-1,HasItem=213-3" icon="task">
+    </option>
+    <option optionid="6" optiontext="No, thanks. Just looking around." next="0">
+    </option>
+  </node>
+  <node id="7727" npcName="Ansel's Meats" anim="1" text="Actually, yes! I could use five raw chickens to restock. You can find some to the southeast of the market. I’m sure no one will notice if a few go missing, hehe." itemIcon="213" posx="958" posy="313">
+    <option optionid="1" optiontext="I’ll bring them to you." next="0" actions="SetVar=HaywindFriendAchFoodVendor-1" icon="Task">
+    </option>
+    <option optionid="2" optiontext="Maybe later!" next="0">
+    </option>
+  </node>
+  <node id="7728" npcName="Ansel's Meats" anim="1" text="Thank you for the chickens, traveler! You’ve really helped me out." posx="507" posy="833">
+    <option optionid="1" optiontext="You’re welcome!" next="0" actions="SetVar=HaywindFriendAchFoodVendor-2,RemoveItems=213-3" icon="Task">
+    </option>
+  </node>
+  <node id="7729" npcName="Ansel's Meats" anim="1" text="I still need five raw chickens from the southeast of here, outside the market. Don’t worry, no one will miss a few!" posx="947" posy="660">
+    <option optionid="1" optiontext="Got it!" next="0">
+    </option>
+  </node>
+
+
+
+
+	<node id="8000" npcName="Bjorn the Lumberjack" anim="537" text="&lt;color=#9C8C77&gt;*The lumberjack regards you, panting heavily and seeming exhausted.*&lt;/color&gt;\n\nHello there, outlander... Welcome to our village... Enjoy the festival... and so and such..." posx="9" posy="7">
+		<option optionid="1" optiontext="Is everything alright?" next="8001" icon="Task"></option>
+		<option optionid="2" optiontext="Thanks..." next="0"></option>
+	</node>
+	<node id="8001" npcName="Bjorn the Lumberjack" anim="537" text="Just came out of the woods... brought this load of firewood to help keep the village hearths burning... got ambushed by goblins on the way though, had to run for my life, but also... wouldn't leave the wood behind..." posx="417" posy="8">
+		<option optionid="1" optiontext="" next="8002"></option>
+	</node>
+	<node id="8002" npcName="Bjorn the Lumberjack" anim="537" text="Wood still needs to be distributed within the village but... must say... I'm spent... could use some help if I'm honest..." posx="829" posy="4">
+		<option optionid="1" optiontext="No trouble, I can deliver the wood for you." next="8003" icon="Task"></option>
+		<option optionid="2" optiontext="Sorry, I'm busy right now." next="0"></option>
+	</node>
+	<node id="8003" npcName="Bjorn the Lumberjack" anim="1" text="You're a lifesaver...! The people expecting deliveries are just down the main street... The village hall, the tailor, the blacksmith... Talk to the maids... here, I'll help you unload some of the wood..." posx="1235" posy="4">
+		<option optionid="1" optiontext="Very well." next="0" actions="SetVar=EHAchFirewood-1,AddItems=9166-3-true" icon="Task"></option>
+	</node>
+
+
+	<node id="8010" npcName="Bjorn the Lumberjack" anim="537" text="Hello again... Villagers really waiting for their firewood, but... I'm still spent from my ordeal in the forest... Could really use some help delivering the wood to the folks..." posx="7" posy="10">
+		<option optionid="1" optiontext="Right, you asked me to help deliver firewood?" next="8011"></option>
+		<option optionid="2" optiontext="Struggling to remember where I had to make the deliveries." next="8012"></option>
+		<option optionid="3" optiontext="Seem to have lost some firewood on the way..." next="8013" itemIcon="9166" checks="!HasItem=9166-1"></option>
+		<option optionid="4" optiontext="Never mind, thanks." next="0"></option>
+	</node>
+	<node id="8011" npcName="Bjorn the Lumberjack" anim="537" text="Aye... would do it myself but... am a bit exhausted, after those nasty goblins ambushed me in the woods... had to run for my life, while hauling all this wood..." posx="422" posy="10">
+		<option optionid="1" optiontext="Struggling to remember where I had to make the deliveries." next="8012"></option>
+		<option optionid="2" optiontext="Seem to have lost some firewood on the way..." next="8013" itemIcon="9166" checks="!HasItem=9166-1"></option>
+		<option optionid="3" optiontext="No problem, I'll see it done." next="0"></option>
+	</node>
+	<node id="8012" npcName="Bjorn the Lumberjack" anim="537" text="The people expecting deliveries are just down the main street... The village hall, the tailor, the blacksmith... Talk to the maids... Shouldn't be hard to find, if I'm honest... It's a small village..." posx="831" posy="11">
+		<option optionid="1" optiontext="Right, you asked me to help deliver firewood?" next="8011"></option>
+		<option optionid="2" optiontext="Seem to have lost some firewood on the way..." next="8013" itemIcon="9166" checks="!HasItem=9166-1"></option>
+		<option optionid="3" optiontext="No problem, I'll see it done." next="0"></option>
+	</node>
+	<node id="8013" npcName="Bjorn the Lumberjack" anim="1" text="No problem... happens... there's plenty more where that came from..." posx="611" posy="606">
+		<option optionid="1" optiontext="" next="0" itemIcon="9166" actions="AddItems=9166-3-true"></option>
+	</node>
+
+	
+	<node id="8025" npcName="Annie the Maid" anim="1" text="Welcome to the village hall, friend! I'm afraid I'm quite busy, for I'm expecting a firewood delivery from a lumberjack." posx="85" posy="-57">
+		<option optionid="1" optiontext="That's why I'm here, actually - I have your firewood." next="8026" checks="HasItem=9166-1,Var=EHAchFirewoodHouse1-0-0" icon="Task">
+		</option>
+		<option optionid="2" optiontext="Leave." next="0">
+		</option>
+	</node>
+	<node id="8026" npcName="Annie the Maid" anim="1" text="Oh, what a welcome surprise then. Perfect, thank you so much!" posx="637" posy="-28">
+		<option optionid="1" optiontext="You're welcome!" next="0" actions="SetVar=EHAchFirewoodHouse1-1,RemoveItems=9166-1,NpcChat=Perfect> thank you so much!" icon="Task">
+		</option>
+	</node>
+	
+	
+	<node id="8050" npcName="Helen the Maid" anim="1" text="Hello, sir, this is the tailor's house." posx="11" posy="5">
+		<option optionid="1" optiontext="I have a delivery of firewood." next="8051" checks="HasItem=9166-1,Var=EHAchFirewoodHouse2-0-0" icon="Task"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="8051" npcName="Helen the Maid" anim="1" text="Oh, how thoughtful of you! You've clearly caught the festival spirit, thank you so much! Remember, festival tokens come to those who do good deeds!" posx="421" posy="6">
+		<option optionid="1" optiontext="Excellent!" next="0" actions="SetVar=EHAchFirewoodHouse2-1,RemoveItems=9166-1,NpcChat=You've clearly caught the festival spirit!" icon="Task"></option>
+	</node>
+
+
+	<node id="8075" npcName="Susan the Maid" anim="1" text="Oh, hello? This is the blacksmith's workshop, but master blacksmith is outside just now, if you wish to do business with him." posx="0" posy="9">
+		<option optionid="1" optiontext="Actually, I'm here for you - delivering firewood." next="8076" checks="HasItem=9166-1,Var=EHAchFirewoodHouse3-0-0" icon="Task"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="8076" npcName="Susan the Maid" anim="1" text="But... you're not the lumberjack Bjorn... with his strong, muscular arms and... ahem... I was waiting for Bjorn. He was supposed to deliver the wood." posx="409" posy="11">
+		<option optionid="1" optiontext="What can I say, he's indisposed." next="8077"></option>
+	</node>
+	<node id="8077" npcName="Susan the Maid" anim="1" text="Ugh, but... you don't understand, I had everything prepared for him and... it's just that it was meant to be him! Now you've ruined the festival for me, everything's ruined! Fine, just give me the firewood and go!" posx="819" posy="12">
+		<option optionid="1" optiontext="Okay, err, glad I could help." next="0" actions="SetVar=EHAchFirewoodHouse3-1,RemoveItems=9166-1,NpcChat=Please> just go!" icon="Task"></option>
+	</node>
+
+
+
+	<node id="8251" npcName="Adamus the Sculptor" anim="1" text="Ah, greetings. I am a master sculptor - truly one of the finest in my field. They’ve asked me to display my art here at the winter festival, though I doubt most people can even appreciate true artistry. Still, would you like to try your hand at ice sculpting? It’s not for the faint of heart." posx="0" posy="6">
+		<option optionid="1" optiontext="Sure, I'm good with my hands." next="8252" checks="HasSkillLevel=Carpentry-20" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="No thanks, I'll just admire from afar." next="0"></option>
+	</node>
+	<node id="8252" npcName="Adamus the Sculptor" anim="1" text="Ah, a bold statement. But tell me, did you at least have the foresight to bring a miner’s chisel and hammer? Without them, you’re as helpless as a bird without wings." posx="417" posy="3">
+		<option optionid="1" optiontext="Of course, what do you take me for?" next="8253" checks="HasItem=931-1" itemIcon="931" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Uh... a miner's chisel?" next="8254" checks="!HasItem=931-1"></option>
+		<option optionid="3" optiontext="Somehow I'm no longer interested." next="0"></option>
+	</node>
+	<node id="8253" npcName="Adamus the Sculptor" anim="1" text="Well good, I had to ask. Lined up next to me you will find plain ice blocks. Try starting with the smallest one, no need to embarrass yourself attempting anything ambitious. Sculpting is an art only few can master, after all." posx="825" posy="4">
+		<option optionid="1" optiontext="Right." next="0" actions="SetVar=EHAchIce-1" icon="Task"></option>
+	</node>
+	<node id="8254" npcName="Adamus the Sculptor" anim="1" text="What? You don’t have a miner’s chisel? Surely a craftsman has been trained in mining and received one from their trainer? Or did you foolishly neglect that essential part of your education?" posx="1232" posy="4">
+		<option optionid="1" optiontext="Oh shush, I must have one somewhere..." next="0"></option>
+	</node>
+
+
+	<node id="8275" npcName="Adamus the Sculptor" anim="1" text="How is your sculpting coming along? Not that I expect much - it takes a lifetime to achieve true brilliance, after all." posx="11" posy="10">
+		<option optionid="1" optiontext="Could you remind me how to get started?" next="8276"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="8276" npcName="Adamus the Sculptor" anim="1" text="Well, the ice blocks are lined up right next to me - astonishing that you should have forgotten already. Equip a hammer and use the miner’s chisel you should have acquired from a mining trainer. Do try not to ruin the ice, I so hate having to look for new blocks of ice." posx="422" posy="12">
+		<option optionid="1" optiontext="Right." next="0"></option>
+	</node>
+
+
+	<node id="8300" npcName="Little Timothy" anim="1" text="Hey there, mister! Say, are you any good at making snowballs? My friends and I, we erm... want to play with snowballs. We sure love snow!" posx="8" posy="6">
+		<option optionid="1" optiontext="How sweet, suppose I can try to help." next="8301" icon="Task"></option>
+		<option optionid="2" optiontext="Sorry, kids, I'm busy." next="0"></option>
+	</node>
+	<node id="8301" npcName="Little Timothy" anim="1" text="Thanks! Oh, wait... are you any good at magic by chance? See, the snowballs we make are quite soft and keep falling apart. But if you were to cast some kind of an ice spell on it, maybe it'd become super solid!" posx="416" posy="6">
+		<option optionid="1" optiontext="After all, why not? Hand it over then." next="8302" checks="HasSkillLevel=Magic-20"></option>
+		<option optionid="2" optiontext="Sorry, kid, magic's not my strong suit." next="0"></option>
+	</node>
+	<node id="8302" npcName="Little Timothy" anim="1" text="Alright, here you go, sir! It's just a regular, soft snowball now, but with magic I bet you can make it very strong!" itemIcon="9167" posx="825" posy="8">
+		<option optionid="1" optiontext="Let's see then..." next="0" actions="AddItems=9167-1-true,SetVar=EHAchBalls-1" icon="Task"></option>
+	</node>
+
+
+	<node id="8400" npcName="Little Timothy" anim="1" text="Hey there, mister! How's it going, did you manage to make an exceptionally durable snowball for us?" posx="5" posy="3">
+		<option optionid="1" optiontext="Oh yes, here you go, children - knock yourselves out! Er, not literally though..." itemIcon="9168" next="8402" checks="HasItem=9168-1" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="I need another snowball, I lost the first one." next="8401" checks="!HasItem=9167-1"></option>
+		<option optionid="3" optiontext="Hold on, children..." next="0"></option>
+	</node>
+	<node id="8401" npcName="Little Timothy" anim="1" text="Oh, no problem, mister! Here’s another one - try not to lose it again!" posx="413" posy="4">
+		<option optionid="1" optiontext="Sure." next="0" itemIcon="9167" actions="AddItems=9167-1-true"></option>
+	</node>
+	<node id="8402" npcName="Little Timothy" anim="1" text="Oohooo! That's very kind of you, mister - thank you! I can tell you, with a snowball this hard, we are going to have so much fun...!" posx="820" posy="3">
+		<option optionid="1" optiontext="How very wholesome!" next="0" actions="RemoveItems=9168-1,Cinematic=291" icon="Task"></option>
+	</node>
+
+
+
+	<node id="8500" npcName="Jane the Village Woman" anim="1" text="Oh, hello there! You have a nice, friendly face. I can always tell who the friendly types are, and you are definitely friendly! Isn't that so?" posx="0" posy="50">
+		<option optionid="1" optiontext="Is there something you want?" next="8501" icon="Task"></option>
+		<option optionid="2" optiontext="Definitely not." next="0"></option>
+	</node>
+	<node id="8501" npcName="Jane the Village Woman" anim="1" text="Why, yes, actually! How nice of you to ask! You see, it's a festive season here in Evergreen Hearth and I want to take the opportunity to tell my husband just how much I love him! So I've gift wrapped a package for him, oh isn't that just so sweet?" posx="412" posy="51">
+		<option optionid="1" optiontext="" next="8502"></option>
+	</node>
+	<node id="8502" npcName="Jane the Village Woman" anim="1" text="But my husband is working at the lumberyard out in the wilderness, even with the festivities going on, can you imagine?! Oh he's so busy all the time, always working... Anyway, would you be so kind as to deliver my package for him, please?" posx="821" posy="54">
+		<option optionid="1" optiontext="Sure, why not." next="8503" icon="Task"></option>
+		<option optionid="2" optiontext="Sorry, I can’t right now." next="0"></option>
+	</node>
+	<node id="8503" npcName="Jane the Village Woman" anim="1" text="Thank you so much! I knew you had such a kind face about you! The lumberyard is a bit of a walk from here, in the woods east just outside the village. He’s usually there, chopping wood with his friends." posx="1232" posy="57">
+		<option optionid="1" optiontext="Very well." next="0" actions="AddItems=9169-1-true,SetVar=EHAchLumberjackDelivery-1" icon="Task"></option>
+	</node>
+
+	
+	<node id="8550" npcName="Jane the Village Woman" anim="1" text="Hello again! I remember your kind face, I asked you to deliver my lovely, gift wrapped package to my hard working husband, did I not?" posx="7" posy="6">
+		<option optionid="1" optiontext="Hmm, are you sure you gave me the package?" next="8552" checks="!HasItem=9169-1"></option>
+		<option optionid="2" optiontext="Remind me, where do I need to go?" next="8551"></option>
+		<option optionid="3" optiontext="I’m still working on it." next="0"></option>
+	</node>
+	<node id="8551" npcName="Jane the Village Woman" anim="1" text="The lumberyard is a bit of a walk from here, in the woods east just outside the village. He’s usually there, chopping wood with his friends, the busy man that he is." posx="417" posy="7">
+		<option optionid="1" optiontext="Hmm, are you sure you gave me the package?" next="8552" checks="!HasItem=9169-1"></option>
+		<option optionid="2" optiontext="Got it, thanks!" next="0"></option>
+	</node>
+	<node id="8552" npcName="Jane the Village Woman" anim="1" text="Oh dear, I have it right here! I don't understand how this could've happened, I could almost swear I handed it to you! Oh well, these things happen, haha! Please, take it to my husband." posx="824" posy="7">
+		<option optionid="1" optiontext="Remind me, where do I need to go?" next="8551"></option>
+		<option optionid="2" optiontext="Thank you, I’ll deliver it!" next="0" actions="AddItems=9169-1"></option>
+	</node>
+
+
+	<node id="8600" npcName="Earl the Lumberjack" anim="1" text="Yes, hello? I don't think I recognize you from the village. Wait... you were sent by my wife, weren't you?" posx="7" posy="8">
+		<option optionid="1" optiontext="I was, actually - she asked me to deliver this gift to you!" next="8601" itemIcon="9169" checks="HasItem=9169-1" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="8601" npcName="Earl the Lumberjack" anim="1" text="Oh, lovely... real lovely... isn't that just lovely?! Yet another package! Oooh, I wonder, what is it this time? What lovely gift has she thought up for his lovely husband, eh?!" posx="418" posy="4">
+		<option optionid="1" optiontext="Are you... okay?" next="8602"></option>
+	</node>
+	<node id="8602" npcName="Earl the Lumberjack" anim="904" text="You think she what, sent a gift for me? Is that how she roped you into this? That manipulative witch, the only gifts she gives are to herself!" posx="2" posy="376">
+		<option optionid="1" optiontext="Er... if you'd just take the package..." next="8605"></option>
+		<option optionid="2" optiontext="It's really not my place..." next="8605"></option>
+	</node>
+	<node id="8603" npcName="Earl the Lumberjack" anim="1145" text="" posx="520" posy="633">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="8604" npcName="Earl the Lumberjack" anim="55" text="" posx="928" posy="634">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="8605" npcName="Earl the Lumberjack" anim="1145" text="And what, you think I spend all my hours out here away from the village because I like it?! This way, I don't have to be anywhere near her! " posx="1000" posy="3">
+		<option optionid="1" optiontext="Look now..." next="8606"></option>
+		<option optionid="2" optiontext="Please..." next="8606"></option>
+	</node>
+	<node id="8606" npcName="Earl the Lumberjack" anim="1" text="Out here a man can freeze where he stands, and is constantly ambushed by wolves and goblins! Yet I spend even the nights out here, staring at the stars... relishing at the peace and quiet, only the sound of trees to comfort me..." posx="1407" posy="4">
+		<option optionid="1" optiontext="Can we wrap this up? No pun intended..." next="8607"></option>
+		<option optionid="2" optiontext="Could try talking to your wife...?" next="8607"></option>
+	</node>
+	<node id="8607" npcName="Earl the Lumberjack" anim="89" text="It’s freedom, that's what it is! Freedom from her constant schemes and manipulation. Freedom, such as I only may be afforded..." posx="1369" posy="382">
+		<option optionid="1" optiontext="I'm beginning to wish I was free..." next="8608"></option>
+	</node>
+	<node id="8608" npcName="Earl the Lumberjack" anim="1145" text="I'll say, she may keep her packages and games! I'm done with them - I won't have it! " posx="1784" posy="383">
+		<option optionid="1" optiontext="Please, I can't take it back to her either..." next="8609"></option>
+	</node>
+	<node id="8609" npcName="Earl the Lumberjack" anim="904" text="Keep it then, but I'm not having it! I don’t care what’s in it, I don't want it. I'm drawing a line in the sand, or snow, or something! Good day!" posx="1980" posy="8">
+		<option optionid="1" optiontext="Right..." next="0" icon="Task" actions="SetVar=EHAchLumberjackDelivery-2,RemoveItems=9169-1,AddItems=9170-1"></option>
+	</node>
+
+
+
+
+	<node id="8700" npcName="Anya the Fortune Teller" anim="1" text="Ah, yes... I sense a curious soul approaches. Do you seek a glimpse into your future, prudent one?" posx="9" posy="4">
+		<option optionid="1" optiontext="Yes, why not? I’d like to hear a prophecy." next="8701" icon="Task"></option>
+		<option optionid="2" optiontext="No thanks, I’m not into that." next="0"></option>
+	</node>
+	<node id="8701" npcName="Anya the Fortune Teller" anim="1" text="Very well, I will need but a moment to summon my powers... Let us see what the threads of fate reveal..." posx="417" posy="6">
+		<option optionid="1" optiontext="" next="8702"></option>
+	</node>
+	<node id="8702" npcName="Anya the Fortune Teller" anim="1" text="Oh, my... oh, oh no! But alas, the signs are clear, there is no question about it - you are in grave danger!" posx="826" posy="6">
+		<option optionid="1" optiontext="Terrible!" next="8703"></option>
+	</node>
+	<node id="8703" npcName="Anya the Fortune Teller" anim="1" text="Yeeess... A shadow follows you, a curse cast from the dark. If it is not stopped, it will bring ruin!" posx="1230" posy="6">
+		<option optionid="1" optiontext="Do you know of a way to stop it?" next="8704"></option>
+	</node>
+	<node id="8704" npcName="Anya the Fortune Teller" anim="1" text="Yeeeess, yeeess, there is a way... You must hunt for three mighty talismans, each held by a dangerous and a powerful foe." posx="1642" posy="4">
+		<option optionid="1" optiontext="" next="8705"></option>
+	</node>
+	<node id="8705" npcName="Anya the Fortune Teller" anim="1" text="Out in the wilderness, there are three goblin camps. Each camp holds a leader, and each leader holds a talisman of shamanic powers. You must retrieve all three, for only their power united may guard your spirit!" posx="2052" posy="4">
+		<option optionid="1" optiontext="Ah well, if I must." next="8706" icon="Task"></option>
+		<option optionid="2" optiontext="Hogwash..." next="0"></option>
+	</node>
+	<node id="8706" npcName="Anya the Fortune Teller" anim="1" text="Indeed, there is no other way, if you wish to save yourself. Once you have all three, return to me. I will perform a ritual to protect you from the shadow." posx="2459" posy="5">
+		<option optionid="1" optiontext="Understood." next="0" actions="SetVar=EHAchFortune-1" icon="Task"></option>
+	</node>
+
+
+	<node id="8750" npcName="Anya the Fortune Teller" anim="1" text="Ah yes, you return... I asked you to delve into the crypts, and... no, wait... yes, I see now - you are the one, who must hunt for three talismans of shamanic powers, for it is the only way to protect yourself against the shadow." posx="10" posy="9">
+		<option optionid="1" optiontext="I bring you the talismans." next="8752" checks="HasItem=9172-1|9173-1|9174-1" icon="Task"></option>
+		<option optionid="2" optiontext="Remind me, where do I look for these protective talismans?" next="8751"></option>
+		<option optionid="3" optiontext="Yes, I shall look into it." next="0"></option>
+	</node>
+	<node id="8751" npcName="Anya the Fortune Teller" anim="1" text="Out in the wilderness, there are three goblin camps. Each camp holds a leader, and each leader holds a talisman of shamanic powers. You must retrieve all three, for only their power united may guard your spirit!" posx="487" posy="376">
+		<option optionid="1" optiontext="Actually, I already have the talismans." next="8752" checks="HasItem=9172-1|9173-1|9174-1" icon="Task"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+	<node id="8752" npcName="Anya the Fortune Teller" anim="1" text="Very good... very good! Hand them over, for these talismans will allow me to perform a protective ritual only I can do. Your spirit is at stake!" posx="421" posy="8">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*You hand over the goblin talismans.*&lt;/color&gt;" next="8753"></option>
+	</node>
+	<node id="8753" npcName="Anya the Fortune Teller" anim="1" text="&lt;color=#9C8C77&gt;*The seer moves her hands in strange patterns over the talismans, while chanting words that in all fairness sound like complete gibberish. She finishes raising her hand to a dramatic effect, though nothing else of noteworthy seems to happen.*&lt;/color&gt;" posx="826" posy="9">
+		<option optionid="1" optiontext="" next="8754"></option>
+	</node>
+	<node id="8754" npcName="Anya the Fortune Teller" anim="1" text="It took much out of me, but the ritual is complete... You are now protected against the shadow that looms over you. Remain cautious, but fear no more." posx="1234" posy="9">
+		<option optionid="1" optiontext="Ah, thank you, oh wise one." next="0" actions="RemoveItems=9172-1|9173-1|9174-1,SetVar=EHAchFortune-2" icon="Task"></option>
+	</node>
+
+
+
+	<node id="8800" npcName="Hans the Steward" anim="1" text="Ah, another traveler! We have many during our traditional Hearthlight Festival, despite our remote location. Welcome to our humble village hall! How may I help you?" posx="8" posy="5">
+		<option optionid="1" optiontext="Perhaps it's the other way around, how may I help you?" next="8801" icon="Task"></option>
+		<option optionid="2" optiontext="Just passing through." next="0"></option>
+	</node>
+	<node id="8801" npcName="Hans the Steward" anim="1" text="Oh, all help is certainly appreciated during this busy season! We like to reward such deeds with festival tokens, which may be traded for village goods. Hmm, let's see..." posx="415" posy="5">
+		<option optionid="1" optiontext="" next="8802"></option>
+	</node>
+	<node id="8802" npcName="Hans the Steward" anim="1" text="I've sent men out into the woods to gather supplies for festival preparations, but they have been gone for a while and I worry. The woods aren't as safe as they used to be. If you're heading out there, would you look for them?" posx="819" posy="6">
+		<option optionid="1" optiontext="Where do I find them?" next="8803" icon="Task"></option>
+		<option optionid="2" optiontext="That's a little beyond my scope, I'm afraid." next="0"></option>
+	</node>
+	<node id="8803" npcName="Hans the Steward" anim="1" text="The men I'm expecting to hear from are a lumberjack far in the forest to the north, a fisherman at the frozen lake, and the miners working at the Coldstone quarry beyond the lake to the east." posx="1229" posy="3">
+		<option optionid="1" optiontext="Very well, I'll look for them." next="8804" icon="Task"></option>
+		<option optionid="2" optiontext="That sounds a little too much for me, sorry." next="0"></option>
+	</node>
+	<node id="8804" npcName="Hans the Steward" anim="1" text="Excellent! I trust they're fine, they're all hardened men after all, but please return the supplies they've gathered here to me. I'm sure it'll ease their burden and nudge our festival preparations along." posx="1636" posy="4">
+		<option optionid="1" optiontext="As you say." next="0" actions="SetVar=EHAchGatherers-1" icon="Task"></option>
+	</node>
+
+
+	<node id="8850" npcName="Hans the Steward" anim="1" text="Ah, outlander! How goes your search for my men in the woods?" posx="13" posy="8">
+		<option optionid="1" optiontext="I return from the woods, with the supplies you requested." next="8852" checks="HasItem=9175-1|9176-1|9177-1" icon="Task"></option>
+		<option optionid="2" optiontext="Remind me, where should I be looking for your men?" next="8851"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="8851" npcName="Hans the Steward" anim="1" text="The men I'm expecting to hear from are a lumberjack far in the forest to the north, a fisherman at the frozen lake, and the miners working at the Coldstone quarry beyond the lake to the east." posx="484" posy="375">
+		<option optionid="1" optiontext="Very well." next="0"></option>
+	</node>
+	<node id="8852" npcName="Hans the Steward" anim="1" text="Simply wonderful! I had been waiting for these supplies for some time. Thank you for your hard work, outlander! Carry on, and our village will greatly reward you with our festival tokens!" posx="482" posy="9">
+		<option optionid="1" optiontext="Happy to help!" next="0" actions="RemoveItems=9175-1|9176-1|9177-1,SetVar=EHAchGatherers-2,AddItems=9116-5-true" icon="Task"></option>
+	</node>
+
+
+	<node id="9000" npcName="Village Lumberjack" anim="1" text="Hello there, adventurer! What brings you to these far reaches of the woods?" posx="5" posy="5">
+		<option optionid="1" optiontext="The steward back at the village sent me to check up on your progress." next="9001" icon="Task" checks="!HasItem=9175-1"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="9001" npcName="Village Lumberjack" anim="1" itemIcon="9175" text="Ah, an impatient man, as ever! Well, if it's wood he's waiting on, we've got some to send back to him. Here you go!" posx="411" posy="6">
+		<option optionid="1" optiontext="Very good!" next="0" icon="Task" actions="AddItems=9175-1-true"></option>
+	</node>
+
+
+	<node id="9020" npcName="Village Fisherman" anim="1" text="O'ho, adventurer! What brings you out to this frozen lake?" posx="12" posy="9">
+		<option optionid="1" optiontext="The steward back at the village sent me to check up on your progress." next="9021" icon="Task" checks="!HasItem=9176-1"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="9021" npcName="Village Fisherman" anim="1" itemIcon="9176" text="Ah, did he now? Perfect timing, as it happens! Was waiting for the fish to bite all day, and just before you arrive, I caught a few! Here, the steward will be pleased." posx="423" posy="9">
+		<option optionid="1" optiontext="Very good!" next="0" icon="Task" actions="AddItems=9176-1-true"></option>
+	</node>
+
+
+	<node id="9040" npcName="Village Miner" anim="1" text="Is someone there?! Ancestors, it's dark out here! Weren't expecting anyone come to the quarry." posx="10" posy="7">
+		<option optionid="1" optiontext="The steward back at the village sent me to check up on your progress." next="9041" icon="Task" checks="!HasItem=9177-1"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="9041" npcName="Village Miner" anim="1" itemIcon="9177" text="Yes, right, I see. Well we're not fully loaded yet, but we can give you what we've got to deliver back to the steward." posx="415" posy="9">
+		<option optionid="1" optiontext="Very good!" next="0" icon="Task" actions="AddItems=9177-1-true"></option>
+	</node>
+
+
+	<node id="10100" npcName="Henrik Fjord" anim="1" text="And now a traveler arrives to witness this?! Oh the travesty, the disgrace! I'll be the laughing stock among all the mayors of the realm, I can already hear them snicker...!" posx="3" posy="5">
+		<option optionid="1" optiontext="What exactly is the problem you're having?" next="10101" icon="Task"></option>
+		<option optionid="2" optiontext="Indeed." next="0"></option>
+	</node>
+	<node id="10101" npcName="Henrik Fjord" anim="1" text="Why, isn't it obvious? This fool lying on the ground is the epitome of what's wrong with my village! The people of Grainwater are too eager of revelers, and this is what it leads to - public displays of utmost decadence!" posx="415" posy="6">
+		<option optionid="1" optiontext="Well, can't anything be done about it?" next="10102" icon="Task"></option>
+	</node>
+	<node id="10102" npcName="Henrik Fjord" anim="1" text="Alas, my own villagers defy me, they laugh at my plight and carry on with their indulgent ways! But perhaps an outsider like you could be what I need to clean my streets?" posx="825" posy="5">
+		<option optionid="1" optiontext="What would you have me do?" next="10103" icon="Task"></option>
+		<option optionid="2" optiontext="Sorry, but I'll want to part in this." next="0"></option>
+	</node>
+	<node id="10103" npcName="Henrik Fjord" anim="1" text="I've been trying to shout at these drunkards to vacate the streets but to no avail. More drastic measures are needed... Perhaps you could acquire cold, fresh water from the well and pour it on these fools?" posx="1233" posy="5">
+		<option optionid="1" optiontext="" next="10104"></option>
+	</node>
+	<node id="10104" npcName="Henrik Fjord" anim="1" text="That if anything ought to clear their heads and help bring them back to their senses. I think I've seen three wastrels lying about somewhere, please see to all of them." posx="1644" posy="6">
+		<option optionid="1" optiontext="Very well." next="0" actions="SetVar=Drunks_of_Grainwater-1,NpcChat=Cold> fresh water from the well ought to clear their heads." icon="Task"></option>
+	</node>
+
+
+	<node id="10110" npcName="Henrik Fjord" anim="1" text="Please, good sir, aid me in my plight! Help me clean these indulgent wastrels off my streets. They are an embarrassment to both my village and myself!" posx="10" posy="8">
+		<option optionid="1" optiontext="Remind me, what did you ask of me?" next="10111" icon="Task"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="10111" npcName="Henrik Fjord" anim="1" text="I've been trying to shout at these drunkards to vacate the streets but to no avail. More drastic measures are needed... Perhaps you could acquire cold, fresh water from the well and pour it on these fools?" posx="423" posy="9">
+		<option optionid="1" optiontext="" next="10112"></option>
+	</node>
+	<node id="10112" npcName="Henrik Fjord" anim="1" text="That if anything ought to clear their heads and help bring them back to their senses. I think I've seen three wastrels lying about somewhere, please see to all of them." posx="833" posy="10">
+		<option optionid="1" optiontext="Very well." next="0"></option>
+	</node>
+
+
+	<node id="10120" npcName="Henrik Fjord" anim="1" text="A valiant effort, my man! The village drunks are persistent in their ways, but at least you've given them an awakening!" posx="9" posy="7">
+		<option optionid="1" optiontext="" next="10121"></option>
+	</node>
+	<node id="10121" npcName="Henrik Fjord" anim="1" itemIcon="1011" text="As we're a humble folk, I have no coin to offer you... But here, please accept our local delicacies for your efforts!\n\n&lt;color=#9C8C77&gt;*Gain 3 beer and 3 grainwater flatbread!*&lt;/color&gt;" posx="417" posy="6">
+		<option optionid="1" optiontext="Thanks!" next="0" icon="Task" actions="AddItems=1011-3-true|296-3-true,SetVar=Drunks_of_Grainwater-3,NpcChat=If you have any questions about our village> I'm happy to oblige."></option>
+	</node>
+
+
+	<node id="10130" npcName="Henrik Fjord" anim="1" text="You have my gratitude for your valiant effort to clean up our community. The village drunks remain persistent in their ways, but at least you gave them an awakening!" posx="0" posy="8">
+		<option optionid="1" optiontext="What can you tell me about your village?" next="10131"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="10131" npcName="Henrik Fjord" anim="1" text="Here in Grainwater we care not for the worries of the realm. We enjoy peaceful lives, full of merrymaking and festivities, and we're far better at it than those pretentious fools at Little Grainwater across the water! Say, have you visited our tavern?" posx="413" posy="8">
+		<option optionid="1" optiontext="" next="10132"></option>
+	</node>
+	<node id="10132" npcName="Henrik Fjord" anim="1" text="You won't experience better anywhere! Amelia offers the finest beer and her kitchen's unmatched also! But most remarkably, she's found a very real flute gnome to perform day and night - a flute gnome, can you imagine?!" posx="820" posy="8">
+		<option optionid="1" optiontext="What was that about Little Grainwater?" next="10133"></option>
+		<option optionid="2" optiontext="What's a flute gnome?" next="10135"></option>
+		<option optionid="3" optiontext="As you say." next="0"></option>
+	</node>
+	<node id="10133" npcName="Henrik Fjord" anim="1" text="Oh, nothing! Our sister village, Little Grainwater, lies just across the river. Their foolish Mayor is always trying to match what we do here, it's quite sad really." posx="1234" posy="9">
+		<option optionid="1" optiontext="" next="10134"></option>
+	</node>
+	<node id="10134" npcName="Henrik Fjord" anim="1" text="I heard he'd recently set up some kind of a festival, hah! Nothing worth seeing, I'm sure - I can't imagine they have anything set up that we didn't already have this side of the river." posx="1642" posy="10">
+		<option optionid="1" optiontext="What's a flute gnome?" next="10135"></option>
+		<option optionid="2" optiontext="Interesting..." next="0"></option>
+	</node>
+	<node id="10135" npcName="Henrik Fjord" anim="1" text="I don't even know! Who found him, and where?! It remains an unsolved mystery, but what we do know is that he's called Tom and he plays ceaselessly at our tavern. Well, my people have no objections!" posx="1384" posy="605">
+		<option optionid="1" optiontext="What was that about Little Grainwater?" next="10133"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+
+
+</dialogue>

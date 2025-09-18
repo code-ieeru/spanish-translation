@@ -1,0 +1,17 @@
+<locations>
+	<location id="1" name="Portal of Spells (Mistywood)"	pos="1193.53,49.83898,715.84" ></location>
+	<location id="2" name="Portal of the Wolf (Mistywood)"	pos="1018.23,52.45692,734.91" ></location>
+	<location id="3" name="The River Portal (Aure Banks)"	pos="540.9645,28.13087,771.4391" ></location>
+	<location id="4" name="Fenwater Portal (Silvermirror Fen)"	pos="1042.36,28.37441,1059.13" ></location>
+	<location id="5" name="The Hallowed Portal (Hallowed Cave)"	pos="1332.62,35.07169,980.99" ></location>
+	<location id="6" name="Portal of Stones (Silderstone Ravine)"	pos="1018.63,24.11793,1477.25" ></location>
+	<location id="7" name="Portal of Pincers (Flooded Cave)"	pos="867.58,27.88794,1337.67" ></location>
+	<location id="8" name="Portal of Shadows (Dungeons of Greywall)"	pos="1914.99,46.05468,1520.14" ></location>
+	<location id="9" name="Mountains: Highland Portal (Village)"	pos="2289.47,57.56882,762.79" ></location>
+	<location id="10" name="Mountains: Portal of Verdant Rocks (Forest East)"	pos="2422.21,48.55116,802.84" ></location>
+	<location id="11" name="Mountains: Permafrost Portal (Ice Cave)"	pos="2695.2,63.2658,1035.45" ></location>
+	<location id="12" name="Mountains: Portal of Wild Stones (North)"	pos="2338.77,40.6831,972.76" ></location>
+	<location id="13" name="Mountains: Frostmelt Portal (Lake)"	pos="2263.08,32.43301,936.17" ></location>
+	<location id="14" name="Mountains: Tyrant's Rock Portal (River)"	pos="2086.77,40.95098,730.04" ></location>
+	<location id="15" name="Portal of Snow (Winterpine Forest)"	pos="2286.71,30.45117,1531.64" ></location>
+</locations>

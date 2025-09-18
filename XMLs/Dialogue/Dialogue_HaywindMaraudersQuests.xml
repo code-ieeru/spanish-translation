@@ -1,0 +1,1606 @@
+<dialogue>
+	<node id="1" npcName="Deputy Rieler" anim="1" text="You're welcome to our camp, traveler. I'd advice you to be wary while journeying outside the protection of our palisades however. The bandit menace we face is particularly active here in the fields west of Haywind." posx="0" posy="11">
+		<option optionid="1" optiontext="What's you role here?" next="5" checks="Quest=85-0-0" icon="Quest"></option>
+		<option optionid="2" optiontext="I'm gathering allies for an assault on the bandit fortress." next="7" checks="Quest=111-1-1" icon="Quest"></option>
+		<option optionid="3" optiontext="I could be of help in hunting down your bandit targets." next="8" checks="Quest=85-1-2"></option>
+		<option optionid="4" optiontext="How are things at the camp?" next="3"></option>
+		<option optionid="5" optiontext="Good luck." next="0"></option>
+	</node>
+	<node id="2" npcName="Deputy Rieler" anim="1" text="An infamous marauder from the mountains, according to our reports. Why he made his way down here to Haywind is anyone's guess. But he's just one among a troubling trend - most of the pillagers we face have come from elsewhere, united in their siege of these lands." posx="388" posy="609">
+		<option optionid="1" optiontext="I might be able to help." next="6" icon="Quest"></option>
+		<option optionid="2" optiontext="How are things at the camp?" next="3"></option>
+		<option optionid="3" optiontext="Good luck." next="0"></option>
+	</node>
+	<node id="3" npcName="Deputy Rieler" anim="1" text="We're holding on, I'd say. The men are becoming more experienced every day. But the stakes are high; if we get pushed out, the bandits are free to sweep to the east, looting and pillaging everything in their wake." posx="821" posy="613">
+		<option optionid="1" optiontext="" next="4"></option>
+	</node>
+	<node id="4" npcName="Deputy Rieler" anim="1" text="We need ways to fight them more effectively, such as taking out more high value targets - members of their band that have really shown their capacity to wreak havoc. That's just what I've been assigned to do." posx="1249" posy="615">
+		<option optionid="1" optiontext="Do tell me more." next="5" checks="Quest=85-0-0" icon="Quest"></option>
+		<option optionid="2" optiontext="I could be of help in hunting down your bandit targets." next="8" checks="Quest=85-1-2"></option>
+		<option optionid="3" optiontext="Good luck." next="0"></option>
+	</node>
+	<node id="5" npcName="Deputy Rieler" anim="1" text="I've been tasked by Marshal Harrington to target notorious bandit leaders in this area. I've had reports of a foreign mercenary by the name of Nyls Yellen causing devastation, wielding an exotic kukri blade. His killing spree needs to be brought to an end." posx="511" posy="16">
+		<option optionid="1" optiontext="I might be able to help." next="6" icon="Quest"></option>
+		<option optionid="2" optiontext="Who's this Nyls Yellen you mention?" next="2"></option>
+		<option optionid="3" optiontext="How are things at the camp?" next="3"></option>
+		<option optionid="4" optiontext="Good luck." next="0"></option>
+	</node>
+	<node id="6" npcName="Deputy Rieler" anim="1" text="Hmm, yes... I could really use someone to carry out this work. We've just about trained our regular militia men to fight as a team, but what I need is an exceptional individual fighter. Very well, approach the sergeant over there and he will assess your abilities." posx="978" posy="18">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=85-1"></option>
+	</node>
+	<node id="7" npcName="Deputy Rieler" anim="1" text="A valiant goal, one I'm frankly surprised has not been pressed sooner. Alas, I cannot in good conscience join, so long as it means leaving these fields undefended. Nasty characters have made it their playing ground, they must not be allowed to think that I would cease in my efforts to hunt them down for their crimes." actions="SetVar=Q111DeputyRielerRecruited-1" posx="1650" posy="12">
+		<option optionid="1" optiontext="Tell me more about your mission then." next="5" checks="Quest=85-0-0" icon="Quest"></option>
+		<option optionid="2" optiontext="I could be of help in hunting down your bandit targets." next="8" checks="Quest=85-1-2"></option>
+		<option optionid="3" optiontext="How are things at the camp?" next="3"></option>
+		<option optionid="4" optiontext="I'll be back later." next="0"></option>
+	</node>
+	<node id="8" npcName="Deputy Rieler" anim="1" text="Yes, I could really use an exceptional fighter to carry out this work. First, I'll need to be sure of your abilities. Approach the sergeant within the camp and he will evaluate your abilities. I will be satisfied once you pass his test." posx="2061" posy="11">
+		<option optionid="1" optiontext="I'm gathering allies for an assault on the bandit fortress." next="7" checks="Quest=111-1-1" icon="Quest"></option>
+		<option optionid="2" optiontext="How are things at the camp?" next="3"></option>
+		<option optionid="3" optiontext="Very well." next="0"></option>
+	</node>
+
+
+	<node id="10" npcName="Sergeant Axfall" anim="1" text="Yes, what is it? I'm quite busy training the men, if you can't see." posx="26" posy="12">
+		<option optionid="1" optiontext="Deputy Rieler's asked me to check in with you, to assess my combat prowess." next="12" icon="Quest"></option>
+		<option optionid="2" optiontext="How's the training going?" next="11"></option>
+		<option optionid="3" optiontext="I'll come back later." next="0"></option>
+	</node>
+	<node id="11" npcName="Sergeant Axfall" anim="1" text="My pa was a blacksmith, so I like to say men are like iron. You hammer 'em until they get in shape. Sometimes it takes more hammerin', sometimes less, depending on the quality of the man or metal. But eventually they always shape up." posx="460" posy="272">
+		<option optionid="1" optiontext="Deputy Rieler's asked me to check in with you, to assess my combat prowess." next="12" icon="Quest"></option>
+		<option optionid="2" optiontext="I'll come back later." next="0"></option>
+	</node>
+	<node id="12" npcName="Sergeant Axfall" anim="1" text="Did he, now? He reckons he's found a potential recruit for his special needs, has he? I understand." posx="490" posy="13">
+		<option optionid="1" optiontext="" next="13"></option>
+	</node>
+	<node id="13" npcName="Sergeant Axfall" anim="1" text="Well, I'll take the measure of you yet. What can you say about your fighting experience thus far? Maybe we can tailor your training accordingly, focusing on your strengths." posx="920" posy="13">
+		<option optionid="1" optiontext="I like to take things up close and personal." next="14" showGreyedOutOption="1" checks="HasSkillLevel=Swordsmanship-12"></option>
+		<option optionid="2" optiontext="I prefer to take my enemies from distance." next="15" showGreyedOutOption="1" checks="HasSkillLevel=Archery-12"></option>
+		<option optionid="3" optiontext="I'm not so well versed in traditional fighting as of yet." next="16"></option>
+	</node>
+	<node id="14" npcName="Sergeant Axfall" anim="1" text="Nothing beats having a good sword in hand, eh? I know the feeling. Alright then, follow me." posx="1363" posy="12">
+		<option optionid="1" optiontext="" next="0" actions="SetVar=Q85TrainingBonus-1,Cinematic=150" icon="Quest"></option>
+	</node>
+	<node id="15" npcName="Sergeant Axfall" anim="1" text="Ah, taking out your enemies before they even get to take their chance, eh? I know your type full well. Very well then, follow me." posx="1360" posy="249">
+		<option optionid="1" optiontext="" next="0" actions="SetVar=Q85TrainingBonus-2,Cinematic=150" icon="Quest"></option>
+	</node>
+	<node id="16" npcName="Sergeant Axfall" anim="1" text="Well, that's what I'm ultimately here for. We'll hammer a warrior out of you yet. Follow me." posx="1809" posy="134">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=150" icon="Quest"></option>
+	</node>
+
+
+	<node id="20" npcName="Guard Boderick" anim="1" text="Aight, here's the deal; you gotta show us you can really take a guy out, so I'm gonna defend real hard and your job is to knock me out. But you gotta do it swift-like, understand? If you don't do it swift-like, we gonna take it from beginning, aight?" posx="30" posy="26">
+		<option optionid="1" optiontext="Fine, let's begin." next="0" actions="SetCounterVar=Q85SparCounter-12,SetVar=Q85SparStarted-1,IncreaseVar=Q85HowManySpars-1,Cinematic=145" icon="Quest"></option>
+		<option optionid="2" optiontext="I'll just need a moment to prepare." next="0"></option>
+	</node>
+	<node id="21" npcName="Guard Boderick" anim="1" text="Nah, mate, that won't do. Won't do at all! You gotta take me out, and you gotta make it happen swift-like!" posx="479" posy="27">
+		<option optionid="1" optiontext="Fine, let's just go again!" next="0" actions="SetCounterVar=Q85SparCounter-12,SetVar=Q85SparStarted-1,IncreaseVar=Q85HowManySpars-1,Cinematic=145" icon="Quest"></option>
+		<option optionid="2" optiontext="I need a break..." next="0"></option>
+	</node>
+	<node id="22" npcName="Guard Boderick" anim="1" text="AHH... aye mate, that's enough! I'll let the sarge know, you can definitely wallop people as they need wallopin'! You can go ahead and tell that deputy-man you've been okayed by us." posx="923" posy="27">
+		<option optionid="1" optiontext="Good fight, take care." next="23" checks="Var=Q85TrainingBonus-1-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Good fight, take care." next="24" checks="Var=Q85TrainingBonus-2-2" icon="Quest"></option>
+		<option optionid="3" optiontext="Good fight, take care." next="0" checks="!Var=Q85TrainingBonus-1-2" icon="Quest"></option>
+	</node>
+
+	<node id="23" npcName="Guard Boderick" anim="1" text="&lt;color=#9C8C77&gt;*Due to your stated specialization, you've received an extra 450 base xp in Attack.*&lt;/color&gt;" icon="Attack" posx="22" posy="21">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Nice!*&lt;/color&gt;" next="0" actions="AddXp=swordsmanship-450,SetVar=Q85TrainingBonus-0" icon="Quest"></option>
+	</node>
+	<node id="24" npcName="Guard Boderick" anim="1" text="&lt;color=#9C8C77&gt;*Due to your stated specialization, you've received an extra 450 base xp in Archery.*&lt;/color&gt;" icon="Archery" posx="458" posy="19">
+		<option optionid="1" optiontext="&lt;color=#9C8C77&gt;*Nice!*&lt;/color&gt;" next="0" actions="AddXp=archery-450,SetVar=Q85TrainingBonus-0" icon="Quest"></option>
+	</node>
+
+
+	<node id="25" npcName="Sergeant Axfall" anim="1" text="I watched you gave our good olde Bode a firm kick in the backside... hah! Not just anyone can do that to Bode, y'know." posx="31" posy="17">
+		<option optionid="1" optiontext="How's the training going?" next="26"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="26" npcName="Sergeant Axfall" anim="1" text="My pa was a blacksmith, so I like to say men are like iron. You hammer 'em until they get in shape. Sometimes it takes more hammerin', sometimes less, depending on the quality of the man or metal. But eventually they always shape up." posx="457" posy="19">
+		<option optionid="1" optiontext="Good luck with that." next="0"></option>
+	</node>
+
+
+	<node id="30" npcName="Deputy Rieler" anim="1" text="I saw your sparring with guard Boderick from back here. Very impressive! I think you might be the man I've been looking for." posx="26" posy="23">
+		<option optionid="1" optiontext="Then say, what do you need of me?" next="31" icon="Quest"></option>
+	</node>
+	<node id="31" npcName="Deputy Rieler" anim="1" text="As I recall, I previously mentioned a bandit leader by the name of Nyls Yellen? A particularly nasty bit of work, he's left many a poor peasant mutilated by the exotic kukri blade he carries." posx="454" posy="22">
+		<option optionid="1" optiontext="And you want me to end his terror?" next="32" icon="Quest"></option>
+		<option optionid="2" optiontext="Is there any form of bounty on his head?" next="33"></option>
+		<option optionid="3" optiontext="What do you know about the man?" next="34"></option>
+	</node>
+	<node id="32" npcName="Deputy Rieler" anim="1" text="That is the nature of the mission I'm putting before you. Our scouts report he's fortified himself in a bandit camp directly to the west from here, within the edge of the woods. I ask that you bring me the kukri he carries as proof of the deed, once you're done. Good luck, soldier!" posx="964" posy="19">
+		<option optionid="1" optiontext="" next="0" actions="UpdateQuest=85-4"></option>
+	</node>
+
+	<node id="33" npcName="Deputy Rieler" anim="1" text="I must admit our resources are spread very thin indeed. With that said, some form of reward will always be found for those who fight along our side." posx="509" posy="446">
+		<option optionid="1" optiontext="What do you know about the man?" next="34"></option>
+		<option optionid="2" optiontext="So you want me to end Yellen's terror?" next="32" icon="Quest"></option>
+	</node>
+	<node id="34" npcName="Deputy Rieler" anim="1" text="Generally speaking these bandits we face just want to squeeze our lands for every coin their worth. But Yellen's reputation precedes him. Previously he was known to camp out in the mountains, far east." posx="983" posy="311">
+		<option optionid="1" optiontext="" next="35"></option>
+	</node>
+	<node id="35" npcName="Deputy Rieler" anim="1" text="He doesn't care about the coin. He raids for the love of raiding. The caravans he ambushed, he'd often leave the goods just lying behind, and no soul left alive. A very violent man indeed, and very dangerous." posx="1408" posy="311">
+		<option optionid="1" optiontext="Is there any form of bounty on his head?" next="33"></option>
+		<option optionid="2" optiontext="So you want me to end his terror?" next="32" icon="Quest"></option>
+	</node>
+
+
+	<node id="40" npcName="Deputy Rieler" anim="1" text="How goes your hunt for Nyls Yellen?" posx="6" posy="22">
+		<option optionid="1" optiontext="His pillaging days are over." next="46" checks="Quest=85-5-5,HasItem=915-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Had a question about him..." next="45"></option>
+		<option optionid="3" optiontext="I'm gathering allies for an assault on the bandit fortress." next="49" checks="Quest=111-1-1" icon="Quest"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="41" npcName="Deputy Rieler" anim="1" text="A few of my scouts have been following his movements. Recently they reported him camping near the edge of the woods directly due west of here. He should remain there still." posx="425" posy="239">
+		<option optionid="1" optiontext="What do you know about the man?" next="42"></option>
+		<option optionid="2" optiontext="Is any form of bounty offered for his head?" next="44"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="42" npcName="Deputy Rieler" anim="1" text="Generally speaking these bandits we face just want to squeeze our lands for every coin their worth. But Yellen's reputation precedes him. Previously he was known to camp out in the mountains, far east." posx="846" posy="413">
+		<option optionid="1" optiontext="" next="43"></option>
+	</node>
+	<node id="43" npcName="Deputy Rieler" anim="1" text="He doesn't care about the coin. He raids for the love of raiding. The caravans he ambushed, he'd often leave the goods just lying behind, and no soul left alive. A very violent man indeed, and very dangerous." posx="1272" posy="413">
+		<option optionid="1" optiontext="Is any form of bounty offered for his head?" next="44"></option>
+		<option optionid="2" optiontext="I need a reminder, where should I look for him?" next="41"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="44" npcName="Deputy Rieler" anim="1" text="I must admit our resources are spread very thin indeed. With that said, some form of reward will always be found for those who fight along our side." posx="852" posy="657">
+		<option optionid="1" optiontext="What do you know about the man?" next="42"></option>
+		<option optionid="2" optiontext="I need a reminder, where should I look for him?" next="41"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="45" npcName="Deputy Rieler" anim="1" text="I will tell you what I know." posx="8" posy="503">
+		<option optionid="1" optiontext="Needed a reminder, where should I look for him?" next="41"></option>
+		<option optionid="2" optiontext="What do you know about the man?" next="42"></option>
+		<option optionid="3" optiontext="Is any form of bounty offered for his head?" next="44"></option>
+		<option optionid="4" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="46" npcName="Deputy Rieler" anim="1" text="You've done it then? Truth be told, I wasn't sure if I could expect to see you again. But I see you come possessing that kukri of his, just as I requested..." posx="899" posy="16">
+		<option optionid="1" optiontext="" next="47"></option>
+	</node>
+	<node id="47" npcName="Deputy Rieler" anim="1" text="It may not seem like it, but while I sent you to commit murder, in doing so you've spared many lives. You've done Haywind City a great service." posx="1320" posy="16">
+		<option optionid="1" optiontext="" next="48"></option>
+	</node>
+	<node id="48" npcName="Deputy Rieler" anim="1" text="You have my gratitude also, and a small payment I managed to scrape together. Keep the blade too, I expect it may prove handy. Next time I'll know who to turn to when my scouts identify more bandit leaders to target." posx="1742" posy="15">
+		<option optionid="1" optiontext="Thanks, Deputy - good luck!" next="0" actions="UpdateQuest=85-999,RemoveItems=915-1"></option>
+	</node>
+	<node id="49" npcName="Deputy Rieler" anim="1" text="A valiant goal, one I'm frankly surprised has not been pressed sooner. Alas, I cannot in good conscience join, so long as it means leaving these fields undefended. Nasty characters have made it their playing ground, they must not be allowed to think that I would cease in my efforts to hunt them down for their crimes." actions="SetVar=Q111DeputyRielerRecruited-1" posx="1806" posy="607">
+		<option optionid="1" optiontext="Speaking of, Nyls Yellen's pillaging days are over." next="46" checks="Quest=85-5-5,HasItem=915-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Had a question about Nyls Yellen..." next="45"></option>
+		<option optionid="3" optiontext="As you say." next="0"></option>
+	</node>
+
+
+	<node id="55" npcName="Deputy Rieler" anim="1" text="Good work bringing an end to the raiding days of Nyls Yellen, it was long due. My scouts have brought me reports of the movements of two other raiders, even more menacing than Nyls Yellen I'm afraid. There's work for you, should you wish it done." posx="0" posy="9">
+		<option optionid="1" optiontext="Talk to me about the bounties." next="58" icon="Quest"></option>
+		<option optionid="2" optiontext="How are things around here?" next="57"></option>
+		<option optionid="3" optiontext="I'm looking for allies for an assault on the bandit fortress." next="56" checks="Quest=111-1-1" icon="Quest"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="56" npcName="Deputy Rieler" anim="1" text="A valiant goal, one I'm frankly surprised has not been pressed sooner. Alas, I cannot in good conscience join, so long as it means leaving these fields undefended. Nasty characters have made it their playing ground, they must not be allowed to think that I would cease in my efforts to hunt them down for their crimes." actions="SetVar=Q111DeputyRielerRecruited-1" posx="596" posy="606">
+		<option optionid="1" optiontext="Then tell me about what bounties remain." next="58" icon="Quest"></option>
+		<option optionid="2" optiontext="How are things around here?" next="57"></option>
+		<option optionid="3" optiontext="I'll come back later." next="0"></option>
+	</node>
+	<node id="57" npcName="Deputy Rieler" anim="1" text="Since your disposal of Nyls Yellen, the number of travelers on our roads becoming ambushed has lessened. This is good, though Yellen was not the only nefarious character plaguing our fields. There's more work still that remains to be done." posx="1005" posy="605">
+		<option optionid="1" optiontext="Then tell me about what bounties remain." next="58" icon="Quest"></option>
+		<option optionid="2" optiontext="I'm looking for allies for an assault on the bandit fortress." next="56" checks="Quest=111-1-1" icon="Quest"></option>
+		<option optionid="3" optiontext="I'll come back later." next="0"></option>
+	</node>
+	<node id="58" npcName="Deputy Rieler" anim="1" text="Not much remains now but rubble of the village that was called Baronsgreene due west from here. Two notorious figures in particular are reported to have orchestrated its destruction - Astratov the Razer and Harkon the Mangler. " posx="595" posy="5">
+		<option optionid="1" optiontext="" next="59"></option>
+	</node>
+	<node id="59" npcName="Deputy Rieler" anim="1" text="I have heard credible witnesses of their crimes, and have received scouting reports of their known locations. Thus the only thing that remains is the hand that delivers swift justice upon those two reprobates." posx="1004" posy="4">
+		<option optionid="1" optiontext="Astratov the 'Razer'?" next="60"></option>
+		<option optionid="2" optiontext="Harkon the 'Mangler'?" next="61"></option>
+		<option optionid="3" optiontext="Tell me where to find them and I'll deliver your justice." next="62" icon="Quest"></option>
+	</node>
+	<node id="60" npcName="Deputy Rieler" anim="1" text="Indeed, a man who seems to have a relentless hatred for all things civilization. He carries a reputation for living in the wilds and seeking to bring everyone else down to his level by destroying their homes and lives. He certainly managed to do that to the poor people of Baronsgreene village..." posx="1412" posy="4">
+		<option optionid="1" optiontext="Harkon the 'Mangler'?" next="61"></option>
+		<option optionid="2" optiontext="Tell me where to find them and I'll deliver your justice." next="62" icon="Quest"></option>
+	</node>
+	<node id="61" npcName="Deputy Rieler" anim="1" text="A degenerate brute who loves nothing but violence. It would be of poor taste to recount the details I heard from people who fled Baronsgreene after it was attacked, but his nickname is fairly earned from many a heartless display of the remains of those who got caught in his path..." posx="1827" posy="6">
+		<option optionid="1" optiontext="Astratov the 'Razer'?" next="60"></option>
+		<option optionid="2" optiontext="Tell me where to find them and I'll deliver your justice." next="62" icon="Quest"></option>
+	</node>
+	<node id="62" npcName="Deputy Rieler" anim="1" text="Harkon the Mangler remains in the ruined Baronsgreene village to the northwest, continuing to revel in its destruction. Astratov, on the other hand, retreated back to the wilds where he feels most comfortable. I'm told he's camped somewhere in the woods on the northern side of the village." posx="1608" posy="490">
+		<option optionid="1" optiontext="" next="63"></option>
+	</node>
+	<node id="63" npcName="Deputy Rieler" anim="1" text="My gratitude for taking on this thankless duty. Bring back some token from each of these slain bandits, so I shall rest knowing their days of bringing terror upon our lands have come to an end." posx="2013" posy="490">
+		<option optionid="1" optiontext="Very well." next="0" actions="UpdateQuest=86-1"></option>
+	</node>
+
+
+	<node id="70" npcName="Deputy Rieler" anim="1" text="Bandit leaders Astratov and Harkon were responsible for the pillage of Baronsgreene village. They must not be allowed to go free with their crimes. For the sake of the people of Haywind, I ask that you deliver swift justice to those two reprobates." posx="2" posy="7">
+		<option optionid="1" optiontext="They have fallen, and I bring proof of their demise." next="77" checks="HasItem=1267-1|1268-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Had a question about the bounties..." next="71"></option>
+		<option optionid="3" optiontext="I'm looking for allies for an assault on the bandit fortress." next="76" checks="Quest=111-1-1" icon="Quest"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="71" npcName="Deputy Rieler" anim="1" text="Anything that will help you in your mission, I will do my best to tell you." posx="602" posy="375">
+		<option optionid="1" optiontext="Remind me, where do I find the two bandits camping?" next="72"></option>
+		<option optionid="2" optiontext="Tell me about Harkon the Mangler." next="73"></option>
+		<option optionid="3" optiontext="Tell me about Astratov the Razer." next="74"></option>
+		<option optionid="4" optiontext="Nevermind..." next="75" icon="LeadingExit"></option>
+	</node>
+	<node id="72" npcName="Deputy Rieler" anim="1" text="Harkon the Mangler remains in the ruined Baronsgreene village to the northwest, continuing to revel in its destruction. Astratov, on the other hand, retreated back to the wilds where he feels most comfortable. I'm told he's camped somewhere in the woods on the northern side of the village. Once you've dealt with them, bring some token of theirs to me as proof of the deed." posx="1020" posy="375">
+		<option optionid="1" optiontext="Tell me about Harkon the Mangler." next="73"></option>
+		<option optionid="2" optiontext="Tell me about Astratov the Razer." next="74"></option>
+		<option optionid="3" optiontext="I see." next="75" icon="LeadingExit"></option>
+	</node>
+	<node id="73" npcName="Deputy Rieler" anim="1" text="A degenerate brute who loves nothing but violence. It would be of poor taste to recount the details I heard from people who fled Baronsgreene after it was attacked, but his nickname is fairly earned from many a heartless display of the remains of those who got caught in his path..." posx="1432" posy="375">
+		<option optionid="1" optiontext="Tell me about Astratov the Razer." next="74"></option>
+		<option optionid="2" optiontext="Remind me, where do I find the two bandits camping?" next="72"></option>
+		<option optionid="3" optiontext="I see." next="75" icon="LeadingExit"></option>
+	</node>
+	<node id="74" npcName="Deputy Rieler" anim="1" text="Indeed, a man who seems to have a relentless hatred for all things civilization. He carries a reputation for living in the wilds and seeking to bring everyone else down to his level by destroying their homes and lives. He certainly managed to do that to the poor people of Baronsgreene village..." posx="1840" posy="375">
+		<option optionid="1" optiontext="Tell me about Harkon the Mangler." next="73"></option>
+		<option optionid="2" optiontext="Remind me, where do I find the two bandits camping?" next="72"></option>
+		<option optionid="3" optiontext="I see." next="75" icon="LeadingExit"></option>
+	</node>
+	<node id="75" npcName="Deputy Rieler" anim="1" text="I ought to resume my duties, unless there was something else...?" posx="0" posy="674">
+		<option optionid="1" optiontext="They have fallen, and I bring proof of their demise." next="77" checks="HasItem=1267-1|1268-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Had a question about the bounties..." next="71"></option>
+		<option optionid="3" optiontext="I'm looking for allies for an assault on the bandit fortress." next="76" checks="Quest=111-1-1" icon="Quest"></option>
+		<option optionid="4" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="76" npcName="Deputy Rieler" anim="1" text="A valiant goal, one I'm frankly surprised has not been pressed sooner. Alas, I cannot in good conscience join, so long as it means leaving these fields undefended. Nasty characters have made it their playing ground, they must not be allowed to think that I would cease in my efforts to hunt them down for their crimes." actions="SetVar=Q111DeputyRielerRecruited-1" posx="1206" posy="908">
+		<option optionid="1" optiontext="I'm here to collect on your bandit bounties, I have proof of their demise." next="77" checks="HasItem=1267-1|1268-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Had a question about the bounties..." next="71"></option>
+		<option optionid="3" optiontext="As you say..." next="0"></option>
+	</node>
+	<node id="77" npcName="Deputy Rieler" anim="1" text="Very fine work, sir! The meager funds I have with which to reward you do your efforts no justice. Hmm... but perhaps I can find some of the finer weapons from our camp to serve you!" posx="608" posy="6">
+		<option optionid="1" optiontext="" next="78"></option>
+	</node>
+	<node id="78" npcName="Deputy Rieler" anim="1" text="The bandit horde we face in these lands seems endless in numbers. But I'll take whatever comfort I can in that even during these dark times the worst criminals will not escape the hand of justice in Haywind. Thank you for your service, adventurer." posx="1016" posy="6">
+		<option optionid="1" optiontext="Thanks." next="0" actions="UpdateQuest=86-999,RemoveItems=1267-1|1268-1"></option>
+	</node>
+
+
+	<node id="90" npcName="Deputy Rieler" anim="1" text="Glad to see a friendly face! With what you've done for us, you'll always be welcome around this camp." posx="0" posy="5">
+		<option optionid="1" optiontext="I'm looking for allies for an assault on the bandit fortress." next="92" checks="Quest=111-1-1,Var=Q111DeputyRielerRecruited-0-1" icon="Quest"></option>
+		<option optionid="2" optiontext="You will join our assault on the bandit fortress?" next="93" checks="Quest=111-1-2,Var=Q111DeputyRielerRecruited-2-2"></option>
+		<option optionid="3" optiontext="How are things around here?" next="91"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="91" npcName="Deputy Rieler" anim="1" text="Marauders still roam these fields and we continue to fight them wherever we find their camps. But since your help with taking down some of their worst leaders, they seem less coordinated, their attacks have lost all bite. We'll root them all out in time, I think, in no small part thanks to your efforts." posx="599" posy="606">
+		<option optionid="1" optiontext="I'm looking for allies for an assault on the bandit fortress." next="92" checks="Quest=111-1-1,Var=Q111DeputyRielerRecruited-0-1" icon="Quest"></option>
+		<option optionid="2" optiontext="You will join our assault on the bandit fortress?" next="93" checks="Quest=111-1-2,Var=Q111DeputyRielerRecruited-2-2"></option>
+		<option optionid="3" optiontext="I'll leave you to it." next="0"></option>
+	</node>
+	<node id="92" npcName="Deputy Rieler" anim="1" text="Ah, yes... Only my friend Zathe would press for a brazen assault on the bandit fortress, much unlike the Mayor, who has been reluctant to engage the menacing raiders head on. Very well, I shall gather what loyal men I can find - you may tell Zathe he has my support." posx="416" posy="5">
+		<option optionid="1" optiontext="Excellent!" next="0" actions="SetVar=Q111DeputyRielerRecruited-2,NpcChat=I shall gather what loyal men I can find> it's time we rid this land of the bandit blight!" icon="Quest"></option>
+	</node>
+	<node id="93" npcName="Deputy Rieler" anim="1" text="Only Zathe would press for a brazen assault on the bandit fortress, yes? Much unlike the mayor, who has been reluctant to engage the menacing raiders head on. I shall gather what loyal men I can find. You may tell Zathe he has my support." posx="823" posy="5">
+		<option optionid="1" optiontext="How are things around here?" next="91"></option>
+		<option optionid="2" optiontext="I shall meet you on the battlefield." next="0"></option>
+	</node>
+
+
+	<node id="176" npcName="Zathe Vraine" anim="1" text="What on earth happened here?! Managed to shut that gate before nearly being chopped in half by that menacing looking undead. Don't tell me you had anything to do with this!" posx="0" posy="13">
+		<option optionid="1" optiontext="No, there was an evil necromancer..." next="177" icon="Quest"></option>
+	</node>
+	<node id="177" npcName="Zathe Vraine" anim="1" text="We have a rogue necromancer on the loose?! Fantastic, that's the last thing we need around here! Well what happened, where is he now?" posx="409" posy="14">
+		<option optionid="1" optiontext="Can't really say, I was trapped and had to make my way out through here." next="178" icon="Quest"></option>
+	</node>
+	<node id="178" npcName="Zathe Vraine" anim="1" text="Hm... Well, it can't have been easy to cut your way through all those undead. I'm Zathe, by the way - a retired warrior, right hand of the Mayor of Haywind, some would say. Though if you ask me, he listens more to the advice of a different man these days..." posx="819" posy="13">
+		<option optionid="1" optiontext="" next="179"></option>
+	</node>
+	<node id="179" npcName="Zathe Vraine" anim="1" text="Nevermind that. Riders came in with reports of a strange storm and lights at the cemetery here. Dusted off my armor and rode like the wind to get here, only to find the crypts full of undead on my arrival." posx="1224" posy="13">
+		<option optionid="1" optiontext="You were sent by the mayor of Haywind?" next="180"></option>
+		<option optionid="2" optiontext="A retired warrior, eh?" next="181"></option>
+		<option optionid="3" optiontext="Tell me about Haywind." next="183"></option>
+		<option optionid="4" optiontext="I should get going, good luck." next="186" icon="LeadingExit"></option>
+	</node>
+	<node id="180" npcName="Zathe Vraine" anim="1" text="Aye... we were in the middle of a meeting all too common these days, discussing recent hordes of bandits menacing our countryside. That's when it happened... a shockwave ran throughout the land..." posx="1632" posy="14">
+		<option optionid="1" optiontext="Do tell me more..." next="0" actions="SetVar=C28DialogueControl-1,Cinematic=28" icon="Quest"></option>
+		<option optionid="2" optiontext="You say you're a retired warrior?" next="181"></option>
+		<option optionid="3" optiontext="Tell me about Haywind." next="183"></option>
+		<option optionid="4" optiontext="I should get going, good luck." next="186" icon="LeadingExit"></option>
+	</node>
+	<node id="181" npcName="Zathe Vraine" anim="1" text="Oh, just an old veteran really - a hothead mercenary from the waters of Traire down south. Got myself hired on several campaigns by the Royal Army of Melloria in my younger years." posx="1191" posy="606">
+		<option optionid="1" optiontext="" next="182"></option>
+	</node>
+	<node id="182" npcName="Zathe Vraine" anim="1" text="Nowadays I'd prefer some peace and quiet, but... well, trouble keeps finding its way even here and I can't seem to not stick my nose in it. Sometimes I just wish Haywind's mayor would heed my advice a bit more." posx="1601" posy="606">
+		<option optionid="1" optiontext="You were sent by the mayor of Haywind?" next="180"></option>
+		<option optionid="2" optiontext="Tell me about Haywind." next="183"></option>
+		<option optionid="3" optiontext="I should get going, good luck." next="186" icon="LeadingExit"></option>
+	</node>
+	<node id="183" npcName="Zathe Vraine" anim="1" text="The largest growing city this far north. I reckon life around Haywind became a lot more hectic ever since those Magi of Hydrobor migrated their academy into the region. Now there's an odd bunch of characters..." posx="2090" posy="605">
+		<option optionid="1" optiontext="" next="184"></option>
+	</node>
+	<node id="184" npcName="Zathe Vraine" anim="1" text="Before then, Haywind used to be pretty poor I think. Damp and cool, hard to farm you know? But the magi offered to improve the weather. Crops flourished, Haywind prospered and now... now we're besieged by a bandit plight." posx="2500" posy="604">
+		<option optionid="1" optiontext="You were sent by the mayor of Haywind?" next="180"></option>
+		<option optionid="2" optiontext="You say you're a retired warrior?" next="181"></option>
+		<option optionid="3" optiontext="I should get going, good luck." next="186" icon="LeadingExit"></option>
+	</node>
+	<node id="185" npcName="Zathe Vraine" anim="1" text="... dusted off my armor and rode like the wind to get here, only to find the crypts full of undead on my arrival. Which brings us back here." actions="SetVar=C28DialogueControl-0" contextBefore="return node from c 28" posx="2142" posy="23">
+		<option optionid="1" optiontext="Tell me about Haywind." next="183"></option>
+		<option optionid="2" optiontext="You say you're a retired warrior?" next="181"></option>
+		<option optionid="3" optiontext="I should get going, good luck." next="186" icon="LeadingExit"></option>
+	</node>
+	<node id="186" npcName="Zathe Vraine" anim="1" text="Right, I'm going to stay here for the time being and see if I can clear some of these monsters out. When you happen to be traveling to the big city, I have a favor to ask; please, consider delivering news of these undead to the Mayor of Haywind at his Town Hall. It's not the kind he's wanting to hear, but he should learn of what's happened here." posx="292" posy="309">
+		<option optionid="1" optiontext="I'll consider it." next="0" checks="Quest=75-0-0" actions="UpdateQuest=75-1"></option>
+		<option optionid="2" optiontext="I'll consider it." next="0" checks="!Quest=75-0-0"></option>
+	</node>
+	<node id="190" npcName="Zathe Vraine" anim="1" text="Heavens, man, try not to sneak up on me again! This place is enough to make my skin crawl as it is." posx="292" posy="756">
+		<option optionid="1" optiontext="You were sent by the mayor of Haywind?" next="180"></option>
+		<option optionid="2" optiontext="You say you're a retired warrior?" next="181"></option>
+		<option optionid="3" optiontext="Tell me about Haywind." next="183"></option>
+		<option optionid="4" optiontext="I should get going, good luck." next="186" icon="LeadingExit"></option>
+	</node>
+
+
+	<node id="216" npcName="Marzin Stonefort" switchtalker="34" lookAtNpc="249" anim="1" text="If you say it's the only way then it's the only way. I should begin making arrangements for our first ransom payment." actions="SetVar=MeetingTheMayor-1" posx="206" posy="330">
+		<option optionid="1" optiontext="I hope I'm not interrupting." next="217"></option>
+		<option optionid="2" optiontext="That doesn't sound too smart." next="230"></option>
+	</node>
+	<node id="217" npcName="Marzin Stonefort" anim="1" text="Ah, my apologies, good sir. We were just concluding our meeting anyway. What brings you to our humble town hall?" posx="729" posy="297">
+		<option optionid="1" optiontext="I ran into your man Zathe at Spruce Shade's Rest, he asked me to seek you out." next="226" checks="Var=Q75Reported-0-0" icon="Quest"></option>
+		<option optionid="2" optiontext="Couldn't help but overhear, the city's being harassed by bandits?" next="218" icon="Quest" checks="Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="3" optiontext="Couldn't help but overhear, the city's being harassed by bandits?" next="218" checks="!Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="4" optiontext="You're the mayor of Haywind?" next="233"></option>
+		<option optionid="5" optiontext="Just visiting, I'll be leaving now." next="0"></option>
+	</node>
+	<node id="218" npcName="Marzin Stonefort" anim="1" text="This is sadly the case. Our good city of Haywind has been prospering of late, but that has attracted the attention of malicious vagrants who prey on our trade caravans. Our only recourse now is to pay these bandit groups off." posx="1182" posy="45">
+		<option optionid="1" optiontext="Can't you set patrols on the roads, protect the caravans?" next="219" icon="Quest" checks="Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="2" optiontext="Can't you set patrols on the roads, protect the caravans?" next="219" checks="!Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="3" optiontext="Sounds unfortunate, sorry I can't help." icon="LeadingExit" next="225"></option>
+	</node>
+	<node id="219" npcName="Marzin Stonefort" anim="1" text="Alas, we do not have the resources. After pleading with the Lord Mayor in Thornhill, he finally sent us an experienced commander to help set up a local militia - the good marshal Harrington." posx="1628" posy="40">
+		<option optionid="1" optiontext="" next="220"></option>
+	</node>
+	<node id="220" npcName="Marzin Stonefort" anim="1" text="But he complains he has an impossible task at hand, lacking most of all in experienced manpower. He says he can't turn farmers into warriors overnight. &lt;color=#9C8C77&gt;*sigh*&lt;/color&gt; Who knows, perhaps he's right." posx="2066" posy="50">
+		<option optionid="1" optiontext="I could be the experienced manpower you need." next="221" icon="Quest" checks="Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="2" optiontext="I could be the experienced manpower you need." next="221" checks="!Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="3" optiontext="Sounds unfortunate, sorry I can't help." icon="LeadingExit" next="225"></option>
+	</node>
+	<node id="221" npcName="Azzar Kheyn" switchtalker="249" anim="1" text="No, we have this rather under control and do not need outsiders sticking their noses in our affairs, thank you very much." posx="2565" posy="72">
+		<option optionid="1" optiontext="" next="222" checks="Var=MaraudersQ53DialogueController-0-0" actions="SetVar=MaraudersQ53DialogueController-1"></option>
+		<option optionid="1" optiontext="" next="222" checks="Var=MaraudersQ53DialogueController-1-2"></option>
+	</node>
+	<node id="222" npcName="Marzin Stonefort" switchtalker="34" anim="1" text="Ahem, please forgive him, my friend can be a little blunt at times. But he is correct, we have already chosen our course of action regarding this matter. There's no need to complicate matters further." posx="2686" posy="315">
+		<option optionid="1" optiontext="You're sure? You don't want me to investigate their camps or thin their numbers maybe...?" next="223"></option>
+		<option optionid="2" optiontext="I ran into your man Zathe at Spruce Shade's Rest, he asked me to seek you out." next="226" checks="Var=Q75Reported-0-0" icon="Quest"></option>
+		<option optionid="3" optiontext="So you're the mayor of Haywind?" next="233"></option>
+		<option optionid="4" optiontext="Well then, good luck with that." next="0" checks="!Var=Q75Reported-1-1"></option>
+		<option optionid="5" optiontext="Well then, good luck with that." next="0" checks="Var=Q75Reported-1-1" actions="UpdateQuest=75-999,SetVar=Q75Reported-2"></option>
+	</node>
+	<node id="223" npcName="Azzar Kheyn" switchtalker="249" anim="1" text="And jeopardise our attempts to peacefully resolve this conflict? Absolutely not! What would there be to investigate anyway? These are simple criminals who are only after gold!" posx="3099" posy="85">
+		<option optionid="1" optiontext="" next="224"></option>
+	</node>
+	<node id="224" npcName="Marzin Stonefort" switchtalker="34" anim="1" text="Ahem, quite so... quite so..." posx="3212" posy="308">
+		<option optionid="1" optiontext="I ran into your man Zathe at Spruce Shade's Rest, he asked me to seek you out." next="226" checks="Var=Q75Reported-0-0" icon="Quest"></option>
+		<option optionid="2" optiontext="So you're the mayor of Haywind?" next="233"></option>
+		<option optionid="3" optiontext="You do whatever you think is best, goodbye." next="0" checks="!Var=Q75Reported-1-1"></option>
+		<option optionid="4" optiontext="You do whatever you think is best, goodbye." next="0" checks="Var=Q75Reported-1-1" actions="UpdateQuest=75-999,SetVar=Q75Reported-2"></option>
+	</node>
+	<node id="225" npcName="Marzin Stonefort" anim="1" text="Most unfortunate, indeed. " posx="1704" posy="418">
+		<option optionid="1" optiontext="I ran into your man Zathe at Spruce Shade's Rest, he asked me to seek you out." next="226" checks="Var=Q75Reported-0-0" icon="Quest"></option>
+		<option optionid="2" optiontext="So you're the mayor of Haywind?" next="233"></option>
+		<option optionid="3" optiontext="Well then, I bid you good luck and farewell." next="0" checks="!Var=Q75Reported-1-1"></option>
+		<option optionid="4" optiontext="Well then, I bid you good luck and farewell." next="0" checks="Var=Q75Reported-1-1" actions="UpdateQuest=75-999,SetVar=Q75Reported-2"></option>
+	</node>
+	<node id="226" npcName="Marzin Stonefort" anim="1" text="Ah yes, that strange ordeal. You come from Spruce Shade's Rest then? What on earth was happening over there?" posx="1200" posy="423">
+		<option optionid="1" optiontext="Something necromantic, crypts overrun with undead, that sort of stuff." next="227" icon="Quest"></option>
+	</node>
+	<node id="227" npcName="Marzin Stonefort" anim="1" text="Undead?! On top of all the problems we're already having?! Why does this keep happening to me?!" posx="2169" posy="510">
+		<option optionid="1" optiontext="" next="228" actions="SetVar=Q75Reported-1"></option>
+	</node>
+	<node id="228" npcName="Marzin Stonefort" anim="1" text="&lt;color=#9C8C77&gt;*The mayor lets out a deep sigh.*&lt;/color&gt;\n\nAlas, I fear we cannot lend aid to the people of Spruce Shade's Rest in this matter. We have a slight undead problem in our own crypts; the Dreamguard who was meant to clear them never showed. Regardless, I suppose you're expecting a few coins for carrying the message all the way here." posx="1702" posy="781">
+		<option optionid="1" optiontext="Couldn't help but overhear, the city's being harassed by bandits?" next="218" icon="Quest" checks="Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="2" optiontext="Couldn't help but overhear, the city's being harassed by bandits?" next="218" checks="!Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="3" optiontext="So you're the mayor of Haywind?" next="233"></option>
+		<option optionid="4" optiontext="Indeed, thanks." next="0" actions="UpdateQuest=75-999,SetVar=Q75Reported-2"></option>
+	</node>
+	<node id="230" npcName="Azzar Kheyn" switchtalker="249" anim="1" text="Who dares...?!" posx="0" posy="711">
+		<option optionid="1" optiontext="" next="231"></option>
+	</node>
+	<node id="231" npcName="Marzin Stonefort" switchtalker="34" anim="1" text="My apologies, stranger, but I believe we know our own affairs best - not you. Now, what can I help you with?" posx="474" posy="737">
+		<option optionid="1" optiontext="I ran into your man Zathe at Spruce Shade's Rest, he asked me to seek you out." next="226" checks="Var=Q75Reported-0-0" icon="Quest"></option>
+		<option optionid="2" optiontext="I'd like to hear more about your bandit problem." next="232" icon="Quest" checks="Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="3" optiontext="I'd like to hear more about your bandit problem." next="232" checks="!Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="4" optiontext="You're the mayor of Haywind?" next="233"></option>
+		<option optionid="5" optiontext="Just visiting, I'll be leaving now." next="0"></option>
+	</node>
+	<node id="232" npcName="Marzin Stonefort" anim="1" text="Our bandit problem indeed... The good city of Haywind has been prospering of late, but that has sadly attracted the attention of malicious vagrants who prey on our trade caravans. Our only recourse now is to pay these bandit groups off." posx="978" posy="888">
+		<option optionid="1" optiontext="Can't you set patrols on the roads, protect the caravans?" next="219" icon="Quest" checks="Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="2" optiontext="Can't you set patrols on the roads, protect the caravans?" next="219" checks="!Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="3" optiontext="That sounds unfortunate, sorry I can't help." icon="LeadingExit" next="225"></option>
+	</node>
+	<node id="233" npcName="Marzin Stonefort" anim="1" text="I am indeed - Mayor Marzin Stonefort proudly at your service. I have served this city as its mayor for almost a decade now and will continue to do so for another, so long as the good people in the City Council choose not to oust me." posx="1459" posy="1174">
+		<option optionid="1" optiontext="I ran into your man Zathe at Spruce Shade's Rest, he asked me to seek you out." next="226" checks="Var=Q75Reported-0-0" icon="Quest"></option>
+		<option optionid="2" optiontext="I wanted to hear more about this bandit problem of yours." next="232" icon="Quest" checks="Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="3" optiontext="I wanted to hear more about this bandit problem of yours." next="232" checks="!Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="4" optiontext="I see, good luck with that." next="0" checks="!Var=Q75Reported-1-1"></option>
+		<option optionid="5" optiontext="I see, good luck with that." next="0" checks="Var=Q75Reported-1-1" actions="UpdateQuest=75-999,SetVar=Q75Reported-2"></option>
+	</node>
+	<node id="234" npcName="Marzin Stonefort" anim="1" text="Greetings again, stranger. Was there something I can help you with?" posx="267" posy="1245">
+		<option optionid="1" optiontext="I ran into your man Zathe at Spruce Shade's Rest, he asked me to seek you out." next="226" checks="Var=Q75Reported-0-0" icon="Quest"></option>
+		<option optionid="2" optiontext="I was curious to hear more about your bandit problem." next="232" icon="Quest" checks="Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="3" optiontext="I was curious to hear more about your bandit problem." next="232" checks="!Var=MaraudersQ53DialogueController-0-0"></option>
+		<option optionid="4" optiontext="You know, your daughter's asked me to investigate the bandit menace..." next="240" checks="Var=MaraudersQ53DialogueController-2-2,Quest=53-0-0"></option>
+		<option optionid="5" optiontext="You know, your daughter's asked me to investigate the bandit menace..." next="240" checks="Quest=53-1-999"></option>
+		<option optionid="6" optiontext="You're the mayor of Haywind?" next="233"></option>
+		<option optionid="7" optiontext="Just visiting, I'll be leaving now." next="0" checks="!Var=Q75Reported-1-1"></option>
+		<option optionid="8" optiontext="Just visiting, I'll be leaving now." next="0" checks="Var=Q75Reported-1-1" actions="UpdateQuest=75-999,SetVar=Q75Reported-2"></option>
+	</node>
+
+
+	<node id="235" npcName="Azzar Kheyn" anim="1" text="I prefer not to associate with the likes of... whatever it is you think you are." posx="0" posy="50">
+		<option optionid="1" optiontext="Who are you?" next="236"></option>
+		<option optionid="2" optiontext="Why are you so keen to pay ransom to the bandits?" next="237"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="236" npcName="Azzar Kheyn" anim="1" text="My name is Azzar Kheyn, please do address me by my last name. I'm a merchant of considerable means from the Vhosphoran Kingdom." posx="485" posy="43">
+		<option optionid="1" optiontext="Why are you so keen to pay ransom to the bandits?" next="237"></option>
+		<option optionid="2" optiontext="Okay, Azzar." next="239"></option>
+		<option optionid="3" optiontext="Okay, goodbye." next="0"></option>
+	</node>
+	<node id="237" npcName="Azzar Kheyn" anim="1" text="Because it will restore the town's trade back to normal again - the very trade which provides me with significant amount of coin. Not that I'd expect someone like you to understand." posx="490" posy="426">
+		<option optionid="1" optiontext="You really believe that?" next="238"></option>
+		<option optionid="2" optiontext="So who are you?" next="236"></option>
+		<option optionid="3" optiontext="Okay, goodbye." next="0"></option>
+	</node>
+	<node id="238" npcName="Azzar Kheyn" anim="1" text="Do you really believe that I would stoop so low as to argue about it with some commoner? I think not." posx="1080" posy="307">
+		<option optionid="1" optiontext="So who are you?" next="236"></option>
+		<option optionid="2" optiontext="Whatever, goodbye." next="0"></option>
+	</node>
+	<node id="239" npcName="Azzar Kheyn" anim="1" text="Typical peasant rabble. I believe we have nothing else to discuss." posx="485" posy="43">
+		<option optionid="1" optiontext="Leave." next="0"></option>
+	</node>
+
+	<node id="240" npcName="Azzar Kheyn" switchtalker="249" lookAtNpc="34" anim="1" text="That meddling little brat needs to be put on a leash or I'll...!" posx="15" posy="42">
+		<option optionid="1" optiontext="" next="241"></option>
+	</node>
+	<node id="241" npcName="Mayor Stonefort" switchtalker="34" lookAtNpc="249" anim="1" text="Now, now, master Kheyn! I won't hear a bad word against Sasha. I've spoken to her many times about this matter, but she's a headstrong girl. I'll talk to her again, but a little bit more firmly this time." posx="425" posy="42">
+		<option optionid="1" optiontext="" next="242"></option>
+	</node>
+	<node id="242" npcName="Azzar Kheyn" switchtalker="249" lookAtNpc="34" anim="1" text="You'll... a little more firmly...? I can't..." posx="835" posy="43">
+		<option optionid="1" optiontext="" next="243"></option>
+	</node>
+	<node id="243" npcName="Mayor Stonefort" switchtalker="34" anim="1" text="Thank you for bringing this to my attention, stranger. Please, I would ask that you do not encourage my daughter's fancies any further." posx="1240" posy="45">
+		<option optionid="1" optiontext="I'll be going then." next="0"></option>
+	</node>
+
+
+
+	<node id="251" npcName="Deputy Rieler" anim="1" text="Halt! State your business, stranger. This is the Haywind Militia Camp. Are you here to join us or seeking information?" posx="0" posy="213">
+		<option optionid="1" optiontext="I'm interested in joining the militia." next="252"></option>
+		<option optionid="2" optiontext="Tell me more about the camp and its purpose." next="253"></option>
+		<option optionid="3" optiontext="I must be going." next="0"></option>
+	</node>
+	<node id="252" npcName="Deputy Rieler" anim="1" text="You wish to join the militia? That's good to hear. Before you do, know that we face a formidable foe. The bandit horde to the west has been terrorizing nearby settlements. To join, speak with Captain Varian. He'll oversee your training and initiation." posx="460" posy="27">
+		<option optionid="1" optiontext="Thank you, I'll speak to Captain Varian right away." next="0" actions="UpdateQuest=85-1"></option>
+	</node>
+	<node id="253" npcName="Deputy Rieler" anim="1" text="The Haywind Militia Camp is a bastion of hope against the bandit horde that plagues our lands. Our goal is to protect the innocent and maintain peace in this region. We train diligently to be ready for any threat that may arise. If you're interested in joining our ranks, I suggest speaking with Captain Varian. He can provide more comprehensive details about the camp's operations and answer any questions you may have." posx="676" posy="340">
+		<option optionid="1" optiontext="Thank you for the information. I might consider joining in the future." checks="Quest=85-0-0" next="0"></option>
+		<option optionid="2" optiontext="Actually, I am interested in joining." checks="Quest=85-0-0" next="252"></option>
+		<option optionid="1" optiontext="Thank you for the information." checks="Quest=85-1-999" next="0"></option>
+	</node>
+
+	<node id="276" npcName="Deputy Rieler" anim="1" text="Your decision to join the Haywind Militia is commendable." posx="0" posy="213">
+		<option optionid="1" optiontext="Tell me more about the camp and its purpose." next="253"></option>
+		<option optionid="2" optiontext="I must be going." next="0"></option>
+		<option optionid="3" optiontext="Can you remind me of what I'm supposed to do again?" next="279"></option>
+	</node>
+	<node id="279" npcName="Deputy Rieler" anim="1" text="Speak with Captain Varian. He can provide more comprehensive details about the camp's operations and answer any questions you may have." posx="858" posy="470">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+
+	<node id="301" npcName="Deputy Rieler" anim="1" text="Your decision to join the Haywind Militia is commendable. How goes your training?" posx="0" posy="-23">
+		<option optionid="1" optiontext="I've completed my training." next="305"></option>
+		<option optionid="2" optiontext="Tell me more about the camp and its purpose." next="253"></option>
+		<option optionid="3" optiontext="I must be going." next="0"></option>
+	</node>
+	<node id="305" npcName="Deputy Rieler" anim="1" text="Very good. Your dedication and hard work have not gone unnoticed. I have no doubt that you'll be a valuable asset to the Haywind Militia. Now, there's a task that requires your immediate attention. We have a dangerous foreign bandit named Nyls Yellen causing havoc in the nearby villages. We need someone with your skills to track him down and neutralize him. Will you accept this mission?" posx="583" posy="33">
+		<option optionid="1" optiontext="Absolutely, I'll do my best to capture Nyls Yellen." next="307"></option>
+		<option optionid="2" optiontext="I'm not sure if I'm up for such a dangerous task." next="309"></option>
+	</node>
+	<node id="309" npcName="Deputy Rieler" anim="1" text="I understand your hesitation, but we wouldn't ask if we didn't believe in your capabilities. Take some time to think it over, but remember that the bandit's threat won't wait. If you change your mind, let me know, and the task will be yours." posx="574" posy="444">
+		<option optionid="1" optiontext="You're right. I'll take on the task and do my best." next="307"></option>
+		<option optionid="2" optiontext="I still need more time to decide." next="0"></option>
+	</node>
+	<node id="307" npcName="Deputy Rieler" anim="1" text="Very good! Nyls Yellen was last seen heading west towards the abandoned mill. Be cautious, as he's known to be cunning and skilled in combat. Do whatever is necessary to neutralize the threat he poses. Bring back his blade as proof of his demise." posx="1159" posy="300">
+		<option optionid="1" optiontext="I'll track him down." next="0" actions="UpdateQuest=85-4"></option>
+	</node>
+
+	<node id="401" npcName="Deputy Rieler" anim="1" text="Good to see you back. How's the hunt for Nyls Yellen going?" posx="0" posy="276">
+		<option optionid="1" optiontext="I'm making progress, but I could use a reminder. What was I supposed to do again?" next="402"></option>
+		<option optionid="2" optiontext="Tell me more about the camp and its purpose." next="253"></option>
+		<option optionid="3" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="402" npcName="Deputy Rieler" anim="1" text="Nyls Yellen was last seen heading west towards the abandoned mill. Be cautious, as he's known to be cunning and skilled in combat. Do whatever is necessary to neutralize the threat he poses. Bring back his blade as proof of his demise." posx="475" posy="421">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+
+	
+	<node id="426" npcName="Deputy Rieler" anim="1" text="Good to see you back. How's the hunt for Nyls Yellen going?" posx="0" posy="290">
+		<option optionid="1" optiontext="I'm making progress, but I could use a reminder. What was I supposed to do again?" next="427" checks="!HasItem=915"></option>
+		<option optionid="2" optiontext="It is done. &lt;color=#9C8C77&gt;*Present the blade.*&lt;/color&gt;" next="527" checks="HasItem=915-1" icon="Quest"></option>
+		<option optionid="3" optiontext="Tell me more about the camp and its purpose." next="253"></option>
+		<option optionid="4" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="427" npcName="Deputy Rieler" anim="1" text="Nyls Yellen was last seen west from here. Bring back his blade as proof of his demise." posx="536" posy="276">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="527" npcName="Deputy Rieler" anim="1" text="Your bravery and dedication to our cause are commendable. Nyls Yellen was a menace to our community, and your actions have made our region safer. You have proven yourself a true member of the Haywind Militia." posx="554" posy="590">
+		<option optionid="1" optiontext="" next="528"></option>
+	</node>
+	<node id="528" npcName="Deputy Rieler" anim="1" text="As for Nyls Yellen's blade, you can keep it. We have no use for it." itemIcon="915" posx="554" posy="590">
+		<option optionid="1" optiontext="Thank you, Deputy Rieler. I'm proud to have served." actions="UpdateQuest=85-999" next="0"></option>
+	</node>
+
+
+	<node id="550" npcName="Sasha Stonefort" anim="1" text="I could hear every word they told you, can you believe those two?! Ugh, my father is such a fool!" posx="14" posy="9">
+		<option optionid="1" optiontext="And you are?" next="551" icon="Quest"></option>
+	</node>
+	<node id="551" npcName="Sasha Stonefort" anim="1" text="I'm Sasha, the mayor's daughter. Look, there's clearly something sinister going on. I've been trying to tell my father we need to get to the bottom of it, but he prefers burying his head in the sand!" posx="421" posy="11">
+		<option optionid="1" optiontext="" next="552"></option>
+	</node>
+	<node id="552" npcName="Sasha Stonefort" anim="1" text="Instead he'd rather listen to the advice of that rat of a merchant, Azzar. I do not like him... he strikes me as someone who's only interested in lining his own pockets. He's not even from our city, he doesn't have its best interests at heart!" posx="831" posy="12">
+		<option optionid="1" optiontext="Rewind a bit, what do you mean there's something sinister going on?" next="553" icon="Quest"></option>
+		<option optionid="2" optiontext="So why does Azzar have the ear of your father?" next="559"></option>
+		<option optionid="3" optiontext="It's really not my business, I should get going." next="560" icon="LeadingExit"></option>
+	</node>
+	<node id="553" npcName="Sasha Stonefort" anim="1" text="Just think about it. A few bandits are always to be expected, but when several gangs unite into a horde, practically laying siege on our lands...? They just wouldn't do that on their own! Someone's been organizing them and we need to figure out who." posx="1242" posy="14">
+		<option optionid="1" optiontext="So then, I assume you have a plan?" next="554" icon="Quest"></option>
+		<option optionid="2" optiontext="It's really not my business, I should get going." next="560" icon="LeadingExit"></option>
+	</node>
+	<node id="554" npcName="Sasha Stonefort" anim="1" text="Oh, I've been engaged in some intrigue... &lt;color=#9C8C77&gt;*She giggles excitedly.*&lt;/color&gt; So, I was asking questions around the tavern and I met this guy Bren. Classic tough guy, a bit of a thug really, and so intent on impressing me I think I managed to wrap him around my finger." posx="1652" posy="16">
+		<option optionid="1" optiontext="" next="555"></option>
+	</node>
+	<node id="555" npcName="Sasha Stonefort" anim="1" text="Anyway, since he hangs out a lot with other lowlife types, I thought he might've heard something, or at least knows some guy who knows some guy. I set up a 'date' with him, but he wants to meet me alone at the old quarry. That's a rough place, even I know that... so I need someone like you to go in my place." posx="2061" posy="16">
+		<option optionid="1" optiontext="The old quarry?" next="556"></option>
+		<option optionid="2" optiontext="Describe Bren a bit more, how would I recognize him?" next="557"></option>
+		<option optionid="3" optiontext="Okay... but he's expecting you, what will I say to him?" next="558" icon="Quest"></option>
+	</node>
+	<node id="556" npcName="Sasha Stonefort" anim="1" text="I don't think anybody's actually mined anything out of it in... oh, I don't know, I'm not that old you know! Since then it's kind of become a shelter for rough types and those with nowhere else to go. You'll find it south, at the end of the city towards the mountain." posx="2475" posy="15">
+		<option optionid="1" optiontext="Describe Bren a bit more, how would I recognize him?" next="557"></option>
+		<option optionid="2" optiontext="One last thing... he's expecting you, so what will I say to him?" next="558" icon="Quest"></option>
+	</node>
+	<node id="557" npcName="Sasha Stonefort" anim="1" text="He's a young guy, fairly handsome, very intense looking you know? Oh - he was wearing a distinct red cloak! I don't think there's anything to fear from him really, he's probably one of those guys who acts a bit tough on the outside, but has a heart of gold within!" posx="2884" posy="16">
+		<option optionid="1" optiontext="What's the old quarry?" next="556"></option>
+		<option optionid="2" optiontext="Uhhuh... he's expecting you, so what will I say to him?" next="558" icon="Quest"></option>
+	</node>
+	<node id="558" npcName="Sasha Stonefort" anim="1" text="Um, oh... I hadn't really thought that far. Hmm, well... Tell him that I hate it here and want to elope with him. But I'm really concerned about dangers on the road, I need to be assured he can keep me safe... so I need to know what he knows about the bandits in the area...?" posx="2405" posy="604">
+		<option optionid="1" optiontext="Sounds flimsy, better hope he's not too bright..." next="0" actions="UpdateQuest=53-1"></option>
+	</node>
+	<node id="559" npcName="Sasha Stonefort" anim="1" text="I think he's enticed my father with stories of wealth he's generated in faraway Vhosphoran Oases, and convinced him that the future prosperity of our city lies in the hands of men such as himself. I think my father's being naive and greedy... How do we even know there's any truth to the man's stories? I bet he's nothing but a swindler!" posx="1247" posy="408">
+		<option optionid="1" optiontext="Rewind a bit, what do you mean there's something sinister going on?" next="553" icon="Quest"></option>
+		<option optionid="2" optiontext="It's really not my business, I should get going." next="560" icon="LeadingExit"></option>
+	</node>
+	<node id="560" npcName="Sasha Stonefort" anim="1" text="Typical! Nobody wants to take on any responsibility around here! I could make it worth your while, you know. Anyway, I'll be here if you change your mind." posx="609" posy="606">
+		<option optionid="1" optiontext="Leave." next="0" actions="SetVar=MaraudersQ53DialogueController-2"></option>
+	</node>
+
+	
+	<node id="565" npcName="Sasha Stonefort" anim="1" text="Oh, it's you again. Please tell me your curiosity got the better of you? I don't know who else to turn to, but somebody must do something about those bandits preying on our countryside!" posx="11" posy="907">
+		<option optionid="1" optiontext="Let's start from the beginning, remind who I'm talking to?" next="551" icon="Quest"></option>
+		<option optionid="2" optiontext="I don't think I should meddle..." next="0"></option>
+	</node>
+
+
+	<node id="570" npcName="Sasha Stonefort" anim="1" text="I know it's a long shot, but somebody must know something. Even if it's not Bren, at the least he may be able to point us to someone who does." posx="9" posy="8">
+		<option optionid="1" optiontext="Describe Bren a bit more, how will I recognize him?" next="571"></option>
+		<option optionid="2" optiontext="Tell me about the old quarry, where I'm supposed to meet him?" next="573"></option>
+		<option optionid="3" optiontext="About Azzar Kheyn, why does he have the ear of your father?" next="574"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="571" npcName="Sasha Stonefort" anim="1" text="He's a young guy, fairly handsome, very intense looking you know? Oh - he was wearing a distinct red cloak! I don't think there's anything to fear from him really, he's probably one of those guys who acts a bit tough on the outside, but has a heart of gold within!" posx="418" posy="11">
+		<option optionid="1" optiontext="Uhhuh... he's expecting you, what do I tell him?" next="572"></option>
+		<option optionid="2" optiontext="Tell me about the old quarry, where I'm supposed to meet him?" next="573"></option>
+		<option optionid="3" optiontext="About Azzar Kheyn, why does he have the ear of your father?" next="574"></option>
+		<option optionid="4" optiontext="Uhhuh..." next="0"></option>
+	</node>
+	<node id="572" npcName="Sasha Stonefort" anim="1" text="Well, umm... Tell him that I hate it here and want to elope with him. But I'm really concerned about dangers on the road, I need to be assured he can keep me safe... so I need to know what he knows about the bandits in the area...?" posx="825" posy="12">
+		<option optionid="1" optiontext="Tell me about the old quarry, where I'm supposed to meet him?" next="573"></option>
+		<option optionid="2" optiontext="About Azzar Kheyn, why does he have the ear of your father?" next="574"></option>
+		<option optionid="3" optiontext="Sounds flimsy, better hope he's not too bright..." next="0"></option>
+	</node>
+	<node id="573" npcName="Sasha Stonefort" anim="1" text="I don't think anybody's actually mined anything out of it in... oh, I don't know, I'm not that old you know! Since then it's kind of become a shelter for rough types and those with nowhere else to go. You'll find it south, at the end of the city towards the mountain." posx="588" posy="590">
+		<option optionid="1" optiontext="Describe Bren a bit more, how will I recognize him?" next="571"></option>
+		<option optionid="2" optiontext="About Azzar Kheyn, why does he have the ear of your father?" next="574"></option>
+		<option optionid="3" optiontext="Right." next="0"></option>
+	</node>
+	<node id="574" npcName="Sasha Stonefort" anim="1" text="I think he's enticed my father with stories of wealth he's generated in faraway Vhosphoran Oases, and convinced him that the future prosperity of our city lies in the hands of men such as himself. I think my father's being naive and greedy... How do we even know there's any truth to the man's stories? I bet he's nothing but a swindler!" posx="1208" posy="606">
+		<option optionid="1" optiontext="Describe Bren a bit more, how will I recognize him?" next="571"></option>
+		<option optionid="2" optiontext="Tell me about the old quarry, where I'm supposed to meet him?" next="573"></option>
+		<option optionid="3" optiontext="Right." next="0"></option>
+	</node>
+
+
+	<node id="580" npcName="Bren Atrik" anim="1" text="Do I know you?" posx="13" posy="9">
+		<option optionid="1" optiontext="Sasha sent me." next="582" checks="Quest=53-1-1" icon="Quest"></option>
+		<option optionid="2" optiontext="No." next="581" icon="LeadingExit"></option>
+	</node>
+	<node id="581" npcName="Bren Atrik" anim="1" text="Didn't think so." posx="480" posy="389">
+		<option optionid="1" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="582" npcName="Bren Atrik" anim="1" text="Really? She was supposed to come by herself - alone. I gave her specific instructions." posx="429" posy="11">
+		<option optionid="1" optiontext="Yeah, couldn't leave the house without raising suspicions, sadly..." next="583" icon="Quest"></option>
+	</node>
+	<node id="583" npcName="Bren Atrik" anim="1" text="Is that so?\n\n&lt;color=#9C8C77&gt;*Bren stares at you with a face devoid of expression. The whole situation is beginning to feel very wrong...*&lt;/color&gt;" posx="837" posy="12">
+		<option optionid="1" optiontext="She, um... wants you to know she's in love and wants to elope with you, but..." next="584" icon="Quest"></option>
+	</node>
+	<node id="584" npcName="Bren Atrik" anim="1" text="That's sweet, such a sweet girl, isn't she? It really is a shame she didn't show up like I asked her to, but that's okay. I have a message to send back to her - I'll whisper it in your ear, okay?" posx="1247" posy="13">
+		<option optionid="1" optiontext="Oh..." next="0" actions="Cinematic=46" icon="Quest"></option>
+	</node>
+
+
+	<node id="600" npcName="Sasha Stonefort" anim="1" text="You're back, have you been to the quarry then? What did Bren say?" posx="11" posy="6">
+		<option optionid="1" optiontext="Bren was disappointed you didn't show, as he was in fact hoping to kill you..." next="601" checks="HasItem=484-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Leave." next="0" checks="HasItem=484-1"></option>
+		<option optionid="3" optiontext="Hold on, there was a letter he dropped..." next="0" checks="!HasItem=484-1"></option>
+	</node>
+	<node id="601" npcName="Sasha Stonefort" anim="1" text="Oh my! What... what happened? Were you able to learn anything? Who was he, or why did he want me dead?" posx="423" posy="8">
+		<option optionid="1" optiontext="I was forced to strike him down, but he was carrying this letter... &lt;color=#9C8C77&gt;*You hand over the shady letter.*&lt;/color&gt;" next="602" icon="Quest"></option>
+	</node>
+	<node id="602" npcName="Sasha Stonefort" anim="1" text="&lt;color=#9C8C77&gt;*Sasha's eyes scan over the letter multiple times, then she lets out a sharp gasp.*&lt;/color&gt;\n\nBut do you know what this means? Whoever they are, they don't want me prodding around asking questions. It means I was right - there is a conspiracy!" posx="831" posy="8">
+		<option optionid="1" optiontext="" next="603"></option>
+	</node>
+	<node id="603" npcName="Sasha Stonefort" anim="1" text="The letter is signed by a 'Lord Blackshield', do you know of such a man? During his meetings I've heard my father mention some bandit leaders by name... but never a Lord Blackshield... hmm..." posx="1239" posy="9">
+		<option optionid="1" optiontext="The marauders have many leaders?" next="604"></option>
+		<option optionid="2" optiontext="Any idea who would know?" next="606" icon="Quest"></option>
+	</node>
+	<node id="604" npcName="Sasha Stonefort" anim="1" text="Yes, I've heard mention of names such as Tyros the Horrifying, Evelyn the Bloodletter, Serrane the Executioner, Garvin the Deceitful, and some other smaller leaders. There's no doubt that the marauders attacking the countryside comprise of numerous different gangs. But there must be someone who brought them together in a unified goal!" posx="1646" posy="9">
+		<option optionid="1" optiontext="You think this 'Lord Blackshield' could secretly be pulling the strings?" next="605"></option>
+		<option optionid="2" optiontext="Any idea who would know?" next="606" icon="Quest"></option>
+	</node>
+	<node id="605" npcName="Sasha Stonefort" anim="1" text="It's possible, but we need to find more information on who he is before we can be sure. And more importantly, I want to know why they're attacking our city!" posx="2053" posy="10">
+		<option optionid="1" optiontext="The marauders have many leaders?" next="604"></option>
+		<option optionid="2" optiontext="Any idea who would know?" next="606" icon="Quest"></option>
+	</node>
+	<node id="606" npcName="Sasha Stonefort" anim="1" text="Oh, I'm not sure... I don't really know about these things, and my one attempt at establishing an underworld contact did nothing but put me at risk of getting killed. We need help, but my father just won't listen..." posx="907" posy="486">
+		<option optionid="1" optiontext="" next="607"></option>
+	</node>
+	<node id="607" npcName="Sasha Stonefort" anim="1" text="But there is someone who has tried speaking sense to my father - the old veteran Zathe! He went off to investigate a disturbance within the cemeteries of Spruce Shade woods, I hope he's returned by now..." posx="1317" posy="487">
+		<option optionid="1" optiontext="Ah yes, I may have run into him once already." next="608" icon="Quest"></option>
+	</node>
+	<node id="608" npcName="Sasha Stonefort" anim="1" text="He's wise and experienced, and I've always shared his opinions about the bandit menace. When he comes back from assignments, he usually heads to the Singing Sparrow Tavern for a mug of ale, south within the city. Please look for him there and show him the letter - he must know what to do!" posx="1725" posy="488">
+		<option optionid="1" optiontext="Very well." next="0" actions="UpdateQuest=53-4"></option>
+	</node>
+
+
+	<node id="620" npcName="Sasha Stonefort" anim="1" text="The old veteran Zathe has always been one to try and talk sense into my father. He's wise and experienced, and I've always shared his opinions about the bandit menace. He must know what to do about that letter, I only hope he's returned from his assignment in Spruce Shade Rest..." posx="0" posy="9">
+		<option optionid="1" optiontext="Where did you say I should look for him again?" next="621"></option>
+		<option optionid="2" optiontext="What do you know about who the bandit leaders are?" next="622"></option>
+		<option optionid="3" optiontext="What do you make of your father's friend, Azzar?" next="624"></option>
+		<option optionid="4" optiontext="Did I leave the Shady Letter with you...?" next="625" checks="!ItemExistsGlobal=484" itemIcon="484"></option>
+		<option optionid="5" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="621" npcName="Sasha Stonefort" anim="1" text="Whenever he makes it back from assignments, he has a habit of heading to the Singing Sparrow Tavern for a mug of ale, south within the city. Please look for him there and show him the letter - he must know what to do." posx="409" posy="8">
+		<option optionid="1" optiontext="What do you know about who the bandit leaders are?" next="622"></option>
+		<option optionid="2" optiontext="What do you make of your father's friend, Azzar?" next="624"></option>
+		<option optionid="3" optiontext="Very well." next="0"></option>
+	</node>
+	<node id="622" npcName="Sasha Stonefort" anim="1" text="While listening in on my father's council, I've heard mention of names such as Tyros the Horrifying, Evelyn the Bloodletter, Serrane the Executioner, Garvin the Deceitful, and some other smaller leaders. There's no doubt that the marauders attacking the countryside comprise of numerous different gangs. But there must be someone who brought them together in a unified goal!" posx="446" posy="416">
+		<option optionid="1" optiontext="You think this 'Lord Blackshield' from the letter could secretly be pulling the strings?" next="623"></option>
+		<option optionid="2" optiontext="What do you make of your father's friend, Azzar?" next="624"></option>
+		<option optionid="3" optiontext="Where did you say I should look for Zathe again?" next="621"></option>
+		<option optionid="4" optiontext="You may be right." next="0"></option>
+	</node>
+	<node id="623" npcName="Sasha Stonefort" anim="1" text="It's possible, but we need to find more information on who he is before we can be sure. And more importantly, I want to know why they're attacking our city!" posx="855" posy="417">
+		<option optionid="1" optiontext="What do you make of your father's friend, Azzar?" next="624"></option>
+		<option optionid="2" optiontext="Where did you say I should look for Zathe again?" next="621"></option>
+		<option optionid="3" optiontext="Curious, indeed." next="0"></option>
+	</node>
+	<node id="624" npcName="Sasha Stonefort" anim="1" text="I don't trust him. I think he's enticed my father with stories of wealth he's generated in faraway Vhosphoran Oases, and convinced him that the future prosperity of our city lies in the hands of men such as himself. I think my father's being naive and greedy... How do we even know there's any truth to the man's stories? I bet he's nothing but a swindler!" posx="907" posy="3">
+		<option optionid="1" optiontext="What do you know about who the bandit leaders are?" next="622"></option>
+		<option optionid="2" optiontext="Where did you say I should look for Zathe again?" next="621"></option>
+		<option optionid="3" optiontext="I see." next="0"></option>
+	</node>
+	<node id="625" npcName="Sasha Stonefort" anim="1" itemIcon="484" text="Oh, yes! Here you are, please show it to Zathe. Hopefully he'll have returned from Spruce Shade's Rest by now. If so, you're likely to find him at the Singing Sparrow Tavern, south within the city." posx="1506" posy="308">
+		<option optionid="1" optiontext="I see." next="0" actions="AddItems=484-1-true" icon="Loot"></option>
+	</node>
+
+
+	<node id="630" npcName="Zathe Vraine" anim="1" text="We meet again, stranger from the crypts. Somehow in my ageing bones I feel that it is not by coincidence..." posx="0" posy="6">
+		<option optionid="1" optiontext="I have been assisting the Mayor's daughter in investigating bandit activity, we could use your help..." next="632" icon="Quest"></option>
+		<option optionid="2" optiontext="Were you able to clear the Spruce Shade crypts?" next="631"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="631" npcName="Zathe Vraine" anim="1" text="Alas, no. It's far too much of a task for a single soldier alone, and I could almost swear I cut down some of the undead only for them to rise back up again. We could really use a few Dreamguard from the monasteries of Melloria around here, experts in undead matters." posx="409" posy="338">
+		<option optionid="1" optiontext="I have been assisting the Mayor's daughter in investigating bandit activity, we could use your help..." next="632" icon="Quest"></option>
+		<option optionid="2" optiontext="Indeed." next="0"></option>
+	</node>
+	<node id="632" npcName="Zathe Vraine" anim="1" text="I'm not sure I'll want to hear this... Sasha has a good head on her shoulders, her frustration with her father's inability to tackle the bandit menace is understandable. But she is also quite young and naive. I fear one of these days she'll land herself in trouble." posx="422" posy="6">
+		<option optionid="1" optiontext="She already has, take a look at this letter." next="633" checks="HasItem=484-1" itemIcon="484" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Hold on, I had a letter to show you..." next="0" checks="!HasItem=484-1"></option>
+	</node>
+	<node id="633" npcName="Zathe Vraine" anim="1" text="&lt;color=#9C8C77&gt;*You hand over the letter you took from the thug Bren. Zathe reads it over while muttering to himself.*&lt;/color&gt;\n\nSo we do have something of a bandit conspiracy on our hands. It was always my advice to the mayor to use every resource available to fight and investigate the marauders in Haywind, but he lacks the resolve, preferring the counsel of that wily merchant Azzar Kheyn." posx="828" posy="7">
+		<option optionid="1" optiontext="The letter's signed by a 'Lord Blackshield', any idea who that might be?" next="634" icon="Quest"></option>
+	</node>
+	<node id="634" npcName="Zathe Vraine" anim="1" text="I've come across many bandit leaders in our dealings with them, but never has Lord Blackshield been mentioned. I've always suspected someone must be organizing them from behind the lines though. We need someone with information on the underworld, while being confident they're not Lord Blackshield's lackey. And we need to go behind the mayor's back..." posx="1237" posy="8">
+		<option optionid="1" optiontext="" next="635"></option>
+	</node>
+	<node id="635" npcName="Zathe Vraine" anim="1" text="I may not like it, but it's beyond time somebody acted for the good of our city. There's a man I know, a con artist and a swindler, who knows every criminal element in these lands and beyond, who only works for himself, and who's currently locked up in the dungeons of Haywind Fort. If you break Sly Jonne out, I believe he will help us." posx="1644" posy="10">
+		<option optionid="1" optiontext="You're sure he can be trusted?" next="636"></option>
+		<option optionid="2" optiontext="Break him out? Sounds radical, can't you just talk to him, or ask him to be released?" next="637"></option>
+		<option optionid="3" optiontext="I assume you have a plan for doing this?" next="638" icon="Quest"></option>
+	</node>
+	<node id="636" npcName="Zathe Vraine" anim="1" text="Heavens no, he's not trustworthy at all. Like I said, Sly Jonne is a con artist and a swindler. He and I have a long history in this city. In fact, I myself was the one who locked him up in the fort dungeons. With that said, I know him - he believes in honor among thieves, stealing from the rich and that sort of stuff. We need a criminal who wouldn't associate with the bandit conspiracy, and I'm confident he's our man." posx="2050" posy="10">
+		<option optionid="1" optiontext="But to break him out? Sounds radical, can't you just talk to him, or ask him to be released?" next="637"></option>
+		<option optionid="2" optiontext="I assume you have a plan for doing this?" next="638" icon="Quest"></option>
+	</node>
+	<node id="637" npcName="Zathe Vraine" anim="1" text="The Marshal of Haywind's garrison answers only to orders coming from the mayor, and we're acting behind the mayor's back, remember? Sly Jonne won't help us unless we offer something to him first. Breaking him out should be an adequate olive branch." posx="2457" posy="10">
+		<option optionid="1" optiontext="And you're sure this man can be trusted?" next="636"></option>
+		<option optionid="2" optiontext="I assume you have a plan for doing this?" next="638" icon="Quest"></option>
+	</node>
+	<node id="638" npcName="Zathe Vraine" anim="1" text="I do know the fort well. Breaking a prisoner out shouldn't be too difficult, provided certain preparations are made. Firstly, you'll need a guard's uniform to enter the dungeons without raising questions. As for the breakout itself, you'll need to take with you certain supplies..." posx="2112" posy="609">
+		<option optionid="1" optiontext="How will I acquire a guard's uniform?" next="639"></option>
+		<option optionid="2" optiontext="What supplies will I need exactly?" next="640"></option>
+		<option optionid="3" optiontext="Just write it down on a note and I'll figure it out." next="641" icon="Quest"></option>
+	</node>
+	<node id="639" npcName="Zathe Vraine" anim="1" text="One of the guards recently took quite ill and hasn't yet to my knowledge recovered. If you were to appear with the guard's uniform and told them you're his substitute, they might let you inside the fort prison. You'll have to acquire Belford's uniform though, some manner of discretion may be required there... His home is nestled between the cemetery and the gate to the north city." posx="2519" posy="609">
+		<option optionid="1" optiontext="What about the supplies?" next="640"></option>
+		<option optionid="2" optiontext="Just write it down on a note and I'll figure it out." next="641" icon="Quest"></option>
+	</node>
+	<node id="640" npcName="Zathe Vraine" anim="1" text="You'll need a way to knock the guards out without resorting to violence. I suggest plying them with beer - take plenty with you &lt;color=teal&gt;(6)&lt;/color&gt; - I'm sure Madam Barnsmill here will oblige. You'll also need a pickaxe to break through a weak spot in the walls, which will lead you to a sewage tunnel. A smart man would also pack a torch, it's bound to be blacker than night down there otherwise..." posx="2931" posy="609">
+		<option optionid="1" optiontext="How will I acquire a guard's uniform?" next="639"></option>
+		<option optionid="2" optiontext="Just write it down on a note and I'll figure it out." next="641" icon="Quest"></option>
+	</node>
+	<node id="641" npcName="Zathe Vraine" anim="1" text="&lt;color=#9C8C77&gt;*Zathe writes down his instructions for breaking Sly Jonne out of Haywind's prison and hands his note over to you.*&lt;/color&gt;\n\nOnce he's out, tell him to sneak into the Town Hall to convene with us. Tell him we'll pardon his sentence in exchange for his help." posx="3017" posy="1084">
+		<option optionid="1" optiontext="Um... you're sure you can promise that?" next="642"></option>
+		<option optionid="2" optiontext="Very well." next="0" actions="UpdateQuest=53-999|110-1,RemoveItems=484-1,AddItems=1265-1-true"></option>
+	</node>
+	<node id="642" npcName="Zathe Vraine" anim="1" text="That'll be up to the mayor, in truth... I'm counting on having him back to our side by the time all this is over." posx="3429" posy="1086">
+		<option optionid="1" optiontext="I see..." next="0" actions="UpdateQuest=53-999|110-1,RemoveItems=484-1,AddItems=1265-1-true"></option>
+	</node>
+
+
+	<node id="650" npcName="Zathe Vraine" anim="1" text="I dislike our need to sneak behind the mayor's back, but Sasha is right. It's about time somebody acted for the good of our city. I'm glad to have your aid in this, my mysterious friend from the crypts." posx="17" posy="10">
+		<option optionid="1" optiontext="Let's go over what I need for the prison break again." next="651"></option>
+		<option optionid="2" optiontext="Were you ever able to clear the Spruce Shade crypts, by the way?" next="654"></option>
+		<option optionid="3" optiontext="I could use another note on the supplies I'll need for the prison break." next="0" itemIcon="1265" checks="!HasItem=1265-1" actions="AddItems=1265-1-true,NpcChat=*Zathe hands you a note with instructions.*"></option>
+		<option optionid="4" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="651" npcName="Zathe Vraine" anim="1" text="Sly Jonne is a con artist and a swindler. He and I have a long history in this city. In fact, I myself was the one who locked him up in the fort dungeons. With that said, I know him - he believes in honor among thieves, stealing from the rich and that sort of stuff. We need a criminal who wouldn't associate with the bandit conspiracy, and I'm confident he's our man." posx="429" posy="10">
+		<option optionid="1" optiontext="How will I acquire a guard's uniform to enter the prison?" next="652"></option>
+		<option optionid="2" optiontext="What supplies will I need to break him out?" next="653"></option>
+		<option optionid="3" optiontext="Let's talk about something else." next="655" icon="LeadingExit"></option>
+	</node>
+	<node id="652" npcName="Zathe Vraine" anim="1" text="One of the guards recently took quite ill and hasn't yet to my knowledge recovered. If you were to appear with the guard's uniform and told them you're his substitute, they might let you inside the fort prison. You'll have to acquire Belford's uniform though, some manner of discretion may be required there... His home is nestled between the cemetery and the gate to the north city." posx="839" posy="12">
+		<option optionid="1" optiontext="What supplies will I need to break him out?" next="653"></option>
+		<option optionid="2" optiontext="Let's talk about something else." next="655" icon="LeadingExit"></option>
+	</node>
+	<node id="653" npcName="Zathe Vraine" anim="1" text="You'll need a way to knock the guards out without resorting to violence. I suggest plying them with beer - take plenty with you &lt;color=teal&gt;(6)&lt;/color&gt; - I'm sure Madam Barnsmill here will oblige. You'll also need a pickaxe to break through a weak spot in the walls, which will lead you to a sewage tunnel. A smart man would also pack a torch, it's bound to be blacker than night down there otherwise..." posx="1248" posy="10">
+		<option optionid="1" optiontext="How will I acquire a guard's uniform to enter the prison?" next="652"></option>
+		<option optionid="2" optiontext="Let's talk about something else." next="655" icon="LeadingExit"></option>
+	</node>
+	<node id="654" npcName="Zathe Vraine" anim="1" text="Alas, no. It's far too much of a task for a single soldier alone, and I could almost swear I cut down some of the undead only for them to rise back up again. We could really use a few Dreamguard from the monasteries of Melloria around here, experts in undead matters." posx="910" posy="370">
+		<option optionid="1" optiontext="Let's go over what I need for the prison break again." next="651"></option>
+		<option optionid="2" optiontext="I could use another note on the supplies I'll need for the prison break." next="0" itemIcon="1265" checks="!HasItem=1265-1" actions="AddItems=1265-1-true,NpcChat=*Zathe hands you a note with instructions.*"></option>
+		<option optionid="3" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="655" npcName="Zathe Vraine" anim="1" text="What would you like to discuss?" posx="12" posy="610">
+		<option optionid="1" optiontext="Let's go over what I need for the prison break again." next="651"></option>
+		<option optionid="2" optiontext="Were you ever able to clear the Spruce Shade crypts, by the way?" next="654"></option>
+		<option optionid="3" optiontext="I could use another note on the supplies I'll need for the prison break." next="0" itemIcon="1265" checks="!HasItem=1265-1" actions="AddItems=1265-1-true,NpcChat=*Zathe hands you a note with instructions.*"></option>
+		<option optionid="4" optiontext="I should go." next="0"></option>
+	</node>
+
+
+
+	<node id="660" npcName="Sly Jonne" anim="1" text="Ah, new face! Over here please, you must listen to me. There's been a dreadful misunderstanding. You see, I shouldn't be here at all! They've got the wrong man, I assure you! But you look like a kind chap, you'll help me, won't you?" posx="13" posy="8">
+		<option optionid="1" optiontext="Sly Jonne, I assume? Zathe sent me." next="661" icon="Quest"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="661" npcName="Sly Jonne" anim="1" text="Oh... I hate it when they call me that, there's nothing sly about me, I assure you. I'd rather describe myself as entrepreneurial! Anyway, I doubt there's anything I'd want to say to Zathe, or in this case his retainers. He's the one who put me in here, you know? I'm quite upset about that." posx="425" posy="8">
+		<option optionid="1" optiontext="What did you do to earn your sentence?" next="665"></option>
+		<option optionid="2" optiontext="And now, as fate would have it, he's sent me to break you out." next="662" icon="Quest"></option>
+	</node>
+	<node id="662" npcName="Sly Jonne" anim="1" text="Oh my... break me out you say? That is interesting. If Zathe's willing to do that, he must desperately want my help with something. Of course, I am a very helpful man... but my help does come at a price. Well, do you have the key?" posx="837" posy="10">
+		<option optionid="1" optiontext="Yes, let's get you out of there." itemIcon="2115" checks="HasItem=2115-1" next="663"></option>
+		<option optionid="2" optiontext="The key...?" next="664" icon="LeadingExit"></option>
+	</node>
+	<node id="663" npcName="Sly Jonne" anim="1" text="Wonderful!" posx="1382" posy="8">
+		<option optionid="1" optiontext="" actions="Cinematic=230,RemoveItems=2115-1" next="0" icon="Quest"></option>
+	</node>
+	<node id="664" npcName="Sly Jonne" anim="1" text="Yes, the key! I'm not sure what you had in mind, but keys would certainly be the easiest, most hassle free way to break me out. I believe they hang behind the sergeant's desk, seldom unattended though. If it was down to me, I'd be looking for a diversion." posx="1508" posy="354">
+		<option optionid="1" optiontext="Yes, well I do in fact have the key." itemIcon="2115" checks="HasItem=2115-1" next="663"></option>
+		<option optionid="2" optiontext="Yes, I'm sure I can come up with something." next="0" actions="SetVar=Q110SlyJonneDlgControl-1"></option>
+	</node>
+	<node id="665" npcName="Sly Jonne" anim="1" text="It was nothing really! An absolute travesty of justice, if you ask me; I'd been selling my usual patch of herbal tonics that promote hair growth, or healthy shiny hair, or something. Just so happened one of my balding customers had a severe allergic reaction... just so happened, he was also a close friend of Zathe's..." posx="482" posy="354">
+		<option optionid="1" optiontext="Hair tonics, really? Where did you get them from?" next="666"></option>
+		<option optionid="2" optiontext="Well, he thinks you've served enough time, and has sent me to break you out." next="662" icon="Quest"></option>
+	</node>
+	<node id="666" npcName="Sly Jonne" anim="1" text="Why, my cousin Slick Eddie from Ratcliffe sourced them for me. Now before you go accusing me of anything, I was absolutely confident those tonics worked. They were made of all natural ingredients too, good for overall health... balancing the humors, that sort of thing, you know?" posx="482" posy="354">
+		<option optionid="1" optiontext="Well, Zathe thinks you've served enough time, and has sent me to break you out." next="662" icon="Quest"></option>
+	</node>
+
+	
+	<node id="670" npcName="Sly Jonne" anim="1" text="I do hope you're serious about getting me out. Or is this some elaborate prank - a game where you swindle the swindler? Well I'll have you know, I don't mind these lodgings! The food is just awful though... Please, you're getting me out, right?" posx="0" posy="7">
+		<option optionid="1" optiontext="Found the key!" itemIcon="2115" checks="HasItem=2115-1" next="672"></option>
+		<option optionid="2" optiontext="What did you do to earn your sentence?" next="671"></option>
+		<option optionid="3" optiontext="Hold on." next="0"></option>
+	</node>
+	<node id="671" npcName="Sly Jonne" anim="1" text="It was nothing really! An absolute travesty of justice, if you ask me; I'd been selling my usual patch of herbal tonics that promote hair growth, or healthy shiny hair, or something. Just so happened one of my balding customers had a severe allergic reaction... just so happened, he was also a close friend of Zathe's..." posx="485" posy="372">
+		<option optionid="1" optiontext="I've found the key." itemIcon="2115" checks="HasItem=2115-1" next="672"></option>
+		<option optionid="2" optiontext="Hair tonics, really? Where did you get them from?" next="673"></option>
+		<option optionid="3" optiontext="Hold on." next="0"></option>
+	</node>
+	<node id="672" npcName="Sly Jonne" anim="1" text="Wonderful!" posx="419" posy="9">
+		<option optionid="1" optiontext="" actions="Cinematic=230,RemoveItems=2115-1" icon="Quest" next="0"></option>
+	</node>
+	<node id="673" npcName="Sly Jonne" anim="1" text="Why, my cousin Slick Eddie from Ratcliffe sourced them for me. Now before you go accusing me of anything, I was absolutely confident those tonics worked. They were made of all natural ingredients too, good for overall health... balancing the humors, that sort of thing, you know?" posx="482" posy="354">
+		<option optionid="1" optiontext="I've found the key." itemIcon="2115" checks="HasItem=2115-1" next="672"></option>
+		<option optionid="3" optiontext="Stay put, I'll be back." next="0"></option>
+	</node>
+
+
+	<node id="680" npcName="Sly Jonne" anim="1" text="I'm free, but what now? I'm guessing a breakout doesn't involve walking out of the front door. Please tell me you came in with a plan...?" posx="0" posy="2">
+		<option optionid="1" optiontext="There's a weak spot somewhere on the floorstones, where we can break through." next="681"></option>
+		<option optionid="2" optiontext="Just hold, I know what I'm doing..." next="0"></option>
+	</node>
+	<node id="681" npcName="Sly Jonne" anim="1" text="You mean to drag me through the sewage pipe that runs beneath the fort, how undignified! Alas, I suppose I have no brighter ideas at hand. Thankfully the guards enjoying their beers are getting ever noisier, I doubt we'd get away with crashing through the floor otherwise. I trust you brought miner's tools, a pickaxe perhaps?" posx="408" posy="3">
+		<option optionid="1" optiontext="I know what I'm doing..." next="0"></option>
+	</node>
+
+
+	<node id="685" npcName="Sly Jonne" anim="1" text="Awfully dark in the tunnel, would be a struggle to crawl through without a torch. And is that the squeking of rats I hear?! Ugh, sewer rats can get absolutely feral around here, trust me I know - I've smuggled my fair share of goods beneath this city." posx="8" posy="8">
+		<option optionid="1" optiontext="So what's the quarrel between you and Zathe?" next="686"></option>
+		<option optionid="2" optiontext="Stick close..." next="0"></option>
+	</node>
+	<node id="686" npcName="Sly Jonne" anim="1" text="Did I not say? He's the one who locked me up in this place. I've known him for a good while too, always thought we had something of an understanding, him and I... shows what I know." posx="417" posy="9">
+		<option optionid="1" optiontext="Remind me, what did you do?" next="687"></option>
+		<option optionid="2" optiontext="Stick close now, I'll lead us out of here." next="0"></option>
+	</node>
+	<node id="687" npcName="Sly Jonne" anim="1" text="It was nothing really! An absolute travesty of justice, if you ask me; I'd been selling my usual patch of herbal tonics that promote hair growth, or healthy shiny hair, or something. Just so happened one of my balding customers had a severe allergic reaction... just so happened, he was also a close friend of Zathe's..." posx="826" posy="10">
+		<option optionid="1" optiontext="Really, where did you get such tonics from?" next="688"></option>
+		<option optionid="2" optiontext="Stick close now, I'll lead us out of here." next="0"></option>
+	</node>
+	<node id="688" npcName="Sly Jonne" anim="1" text="Why, my cousin Slick Eddie from Ratcliffe sourced them for me. Now before you go accusing me of anything, I was absolutely confident those tonics worked. They were made of all natural ingredients too, good for overall health... balancing the humors, that sort of thing, you know?" posx="1237" posy="12">
+		<option optionid="1" optiontext="Stick close now, I'll lead us out of here." next="0"></option>
+	</node>
+
+
+	<node id="690" npcName="Sly Jonne" anim="1" text="Ah, fresh air, finally! Alright, friend, time to thank you for this change in scenery. Alas, now I have half a mind of disappearing into the wind. As far as my feelings are concerned, I don't owe Zathe anything." posx="0" posy="4">
+		<option optionid="1" optiontext="What's the quarrel between you and Zathe?" next="693"></option>
+		<option optionid="2" optiontext="Could be worth your while though, Zathe told me your prior offenses will be pardoned." next="691" icon="Quest"></option>
+	</node>
+	<node id="691" npcName="Sly Jonne" anim="1" text="A full pardon, you say? Hah, I wonder... If that was truly the case, then he wouldn't have had the need to smuggle me out of prison through this little backdoor! You won't convince me by trying to play me for a fool." posx="409" posy="4">
+		<option optionid="1" optiontext="How about a chance to be a hero then...?" next="696"></option>
+		<option optionid="2" optiontext="You're right, Zathe's requesting your help against the wishes of the Mayor." next="697"></option>
+		<option optionid="3" optiontext="If you know Zathe, then you know he's honest - he'll find a way to compensate you." next="698"></option>
+	</node>
+	<node id="692" npcName="Sly Jonne" anim="1" text="Ah, fine I suppose. First, though, I'll find something more appropriate to wear. One thing they don't much seem to care for in prison is personal hygiene. As for Zathe, he better be able to offer something worth my while... Suppose I'll see you at the Town Hall, then." posx="821" posy="5">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=232,UpdateQuest=110-8"></option>
+	</node>
+	<node id="693" npcName="Sly Jonne" anim="1" text="Did I not say? He's the one who locked me up in this place. I've known him for a good while too, always thought we had something of an understanding, him and I... shows what I know." posx="607" posy="607">
+		<option optionid="1" optiontext="Remind me, what did you do?" next="694"></option>
+		<option optionid="2" optiontext="Could be worth your while to hear him out, Zathe told me your prior offenses will be pardoned." next="691" icon="Quest"></option>
+	</node>
+	<node id="694" npcName="Sly Jonne" anim="1" text="It was nothing really! An absolute travesty of justice, if you ask me; I'd been selling my usual patch of herbal tonics that promote hair growth, or healthy shiny hair, or something. Just so happened one of my balding customers had a severe allergic reaction... just so happened, he was also a close friend of Zathe's..." posx="1021" posy="605">
+		<option optionid="1" optiontext="Really, where did you get such tonics from?" next="695"></option>
+		<option optionid="2" optiontext="Could be worth your while to hear him out, Zathe told me your prior offenses will be pardoned." next="691" icon="Quest"></option>
+	</node>
+	<node id="695" npcName="Sly Jonne" anim="1" text="Why, my cousin Slick Eddie from Ratcliffe sourced them for me. Now before you go accusing me of anything, I was absolutely confident those tonics worked. They were made of all natural ingredients too, good for overall health... balancing the humors, that sort of thing, you know?" posx="1433" posy="605">
+		<option optionid="1" optiontext="Could be worth your while to hear him out, Zathe told me your prior offenses will be pardoned." next="691" icon="Quest"></option>
+	</node>
+	<node id="696" npcName="Sly Jonne" anim="1" text="A hero?! What do you take me for?! You're only making this ordeal sound even less enticing to me, if such a thing was possible!" posx="1805" posy="-1">
+		<option optionid="1" optiontext="If you know Zathe, then you know he's honest - he'll find a way to compensate you." next="698"></option>
+		<option optionid="2" optiontext="Well you're right about the breakout, Zathe's in fact requesting your help against the wishes of the Mayor..." next="697"></option>
+	</node>
+	<node id="697" npcName="Sly Jonne" anim="1" text="Halt, you said what? The old soldier's stopped following orders blindly? He's taken a rebellious turn against the Mayor and started doing his own thinking for a change? Now that's something I might actually want to see..." posx="2105" posy="301">
+		<option optionid="1" optiontext="So you'll hear him out then? He's waiting for you at the Town Hall." next="692" icon="Quest"></option>
+	</node>
+	<node id="698" npcName="Sly Jonne" anim="1" text="Ah, well you see that argument might have won me over in the past. I thought I knew the man, but ever since he threw me into that prison cell for practically no good reason at all... I'm just not so sure anymore." posx="2405" posy="604">
+		<option optionid="1" optiontext="How about a chance to be a hero then...?" next="696"></option>
+		<option optionid="2" optiontext="Well you're right about the breakout, Zathe's in fact requesting your help against the wishes of the Mayor..." next="697"></option>
+	</node>
+
+
+
+	<node id="700" npcName="Sasha Stonefort" switchtalker="1498" anim="1" text="Hey, you're back - finally! Zathe brought me up to speed on all the roguery you've been up to. I hope it was worth it; ever since Jonne appeared, these two have mostly been trading insults. Maybe now that you're here, we can turn matters to something sensible." posx="0" posy="5">
+		<option optionid="1" optiontext="" next="701"></option>
+	</node>
+	<node id="701" npcName="Sly Jonne" switchtalker="1497" anim="1" text="You mean to imply our conversation hasn't been sensible thus far? Why, Zathe and I have just been reminiscing about good old days. Nothing more than friendly misunderstandings between us, I'm sure." posx="406" posy="5">
+		<option optionid="1" optiontext="" next="702"></option>
+	</node>
+	<node id="702" npcName="Zathe Vraine" switchtalker="397" lookAtNpc="1497" anim="1" text="No misunderstandings have been had. You're nothing but a scoundrel and there's no use pretending otherwise. We've gone through great trouble to have you here, perhaps it's time we raise discussion as to why." posx="814" posy="7">
+		<option optionid="1" optiontext="Yes, let's cut to the matter at hand - what do you know of Lord Blackshield?" next="703" icon="Quest"></option>
+		<option optionid="2" optiontext="Everyone playing nice?" next="717"></option>
+		<option optionid="3" optiontext="I'll come back later." next="0"></option>
+	</node>
+	<node id="703" npcName="Sly Jonne" switchtalker="1497" anim="1" text="So you've finally come across his name, have you? The Mayor would never have the guts to oppose such a dangerous man, of course he wouldn't... you little heroes are acting on your own accord! The real question is, what can you offer me to turn against the Blackshield?" posx="1223" posy="7">
+		<option optionid="1" optiontext="" next="704"></option>
+	</node>
+	<node id="704" npcName="Sasha Stonefort" switchtalker="1498" lookAtNpc="1497" anim="1" text="Oh, I'll... ask father to reward you with lots of gold for your noble services! Um... just as soon as we've dealt with the bandits... I'm sure he'll see our side of things, once we've dealt a mortal blow to the bandit horde and all..." posx="1629" posy="6">
+		<option optionid="1" optiontext="" next="705"></option>
+	</node>
+	<node id="705" npcName="Zathe Vraine" switchtalker="397" lookAtNpc="1497" anim="1" text="Hrrmph... As for myself, I can promise to do what I can to have your name cleared, your past misdeeds forgiven. But refuse us, and you better make sure I never see your face in this city again! Else I will return you straight back to where we found you, and leave you there to rot." posx="1238" posy="227">
+		<option optionid="1" optiontext="" next="706"></option>
+	</node>
+	<node id="706" npcName="Sly Jonne" switchtalker="1497" lookAtNpc="397" anim="1" text="Zathe, my dear friend, there really is no need to resort to such unpleasantries! I may just as well take you up on your offer, for I have no love for Lord Blackshield myself. Truth be told, I found him quite brutish and troublesome when he first showed up around these parts. The kind who gives us honest criminals a bad name, you understand?" posx="1645" posy="226">
+		<option optionid="1" optiontext="So he's not from around here?" next="707"></option>
+		<option optionid="2" optiontext="What do you think he's after?" next="708"></option>
+		<option optionid="3" optiontext="Just another bandit lord as far as I'm concerned, all we need to know is where to find him." next="709" icon="Quest"></option>
+	</node>
+	<node id="707" npcName="Sly Jonne" anim="1" text="I should think not. I've been running schemes... mean to say, 'trading' in Haywind for all my life, which is quite some while now. Blackshield appeared as though from thin air, with no other name or known past. He started recruiting anyone who'd join his grand campaign to squeeze Haywind dry..." posx="2053" posy="227">
+		<option optionid="1" optiontext="But what is he after?" next="708"></option>
+		<option optionid="2" optiontext="Regardless, what matters most is to find him and stop him." next="709" icon="Quest"></option>
+	</node>
+	<node id="708" npcName="Sly Jonne" anim="1" text="Gold, I should presume? What else would men like him possibly want? Although the way he's going about it, attacking innocent townsfolk and crippling the city, it seems unusually malicious... But what do I know, perhaps he's the kind of man who wants to watch the world burn?" posx="2464" posy="227">
+		<option optionid="1" optiontext="You implied he's not from around here?" next="707"></option>
+		<option optionid="2" optiontext="Regardless, what matters most is to find him and stop him." next="709" icon="Quest"></option>
+	</node>
+	<node id="709" npcName="Sly Jonne" anim="1" text="Sure, I can tell you where to find him... but getting to him will require more than I can offer. You see, there is a cave hidden within the Green Coppice northwest of the city - The Marauder's Underbelly - where unsavory men have often hidden from the reach of law. Lord Blackshield made it his home, and since his arrival, he's raised palisade fortifications all around it." posx="2105" posy="676">
+		<option optionid="1" optiontext="" next="710"></option>
+	</node>
+	<node id="710" npcName="Zathe Vraine" switchtalker="397" anim="1" text="Yes, the bandit fortress... our scouts couldn't have missed it and I always found it curious. I suppose this ''Lord'' Blackshield wanted to make a castle for himself? In any case, if we mean to assault it, we'll need to gather allies. While the Mayor won't be of any help, there are others who might join our fight." posx="2515" posy="676">
+		<option optionid="1" optiontext="" next="711"></option>
+	</node>
+	<node id="711" npcName="Zathe Vraine" anim="1" text="However, convincing them to join us may require some powers of persuasion, and... ahem... I'm not much of a diplomat - much more comfortable swinging a good sword - and Sasha is a little young and blue eyed for these things..." posx="2923" posy="677">
+		<option optionid="1" optiontext="Whom should we try to recruit as allies?" next="712"></option>
+		<option optionid="2" optiontext="Yes, that leaves me..." next="716" icon="Quest"></option>
+	</node>
+	<node id="712" npcName="Zathe Vraine" anim="1" text="To start with, Haywind's Deputies are honorable crime fighting men who also act with a high degree of autonomy. They alone won't be enough though... to fill our ranks, we could ask the mercenaries of the Mercoss Warrior Band. Finally, we could use some heavy firepower, and I have just the idea; the Hydrobor Magi aren't beholden to the mayor, and may be inclined to offer us aid." posx="3330" posy="678">
+		<option optionid="1" optiontext="Tell me more about Hydrobor Magi." next="713"></option>
+		<option optionid="2" optiontext="Who are the Deputies?" next="714"></option>
+		<option optionid="3" optiontext="The mercenary band, can they be trusted?" next="715"></option>
+		<option optionid="4" optiontext="Very well, I understand this task falls on me..." next="716" icon="Quest"></option>
+	</node>
+	<node id="713" npcName="Zathe Vraine" anim="1" text="Magi of the Hydrobor Academy have an enclave in the northeastern part of the city. They've already done a great service to our people by maintaining a favorable weather for our farmers through their magics. If you were to approach their emissary residing in the wizard's tower, I'm sure they could be persuaded to help us defend our city." posx="3740" posy="679">
+		<option optionid="1" optiontext="Who are the Deputies?" next="714"></option>
+		<option optionid="2" optiontext="The mercenary band, can they be trusted?" next="715"></option>
+		<option optionid="3" optiontext="Very well, I understand this task falls on me..." next="716" icon="Quest"></option>
+	</node>
+	<node id="714" npcName="Zathe Vraine" anim="1" text="I know Deputies Rieler and Ernsthart personally. They command the loyalty of a few good men and I have no doubts about them joining us, but they're already busy dealing with missions of their own. You'll find Rieler at the militia camp west of the city, while Ernsthart was last known to camp across the river, beyond the harbor to the northeast." posx="4146" posy="679">
+		<option optionid="1" optiontext="The mercenary band, can they be trusted?" next="715"></option>
+		<option optionid="2" optiontext="Tell me more about Hydrobor Magi." next="713"></option>
+		<option optionid="3" optiontext="Very well, I understand this task falls on me..." next="716" icon="Quest"></option>
+	</node>
+	<node id="715" npcName="Zathe Vraine" anim="1" text="The mercenary band is lead by Rane Mercoss, who's camped in the mountain pass southwest of the city. He has no trouble fighting for any cause, including ours, so long as he's paid what he's owed. I only hope he will turn out to be reasonable with his demands, but that is something you must determine for yourself..." posx="4557" posy="678">
+		<option optionid="1" optiontext="Tell me more about Hydrobor Magi." next="713"></option>
+		<option optionid="2" optiontext="Who are the Deputies?" next="714"></option>
+		<option optionid="3" optiontext="Very well, I understand this task falls on me..." next="716" icon="Quest"></option>
+	</node>
+	<node id="716" npcName="Zathe Vraine" anim="1" text="Excellent! I'll write my contacts down for you on a note, don't hesitate to ask if you have further questions. In the meantime, while you're off on a recruitment mission, we'll see if Jonne can round up any of his old contacts to fight for the city.\n\n&lt;color=#9C8C77&gt;*Zathe hands you a note containing prospective allies and their locations.*&lt;/color&gt;" posx="3607" posy="6">
+		<option optionid="1" optiontext="Very well." next="0" actions="AddItems=1266-1,Cinematic=245" icon="Quest"></option>
+	</node>
+	<node id="717" npcName="Sasha Stonefort" switchtalker="1498" anim="1" text="You mean these two? They'll be fine, I think, just seems there's some history between them. The way I understand it, Zathe used to be pretty lenient with Jonne's schemes up until he caused some real harm. For Jonne, Zathe's sudden change of attitude might have come off as something of a betrayal though..." posx="608" posy="606">
+		<option optionid="1" optiontext="Let's cut to the matter at hand - what does Jonne know of Lord Blackshield?" next="703" icon="Quest"></option>
+		<option optionid="2" optiontext="I'll come back later." next="0"></option>
+	</node>
+
+
+	<node id="725" npcName="Zathe Vraine" anim="1" text="I thought I'd already laid down my sword and armor to gather dust till the end of my days. Now another fight is looming, and I must admit there's something invigorating about donning the old plate... for that one final fight, you understand?" posx="0" posy="6">
+		<option optionid="1" optiontext="I've attended to your contacts - they will join us in the assault." next="745" checks="Quest=111-2-2" icon="Quest"></option>
+		<option optionid="2" optiontext="Let's discuss the allies I'm meant to recruit for our fight." next="728"></option>
+		<option optionid="3" optiontext="Wanted to ask about Lord Blackshield and his bandit fortress." next="734"></option>
+		<option optionid="4" optiontext="Wondering what all of you will be up to while I'm off to do the hard work?" next="738" checks="Quest=111-1-1"></option>
+		<option optionid="5" optiontext="Could use another note on Zathe's contacts..." next="741" checks="Quest=111-1-1,!HasItem=1266-1" itemIcon="1266"></option>
+		<option optionid="6" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="726" npcName="Sly Jonne" anim="1" text="Well, aren't we an unlikely bunch of friends? A grizzled old warrior, a naive - if determined - young girl, a rogue turned against his own kind, and an... adventurer? Indeed, I haven't yet made up my mind about what you are..." posx="408" posy="4">
+		<option optionid="1" optiontext="I've attended to Zathe's contacts - they will join us in the assault." next="745" checks="Quest=111-2-2" icon="Quest"></option>
+		<option optionid="2" optiontext="Let's discuss the allies I'm meant to recruit for our fight." next="728"></option>
+		<option optionid="3" optiontext="Wanted to ask about Lord Blackshield and his bandit fortress." next="734"></option>
+		<option optionid="4" optiontext="Wondering what all of you will be up to while I'm off to do the hard work?" next="738" checks="Quest=111-1-1"></option>
+		<option optionid="5" optiontext="Could use another note on Zathe's contacts..." next="741" checks="Quest=111-1-1,!HasItem=1266-1" itemIcon="1266"></option>
+		<option optionid="6" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="727" npcName="Sasha Stonefort" anim="1" text="All this is making me quite excited, if I'm honest! I mean just look at us - renegade heroes, preparing to fight for a righteous cause in spite of my father's denials! Oh, I'm such a rebel, aren't I?! " posx="817" posy="4">
+		<option optionid="1" optiontext="I've attended to Zathe's contacts - they will join us in the assault." next="745" checks="Quest=111-2-2" icon="Quest"></option>
+		<option optionid="2" optiontext="Let's discuss the allies I'm meant to recruit for our fight." next="728"></option>
+		<option optionid="3" optiontext="Wanted to ask about Lord Blackshield and his bandit fortress." next="734"></option>
+		<option optionid="4" optiontext="Wondering what all of you will be up to while I'm off to do the hard work?" next="738" checks="Quest=111-1-1"></option>
+		<option optionid="5" optiontext="Could use another note on Zathe's contacts..." next="741" checks="Quest=111-1-1,!HasItem=1266-1" itemIcon="1266"></option>
+		<option optionid="6" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="728" npcName="Zathe Vraine" switchtalker="397" anim="1" text="Lord Blackshield's bandits have fortified their base with palisades, we can't just walk up to them and expect to assault their camp by our lonesome. While we can't rely on the mayor providing us any official help either, that doesn't mean there aren't other worthy allies to be found in this city." posx="301" posy="606">
+		<option optionid="1" optiontext="" next="729"></option>
+	</node>
+	<node id="729" npcName="Zathe Vraine" anim="1" text="To start with, Haywind's Deputies are honorable crime fighting men who also act with a high degree of autonomy. They alone won't be enough though... to fill our ranks, we could ask the mercenaries of the Mercoss Warrior Band. Finally, we could use some heavy firepower, and I have just the idea; the Hydrobor Magi aren't beholden to the mayor, and may be inclined to offer us aid." posx="709" posy="604">
+		<option optionid="1" optiontext="Who are the Deputies?" next="730"></option>
+		<option optionid="2" optiontext="The mercenary band, can they be trusted?" next="731"></option>
+		<option optionid="3" optiontext="Tell me more about Hydrobor Magi." next="732"></option>
+		<option optionid="4" optiontext="There's something else on my mind..." next="733" icon="LeadingExit"></option>
+	</node>
+	<node id="730" npcName="Zathe Vraine" anim="1" text="I know Deputies Rieler and Ernsthart personally. They command the loyalty of a few good men and I have no doubts about them joining us, but they're already busy dealing with missions of their own. You'll find Rieler at the militia camp west of the city, while Ernsthart was last known to camp across the river, beyond the harbor to the northeast." posx="1118" posy="604">
+		<option optionid="1" optiontext="The mercenary band, can they be trusted?" next="731"></option>
+		<option optionid="2" optiontext="Tell me more about Hydrobor Magi." next="732"></option>
+		<option optionid="3" optiontext="There's something else on my mind..." next="733" icon="LeadingExit"></option>
+	</node>
+	<node id="731" npcName="Zathe Vraine" anim="1" text="The mercenary band is lead by Rane Mercoss, who's camped in the mountain pass southwest of the city. He has no trouble fighting for any cause, including ours, so long as he's paid what he's owed. I only hope he will turn out to be reasonable with his demands, but that is something you must determine for yourself..." posx="1524" posy="604">
+		<option optionid="1" optiontext="Tell me more about Hydrobor Magi." next="732"></option>
+		<option optionid="2" optiontext="Who are the Deputies?" next="730"></option>
+		<option optionid="3" optiontext="There's something else on my mind..." next="733" icon="LeadingExit"></option>
+	</node>
+	<node id="732" npcName="Zathe Vraine" anim="1" text="Magi of the Hydrobor Academy have an enclave in the northeastern part of the city. They've already done a great service to our people by maintaining a favorable weather for our farmers through their magics. If you were to approach their emissary residing in the wizard's tower, I'm sure they could be persuaded to help us defend our city." posx="1933" posy="604">
+		<option optionid="1" optiontext="Who are the Deputies?" next="730"></option>
+		<option optionid="2" optiontext="The mercenary band, can they be trusted?" next="731"></option>
+		<option optionid="3" optiontext="There's something else on my mind..." next="733" icon="LeadingExit"></option>
+	</node>
+	<node id="733" npcName="Zathe Vraine" switchtalker="397" anim="1" text="Whatever you need. We're allies in this, it's important we're all on the same page." posx="2" posy="910">
+		<option optionid="1" optiontext="I've attended to your contacts - they will join us in the assault." next="745" checks="Quest=111-2-2" icon="Quest"></option>
+		<option optionid="2" optiontext="Let's discuss the allies I'm meant to recruit for our fight." next="728"></option>
+		<option optionid="3" optiontext="Wanted to ask about Lord Blackshield and his bandit fortress." next="734"></option>
+		<option optionid="4" optiontext="Wondering what all of you will be up to while I'm off to do the hard work?" next="738" checks="Quest=111-1-1"></option>
+		<option optionid="5" optiontext="Could use another note on Zathe's contacts..." next="741" checks="Quest=111-1-1,!HasItem=1266-1" itemIcon="1266"></option>
+		<option optionid="6" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="734" npcName="Sly Jonne" switchtalker="1497" anim="1" text="Ah yes, the self-styled Bandit Lord. I certainly hold no love for Blackshield. Frankly, I found him quite brutish and troublesome when he first showed up around these parts. The kind who gives a bad name to us honest criminals, you know?" posx="1500" posy="5">
+		<option optionid="1" optiontext="Where did the Bandit Lord come from?" next="735"></option>
+		<option optionid="2" optiontext="What do you think the Bandit Lord's after?" next="736"></option>
+		<option optionid="3" optiontext="What do you know about the Bandit Lord's fortress?" next="737"></option>
+		<option optionid="4" optiontext="Nevermind, let's talk about something else..." next="733" icon="LeadingExit"></option>
+	</node>
+	<node id="735" npcName="Sly Jonne" anim="1" text="Nobody quite knows, but he's certainly not from around here. I've been running schemes... ahem, 'trading' in Haywind for all my life, which is quite some while now. Blackshield appeared as though from thin air, with no other name or known past. He started recruiting anyone who'd join his grand campaign to squeeze Haywind dry..."  posx="1500" posy="5">
+		<option optionid="1" optiontext="What do you think the Bandit Lord's after?" next="736"></option>
+		<option optionid="2" optiontext="What do you know about the Bandit Lord's fortress?" next="737"></option>
+		<option optionid="3" optiontext="Nevermind, let's talk about something else..." next="733" icon="LeadingExit"></option>
+	</node>
+	<node id="736" npcName="Sly Jonne" anim="1" text="Gold, I should presume? What else would men like him possibly want? Although the way he's going about it, attacking innocent townsfolk and crippling the city, it seems unusually malicious... But what do I know, perhaps he's the kind of man who wants to watch the world burn?" posx="2315" posy="6">
+		<option optionid="1" optiontext="What do you know about the Bandit Lord's fortress?" next="737"></option>
+		<option optionid="2" optiontext="Where did the Bandit Lord come from?" next="735"></option>
+		<option optionid="3" optiontext="Nevermind, let's talk about something else..." next="733" icon="LeadingExit"></option>
+	</node>
+	<node id="737" npcName="Sly Jonne" anim="1" text="There's a cave hidden within Green Coppice northwest of the city - The Marauder's Underbelly - where unsavory men have often hidden from the reach of law. Lord Blackshield made it his home, and since his arrival, he's raised palisade fortifications all around it. Turned it into his personal castle, I presume..." posx="2720" posy="6">
+		<option optionid="1" optiontext="Where did the Bandit Lord come from?" next="735"></option>
+		<option optionid="2" optiontext="What do you think the Bandit Lord's after?" next="736"></option>
+		<option optionid="3" optiontext="Nevermind, let's talk about something else..." next="733" icon="LeadingExit"></option>
+	</node>
+	<node id="738" npcName="Sly Jonne" switchtalker="1497" anim="1" text="There must still be honorable rogues left in this city, I'm sure I'm not the only one with a distaste for Lord Blackshield's kind. I'll seek out some of my old contacts, perhaps they may be convinced to bury a few arrows into Blackshield's horde, in exchange for adequate promises of gold, of course..." posx="2705" posy="607">
+		<option optionid="1" optiontext="" next="739"></option>
+	</node>
+	<node id="739" npcName="Zathe Vraine" switchtalker="397" anim="1" text="Which means somebody needs to keep an eye on Jonne, to keep him out of trouble and to make sure he doesn't forget himself out there. A heavy burden to be sure, and one that must fall on my old shoulders." posx="3113" posy="605">
+		<option optionid="1" optiontext="" next="740"></option>
+	</node>
+	<node id="740" npcName="Sasha Stonefort" switchtalker="1498" anim="1" text="Yes, and in turn I shall...! Hmm, well, I'm going to keep our spirits high of course! And these two will need somebody to make sure stay on amicable terms, that will be my job I think." posx="3520" posy="605">
+		<option optionid="1" optiontext="Let's discuss the allies I'm meant to recruit for our fight." next="728"></option>
+		<option optionid="2" optiontext="Wanted to ask about Lord Blackshield and his bandit fortress." next="734"></option>
+		<option optionid="3" optiontext="Could use another note on Zathe's contacts..." next="741" checks="Quest=111-1-1,!HasItem=1266-1" itemIcon="1266"></option>
+		<option optionid="4" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="741" npcName="Zathe Vraine" switchtalker="397" anim="1" text="Certainly!\n\n&lt;color=#9C8C77&gt;*Zathe writes a note containing prospective allies and their locations, and hands it over to you.*&lt;/color&gt;" posx="1800" posy="1207">
+		<option optionid="1" optiontext="Thanks." next="0" actions="AddItems=1266-1-true" itemIcon="1266"></option>
+	</node>
+
+	
+	<node id="745" npcName="Zathe Vraine" switchtalker="397" anim="1" text="Wonderful news, that means we're finally ready to strike! I'll send word to our allies - we shall be gathering at a forward camp near the bandit fortress, in the woods to the northwest. Join us there when you're ready, and together we shall begin our assault!" posx="11" posy="10">
+		<option optionid="1" optiontext="Very good." next="0" actions="Cinematic=217" icon="Quest"></option>
+		<option optionid="2" optiontext="Hold on a moment, there's something else to discuss first..." next="733" icon="LeadingExit"></option>
+	</node>
+	
+
+	<node id="760" npcName="Traberius Varrange" anim="1" text="Be welcome at our enclave here. We are the Magi of Hydrobor. Our Academy is a little removed from the city, but the mayor has kindly dedicated this district to our use. In exchange, we do what we can to serve the people of this city. You will find some among us to sell objects of magical power, and the knowledge within the books of this tower is freely given." posx="9" posy="10">
+		<option optionid="1" optiontext="What can you tell me about the Hydrobor Academy?" next="761"></option>
+		<option optionid="2" optiontext="What's your role here?" next="762"></option>
+		<option optionid="3" optiontext="I'm gathering allies for an assault on the bandit fortress." next="770" checks="Quest=111-1-1,Var=Q111HydroborAllyRecruited-0-1" icon="Quest"></option>
+		<option optionid="4" optiontext="We can count on your help in assaulting the bandit fortress?" next="773" checks="Quest=111-1-2,Var=Q111HydroborAllyRecruited-2-2"></option>
+		<option optionid="5" optiontext="Thanks." next="0"></option>
+	</node>
+	<node id="761" npcName="Traberius Varrange" anim="1" text="For half a century we've resided here in the northern woodlands of Imberthale, in exile of sorts. Originally we hail from the desert oases of the Vhosphoran Kingdom, where we were sometimes also known as the Water Seers. The War of the Mage King changed all that though, we were forced to leave..." posx="417" posy="10">
+		<option optionid="1" optiontext="What happened in the War of the Mage King?" next="765"></option>
+		<option optionid="2" optiontext="Where is your Academy now?" next="768"></option>
+		<option optionid="3" optiontext="What earned you the nickname Water Seers?" next="769"></option>
+		<option optionid="4" optiontext="Interesting, but I had something else to ask..." next="764" icon="LeadingExit"></option>
+	</node>
+	<node id="762" npcName="Traberius Varrange" anim="1" text="I suppose you might consider me the leader of this enclave. I am the Emissary, who manages contact between this place and our Academy. I maintain relations with this good city, which has kindly welcomed us since our migration. Perhaps not purely out of the kindness of their hearts, considering the services provided by our Weatherwitch, but still..." posx="436" posy="605">
+		<option optionid="1" optiontext="Weatherwitch?" next="763"></option>
+		<option optionid="2" optiontext="What can you tell me about the Hydrobor Academy?" next="761"></option>
+		<option optionid="3" optiontext="I'm gathering allies for an assault on the bandit fortress." next="770" checks="Quest=111-1-1,Var=Q111HydroborAllyRecruited-0-1" icon="Quest"></option>
+		<option optionid="4" optiontext="We can count on your help in assaulting the bandit fortress?" next="773" checks="Quest=111-1-2,Var=Q111HydroborAllyRecruited-2-2"></option>
+		<option optionid="5" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="763" npcName="Traberius Varrange" anim="1" text="Yes, quite. In her role, I like to think, young Brianna brings something of the skies of the Vhosphoran deserts along with us. It is hard for a man to grow his upkeep under the harsh, damp, northern winds that blow across Imberthale. Our Weatherwitch performs her duties at the top of this tower, where she does what she can to ease the burden on these locals." posx="845" posy="602">
+		<option optionid="1" optiontext="What's your role here?" next="762"></option>
+		<option optionid="2" optiontext="What can you tell me about the Hydrobor Academy?" next="761"></option>
+		<option optionid="3" optiontext="I'm gathering allies for an assault on the bandit fortress." next="770" checks="Quest=111-1-1,Var=Q111HydroborAllyRecruited-0-1" icon="Quest"></option>
+		<option optionid="4" optiontext="We can count on your help in assaulting the bandit fortress?" next="773" checks="Quest=111-1-2,Var=Q111HydroborAllyRecruited-2-2"></option>
+		<option optionid="5" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="764" npcName="Traberius Varrange" anim="1" text="Make your questions, I am here to provide knowledge." posx="0" posy="605">
+		<option optionid="1" optiontext="What can you tell me about the Hydrobor Academy?" next="761"></option>
+		<option optionid="2" optiontext="What's your role here?" next="762"></option>
+		<option optionid="3" optiontext="I'm gathering allies for an assault on the bandit fortress." next="770" checks="Quest=111-1-1,Var=Q111HydroborAllyRecruited-0-1" icon="Quest"></option>
+		<option optionid="4" optiontext="We can count on your help in assaulting the bandit fortress?" next="773" checks="Quest=111-1-2,Var=Q111HydroborAllyRecruited-2-2"></option>
+		<option optionid="5" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="765" npcName="Traberius Varrange" anim="1" text="A tragic tale with too many twists and turns to recount, for sure... But in short, an ambitious sorcerer by the name of Desrin Arthraime had proclaimed himself The Mage King and rightful ruler of the Vhosphoran Kingdom. Thus he challenged the Queen at the time, Valinda Vhos, whose forces were spearheaded by the Queen's elite companions of magi, the Vhosphoran Circle of Nine. " posx="906" posy="6">
+		<option optionid="1" optiontext="" next="766"></option>
+	</node>
+	<node id="766" npcName="Traberius Varrange" anim="1" text="The Hydrobor Magi chose to ally with the Queen, of course - Arthraime's vision for the future of the country had no place for us. I was but a young, aspiring mage at the time, but I remember vividly the day the Vhosphoran Nine arrived at our academy; Gaberion Theraliss in his full regalia - their leader at the time, though he later became... broken - meeting with our legendary Archmage Eveniss Charandale..." posx="1313" posy="7">
+		<option optionid="1" optiontext="" next="767"></option>
+	</node>
+	<node id="767" npcName="Traberius Varrange" anim="1" text="&lt;color=#9C8C77&gt;*You notice the eyes of the old mage glisten as he stares into his distant memories.*&lt;/color&gt;\n\nTogether we fought and defeated the False King Desrin Arthraime, though it came at a heavy cost. In the eyes of the common people, the war had been orchestrated generally by wielders of magic - 'The Sorcerer's War', they said - and soon we were no longer welcome in our own lands. The war had ended, but many sad events followed - the suffering it caused continued for long to come, perhaps even to this day." posx="1719" posy="8">
+		<option optionid="1" optiontext="Where is your Academy now?" next="768"></option>
+		<option optionid="2" optiontext="What earned you the nickname Water Seers?" next="769"></option>
+		<option optionid="3" optiontext="Interesting, but I had something else to ask..." next="764" icon="LeadingExit"></option>
+	</node>
+	<node id="768" npcName="Traberius Varrange" anim="1" text="Once we found ourselves no longer welcome in our homelands, we put much distance between it. Journeying in these northern lands, we came upon an ancient forestland altered by magic, presumably created by the Ancient Civilization. It was there we settled our Academy, in the midst of the Oldroots Forest as the locals name it, far west from this city." posx="1273" posy="253">
+		<option optionid="1" optiontext="What earned you the nickname Water Seers?" next="769"></option>
+		<option optionid="2" optiontext="What happened in the War of the Mage King?" next="765"></option>
+		<option optionid="3" optiontext="Interesting, but I had something else to ask..." next="764" icon="LeadingExit"></option>
+	</node>
+	<node id="769" npcName="Traberius Varrange" anim="1" text="In our homeland, the Vhosphoran Oases are the lifeblood of the kingdom. Much of what we did was in managing them, to seek ways to expand them, or to even create them. So too in these lands we have put to use our abilities in manipulating nature, to bring warmth upon the local crops, though our actions have also earned us the ire of local druidic populations, who consider alterations to nature sacrilege." posx="1723" posy="430">
+		<option optionid="1" optiontext="What happened in the War of the Mage King?" next="765"></option>
+		<option optionid="2" optiontext="Where is your Academy now?" next="768"></option>
+		<option optionid="3" optiontext="Interesting, but I had something else to ask..." next="764" icon="LeadingExit"></option>
+	</node>
+	<node id="770" npcName="Traberius Varrange" anim="1" text="Ah, the outlaws are finally to be reined in then? I would love nothing more than to freely offer my aid, but this time I'm sadly unable to do so without asking for a small favor first. You see, we're running low on certain objects that charge our spells. Are you familiar with orbs that glow with magic? If you were to bring me 10, my mind would rest easy sparing some among our ranks to join your cause." actions="SetVar=Q111HydroborAllyRecruited-1" posx="1506" posy="905">
+		<option optionid="1" optiontext="I have 10 glowing orbs for you." next="771" checks="HasItem=603-10" itemIcon="603" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Any advice on where to look for your orbs?" next="772"></option>
+		<option optionid="3" optiontext="Nevermind, there's something else I'd like to ask..." next="764" icon="LeadingExit"></option>
+	</node>
+	<node id="771" npcName="Traberius Varrange" anim="1" text="Thank you, these will do nicely. As for the aid I may offer, I myself am getting a little too old for the excitement of battle. But I feel our young Weatherwitch, Brianna, could really use some real world experience. I shall take up her duties here and send her along with a few companions. You may let your commander know that the Hydrobor Magi will join the defence of this city." posx="1914" posy="906">
+		<option optionid="1" optiontext="Excellent!" next="0" actions="SetVar=Q111HydroborAllyRecruited-2,RemoveItems=603-10,NpcChat=You may let your commander know that the Hydrobor Magi will join the defence of this city." icon="Quest"></option>
+	</node>
+	<node id="772" npcName="Traberius Varrange" anim="1" text="Oh, they're not terribly rare, despite what some believe. Spellcasters are known to carry them, as well as monsters with magical ties, such as ghosts and undead. Alternatively, one might be able to craft them at a Mystic's Workbench." posx="1958" posy="1193">
+		<option optionid="1" optiontext="I have 10 glowing orbs for you." next="771" checks="HasItem=603-10" itemIcon="603" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Nevermind, there's something else I'd like to ask..." next="764" icon="LeadingExit"></option>
+	</node>
+	<node id="773" npcName="Traberius Varrange" anim="1" text="I myself am getting a little too old for the excitement of battle, but our young Weatherwitch Brianna could really use some real world experience. I shall take up her duties here and send her along with a few companions. You may let your commander know that the Hydrobor Magi will join the defence of this city." posx="1037" posy="1111">
+		<option optionid="1" optiontext="What can you tell me about the Hydrobor Academy?" next="761"></option>
+		<option optionid="2" optiontext="What's your role here?" next="762"></option>
+		<option optionid="3" optiontext="Very good." next="0"></option>
+	</node>
+
+
+	<node id="780" npcName="Brianna Lightfeather" anim="1" text="Oh, hello there! I'm rather busy performing quite an important duty, you know? I'm the Weatherwitch, which means I provide Haywind's farmers with friendly skies - rain and sun when they need it, mostly sun though." posx="11" posy="8">
+		<option optionid="1" optiontext="How are you able to manipulate the weather?" next="781"></option>
+		<option optionid="2" optiontext="Are you aware the Emissary has pledged you for battle?" next="785" checks="Quest=111-1,Var=Q111HydroborAllyRecruited-2-2"></option>
+		<option optionid="3" optiontext="I'll leave you to it." next="0"></option>
+	</node>
+	<node id="781" npcName="Brianna Lightfeather" anim="1" text="Partly down to natural talent, and partly due to the teachings of the Hydrobor Academy. The Academy Magi seek talent like mine and hone our abilities to their highest potential. I've read that in tribal societies women with talents like mine often become seers, who may predict the weather and people's destinies, but the Magi of Hydrobor can teach us to do much more than that!" posx="421" posy="9">
+		<option optionid="1" optiontext="You're a student at the Academy?" next="782"></option>
+		<option optionid="2" optiontext="What exactly is the Hydrobor Academy anyway?" next="783"></option>
+		<option optionid="3" optiontext="I'll leave you to it." next="0"></option>
+	</node>
+	<node id="782" npcName="Brianna Lightfeather" anim="1" text="Hey, now! I'll have you know I'm a fully qualified Weatherwitch! Sometimes people look down on me because of my young age, even the other magi here... Well, I was a quick study at the Academy - I earned my place here!" posx="828" posy="9">
+		<option optionid="1" optiontext="What exactly is the Hydrobor Academy anyway?" next="783"></option>
+		<option optionid="2" optiontext="How are you able to manipulate the weather again?" next="781"></option>
+		<option optionid="3" optiontext="I'll leave you to it." next="0"></option>
+	</node>
+	<node id="783" npcName="Brianna Lightfeather" anim="1" text="We're only the most talented group of spellcasters in this region - or who knows - maybe the whole wide world? Initially our home was a desert kingdom far south from here, but we were driven away by some conflict. I'm... not really best at telling that story though, I was born long after those times." posx="616" posy="500">
+		<option optionid="1" optiontext="" next="784"></option>
+	</node>
+	<node id="784" npcName="Brianna Lightfeather" anim="1" text="But Emissary Varrange, who oversees us at the base of this tower, he's lived it. He's one of the oldest members among our society now and a very wise man - he still mentors me in many ways. Ahem... not that I *need* mentoring mind you, I'm more capable than I look! But... it's nice when someone who has your back, you know?" posx="1025" posy="499">
+		<option optionid="1" optiontext="How are you able to manipulate the weather again?" next="781"></option>
+		<option optionid="2" optiontext="So... you're a student at the Academy?" next="782"></option>
+		<option optionid="3" optiontext="I'll leave you to it." next="0"></option>
+	</node>
+	<node id="785" npcName="Brianna Lightfeather" anim="1" text="Oh...? Oh, my... He's noticed it then, my lack of confidence, hasn't he? He wants to send me out into the real world... he thinks it'll build character, or something... but... I'm not ready! I can't even get my spells right half the time! PANIC!" posx="2409" posy="911">
+		<option optionid="1" optiontext="I'll, err... just leave you to mull it over then." next="0" actions="NpcChat=Oh> I might just faint..."></option>
+	</node>
+
+
+	<node id="790" npcName="Rane Mercoss" anim="1" text="Rane Mercoss and his band of warriors at your service. Seen the marshal try and make soldiers out of these peasants, don't envy his job frankly. My men and I train endlessly, that's what makes us worth the gold. These peasant folk, on the other hand... I wouldn't trust them to protect my outhouse." posx="0" posy="6">
+		<option optionid="1" optiontext="I'm gathering allies for an assault on the bandit fortress." next="793" checks="Quest=111-1-1,Var=Q111MercenaryAllyRecruited-0-1" icon="Quest"></option>
+		<option optionid="2" optiontext="We can count on your help in assaulting the bandit fortress?" next="795" checks="Quest=111-1-2,Var=Q111MercenaryAllyRecruited-2-2"></option>
+		<option optionid="3" optiontext="Funny, you're not the first Mercoss merc boss I've come across..." next="791"></option>
+		<option optionid="4" optiontext="What do you do here?" next="792"></option>
+		<option optionid="5" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="791" npcName="Rane Mercoss" anim="1" text="That does not surprise me. You may not realize this, but I come from a long line of warriors. My father led a mercenary band before me, and his father before him, and all their brothers alike. Had you met any of my cousins today, they'd be mercenary captains in their own right." posx="408" posy="6">
+		<option optionid="1" optiontext="What do you do here?" next="792"></option>
+		<option optionid="2" optiontext="I'm gathering allies for an assault on the bandit fortress." next="793" checks="Quest=111-1-1,Var=Q111MercenaryAllyRecruited-0-1" icon="Quest"></option>
+		<option optionid="3" optiontext="We can count on your help in assaulting the bandit fortress?" next="795" checks="Quest=111-1-2,Var=Q111MercenaryAllyRecruited-2-2"></option>
+		<option optionid="4" optiontext="Fair enough." next="0"></option>
+	</node>
+	<node id="792" npcName="Rane Mercoss" anim="1" text="What does it look like? My company's hired to guard the mountain passage, which otherwise provides an easy way for all sorts of rogues to slip into the city. We could do more - much more - if I'm being honest. But the Mayor doesn't pay us for more. He'd rather send clueless peasants out into the fields to fight. Well, he's free to do whatever he wishes." posx="816" posy="6">
+		<option optionid="1" optiontext="Funny, you're not the first Mercoss merc boss I've come across..." next="791"></option>
+		<option optionid="2" optiontext="I'm gathering allies for an assault on the bandit fortress." next="793" checks="Quest=111-1-1,Var=Q111MercenaryAllyRecruited-0-1" icon="Quest"></option>
+		<option optionid="3" optiontext="We can count on your help in assaulting the bandit fortress?" next="795" checks="Quest=111-1-2,Var=Q111MercenaryAllyRecruited-2-2"></option>
+		<option optionid="4" optiontext="I should go." next="0"></option>
+	</node>
+	<node id="793" npcName="Rane Mercoss" anim="1" text="So in other words you're looking to hire my services. The boys and I don't work for free, not for anyone. As it happens, we're currently not short on coin, but there's something else I'd like to get my hands on. The locals in this land have a special curved sword - the Haywoods Sickle Sword - and I want to add it to our arsenal. Bring me 10 and you may consider my company hired." actions="SetVar=Q111MercenaryAllyRecruited-1" posx="605" posy="906">
+		<option optionid="1" optiontext="I have your swords." next="794" checks="HasItem=669-10" itemIcon="669" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Where would I find such swords?" next="796"></option>
+		<option optionid="3" optiontext="Funny, you're not the first Mercoss merc boss I've come across..." next="791"></option>
+		<option optionid="4" optiontext="What do you do here, anyway?" next="792"></option>
+		<option optionid="5" optiontext="I'll be back later." next="0"></option>
+	</node>
+	<node id="794" npcName="Rane Mercoss" anim="1" text="Nice, these are some good blades! I bet my men can't wait to test them. You're free to tell your commander you have us hired for some mayhem. With my men and I fighting by your side, there's no battle you can lose - I can promise you that." posx="1010" posy="906">
+		<option optionid="1" optiontext="Excellent!" next="0" actions="SetVar=Q111MercenaryAllyRecruited-2,RemoveItems=669-10,NpcChat=You're free to tell your commander you have us hired for some mayhem." icon="Quest"></option>
+	</node>
+	<node id="795" npcName="Rane Mercoss" anim="1" text="Sure mate, we'll be there for some mayhem. With my men and I fighting by your side, there's no battle you can lose. I'll promise you that." posx="1419" posy="904">
+		<option optionid="1" optiontext="Funny, you're not the first Mercoss merc boss I've come across..." next="791"></option>
+		<option optionid="2" optiontext="What do you do here, anyway?" next="792"></option>
+		<option optionid="3" optiontext="Excellent!" next="0"></option>
+	</node>
+	<node id="796" npcName="Rane Mercoss" anim="1" text="There's a weapon merchant who sells them on the main street, heading east of the city's marketsquare. A smithy on the northwestern side of the city might also teach how to forge them. Otherwise you could just take them off the hands of various scoundrels in the wilds surrounding the city. I don't much care how you acquire them, so long as you bring me 10." posx="1013" posy="1207">
+		<option optionid="1" optiontext="Ah okay, well I actually have them already." next="794" checks="HasItem=669-10" itemIcon="669" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Funny, you're not the first Mercoss merc boss I've come across..." next="791"></option>
+		<option optionid="3" optiontext="What do you do here, anyway?" next="792"></option>
+		<option optionid="4" optiontext="I'll be back later." next="0"></option>
+	</node>
+
+
+	<node id="800" npcName="Zathe Vraine" anim="1" text="Glad to see you with us! We've turned into quite the little fellowship, haven't we? Gathered here to fight for a Haywind that is free from pillage and dread! You played no small hand in getting us all here. I hope you'll also join us now in this crucial fight?" posx="0" posy="8">
+		<option optionid="1" optiontext="You can count on my aid." next="801" icon="Quest"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="801" npcName="Zathe Vraine" anim="1" text="It seems a while back since I ran into you at the dark hallway of Spruce Shade crypts... Hardly would have guessed at the time that we'd soon be fighting side by side for peace in Haywind. Still, it occurs to me I know quite little about you, nor did Sasha when I asked her. I guess before we move forward here, I'm curious to know who our nameless champion is, who's thus far asked for nothing in return." posx="411" posy="8">
+		<option optionid="1" optiontext="You may call me Master Aercrest, stewardship of these lands is my concern." next="802" actions="SetVar=Q111ZathePlayerKnowledge-1"></option>
+		<option optionid="2" optiontext="Perhaps... just consider me a guardian spirit, passing these lands from beyond the grave, one could say..." next="803" actions="SetVar=Q111ZathePlayerKnowledge-2"></option>
+	</node>
+	<node id="802" npcName="Zathe Vraine" anim="1" text="Ah yes, an Aercrest... that does indeed explain much. It is wise to keep such a name close to heart, for I understand Lord Goldbridge still treats it with great hostility. But you are among friends here, your sword is most welcome. Preparations for our assault are almost complete, just say the word when you're ready to join battle." posx="824" posy="9">
+		<option optionid="1" optiontext="Shall we begin our assault then?" next="804" icon="Quest"></option>
+		<option optionid="2" optiontext="What's our plan going into the battle?" next="806"></option>
+		<option optionid="3" optiontext="I have something to take care of first." next="805" icon="LeadingExit"></option>
+	</node>
+	<node id="803" npcName="Zathe Vraine" anim="1" text="How cryptic... You like to keep an air of mystery about you then, eh? 'From beyond the grave', is that some reference to where we first met, hmm...? Oh fine, you may keep your secrets, adventurer. It's not like you're the first man I ever met, who wishes to keep his past a private matter. Preparations for our assault are almost complete, just say the word when you're ready to join battle." posx="411" posy="299">
+		<option optionid="1" optiontext="Shall we begin our assault then?" next="804" icon="Quest"></option>
+		<option optionid="2" optiontext="What's our plan going into the battle?" next="806"></option>
+		<option optionid="3" optiontext="I have something to take care of first." next="805" icon="LeadingExit"></option>
+	</node>
+	<node id="804" npcName="Zathe Vraine" anim="1" text="Yes, let's not delay any further. I have no doubt we will face great resistance once we break our way through their palisades. But despite the numbers we face, we must fight fearlessly into the fort and carve a path into Lord Blackshield's chambers!" posx="1807" posy="904">
+		<option optionid="1" optiontext="To arms!" next="0" actions="Cinematic=218" icon="Quest"></option>
+	</node>
+	<node id="805" npcName="Zathe Vraine" anim="1" text="Of course, simply approach me and say the word once you find yourself ready. I will see that the rest of us are prepared." posx="2216" posy="903">
+		<option optionid="1" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="806" npcName="Zathe Vraine" anim="1" text="Sly Jonne and the archers will provide as much cover as they can to get our magi close to the fortress. I have my faith in their powerful magics to blast the gates open. Then... I expect all mayhem will break loose. We'll simply have to push our way into the cave protected by the fort - the Marauder's Underbelly - where we'll finally confront the Bandit Lord Blackshield." posx="1509" posy="5">
+		<option optionid="1" optiontext="Shall we begin our assault then?" next="804" icon="Quest"></option>
+		<option optionid="2" optiontext="I have something to take care of first." next="805" icon="LeadingExit"></option>
+	</node>
+
+	
+	<node id="815" npcName="Zathe Vraine" anim="1" text="Glad to see you join us, Master Aercrest! We've turned into quite the little fellowship, gathered to fight for a Haywind free from pillage and dread. You played no small hand in getting us all here. Your sword will also be most welcome now in our final battle." posx="6" posy="1207">
+		<option optionid="1" optiontext="Shall we begin the assault then?" next="804" icon="Quest"></option>
+		<option optionid="2" optiontext="What's our plan going into the battle?" next="806"></option>
+		<option optionid="3" optiontext="I have something to take care of first." next="805" icon="LeadingExit"></option>
+	</node>
+	<node id="816" npcName="Zathe Vraine" anim="1" text="Glad to see you join us, our 'Mysterious Guardian'! We've turned into quite the little fellowship, gathered to fight for a Haywind free from pillage and dread. You played no small hand in getting us all here. Your sword will also be most welcome now in our final battle." posx="419" posy="1208">
+		<option optionid="1" optiontext="Shall we begin the assault then?" next="804" icon="Quest"></option>
+		<option optionid="2" optiontext="What's our plan going into the battle?" next="806"></option>
+		<option optionid="3" optiontext="I have something to take care of first." next="805" icon="LeadingExit"></option>
+	</node>
+
+
+	<node id="820" npcName="Sasha Stonefort" anim="1" text="I'm not much use on the battlefield I'm afraid, so I'll be staying back here, maintaining the camp and treating to our wounded." posx="13" posy="10">
+		<option optionid="1" optiontext="Stay safe." next="0"></option>
+	</node>
+
+
+	<node id="825" npcName="Sly Jonne" anim="1" text="I managed to round up some old friends to our aid; they may not look much, but each is worth a dozen of Blackshield's men, at the very least, I should like to think... Could have used Slick Eddie among our ranks, but alas, Zathe really put his foot down when it came to that." posx="13" posy="10">
+		<option optionid="1" optiontext="Indeed." next="0"></option>
+	</node>
+
+	
+	<node id="830" npcName="Rane Mercoss" anim="1" text="Finally we're about to have some action worthy of our skills! It's time the Mercoss Band shows these peasants how real warriors fight. Once the bloodshed begins, the peasant-line will most likely cower, but the Mercoss warriors will be there to carry us through!" posx="13" posy="10">
+		<option optionid="1" optiontext="As you say." next="0"></option>
+	</node>
+
+
+	<node id="835" npcName="Brianna Lightfeather" anim="1" text="I'll admit I'm a little nervous, I've never been in a fight before... But old Master Traberius sent Ahnring and Gendaril here to watch my back. They are very experienced magi, I'm sure they won't let anything happen to me." posx="13" posy="10">
+		<option optionid="1" optiontext="Indeed." next="0"></option>
+	</node>
+
+
+	<node id="840" npcName="Deputy Rieler" anim="1" text="It brings me confidence to see you among our ranks, knowing what a capable fighter you are. If not for you, I would still find myself troubled by the bandit leaders of western Haywind. It is only proper that I now in turn fulfil my duty against the Bandit Lord's fortress." posx="13" posy="10">
+		<option optionid="1" optiontext="Very good." next="0"></option>
+	</node>
+
+
+	<node id="845" npcName="Deputy Ernsthart" anim="1" text="Wouldn't have guessed when I first laid my eyes on you that you'd bring about such a change in our fortunes against the bandit horde. It's time Deputy Rieler and I now do our part in restoring order back to this land!" posx="13" posy="10">
+		<option optionid="1" optiontext="Very good." next="0"></option>
+	</node>
+
+
+	<node id="850" npcName="Zathe Vraine" anim="1" text="Thus ended the life of the Bandit Lord Blackshield, tougher in his resistance than I had thought... somewhere along there he bashed me about with that shield of his - nothing grievous, mind you! - but I'll need to catch my breath for a moment... ughhh... such a fool I am!" posx="0" posy="10">
+		<option optionid="1" optiontext="" next="851"></option>
+	</node>
+	<node id="851" npcName="Zathe Vraine" anim="1" text="I keep telling myself ''come now, Zathe, you're too old for this stuff'', but here I find myself again, always looking for battle! Anyway, why don't you take a look around, while I rest here and complain to myself? See if you can find something that would shed more light on this Blackshield-character, eh? I for one am dying to know where he came from." posx="408" posy="10">
+		<option optionid="1" optiontext="Do you think this is it, that the threat to Haywind is no more?" next="852"></option>
+		<option optionid="2" optiontext="As you say." next="0"></option>
+	</node>
+	<node id="852" npcName="Zathe Vraine" anim="1" text="I'm sure straggler groups of bandits will continue to camp in these lands for some time to come, there'll be cleaning to do... and that'll be a job for someone other than me, I think. With their leaders gone, they won't pose the same threat to our lands ever again. That's enough to set my mind at ease." posx="911" posy="10">
+		<option optionid="1" optiontext="As you say." next="0"></option>
+	</node>
+
+
+	<node id="855" npcName="Zathe Vraine" anim="1" text="Thus was the end of ''Lord Blackshield'' of Haywind... Whether the Mayor will acknowledge us as heroes remains to be seen, but in my eyes we have done well, you and I. Not to worry, I'll find a way to properly reward all who joined Haywind's defense here. Now, did you find anything to strip the mystery around Lord Blackshield's origins?" posx="0" posy="10">
+		<option optionid="1" optiontext="Take a look at his correspondence..." next="856" checks="HasItem=1269-1" icon="Quest"></option>
+		<option optionid="2" optiontext="Feeling any better yet?" next="858"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="856" npcName="Zathe Vraine" anim="1" text="&lt;color=#9C8C77&gt;*Zathe reads the letter you provided with furrowed brows. His eyes widen as he reaches the end of the letter.*&lt;/color&gt;\n\nAzzar Kheyn?! That slimy pretense of a merchant! He was never looking out for any guild interests, instead he's been the one plotting this bandit conspiracy behind the scenes - Lord Blackshield appears to have been merely another pawn! All this time the man was taking me for a fool, how could I not see this?!" posx="408" posy="10">
+		<option optionid="1" optiontext="" next="857"></option>
+	</node>
+	<node id="857" npcName="Zathe Vraine" anim="1" text="We should never have allowed that scoundrel to take root in our chambers! He always did have an inexplicable influence over the Mayor... but in the face of this damning letter, no amount of weasel words can save him! We should return to camp and prepare to confront Kheyn." posx="817" posy="8">
+		<option optionid="1" optiontext="What do you make of the ominous threats at the end of the letter?" next="859"></option>
+		<option optionid="2" optiontext="Very well, let's get to it." next="0" actions="Cinematic=220,RemoveItems=1269-1" icon="Quest"></option>
+	</node>
+	<node id="858" npcName="Zathe Vraine" anim="1" text="Ah, I'll be fine, just got bashed around by the black shield there for a bit. I keep telling myself ''come now, Zathe, you're too old for this stuff'', but here I find myself again, always looking for battle! May this have been my last... Anyway, were you able to find anything to strip the mystery around Lord Blackshield's origins?" posx="610" posy="613">
+		<option optionid="1" optiontext="Take a look at his correspondence..." next="856" checks="HasItem=1269-1" icon="Quest"></option>
+		<option optionid="2" optiontext="I'm not done looking around yet..." next="0"></option>
+	</node>
+	<node id="859" npcName="Zathe Vraine" anim="1" text="I'm not sure yet... But whatever his plans, we must have foiled them. He seemed intent on extorting a tribute from Haywind and that won't be happening now. We must simply confront him and capture him, then he'll have a lot of explaining to do." posx="1231" posy="10">
+		<option optionid="1" optiontext="Very well, let's get to it." next="0" actions="Cinematic=220,RemoveItems=1269-1" icon="Quest"></option>
+	</node>
+
+
+	<node id="860" npcName="Zathe Vraine" anim="1" text="Ah, good that you're here. To the distress of young Sasha, the Mayor and the traitor Azzar seem to already have found her. But this gathering presents us exactly with the right opportunity to bring truth to light, don't you think? What say you, we interrupt their argument with our news and grant Sasha some relief?" posx="4" posy="7">
+		<option optionid="1" optiontext="Yes, let's do that." next="863" icon="Quest"></option>
+		<option optionid="2" optiontext="What's the plan regarding Azzar Kheyn?" next="861"></option>
+		<option optionid="3" optiontext="There's no hurry, I want to watch them for a while." next="0"></option>
+	</node>
+	<node id="861" npcName="Zathe Vraine" anim="1" text="While those three have been preoccupied by their shouting match, I've quietly let our friends know about Azzar's treachery - they stand ready to seize him. All that remains is for us to step in and expose him in front of the Mayor." posx="418" posy="8">
+		<option optionid="1" optiontext="Do you think he'll put up a fight?" next="862"></option>
+		<option optionid="2" optiontext="Yes, let's do this." next="863" icon="Quest"></option>
+		<option optionid="3" optiontext="There's no hurry, I want to watch them for a while." next="0"></option>
+	</node>
+	<node id="862" npcName="Zathe Vraine" anim="1" text="Surely not? I don't know about you, but he strikes me as a schemer - the brains of the operation - where Blackshield provided the grunt. Besides, he's walked into our camp all alone, while there are many of us. I expect he'll understand the situation once it's made clear to him." posx="828" posy="10">
+		<option optionid="1" optiontext="Let's do this then." next="863" icon="Quest"></option>
+		<option optionid="2" optiontext="There's no hurry, I want to watch them for a while." next="0"></option>
+	</node>
+	<node id="863" npcName="Zathe Vraine" anim="1" text="Very well, follow my lead, friend." posx="608" posy="612">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=221" icon="Quest"></option>
+	</node>
+
+
+	<node id="865" npcName="Marzin Stonefort" switchtalker="1609" lookAtNpc="1430" anim="1" text="&lt;color=#9C8C77&gt;*The fool of a mayor reads the letter and all color flees from his face. Soon, Sasha snatches the letter from his hands to read for herself, and gasps. The Mayor struggles for words:*&lt;/color&gt;\n\nWell, I... there must be some kind of a mistake, surely... Azzar will be able to explain the meaning of this, I have no doubt..." posx="0" posy="6">
+		<option optionid="1" optiontext="" next="866"></option>
+	</node>
+	<node id="866" npcName="Sasha Stonefort" switchtalker="1430" lookAtNpc="1610" anim="1" text="Why, there's nothing to explain - the meaning of this letter is wholly unambiguous! Azzar Kheyn, you are a traitor and a conspirator against Haywind! The only thing we need to hear from you is why - why have you been doing this?! Your letter says you seek vengeance, but as far as I know, we have done nothing to slight you!" posx="410" posy="7">
+		<option optionid="1" optiontext="" next="867"></option>
+	</node>
+	<node id="867" npcName="Marzin Stonefort" switchtalker="1609" lookAtNpc="1430" anim="1" text="Sasha, please, let's not be hasty... there must be a reasonable explanation to all of this... Azzar, please...?" posx="819" posy="8">
+		<option optionid="1" optiontext="" next="868"></option>
+	</node>
+	<node id="868" npcName="Azzar Kheyn" switchtalker="1610" lookAtNpc="1609" anim="1" text="Oh, be silent, you fool! I tire of your incessant prattling! You were so easily manipulated, but for one spineless failure - you would not keep your daughter in check, no matter how many times I told you! If not for that, we would not even be here now!" posx="1229" posy="9">
+		<option optionid="1" optiontext="" next="869"></option>
+	</node>
+	<node id="869" npcName="Zathe Vraine" switchtalker="397" lookAtNpc="1610" anim="1" text="So we see your true colors at last, Azzar! You have a lot to answer for... and you may do so from inside the dungeons we'll have prepared for you!" posx="1635" posy="9">
+		<option optionid="1" optiontext="" next="870"></option>
+	</node>
+	<node id="870" npcName="Azzar Kheyn" switchtalker="1610" lookAtNpc="397" anim="1" text="A quaint notion, Zathe, my 'friend'. Of course, you would not speak with such confidence, had you any idea who you were really speaking to. But it matters not, soon you will learn." posx="2044" posy="10">
+		<option optionid="1" optiontext="I'm keen to hear, what vengeance were you seeking against Haywind?" next="871"></option>
+		<option optionid="2" optiontext="You sought to extort a tribute, what was it for, Kheyn?" next="872"></option>
+		<option optionid="3" optiontext="I've heard enough." next="873" icon="Quest"></option>
+	</node>
+	<node id="871" npcName="Azzar Kheyn" anim="1" text="I do not have the patience to explain myself! My quarrel is with no individual alone. The city gave shelter to the Magi of Hydrobor and benefited greatly from it! I will be satisfied only when both the city and the magi have been reduced to rubble!" posx="2579" posy="7">
+		<option optionid="1" optiontext="But the tribute you sought to extort, what was it for, Kheyn?" next="872"></option>
+		<option optionid="2" optiontext="I've heard enough." next="873" icon="Quest"></option>
+	</node>
+	<node id="872" npcName="Azzar Kheyn" anim="1" text="Why, for the greedy ogres of Amarien's Mountains, hahaha! I promised them such gold in exchange for loyalty, but now it seems I'll have to motivate them by other means. A minor setback in the grand scheme of things, I recently came upon just the tool I need..." posx="3009" posy="7">
+		<option optionid="1" optiontext="But what vengeance were you seeking against Haywind?" next="871"></option>
+		<option optionid="2" optiontext="Don't think you're leaving here as a free man, Kheyn." next="874" icon="Quest"></option>
+	</node>
+	<node id="873" npcName="Azzar Kheyn" anim="1" text="As have I... Come then, little heroes, show me what you're worth! I thought you were eager to put me in chains, were you not?!" posx="2706" posy="605">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=222" icon="Quest"></option>
+	</node>
+	<node id="874" npcName="Azzar Kheyn" anim="1" text="Is that so...? Come then, little heroes, show me what you're worth! Come and put me in chains, like you're so eager to do!" posx="3309" posy="607">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=222" icon="Quest"></option>
+	</node>
+
+
+	<node id="880" npcName="Zathe Vraine" switchtalker="397" anim="1" text="It seems I underestimated Azzar... Whatever foul magics he employed knocked the living out of me back there. I do not yet know the extent of the threat he poses, but it is not to be ignored - such a dangerous man must not be allowed to walk free!" posx="0" posy="10">
+		<option optionid="1" optiontext="What are you planning to do?" next="883" icon="Quest"></option>
+		<option optionid="2" optiontext="Had you any idea he'd turn out to be a renegade wizard?" next="881"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="881" npcName="Zathe Vraine" switchtalker="397" anim="1" text="Well, I always found the man detestable, but then many of us did. I think he played the part of an obnoxious, arrogant merchant well. But no, I never suspected he was anything more than what he appeared to be." posx="374" posy="504">
+		<option optionid="1" optiontext="" next="882"></option>
+	</node>
+	<node id="882" npcName="Brianna Lightfeather" switchtalker="1615" anim="1" text="By my estimation, he must be quite a powerful wizard too... It is possible for one trained in magic to sense the magical capabilities of another, but there also exist tricks to mask those abilities. I could sense nothing from Azzar Kheyn before he revealed himself to us back there." posx="786" posy="503">
+		<option optionid="1" optiontext="So what are you planning to do about him?" next="883" icon="Quest"></option>
+		<option optionid="2" optiontext="Let's pick this up later." next="0"></option>
+	</node>
+	<node id="883" npcName="Zathe Vraine" switchtalker="397" anim="1" text="He kept mentioning Amarien's Mountains due east... The bandit horde seems to have been only one part of Azzar's plan to siege Haywind, but something has been developing in those mountains that we've been unaware of. Now that we exposed him and put a stop to his schemes here, I assume he too retreated towards Amarien's. That's where we must follow him, to investigate what he may have set in motion, and to hunt him down once and for all." posx="463" posy="7">
+		<option optionid="1" optiontext="" next="884"></option>
+	</node>
+	<node id="884" npcName="Brianna Lightfeather" switchtalker="1615" anim="1" text="Yes, and I will joining too! Azzar specifically named the Hydrobor Magi as his enemies and I wish to know why. I did not think we had any enemies in these lands! Hmm, perhaps I ought to consult the Archmage of our Circle and inquire if anything is known of Azzar's reputation. I can travel fast through magic and catch up with you once you've reached the mountains." posx="888" posy="9">
+		<option optionid="1" optiontext="" next="885" checks="Var=Q111ZathePlayerKnowledge-1-1"></option>
+		<option optionid="2" optiontext="" next="886" checks="Var=Q111ZathePlayerKnowledge-2-2"></option>
+		<option optionid="3" optiontext="" next="887" checks="Var=Q111ZathePlayerKnowledge-0-0"></option>
+	</node>
+	<node id="885" npcName="Zathe Vraine" switchtalker="397" anim="1" text="Indeed, and how about you, Master Aercrest? Dare I still count on your aid in hunting down this enemy of ours, who so shrouded himself in deceit?" posx="1366" posy="4">
+		<option optionid="1" optiontext="What do we know of Amarien's Mountains?" next="888"></option>
+		<option optionid="2" optiontext="What do we know so far about Azzar Kheyn?" next="890"></option>
+		<option optionid="3" optiontext="You may count me in, I will join your hunt for Azzar." next="893" icon="Quest"></option>
+		<option optionid="4" optiontext="I need time to mull this over." next="892" icon="LeadingExit"></option>
+	</node>
+	<node id="886" npcName="Zathe Vraine" switchtalker="397" anim="1" text="Indeed, and how about you, Mystery Guardian? Dare I still count on your aid in hunting down this enemy of ours, who so shrouded himself in deceit?" posx="1779" posy="5">
+		<option optionid="1" optiontext="What do we know of Amarien's Mountains?" next="888"></option>
+		<option optionid="2" optiontext="What do we know so far about Azzar Kheyn?" next="890"></option>
+		<option optionid="3" optiontext="You may count me in, I will join your hunt for Azzar." next="893" icon="Quest"></option>
+		<option optionid="4" optiontext="I need time to mull this over." next="892" icon="LeadingExit"></option>
+	</node>
+	<node id="887" npcName="Zathe Vraine" switchtalker="397" anim="1" text="Indeed, and how about you, adventurer? Dare I still count on your aid in hunting down this enemy of ours, who so shrouded himself in deceit?" posx="2188" posy="2">
+		<option optionid="1" optiontext="What do we know of Amarien's Mountains?" next="888"></option>
+		<option optionid="2" optiontext="What do we know so far about Azzar Kheyn?" next="890"></option>
+		<option optionid="3" optiontext="You may count me in, I will join your hunt for Azzar." next="893" icon="Quest"></option>
+		<option optionid="4" optiontext="I need time to mull this over." next="892" icon="LeadingExit"></option>
+	</node>
+	<node id="888" npcName="Zathe Vraine" switchtalker="397" anim="1" text="Amarien's mountain range lies to the east, separating Imberthale's woodlands from the powerful Kingdom of Melloria. Very few precarious passes lead across its mighty peaks and it's always been a great natural barrier against would-be invaders. Savage barbarians clans are known to camp in its foothills, and brutish ogres dwell within its caves." posx="1508" posy="610">
+		<option optionid="1" optiontext="" next="889"></option>
+	</node>
+	<node id="889" npcName="Zathe Vraine" switchtalker="397" anim="1" text="Due east, beyond the Mistywood, a passage leads to the last shelter of civilization within Amarien's Foothills - The Bulwark Cliff. It takes truly hardened folk to live in that land, as they're far from any protection but their own. Their village will also serve as a good base for us, from which to survey the land." posx="1921" posy="608">
+		<option optionid="1" optiontext="What do we know so far about Azzar Kheyn?" next="890"></option>
+		<option optionid="2" optiontext="You may count me in, I will join your hunt for Azzar." next="893" icon="Quest"></option>
+		<option optionid="3" optiontext="I need time to mull this over." next="892" icon="LeadingExit"></option>
+	</node>
+	<node id="890" npcName="Brianna Lightfeather" switchtalker="1615" anim="1" text="Not much beyond what was apparent in his letter to Lord Blackshield. He seems to harbor a hatred for us Magi of Hydrobor, but I do not know why. An old enemy, perhaps? That's why I ought to consult our Archmage, to inquire whether he might know anything of Azzar's reputation." posx="2706" posy="304">
+		<option optionid="1" optiontext="" next="891"></option>
+	</node>
+	<node id="891" npcName="Zathe Vraine" switchtalker="397" anim="1" text="Ultimately my concern lies only with the protection of Haywind. Whoever Azzar is, whatever his motivations may be, he has declared himself an enemy of the city. It is my duty to hunt him down and to put an end to his schemes for good." posx="3115" posy="306">
+		<option optionid="1" optiontext="What do we know of Amarien's Mountains?" next="888"></option>
+		<option optionid="2" optiontext="You may count me in, I will join your hunt for Azzar." next="893" icon="Quest"></option>
+		<option optionid="3" optiontext="I need time to mull this over." next="892" icon="LeadingExit"></option>
+	</node>
+	<node id="892" npcName="Zathe Vraine" switchtalker="397" anim="1" text="Then we will stay here for the time being and prepare." posx="2409" posy="908">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+	<node id="893" npcName="Zathe Vraine" switchtalker="397" anim="1" text="You never let us down! We must first make our way to the village of Bulwark Cliff. The mountain pass that leads us there lies at the far edge of the Mistywood heading east. I'll rush ahead and make camp at its base, from there we can take the rest of the journey together." posx="2817" posy="909">
+		<option optionid="1" optiontext="" next="0" actions="Cinematic=223" icon="Quest"></option>
+	</node>
+
+
+	<node id="900" npcName="Sasha Stonefort" anim="1" text="Father's in quite the shock... but on the upside, you exposed and awful traitor, AND I hear you took down the Bandit Lord Blackshield! The city really owes you! It's just, um... I don't really have the power to reward you properly. And my father doesn't seem to be in the right state of mind to discuss much of anything..." posx="12" posy="8">
+		<option optionid="1" optiontext="The Mayor's... not in his right mind?" next="901"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="901" npcName="Sasha Stonefort" lookAtNpc="1609" anim="1" text="Uhm... I suppose not, but at least I hope it's not permanent. I mean... are you alright there, father?" posx="427" posy="9">
+		<option optionid="1" optiontext="" next="902"></option>
+	</node>
+	<node id="902" npcName="Mayor Stonefort" switchtalker="1609" lookAtNpc="1430" anim="1" text="Um... oh...? Hummm...\n\n&lt;color=#9C8C77&gt;*The Mayor seems stuck in a state of stupor, he stares blankly into the distance without meeting your gaze.*&lt;/color&gt;" posx="838" posy="8">
+		<option optionid="1" optiontext="" next="903"></option>
+	</node>
+	<node id="903" npcName="Sasha Stonefort" switchtalker="1430" anim="1" text="Definitely not alright... I fear his political career is over, but that may be for the best. I just hope he'll regain most of himself in time." posx="1251" posy="9">
+		<option optionid="1" optiontext="Good luck, Sasha." next="0"></option>
+	</node>
+
+
+	<node id="910" npcName="Sly Jonne" anim="1" text="Looks like the Mayor's here, and he doesn't seem all too happy by our endeavor... Can't help but wonder what that means for my reward. What do you think; might have been too much to hope that slaying Blackshield would earn us a hero's welcome, eh?" posx="0" posy="7">
+		<option optionid="1" optiontext="We uncovered proof that Azzar Kheyn is a traitor." next="911" checks="Quest=111-7-7"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="911" npcName="Sly Jonne" anim="1" text="Shhh, keep that down, would you? We don't want to spook the man now that he's so kindly walked himself into our camp, offering himself up to be captured. Zathe's already let us know, we're to pounce on Azzar on his mark..." posx="416" posy="7">
+		<option optionid="1" optiontext="Very good." next="0"></option>
+	</node>
+
+
+	<node id="915" npcName="Brianna Lightfeather" anim="1" text="I can't believe we just did that... Can't believe *I* just did that! Gosh, are battles always like that? I never expected it could be so thrilling!" posx="0" posy="7">
+		<option optionid="1" optiontext="We uncovered proof that Azzar Kheyn is a traitor." next="916" checks="Quest=111-7-7"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="916" npcName="Brianna Lightfeather" anim="1" text="Yes, Zathe already let us know, quietly of course. You don't expect more fighting, do you...? No, of course not, he must surrender - he's completely outmatched! Well, whatever happens, I'm ready to aid in apprehending the man." posx="416" posy="7">
+		<option optionid="1" optiontext="Very good." next="0"></option>
+	</node>
+
+
+	<node id="920" npcName="Deputy Ernsthart" anim="1" text="Glad to see you in one piece, never know what's gonna happen in a fight like that. Things devolve to pure chaos, just gotta push through... but we got him in the end, didn't we? Got that Blackshield nice and good, alright..." posx="0" posy="7">
+		<option optionid="1" optiontext="We uncovered proof that Azzar Kheyn is a traitor." next="921" checks="Quest=111-7-7"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="921" npcName="Deputy Ernsthart" anim="1" text="Aye, so Zathe told me. Looks like there's one more loose end to tie up before we can get some well deserved rest, eh? Well we stand ready and vigilant, the traitor Kheyn won't be escaping us." posx="416" posy="7">
+		<option optionid="1" optiontext="Very good." next="0"></option>
+	</node>
+
+
+	<node id="925" npcName="Deputy Rieler" anim="1" text="And there it is... Once again, with your formidable support, we took down more bandit leaders, and this time the worst of them fell - Lord Blackshield himself. Not so long ago I felt rather bleak about Haywind's prospects in the face of this menace. How quickly our fortunes changed, since you came along - you have my gratitude." posx="0" posy="7">
+		<option optionid="1" optiontext="We uncovered proof that Azzar Kheyn is a traitor." next="926" checks="Quest=111-7-7"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="926" npcName="Deputy Rieler" anim="1" text="Indeed, Zathe's taken the rounds and alerted us all to it. We just took down the Bandit Lord himself, I do not expect Kheyn to give us all that much trouble. With that said, we're more than prepared to jump on him given the order." posx="416" posy="7">
+		<option optionid="1" optiontext="Very good." next="0"></option>
+	</node>
+
+
+	<node id="930" npcName="Sly Jonne" anim="1" text="Everyone's so shocked about Kheyn turning out to be some kind of renegade wizard. Of course you can't know something like that, but I've seen enough underworld business to guess there was more to the man than met the eye. You learn to never do business with someone who gives off a bad aura." posx="13" posy="11">
+		<option optionid="1" optiontext="Speaking of business, chance on any interesting goods lately?" next="931" checks="Quest=111-999-999" icon="Shop"></option>
+		<option optionid="2" optiontext="Indeed." next="0"></option>
+	</node>
+	<node id="931" npcName="Sly Jonne" anim="1" text="Always! While everyone else was so busy fighting in Blackshield's fortress, I wrapped my fingers around some loot in passing. I mean, it's not like anyone else was picking it up, and I can't expect payment from the Mayor any time soon, what with the state he's in. I'd be happy to trade some of the stuff to you for a friendly price - got a few interesting goodies sent by cousin Slick Eddie too." posx="441" posy="13">
+		<option optionid="1" optiontext="" next="0" actions="OpenShop=137"></option>
+	</node>
+
+
+	<node id="2000" npcName="Sergeant Stafford" anim="1" text="You're some new guy? I wasn't told to expect a new guy. Eh, nobody ever tells anything to anyone around here. Anyway, get to it then, do some guarding." posx="8" posy="8">
+		<option optionid="1" optiontext="Care for some beer?" next="2001" checks="HasItem=296-1" itemIcon="296" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="2001" npcName="Sergeant Stafford" anim="1" text="Wait, wait, wait... what are you saying?! You bring corruption and ruin with you into this temple of discipline?! And you offer it to me, your superior?! You think there won't be consequences?!" posx="418" posy="8">
+		<option optionid="1" optiontext="..." next="2002"></option>
+	</node>
+	<node id="2002" npcName="Sergeant Stafford" anim="1" text="...bwahhahahaha! Just messin' with you, should've seen your face! Ahh... brilliant move, new guy, this post is dull as churning butter. Beer's the best way into the good graces of your fellow men around here, myself included. C'mon then, throw a couple pints this way!" posx="832" posy="8">
+		<option optionid="1" optiontext="Ah... haha... here you go..." next="0" checks="HasItem=296-2" itemIcon="296" actions="SetVar=Q110StaffordBeeryd-1,RemoveItems=296-2-true,NpcChat=You've made a good impression on me> recruit!" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Hold on, I'll get some more..." next="0"></option>
+	</node>
+
+
+	<node id="2010" npcName="Guard Crawford" anim="1" text="Gah, all these smartmouth prisoners do is get on my nerves! Wish we were allowed to 'educate' them, but Marshal's forbidden us. Just gotta let off steam some way, you know?" posx="6" posy="7">
+		<option optionid="1" optiontext="I've got just the thing - beer!" next="2011" checks="HasItem=296-1" itemIcon="296" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="2011" npcName="Guard Crawford" anim="1" text="Oh, whaaat?! Yesssirr! I could use more than one!" posx="415" posy="8">
+		<option optionid="1" optiontext="Alrighty..." next="0" checks="HasItem=296-2" itemIcon="296" actions="SetVar=Q110CrawfordBeeryd-1,RemoveItems=296-2-true,NpcChat=Time to drown out the prisoners' drivel!" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Hold on, I'll get some more..." next="0"></option>
+	</node>
+
+
+	<node id="2020" npcName="Guard Guilford" anim="1" text="Don't worry about anything, this isn't an important post. The bars and locks are doing our work for us. This place gets too boring sometimes!" posx="8" posy="5">
+		<option optionid="1" optiontext="Guess what's not boring though - beer!" next="2021" checks="HasItem=296-1" itemIcon="296" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="2021" npcName="Guard Guilford" anim="1" text="You're joking? You actually brought beer in here? The Marshal'd be livid if he saw us drinking... but he's not down here, is he? What do I care, pass me one then." posx="416" posy="5">
+		<option optionid="1" optiontext="My pleasure..." next="0" checks="HasItem=296-1" itemIcon="296" actions="SetVar=Q110GuilfordBeeryd-1,RemoveItems=296-1-true,NpcChat=Cheers to you> friend!" showGreyedOutOption="1"></option>
+	</node>
+
+
+	<node id="2030" npcName="Guard Bradford" anim="1" text="Hm...?" posx="8" posy="5">
+		<option optionid="1" optiontext="How's it going?" next="2031"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="2031" npcName="Guard Bradford" anim="1" text="Mmhh..." posx="416" posy="5">
+		<option optionid="1" optiontext="Alright then, how about a beer?" next="2032" checks="HasItem=296-1" itemIcon="296" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="I'll leave you to it." next="0"></option>
+	</node>
+	<node id="2032" npcName="Guard Bradford" anim="1" text="...yesss...!" posx="827" posy="6">
+		<option optionid="1" optiontext="Here you go..." next="0" checks="HasItem=296-1" itemIcon="296" actions="SetVar=Q110BradfordBeeryd-1,RemoveItems=296-1-true,NpcChat=Niccce...!" showGreyedOutOption="1"></option>
+	</node>
+
+
+	<node id="2040" npcName="Haywind Prison Guard" anim="1" text="We probably shouldn't be chatting idly. The Marshal doesn't like us doing that, not when we're supposed to perform our duties..." posx="14" posy="11">
+		<option optionid="1" optiontext="Care for some beer?" next="2041" checks="HasItem=296-1" itemIcon="296" showGreyedOutOption="1"></option>
+		<option optionid="2" optiontext="Leave." next="0"></option>
+	</node>
+	<node id="2041" npcName="Haywind Prison Guard" anim="1" text="I... probably shouldn't... really shouldn't be caught doing that. You mustn't tempt me! Move along now!" posx="424" posy="11">
+		<option optionid="1" optiontext="Leave." next="0" actions="NpcChat=You mustn't tempt me!"></option>
+	</node>
+
+
+
+
+
+
+
+	<node id="5276" npcName="Militia Guard" anim="1" text="Halt, traveler! You approach a militia camp. These lands are riddled with raiders. State your business." posx="1659" posy="463">
+		<option optionid="1" optiontext="I merely come seeking shelter and information." next="5277"></option>
+		<option optionid="2" optiontext="Do you need any assistance? I can handle myself in a fight." next="5279"></option>
+		<option optionid="3" optiontext="Goodbye." next="0"></option>
+	</node>
+	<node id="5277" npcName="Militia Guard" anim="1" text="The raiders are a treacherous bunch, ambushing unsuspecting travelers and caravans. Our scouts suggest they have a fortress to the north. We're keeping an eye out, but numbers are against us. It's wise to be cautious." posx="2195" posy="438">
+		<option optionid="1" optiontext="Aren't you able to provide protection for travelers?" next="5280"></option>
+		<option optionid="2" optiontext="Do you need any assistance? I can handle myself in a fight." next="5279"></option>
+		<option optionid="3" optiontext="Goodbye." next="0"></option>
+	</node>
+	<node id="5279" npcName="Militia Guard" anim="1" text="A capable fighter is always welcome. Sergeant Axfall normally leads us, but one of the Marshal's deputies in the camp is actually on the lookout for an exceptional recruit. Might want to consider talking to him." posx="3054" posy="328">
+		<option optionid="1" optiontext="I merely come seeking shelter and information." next="5277"></option>
+		<option optionid="2" optiontext="Aren't you able to provide protection for travelers?" next="5280"></option>
+		<option optionid="3" optiontext="Goodbye." next="0"></option>
+	</node>
+	<node id="5280" npcName="Militia Guard" anim="1" text="We're doing our best, but we can't escort every traveler. Stick to the main roads during the day and avoid traveling at night. It's the best advice I can give you. Stay safe out there." posx="3522" posy="656">
+		<option optionid="1" optiontext="I merely come seeking shelter and information." next="5277"></option>
+		<option optionid="2" optiontext="Do you need any assistance? I can handle myself in a fight." next="5279"></option>
+		<option optionid="3" optiontext="Goodbye." next="0"></option>
+	</node>
+
+
+
+
+
+	<node id="6100" npcName="Cartmaster Wargus" anim="1" text="Yeah, what?" posx="-25" posy="-47">
+		<option optionid="1" optiontext="Where can you take me?" next="6101" icon="FastTravel" checks="NpcVar=WargusIntroduction-1-1"></option>
+		<option optionid="2" optiontext="Who are you?" next="6102" actions="SetNpcVar=WargusIntroduction-1"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+
+	<node id="6101" npcName="Cartmaster Wargus" anim="1" text="Well, why don't you tell me where you're headed first and then we'll see, eh?" posx="51" posy="35">
+		<option optionid="1" icon="FastTravel" optiontext="South gate of the town..." next="0"></option>
+		<option optionid="2" icon="FastTravel" optiontext="Western watchtower..." next="0"></option>
+		<option optionid="3" icon="FastTravel" optiontext="North barracks..." next="0"></option>
+		<option optionid="10" optiontext="Nevermind." next="0"></option>
+	</node>
+	<node id="6102" npcName="Cartmaster Wargus" anim="1" text="What do you mean who am I? I'm the cart guy obviously, I cart folk around swiftly. Sometimes they get suspicious, call me out on witchcraft and such - say it seems like I can be in many places at once. Horseradish, I just move around a lot and quickly too!" posx="-25" posy="-47">
+		<option optionid="1" optiontext="Where can you take me?" next="6101" icon="FastTravel"></option>
+		<option optionid="3" optiontext="Leave." next="0"></option>
+	</node>
+
+
+	<node id="6200" npcName="Belford, the Sick Guard" anim="1" text="&lt;color=#9C8C77&gt;*For a moment your mind fumbles for an awkward excuse. Then you realize the man is completely delirious, his eyes swaying wildly from side to side. Fever seems to have addled his brains.*&lt;/color&gt;" posx="8" posy="6">
+		<option optionid="1" optiontext="" next="6201"></option>
+	</node>
+	<node id="6201" npcName="Belford, the Sick Guard" anim="1" text="Mother...! How many times must I tell you...?! I'm a... big man now... you mustn't rummage through my sock drawer without my permission...!" posx="419" posy="7">
+		<option optionid="1" optiontext="Errr... yes, mother's here to take care of you, go back to bed..." next="6202"></option>
+	</node>
+	<node id="6202" npcName="Belford, the Sick Guard" anim="1" text="Yes, mother... could really use some cookies and milk to feel better... when you have the time...\n\n&lt;color=#9C8C77&gt;*With that the man waddles back to bed.*&lt;/color&gt;" posx="828" posy="8">
+		<option optionid="1" optiontext="" next="0" actions="SetVar=Q110GuardUpstairs-0,PlayerChatBubble=Best to try and not disturb the man further..."></option>
+	</node>
+
+</dialogue>

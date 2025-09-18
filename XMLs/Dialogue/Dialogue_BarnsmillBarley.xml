@@ -1,0 +1,223 @@
+<dialogue>
+	<node id="1" npcName="Forvan Hammersmith" anim="1" text="That's fine, but it'll cost ya." contextBefore="" contextAfter="" posx="72" posy="65">
+		<option optionid="1" optiontext="Barnsy said he'd owe you a case of whiskey." next="2"></option>
+	</node>
+	<node id="2" npcName="Forvan Hammersmith" anim="1" text="Ye, but I prefer to get paid now." contextBefore="" contextAfter="" posx="369" posy="302">
+		<option optionid="1" optiontext="..." next="3"></option>
+	</node>
+	<node id="3" npcName="Forvan Hammersmith" anim="1" text="Pfft, fine. What is it, his whiskey machine acting up again?" contextBefore="" contextAfter="" posx="657" posy="35">
+		<option optionid="1" optiontext="He blew one of the tanks, been trying to bend it back into shape but the tools keep breaking." next="4"></option>
+	</node>
+	<node id="4" npcName="Forvan Hammersmith" anim="1" text="Ye, of course they do. Thing's made of hardened Imbersteel, innit? It'd be better to just cast new wall plating entirely, 'course, that'd require a ton of Imbersteel..." contextBefore="" contextAfter="" posx="930" posy="310">
+		<option optionid="1" optiontext="Isn't there any other way?" next="5"></option>
+		<option optionid="2" optiontext="I take it Imbersteel isn't easily available?" next="7"></option>
+	</node>
+	<node id="5" npcName="Forvan Hammersmith" anim="1" text="Ye, I guess there is. Could make a heavy hammer out of Arakite. It's a rare metal with some weird properties. Heard they found some in the mines of Ratcliffe. " contextBefore="" contextAfter="" posx="1359" posy="20">
+		<option optionid="1" optiontext="You want me to find some from those mines then?" next="6"></option>
+		<option optionid="2" optiontext="What makes Arakite special?" next="8"></option>
+	</node>
+	<node id="6" npcName="Forvan Hammersmith" anim="1" text="Ye, if ya want that hammer." contextBefore="" contextAfter="" posx="1899" posy="13">
+		<option optionid="1" optiontext="As it happens, I'm already carrying some of that ore." icon="Quest" checks="HasItem=615-5" next="16"></option>
+		<option optionid="2" optiontext="Okay, I'll be back with some ore." actions="UpdateQuest=10-2" next="0"></option>
+		<option optionid="3" optiontext="Where do I find the Ratcliffe mines? Don't tell me it's far..." next="9"></option>
+	</node>
+	<node id="7" npcName="Forvan Hammersmith" anim="1" text="Well ye, I guess it's rare enough and takes skill to extract, so it'd be pretty pricey." contextBefore="" contextAfter="" posx="1132" posy="649">
+		<option optionid="1" optiontext="Isn't there another way?" next="5"></option>
+	</node>
+	<node id="8" npcName="Forvan Hammersmith" anim="1" text="I dunno, it's too soft to be useful for most things, but it has a way of snapping back to shape without breaking. I guess wizards and crazy alchemists and such value it for some other reasons." contextBefore="" contextAfter="" posx="1472" posy="353">
+		<option optionid="1" optiontext="So I should bring some of this Arakite to you?" next="6"></option>
+	</node>
+	<node id="9" npcName="Forvan Hammersmith" anim="1" text="Ye, well it ain't that far. Gotta follow the road leading southeast of Haywind, enter the mines and grab the ore, innit?" contextBefore="" contextAfter="" posx="2297" posy="348">
+		<option optionid="1" optiontext="Okay, I'll come back when I've found some." actions="UpdateQuest=10-2" next="0"></option>
+	</node>
+
+	<node id="10" npcName="Forvan Hammersmith" anim="1" text="Ye?" contextBefore="" contextAfter="" posx="171" posy="136">
+		<option optionid="1" optiontext="I should have enough Arakite ore for the special hammer now." icon="Quest" checks="HasItem=615-5" next="11"></option>
+		<option optionid="2" optiontext="So, what exactly should I do again?" icon="Quest" checks="!HasItem=615-5" next="14"></option>
+		<option optionid="3" optiontext="Nevermind, I'd like to see your store." actions="OpenShop=24" next="0"></option>
+		<option optionid="4" optiontext="Nevermind, I should go." next="0"></option>
+	</node>
+	<node id="11" npcName="Forvan Hammersmith" anim="1" text="Ye alright then, gimme a moment and I'll cast it for ya. " contextBefore="" contextAfter="" posx="631" posy="123">
+		<option optionid="1" optiontext="" icon="Quest" actions="Cinematic=57" next="0"></option>
+	</node>
+	<node id="12" npcName="Forvan Hammersmith" anim="1" text="*Forvan makes hamar cinematic?*" contextBefore="" contextAfter="" posx="728" posy="389">
+		<option optionid="1" optiontext="" next="13"></option>
+	</node>
+	<node id="13" npcName="Forvan Hammersmith" anim="1" itemIcon="673" actions="UpdateQuest=10-3,AddItems=673-1,RemoveItems=615-5" text="Here ya go, one Arakite Hammer. And don't forget to tell Barnsy I'll be expecting that whiskey crate shortly. " contextBefore="" contextAfter="" posx="1150" posy="105">
+		<option optionid="1" optiontext="Wouldn't mind having a look at what else you have for sale." actions="OpenShop=24" next="0"></option>
+		<option optionid="2" optiontext="Thanks, I will." icon="Quest" next="0"></option>
+	</node>
+	<node id="14" npcName="Forvan Hammersmith" anim="1" text="Ye well, if yer looking to bend Barnsy's Imbersteel whiskey chambers back into shape, I reckon yer gonna need an Arakite hammer. I can make that for ya, if ya bring me the Arakite ore itself. Word is they found some in the Ratcliffe mines recently." contextBefore="" contextAfter="" posx="1229" posy="484">
+		<option optionid="1" optiontext="And where do I find these Ratcliffe mines?" next="15"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+	<node id="15" npcName="Forvan Hammersmith" anim="1" text="Follow the road leading southeast of Haywind to reach the mines. Then all ya gotta do is find the ore, grab it and bring it back here, innit?" contextBefore="" contextAfter="" posx="1751" posy="527">
+		<option optionid="1" optiontext="Alright, what have you got for sale?" actions="OpenShop=24" next="0"></option>
+		<option optionid="2" optiontext="I see." next="0"></option>
+	</node>
+
+	<node id="16" npcName="Forvan Hammersmith" anim="1" text="Well alright then! Gimme a moment and I'll cast it into the hammer for ya." contextBefore="" contextAfter="" posx="211" posy="91">
+		<option optionid="1" optiontext="" icon="Quest" actions="Cinematic=57" next="0"></option>
+	</node>
+
+	<node id="100" npcName="Master Barnsmill" anim="1" text="Oh, hello there traveler. Sorry about the commotion, been trying to fix this damn machine for days now. So what brings you to Barnsy Barnsmill the IV? Let me guess, whiskey?" contextBefore="" contextAfter="" posx="168" posy="67">
+		<option optionid="1" optiontext="That's right, looking for a bottle of the famous Mistywood Dew." icon="Quest" next="101"></option>
+	</node>
+	<node id="101" npcName="Master Barnsmill" anim="1" text="Or infamous, depending on how you look at it. This machine of mine churns out tons of the stuff, but it's... an acquired taste. The locals have grown to love it though." contextBefore="" contextAfter="" posx="619" posy="66">
+		<option optionid="1" optiontext="" next="102"></option>
+	</node>
+	<node id="102" npcName="Master Barnsmill" anim="1" text="But if you're looking for a bottle now, I have some bad news for you, mate. I've sold my stock and the distiller's broken. I tried to optimize the pressure, improve on the product you know? Got a bit too confident and blew this tank instead." contextBefore="" contextAfter="" posx="910" posy="299">
+		<option optionid="1" optiontext="But I really need that whiskey..." icon="Quest" next="103"></option>
+		<option optionid="2" optiontext="So can you fix it?" next="106"></option>
+	</node>
+	<node id="103" npcName="Master Barnsmill" anim="1" text="Need it? I hope you aren't one of those poor drunks addicted to the stuff. In any case, there isn't more until I get the machine running again. If you're really that keen, maybe you could help." contextBefore="" contextAfter="" posx="1203" posy="48">
+		<option optionid="1" optiontext="What can I do?" icon="Quest" next="104"></option>
+	</node>
+	<node id="104" npcName="Master Barnsmill" anim="1" text="It's simple actually. All we need is to bang the chamber wall back into place, but for that we need a tool that's not gonna break on us. If there's someone around with something like that, it'll be Forvan." contextBefore="" contextAfter="" posx="1408" posy="312">
+		<option optionid="1" optiontext="" next="105"></option>
+	</node>
+	<node id="105" npcName="Master Barnsmill" anim="1" text="Forvan's the blacksmith in Haywind, best smith around these parts for sure, so he'll know what to do. Look for his forge outside the northern gates of Haywind and let him know I owe him a case of whiskey. That ought to do the trick." contextBefore="" contextAfter="" posx="1822" posy="69">
+		<option optionid="1" optiontext="Okay, I'll see what I can do." actions="UpdateQuest=10-1" next="0"></option>
+		<option optionid="2" optiontext="What's the quickest way to get there?" next="107"></option>
+		<option optionid="3" optiontext="What's the story behind the whisky anyway?" next="108"></option>
+		<option optionid="4" optiontext="How does the distiller contraption work?" next="112"></option>
+	</node>
+	<node id="106" npcName="Master Barnsmill" anim="1" text="It's not like I haven't tried but the chamber walls are cast from hardened Imbersteel. The idea is that Imbersteel wouldn't break, basically ever, but once it gives... Well, it's really hard to shape back together. You can ask my hammers all about it." contextBefore="" contextAfter="" posx="1196" posy="637">
+		<option optionid="1" optiontext="But I really need that whiskey..." icon="Quest" next="103"></option>
+	</node>
+	<node id="107" npcName="Master Barnsmill" anim="1" text="You'll probably have to go west and through the city; head north from Haywind marketplace and you shouldn't have trouble finding him." contextBefore="" contextAfter="" posx="2355" posy="274">
+		<option optionid="1" optiontext="What's the story behind the whisky anyway?" next="108"></option>
+		<option optionid="2" optiontext="How does the distiller contraption work?" next="112"></option>
+		<option optionid="3" optiontext="Okay, I'll see what I can do." checks="Quest=10-0-0" actions="UpdateQuest=10-1" next="0"></option>
+		<option optionid="4" optiontext="Okay, I'll see what I can do." checks="!Quest=10-0-0" next="0"></option>
+	</node>
+
+	<node id="108" npcName="Master Barnsmill" anim="1" text="Ooh well it all started with with my great-great-grandfather Barnsy Barnsmill the second. He was a bit of a tinker you see and he loved whiskey. Now, it was during the time of the Great Whiskey Shortage of the last century..." contextBefore="" contextAfter="" posx="2634" posy="898">
+		<option optionid="1" optiontext="How exciting." next="109"></option>
+		<option optionid="2" optiontext="Let's get back to the distiller. How does it work exactly?" next="112"></option>
+		<option optionid="3" optiontext="Actually, tell me how to get to Forvan's forge." next="107"></option>
+		<option optionid="4" optiontext="Enlightening, but I should get on with the task at hand." checks="Quest=10-0-0" actions="UpdateQuest=10-1" next="0"></option>
+		<option optionid="5" optiontext="Enlightening, but I should get on with the task at hand." checks="!Quest=10-0-0" next="0"></option>
+	</node>
+	<node id="109" npcName="Master Barnsmill" anim="1" text="Oh yeah! So whiskey prices were really high in Imberthale, while in neighboring Melloria they were pretty low. So people were traveling all the way across the border to buy whiskey! Let me tell you, whiskey prices... it's crazy stuff." contextBefore="" contextAfter="" posx="3111" posy="899">
+		<option optionid="1" optiontext="What happened then? I'm on the edge of my seat here with these whiskey prices." next="110"></option>
+		<option optionid="2" optiontext="Let's get back to the distiller. How does it work exactly?" next="112"></option>
+		<option optionid="3" optiontext="Actually, tell me how to get to Forvan's forge." next="107"></option>
+		<option optionid="4" optiontext="Enlightening, but I should get on with the task at hand." checks="Quest=10-0-0" actions="UpdateQuest=10-1" next="0"></option>
+		<option optionid="5" optiontext="Enlightening, but I should get on with the task at hand." checks="!Quest=10-0-0" next="0"></option>
+	</node>
+	<node id="110" npcName="Master Barnsmill" anim="1" text="Well, good olde Barnsy Barnsmill got sick of it all and decided to make his own whiskey. Being the inventor that he was, he came up with this very special distiller. It could churn out such quantities of whiskey so fast that we were able to cart it off to Melloria and undercut our competition! Can you imagine?" contextBefore="" contextAfter="" posx="3566" posy="898">
+		<option optionid="1" optiontext="Your family must have made a fortune." next="111"></option>
+		<option optionid="2" optiontext="Let's get back to the distiller. How does it work exactly?" next="112"></option>
+		<option optionid="3" optiontext="Actually, tell me how to get to Forvan's forge." next="107"></option>
+		<option optionid="4" optiontext="Enlightening, but I should get on with the task at hand." checks="Quest=10-0-0" actions="UpdateQuest=10-1" next="0"></option>
+		<option optionid="5" optiontext="Enlightening, but I should get on with the task at hand." checks="!Quest=10-0-0" next="0"></option>
+	</node>
+	<node id="111" npcName="Master Barnsmill" anim="1" text="Aye but we're simple whiskey people, don't need too much in the way of luxuries. Granted, some of our family have used the whiskey fortunes to build impressive estates elsewhere. But I prefer to stay right here where it all started, making the very same whiskey my great-great-grandfather made." contextBefore="" contextAfter="" posx="4012" posy="897">
+		<option optionid="1" optiontext="Let's get back to the distiller. How does it work exactly?" next="112"></option>
+		<option optionid="2" optiontext="Actually, tell me how to get to Forvan's forge." next="107"></option>
+		<option optionid="3" optiontext="Enlightening, but I should get on with the task at hand." checks="Quest=10-0-0" actions="UpdateQuest=10-1" next="0"></option>
+		<option optionid="4" optiontext="Enlightening, but I should get on with the task at hand." checks="!Quest=10-0-0" next="0"></option>
+	</node>
+
+	<node id="112" npcName="Master Barnsmill" anim="1" text="Now that's a family secret! But I can tell you it's powered by the massive windmill outside. It houses an intricate system of pipes that make their way down here to the distiller and provide it with all the water and pressure and stuff it needs." contextBefore="" contextAfter="" posx="154" posy="60">
+		<option optionid="1" optiontext="What...?" next="113"></option>
+		<option optionid="2" optiontext="Um. So what's the story behind the whiskey then?" next="108"></option>
+		<option optionid="3" optiontext="Okay, so what's the best way to get to Forvan's forge." next="107"></option>
+		<option optionid="4" optiontext="Nevermind, I should get on with the task at hand." checks="Quest=10-0-0" actions="UpdateQuest=10-1" next="0"></option>
+		<option optionid="5" optiontext="Nevermind, I should get on with the task at hand." checks="!Quest=10-0-0" next="0"></option>
+	</node>
+	<node id="113" npcName="Master Barnsmill" anim="1" text="Try not to think about it too much. To laymen it all seems like magic anyway. The important thing to understand is that it just works." contextBefore="" contextAfter="" posx="612" posy="59">
+		<option optionid="1" optiontext="Um, so what's the story behind the whiskey then?" next="108"></option>
+		<option optionid="2" optiontext="Okay, so what's the best way to get to Forvan's forge." next="107"></option>
+		<option optionid="3" optiontext="Nevermind, I should get on with the task at hand." checks="Quest=10-0-0" actions="UpdateQuest=10-1" next="0"></option>
+		<option optionid="4" optiontext="Nevermind, I should get on with the task at hand." checks="!Quest=10-0-0" next="0"></option>
+	</node>
+  
+	<node id="120" npcName="Master Barnsmill" anim="1" text="Yes?" contextBefore="" contextAfter="" posx="122" posy="57">
+		<option optionid="1" optiontext="Got back from Forvan's forge. He came up with a special hammer that should do the trick." icon="Quest" checks="Quest=10-3-3,HasItemInventoryOrEquipped=673-1" next="121"></option>
+		<option optionid="2" optiontext="What should I do again?" checks="!HasItemInventoryOrEquipped=673-1" next="122"></option>
+		<option optionid="3" optiontext="Just curious, what's the story behind the whiskey anyway?" next="108"></option>
+		<option optionid="4" optiontext="Wondering how a machine like this can possibly produce whiskey." next="112"></option>
+		<option optionid="5" optiontext="Nothing right now." next="0"></option>
+	</node>
+	<node id="121" npcName="Master Barnsmill" anim="1" text="That's terrific news! Let's see if it will get the plating back to place. Want to have the honors?" contextBefore="" contextAfter="" posx="611" posy="54">
+		<option optionid="1" optiontext="Sure." actions="EquipItem=673,Cinematic=50" icon="Quest" next="0"></option>
+	</node>
+	<node id="122" npcName="Master Barnsmill" anim="1" text="Find the smith Forvan in northern Haywind and ask him for a tool that will help us fix this chamber wall that blew loose. Tell him I'll owe him a case of whiskey, that ought to soften him up." contextBefore="" contextAfter="" posx="72" posy="56">
+		<option optionid="1" optiontext="And how do I get to his forge, exactly?" next="107"></option>
+		<option optionid="2" optiontext="What's the story behind the whiskey anyway?" next="108"></option>
+		<option optionid="3" optiontext="So how does this distiller work?" next="112"></option>
+		<option optionid="4" optiontext="Alright." next="0"></option>
+	</node>
+
+	<node id="150" npcName="Master Barnsmill" anim="1" text="Pressure's still tanking, something must be wrong with the pipes. Check on the windmill outside while I fix things down here, would you?" contextBefore="" contextAfter="" posx="1487" posy="116">
+		<option optionid="1" optiontext="" next="151"></option>
+	</node>
+	<node id="151" npcName="Master Barnsmill" anim="1" text="If you see any broken pipes up there, you can try to fix them with the spare parts from crates at the base of the windmill. Pull the lever at the top once you get everything in order and it should get the machine running again." contextBefore="" contextAfter="" posx="1938" posy="116">
+		<option optionid="1" optiontext="Alright." next="0"></option>
+	</node>
+  
+	<node id="170" npcName="Master Barnsmill" anim="1" text="Oh, what now?! Pressure's tanking? Something's wrong with the pipes... Check on the windmill outside while I fix things down here, would you?" contextBefore="" contextAfter="" posx="1487" posy="116">
+		<option optionid="1" optiontext="" next="171"></option>
+	</node>
+	<node id="171" npcName="Master Barnsmill" anim="1" text="If you see any broken pipes up there, try to fix them with the spare parts from crates at the base of the windmill. Pull the lever at the top once you get everything in order and it should get the machine running again." contextBefore="" contextAfter="" posx="1938" posy="116">
+		<option optionid="1" optiontext="Alright." actions="UpdateQuest=10-4" next="0"></option>
+	</node>
+
+	<node id="200" npcName="Master Barnsmill" anim="1" text="Flipping egg mate, you did it! The whiskey taps are running again and you've certainly earned your bottle. Tell you what, take this too..." contextBefore="" contextAfter="" posx="78" posy="56">
+		<option optionid="1" optiontext="" next="201"></option>
+	</node>
+	<node id="201" npcName="Master Barnsmill" anim="1" text="It's the recipe for an experiment I did a while back. Tried to come up with a new kind of liquor, but the stuff ended up tasting like horse piss. It's incredibly flammable though, so maybe an adventurer like you can find an alternative use for it." contextBefore="" contextAfter="" posx="542" posy="56">
+		<option optionid="1" optiontext="Alright, thanks." icon="Quest" next="203"></option>
+		<option optionid="2" optiontext="Hold on, shouldn't the whiskey age before it's ready?" next="202"></option>
+	</node>
+	<node id="202" npcName="Master Barnsmill" anim="1" text="Nah, not the way this machine does it. Trust me, Mistywood Dew is perfect as it is." contextBefore="" contextAfter="" posx="471" posy="443">
+		<option optionid="1" optiontext="I'm beginning to wonder if this can be whiskey at all..." next="204"></option>
+		<option optionid="2" optiontext="Um, if you say so... thanks anyway." icon="Quest" next="203"></option>
+	</node>
+	<node id="203" npcName="Master Barnsmill" actions="UpdateQuest=10-999" anim="1" text="No, thank you. And remember friend; if you ever run out of whiskey, you're welcome here any time." contextBefore="" contextAfter="" posx="1145" posy="205">
+		<option optionid="1" optiontext="I'll keep that in mind. Take care, Barns." icon="Quest" next="0"></option>
+	</node>
+	<node id="204" npcName="Master Barnsmill" anim="1" text="Heh, you wouldn't be the only one mate. But for most people it does the trick." contextBefore="" contextAfter="" posx="1058" posy="654">
+		<option optionid="1" optiontext="Alright, thanks." next="203"></option>
+	</node>
+
+	<node id="210" npcName="Master Barnsmill" anim="1" text="Greetings, friend! Whiskey machine's churning better than ever before, thanks to you. Now, how can I help?" contextBefore="" contextAfter="" posx="334" posy="58">
+		<option optionid="1" optiontext="I was hoping to buy whiskey." actions="OpenShop=9" next="0"></option>
+		<option optionid="2" optiontext="Nothing for now, take care Barns." next="0"></option>
+	</node>
+  
+	<node id="300" npcName="Barnsy" anim="1" text="*Barnsy banging whisky chamber with hammer*" contextBefore="INTRO CINEMATIC" contextAfter="" posx="88" posy="198">
+		<option optionid="1" optiontext="" next="301"></option>
+	</node>
+	<node id="301" npcName="Barnsy" anim="1" text="Hngh! Come on...! Get in there...!" contextBefore="" contextAfter="" posx="527" posy="198">
+		<option optionid="1" optiontext="" next="302"></option>
+	</node>
+	<node id="302" npcName="Barnsy" anim="1" text="*hamar braek*" contextBefore="" contextAfter="" posx="965" posy="197">
+		<option optionid="1" optiontext="" next="303"></option>
+	</node>
+	<node id="303" npcName="Barnsy" anim="1" text="Shit in a wet sock, piece of... gah! That was my best hammer!" contextBefore="" contextAfter="" posx="1422" posy="201">
+		<option optionid="1" optiontext="" next="0"></option>
+	</node>
+
+	<node id="305" npcName="Master Barnsmill" anim="1" text="You fix the chamber wall and I'll get the machine ready." contextBefore="CINEMATIC 50?" contextAfter="" posx="70" posy="123">
+		<option optionid="1" optiontext="" next="306"></option>
+	</node>
+	<node id="306" npcName="Master Barnsmill" anim="1" text="*palyer hits ting with hammer, barnsy pulls a lever or something*" contextBefore="" contextAfter="" posx="548" posy="116">
+		<option optionid="1" optiontext="" next="307"></option>
+	</node>
+	<node id="307" npcName="Master Barnsmill" anim="1" text="*machine coughs steam everywheere*" contextBefore="" contextAfter="" posx="1024" posy="117">
+		<option optionid="1" optiontext="" next="308"></option>
+	</node>
+	<node id="308" npcName="Master Barnsmill" anim="1" text="Barnsy: *cough*" contextBefore="" contextAfter="" posx="1024" posy="117">
+		<option optionid="1" optiontext="" next="309"></option>
+	</node>
+	<node id="309" npcName="Master Barnsmill" anim="1" text="Player: *cough*" contextBefore="" contextAfter="" posx="1024" posy="117">
+		<option optionid="1" optiontext="" next="308"></option>
+	</node>
+</dialogue>
+
+
+
+

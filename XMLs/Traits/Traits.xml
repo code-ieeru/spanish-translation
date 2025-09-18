@@ -1,0 +1,543 @@
+<traits>
+
+
+
+	<trait id="25" name="The Black Curse" description="Raised from the dead by a dark wizard Gabrius, you are cursed to walk the land for an eternity."></trait>
+	<trait id="26" name="Curse of Enslavement" description="The dark wizard Gabrius has enslaved your mind to obey his every command."></trait>
+	<trait id="30" name="Novice Lumberjack"  description = "You've taken your first steps in mastering the art of tree cutting - now go further.\n\n&lt;color=green&gt; Gain Pathfinding, which increases movement speed outside of combat. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in woodsmanship by 5%. &lt;/color&gt;">
+		<trainer skill="woodcutting" level="6" tiericon="1"></trainer>
+	</trait>
+	<trait id="31" name="Novice Angler"   description = "You've taken your first steps in unlocking the secrets of the depths - now go further.\n\n&lt;color=green&gt; Increases experience gains in fishing by 5%. &lt;/color&gt;" >
+		<trainer skill="fishing" level="6" tiericon="1"></trainer>
+	</trait>
+	<trait id="32" name="Novice Swordsman"    description = "You've taken your first steps in mastering weapon techniques - now go further.\n\n&lt;color=green&gt; Slightly increases your attack speed with melee weapons. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in attack by 5%. &lt;/color&gt;" >
+		<trainer skill="swordsmanship" level="6" tiericon="1"></trainer>
+	</trait>
+	<trait id="33" name="Novice Rockpicker"    description = "You've taken your first steps in mastering the art of breaking rocks - now go further.\n\n&lt;color=green&gt; Increases experience gains in mining by 5%.&lt;/color&gt;" >
+		<trainer skill="mining" level="6" tiericon="1"></trainer>
+	</trait>
+	<trait id="34" name="Novice Marksman"    description = "You've taken your first steps in mastering the art of arrowflight - now go further.\n\n&lt;color=green&gt; Slightly increases your attack speed with ranged weapons. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in archery by 5%. &lt;/color&gt;">
+		<trainer skill="archery" level="6" tiericon="1"></trainer>
+	</trait>
+	<trait id="35" name="Novice Spellslinger"    description = "You've taken your first steps in unlocking the secrets of magic - now go further.\n\n&lt;color=green&gt; Your base mana is increased by 5. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in sorcery by 5%. &lt;/color&gt;" >
+		<trainer skill="magic" level="6" tiericon="1"></trainer>
+	</trait>
+	<trait id="36" name="Novice Shieldbearer"    description = "You've taken your first steps in mastering the art of protection - now go further.\n\n&lt;color=green&gt; Your base health is increased by 5. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in defence by 5%. &lt;/color&gt;" >
+		<trainer skill="defence" level="6" tiericon="1"></trainer>
+	</trait>
+	<trait id="37" name="Novice Blacksmith"    description = "You've taken your first steps in understanding the forge - now go further.\n\n&lt;color=green&gt; Gain a small chance to create an exceptional quality of an equippable item while smithing. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in smithing by 5%. &lt;/color&gt;" >
+		<trainer skill="blacksmithy" level="6" tiericon="1"></trainer>
+	</trait>
+	<trait id="38" name="Novice Outfitter"    description = "You've taken your first steps in understanding clothing patterns - now go further.\n\n&lt;color=green&gt; Gain a small chance to create an exceptional quality of an equippable item while tailoring. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in tailoring by 5%. &lt;/color&gt;" >
+		<trainer skill="tailoring" level="6" tiericon="1"></trainer>
+	</trait>
+	<trait id="39" name="Novice Wright"    description = "You've taken your first steps in the art of crafting unlikely things - now go further.\n\n&lt;color=green&gt; Gain a small chance to create an exceptional quality of an equippable item at a crafting workbench. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in crafting by 5%. &lt;/color&gt;" >
+		<trainer skill="carpentry" level="6" tiericon="1"></trainer>
+	</trait>
+	<trait id="40" name="Novice Potioner"    description = "You've taken your first steps in unlocking the secrets of alchemy - now go further.\n\n&lt;color=green&gt; Increases the duration of your potion buffs slightly. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in alchemy by 5%. &lt;/color&gt;">
+		<trainer skill="alchemy" level="6" tiericon="1"></trainer>
+	</trait>
+	<trait id="41" name="Novice Saucemaker"    description = "You've taken your first steps in unlocking the secrets of soupmaking - now go further.\n\n&lt;color=green&gt; Enables you to acquire local cooking recipes from taverns in Timberwell, Grainwater and Ratcliffe. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in cooking by 5%. &lt;/color&gt;" >
+		<trainer skill="cooking" level="6" tiericon="1"></trainer>
+	</trait>
+
+
+	<trait id="42" name="Experienced Lumberjack"    description = "You are becoming confident in the art of felling trees, but trees come in many shapes and sizes - there is much more to learn.\n\n&lt;color=green&gt; The movement speed bonus from Pathfinding is increased. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in woodsmanship by 5%. &lt;/color&gt;" >
+		<trainer skill="woodcutting" level="20" tiericon="2"></trainer>
+	</trait>
+	<trait id="43" name="Experienced Angler"  description = "Baiting common types of fish comes easily to you now, but there are much more elusive aquatic creatures out there.\n\n&lt;color=green&gt; Increases experience gains in fishing by 5%. &lt;/color&gt;" >
+		<trainer skill="fishing" level="20" tiericon="2"></trainer>
+	</trait>
+	<trait id="44" name="Experienced Swordsman"  description = "You strike with confidence, but the road to becoming a true Blademaster is long and arduous.\n\n&lt;color=green&gt; Further increases your attack speed with melee weapons slightly. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in attack by 5%. &lt;/color&gt;" >
+		<trainer skill="swordsmanship" level="20" tiericon="2"></trainer>
+	</trait>
+	<trait id="45" name="Experienced Rockpicker"  description = "You now understand that breaking rocks is a simple thing, yet complete mastery of the simple thing can still take a great deal of effort.\n\n&lt;color=green&gt; Increases experience gains in mining by 5%.&lt;/color&gt;" >
+		<trainer skill="mining" level="20" tiericon="2"></trainer>
+	</trait>
+	<trait id="46" name="Experienced Marksman"  description = "You strike your mark more often than not, but arrowflight is a tricky art to master.\n\n&lt;color=green&gt; Further increases your attack speed with ranged weapons slightly. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in archery by 5%. &lt;/color&gt;" >
+		<trainer skill="archery" level="20" tiericon="2"></trainer>
+	</trait>
+	<trait id="47" name="Experienced Spellslinger"  description = "Summoning magic does not feel as unfamiliar to you as it once did, but how to unlock all its limitless potential?\n\n&lt;color=green&gt; Your base mana is further increased by 10 and your mana regen is increased slightly. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in sorcery by 5%. &lt;/color&gt;" >
+		<trainer skill="magic" level="20" tiericon="2"></trainer>
+	</trait>
+	<trait id="48" name="Experienced Shieldbearer"  description = "The fight's not over until you go down - you're trying not to go down.\n\n&lt;color=green&gt; Your base health is increased by further 5 and your health regen is increased slightly. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in defence by 5%. &lt;/color&gt;" >
+		<trainer skill="defence" level="20" tiericon="2"></trainer>
+	</trait>
+	<trait id="49" name="Experienced Blacksmith"  description = "Whether in battle or otherwise, you're only as good as your gear allows you to be - you clearly aim to be better.\n\n&lt;color=green&gt; Your chance to create an exceptional quality of an equippable item while smithing is increased. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in smithing by 5%. &lt;/color&gt;" >
+		<trainer skill="blacksmithy" level="20" tiericon="2"></trainer>
+	</trait>
+	<trait id="50" name="Experienced Outfitter"  description = "It's important to dress well, especially more so if you're looking to cast spells.\n\n&lt;color=green&gt; Your chance to create an exceptional quality of an equippable item while tailoring is increased. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in tailoring by 5%. &lt;/color&gt;" >
+		<trainer skill="tailoring" level="20" tiericon="2"></trainer>
+	</trait>
+	<trait id="51" name="Experienced Wright"  description = "Who needs magic when you can craft things that shoot arrows or explode?\n\n&lt;color=green&gt; Your chance to create an exceptional quality of an equippable item at a crafting workbench is increased. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in crafting by 5%. &lt;/color&gt;" >
+		<trainer skill="carpentry" level="20" tiericon="2"></trainer>
+	</trait>
+	<trait id="52" name="Experienced Potioner"  description = "You can't make gold yet, but it's beginning to seem within the realm of possibility.\n\n&lt;color=green&gt; Further increases the duration of your potion buffs. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in alchemy by 5%. &lt;/color&gt;" >
+		<trainer skill="alchemy" level="20" tiericon="2"></trainer>
+	</trait>
+	<trait id="53" name="Experienced Saucemaker"  description = "Fine food can solve almost any problem, one simply must know how to prepare it.\n\n&lt;color=green&gt; Enables you to acquire a local cooking recipe from the tavern in Fog's Dwindling. &lt;/color&gt;\n\n&lt;color=green&gt; Increases experience gains in cooking by 5%. &lt;/color&gt;" >
+		<trainer skill="cooking" level="20" tiericon="2"></trainer>
+	</trait>
+
+	
+	
+
+	<trait id="103" name="Gentleman's Measurements" description = "Every bone that sticks out of your undead body has been thoroughly measured in order to perfectly fit your armor on.\n\n&lt;color=green&gt; Increases all resistances by 3. &lt;/color&gt;" ></trait>
+
+	<trait id="157" name="Clean Cuts" description="Gives a slight chance to acquire extra wood when chopping a tree.">
+		<trainer skill="woodcutting" level="8"></trainer>
+	</trait>
+	<trait id="158" name="Swift Reeling" description="Gives a slight chance to acquire extra fish while fishing.">
+		<trainer skill="fishing" level="8"></trainer>
+	</trait>
+	<trait id="159" name="Prospecting" description="Gives a slight chance to acquire extra ore while mining.">
+		<trainer skill="mining" level="8"></trainer>
+	</trait>
+	<trait id="160" name="Hammering Techniques" description="Increases your smithing XP gains slightly.">
+		<trainer skill="blacksmithy" level="8"></trainer>
+	</trait>
+	<trait id="161" name="Griffin Beakers" description="Increases your alchemy XP gains slightly.">
+		<trainer skill="alchemy" level="8"></trainer>
+	</trait>
+	<trait id="162" name="Needling Patterns" description="Increases your tailoring XP gains slightly.">
+		<trainer skill="tailoring" level="8"></trainer>
+	</trait>
+	<trait id="163" name="Wood Carving" description="Increases your crafting XP gains slightly.">
+		<trainer skill="carpentry" level="8"></trainer>
+	</trait>
+	<trait id="164" name="Foraged Foods" description="Increases your cooking XP gains slightly">
+		<trainer skill="cooking" level="8"></trainer>
+	</trait>
+	<trait id="165" name="The Felling Hatchet" description="Improves your chance to acquire extra wood when chopping a tree.">
+		<trainer skill="woodcutting" level="22"></trainer>
+	</trait>
+	<trait id="166" name="Elaborate Baiting" description="Improves your chance to acquire extra fish while fishing.">
+		<trainer skill="fishing" level="22"></trainer>
+	</trait>
+	<trait id="167" name="Rock Shattering" description="Improves your chance to acquire extra ore while mining.">
+		<trainer skill="mining" level="22"></trainer>
+	</trait>
+	<trait id="168" name="Quenching and Tempering" description="Further slightly increases your smithing XP gains.">
+		<trainer skill="blacksmithy" level="22"></trainer>
+	</trait>
+	<trait id="169" name="Berzelius Beakers" description="Further slightly increases your alchemy XP gains.">
+		<trainer skill="alchemy" level="22"></trainer>
+	</trait>
+	<trait id="170" name="Embroidery" description="Further slightly increases your tailoring XP gains.">
+		<trainer skill="tailoring" level="22"></trainer>
+	</trait>
+	<trait id="171" name="Craftsmanship" description="Further slightly increases your crafting XP gains.">
+		<trainer skill="carpentry" level="22"></trainer>
+	</trait>
+	<trait id="172" name="Basting" description="Further slightly increases your cooking XP gains.">
+		<trainer skill="cooking" level="22"></trainer>
+	</trait>
+
+
+	<trait id="173" name="Spell Blocking" comment="DefenceTrainerMagicRes" description="Increases your resistance against magical attacks.">
+		<trainer skill="defence" level="8"></trainer>
+	</trait>
+	<trait id="174" name="Arrow Deflection" comment="DefenceTrainerRangedRes" description="Increases your resistance against ranged attacks.">
+		<trainer skill="defence" level="8"></trainer>
+	</trait>
+	<trait id="175" name="Parrying" comment="DefenceTrainerPhysicalRes" description="Increases your resistance against melee attacks.">
+		<trainer skill="defence" level="8"></trainer>
+	</trait>
+
+	<trait id="176" name="Graceful Steps" description="Grants a chance to temporarily increase your movement speed after killing an opponent with a melee weapon.">
+		<trainer skill="swordsmanship" level="15"></trainer>
+	</trait>
+	<trait id="177" name="Soldier's Resolve" description="Grants a chance to slightly recover your health after killing an opponent with a melee weapon.">
+		<trainer skill="swordsmanship" level="15"></trainer>
+	</trait>
+	<trait id="178" name="Bloodrage" description="Grants a chance to temporarily increase your melee damage after killing an opponent with a melee weapon.">
+		<trainer skill="swordsmanship" level="15"></trainer>
+	</trait>
+	<trait id="179" name="Skirmishing" description="Grants a chance to temporarily increase you movement speed after landing a killing strike with a ranged weapon.">
+		<trainer skill="archery" level="15"></trainer>
+	</trait>
+	<trait id="180" name="Archer's Resolve" description="Grants a chance to slightly recover your health after landing a killing strike with a ranged weapon.">
+		<trainer skill="archery" level="15"></trainer>
+	</trait>
+	<trait id="181" name="Arrow Spree" description="Grants a chance to temporarily increase your ranged damage after landing a killing strike with a ranged weapon.">
+		<trainer skill="archery" level="15"></trainer>
+	</trait>
+	<trait id="182" name="Combat Channeling" description="Grants a chance to slightly recover your mana after killing an opponent with a spell.">
+		<trainer skill="magic" level="15"></trainer>
+	</trait>
+	<trait id="183" name="Spirit Drain" description="Grants a chance to slightly recover your health after killing an opponent with a spell.">
+		<trainer skill="magic" level="15"></trainer>
+	</trait>
+	<trait id="184" name="Empowered Casting" description="Grants a chance to temporarily increase your spell damage after killing an opponent with a spell.">
+		<trainer skill="magic" level="15"></trainer>
+	</trait>
+
+
+	<trait id="185" name="Serrated Blades" description="Increases your damage with melee weapons slightly.">
+		<trainer skill="swordsmanship" level="8"></trainer>
+	</trait>
+	<trait id="186" name="Blade Finesse" description="Increases your accuracy with melee weapons slightly.">
+		<trainer skill="swordsmanship" level="8"></trainer>
+	</trait>
+	<trait id="187" name="Bodkin Arrowheads" description="Increases your damage with ranged weapons slightly.">
+		<trainer skill="archery" level="8"></trainer>
+	</trait>
+	<trait id="188" name="Eagle Feather Fletching" description="Increases your accuracy with ranged weapons slightly.">
+		<trainer skill="archery" level="8"></trainer>
+	</trait>
+	<trait id="189" name="Spell Potency" description="Increases your spell damage slightly.">
+		<trainer skill="magic" level="8"></trainer>
+	</trait>
+	<trait id="190" name="Swish and Flick" description="Increases your spell accuracy slightly.">
+		<trainer skill="magic" level="8"></trainer>
+	</trait>
+	<trait id="191" name="Retaliating" description="Successfully blocking an attack has a chance to briefly boost your damage.">
+		<trainer skill="defence" level="22"></trainer>
+	</trait>
+	<trait id="192" name="Unyielding" description="Successfully blocking an attack has a chance to recover your health slightly.">
+		<trainer skill="defence" level="15"></trainer>
+	</trait>
+	<trait id="193" name="Shield Spikes" description="You have a chance to reflect a part of an incoming attack back to your opponent.">
+		<trainer skill="defence" level="22"></trainer>
+	</trait>
+	<trait id="194" name="Hardiness" description="Increases all resistances +4.">
+		<trainer skill="defence" level="15"></trainer>
+	</trait>
+	<trait id="195" name="Swift Draw" learnability="130" description="Teaches you Swift Draw; an ability that allows you to fire a ranged weapon in rapid succession.">
+		<trainer skill="archery" level="10"></trainer>
+	</trait>
+	<trait id="196" name="Quick Strike" learnability="132" description="Teaches you Quick Strike; an ability that allows you to perform an extra attack with a melee weapon.">
+		<trainer skill="swordsmanship" level="10"></trainer>
+	</trait>
+	
+	<trait id="197" name="Laceration" learnability="141" description="Teaches you Lacerate; a melee attack causing your enemies to bleed.\n\nDoes not work on undead.">
+		<trainer skill="swordsmanship" level="49"></trainer>
+	</trait>
+	
+	<trait id="198" name="Copper Refining" description="Allows you to cleanse dirt and impurities from copper ore using a miner's chisel and a hammer, which helps you haul more copper.\n\nA miner's chisel can be bought from mining trainers.">
+		<trainer skill="mining" level="12"></trainer>
+	</trait>
+	<trait id="199" name="Goopy Filleting" description="Learn to use a gutting knife on wild goopy, to gain a goopy fillet and additional fishing experience.\n\nA gutting knife can be bought from fishing trainers.">
+		<trainer skill="fishing" level="12"></trainer>
+	</trait>
+	<trait id="200" name="Sturgeon Filleting" description="Learn to use a gutting knife on Pebble Sturgeon, to gain a sturgeon fillet and additional fishing experience.\n\nA gutting knife can be bought from fishing trainers.">
+		<trainer skill="fishing" level="19"></trainer>
+	</trait>
+
+	<trait id="201" name="The Hook and Cook " description="Gain 20% additional experience in fishing when cooking fish.">
+		<trainer skill="fishing" level="15"></trainer>
+	</trait>
+	<trait id="202" name="Fishfood Connoisseur" description="Increases your cooking experience gains when cooking fish.">
+		<trainer skill="fishing" level="15"></trainer>
+	</trait>
+	<trait id="203" name="The Splitting Axe" description="Allows you to use a splitting axe on Spruce Logs, to gain additional experience and firewood.\n\nA splitting axe may be bought from woodsmanship trainers.">
+		<trainer skill="woodcutting" level="12"></trainer>
+	</trait>
+	<trait id="204" name="Squirrel Sense" description="Find twice the amount of acorns from cutting spruce and oak.">
+		<trainer skill="woodcutting" level="5"></trainer>
+	</trait>
+	<trait id="205" name="No Splinters Wasted" description="Gives you a chance to acquire firewood from chopping spruce and oak.">
+		<trainer skill="woodcutting" level="10"></trainer>
+	</trait>
+	<trait id="206" name="Angler of the Reeds" description="Gain a small chance of finding special experience boosting herbs while fishing.">
+		<trainer skill="alchemy" level="10"></trainer>
+	</trait>
+	<trait id="207" name="Symbiosis in Trees" description="Gain a small chance of finding special experience boosting herbs from woodcutting.">
+		<trainer skill="alchemy" level="10"></trainer>
+	</trait>
+	<trait id="208" name="Student of Varda" description="Learn a spell to temporarily enchant your melee weapon damage." learnability="150">
+		<trainer skill="magic" level="10"></trainer>
+	</trait>
+	<trait id="209" name="Student of Wardane" description="Learn a spell to temporarily enchant your ranged weapon damage." learnability="151">
+		<trainer skill="magic" level="10"></trainer>
+	</trait>
+	<trait id="210" name="Student of Yrdan" description="Learn a spell to temporarily enhance your mana regeneration." learnability="152">
+		<trainer skill="magic" level="10"></trainer>
+	</trait>
+
+	<trait id="211" name="Bait Finder" description="Unlocks the ability to dig up worms near fishing sites, which increase the rate of fishing.">
+		<trainer skill="fishing" level="10"></trainer>
+	</trait>
+	<trait id="212" name="Baitready" description="Find increased amounts of worms near fishing sites.">
+		<trainer skill="fishing" level="17"></trainer>
+	</trait>
+	<trait id="213" name="Worm Scavenger" description="You're capable of finding small amounts of worms anywhere.">
+		<trainer skill="fishing" level="17"></trainer>
+	</trait>
+	<trait id="214" name="Cotton Handler" description="Allows you to spool cotton together for efficient storage.\n\n&lt;color=green&gt;Use Cotton on another Cotton in inventory while having 3 or more to spool together.&lt;/color&gt;"></trait>
+
+	<trait id="215" name="Crippling Shot" description="Teaches you Crippling Shot; a ranged attack that immobilizes your target." learnability="254">
+		<trainer skill="archery" level="25"></trainer>
+	</trait>
+	<trait id="216" name="Eagle Shot" description="Teaches you Eagle Shot; a ranged attack that can be performed from a great distance." learnability="255">
+		<trainer skill="archery" level="35"></trainer>
+	</trait>
+	<trait id="217" name="Bull Shot" description="Teaches you Bull Shot; a ranged attack that knocks your target back." learnability="256">
+		<trainer skill="archery" level="45"></trainer>
+	</trait>
+	<trait id="218" name="Explosive Arrow" description="Teaches you Explosive Shot; a ranged attack that damages all enemies around your target." learnability="257">
+		<trainer skill="archery" level="47"></trainer>
+	</trait>
+
+
+	<trait id="219" name="Leap Attack" description="Teaches you Leap Attack; an ability that let's you close the distance to your enemy using melee weapons." learnability="258">
+		<trainer skill="swordsmanship" level="30"></trainer>
+	</trait>
+	<trait id="220" name="Round Attack" description="Teaches you Round Attack; a melee attack damaging all enemies around you." learnability="244">
+		<trainer skill="swordsmanship" level="35"></trainer>
+	</trait>
+
+	
+	<trait id="221" name="Splitting Expert" description="Allows you to use a splitting axe on Oak Logs, to gain additional experience and firewood.\n\nA splitting axe may be bought from woodsmanship trainers.">
+		<trainer skill="woodcutting" level="42"></trainer>
+	</trait>
+	<trait id="222" name="Advanced Splitting" description="Allows you to use a splitting axe on Willow Logs, to gain additional experience and firewood.\n\nA splitting axe may be bought from woodsmanship trainers." >
+		<trainer skill="woodcutting" level="32"></trainer>
+	</trait>
+
+	<trait id="223" name="Iron Refining" description="Allows you to cleanse dirt and impurities from iron ore using a miner's chisel and a hammer, which helps you haul more iron.\n\nA miner's chisel can be bought from mining trainers." >
+		<trainer skill="mining" level="35"></trainer>
+	</trait>
+
+	<trait id="224" name="Snapper Filleting" description="Learn to use a gutting knife on Charcoal Snapper, to gain a fancy fish fillet and additional fishing experience.\n\nA gutting knife can be bought from fishing trainers.">
+		<trainer skill="fishing" level="28"></trainer>
+	</trait>
+
+	<trait id="225" name="Bass Filleting" description="Learn to use a gutting knife on Horstail Reed Bass, to gain a fancy fish fillet and additional fishing experience.\n\nA gutting knife can be bought from fishing trainers.">
+		<trainer skill="fishing" level="35"></trainer>
+	</trait>
+
+	<trait id="226" name="Imberite Refining" description="Turn Imberite Ore into Refined Mountain Ore using a miner's chisel and a hammer." >
+		<trainer skill="mining" level="65"></trainer>
+	</trait>
+
+	<trait id="227" name="Cypress Splitting" description="Turn Highland Cypress logs into Split Highland Wood using a splitting axe." >
+		<trainer skill="woodcutting" level="65"></trainer>
+	</trait>
+
+	<trait id="228" name="Lobster Splitter" description="Turn Rockwater Lobsters into Chunks of Mountain Fish using a gutting knife.">
+		<trainer skill="fishing" level="65"></trainer>
+	</trait>
+
+	<trait id="229" name="Titanite Refining" description="Turn Titan's Blood Ore into Refined Mountain Ore using a miner's chisel and a hammer.">
+		<trainer skill="mining" level="80"></trainer>
+	</trait>
+
+	<trait id="230" name="Deadwood Splitting" description="Turn Deadwood Yew logs into Split Highland Wood using a splitting axe.">
+		<trainer skill="woodcutting" level="80"></trainer>
+	</trait>
+
+	<trait id="231" name="Karp Gutting" description="Turn Frostmelt Karp into Chunks of Mountain Fish using a gutting knife.">
+		<trainer skill="fishing" level="80"></trainer>
+	</trait>
+
+	<trait id="232" name="Crystal Refining" description="Turn Ice Mountain Crystals into Refined Mountain Ore using a miner's chisel and a hammer.">
+		<trainer skill="mining" level="95"></trainer>
+	</trait>
+
+	<trait id="233" name="Winterbark Splitting" description="Turn Winterbark Birch logs into Split Highland Wood using a splitting axe.">
+		<trainer skill="woodcutting" level="95"></trainer>
+	</trait>
+
+	<trait id="234" name="Eel Gutting" description="Turn Icewater Eel into Chunks of Mountain Fish using a gutting knife.">
+		<trainer skill="fishing" level="95"></trainer>
+	</trait>
+
+
+	<trait id="235" name="Unbreakable Defence" description="Grants you an ability to significantly boost your resistance against ranged and physical damage for a short period, allowing you to sustain a few powerful attacks." learnability="275">
+		<trainer skill="defence" level="40"></trainer>
+	</trait>
+	<trait id="236" name="Spell Immunity" description="Grants you an ability to significantly boost your resistance against magical damage for a short period, allowing you to sustain a few powerful attacks." learnability="276">
+		<trainer skill="magic" level="47"></trainer>
+	</trait>
+	<trait id="237" name="Mighty Recuperation" description="Regain hitpoints slightly when equipping a shield, can only occur once every 5 seconds.">
+		<trainer skill="defence" level="45"></trainer>
+	</trait>
+	<trait id="238" name="Mighty Resolve" description="Gain a temporary buff to damage when equipping a shield, can only occur once every 5 seconds.">
+		<trainer skill="defence" level="45"></trainer>
+	</trait>
+
+	<trait id="239" name="The Blood Star" description="Gives a lifestealing effect to the crimson star spell.">
+		<trainer skill="magic" level="40"></trainer>
+	</trait>
+	<trait id="240" name="Soothing Flames" description="Gives a lifestealing effect to the ember spell.">
+		<trainer skill="magic" level="40"></trainer>
+	</trait>
+
+	<trait id="241" name="Rebound Magic" description="Casting the spellscreen also deals damage to enemies in an area around you.">
+		<trainer skill="magic" level="45"></trainer>
+	</trait>
+	<trait id="242" name="Forcefields" description="Casting the aegis spell also deals damage to enemies in an area around you.">
+		<trainer skill="magic" level="45"></trainer>
+	</trait>
+
+	<trait id="243" name="Wand Mastery" description="Increases your attack speed while using wands.">
+		<trainer skill="magic" level="35"></trainer>
+	</trait>
+	<trait id="244" name="Staff Mastery" description="Increases your attack speed while using staves.">
+		<trainer skill="magic" level="35"></trainer>
+	</trait>
+
+	<trait id="245" name="Blade Toxins" description="Attacks performed using daggers have a random chance to poison your target even when without the use of a poison item.">
+		<trainer skill="alchemy" level="35"></trainer>
+	</trait>
+	<trait id="246" name="Coated Arrows" description="Attacks performed using bows have a random chance to poison your target even when without the use of a poison item.">
+		<trainer skill="alchemy" level="35"></trainer>
+	</trait>
+
+	<trait id="247" name="Potent Concentrations" description="Mana potions replenish +50% more mana.">
+		<trainer skill="alchemy" level="30"></trainer>
+	</trait>
+	<trait id="248" name="Omnipotions" description="Mana potions also replenish +50% in health.">
+		<trainer skill="alchemy" level="30"></trainer>
+	</trait>
+	<trait id="249" name="Smooth Bow Handles" description="Grants a movement speed increase while bows or crossbows are equipped.">
+		<trainer skill="carpentry" level="30"></trainer>
+	</trait>
+	<trait id="250" name="Engraved Staff Handles" description="Grants a movement speed increase while staves or wands are equipped.">
+		<trainer skill="carpentry" level="30"></trainer>
+	</trait>
+
+	<trait id="251" name="Trinkets of Determination" description="Gain a short movement speed and damage increase at the start of combat.">
+		<trainer skill="blacksmithy" level="31"></trainer>
+	</trait>
+	<trait id="252" name="Trinkets of Remedy" description="Gain a small heal at the end of combat.">
+		<trainer skill="blacksmithy" level="31"></trainer>
+	</trait>
+	<trait id="253" name="Forge Fires" description="Learn a spell that immediately turns all ore in your inventory to appropriate ingots." learnability="277">
+		<trainer skill="blacksmithy" level="32"></trainer>
+	</trait>
+
+
+	<trait id="254" name="Carpentry" description="Gain a chance to not deplete crafting materials when using crafting skill.">
+		<trainer skill="carpentry" level="34"></trainer>
+	</trait>
+
+	<trait id="255" name="Natural Materials" description="Gain a chance to not deplete crafting materials when using tailoring skill.">
+		<trainer skill="tailoring" level="34"></trainer>
+	</trait>
+	<trait id="256" name="Spellweave Robes" description="Gain mana when taking damage while wearing magic robes.">
+		<trainer skill="tailoring" level="36"></trainer>
+	</trait>
+	<trait id="257" name="Spellweave Hood" description="Gain mana when taking damage while wearing magic headpiece.">
+		<trainer skill="tailoring" level="36"></trainer>
+	</trait>
+
+	<trait id="258" name="Rancher's Homecoming" description="Gain a teleport spell that brings you to the Shearston Estate." learnability="278">
+		<trainer skill="tailoring" level="32"></trainer>
+	</trait>
+
+	<trait id="259" name="Well Cooked" description="Food buff duration increased by 33%.">
+		<trainer skill="cooking" level="31"></trainer>
+	</trait>
+	<trait id="260" name="Strong Spices" description="Increases health recovered from food by +1 per tick.">
+		<trainer skill="cooking" level="32"></trainer>
+	</trait>
+	<trait id="261" name="Satiated" description="Eating food also increases the duration of buffs gained from potions by +25%.">
+		<trainer skill="cooking" level="33"></trainer>
+	</trait>
+	<trait id="262" name="Healthy Diet" description="Health potions are +50% more effective while a food buff is active.">
+		<trainer skill="cooking" level="40"></trainer>
+	</trait>
+	<trait id="263" name="Spiritual Diet" description="Mana potions are +50% more effective while a food buff is active.">
+		<trainer skill="cooking" level="40"></trainer>
+	</trait>
+	<trait id="264" name="Ambush in the Wilds" description="Enemies take more damage before they're considered aggressive.">
+		<trainer skill="woodcutting" level="36"></trainer>
+	</trait>
+	<trait id="265" name="Warrior of the Wilderness" description="Increases melee accuracy in outdoor areas.">
+		<trainer skill="woodcutting" level="41"></trainer>
+	</trait>
+	<trait id="266" name="Wizard of the Wilderness" description="Increases magic accuracy in outdoor areas.">
+		<trainer skill="woodcutting" level="41"></trainer>
+	</trait>
+	<trait id="267" name="Ranger of the Wilderness" description="Increases ranged accuracy in outdoor areas.">
+		<trainer skill="woodcutting" level="41"></trainer>
+	</trait>
+
+	<trait id="268" name="Gleaned Fishbones" description="Food buffs gained from eating fish last an additional 33.3% longer.">
+		<trainer skill="fishing" level="31"></trainer>
+	</trait>
+	<trait id="269" name="Well Gutted" description="Food buffs gained from eating fish heal an additional +1 per tick.">
+		<trainer skill="fishing" level="32"></trainer>
+	</trait>
+	<trait id="270" name="Confident Casting" description="Your experience in casting fishing hooks is reflected in increased ranged accuracy.">
+		<trainer skill="fishing" level="34"></trainer>
+	</trait>
+	<trait id="271" name="Guided Hooks" description="Your experience in casting fishing hooks is reflected in increased magic accuracy.">
+		<trainer skill="fishing" level="34"></trainer>
+	</trait>
+
+
+	<trait id="272" name="River Canoes" description="Unlocks a fast travel option, which can be used when standing near water:\n\n(Right-click) using a hatchet on a log allows you to turn it into a temporary canoe, to travel to distant locations.\n\nHigher quality wood impacts how far you can travel.">
+		<trainer skill="carpentry" level="25"></trainer>
+	</trait>
+	<trait id="273" name="The River Navigator" description="Unlocks additional canoe fast travel destinations.\n\n&lt;color=yellow&gt; Requires River Canoes trait from Thornhill Crafting Trainer. &lt;/color&gt;">
+		<trainer skill="fishing" level="42"></trainer>
+	</trait>
+	
+	<trait id="274" name="Mineral Survey" description="Allows you to come across Ore Clusters that contain random variety of ores." comment="harvestable 86">
+		<trainer skill="mining" level="45"></trainer>
+	</trait>
+	<trait id="275" name="Herbology" description="Allows you to come across Wildgrowths outdoors that hide random herbs within." comment="harvestable 87">
+		<trainer skill="alchemy" level="45"></trainer>
+	</trait>
+	<trait id="276" name="Grouper Filleting" description="Learn to use a gutting knife on Sandstone Grouper, to gain a fancy fish fillet and additional fishing experience.\n\nA gutting knife can be bought from fishing trainers.">
+		<trainer skill="fishing" level="45"></trainer>
+	</trait>
+
+	<trait id="280" name="Master Lumberjack" description="Your axe cleaves through wood with unmatched efficiency, a reflection of years mastering the forest's rhythm and secrets.\n\n&lt;color=green&gt; Gain access to furniture hatchet rack, which can be bought from Thornhill woodsmanship trainer. &lt;/color&gt;">
+		<trainer skill="woodcutting" level="50" tiericon="3"></trainer>
+	</trait>
+	<trait id="281" name="Master Angler" description="You harmonize with the water's whispers, bringing forth bounties from its depths effortlessly.\n\n&lt;color=green&gt; Gain access to furniture fishing rack, which can be bought from Thornhill fishing trainer. &lt;/color&gt;">
+		<trainer skill="fishing" level="50" tiericon="3"></trainer>
+	</trait>
+	<trait id="282" name="Master Swordsman" description="You move with unparalleled grace, each slash and parry a testament to a lifetime of dedication.\n\n&lt;color=green&gt; +5 physical damage &lt;/color&gt;">
+		<trainer skill="swordsmanship" level="50" tiericon="3"></trainer>
+	</trait>
+	<trait id="283" name="Master Rockpicker" description="Your discerning eye and steadfast hand unearth treasures from the earth, revealing the hidden wealth beneath the feet.\n\n&lt;color=green&gt; Gain access to furniture miner's toolrack, which can be bought from Thornhill mining trainer. &lt;/color&gt;">
+		<trainer skill="mining" level="50" tiericon="3"></trainer>
+	</trait>
+	<trait id="284" name="Master Marksman" description="With every draw of the bow, your arrows fly true, a blend of ancient technique and unwavering focus that hits the mark every time.\n\n&lt;color=green&gt; +5 ranged damage &lt;/color&gt;">
+		<trainer skill="archery" level="50" tiericon="3"></trainer>
+	</trait>
+	<trait id="285" name="Master Spellslinger" description="Your magic weaves through the air with potent finesse, bending reality to your will.\n\n&lt;color=green&gt; +5 magic damage &lt;/color&gt;">
+		<trainer skill="magic" level="50" tiericon="3"></trainer>
+	</trait>
+	<trait id="286" name="Master Shieldbearer" description="You embody the art of turning any attack aside with seamless skill and unmatched vigilance.\n\n&lt;color=green&gt; +50 health &lt;/color&gt;">
+		<trainer skill="defence" level="50" tiericon="3"></trainer>
+	</trait>
+	<trait id="287" name="Master Blacksmith" description="Your forge sings with the creation of exceptional weaponry and armor, each piece a masterpiece of craftsmanship and durability.\n\n&lt;color=green&gt; Gain access to furniture forge and anvil, which can be bought from Thornhill smithing trainer. &lt;/color&gt;">
+		<trainer skill="blacksmithy" level="50" tiericon="3"></trainer>
+	</trait>
+	<trait id="288" name="Master Tailor" description="With a confident hand, you can work any fabric into a garment of unmatched power.\n\n&lt;color=green&gt; Gain access to furniture tailor's workbench, which can be bought from Thornhill tailoring trainer. &lt;/color&gt;">
+		<trainer skill="tailoring" level="50" tiericon="3"></trainer>
+	</trait>
+	<trait id="289" name="Master Wright" description="Your hands shape and join wood with extraordinary precision, constructing objects of unparalleled refinement.\n\n&lt;color=green&gt; Gain access to furniture carpenter's workbench, which can be bought from Thornhill crafting trainer. &lt;/color&gt;">
+		<trainer skill="carpentry" level="50" tiericon="3"></trainer>
+	</trait>
+	<trait id="290" name="Master Potioner" description="You have remarkable knowledge in turning ingredients into potent elixirs, blending the natural world with the arcane.\n\n&lt;color=green&gt; Gain access to furniture alchemy workbench, which can be bought from Thornhill alchemy trainer. &lt;/color&gt;">
+		<trainer skill="alchemy" level="50" tiericon="3"></trainer>
+	</trait>
+	<trait id="291" name="Master Saucemaker" description="Your cooking expertise transform meals, balancing flavors to perfection with a deft touch and creative flair.\n\n&lt;color=green&gt; Gain access to furniture cooking stove, which can be bought from Thornhill cooking trainer. &lt;/color&gt;">
+		<trainer skill="cooking" level="50" tiericon="3"></trainer>
+	</trait>
+
+	<trait id="292" name="Disengage" description="Grants you an ability that knocks the target back, briefly stuns them, and then allows the attacker to leap backward." learnability="259">
+		<trainer skill="defence" level="10"></trainer>
+	</trait>
+
+	<trait id="293" name="Druidic Amplification" description="Greatly increases the healing amount of Rayne’s Mending.">
+		<trainer skill="magic" level="80"></trainer>
+	</trait>
+
+	<trait id="294" name="Blightpowder Extract" learnability="352" description="Unlocks Throw Blightpowder ability, whereby you throw a toxic compound upon unsuspecting enemies, which reduces any healing they receive by 40%.">
+		<trainer skill="alchemy" level="70"></trainer>
+	</trait>
+
+
+	<trait id="1200" name="Amulet of Vesteris" description="An amulet of old legends, you're told it has the ability to protect the mind of its wearer from all attempts of possession by magic."></trait>
+	<trait id="1201" name="" description=""></trait>
+
+
+</traits>
